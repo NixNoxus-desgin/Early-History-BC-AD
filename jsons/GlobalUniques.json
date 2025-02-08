@@ -1,0 +1,62 @@
+{
+    "name": "Global uniques",
+    "uniques": [
+        //Nerf for general gameplay
+        "[-25]% growth [in all cities] <in cities with at least [10] [Population]>",
+        "[+5]% Unhappiness from [Population] [in all cities] <in cities with at least [10] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [20] [Population]>",
+        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [20] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [30] [Population]>",
+        "[+15]% Unhappiness from [Population] [in all cities] <in cities with at least [30] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [40] [Population]>",
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [40] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [50] [Population]>",
+        "[+10]% Unhappiness from [Population] [in all cities] <in cities with at least [50] [Population]>",
+        "[-25]% growth [in all cities] <in cities with at least [60] [Population]>",
+        "[+20]% Unhappiness from [Population] [in all cities] <in cities with at least [60] [Population]>",
+        //Vanilla
+        "[-50]% growth [in all cities] <when between [-10] and [0] Happiness>",
+        "Nullifies Growth [in all cities] <when below [-10] Happiness>",
+        "[-25]% [Production] [in all cities] <when below [-10] Happiness>",
+        "[-15]% Strength <for [All] units> <when below [-10] Happiness>",
+        "[-50]% [Production] [in all cities] <when below [-15] Happiness>",
+        "[-33]% Strength <for [All] units> <when below [-15] Happiness>",
+        "Cannot build [Settler] units <when below [-15] Happiness>",
+        "Cannot build [Pioneer] units <when below [-15] Happiness>",
+        "Rebel units may spawn <when below [-15] Happiness>",
+        ///NO Bankruptcy too
+        "Cannot build [Worker] units <when below [-10] [Gold]>",
+        "Cannot build [Mechanised Worker] units <when below [-10] [Gold]>",
+        "[-15]% Strength <for [All] units> <when below [-10] [Gold]>",
+        "[-33]% Strength <for [All] units> <when below [-100] [Gold]>",
+        "[-25]% [Production] [in all cities] <when below [-10] [Gold]>",
+        "[-50]% [Production] [in all cities] <when below [-100] [Gold]>",
+        "[-1] Sight <for [Embarked] units>",
+        //Prevents AI from spamming units
+        "Cannot build ['Levy Army'] units <when not at war> <starting from the [Medieval era]> <for [AI player] Civilizations>",
+        "Cannot build ['Firearms'] units <when below [-10] [Weapon Parts]>",
+        "Cannot build ['Motorised'] units <when below [-10] [Vehicle Parts]>",
+        "Cannot build ['Mechanised'] units <when below [-10] [Vehicle Parts]>",
+        "Cannot build ['Engine Ship'] units <when below [-10] [Ship Parts]>",
+        "Cannot build [Air] units <when below [-10] [Aircraft Parts]>",
+        "Cannot build ['Motorised'] units <when below [-10] [Fuel]>",
+        "Cannot build ['Mechanised'] units <when below [-10] [Fuel]>",
+        "Cannot build ['Engine Ship'] units <when below [-10] [Fuel]>",
+        "Cannot build [Air] units <when below [-10] [Fuel]>",
+        //Make Room for new policies
+        "[-10]% Culture cost of adopting new Policies",
+        //Mechanics
+        "Notified of new Barbarian encampments",
+        "[+2 Food] in cities on [Fresh Water] tiles",
+        "Provides [1] [Revolution Oppotunity] <starting from the [Imperial era]>",
+        "Provides [1] [Revolution Oppotunity] <starting from the [Modern era]>"
+        // TODO: Implement the uniques below
+        // "[+20]% [Culture] [in all cities] <during a golden age>",
+        // "[+20]% [Production] [in all cities] <during a golden age>",
+        // "[+10]% growth [in all cities] <during We Love The King Day>",
+        // "Nullifies All Yield <while is in resistance>",
+        // "[-25]% [Science] [in pupetted cities]" -- Imo cityFilters should ideally become conditionals anyway
+        // "[-25]% [Culture] [in pupetted cities]"
+        // "[+20]% [Production] [in cities connected via railroad]"
+    ]
+}
