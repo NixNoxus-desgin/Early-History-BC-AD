@@ -1,106 +1,6 @@
 [
 
-	{
-		"name": "Casemate",
-		"replaces": "Armory",
-		"uniqueTo": "Luxembourg",
-		"hurryCostModifier": 25,
-		"maintenance": 2,
-		"cityStrength": 5,
-		"cityHealth": 30,
-		"requiredBuilding": "Barracks",
-		"uniques": ["New [Military] units start with [15] Experience [in this city]","[+10]% Production when constructing [Gunpowder] units [in this city]","Destroyed when the city is captured"],
-		"requiredTech": "Steel"
-	},
-	{
-	    "name": "Rug Market",
-	    "replaces": "Market",
-	    "uniqueTo": "Afghanistan",
-	    "gold": 2,
-	    "specialistSlots": {"Merchant": 1},
-	    "hurryCostModifier": 25,
-	    "percentStatBonus": {"gold": 25},
-	    "uniques": ["[+1 Gold, +1 Culture] from [Luxury resource] tiles [in this city]"],
-	    "requiredTech": "Currency"
-	  },
-		
-		
-		{
-			"name": "Heitt Bad",
-			"replaces": "Aqueduct",
-			"uniqueTo": "Iceland",
-			"maintenance": 2,
-			"hurryCostModifier": 0,
-			"happiness": 2,
-			"faith": 2,
-			"uniques": ["[40]% Food is carried over after population increases [in this city]"],
-			"requiredTech": "Masonry"
-		},
-		//Norway
-		{
-			"name": "Stave Church",
-			"replaces": "Temple",
-			"uniqueTo": "Norway",
-			"faith": 2,
-			"culture": 2,
-			"requiredBuilding": "Shrine",
-			"maintenance": 2,
-			"hurryCostModifier": 25,
-			"requiredTech": "Philosophy",
-			"uniques": ["Only available <when religion is enabled>", "Destroyed when the city is captured", "[+10]% Production when constructing [{Military} {Water}] units [in this city]", "[+15]% Great Person generation [in this city]"]
-		},
-		//Marajoara
-		{
-			"name": "Pottery Workshop",
-			"replaces": "Workshop",
-			"uniqueTo": "Marajoara",
-			"maintenance": 3,
-			"production": 2,
-			"culture": 2,
-			"specialistSlots": {"Engineer": 1},
-			"specialistSlots": {"Artist": 1},
-			"hurryCostModifier": 25,
-			"percentStatBonus": {"production": 10},
-			"requiredTech": "Metal Casting"
-		},
-		//The Zenu
-		{
-			"name": "Weaving House",
-			"replaces": "Library",
-			"uniqueTo": "The Zenu",
-			"hurryCostModifier": 25,
-			"maintenance": 1,
-			"production": 1,
-			"uniques": ["[+1 Science] per [2] population [in this city]", "[+1 Gold] <after discovering [Bronze Working]>", "Must be next to [Fresh water]", "[+5]% [Gold] [in this city]"],
-			"requiredTech": "Writing"
-		},
-		{
-			"name": "Pisco Brewery",
-			"uniqueTo": "Peru",
-			"replaces": "Windmill",
-			"production": 2,
-			"specialistSlots": {"Engineer": 1},
-			"hurryCostModifier": 25,
-			"maintenance": 2,
-			"uniques": ["Must be next to [Coast]",
-				"Provides [1] [Pisco]", "[+10]% growth [in this city]",
-				"[+10]% Production when constructing [All] buildings [in this city]"],
-			"requiredTech": "Economics"
-		},
-		//Colombia
-		{
-			"name": "Coffee Mill",
-			"uniqueTo": "Colombia",
-			"replaces": "Windmill",
-			"production": 2,
-			"gold": 1,
-			"specialistSlots": {"Engineer": 1},
-			"specialistSlots": {"Merchant": 1},
-			"hurryCostModifier": 40,
-			"maintenance": 3,
-			"uniques": ["[+1 Production, +1 Culture, +1 Gold] from [Jungle] tiles [in this city]", "[+10]% Production when constructing [All] buildings [in this city]"],
-			"requiredTech": "Economics"
-		},
+
 		//Argentina
 		{
 			"name": "Mate Hacienda",
@@ -112,23 +12,6 @@
 			"uniques": ["[+1 Happiness] from [Plantation] tiles [in this city]", "[+1 Production] from [Pasture] tiles [in this city]"],
 			"hurryCostModifier": 25,
 			"requiredTech": "Calendar"
-		},
-		//Solomon Islands
-		{
-			"name": "Premium Seafood Resturant",
-			"uniqueTo": "Solomon Islands",
-			"cost": -1,
-			"cannotBeBuiltWith": "Shellfish Fertilizer Manufactory",
-			"uniques": ["Consumes [1] [Reef Product]", "Provides [1] [Premium Seafood]", "Unsellable", "Only available <with [Reef Product]>","Destroyed when the city is captured"],
-			"requiredTech": "Refrigeration"
-		},
-		{
-			"name": "Shellfish Fertilizer Manufactory",
-			"uniqueTo": "Solomon Islands",
-			"cost": -1,
-			"cannotBeBuiltWith": "Premium Seafood Resturant",
-			"uniques": ["Consumes [1] [Reef Product]", "Provides [1] [Shellfish Fertilizer]", "Unsellable", "Only available <with [Reef Product]>","Destroyed when the city is captured"],
-			"requiredTech": "Fertilizer"
 		},
 		//Fiji
 		{
@@ -143,185 +26,6 @@
 			"uniques": ["Provides [5] [Premium Bottled Water]"],
 			"requiredTech": "Economics"
 		},
-		{
-			"name": "Statue of Helios",
-			"uniqueTo": "Rhodes",
-			"replaces": "Lighthouse",
-			"cost": 85,
-			"hurryCostModifier": 25,
-			"maintenance": 1,
-			"uniques": ["Must be next to [Coast]", "[+1 Food] from [Ocean] tiles [in this city]",
-				"[+1 Food] from [Coast] tiles [in this city]", "[+1 Food] from [Fish] tiles [in this city]",
-				"[+1 Gold] from [Ocean] tiles [in this city]",
-					"[+1 Gold] from [Coast] tiles [in this city]"],
-			"requiredTech": "Optics"
-		},
-		//The Kievan Rus
-		{
-			"name": "Wooden Palace",
-			"uniqueTo": "The Kievan Rus",
-			"replaces": "Castle",
-			"cost": 120,
-			"cityStrength": 7,
-			"cityHealth": 20,
-			"hurryCostModifier": 25,
-			"gold": 2,
-			"requiredBuilding": "Walls",
-			"requiredTech": "Metal Casting",
-			"uniques": ["Destroyed when the city is captured", "[Wounded] Units adjacent to this city heal [5] HP per turn when healing", "[+1 Happiness, +1 Production] [in this city] <with a garrison>"]
-			
-		//The Goths
-		{
-			"name": "Basilica",
-			"uniqueTo": "The Goths",
-			"replaces": "Temple",
-			"faith": 2,
-			"requiredBuilding": "Shrine",
-			"cost": 115,
-			"hurryCostModifier": 25,
-			"requiredTech": "Philosophy",
-			"uniques": ["Only available <when religion is enabled>", "[+1 Gold, +1 Faith] per [4] population [in this city]"]
-		},
-		//Novgorod
-		{
-			"name": "Veche Bell Tower",
-			"uniqueTo": "Novgorod Republic",
-			"replaces": "Courthouse",
-			"happiness": 1,
-			"maintenance": 2,
-			"hurryCostModifier": 50,
-			"uniques": ["Remove extra unhappiness from annexed cities", "[+2 Science] <after discovering [Education]>", "Can only be built <in [in all cities] cities>"],
-			"requiredTech": "Mathematics"
-		},
-		//Vandals
-		{
-			"name": "Arian Church",
-			"uniqueTo": "The Vandals",
-			"replaces": "Temple",
-			"faith": 3,
-			"cost": 90,
-			"requiredBuilding": "Shrine",
-			"maintenance": 2,
-			"hurryCostModifier": 25,
-			"requiredTech": "Philosophy",
-			"uniques": ["Only available <when religion is enabled>", "Destroyed when the city is captured"]
-		},
-		//Ukraine
-		{
-			"name": "Chumak Guild",
-			"uniqueTo": "Ukraine",
-			"replaces": "Market",
-			"gold": 2,
-			"maintenance": 1,
-			"uniques": ["[+1 Gold] from every [Luxury Resource]", "[+1 Gold] from every [Bonus Resource]"],
-			"specialistSlots": {"Merchant": 1},
-			"hurryCostModifier": 25,
-			"percentStatBonus": {"gold": 25},
-			"requiredTech": "Mathematics"
-		},
-		//Francia
-		{
-			"name": "Religious Studies",
-			"uniqueTo": "Francia",
-			"replaces": "University",
-			"maintenance": 2,
-			"hurryCostModifier": 15,
-			"percentStatBonus": {"science": 33},
-			"specialistSlots": {"Scientist": 2},
-			"requiredBuilding": "Library",
-			"uniques": ["Gain a free [Monastery] [in this city]", "[+15]% Natural religion spread [in this city]"],
-			"requiredTech": "Education"
-		},
-	
-		//Moldova
-		{
-			"name": "Colossal Wine Cellar",
-			"uniqueTo": "Moldova",
-			"replaces": "Bank",
-			"cost": 225,
-			"food": 1,
-			"gold": 2,
-			"specialistSlots": {"Merchant": 1},
-			"hurryCostModifier": 15,
-			"percentStatBonus": {"gold": 25},
-			"requiredBuilding": "Market",
-			"requiredTech": "Banking",
-			"uniques": ["[+1 Gold] from [Plantation] tiles [in this city]", "Provides [1] [Wine]"]
-		},
-		//Transnistria
-		{
-			"name": "Cognac Distillery",
-			"uniqueTo": "Transnistria",
-			"replaces": "Windmill",
-			"production": 2,
-			"gold": 1,
-			"specialistSlots": {"Engineer": 1},
-			"hurryCostModifier": 25,
-			"uniques": ["[+10]% Production when constructing [All] buildings [in this city]", "Provides [1] [Cognac]"],
-			"requiredTech": "Economics"
-		},
-		//Romania
-		{
-			"name": "Painted Monastery",
-			"uniqueTo": "Romania",
-			"replaces": "Garden",
-			"faith": 2,
-			"specialistSlots": {"Artist": 1},
-			"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Mountain]"],
-			"hurryCostModifier": 25,
-			"maintenance": 1,
-			"requiredTech": "Theology"
-		},
-		//Pakistan
-		{
-			"name": "Urdu School",
-			"uniqueTo": "Pakistan",
-			"replaces": "Public School",
-			"science": 3,
-			"happiness": 1,
-			"specialistSlots": {"Scientist": 1},
-			"requiredBuilding": "University",
-			"maintenance": 1,
-			"hurryCostModifier": 0,
-			"uniques": ["[+1 Science] per [2] population [in this city]", "[+15]% Natural religion spread [in this city]"],
-			"requiredTech": "Scientific Theory"
-		},
-		//Barbados
-		{
-			"name": "Rum Distillery",
-			"uniqueTo": "Barbados",
-			"replaces": "Windmill",
-			"production": 2,
-			"gold": 1,
-			"specialistSlots": {"Engineer": 1},
-			"hurryCostModifier": 25,
-			"maintenance": 0,
-			"uniques": ["Must not be on [Hill]", "[+2 Gold] from [Sugar] tiles [in this city]", "[+10]% Production when constructing [All] buildings [in this city]", "Provides [2] [Rum]"],
-			"requiredTech": "Economics"
-		},
-		{
-			"name": "Crop Over Ability",
-			"cost": 1,
-			"uniqueTo": "Barbados",
-			"uniques": ["Cannot be purchased", "Destroyed when the city is captured", "Will not be displayed in Civilopedia", "[+25]% [Food] [in all cities] <during We Love The King Day>", "[+25]% [Gold] [in all cities] <during We Love The King Day>"],
-		},
-
-		
-		//The Bahamas
-		{
-			"name": "Beach Resort",
-			"uniqueTo": "The Bahamas",
-			"replaces": "Stock Exchange",
-			"gold": 3,
-			"happiness": 1,
-			"uniques": ["[+1 Gold, +1 Culture] from [Coastal] tiles [in this city]"],
-			"percentStatBonus": {"gold": 25},
-			"specialistSlots": {"Merchant": 2},
-			"hurryCostModifier": 15,
-			"requiredBuilding": "Bank",
-			"requiredTech": "Electricity"
-		},
-		
 		//Italy
 		{
 			"name": "Grand Opera House",
@@ -336,21 +40,6 @@
 			"maintenance": 2,
 			"requiredTech": "Acoustics",
 			"uniques": ["Destroyed when the city is captured", "Comment [+2 [Great Artist] points in this city]"]
-		},
-	
-		//Belgium
-		{
-			"name": "Art Exhibition",
-			"uniqueTo": "Belgium",
-			"replaces": "Museum",
-			"culture": 6,
-			"specialistSlots": {"Artist": 4},
-			"greatPersonPoints": {"Great Artist": 3},
-			"requiredBuilding": "Opera House",
-			"maintenance": 3,
-			"hurryCostModifier": 0,
-			"requiredTech": "Archaeology",
-			"uniques": ["Destroyed when the city is captured", "Comment [+1 [Great Artist] points in this city]", "Comment [+2 [Artist specialist] slots in this city]"]
 		},
 		//Austria-Hungary
 		{
@@ -405,13 +94,6 @@
 			"greatPersonPoints": {"Great Merchant": 1},
 			"uniques": ["Provides 1 extra copy of each improved luxury resource near this City", "Production to [Gold] conversion in cities changed by [+25]% <in [in this city] cities>", "Comment [+1 [Great Merchant] points in this city]",],
 			"requiredTech": "Currency"
-		},
-		{
-			"name": "Montenegro Ability",
-			"uniqueTo": "Montenegro",
-			"cost": 1,
-			"cityHealth": 25,
-			"uniques": ["Cannot be purchased", "Destroyed when the city is captured", "Will not be displayed in Civilopedia",]
 		},
 		{
 			"name": "Secondary Market",
@@ -618,18 +300,6 @@
 			"uniques": ["Comment [+1 [Artist specialist] slots in this city]", "Must have an owned [Mountain] within [2] tiles"],
 			"requiredTech": "Astronomy"
 		},
-		//Jan Mayen
-		{
-			"name": "Whaling Station",
-			"uniqueTo": "Jan Mayen",
-			"replaces": "Lighthouse",
-			"cost": 75,
-			"hurryCostModifier": 25,
-			"maintenance": 1,
-			"uniques": ["Must be next to [Coast]", "[+1 Food] from [Ocean] tiles [in this city]",
-				"[+1 Food] from [Coast] tiles [in this city]", "[+1 Food, +1 Production] from [Fish] tiles [in this city]", "[+2 Food, +1 Gold] from [Pearls] tiles [in this city]", "[+2 Food, +1 Production, +1 Happiness] from [Whales] tiles [in this city]"],
-			"requiredTech": "Optics"
-		},
 		{
 			"name": "Meteorological Station",
 			"uniqueTo": "Jan Mayen",
@@ -671,27 +341,6 @@
 			"uniques": ["Destroyed when the city is captured", "[+3 Faith, +3 Production] from [Marsh] tiles [in this city]", "[+10]% Great Person generation [in this city]"],
 			"requiredTech": "Drama and Poetry"
 		},
-		//Vatican City
-		{
-			"name": "St. Peter's Basilica",
-			"uniqueTo": "Vatican City",
-			"replaces": "Grand Temple",
-			"cost": 300,
-			"culture": 1,
-			"faith": 8,
-			"specialistSlots": {"Artist": 1},
-			"specialistSlots": {"Priest": 2},
-			"uniques": ["Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
-				"[+100]% Natural religion spread [in this city]", "Only available <when religion is enabled>", "Can only be built <in [Holy] cities>",
-				"Comment [+1 [Artist specialist] slots in this city]",
-				"Comment [+2 [Priest specialist] slots in this city]",
-				"[+1 Culture, +1 Faith] per [2] social policies adopted",
-				"[+50]% [Faith] from every [Holy site]"],
-			"requiredTech": "Theology",
-			"isNationalWonder": true
-		},
-		
-		
 		//Germania
 		{
 			"name": "Amber Encampment",
@@ -703,7 +352,7 @@
 			"percentStatBonus": {"gold": 25},
 			"uniques": ["[+1 Gold] from [Forest] tiles [in this city]", "[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]", "Provides [1] [Amber]"],
 			"requiredTech": "Mathematics"
-	
+		},
 		//Judea
 		{
 			"name": "Herod's Temple",
@@ -716,19 +365,6 @@
 				"[+100]% Natural religion spread [in this city]", "Only available <when religion is enabled>", "Can only be built <in [Holy] cities>"],
 			"requiredTech": "Masonry",
 			"isNationalWonder": true
-		},
-		//Kingdom of Israel
-		{
-			"name": "Synagogue",
-			"uniqueTo": "The Kingdom of Israel",
-			"replaces": "Library",
-			"hurryCostModifier": 25,
-			"maintenance": 1,
-			"specialistSlots": {"Priest": 2},
-			"uniques": ["[+1 Science] per [2] population [in this city]",
-			"[+1 Faith] per [4] population [in this city]",
-			"Comment [+1 [Preist Specialist] slots in this city]"],
-			"requiredTech": "Writing"
 		},
 		//The Papal States
 		{
@@ -822,21 +458,6 @@
 			"requiredTech": "Navigation"
 		},
 
-		{
-			"name": "Textile Market",
-			"uniqueTo": "Cambodia",
-			"replaces": "Factory",
-			"cost": 360,
-			"culture": 2,
-			"production": 4,
-			"percentStatBonus": {"production": 10},
-			"specialistSlots": {"Engineer": 2},
-			"requiredBuilding": "Workshop",
-			"maintenance": 0,
-			"hurryCostModifier": 0,
-			"uniques": ["Comment [Does not require [Coal]]"],
-			"requiredTech": "Industrialization"
-		},
 		
 		
 		{
