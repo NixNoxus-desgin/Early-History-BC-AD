@@ -1,30 +1,4 @@
 [
-	//Canada
-	{
-			"name": "Canada",
-			"leaderName": "Sir Wilfrid Laurier",
-			"adjective": ["Canadian"],
-			"startBias": ["Tundra", "Avoid [Desert]"],
-			"preferredVictoryType": "Cultural",
-			"declaringWar": "Regrettably, the time for diplomacy is too little too late. With a heavy heart, we have no choice but to declare war.",
-			"attacked": "Je te jure, tu vas le regretter!",
-			"defeated": "Treat my people well, for they are good.",
-			"introduction": "Greetings from the great Canadian north! Let us create a future of mutual prosperity and understanding.",
-			"neutralHello": "Bonjour!",
-			"hateHello": "May you reap what you have sown.",
-			"tradeRequest": "Canada greets you with the promise of trade.",
-			"outerColor": [250, 240, 202],
-			"innerColor": [255, 0, 0],
-	                "favoredReligion": "Catholicism",
-			"uniqueName": "The Great White North",
-			"uniques": ["[+1 Production] from every [Tundra]",
-			"[+1 Production] from every [Snow]",
-			"[+2 Culture, +1 Gold] from every [Lakes]",
-			"[-22]% Culture cost of natural border growth [in all cities]"],
-
-			"spyNames": ["Olivia", "Noah", "Liam", "Emma", "Isabelle", "Theodore", "Leo", "Amelia", "Jack", "Julian"],
-			"cities": ["Ottawa", "Toronto", "Montreal", "Vancouver", "Calgary", "Edmonton", "Winnipeg", "Quebec City", "Hamilton", "London", "Victoria", "Halifax", "Oshawa", "Windsor", "Saskatoon", "Regina", "St. John's", "Barrie", "Kelowna", "Guelph"]
-	},
 	//Luxembourg
 	{
 			"name": "Luxembourg",
