@@ -1,0 +1,307 @@
+game.png
+size:2048,2048
+repeat:none
+Alloy Mill
+bounds:1556,1298,250,250
+Anarchist Ruling
+bounds:8,524,250,250
+Arena
+bounds:1298,524,250,250
+Armour Workshop
+bounds:782,8,250,250
+Art Gallery
+bounds:1298,1556,250,250
+Atomic Era Start
+bounds:1298,782,250,250
+Bakery
+bounds:524,1040,250,250
+Bio Lab
+bounds:1298,266,250,250
+Brewery
+bounds:1040,8,250,250
+Bunker
+bounds:1556,1556,250,250
+Business Expansion
+bounds:1556,1040,250,250
+Cellular Network
+bounds:8,1298,250,250
+Chartered Company
+bounds:1556,524,250,250
+Citadel
+bounds:782,1556,250,250
+Clinic
+bounds:524,524,250,250
+Drone Factory
+bounds:8,1556,250,250
+Electronic Factory
+bounds:266,266,250,250
+Export Firm
+bounds:1040,1298,250,250
+Fishing Port
+bounds:1556,782,250,250
+Forum
+bounds:782,524,250,250
+Furniture Workshop
+bounds:524,782,250,250
+Government Complex
+bounds:8,8,250,250
+Guild Complex
+bounds:8,1040,250,250
+Holiday Resort
+bounds:1298,1298,250,250
+Hunter's Hut
+bounds:266,782,250,250
+Igloo
+bounds:266,8,250,250
+Livestock Market
+bounds:266,1298,250,250
+Machine Tool Factory
+bounds:524,8,250,250
+Medical School
+bounds:782,1298,250,250
+Medieval Era Start
+bounds:1040,524,250,250
+Mercenary Office
+bounds:524,1556,250,250
+Military Factory Complex
+bounds:1556,8,250,250
+Port
+bounds:782,782,250,250
+Printing Factory
+bounds:1040,1040,250,250
+Public 3D Printer
+bounds:8,266,250,250
+Public School
+bounds:782,266,250,250
+Recycling Center
+bounds:266,1040,250,250
+Recycling Factory
+bounds:8,782,250,250
+Renaissance Era Start
+bounds:1298,1040,250,250
+Sewage Treatment Plant
+bounds:266,524,250,250
+Soda Factory
+bounds:1040,1556,250,250
+Spacecraft Factory
+bounds:266,1556,250,250
+Studios
+bounds:1298,8,250,250
+Tea House
+bounds:524,1298,250,250
+Telephone Circuit
+bounds:782,1040,250,250
+Town Hall
+bounds:1040,266,250,250
+Town Square
+bounds:524,266,250,250
+WAN Support
+bounds:1556,266,250,250
+Weapon Parts Factory
+bounds:1040,782,250,250
+
+game2.png
+size:2048,2048
+repeat:none
+Agricultural Machinery Workshop
+bounds:1040,782,250,250
+Agricultural Water Storage
+bounds:266,1298,250,250
+Aircraft Factory
+bounds:8,1556,250,250
+Altar
+bounds:1298,1040,250,250
+Arms Testing Ground
+bounds:1556,266,250,250
+Barrack
+bounds:8,8,250,250
+Carbon Capture
+bounds:8,266,250,250
+Cement Work
+bounds:524,1556,250,250
+Chaple
+bounds:782,1040,250,250
+Chapel
+bounds:782,1040,250,250
+Chemical plant
+bounds:266,8,250,250
+Chemistry Lab
+bounds:1298,524,250,250
+Civilian Blacksmith
+bounds:782,266,250,250
+Civilian Factory Complex
+bounds:1556,782,250,250
+Commercial Area
+bounds:1298,782,250,250
+Construction Vehicle Factory
+bounds:1040,1040,250,250
+Drone Control Centre
+bounds:524,8,250,250
+E-commerce Firm Complex
+bounds:1298,1298,250,250
+Fertilizer Factory
+bounds:266,1556,250,250
+Firearms Workshop
+bounds:266,266,250,250
+Furniture Factory
+bounds:1556,1040,250,250
+Future Era Start
+bounds:1298,8,250,250
+Industrial Era Start
+bounds:524,1040,250,250
+Information Era Start
+bounds:266,524,250,250
+Infrastructure Expansion
+bounds:524,266,250,250
+Intergration
+bounds:782,8,250,250
+Irrigation System
+bounds:1298,266,250,250
+Jewellery Workshop
+bounds:1040,1556,250,250
+Jousing Place
+bounds:1556,8,250,250
+Martine Expansion
+bounds:782,1556,250,250
+Military Port
+bounds:8,782,250,250
+Mobilization Department
+bounds:782,524,250,250
+Modern Era Start
+bounds:1556,1298,250,250
+National Reserve
+bounds:1556,524,250,250
+Oil Refinery
+bounds:1040,1298,250,250
+Partical Acclerator
+bounds:524,782,250,250
+Physic Lab
+bounds:1556,1556,250,250
+Police station
+bounds:8,524,250,250
+Pottery Workshop
+bounds:524,1298,250,250
+Primitive Property Sector
+bounds:1040,266,250,250
+Private School
+bounds:1040,524,250,250
+Road Network
+bounds:8,1298,250,250
+Sewer
+bounds:1040,8,250,250
+Shaman's Hut
+bounds:524,524,250,250
+Synthetic Oil Plant
+bounds:782,782,250,250
+Textile Workshop
+bounds:8,1040,250,250
+Train Station
+bounds:266,782,250,250
+Video Game Industry
+bounds:782,1298,250,250
+Watermill
+bounds:266,1040,250,250
+Weapon Parts Workshop
+bounds:1298,1556,250,250
+
+game3.png
+size:2048,2048
+repeat:none
+0_Template_Expansion
+bounds:266,8,250,250
+Agricultural Machinery Factory
+bounds:782,8,250,250
+Airport
+bounds:524,524,250,250
+Aluminium Mill
+bounds:8,1298,250,250
+Bastion
+bounds:266,1298,250,250
+Cafe
+bounds:782,524,250,250
+Cannery
+bounds:1040,1040,250,250
+Car Factory
+bounds:8,1556,250,250
+City Hall
+bounds:1040,266,250,250
+Civil Expansion
+bounds:8,782,250,250
+Coal Plant
+bounds:1040,782,250,250
+Commune
+bounds:1298,266,250,250
+Crops Market
+bounds:1298,1556,250,250
+Deep Sea Fish(Stored)
+bounds:1298,1040,250,250
+Dry Dock
+bounds:782,782,250,250
+Examination Hall
+bounds:1298,1298,250,250
+Foundry
+bounds:782,266,250,250
+Graphene Lab
+bounds:1298,8,250,250
+Great Wall Pass
+bounds:266,1556,250,250
+Greenhouse
+bounds:524,266,250,250
+Healer's Hut
+bounds:1556,1298,250,250
+Highway Network
+bounds:8,1040,250,250
+Hospital
+bounds:524,1556,250,250
+Imperial Era Start
+bounds:266,1040,250,250
+Light Industry Expansion
+bounds:782,1298,250,250
+Microchip Factory
+bounds:266,524,250,250
+Military Blacksmith
+bounds:8,524,250,250
+Military Expansion
+bounds:524,1040,250,250
+Military Stable
+bounds:782,1040,250,250
+Military Vehicle Factory
+bounds:524,1298,250,250
+Monument
+bounds:1556,8,250,250
+Naval Dockyard
+bounds:1040,524,250,250
+Newspaper Agency
+bounds:1298,524,250,250
+Nutripaste Factory
+bounds:1556,266,250,250
+Personal Device Factory
+bounds:524,782,250,250
+Plastic Factory
+bounds:1298,782,250,250
+Power Grid
+bounds:782,1556,250,250
+Printing House
+bounds:1040,1298,250,250
+Property Sector
+bounds:1556,1040,250,250
+Religious School
+bounds:1556,524,250,250
+Smeltry
+bounds:1040,8,250,250
+Tarvern
+bounds:8,8,250,250
+Technical School
+bounds:1040,1556,250,250
+Textile Factory
+bounds:266,782,250,250
+Tools Factory
+bounds:1556,1556,250,250
+Trading Port
+bounds:8,266,250,250
+Trading Post
+bounds:1556,782,250,250
+Watch Tower
+bounds:266,266,250,250
+Well
+bounds:524,8,250,250
