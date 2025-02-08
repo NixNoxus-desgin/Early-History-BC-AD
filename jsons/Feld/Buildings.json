@@ -1,11 +1,10 @@
 [
-///Bonus 
 	{
 		"name": "Aport production",
 		"food": 2,
 		"cost": 75,
 		"uniques": ["Only available <with [Aport production res]>", "Only available <after discovering [Calendar]>",
-			"Provides [1] [Aport]"],
+			"Provides [1] [Aport]"]
 	},
 	{
 		"name": "Belgadian Citadel",
@@ -17,7 +16,7 @@
 		"cityHealth": 75,
 		"uniques": ["Only available <with [Belgadian Citadel res]>", "Only available <after discovering [Chivalry]>", 
 			"Must be on [River]", "Destroyed when the city is captured", "Only available <in cities without a [Castle]>",
-			"Only available <in cities without a [Imperialist Citadel]>", "Only available <in cities without a [Sforza's Castle]>"],
+			"Only available <in cities without a [Imperialist Citadel]>", "Only available <in cities without a [Sforza's Castle]>"]
 	},
 	{
 		"name": "Sforza's Castle",
@@ -26,11 +25,11 @@
 		"requiredBuilding": "Walls",
 		"cityStrength": 7,
 		"cityHealth": 25,
-		"replaces": "Castle"
+		"replaces": "Castle",
 		"cost": 160,
 		"uniques": ["Only available <with [Sforza's Castle res]>", "Only available <after discovering [Chivalry]>",
 			"Destroyed when the city is captured", "Only available <in cities without a [Castle]>",
-			"Only available <in cities without a [Imperialist Citadel]>", "Only available <in cities without a [Belgadian Citadel]>"],
+			"Only available <in cities without a [Imperialist Citadel]>", "Only available <in cities without a [Belgadian Citadel]>"]
 	},
 	{
 		"name": "Castle",
@@ -52,15 +51,15 @@
 		"cityHealth": 50,
 		"uniques": ["Only available <with [Imperialist Citadel res]>", "Only available <after discovering [Chivalry]>", 
 			"Destroyed when the city is captured", "Only available <in cities without a [Castle]>", 
-			"Only available <in cities without a [Belgadian Citadel]>", "Only available <in cities without a [Sforza's Castle]>"],
+			"Only available <in cities without a [Belgadian Citadel]>", "Only available <in cities without a [Sforza's Castle]>"]
 	},
 	{
-		"name": "Purple Glass production"
+		"name": "Purple Glass production",
 		"happiness": 1,
 		"gold": 2,
 		"cost": 75,
 		"uniques": ["Only available <with [Purple Glass production res]>", "Only available <after discovering [Pottery]>",
-			"Provides [1] [Purple Glass]"],
+			"Provides [1] [Purple Glass]"]
 	},
 	{
 		"name": "Castle-Wall",
@@ -68,14 +67,14 @@
 		"requiredBuilding": "Walls",
 		"cost": 175,
 		"uniques": ["Only available <with [Castle-Wall res]>", "Only available <after discovering [Engineering]>",
-			"Gain a free [Walls] [in all cities]"],
+			"Gain a free [Walls] [in all cities]"]
 	},
 	{
-		"name": "Castles System"
-		"isNationalWonder": true,,
+		"name": "Castles System",
+		"isNationalWonder": true,
 		"cost": 300,
 		"uniques": ["Only available <with [Castles System res]>", "Only available <after discovering [Chivalry]>",
-			"Gain a free [Castle] [in all cities]", "Requires a [Walls] in all cities"],
+			"Gain a free [Castle] [in all cities]", "Requires a [Walls] in all cities"]
 	},
 	{
 		"name": "Temple",
@@ -111,7 +110,7 @@
 			"Only available <with [Sinagoga res]>", "Only available <after discovering [Philosophy]>",
 			"Only available <in cities without a [Temple]>", "Only available <in cities without a [Zigguratt]>",
 			"Only available <in cities without a [Sapotec's Temple]>"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "Zigguratt",
@@ -125,7 +124,7 @@
 			"Only available <in cities without a [Temple]>", 
 			"Only available <in cities without a [Sinagoga]>", "[+1 Faith] from [River] tiles [in this city]",
 			"Only available <in cities without a [Sapotec's Temple]>"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "Atomium",
@@ -136,7 +135,7 @@
 			"[+2 Science] from [Salt] tiles [in this city]", "[+2 Science] from [Iron] tiles [in this city]",
 			"[+2 Science] from [Gems] tiles [in this city]", "[+2 Science] from [Coal] tiles [in this city]",
 			"[+2 Science] from [Aluminum] tiles [in this city]"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "Great School of Arts",
@@ -144,7 +143,7 @@
 		"isNationalWonder": true,
 		"cost": 400,
 		"uniques": ["Only available <with [Great School of Arts res]>", "Only available <after discovering [Acoustics]>",
-			"Provides a [Opera House] in your first [4] cities for free"],
+			"Provides a [Opera House] in your first [4] cities for free"]
 	},
 	{
 		"name": "Dar-ul-Aman",
@@ -152,19 +151,19 @@
 		"isNationalWonder": true,
 		"cost": 160,
 		"uniques": ["Only available <with [Dar-ul-Aman res]>", "Only available <after discovering [Masonry]>",
-			"[+2 Gold, +2 Production, +1 Culture] [in all cities]"],
+			"[+2 Gold, +2 Production, +1 Culture] [in all cities]"]
 	},
 	{
-		"name": "Batu Caves"
+		"name": "Batu Caves",
 		"percentStatBonus": {"production": 5},
 		"faith": 3,
-		"replaces": "Garden"
+		"replaces": "Garden",
 		"production": 2,
 		"cost": 120,
 		"uniques": ["Only available <with [Batu Caves res]>", "Only available <after discovering [Theology]>",
 			"[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]",
 			"Only available <in cities without a [Garden]>"],
-		"maintenance": 1,
+		"maintenance": 1
 	},
 	{
 		"name": "Garden",
@@ -182,7 +181,7 @@
 		"cost": 600,
 		"uniques": ["Only available <with [Museum of Civilizations res]>", "Only available <after discovering [Archaeology]>",
 			"[+1 Culture] from every [Aqueduct]", "[+1 Culture] from every [Colosseum]",
-			"[+1 Culture] from every [Monument]", "[+1 Culture] from every [Library]"],
+			"[+1 Culture] from every [Monument]", "[+1 Culture] from every [Library]"]
 	},
 	{
 		"name": "Museum of Tomorrow",
@@ -190,7 +189,7 @@
 		"isNationalWonder": true,
 		"cost": 600,
 		"uniques": ["Only available <with [Museum of Tomorrow res]>", "Only available <after discovering [Archaeology]>",
-			"[+10]% [Science] [in all cities]", "Science gained from research agreements [+33]%"],
+			"[+10]% [Science] [in all cities]", "Science gained from research agreements [+33]%"]
 	},
 	{
 		"name": "Ickanda",
@@ -200,7 +199,7 @@
 			"All newly-trained [Land] units [in this city] receive the [Great Generals I] promotion",
 			"Only available <in cities without a [Barracks]>", "Destroyed when the city is captured",
 			"New [Military] units start with [15] Experience [in this city]"],
-		"maintenance": 1,
+		"maintenance": 1
 	},
 	{
 		"name": "Barracks",
@@ -217,7 +216,7 @@
                 "cost": 100,
                 "uniques": ["Only available <with [Finnish Sauna res]>", "Only available <after discovering [Engineering]>",
                         "[+1 Food] from [Tundra] tiles [in this city]"],
-                "maintenance": 1,
+                "maintenance": 1
 	},
 	{
 		"name": "Fillipian Harbor",
@@ -229,7 +228,7 @@
 			"Must be next to [Coast]", "[+1 Gold] from [Coast] tiles [in this city]", "[+1 Gold] from [Ocean] tiles [in this city]",
 			"Only available <in cities without a [Harbor]>", "Only available <in cities without a [Genoese Port]>",
 			"Only available <in cities without a [Venetian Arsenal]>", "Only available <in cities without a [Entrepot]>"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "Venetian Arsenal",
@@ -240,7 +239,7 @@
 			"Must be next to [Coast]", "Only available <in cities without a [Harbor]>", 
 			"Only available <in cities without a [Fillipian Harbor]>", "Only available <in cities without a [Genoese Port]>",
 			"Only available <in cities without a [Entrepot]>", "New [Water] units start with [20] Experience [in this city]"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "Entrepot",
@@ -251,7 +250,7 @@
 			"Must be next to [Coast]", "Only available <in cities without a [Harbor]>", 
 			"Only available <in cities without a [Fillipian Harbor]>", "Only available <in cities without a [Genoese Port]>", "Only available <in cities without a [Venetian Arsenal]>",
 			"[+2 Gold] from [Luxury resource] tiles [in this city]"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "Harbor",
@@ -273,14 +272,14 @@
 			"Must be next to [Coast]", "Only available <in cities without a [Harbor]>", 
 			"Only available <in cities without a [Fillipian Harbor]>", "Only available <in cities without a [Venetian Arsenal]>",
 			"Only available <in cities without a [Entrepot]>", "[+25]% Production when constructing [Water] units [in this city]"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "Sydney's Bridges",
 		"isNationalWonder": true,
 		"cost": 500,
 		"uniques": ["Only available <with [Sydney's Bridges res]>", "Only available <after discovering [Navigation]>",
-			"Must be next to [Coast]", "All newly-trained [Land] units [in this city] receive the [Sydney's Bridges prom] promotion"],
+			"Must be next to [Coast]", "All newly-trained [Land] units [in this city] receive the [Sydney's Bridges prom] promotion"]
 	},
 	{
 		"name": "Grenville-Iland",
@@ -288,28 +287,28 @@
 		"cost": 160,
 		"uniques": ["Only available <with [Grenville-Iland res]>", "Only available <after discovering [Compass]>",
 			"Must be next to [Coast]", "[+1 Culture] from [Coast] tiles [in this city]"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "Diamond production",
 		"production": 3,
 		"cost": 75,
 		"uniques": ["Only available <with [Diamond production res]>", "Only available <after discovering [Mining]>",
-			"Provides [1] [Gems]"],
+			"Provides [1] [Gems]"]
 	},
 	{
 		"name": "Boudhanath Stupa",
 		"isNationalWonder": true,
 		"cost": 150,
 		"uniques": ["Only available <with [Boudhanath Stupa res]>", "Only available <after discovering [Theology]>",
-			"Provides a [Temple] in your first [4] cities for free", "[+1 Faith] from every [Shrine]"],
+			"Provides a [Temple] in your first [4] cities for free", "[+1 Faith] from every [Shrine]"]
 	},
 	{
 		"name": "Island Tourism",
 		"cost": 160,
 		"uniques": ["Only available <with [Island Tourism res]>", "Only available <after discovering [Compass]>",
 			"[+2 Gold] from [Land] tiles [in this city] <with [4] to [6] neighboring [Coast] tiles>", "[+1 Gold] from [Atoll] tiles [in this city]"],
-		"maintenance": 1,
+		"maintenance": 1
 	},
 	{
 		"name": "Mint",
@@ -357,11 +356,10 @@
 	},
 	{
 		"name": "Trading Port",
-		"cost": 50,
 		"cost": 75,
 		"maintenance": 1,
 		"uniques": ["Only available <with [Trading Port res]>", "Only available <in cities with a [Lighthouse]>", "Only available <after discovering [Optics]>",
-                "Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]"],
+                "Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]"]
 	},
 	{		
 		"name": "Market",
@@ -380,7 +378,7 @@
 		"cost": 100,
 		"percentStatBonus": {"gold": 40},
 		"uniques": ["Only available <in cities without a [Market]>",
-                "Only available <after discovering [Currency]>","Only available <with [Caravan Camp res]>"],
+                "Only available <after discovering [Currency]>","Only available <with [Caravan Camp res]>"]
 	},
 	{
 		"name": "Public School",
@@ -391,7 +389,7 @@
 		"cost": 300,
 		"uniques": ["[+1 Science] per [2] population [in this city]","Only available <in cities without a [Monastic School]>"],
 		"requiredTech": "Scientific Theory"
-	}
+	},
 	{
 		"name": "Monastic School",
 		"replaces": "Public School",
@@ -402,14 +400,14 @@
 		"cost": 300,
 		"uniques": ["[+1 Science] per [2] population [in this city]","[+1 Faith] per [2] population [in this city]",
 			"Only available <in cities without a [Public School]>", 
-			"Only available <after discovering [Scientific Theory]>","Only available <with [Monastic School res]>"],
+			"Only available <after discovering [Scientific Theory]>","Only available <with [Monastic School res]>"]
 	},
 	{
 		"name": "Temple of the Tooth",
 		"isNationalWonder": true,
 		"cost": 250,
 		"uniques": ["Only available <with [Temple of the Tooth res]>", "Only available <after discovering [Theology]>",
-					"Free Great Person"],
+					"Free Great Person"]
 	},
 	{
 		"name": "40 judges Courthouse",
@@ -417,7 +415,7 @@
 		"cost": 100,
 		"uniques": ["Only available <with [40 judges Courthouse res]>", "Only available <after discovering [Mathematics]>",
 			"[+1 Happiness] per [5] population [in this city]", "[+1 Gold] per [3] population [in this city]"],
-		"maintenance": 1,
+		"maintenance": 1
 	},
 	{
 		"name": "Neptun Statue",
@@ -426,7 +424,7 @@
 		"science": 2,
 		"cost": 100,
 		"uniques": ["Only available <with [Neptun Statue res]>", "Only available <after discovering [Construction]>"],
-		"maintenance": 1,
+		"maintenance": 1
 	},
 	{
 		"name": "Merdese",
@@ -438,7 +436,7 @@
 		"specialistSlots": {"Scientist": 2},
 		"uniques": ["[+2 Science] from [Jungle] tiles [in this city]", "Only available <in cities without a [University]>", 
 			"Only available <with [Merdese res]>", "Only available <after discovering [Education]>"],
-		"maintenance": 2,
+		"maintenance": 2
 	},
 	{
 		"name": "University",
@@ -474,8 +472,8 @@
 		"cost": 75,
 		"uniques": ["Only available <with [Lion Gate res]>", "Only available <after discovering [Masonry]>",
 			"Destroyed when the city is captured", "Only available <in cities without a [Walls]>", "[+2 Culture] <with [Marble]>"]
-	}
-	//Bonus 
+	},
+	///Bonus
 	{
 		"name": "Mediterranean Lords",
 		"uniqueTo": "Phoenician",
@@ -490,13 +488,13 @@
 		"uniqueTo": "Sumer",
 		"cost": -1,
 		"food": 2,
-		"uniques": ["Must be next to [Fresh water]","Will not be displayed in Civilopedia"],
+		"uniques": ["Must be next to [Fresh water]","Will not be displayed in Civilopedia"]
 	},
 	{
 		"name": "Free Terracotta",
 		"uniqueTo": "Nok",
 		"cost": -1,
-		"uniques": ["Provides [1] [Terracotta]","Will not be displayed in Civilopedia"],
+		"uniques": ["Provides [1] [Terracotta]","Will not be displayed in Civilopedia"]
 	},
 	{
 		"name": "Myrrh",
@@ -505,7 +503,7 @@
 		"requiredResource": "Incense",
 		"requiredNearbyImprovedResources": ["Incense"],
 		"cannotBeBuiltWith": "Frankincense",
-		"uniques": ["Provides [1] [Myrrh]","Will not be displayed in Civilopedia","Not displayed as an available construction without [Incense]"],
+		"uniques": ["Provides [1] [Myrrh]","Will not be displayed in Civilopedia","Not displayed as an available construction without [Incense]"]
 	},
 	{
 		"name": "Frankincense",
@@ -514,7 +512,7 @@
 		"requiredResource": "Incense",
 		"requiredNearbyImprovedResources": ["Incense"],
 		"cannotBeBuiltWith": "Myrrh",
-		"uniques": ["Provides [1] [Frankincense]","Will not be displayed in Civilopedia","Not displayed as an available construction without [Incense]"],
+		"uniques": ["Provides [1] [Frankincense]","Will not be displayed in Civilopedia","Not displayed as an available construction without [Incense]"]
 	},
 	{
 		"name": "Great Person Bonus1",
@@ -677,7 +675,7 @@
 		"specialistSlots": {"Scientist": 1},
 		"cost":120,
 		"hurryCostModifier": 25,
-		"requiredBuilding": "Monument"
+		"requiredBuilding": "Monument",
 		"requiredTech": "Construction"
 	},
 	{
@@ -698,7 +696,7 @@
 		"name": "Free Worker (Ability)",
 		"uniqueTo": "Epirus", 
 		"cost": -1,
-		"uniques": ["Unsellable","Can only be built in annexed cities","Will not be displayed in Civilopedia","Free [Worker] appears"],
+		"uniques": ["Unsellable","Can only be built in annexed cities","Will not be displayed in Civilopedia","Free [Worker] appears"]
 	},
 	{
 		"name": "Khachkar",
@@ -716,7 +714,7 @@
 		"specialistSlots": {"Merchant": 1},
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"gold": 25},
-		"uniques": ["+[33]% production when building [Worker] in this city","[+2 Gold] from [Plantation] tiles in this city"]
+		"uniques": ["+[33]% production when building [Worker] in this city","[+2 Gold] from [Plantation] tiles in this city"],
 		"requiredTech": "Currency"
 	},
 	{
@@ -724,7 +722,7 @@
 		"uniqueTo": "Macrobia", 
 		"cost": -1,
 		"percentStatBonus": {"gold":15, "culture":15},
-		"uniques": ["Can only be built in annexed cities","Will not be displayed in Civilopedia"],
+		"uniques": ["Can only be built in annexed cities","Will not be displayed in Civilopedia"]
 	},
 /// Agricultural
 	{
@@ -848,7 +846,7 @@
 	{
 		"name": "Bishop's Storehouse",
 		"replaces": "Granary",
-		"unique to": "-"
+		"unique to": "-",
 		"cost": 10,
 		"hurryCostModifier": -25,
 		"uniques": ["[20]% Food is carried over after population increases [in this city]",
@@ -885,7 +883,7 @@
 		"food": 1,
 		"uniques": ["Infrastructure",
 			"Consumes [1] [Wood]","Consumes [2] [Boards]","Consumes [5] [Bricks]",
-                        "Provides [2] [Water]"]
+                        "Provides [2] [Water]"],
 		"requiredTech": "Masonry"
 	},
 	{
@@ -1006,13 +1004,13 @@
 		"faith": 1,
 		"production": 1,
 		"hurryCostModifier": 50,
-		"requiredTech": "Sailing"
+		"requiredTech": "Sailing",
                 "requiredBuilding": "Fishing Place"
 	},
 	{
 		"name": "Phoenician Port",
 		"replaces": "Harbor",
-		"uniqueTo": "-"
+		"uniqueTo": "-",
 		"cost": 75,
 		"maintenance": 0,
 		"hurryCostModifier": 25,
@@ -1114,8 +1112,8 @@
 			"[Water] Units adjacent to this city heal [+10] HP per turn when healing",
 			"Must be next to [Coast]","[+25]% Production when constructing [Civilian Water] units [in this city]",
 		        "[+15]% Production when constructing [Ranged Combat Ship] units [in this city] <before the [Industrial era]>",
-		        "[+1] Unit Supply"]
-		"requiredTech": "Construction",
+		        "[+1] Unit Supply"],
+		"requiredTech": "Construction"
 	},
 	{
 		"name": "Advanced Port",
@@ -1206,7 +1204,7 @@
 		"requiredTech": "Currency"
 	},
 	{
-		"name": "Charocoal burning"
+		"name": "Charocoal burning",
 		"maintenance": 1,
 		"cost": 50,
 		"production": 1,
@@ -1219,13 +1217,12 @@
 		"name": "Wood Forge",
 		"maintenance": 3,
 		"hurryCostModifier": 25,
-		"maintenance": 3,
 		"happiness": 1,
 		"specialistSlots": {"Engineer": 1},
 		"uniques": ["Light Industry",
                         "Provides [2] [Wood]",
 			"[+1 Gold] from [Jungle] tiles [in this city]",
-			"[+2 Gold] from [Hard Wood] tiles [in this city]"]
+			"[+2 Gold] from [Hard Wood] tiles [in this city]"],
                 "requiredTech": "Carpentry"
 	},
 	{
@@ -1266,7 +1263,7 @@
 		"requiredTech": "Trapping"
 	},
 	{
-		"name": "Hunting lodge"
+		"name": "Hunting lodge",
 		"food": 2,
                 "maintenance": 2,
 		"cost": 20,     
@@ -1300,17 +1297,17 @@
 		"uniques": ["Light Industry",
 			"Must be next to [Coast]","Must be next to [Lake]", "[+1 Food from [Lakes] tiles [in this city]",
                         "[+1 Food] from [Coastal Fish] tiles [in this city]"],
-                "requiredBuilding": "Hunt Place"
+                "requiredBuilding": "Hunt Place",
 		"requiredTech": "Hunting and Fishing"
 	},
 	{
 		"name": "Coelacanth Fishing",
                 "maintenance": 1,
-		"hurryCostModifier": 50
+		"hurryCostModifier": 50,
 		"uniques": ["Light Industry",
 			"Must be next to [Coast]","[+1 Food] from [Coastal Fish] tiles [in this city]",
 			"[+1 Production] <in cities with a [Fishing ports]>"],
-                "requiredBuilding": "Raft Dock"
+                "requiredBuilding": "Raft Dock",
 		"requiredTech": "Hunting and Fishing"
 	},
 	{
@@ -1453,7 +1450,7 @@
 		"uniques": ["Light Industry",
 			"Consumes [2] [Stone]",
 			"Consumes [2] [Wood]","Consumes [1] [Pot]",
-			"[+1 Production] <in cities with a [Guild Complex]>"]
+			"[+1 Production] <in cities with a [Guild Complex]>"],
 		"requiredBuilding": "Slaughterhouse",
 		"requiredTech": "Animal Husbandry"
 	},
@@ -1501,7 +1498,7 @@
 		"name": "Crop Over Ability",
 		"cost": 1,
 		"uniqueTo": "Barbados",
-		"uniques": ["Cannot be purchased", "Destroyed when the city is captured", "Will not be displayed in Civilopedia", "[+25]% [Food] [in all cities] <during We Love The King Day>", "[+25]% [Gold] [in all cities] <during We Love The King Day>"],
+		"uniques": ["Cannot be purchased", "Destroyed when the city is captured", "Will not be displayed in Civilopedia", "[+25]% [Food] [in all cities] <during We Love The King Day>", "[+25]% [Gold] [in all cities] <during We Love The King Day>"]
 	},
 	{
 		"name": "Rum Distillery",
@@ -1534,7 +1531,8 @@
 		"name": "Cognac Distillery",
 		"cost": 145,
 		"culture": 1,
-		"maintenance": 1,
+		"maintenance": 2,
+		"hurryCostModifier": 25,
                 "requiredBuilding": "-",
 		"requiredNearbyImprovedResources": ["Grape"],
 		 "uniques": ["Only available <in cities without a [Rum Distillery]>", "Only available <in cities without a [Whisky Distillery]>", "Only available <in cities without a [Vodka Distillery]>", "Provides [1] [Cognac]"],
@@ -1562,7 +1560,7 @@
 	        "specialistSlots": {"Engineer": 1},
 		"production": 2,
 	        "percentStatBonus": {"production": 10},
-		"uniques": ["Only available <after adopting [Beautiful World]>","[+1 Culture] from every [World Wonder]"]
+		"uniques": ["Only available <after adopting [Beautiful World]>","[+1 Culture] from every [World Wonder]"],
 		"requiredTech": "Architecture"
 	},
 	{
@@ -1793,7 +1791,7 @@
 	},
 	{
 		"name": "Premium Seafood Resturant",
-		"uniqueTo": "Solomon Islands",
+		"uniqueTo": "-",
 		"cost": -1,
 		"cannotBeBuiltWith": "Shellfish Fertilizer Manufactory",
 		"uniques": ["Consumes [1] [Reef Product]", "Provides [1] [Premium Seafood]", "Unsellable", "Only available <with [Reef Product]>","Destroyed when the city is captured"],
@@ -1801,7 +1799,7 @@
 	},
 	{
 		"name": "Shellfish Fertilizer Manufactory",
-		"uniqueTo": "Solomon Islands",
+		"uniqueTo": "-",
 		"cost": -1,
 		"cannotBeBuiltWith": "Premium Seafood Resturant",
 		"uniques": ["Consumes [1] [Reef Product]", "Provides [1] [Shellfish Fertilizer]", "Unsellable", "Only available <with [Reef Product]>","Destroyed when the city is captured"],
@@ -2191,7 +2189,7 @@
 	{
 		"name": "Embassy",
 		"replaces": "Council",
-		"unique to": "-"
+		"unique to": "-",
 		"cost": 100,
 		"requiredTech": "Civil Service",
 		"uniques": ["[+10]% growth [in all cities]",
@@ -2374,7 +2372,7 @@
 			"Can only be built <in [Capital] cities>",
 			"Only available <in cities without a [Trustees' Committee]>",
 			"Destroyed when the city is captured"]
-	}
+	},
         {
 		"name": "Citizens' Assembly",	
 		"replaces": "Congress",
@@ -2796,7 +2794,7 @@
 			"Only available <in cities without a [Listening Post]>",
 			"Unsellable",
 			"Destroyed when the city is captured"],
-		"requiredTech": "Construction"
+		"requiredTech": "Construction",
 		"quote": "'Er, der in göttlicher Gestalt war, hielt es nicht für einen Raub, Gott gleich zu sein, sondern entäußerte sich selbst und nahm Knechtsgestalt an, ward den Menschen gleich und der Erscheinung nach als Mensch erkannt. Er erniedrigte sich selbst und ward gehorsam bis zum Tode, ja zum Tode am Kreuz. Philipper 2:6-8'"
 	},
 	{
@@ -2822,7 +2820,7 @@
 	},
 	{
 		"name": "Statue of Helios",
-		"uniqueTo": "Greek"
+		"uniqueTo": "Greek",
 		"cost": 85,
 		"hurryCostModifier": 25,
 		"maintenance": 1,
@@ -3170,17 +3168,17 @@
 	{
 		"name": "Synagogue",
 		"replaces": "Temple",
-		"uniqueTo": "Israel", 
+		"uniqueTo": "The Kingdom of Israel",
 		"faith": 2,
 		"happiness": 1,
 		"gold": 2,
 		"cost": 100,
 		"hurryCostModifier": 25,
 		"uniques": ["Worship Place",
-			"Unbuildable","Unsellable",
-			"[+15]% Production when constructing [All] buildings [in this city]",
-		        "Hidden when religion is disabled"],
-		"requiredBuilding": "Shrine"
+			"unbuildable","Unsellable",
+			"[+15]% Production when constructing [All] buildings [in this city]","[+1 Science] per [2] population [in this city]",
+			"Comment [+1 [Priest Specialist] slots in this city]","Hidden when religion is disabled"],
+		"requiredBuilding": "Shrine",
 		"requiredTech": "Theology"
 	},
         {
@@ -3329,7 +3327,7 @@
 		"faith": 1,
 		"culture": 1,
 		"maintenance": 1,
-		"uniques": ["Worship Place","Only available <after adopting [Polytheism]>","Hidden when religion is disabled","Destroyed when the city is captured"],
+		"uniques": ["Worship Place","Hidden when religion is disabled","Destroyed when the city is captured"],
 		"requiredTech":"Calendar"
 		
 	},
@@ -3356,7 +3354,7 @@
         {
 		"name": "Sacred Cave",
 		"replaces": "Shrine",
-		"uniqueTo": "-"
+		"uniqueTo": "-",
 		"cityHealth": 50,
 		"culture": 1,
 		"faith": 1,
@@ -3395,7 +3393,7 @@
 		"maintenance": 2,
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy",
-		"uniques": ["Hidden when religion is disabled", "Destroyed when the city is captured"]
+		"uniques": ["Only available <when religion is enabled>","Destroyed when the city is captured"]
 	},
 	{
 		"name": "Chaple",
@@ -3403,7 +3401,7 @@
 		"maintenance": 1,
 		"uniques": ["Worship Place","Only available <after adopting [Monotheism]>","[+5]% Faith from [Population] [in this city] <when at war>",
 			"Hidden when religion is disabled","Destroyed when the city is captured"],
-		"requiredTech":"Calendar"
+		"requiredTech":"Calendar",
 		"quote": "'Jesus Christus ist „das Wort“ (Joh 1; Offb 19,13). In ihm hat Gott endgültig alles gesagt. Er ist die Selbstmitteilung Gottes in Person.'"
 	},
 	{
@@ -3425,7 +3423,7 @@
 		"percentStatBonus": {"culture": 5,"gold": 5},
 		
 		"uniques": ["Worship Place","Unbuildable","Hidden when religion is disabled"],
-		"requiredTech": "Theology",
+		"requiredTech": "Theology"
 	},
         {
 		"name": "Stave Church",
@@ -3434,7 +3432,7 @@
 		"faith": 2,
 		"culture": 2,
 		"requiredBuilding": "Shrine",
-		"maintenance": 2,
+		"maintenance": 3,
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy",
 		"uniques": ["Worship Place",
@@ -3476,7 +3474,7 @@
 		"requiredTech": "Theology",
 		"uniques": ["Worship Place","Only available <after adopting [Testaments]>","[+15]% Natural religion spread [in this city]",
                             "[+1 Gold, +1 Faith] per [4] population [in this city]","[+10]% Faith from [Population] [in this city] <when at war>",
-                            "Hidden when religion is disabled"]
+                            "Hidden when religion is disabled"],
 		"quote": "'Lasst das Wort Christi reichlich unter euch wohnen: Lehrt und ermahnt einander in aller Weisheit; mit Psalmen, Lobgesängen und geistlichen Liedern singt Gott dankbar in euren Herzen. Selig bist du, Simon Barjona; denn nicht Fleisch und Blut haben dir das offenbart, sondern mein Vater im Himmel. Dieses Evangelium vom Reich wird in der ganzen Welt gepredigt werden zum Zeugnis für alle Nationen. (Joseph Smith – Matthäus 1:31.) Die Kirche wird nie wieder von der Erde genommen werden.'"
 	},
 	{
@@ -3488,7 +3486,7 @@
 		"uniques": ["Unbuildable","Organise Place","[+10]% Faith from [Population] [in this city] <when at war>",
 			"Hidden when religion is disabled",
                         "Destroyed when the city is captured"],
-		"requiredTech":"Theology"
+		"requiredTech":"Theology",
 		"quote": "'Gott selber lebt und ist in sich Gemeinschaft. Gemeinschaft in Liebe und Einheit. Er hat uns nach Seinem Abbild geschaffen und um als Sein Abbild zu leben, brauchen wir Gemeinschaft. 1Joh 1,3. Was wir nun selbst gesehen und gehört haben, das geben wir euch weiter, damit auch ihr mit uns im Glauben verbunden seid. So haben wir Gemeinschaft miteinander und zugleich mit Gott, dem Vater, und mit seinem Sohn Jesus Christus'"
 	},
 	{
@@ -3500,7 +3498,7 @@
 		"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Hills]"],
 		"hurryCostModifier": 25,
 		"maintenance": 2,
-		"requiredTech": "Theology"
+		"requiredTech": "Theology",
 		"quote": "'Alle Menschen aber sind Toren mit ihrer Kunst, und alle Goldschmiede stehen beschämt da mit ihren Bildern; denn ihre Götzen sind Trug und haben kein Leben. 2. Mose 20, 4f; Apostelgeschichte 17, 29; Jeremia 10, 3; 51, 17. Du sollst dir kein Kultbild machen, keine Gestalt von irgendetwas am Himmel droben, auf der Erde unten oder im Wasser unter der Erde. Dtn 5,8 '"
 	},
 	{
@@ -3515,7 +3513,7 @@
 		"uniques": ["Practice Ground","[-10]% Unhappiness from [Population] [in this city]","Provides [1] [Wine] <with [Grape]>","[+1 Gold, +1 Culture] from [Grape] tiles [in this city]",
 			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Industrial era]> <after adopting [Monastic Warrior]>",
 			"Unbuildable","Hidden when religion is disabled", "Destroyed when the city is captured"],
-		"requiredTech":"Theology"
+		"requiredTech":"Theology",
 		"quote ": "'Siehe, ich stehe vor der Tür und klopfe an. Wenn jemand meine Stimme hören wird und die Tür auftun, zu dem werde ich hineingehen und das Abendmahl mit ihm halten und er mit mir.'"
 	},
 	{
@@ -3560,28 +3558,31 @@
                 "greatPersonPoints": {"Great Prophet": 4},
                 "requiredTech": "Theology",
 		"uniques": ["Organise Place","Only available <after adopting [Proxy of the god]>","Provides [1] [Scriptures]",
-			"Hidden when religion is disabled","May choose [1] additional belief(s) of any type when [enhancing] a religion"]
+			"Hidden when religion is disabled","May choose [1] additional belief(s) of any type when [enhancing] a religion"],
 	  	"quote": "'I saw the angel in the marble and carved until I set him free.' - Michelangelo Buonarroti"
         },
         {
 		"name": "St. Peter's Basilica",
 		"uniqueTo": "Papal States",
-		"cost": 125,
+		"cost": 600,
 		"culture": 2,
 		"faith": 8,
 		"Happiness": 2,
 		"percentStatBonus":{"gold": 25},
-		"greatPersonPoints":{"Great Prophet": 2},
-		"greatPersonPoints": {"Great Artist": 2},
-		"specialistSlots":{"Governor":1},
+			"specialistSlots": {"Artist": 1},
+			"specialistSlots": {"Priest": 2},
+			"specialistSlots": {"Governor":1},
 		"uniques": ["Organise Place","Only available <after adopting [The One True God]>","[+100]% Yield from every [Holy site]",
 			"Only available <if [Cathedral] is constructed in all [non-[Puppeted]] cities>",
+			"Comment [+1 [Artist specialist] slots in this city]",
+			"Comment [+2 [Priest specialist] slots in this city]",
+			"Comment [+1 [Governor specialist] slots in this city]",
 			"Gain a free [Basilica] [in this city]","May choose [2] additional belief(s) of any type when [enhancing] a religion",
 			"Provides [1] [Scriptures]","Cost increases by [30] per owned city",
 			"[+25]% [Faith] [in all cities]","[+100]% Natural religion spread [in this city]", "Hidden when religion is disabled", 
 			"Can only be built <in [in holy cities] cities>"],
 		"requiredTech": "Theology",
-		"isNationalWonder": true
+		"isNationalWonder": true,
 		"quote": "'You are Peter and on this rock I will build my church and I will give you the keys of the kingdom of heaven. - Pope Sylvester I'"
 	},
 	{
@@ -3611,7 +3612,7 @@
 			"May choose [1] additional [Founder] beliefs when [founding] a religion",
 			"[+100]% Natural religion spread [in this city]", "Hidden when religion is disabled", "Can only be built <in [in holy cities] cities>"],
 		"requiredTech": "Theology",
-		"isNationalWonder": true
+		"isNationalWonder": true,
 		"quote": "'Man, created in God’s image, is destined to imitate His ways of mercy. He has delegated to man the power to act on his behalf. We are His representatives when we relieve suffering and bring joy.'"
 	},
 	{
@@ -3843,8 +3844,8 @@
 		"uniques": ["Educational Building",
 			"[+1 Science] from [Wine] tiles [in this city]","[+2 Science] from [Spices] tiles [in this city]",
 			"[+2 Science] from [Tea Leave] tiles [in this city]","[+2 Science] from [Herbs] tiles [in this city]",
-			"Must be next to [Forest]","Must be next to [Jungle]","All newly-trained [Military] units [in this city] receive the [Organic Remedies] promotion"]
-		"requiredTech": "Education",
+			"Must be next to [Forest]","Must be next to [Jungle]","All newly-trained [Military] units [in this city] receive the [Organic Remedies] promotion"],
+		"requiredTech": "Education"
 	},
 	{
 		"name": "Planetarium",
@@ -3931,7 +3932,7 @@
 			"[+2 Science] from [Seminary] tiles [in this city]",
 			"[+1 Science] per [3] population [in this city]"],
 		"hurryCostModifier": 25,
-		"requiredTech": "Writing"
+		"requiredTech": "Writing",
 		"quote": "'Denn alle Schrift, von Gott eingegeben, ist nütze zur Lehre, zur Zurechtweisung, zur Besserung, zur Erziehung in der Gerechtigkeit, dass der Mensch Gottes vollkommen sei, zu allem guten Werk geschickt. 2 Timotheus 3:16-17'"
 	},
 	{
@@ -3963,7 +3964,7 @@
 			"[non-air] units gain the [Morale] promotion",
 			"[+2 Science] from every [Hospital]",
 			"Cost increases by [30] per owned city"],
-		"quote": "'He who struggles is better than he who never attempts.' - Swami Vivekananda"
+		"quote": "'He who struggles is better than he who never attempts.' - Swami Vivekananda",
 		"requiredTech": "Iron Working"
 	},
 	{
@@ -4025,7 +4026,7 @@
 		"percentStatBonus": {"science": 15},
 		"uniques": ["All newly-trained [relevant] units [in this city] receive the [Shock I] promotion"],
 		"isWonder": true,
-		"requiredTech": "Chivalry",
+		"requiredTech": "Chivalry"
 	},
 	{
 		"name": "Observatory",
@@ -4067,7 +4068,7 @@
 		"specialistSlots": {"Scientist": 2},
 		"requiredBuilding": "Library",
 		"uniques": ["Gain a free [Monastery] [in this city]", "[+15]% Natural religion spread [in this city]"],
-		"requiredTech": "Education"
+		"requiredTech": "Education",
 		"quote": "'«Joh 7,16 Da sagte Jesus zu ihnen: »Ich lehre nicht meine eigenen Gedanken, sondern die Gedanken Gottes, der mich gesandt hat. Joh 7,17 Wer den Willen Gottes tun will, wird erkennen, ob meine Lehre von Gott kommt oder ob ich aus mir selbst heraus rede. «Denn meine Gedanken sind nicht eure Gedanken, und eure Wege sind nicht meine Wege, spricht der HERR. Denn wie der Himmel höher ist als die Erde, so sind meine Wege höher als eure Wege und meine Gedanken als eure Gedanken» (Jes 55,8.9). «Joh'"
 	},
 	{
@@ -4082,7 +4083,7 @@
 			"[+1 Faith, +1 Gold] <in cities with a [Cathedral]>","[+1 Faith, +1 Production] <in cities with a [Monastery]>",
 			"All newly-trained [{Missionary} {Land}] units [in cities following this religion] receive the [Evangelism] promotion <before the [Industrial era]> <after adopting [In Gods Name]>",
 			"Unbuildable", "Destroyed when the city is captured",
-			"Hidden when religion is disabled"]
+			"Hidden when religion is disabled"],
 		"quote": "'Dem HERRN, eurem Gott, sollt ihr folgen und ihn fürchten und seine Gebote halten und seiner Stimme gehorchen und ihm dienen und ihm anhangen. 5 Mose 13:5'"
 	},
 	{
@@ -4098,7 +4099,7 @@
 			"[+2 Faith] from every [Scientist] <in this city>",
 			"[+1 Happiness] [in this city] <after adopting [Reformation]>",
 			"Consumes [1] [Slaves]", "Only available <with [Slaves]>", "Unsellable"],
-		"requiredTech": "Education"
+		"requiredTech": "Education",
 		"quote": "'Einer mag überwältigt werden, aber zwei können widerstehen, und eine dreifache Schnur reißt nicht leicht entzwei. Prediger 4:12'"
 	},
 	{
@@ -4119,8 +4120,8 @@
 			"Consumes [1] [Slaves]",
 			"Only available <before adopting [Reformation]>",
 			"Only available <with [Slaves]>", "Unsellable"],
-		"requiredTech": "Education"
-		"quote": "'Du sollst den Namen des HERRN, deines Gottes, nicht missbrauchen; denn der HERR wird den nicht ungestraft lassen, der seinen Namen missbraucht. 5 Mose 5:11. Zieht nicht unter fremdem Joch mit den Ungläubigen. Denn was hat Gerechtigkeit zu schaffen mit Gesetzlosigkeit? Was hat das Licht für Gemeinschaft mit der Finsternis? Ein Gott, der die Einsamen nach Hause bringt, der die Gefangenen herausführt, dass es ihnen wohlgehe; aber die Abtrünnigen bleiben in dürrem Lande.'"
+		"requiredTech": "Education",
+		"quote": "'Du sollst den Namen des HERRN, deines Gottes, nicht missbrauchen; denn der HERR wird den nicht ungestraft lassen, der seinen Namen missbraucht. 5 Mose 5:11. Zieht nicht unter fremdem Joch mit den Ungläubigen. Denn was hat Gerechtigkeit zu schaffen mit Gesetzlosigkeit? Was hat das Licht für Gemeinschaft mit der Finsternis? Ein Gott, der die Einsamen nach Hause bringt, der die Gefangenen herausführt, dass es ihnen wohlgehe; aber die Abtrünnigen bleiben in dürrem Lande.'"
 	},
 	{
 		"name": "Religious School",
@@ -4199,7 +4200,7 @@
 		"happiness": 2,
 		"hurryCostModifier": 25,
 		"requiredTech": "Construction"
-	}
+	},
 	{
 		"name": "Veche",
 		"replaces": "Arena",
@@ -4253,7 +4254,7 @@
 		"requiredBuilding": "Amphitheater",
 		"uniques": ["[+10 Culture] per [2] social policies adopted",
 			"[+3]% Natural religion spread [in this city]","Destroyed when the city is captured"],
-		"requiredTech": "Engineering"
+		"requiredTech": "Engineering",
 		"quote": "'Denke positiv und wenn du den Eindruck hast, dass dieses Leben ein Theater ist, dann suche dir eine Rolle aus, die dir wirklich Spaß macht. - William Shakespeare'" 
 	},
         {
@@ -4488,12 +4489,11 @@
                 "greatPersonPoints": {"Great General": 2},
                 "maintenance": 4,
 		"hurryCostModifier": 50,
-                "requiredBuilding": "First Armory"
 		"uniques": ["All newly-trained [non-[Air]] units [in this city] receive the [Advanced Training] promotion","[+10]% Production when constructing [Land] units [in this city]","Cost increases by [25] per owned city"],
 		"requiredBuilding": "Armour Workshop",
-                "requiredTech": "Iron Working"
+                "requiredTech": "First Armory"
 	},
-        {
+	{
 		"name": "Third Armory",
                 "greatPersonPoints": {"Great General": 2},
                 "maintenance": 4,
@@ -4678,7 +4678,7 @@
 		"name": "Byzantine Walls",
 		"replaces": "Walls",
 		"uniqueTo": "Byzantium",
-		"faith": 2
+		"faith": 2,
 		"cost": 65,
 		"cityStrength": 8,
 		"cityHealth": 50,
@@ -4715,7 +4715,7 @@
 		"gold": 2,
 		"requiredBuilding": "Walls",
 		"requiredTech": "Metal Casting",
-		"uniques": ["Destroyed when the city is captured", "[Wounded] Units adjacent to this city heal [10] HP per turn when healing", "[+1 Happiness, +1 Production] [in this city] <with a garrison>"]
+		"uniques": ["Destroyed when the city is captured", "[Wounded] Units adjacent to this city heal [5] HP per turn when healing", "[+1 Happiness, +1 Production] [in this city] <with a garrison>"]
 	},
 	{
 		"name": "Alcazaba",
@@ -4756,9 +4756,9 @@
 		"cityHealth": 35,
 		"gold": 2,
 		"hurryCostModifier": 50,
-                "requiredBuilding": "Wooden Fort"
+                "requiredBuilding": "Wooden Fort",
 		"replaces": "Walls",
-		"requiredTech": "Masonry"
+		"requiredTech": "Masonry",
                 "uniques": ["[25]% Food is carried over after population increases [in this city]"]
 	},
         {
@@ -4767,8 +4767,8 @@
 		"production": 1,
 		"cityHealth": 10,
 		"hurryCostModifier": 50,
-                "requiredBuilding": "Wooden Fort"
-		"requiredTech": "Iron Working"
+                "requiredBuilding": "Wooden Fort",
+		"requiredTech": "Iron Working",
                 "uniques": ["[+5]% Production when constructing [Land] units [in this city]"]
 	},
 	{
@@ -4888,7 +4888,7 @@
 		"cityStrength": 10,
 		"cityHealth": 30,
                 "hurryCostModifier": 25,
-		"replaces": "Castel"
+		"replaces": "Castel",
 		"requiredTech": "Monocular",
 		"uniques": ["Static Defense","Destroyed when the city is captured"]
 	},
@@ -5006,7 +5006,7 @@
                 "food": 1,
                 "uniques": ["[+1 Food] from [Citrus] tiles [in this city]", "[+1 Food] from [Fruit] tiles [in this city]"],
 		"hurryCostModifier": 70,
-                "requiredBuilding": "Market"
+                "requiredBuilding": "Market",
                 "requiredTech": "Currency"
 	},
 	{
@@ -5255,7 +5255,7 @@
 			"Can only be built <in [Capital] cities>",
 			"Gain a free [Sangreal Vault] [in this city]"],
 		"requiredTech": "Chivalry",
-		"quote": "Legends cannot die. They live forever on the edge of dreams, inspiring dreamers to pursue greatness. Every so often, an exceptionally virtuous dreamer with all the necessary qualities to attain greatness comes along, pushing their people to new heights or rescuing them from abysmal depths. And so they too shall become legendary.",
+		"quote": "Legends cannot die. They live forever on the edge of dreams, inspiring dreamers to pursue greatness. Every so often, an exceptionally virtuous dreamer with all the necessary qualities to attain greatness comes along, pushing their people to new heights or rescuing them from abysmal depths. And so they too shall become legendary."
 	},
 	{
 		"name": "Parthenon",
@@ -5505,7 +5505,7 @@
 			"Free [Missionary] appears",
 			"Gain a free [Abbey] [in this city]",
 			"May choose [1] additional belief(s) of any type when [enhancing] a religion"],
-		"quote": "'We declare our right on this earth to be a human being, to be respected as a human being, to be given the rights of a human being in this society, on this earth, in this day, which we intend to bring into existence by any means necessary'",
+		"quote": "'We declare our right on this earth to be a human being, to be respected as a human being, to be given the rights of a human being in this society, on this earth, in this day, which we intend to bring into existence by any means necessary'"
 	},
 	{
 		"name": "The Great Catacomb",
@@ -6219,7 +6219,7 @@
 		"faith": 1,
 		"uniques": ["[+1]% [Faith] [in all cities] <while the empire is happy>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Simple"],
+			"Basic Religion", "Simple"]
 	}, 
 	{ 
 		"name": "Appeasement Shrine",
@@ -6227,7 +6227,7 @@
 		"faith": 1,
 		"uniques": ["[+5]% [Faith] [in this city] <while the empire is happy>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Simple"],
+			"Basic Religion", "Simple"]
 	}, 
 	{ 
 		"name": "Tablet of Law",
@@ -6235,7 +6235,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] per [15] population [in all cities]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Simple"],
+			"Basic Religion", "Simple"]
 	},
 	{
 		"name": "Sacred Markings",
@@ -6243,7 +6243,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] per [5] population [in this city]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Simple"],
+			"Basic Religion", "Simple"]
 	},
 	{
 		"name": "Spirit Shrine",
@@ -6252,7 +6252,7 @@
 		"uniques": ["[+1 Faith] from [Tundra] tiles [in this city] <within [2] tiles of a [City center]>",
 			"[+1 Faith] from [Snow] tiles [in this city] <within [2] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Folklore"],
+			"Basic Religion", "Folklore"]
 	},
 	{  
 		"name": "Shrine of Sands",
@@ -6260,7 +6260,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] from [Desert] tiles [in this city] <within [2] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Folklore"],
+			"Basic Religion", "Folklore"]
 	},
 	{
 		"name": "Sacred Grove",
@@ -6268,7 +6268,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] from [Forest] tiles [in this city] <within [2] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Folklore"],
+			"Basic Religion", "Folklore"]
 	},
 	{ 
 		"name": "Waystone",
@@ -6277,7 +6277,7 @@
 		"uniques": ["[+1 Faith] from [Grassland] tiles [in this city] <in tiles without [Forest]> <in tiles without [Hill]> <within [2] tiles of a [City center]>",
 			"[+1 Faith] from [Plains] tiles [in this city] <in tiles without [Forest]> <in tiles without [Hill]> <within [2] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Folklore"],
+			"Basic Religion", "Folklore"]
 	},
 	{
 		"name": "Sacred Stair",
@@ -6285,7 +6285,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] from [Mountain] tiles [in this city] <within [2] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Folklore"],
+			"Basic Religion", "Folklore"]
 	},
 	{
 		"name": "Shrine of Seas",
@@ -6293,7 +6293,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] from [Water] tiles [in this city] <within [2] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Folklore"],
+			"Basic Religion", "Folklore"]
 	},
 	{  
 		"name": "Golden Path",
@@ -6301,7 +6301,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] from [Jungle] tiles [in this city] <within [2] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Sacred"],
+			"Basic Religion", "Sacred"]
 	},
 	{
 		"name": "Sacred Stream",
@@ -6309,7 +6309,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] from [River] tiles [in this city] <within [2] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Sacred"],
+			"Basic Religion", "Sacred"]
 	},
 	{
 		"name": "Standing Stones",
@@ -6317,7 +6317,7 @@
 		"faith": 1,
 		"uniques": ["[+2 Faith] per [Quarry] [in this city]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Sacred"],
+			"Basic Religion", "Sacred"]
 	},
 	{ 
 		"name": "Gleaming Idol",
@@ -6328,7 +6328,7 @@
 			"[+1 Faith] from every [Gems]",
 			"[+1 Faith] from every [-]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Sacred"],
+			"Basic Religion", "Sacred"]
 	},
 	{ 
 		"name": "Dancing Ground",
@@ -6339,7 +6339,7 @@
 			"[+1 Faith] from every [Beer]",
 			"[+1 Faith] from every [Dyes]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Sacred"],
+			"Basic Religion", "Sacred"]
 	},
 	{ 
 		"name": "Tidal Shrine",
@@ -6361,7 +6361,7 @@
 			"[+1 Faith] from every [Wild Animal]",
 			"Unbuildable", 
 			"Hidden when religion is disabled",
-			"Basic Religion", "Sacred"],
+			"Basic Religion", "Sacred"]
 	},
 	{ 
 		"name": "Sacred Bull",
@@ -6371,7 +6371,7 @@
 			"[+1 Faith] from every [Sheep]",
 			"[+1 Faith] from every [Ivory]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Sacred"],
+			"Basic Religion", "Sacred"]
 	},
 	{ 
 		"name": "Idol of Plenty",
@@ -6381,7 +6381,7 @@
 			"[+1 Faith] from every [Citrus]",
 			"[+1 Faith] from every [Sugar]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Sacred"],
+			"Basic Religion", "Sacred"]
 	},
 	{
 		"name": "Cult of the Maker",
@@ -6389,7 +6389,7 @@
 		"faith": 1,
 		"uniques": ["Enables conversion of city production to [Faith] <in cities with a [Cult of the Maker]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Cult of the Ocean",
@@ -6398,7 +6398,7 @@
 		"uniques": ["[+15]% Production when constructing [Water] units [in this city]",
 			"Must be next to [Water]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Cult of the Warrior",
@@ -6406,7 +6406,7 @@
 		"faith": 1,
 		"uniques": ["All newly-trained [Military] units [in this city] receive the [Warrior Cult] promotion",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Cult of the Sky",
@@ -6414,7 +6414,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] from [Hill] tiles without [Forest] [in this city] <within [5] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Cult of Love",
@@ -6422,7 +6422,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] per [5] population [in this city]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Cult of the Defender",
@@ -6431,7 +6431,7 @@
 		"uniques": ["[+1 Faith] [in all cities] <with a garrison>",
 			"[+15]% City Strength from defensive buildings <with a garrison>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Cult of the Hunter",
@@ -6440,7 +6440,7 @@
 		"uniques": ["All newly-trained [Ranged] units [in this city] receive the [Hunter Cult] promotion",
 			"[+1 Faith] from [Camp] tiles [in this city]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{
 		"name": "Creation Rites",
@@ -6463,7 +6463,7 @@
                 "[+1 Faith] [in this city] <in cities with a [-]>",
                 "[+1 Faith] [in this city] <in cities with a [-]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{  
 		"name": "Seafarer's Rites",
@@ -6472,7 +6472,7 @@
 		"uniques": ["[+1 Faith] from [Fishing Boats] tiles [in all cities]",
 			"Must be next to [Water]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Battle Rites",
@@ -6480,7 +6480,7 @@
 		"faith": 1,
 		"uniques": ["[+4]% [Production] [in this city] <when at war>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Wind Rites",
@@ -6488,7 +6488,7 @@
 		"faith": 1,
 		"uniques": ["[+1 Faith] from [Land] tiles without [Forest] [in this city] <within [4] tiles of a [City center]>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Fertility Rites",
@@ -6497,7 +6497,7 @@
 		"uniques": ["[+1 Faith] from [Farm] tiles [in this city]",
 			"[+10]% growth [in this city]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Protective Rites",
@@ -6510,7 +6510,7 @@
 			"[+1 Faith] [in this city] <in cities with a [-]>",
 			"[+5]% Strength for cities <when attacking>",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{ 
 		"name": "Hunting Rites",
@@ -6519,7 +6519,7 @@
 		"uniques": ["All newly-trained [Ranged] units [in this city] receive the [Hunting Rites] promotion",
 			"[+1 Faith] from [Camp] tiles [in all cities]",
 			"Unbuildable","Hidden when religion is disabled",
-			"Basic Religion", "Deific"],
+			"Basic Religion", "Deific"]
 	},
 	{
 		"name": "Burial Ground",
@@ -6529,7 +6529,7 @@
 			"[+1 Happiness] from every [Basic Religion] <in cities with a [Burial Ground]>",
 			"Requires a [Basic Religion] in at least [5] cities",
 			"Unbuildable","Hidden when religion is disabled",
-			"Enhanced Religion", "Burial"],
+			"Enhanced Religion", "Burial"]
 	},
 	{  
 		"name": "Seminary",
@@ -6539,7 +6539,7 @@
 			"[+1 Culture] from every [Basic Religion] <in cities with a [Seminary]>", 
 			"Requires a [Basic Religion] in at least [5] cities",
 			"Unbuildable","Hidden when religion is disabled",
-			"Enhanced Religion", "Worldwide"],
+			"Enhanced Religion", "Worldwide"]
 	},
 	{  
 		"name": "Blessed Market",
@@ -6549,7 +6549,7 @@
 			"[+1 Gold] from every [Basic Religion] <in cities with a [Blessed Market]>",
 			"Requires a [Basic Religion] in at least [5] cities",
 			"Unbuildable","Hidden when religion is disabled",
-			"Enhanced Religion","Tithe"],
+			"Enhanced Religion","Tithe"]
 	},
 	{  
 		"name": "Humble Church",
@@ -6562,7 +6562,7 @@
 			"Only available <in cities without a [Pilgrimage]>",
 			"Limited to [3] per Civilization",
 			"Religious Wonder","Unbuildable","Never destroyed when the city is captured",
-			"Hidden when religion is disabled","Enhanced Religion", "Pilgrimage"],
+			"Hidden when religion is disabled","Enhanced Religion", "Pilgrimage"]
 	},
 	{ 
 		"name": "Storied Temple",
@@ -6577,7 +6577,7 @@
 			"Limited to [2] per Civilization",
 			"Religious Wonder","Unbuildable", "Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Enhanced Religion", "Pilgrimage"],
+			"Enhanced Religion", "Pilgrimage"]
 	},
 	{ 
 		"name": "Sacred Grave",
@@ -6591,7 +6591,7 @@
 			"Limited to [2] per Civilization",
 			"Religious Wonder","Unbuildable","Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Enhanced Religion", "Pilgrimage"],
+			"Enhanced Religion", "Pilgrimage"]
 	},
 	{  
 		"name": "Grand Idol",
@@ -6607,7 +6607,7 @@
 			"Limited to [2] per Civilization",
 			"Religious Wonder","Unbuildable", 
 			"Never destroyed when the city is captured","Hidden when religion is disabled",
-			"Enhanced Religion", "Pilgrimage"],
+			"Enhanced Religion", "Pilgrimage"]
 	},
 	{ 
 		"name": "Temple of Contemplation",
@@ -6617,7 +6617,7 @@
 			"[+1 Science] from every [Basic Religion] <in cities with a [Temple of Contemplation]>",
 			"Requires a [Basic Religion] in at least [5] cities",
 			"Unbuildable","Hidden when religion is disabled",
-			"Enhanced Religion", "Harmony"],
+			"Enhanced Religion", "Harmony"]
 	},
 	{
 		"name": "Sacred Mausoleum",
@@ -6631,7 +6631,7 @@
 			"Requires a [Burial Ground] in at least [3] cities", 
 			"Unbuildable","Never destroyed when the city is captured", 
 			"Hidden when religion is disabled",
-			"Religious Wonder", "Burial"],
+			"Religious Wonder", "Burial"]
 	},
 	{ 
 		"name": "Central Temple",
@@ -6644,7 +6644,7 @@
 			"Requires a [Worldwide] in at least [3] cities", 
 			"Requires a [Cathedral] in at least [3] cities", 
 			"Unbuildable","Hidden when religion is disabled",
-			"Religious Wonder", "Worldwide"],
+			"Religious Wonder", "Worldwide"]
 	},
 	{ 
 		"name": "Church Treasury",
@@ -6658,7 +6658,7 @@
 			"Requires a [Blessed Market] in at least [3] cities", 
 			"Unbuildable","Never destroyed when the city is captured", 
 			"Hidden when religion is disabled",
-			"Religious Wonder", "Tithe"],
+			"Religious Wonder", "Tithe"]
 	},
 	{  
 		"name": "Temple Complex",
@@ -6672,7 +6672,7 @@
 			"Requires a [Temple of Contemplation] in at least [3] cities", 
 			"Unbuildable","Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Religious Wonder", "Harmony"],
+			"Religious Wonder", "Harmony"]
 	},
 	{
 		"name": "Grand Crypt",
@@ -6686,7 +6686,7 @@
 			"Requires a [Enhanced Religion] in at least [3] cities", 
 			"Unbuildable","Never destroyed when the city is captured", 
 			"Hidden when religion is disabled",
-			"Religious Wonder", "Burial"],
+			"Religious Wonder", "Burial"]
 	},
 	{ 
 		"name": "Basilica of Wonder",
@@ -6699,7 +6699,7 @@
 			"Requires a [Basic Religion] in at least [6] cities",
 			"Requires a [Enhanced Religion] in at least [3] cities", 
 			"Unbuildable","Hidden when religion is disabled",
-			"Religious Wonder", "Worldwide"],
+			"Religious Wonder", "Worldwide"]
 	},
 	{ 
 		"name": "Grand Treasury",
@@ -6713,7 +6713,7 @@
 			"Requires a [Enhanced Religion] in at least [3] cities",
 			"Unbuildable","Never destroyed when the city is captured", 
 			"Hidden when religion is disabled",
-			"Religious Wonder", "Tithe"],
+			"Religious Wonder", "Tithe"]
 	},
 	{ 
 		"name": "Spiritual Retreat",
@@ -6727,7 +6727,7 @@
 			"Requires a [Enhanced Religion] in at least [3] cities", 
 			"Unbuildable","Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Religious Wonder", "Harmony"],
+			"Religious Wonder", "Harmony"]
 	},
 	{
 		"name": "Grand Mausoleum",
@@ -6744,7 +6744,7 @@
 			"Only available <in cities without a [Religious World Wonder]>",
 			"Unbuildable","Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Religious World Wonder", "Burial"],
+			"Religious World Wonder", "Burial"]
 	},
 	{  
 		"name": "Mecca",
@@ -6761,7 +6761,7 @@
 			"Only available <in cities without a [Religious World Wonder]>",
 			"Unbuildable","Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Religious World Wonder", "Worldwide"],
+			"Religious World Wonder", "Worldwide"]
 	},
 	{ 
 		"name": "Sacred Horde",
@@ -6778,7 +6778,7 @@
 			"Only available <in cities without a [Religious World Wonder]>",
 			"Unbuildable","Never destroyed when the city is captured", 
 			"Hidden when religion is disabled",
-			"Religious World Wonder", "Tithe"],
+			"Religious World Wonder", "Tithe"]
 	},
 	{ 
 		"name": "Shangri La",
@@ -6795,7 +6795,7 @@
 			"Only available <in cities without a [Religious World Wonder]>",
 			"Unbuildable","Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Religious World Wonder","Harmony"],
+			"Religious World Wonder","Harmony"]
 	},
 	{ 
 		"name": "Simple Shrine",
@@ -6811,7 +6811,7 @@
 			"Unbuildable", 
 			"Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Religious World Wonder", "Pilgrimage"],
+			"Religious World Wonder", "Pilgrimage"]
 	},
 	{ 
 		"name": "First Temple",
@@ -6827,11 +6827,11 @@
 			"Only available <in cities without a [Pilgrimage]>",
 			"Unbuildable","Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Religious World Wonder", "Pilgrimage"],
+			"Religious World Wonder", "Pilgrimage"]
 	},
 	{  
 		"name": "Tomb of the Saint",
-		"cost": 500
+		"cost": 500,
 		"faith": 4,
 		"isWonder": true,
 		"uniques": ["[+4 Faith] from every [Religious Wonder]",
@@ -6844,12 +6844,12 @@
 			"Only available <in cities without a [Pilgrimage]>",
 			"Unbuildable","Never destroyed when the city is captured",
 			"Hidden when religion is disabled",
-			"Religious World Wonder", "Pilgrimage"],
+			"Religious World Wonder", "Pilgrimage"]
 	}, 
 	{ 
 		"name": "Temple of Glory",
 		"cost": 800,
-		"Culture": 4
+		"Culture": 4,
 		"faith": 4,
 		"isWonder": true,
 		"uniques": ["[+4 Faith] from every [Science]",
@@ -6863,7 +6863,7 @@
 			"Only available <in cities without a [Pilgrimage]>",
 			"Unbuildable","Never destroyed when the city is captured", 
 			"Hidden when religion is disabled",
-			"Religious World Wonder", "Pilgrimage"],
+			"Religious World Wonder", "Pilgrimage"]
 	},
 	{
 		"name": "Basic Pantheon",
@@ -6872,14 +6872,14 @@
 			"Limited to [2] per Civilization",
 			"Unbuildable","Unsellable",
 			"Hidden when religion is disabled",
-			"Simple Religion upgrade"],
+			"Simple Religion upgrade"]
 	},
 	{
 		"name": "Religious Practice",
 		"cost": 0,
 		"uniques": ["Gain a free [Follower] belief",
 			"Limited to [1] per Civilization",
-			"Unbuildable"],
+			"Unbuildable"]
 	},
 	{
 		"name": "The Coming of the Prophet",
@@ -6888,7 +6888,7 @@
 			"Limited to [1] per Civilization",
 			"Unbuildable", 
 			"Hidden when religion is disabled",
-			"Simple Religion upgrade"],
+			"Simple Religion upgrade"]
 	},
 	{
 		"name": "The Second Coming",
@@ -6898,7 +6898,7 @@
 			"Limited to [1] per Civilization",
 			"Unbuildable", 
 			"Hidden when religion is disabled",
-			"Simple Religion upgrade"],
+			"Simple Religion upgrade"]
 	}, 
 	{
 		"name": "Burial Tomb",
@@ -6929,7 +6929,7 @@
 		"cost": 125,
 		"culture": 1,
 		"faith": 8,
-		"isNationalWonder": true
+		"isNationalWonder": true,
 		"uniques": ["Requires a [Temple] in all cities", 
                            "Cost increases by [30] per owned city",
 			   "[+100]% Natural religion spread [in this city]", 
@@ -6937,5 +6937,5 @@
                            "Can only be built [in holy cities]",
                            "Religious Wonder", "Agnostic"],
 		"requiredTech": "Theology"
-	},
+	}
 ]
