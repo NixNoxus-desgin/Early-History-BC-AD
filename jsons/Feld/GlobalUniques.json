@@ -1,6 +1,8 @@
 {
     "name": "Global uniques",
     "uniques": [
+        "[+10] HP when healing <for [Apache] units> <in [Medicine Wheel] tiles>", "[+33]% Strength <for [Apache] units> <in [Medicine Wheel] tiles>",
+
         "[-75]% growth [in all cities] <when between [-10] and [0] Happiness>",
         "Nullifies Growth [in all cities] <when below [-10] Happiness>",
         "[-25]% [Production] [in all cities] <when below [-10] Happiness>",
@@ -12,10 +14,10 @@
         "Rebel units may spawn <when below [-15] Happiness>",
         "[-1] Sight <for [Embarked] units>",
         "Notified of new Barbarian encampments",
-  
+
         "[-10]% Strength <vs [Mechanised] units>",
         "[-15]% Strength <vs [Mechanised] units>",
-        
+
         "May buy [Rise Tax] buildings with [Culture] for [3] times their normal Production cost",
         "May buy [Down Tax] buildings with [Culture] for [3] times their normal Production cost",
 
@@ -34,3 +36,4 @@
         // something something unit supply
     ]
 }
+
