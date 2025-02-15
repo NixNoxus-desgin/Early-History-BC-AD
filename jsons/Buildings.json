@@ -1,17 +1,299 @@
-[
-///Line 0
-///{
-///		"name": "buildingName",
-///		"cost":,
-///		"isWonder": tf,
-///		"culture":,
-///		"uniques": ["filter",
-///					"feature",
-///					"condition"],
-///		"requiredTech": "",
-///		"quote": ""
-///		"hurryCostModifier": 
-///	},
+[		
+	///{
+	///		"name": "buildingName",
+	///		"cost":,
+	///		"isWonder": tf,
+	///		"culture":,
+	///		"uniques": ["filter",
+	///					"feature",
+	///					"condition"],
+	///		"requiredTech": "",
+	///		"quote": ""
+	///		"hurryCostModifier": 
+	///	},
+	///Expansion
+	{
+		"name": "Agricultural Expansion(River)",
+		"cost": 260,
+		"uniques": ["Unsellable","'Expansion'",
+					"Only available <in cities without a [Agricultural Expansion(non-River)]>",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Watermill]>",
+					"Only available <in cities without a [Windmill]>",
+					"Only available <in cities without a [Irrigation System]>",
+					"Must not be on [Hill]",
+					"Must be on [River]",
+					"Gain a free [Watermill] [in this city]",//40
+					"Gain a free [Windmill] [in this city]",//100
+					"Gain a free [Irrigation System] [in this city]"],//120
+		"requiredTech": "Crop Rotation",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Agricultural Expansion(non-River)",
+		"cost": 180,
+		"uniques": ["Unsellable","'Expansion'",
+					"Only available <in cities without a [Agricultural Expansion(River)]>",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Windmill]>",
+					"Only available <in cities without a [Agricultural Water Storage]>",
+					"Must not be on [Hill]",
+					"Gain a free [Well] [in this city]",//20
+					"Gain a free [Windmill] [in this city]",//40
+					"Gain a free [Agricultural Water Storage] [in this city]"],//120
+		"requiredTech": "Crop Rotation",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Light Industry Expansion",
+		"cost": 220,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Bakery]>",
+					"Only available <in cities without a [Brewery]>",
+					"Only available <in cities without a [Pottery Workshop]>",
+					"Only available <in cities without a [Civilian Blacksmith]>",
+					"Only available <in cities without a [Paper Maker]>",
+					"Gain a free [Bakery] [in this city]",//40
+					"Gain a free [Brewery] [in this city]",//40
+					"Gain a free [Pottery Workshop] [in this city]",//40
+					"Gain a free [Civilian Blacksmith] [in this city]",//40
+					"Gain a free [Paper Maker] [in this city]"],//80
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Infrastructure Expansion",
+		"cost": 340,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Aqueduct]>",
+					"Only available <in cities without a [Healer's Hut]>",
+					"Only available <in cities without a [Clinc]>",
+					"Only available <in cities without a [Granary]>",
+					"Only available <in cities without a [Road Network]>",
+					"Gain a free [Aqueduct] [in this city]",//120
+					"Gain a free [Healer's Hut] [in this city]",//20
+					"Gain a free [Clinic] [in this city]",//100
+					"Gain a free [Granary] [in this city]",//40
+					"Gain a free [Road Network] [in this city]"],//40
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Martine Expansion",
+		"cost": 365,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Fishing Port]>",
+					"Only available <in cities without a [Lighthouse]>",
+					"Only available <in cities without a [Dry Dock]>",
+					"Only available <in cities without a [Trading Port]>",
+					"Gain a free [Fishing Port] [in this city]",//40
+					"Gain a free [Lighthouse] [in this city]",//100
+					"Gain a free [Dry Dock] [in this city]",//85
+					"Gain a free [Trading Port] [in this city]",//120
+					"Must be next to [Coast]"],
+		"requiredTech": "Apprenticeship",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Military Expansion",
+		"cost": 365,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Barrack]>",
+					"Only available <in cities without a [Walls]>",
+					"Only available <in cities without a [Military Blacksmith]>",
+					"Only available <in cities without a [Military Stable]>",
+					"Only available <in cities without a [Armour Workshop]>",
+					"Gain a free [Barrack] [in this city]",//40
+					"Gain a free [Walls] [in this city]",//40
+					"Gain a free [Military Blacksmith] [in this city]",//85
+					"Gain a free [Military Stable] [in this city]",//120
+					"Gain a free [Armour Workshop] [in this city]"],//100
+		"requiredTech": "Gunpowder Making",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Business Expansion",
+		"cost": 180,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Hunter's Hut]>",
+					"Only available <in cities without a [Crops Market]>",
+					"Only available <in cities without a [Trading Post]>",
+					"Gain a free [Hunter's Hut] [in this city]",//20
+					"Gain a free [Crops Market] [in this city]",//40
+					"Gain a free [Trading Post] [in this city]"],//100
+		"requiredTech": "Banking",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Civil Expansion",
+		"cost": 195,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Monument]>",
+					"Only available <in cities without a [Town Hall]>",
+					"Only available <in cities without a [Library]>",
+					"Only available <in cities without a [Town Square]>",
+					"Gain a free [Monument] [in this city]",//20
+					"Gain a free [Town Hall] [in this city]",//40
+					"Gain a free [Library] [in this city]",//40
+					"Gain a free [Town Square] [in this city]"],//75
+		"requiredTech": "Education",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Civil Consolidation",
+		"cost": 520,
+		"uniques": ["Unsellable","'Consolidation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Courthouse]>",
+					"Only available <in cities without a [Garden]>",
+					"Only available <in cities without a [City Hall]>",
+					"Only available <in cities without a [Guild Complex]>",
+					"Gain a free [Courthouse] [in this city]",//100
+					"Gain a free [Garden] [in this city]",//120
+					"Gain a free [City Hall] [in this city]",//120
+					"Gain a free [Guild Complex] [in this city]"],//160
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Education Expansion",
+		"cost": 480,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Medical School]>",
+					"Only available <in cities without a [University]>",
+					"Only available <in cities without a [Military Academy]>",
+					"Gain a free [Medical School] [in this city]",//160
+					"Gain a free [University] [in this city]",//160
+					"Gain a free [Military Academy] [in this city]"],//160
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Cultural Expansion",
+		"cost": 480,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Opera House]>",
+					"Only available <in cities without a [Museum]>",
+					"Only available <in cities without a [Art Gallery]>",
+					"Gain a free [Opera House] [in this city]",//200
+					"Gain a free [Museum] [in this city]",//160
+					"Gain a free [Art Gallery] [in this city]"],//160
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Infrastructure Modernisation",
+		"cost": 950,
+		"uniques": ["Unsellable","'Modernisation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Sewer]>",
+					"Only available <in cities without a [Hospital]>",
+					"Only available <in cities without a [Highway Network]>",
+					"Gain a free [Sewer] [in this city]",//250
+					"Gain a free [Hospital] [in this city]",//300
+					"Gain a free [Highway Network] [in this city]"],//400
+		"requiredTech": "Radio",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Civil Modernisation",
+		"cost": 810,
+		"uniques": ["Unsellable","'Modernisation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Newspaper Agency]>",
+					"Only available <in cities without a [Police Station]>",
+					"Only available <in cities without a [Government Complex]>",
+					"Gain a free [Newspaper Agency] [in this city]",//160
+					"Gain a free [Police Station] [in this city]",//250
+					"Gain a free [Commune] [in this city] <after adopting [Complete Autonomy]>",
+					"Gain a free [Government Complex] [in this city]"],//400
+		"requiredTech": "Telegram",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Industrial Complex Expansion",
+		"cost": 600,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Civilian Factory Complex]>",
+					"Only available <in cities without a [Military Factory Complex]>",
+					"Gain a free [Civilian Factory Complex] [in this city]",//300
+					"Gain a free [Military Factory Complex] [in this city]"//300
+					],
+		"requiredTech": "Industrialization",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Light Industry Modernisation",
+		"cost": 810,
+		"uniques": ["Unsellable","'Modernisation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Textile Factory]>",
+					"Only available <in cities without a [Furniture Factory]>",
+					"Only available <in cities without a [Tools Factory]>",
+					"Gain a free [Textile Factory] [in this city]",//300
+					"Gain a free [Furniture Factory] [in this city]",//300
+					"Gain a free [Tools Factory] [in this city]"],//300
+		"requiredTech": "Replaceable Parts",
+		"requiredBuilding":"Civilian Factory Complex",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Food Industry Modernisation",
+		"cost": 1500,
+		"uniques": ["Unsellable","'Modernisation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Fertilizer Factory]>",
+					"Only available <in cities without a [Agricultural Machinery Factory]>",
+					"Only available <in cities without a [Cannery]>",
+					"Only available <in cities without a [Soda Factory]>",
+					"Gain a free [Fertilizer Factory] [in this city]",//300
+					"Gain a free [Agricultural Machinery Factory] [in this city]",//400
+					"Gain a free [Cannery] [in this city]",//400
+					"Gain a free [Soda Factory] [in this city]"],//400
+		"requiredTech": "Replaceable Parts",
+		"requiredBuilding":"Civilian Factory Complex",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Heavy Industry Modernisation",
+		"cost": 800,
+		"uniques": ["Unsellable","'Modernisation'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Machine Tool Factory]>",
+					"Only available <in cities without a [Cement Work]>",
+					"Gain a free [Machine Tool Factory] [in this city]",//300
+					"Gain a free [Cement Work] [in this city]",//400
+					"[+25]% Production when constructing [{'Heavy Industry'}{Industrial era}] buildings [in this city]",
+					"[+25]% Production when constructing [{'Heavy Industry'}{Modern era}] buildings [in this city]"],
+		"requiredTech": "Concrete",
+		"requiredBuilding":"Civilian Factory Complex",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Research Expansion",
+		"cost": 800,
+		"uniques": ["Unsellable","'Expansion'",
+					"Comment [Only when all buildings in this package have not been built, this package is available.]",
+					"Only available <in cities without a [Physic Lab]>",
+					"Only available <in cities without a [Chemistry Lab]>",
+					"Only available <in cities without a [Bio Lab]>",
+					"Gain a free [Physic Lab] [in this city]",//160
+					"Gain a free [Chemistry Lab] [in this city]",//160
+					"Gain a free [Bio Lab] [in this city]"],//160
+		"requiredTech": "Pharmaceuticals",
+		"requiredBuilding":"University",
+		"hurryCostModifier": -25
+	},
+	///Line 0
 	{
 		"name": "Monument",
 		"cost":30,
@@ -19,7 +301,7 @@
 		"uniques": ["'Cultural Building'",
 					"[-2]% Culture cost of natural border growth [in all cities]",
 					"[+1 Gold] <after discovering [Theology]>",
-					"Destroyed when the city is captured","Only available <before discovering [Acoustics]>"],
+					"Destroyed when the city is captured"],
 		"requiredTech": "Agriculture",
 		"hurryCostModifier": 0
 	},
@@ -35,7 +317,7 @@
 		"name": "Healer's Hut",
 		"happiness": 1,
 		"uniques": ["'Infrastructure'",
-					"[All] Units adjacent to this city heal [5] HP per turn when healing","Only available <before discovering [Apprenticeship]>"],
+					"[All] Units adjacent to this city heal [5] HP per turn when healing"],
 		"requiredTech": "Hunting and Fishing",
 		"hurryCostModifier": 0
 	},
@@ -43,7 +325,7 @@
 		"name": "Hunter's Hut",
 		"food": 1,
 		"uniques": ["'Economic Building'",
-					"[+1 Gold] from ['Hunt'] tiles [in this city]","Only available <before discovering [Banking]>"],
+					"[+1 Gold] from ['Hunt'] tiles [in this city]"],
 		"requiredTech": "Hunting and Fishing",
 		"hurryCostModifier": 0
 	},
@@ -69,8 +351,7 @@
 			"'Agricultural Building'",
 			"[+1 Food] from [Fruit] tiles [in this city]",
 			"[+1 Food] from [Grain] tiles [in this city]",
-			"[+1 Food] from [Tuber] tiles [in this city]",
-			"Only available <before discovering [Apprenticeship]>"],
+			"[+1 Food] from [Tuber] tiles [in this city]"],
 		"requiredTech":"Pottery",
 		"hurryCostModifier": 5
 	},
@@ -80,7 +361,7 @@
 		"food": 1,
 		"uniques": ["'Light Industry'",
 					"[+1 Gold] from [Grain] tiles [in this city]",
-					"[+1 Gold] from [Tuber] tiles [in this city]","Only available <before discovering [Apprenticeship]>"
+					"[+1 Gold] from [Tuber] tiles [in this city]"
 					],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -93,7 +374,7 @@
 					"Provides [1] [Alcohol] <with [Grain]>",
 					"Provides [1] [Alcohol] <with [Grape]>",
 					"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>",
-					"Provides [2] [Alcohol] <with [Fruit]>","Only available <before discovering [Apprenticeship]>"
+					"Provides [2] [Alcohol] <with [Fruit]>"
 					],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
@@ -106,7 +387,7 @@
 			"[+1 Production] per [5] population [in this city]<in cities with between [9] and [15] [Population]>",
 			"[+1 Production] per [8] population [in this city]<in cities with between [15] and [24] [Population]>",
 			"[+1 Production] per [10] population [in this city]<in cities with at least [24] [Population]>",
-			"[+2 Production] from [Clay] tiles [in this city]","Only available <before discovering [Apprenticeship]>"
+			"[+2 Production] from [Clay] tiles [in this city]"
 			],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 0
@@ -134,7 +415,7 @@
 					"All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
 					"New [Military] units start with [10] Experience [in this city]",
 					"Provides [1] [Standing Army Maintainance]",
-					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
+					"Destroyed when the city is captured"],
 		"requiredTech": "Copper Working",
 		"hurryCostModifier": 15
 	},
@@ -255,7 +536,7 @@
 		"cityStrength": 2,
 		"specialistSlots": {"Governor": 1},
 		"uniques": ["'Political Building'",
-					"Destroyed when the city is captured","Only available <before discovering [Acoustics]>"],
+					"Destroyed when the city is captured"],
 		"requiredTech": "Writing",
 		"hurryCostModifier": 10
 	},
@@ -266,7 +547,7 @@
 		"uniques": ["'Educational Building'",
 					"[+1 Science] per [4] population [in this city]",
 					"[+1 Happiness] <after discovering [Drama and Poetry]>",
-					"[+3 Culture] <after discovering [Archaeology]>","Only available <before discovering [Acoustics]>"],
+					"[+3 Culture] <after discovering [Archaeology]>"],
 		"requiredTech": "Writing",
 		"hurryCostModifier": 25
 	},
@@ -290,7 +571,7 @@
 		"uniques": ["'Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
 			"[+1]% growth [in all cities]",
-			"[-5]% maintenance cost for buildings [in this city]","Only available <before discovering [Apprenticeship]>"
+			"[-5]% maintenance cost for buildings [in this city]"
 			],
 		"requiredTech": "The Wheel",
 		"hurryCostModifier": 10
@@ -302,7 +583,7 @@
 		"uniques": ["'Light Industry'",
 					"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
 					"[+1 Food] from ['Agricultural Improvement'] tiles [in this city] <after discovering [Plows]>",
-					"[+1 Production] from ['Lumber Improvement'] tiles [in this city] <after discovering [Construction]>","Only available <before discovering [Apprenticeship]>"
+					"[+1 Production] from ['Lumber Improvement'] tiles [in this city] <after discovering [Construction]>"
 					],
 		"requiredTech": "Bronze Working",
 		"hurryCostModifier": 25
@@ -336,7 +617,7 @@
 		"gold": 1,
 		"uniques":["'Economic Building'",
 				"[+1 Gold] from ['Herd'] tiles [in this city]",
-				"Must have an owned [Pasture] within [4] tiles","Only available <before discovering [Banking]>"],
+				"Must have an owned [Pasture] within [4] tiles"],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
 	},
@@ -344,7 +625,7 @@
 		"name": "Crops Market",
 		"gold": 1,
 		"uniques":["'Economic Building'",
-				   "[+1 Gold] from ['Crops'] tiles [in this city]","Only available <before discovering [Banking]>"],
+				   "[+1 Gold] from ['Crops'] tiles [in this city]"],
 		"requiredTech": "Trade Network",
 		"hurryCostModifier": 10
 	},
@@ -491,7 +772,7 @@
 		"happiness": 1,
 		"uniques": ["'Cultural Building'","[+1 Gold] from all ['Economic Building'] buildings <in this city>",
 					"[-10]% Culture cost of natural border growth [in this city]",
-					"Destroyed when the city is captured","Only available <before discovering [Acoustics]>"],
+					"Destroyed when the city is captured"],
 		"requiredTech": "Drama and Poetry",
 		"hurryCostModifier": 25
 	},
@@ -551,7 +832,7 @@
 		"cityStrength": 5,
 		"cityHealth": 30,
 		"uniques": ["'Static Defense'",
-					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
+					"Destroyed when the city is captured"],
 		"requiredTech": "Masonry",
 		"hurryCostModifier": 25
 	},
@@ -655,7 +936,7 @@
 					"New [Military] units start with [10] Experience [in this city]",
 					"[Military] units gain the [Classical Arms] promotion",
 					"Comment [Enables you to build new Siege Units unlocked by Engineering]",
-					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
+					"Destroyed when the city is captured"],
 		"requiredBuilding": "Barrack",
 		"requiredTech": "Iron Working",
 		"hurryCostModifier": 25
@@ -686,7 +967,7 @@
 		"uniques": ["'Military Building'","Provides [1] [Horse]",
 					"Provides [1] [Standing Army Maintainance]",
 					"New [Mounted] units start with [10] Experience [in this city]",
-					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
+					"Destroyed when the city is captured"],
 		"requiredBuilding": "Barrack",
 		"requiredTech": "Stirrup",
 		"hurryCostModifier": 25
@@ -709,7 +990,7 @@
 		"happiness": 1,
 		"uniques": ["'Marine Infrastructure'",
 					"[+5]% growth [in this city]",
-					"[+1 Food] from ['Water Improvement'] tiles [in this city]","Must be next to [Coast]","Only available <before discovering [Apprenticeship]>"],
+					"[+1 Food] from ['Water Improvement'] tiles [in this city]","Must be next to [Coast]"],
 		"requiredBuilding":"Fishing Port",
 		"requiredTech": "Optics",
 		"hurryCostModifier": 10
@@ -758,7 +1039,7 @@
 		"name": "Trading Post",
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
-		"uniques":["'Economic Building'","Provides [1] [Mercenary Contract]","[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]","Only available <before discovering [Banking]>"],
+		"uniques":["'Economic Building'","Provides [1] [Mercenary Contract]","[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]"],
 		"requiredBuilding":"Road Network",
 		"requiredTech": "Construction",
 		"hurryCostModifier": 15
@@ -771,7 +1052,7 @@
 					"[Military] units gain the [Renaissance Arms] promotion <after discovering [Coal Working]>",
 					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <before the [Industrial era]>",
 					"[+25]% Production when constructing [Land] units [in this city] <in cities with a [Watermill]> <starting from the [Industrial era]><after discovering [Electricity]>",
-					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
+					"Destroyed when the city is captured"],
 		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Armorments",
 		"hurryCostModifier": 25
@@ -931,7 +1212,7 @@
 		"happiness": 1,
 		"uniques": ["'Infrastructure'",
 					"[-5]% Unhappiness from [Population] [in this city]",
-					"[25]% Food is carried over after population increases [in this city]","Only available <before discovering [Apprenticeship]>"],
+					"[25]% Food is carried over after population increases [in this city]"],
 		"requiredBuilding":"Civilian Blacksmith",
 		"requiredTech": "Engineering",
 		"hurryCostModifier": 25
@@ -1254,7 +1535,7 @@
 		"uniques": ["'Military Building'",
 					"New ['Firearms'] units start with [10] Experience [in this city]",
 					"[Military] units gain the [Industrial Arms] promotion <starting from the [Industrial era]>",
-					"Destroyed when the city is captured","Only available <before discovering [Apprenticeship]>"],
+					"Destroyed when the city is captured"],
 		"requiredBuilding": "Military Blacksmith",
 		"requiredTech": "Gunpowder Making",
 		"hurryCostModifier": 25
@@ -1331,13 +1612,13 @@
 
 	{
 		"name": "University",
-		"maintenance": 5,
+		"maintenance": 8,
 		"percentStatBonus": {"science": 25,"culture":25},
 		"specialistSlots": {"Scientist": 2,"Artist":2,"Engineer":2,"Merchant":2},
 		"uniques": ["'Educational Building'",
-					"[Great Artist] is earned [+5]% faster",
-					"[Great Engineer] is earned [+5]% faster",
-					"[Great Scientist] is earned [+5]% faster"],
+					"[Great Artist] is earned [+1]% faster",
+					"[Great Engineer] is earned [+1]% faster",
+					"[Great Scientist] is earned [+1]% faster"],
 		"requiredBuilding":"Library",
 		"requiredTech": "Education",
 		"hurryCostModifier": 25
@@ -1439,15 +1720,7 @@
 					"Cost increases by [30] per owned city"],
 		"requiredTech":"Heliocentrism"
 	},
-	{
-		"name": "Imperial Palace",
-		"culture": 3,
-		"isWonder": true,
-		"specialistSlots":{"Governor":3},
-		"uniques": ["[-10]% Unhappiness from [Population] [in all cities]"],
-		"requiredTech": "Banking",
-		"quote": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock"
-	},
+
 ///Line 12
 	{
 		"name": "Bastion",
@@ -1527,14 +1800,23 @@
 		"requiredTech": "Acoustics",
 		"quote": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti"
 	},
+	{
+		"name": "Imperial Palace",
+		"culture": 5,
+		"isWonder": true,
+		"specialistSlots":{"Governor":3},
+		"uniques": ["[-10]% Unhappiness from [Population] [in all cities]"],
+		"requiredTech": "Acoustics",
+		"quote": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock"
+	},
 ///Line 13
 	{
-		"name": "Port",
-		"maintenance": 3,
+		"name": "Cargo Port",
+		"maintenance": 5,
 		"uniques": ["'Marine Infrastructure'",
 					"[+1 Gold] from [Bonus resource] tiles [in this city]",
 					"[+1 Gold] from [Luxury resource] tiles [in this city]",
-					"[+25]% Production when constructing [Water] units [in this city]"],
+					"[+25]% Production when constructing [Water] units [in this city]","Must be next to [Coast]"],
 		"requiredBuilding": "Lighthouse",
 		"requiredTech": "Navigation",
 		"hurryCostModifier": 10
@@ -1600,7 +1882,7 @@
 		"hurryCostModifier": 25
 	},
 	{
-		"name": "Police station",
+		"name": "Police Station",
 		"maintenance": 3,
 		"uniques": ["'Political Building'",
 					"[-10]% Unhappiness from [Population] [in this city]","[-25]% enemy spy effectiveness [in this city]"],
@@ -1781,10 +2063,10 @@
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"uniques": ["'Heavy Industry'",
-					"[+5]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
-					"[+13]% Production when constructing ['Light Industry'] buildings [in all cities]",
-					"[+10]% Production when constructing ['Heavy Industry'] buildings [in all cities] <after discovering [Electricity]>",
-					"[+20]% Production when constructing ['Light Industry'] buildings [in all cities] <after discovering [Electricity]>"],
+					"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+					"[+5]% Production when constructing ['Light Industry'] buildings [in all cities]",
+					"[+2]% Production when constructing ['Heavy Industry'] buildings [in all cities] <after discovering [Electricity]>",
+					"[+5]% Production when constructing ['Light Industry'] buildings [in all cities] <after discovering [Electricity]>"],
 		"requiredBuilding": "Civilian Factory Complex",
 		"requiredTech": "Industrialization",
 		"hurryCostModifier": 10
@@ -2048,7 +2330,7 @@
 					"[+1]% [Gold] from Trade Routes",
 					"[+5]% growth [in all cities]",
 					"[-5]% maintenance cost for buildings [in this city]",
-					"Must have an owned [Railroad] within [1] tiles"
+					"Only available <in cities connected to the capital>"
 					],
 		"requiredTech": "Railroads",
 		"hurryCostModifier": 10
@@ -2700,83 +2982,6 @@
 		"quote": "'I seemed to vow to myself that some day I would go to the region of ice and snow and go on and on till I came to one of the poles of the earth, the end of the axis upon which this great round ball turns.' - Ernest Shackleton"
 	},
 ///Line 22
-///Expansion
-	{
-		"name": "Light Industry Expansion",
-		"cost": 220,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Bakery] [in this city]",//40
-					"Gain a free [Brewery] [in this city]",//40
-					"Gain a free [Pottery Workshop] [in this city]",//40
-					"Gain a free [Civilian Blacksmith] [in this city]",//40
-					"Gain a free [Paper Maker] [in this city]"],//80
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -25
-	},
-	{
-		"name": "Infrastructure Expansion",
-		"cost": 340,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Aqueduct] [in this city]",//120
-					"Gain a free [Healer's Hut] [in this city]",//20
-					"Gain a free [Clinic] [in this city]",//100
-					"Gain a free [Granary] [in this city]",//40
-					"Gain a free [Road Network] [in this city]"],//40
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -25
-	},
-	{
-		"name": "Martine Expansion",
-		"cost": 365,
-		"uniques": ["Unsellable",
-					"'Marine Infrastructure'",
-					"Gain a free [Fishing Port] [in this city]",//40
-					"Gain a free [Lighthouse] [in this city]",//100
-					"Gain a free [Dry Dock] [in this city]",//85
-					"Gain a free [Trading Port] [in this city]",//120
-					"Must be next to [Coast]"],
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": -25
-	},
-	{
-		"name": "Military Expansion",
-		"cost": 525,
-		"uniques": ["Unsellable",
-					"'Military Building'",
-					"Gain a free [Barrack] [in this city]",//40
-					"Gain a free [Walls] [in this city]",//40
-					"Gain a free [Military Blacksmith] [in this city]",//85
-					"Gain a free [Military Stable] [in this city]",//120
-					"Gain a free [Armour Workshop] [in this city]",//100
-					"Gain a free [Firearms Workshop] [in this city]"],//160
-		"requiredTech": "Apprenticeship",
-		"hurryCostModifier": 0
-	},
-	{
-		"name": "Business Expansion",
-		"cost": 180,
-		"uniques": ["Unsellable",
-					"'Economic Building'",
-					"Gain a free [Hunter's Hut] [in this city]",//20
-					"Gain a free [Crops Market] [in this city]",//40
-					"Gain a free [Trading Post] [in this city]"],//100
-		"requiredTech": "Banking",
-		"hurryCostModifier": -25
-	},
-	{
-		"name": "Civil Expansion",
-		"cost": 195,
-		"uniques": ["Unsellable",
-					"'Infrastructure'",
-					"Gain a free [Monument] [in this city]",//20
-					"Gain a free [Town Hall] [in this city]",//40
-					"Gain a free [Library] [in this city]",//40
-					"Gain a free [Town Square] [in this city]"],//75
-		"requiredTech": "Acoustics",
-		"hurryCostModifier": 0
-	},
 
 ///Special
 	{
@@ -3041,7 +3246,7 @@
 		"hurryCostModifier": 0
 	},
 	{
-		"name": "How?",
+		"name": "Schrodingers Tradition",
 		"isNationalWonder":true,
 		"uniques": ["Unbuildable","Unsellable",
 				"[+1 Happiness, +5 Science] [in all cities]",
