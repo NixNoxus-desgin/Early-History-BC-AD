@@ -1,4 +1,364 @@
-[   
+[
+
+	//Civilization unique improvements
+	{
+		"name": "Kibbutz",
+		"uniqueTo": "Israel",
+		"terrainsCanBeBuiltOn": ["Desert", "Flood plains"],
+		"turnsToBuild": 8,
+		"food": 2,
+		"uniques": ["Cannot be built on [Hill] tiles",
+			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
+			"[+1 Culture] for each adjacent [Oasis]",
+			"[+2 Faith] for each adjacent [Holy site]"],
+		"techRequired": "Civil Service",
+	},
+	{
+		"name": "Beit",
+		"uniqueTo": "Palestine",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"turnsToBuild": 8,
+		"food": 1,
+		"uniques": [
+			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
+			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
+			"[+1 Faith] <in cities following our religion>",
+			"[+1 Faith] for each adjacent [Holy site]",
+		],
+		"techRequired": "Theology",
+	},
+	{
+		"name": "Vegvar",
+		"uniqueTo": "Hungary",
+		"terrainsCanBeBuiltOn": ["Land","Hill"],
+		"turnsToBuild": 6,
+		"production": 1,
+		"uniques": [
+			"[+1 Happiness, +1 Culture] <within [1] tiles of a [City center]>",
+			"[+1 Food] <in [River] tiles>",
+			"[+1 Production] <in [Hill] tiles>",
+			"Cannot be built on [All] tiles <with [1] to [6] neighboring [Vegvar] tiles>",
+			"Gives a defensive bonus of [50]%"],
+		"techRequired": "Chivalry",
+	},
+	{
+		"name": "Motte and Bailey",
+		"uniqueTo": "Normandy",
+		"terrainsCanBeBuiltOn": ["Land","Hill"],
+		"turnsToBuild": 6,
+		"production": 1,
+		"uniques": ["[+1 Production, +1 Food] <within [1] tiles of a [Pasture]>", "Cannot be built on [All] tiles <with [1] to [6] neighboring [Motte and Bailey] tiles>", "Gives a defensive bonus of [50]%"],
+		"techRequired": "Engineering",
+	},
+	{
+		"name": "Sacred Grove",
+		"faith": 2,
+		"happiness": 2,
+		"uniqueTo": "Lithuania",
+		"terrainsCanBeBuiltOn": ["Forest", "Jungle"],
+		"uniques": [
+			"[-2 Happiness] <in cities with a major religion>",
+			"Great Improvement",
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [25]%",
+			"Pillaging this improvement yields approximately [+100 Gold]"],
+	},
+	{
+		"name": "Nutmeg Processing Plant",
+		"uniqueTo": "Grenada",
+		"terrainsCanBeBuiltOn": ["Desert", "Plains", "Grassland"],
+		"turnsToBuild": 12,
+		"uniques": ["[+1 Food] for each adjacent [Farm]", "[+2 Gold, +1 Food] for each adjacent [Plantation]",
+			"Provides [1] [Nutmeg] <within [2] tiles of a [Plantation]>",
+			"Cannot be built on [Desert] tiles <with [1] to [6] neighboring [Nutmeg Processing Plant] tiles>",
+			"Cannot be built on [Plains] tiles <with [1] to [6] neighboring [Nutmeg Processing Plant] tiles>",
+			"Cannot be built on [Grassland] tiles <with [1] to [6] neighboring [Nutmeg Processing Plant] tiles>"],
+		"techRequired": "Industrialization",
+	},
+	{
+		"name": "Katun",
+		"uniqueTo": "Montenegro",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"turnsToBuild": 4,
+		"food": 1,
+		"uniques": ["[+1 Culture, +1 Gold] for each adjacent [Mountain] <after discovering [Flight]>", "[+1 Happiness] <while the empire is happy>", "Gives a defensive bonus of [35]%"],
+		"techRequired": "Construction",
+	},
+	{
+		"name": "Oppidum",
+		"uniqueTo": "Gaul",
+		"production": 1,
+		"terrainsCanBeBuiltOn": ["Grassland","Plains","Tundra"],
+		"turnsToBuild": 8,
+		"uniques": ["Gives a defensive bonus of [25]%",
+			"[+1 Production] for each adjacent [Strategic Resource]",
+			"[+1 Production] for each adjacent [Quarry]",
+			"[+1 Production] for each adjacent [Strategic Resource] <after discovering [Industrialization]>",
+			"Cannot be built on [Land] tiles <with [1] to [6] neighboring [Oppidum] tiles>"],
+		"techRequired": "Iron Working",
+	},
+	{
+		"name": "Colossal Head",
+		"uniqueTo": "The Olmec",
+		"faith": 1,
+		"terrainsCanBeBuiltOn": ["Forest", "Jungle"],
+		"turnsToBuild": 6,
+		"uniques": ["[+1 Faith] for each adjacent [Mine]", "[+2 Faith] for each adjacent [Quarry]", "[+1 Culture] for each adjacent [Colossal Head]", "[+2 Science] for each adjacent [Great Improvement] <after discovering [Astronomy]>"],
+		"techRequired": "Masonry",
+	},
+	{
+		"name": "Cabin Village",
+		"uniqueTo": "Finland",
+		"production": 1,
+		"terrainsCanBeBuiltOn": ["Snow","Tundra","Forest"],
+		"turnsToBuild": 7,
+		"uniques": [
+			"[+1 Production] for each adjacent [Lumber mill]",
+			"[+2 Science] <with [1] to [1] neighboring [Academy] tiles>",
+			"[+4 Science] <with [2] to [6] neighboring [Academy] tiles>",
+			"[+1 Gold] for each adjacent [Camp] <after discovering [Guilds]>",
+			"Cannot be built on [Land] tiles <with [2] to [6] neighboring [Cabin Village] tiles>"],
+		"techRequired": "Construction",
+		"shortcutKey": "M"
+	},
+	{
+		"name": "Alcazar",
+		"uniqueTo": "Spain",
+		"culture": 2,
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Plains", "Grassland", "Desert", "Tundra", "Flood plains", "Hill"],
+		"uniques": ["Only available <with [Alcazar res]>", "[+1 Science] for each adjacent [Mountain]",
+			"Cannot be built on [Land] tiles <with [1] to [6] neighboring [Alcazar] tiles>", "Gives a defensive bonus of [20]%",
+			"Only available <with [1] to [6] neighboring [Mountain] tiles>", "Only available <after discovering [Chivalry]>"]
+	},
+	{
+		"name": "Crafters' Guild",
+		"production": 1,
+		"gold": 1,
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Plains", "Grassland", "Desert", "Tundra", "Flood plains", "Hill"],
+		"uniques": ["[+1 Production] <after discovering [Industrialization]>", "[+1 Gold] <after discovering [Economics]>",
+			"[+1 Production] for each adjacent [Luxury resource]", "Only available <with [Crafters' Guild res]>",
+			"Cannot be built on [Land] tiles <with [1] to [6] neighboring [Crafters' Guild] tiles>",
+			"Only available <after discovering [Guilds]>"]
+	},
+	//
+	{
+		"name": "Pa",
+		"culture": 2,
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Plains", "Grassland", "Desert", "Tundra", "Flood plains", "Hill"],
+		"uniques": ["Only available <with [Pa res]>",
+			"Gives a defensive bonus of [25]%"]
+	},
+	{
+		"name": "Seaside Stall",
+		"uniqueTo": "Phoenicia",
+		"gold": 1,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 8,
+		"techRequired": "Currency",
+		"uniques": ["Can only be built on [Coastal] tiles","[+1 Food] for each adjacent [Fishing Boats]","[+1 Production] <after discovering [Navigation]>"]
+	},
+	{
+		"name": "Colossal Head",
+		"uniqueTo": "The Olmec",
+		"terrainsCanBeBuiltOn": ["Jungle","Forest"],
+		"faith": 1,
+		"turnsToBuild": 6,
+		"techRequired": "Calendar",
+		"uniques": ["[+1 Culture] <after discovering [Archaeology]>","[+1 Science] for each adjacent [Great Improvement]","[+1 Science] for each adjacent [Great Improvement] <after discovering [Astronomy]>"]
+	},
+	{
+		"name": "Desert Plantation",
+		"uniqueTo": "Himyar",
+		"terrainsCanBeBuiltOn": ["Desert"],
+		"gold": 2,
+		"turnsToBuild": 6,
+		"techRequired": "Mathematics",
+		"uniques": ["Cannot be built on [Luxury resource] tiles","Provides [1] [Incense]","[+1 Gold] <after discovering [Economics]>","Cannot be built on [Flood plains] tiles"]
+	},
+	{
+		"name": "Kurgan",
+		"uniqueTo": "Scythia",
+		"terrainsCanBeBuiltOn": ["Plains"],
+		"culture": 2,
+		"faith": 1,
+		"turnsToBuild": 8,
+		"techRequired": "Masonry",
+		"uniques": ["[+1 Culture] <after discovering [Archaeology]>"]
+	},
+	{
+		"name": "Reef Fishery",
+		"uniqueTo": "Solomon Islands",
+		"food": 1,
+		"terrainsCanBeBuiltOn": ["Coast", "Atoll"],
+		"turnsToBuild": 6,
+		"uniques": ["[+1 Science, +1 Gold] <after discovering [Economics]>", "Provides [1] [Reef Product]"],
+		"techRequired": "Sailing",
+	},
+	{
+		"name": "Avocado Plantation",
+		//To DO "uniqueTo": "-",
+
+		"food": 1,
+		"techRequired": "Calendar",
+		"terrainsCanBeBuiltOn": ["Grassland","Flood plains","Plains","Hill"],
+		"turnsToBuild": 10,
+		"civilopediaText": [{"text": "Avocados have a long history in Mexico, dating back to ancient times when they were cultivated by the Aztecs. The fruit held significant cultural and culinary importance, with its consumption being associated with vitality and fertility. Today, Mexico is one of the world's largest producers of avocados, and the fruit plays a central role in Mexican cuisine, particularly in dishes like guacamole. Avocados have become a symbol of Mexican identity and are deeply ingrained in the country's cultural heritage."}],
+		"uniques": ["Cannot be built on [Tundra] tiles",
+			"Provides [1] [Avocado]",
+			"[+1 Gold] <after discovering [Navigation]>"]
+	},
+	{
+		"name": "Nutmeg Processing Plant",
+		"uniqueTo": "Grenada",
+		"terrainsCanBeBuiltOn": ["Desert", "Plains", "Grassland"],
+		"turnsToBuild": 12,
+		"uniques": ["[+1 Food] for each adjacent [Farm]", "[+2 Gold, +1 Food] for each adjacent [Plantation]",
+			"Provides [1] [Nutmeg] <within [2] tiles of a [Plantation]>",
+			"Cannot be built on [Desert] tiles <with [1] to [6] neighboring [Nutmeg Processing Plant] tiles>",
+			"Cannot be built on [Plains] tiles <with [1] to [6] neighboring [Nutmeg Processing Plant] tiles>",
+			"Cannot be built on [Grassland] tiles <with [1] to [6] neighboring [Nutmeg Processing Plant] tiles>"],
+		"techRequired": "Industrialization",
+	},
+	{
+		"name": "Kasbah",
+		"uniqueTo": "Morocco",
+		"terrainsCanBeBuiltOn": ["Desert","Flood plains","Hill"],
+		"food": 2,
+		"production": 1,
+		"gold": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Chivalry",
+		"uniques": [
+			"Can only be built on [Desert] tiles <in [Hill] tiles>",
+			"Cannot be built on [resource] tiles",
+			"Gives a defensive bonus of [50]%",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+	{
+		"name": "Golden Mine",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"uniques": ["Provides [1] [Gold Ore]", "[+1 Production] <after discovering [Chemistry]>"],
+		"gold": 2,
+		"production": 1
+	},
+	{
+		"name": "Triumphal Arch",
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Desert", "Plains"],
+		"uniques": ["Only available <with [Triumphal Arch res]>", "Gives a defensive bonus of [30]%",
+			"Only available <after discovering [Construction]>"],
+		"culture": 2
+	},
+	{
+		"name": "Cahokian Kurgan",
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Plains", "Grassland"],
+		"uniques": ["Only available <with [Cahokian Kurgan res]>", "Gives a defensive bonus of [15]%",
+			"Only available <after discovering [Animal Husbandry]>", "[+1 Culture, +1 Food] <with [1] to [6] neighboring [City center] tiles>"],
+		"food": -1,
+		"culture": 2,
+		"faith": 2
+	},
+	{
+		"name": "Holy Mountain",
+		"uniqueTo": "Tubo",
+		"terrainsCanBeBuiltOn": ["Mountain", "Hill"],
+		"faith": 2,
+		"turnsToBuild": 6,
+		"techRequired": "Belief Worship",
+		"uniques": ["[+1 Culture] for each adjacent [Mountain]", "[+1 Food] <after discovering [Agricultural Improvement]>", "[+1 Faith] <after discovering [Theology]>", "[+1 Food] <in [Hill] tiles>", "Pillaging this improvement yields approximately [+20 Gold]"],
+	},
+//Economic
+	{
+		"name": "Trading Outpost",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra"],
+		"turnsToBuild": 7,
+		"gold": -1,
+		"techRequired": "Guilds",
+		"improvingTech": "Economics",
+		"improvingTechStats": {"gold": 1},
+		"uniques": ["[+1 Gold] for each adjacent [Road]","[+1 Gold] for each adjacent [Railroad]"]
+
+	},
+	{
+		"name": "Trading Settlement",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra"],
+		"turnsToBuild": 7,
+		"gold": -1,
+		"techRequired": "Construction",
+		"improvingTech": "Fertilizer",
+		"improvingTechStats": {"food": 1},
+		"uniques": ["[+1 Production] for each adjacent [Railroad]","[+1 Food] for each adjacent [Road]","[+1 Food] for each adjacent [Railroad]"]
+	},
+	{
+		"name": "Port",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"resourceTerrainAllow": ["Bay"],
+		"food": 1,
+		"techRequired": "Sailing",
+		"improvingTech": "Compass",
+		"improvingTechStats": {"gold": 1},
+		"uniques": ["+[15]% production when building [naval units] in this city","Gives a defensive bonus of [50]%"]
+	},
+	//Extra Improvements Farming
+	{
+		"name": "Hop Garden",
+		"turnsToBuild": 7,
+		"gold": 1,
+		"production": 1,
+		"techRequired": "Calendar",
+		"improvingTech": "Fertilizer",
+		"uniques": ["[+1 Food] <after discovering [Fertilizer]>", "Can only be built to improve a resource"],
+		"improvingTechStats": {
+			"gold": 1,
+			"production": 1
+		}
+	},
+	{
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Agriculture",
+		"uniques": ["Can also be built on tiles adjacent to fresh water",
+			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
+			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
+			"Pillaging this improvement yields approximately [+18 Gold]"],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Plantation",
+		"turnsToBuild": 6,
+		"gold": 1,
+		"techRequired": "Calendar",
+		"uniques": ["[+1 Food] <after discovering [Fertilizer]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "P"
+	},
+	//Extra Improvement Nature
+	{
+		"name": "GrassLand",
+		"shortcutKey": "G",
+		"techRequired": "Agriculture",
+		"food": 1,
+		"uniques": ["Costs [1] [Gold] per turn","Vegetation"],
+		"terrainsCanBeBuiltOn": ["Flood plains","Tundra","Grassland","Plains","Hill"],
+	},
+	{
+		"name": "Forests",
+		"shortcutKey": "F",
+		"techRequired": "Architecture",
+		"turnsToBuild": 6,
+		"uniques": ["Costs [1] [Gold] per turn","Gives a defensive bonus of [15]% <in [non-[Hill]] tiles>","Can only be built to improve a resource",
+			"[+1 Production] <after discovering [Carpentry]>"],
+		"terrainsCanBeBuiltOn": ["Val Land","Tundra","Grassland","Plains","Hill","Bog"],
+	},
+	//
+
+	//
 	{
 		"name": "Manual Farm",
 		"terrainsCanBeBuiltOn": ["Plains","Flood plains"],
@@ -216,6 +576,135 @@
 		],
 		"shortcutKey": "C"
 	},
+	// Extra Policy
+	{
+		"name": "Infrastructure Investment",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"[+10]% Production when constructing [All] buildings [in all cities]",
+		]
+	},
+	{
+		"name": "Productive Investment",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"[+15]% [Gold]",
+		]
+	},
+	{
+		"name": "Research Investment",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"[+10]% [Science]",
+		]
+	},
+	{
+		"name": "Entertainment Investment",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"[+10]% [Culture]",
+		]
+	},
+	{
+		"name": "Grain Investment",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen",
+			"[+10]% [Food] [in all cities]",
+		]
+	},
+	{
+		"name": "Land Trade Route (Food)",
+		"food": 3,
+		"terrainsCanBeBuiltOn": ["Land","Forest","Jungle","Marsh","Oasis"],
+		"uniques": [
+			"All Trade Route",
+			"Provides [-1] [Trade Route]",
+			"[-3 Food] <in cities without a [Granary]>",
+			"[+1 Food] <starting from the [Classical era]>",
+			"[+1 Food] <starting from the [Industrial era]>",
+			"[+1 Food] <starting from the [Modern era]>",
+			"Pillaging this improvement yields approximately [+20 Gold]",
+			"Excluded from map editor"
+		]
+	},
+	{
+		"name": "Land Trade Route (Production)",
+		"production": 3,
+		"terrainsCanBeBuiltOn": ["Land","Forest","Jungle","Marsh","Oasis"],
+		"uniques": [
+			"All Trade Route",
+			"Provides [-1] [Trade Route]",
+			"[-3 Production] <in cities without a [Workshop]>",
+			"[+1 Production] <starting from the [Classical era]>",
+			"[+1 Production] <starting from the [Industrial era]>",
+			"[+1 Production] <starting from the [Modern era]>",
+			"Pillaging this improvement yields approximately [+20 Gold]",
+			"Excluded from map editor"
+		]
+	},
+	{
+		"name": "Land Trade Route (Gold)",
+		"terrainsCanBeBuiltOn": ["Land","Forest","Jungle","Marsh","Oasis"],
+		"gold": 6,
+		"uniques": [
+			"All Trade Route",
+			"Provides [-1] [Trade Route]",
+			"[+2 Gold] <starting from the [Classical era]>",
+			"[+2 Gold] <starting from the [Industrial era]>",
+			"[+2 Gold] <starting from the [Modern era]>",
+			"Pillaging this improvement yields approximately [+20 Gold]",
+			"Excluded from map editor"
+		]
+	},
+	{
+		"name": "Sea Trade Route (Food)",
+		"food": 6,
+		"terrainsCanBeBuiltOn": ["Coast","Ocean","Atoll"],
+		"uniques": [
+			"All Trade Route",
+			"Provides [-1] [Trade Route]",
+			"[-6 Food] <in cities without a [Granary]>",
+			"[+2 Food] <starting from the [Classical era]>",
+			"[+2 Food] <starting from the [Industrial era]>",
+			"[+2 Food] <starting from the [Modern era]>",
+			"Pillaging this improvement yields approximately [+20 Gold]",
+			"Excluded from map editor"
+		]
+	},
+	{
+		"name": "Sea Trade Route (Production)",
+		"production": 6,
+		"terrainsCanBeBuiltOn": ["Coast","Ocean","Atoll"],
+		"uniques": [
+			"All Trade Route",
+			"Provides [-1] [Trade Route]",
+			"[-6 Production] <in cities without a [-]>",
+			"[+2 Production] <starting from the [Classical era]>",
+			"[+2 Production] <starting from the [Industrial era]>",
+			"[+2 Production] <starting from the [Modern era]>",
+			"Pillaging this improvement yields approximately [+20 Gold]",
+			"Excluded from map editor"
+		]
+	},
+	{
+		"name": "Sea Trade Route (Gold)",
+		"terrainsCanBeBuiltOn": ["Coast","Ocean","Atoll"],
+		"gold": 12,
+		"uniques": [
+			"All Trade Route",
+			"Provides [-1] [Trade Route]",
+			"[+4 Gold] <starting from the [Classical era]>",
+			"[+4 Gold] <starting from the [Industrial era]>",
+			"[+4 Gold] <starting from the [Modern era]>",
+			"Pillaging this improvement yields approximately [+20 Gold]",
+			"Excluded from map editor"
+		]
+	},
 	// Policy
 	{
 		"name": "Oasis Dwelling",
@@ -272,8 +761,22 @@
 		"shortcutKey": "S"
 	},
 	// Resource-specific
-
-
+	{
+		"name": "Aviary",
+		"turnsToBuild": 5,
+		"techRequired": "Trapping",
+		"uniques": ["Can only be built to improve a resource", "Cannot be built on [Water] tiles", "Pillaging this improvement yields approximately [+20 Gold]"]
+	},
+	{
+		"name": "Desert Ranch",
+		"terrainsCanBeBuiltOn": ["Desert"],
+		"food": 1,
+		"techRequired": "Animal Husbandry",
+		"gold": 2,
+		"turnsToBuild": 7,
+		"shortcutKey": "F"
+	},
+	//
 	{
 		"name": "Oil well",
 		"production":1,
@@ -297,8 +800,21 @@
 		"uniques": ["'Extraction Improvement'","[+1 Production] <after discovering [Chemistry]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "Q"
 	},
-
-
+	// Military Improvement Extra
+	{
+		"name": "Outpost",
+		"production": 2,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Great Improvement",
+			"Gives a defensive bonus of [110]%",
+			"Adjacent enemy units ending their turn take [30] damage",
+			"[+4 Production] <after discovering [Combined Arms]>",
+			"Provides [2] [Slaves]",
+			"Removes removable features when built",
+			"Can be built just outside your borders",
+			"Constructing it will take over the tiles around it and assign them to your closest city",
+			"Pillaging this improvement yields approximately [+20 Gold]"]
+	},
 	// Military improvement
 	{
 		"name": "Fort",
@@ -352,6 +868,56 @@
 			"Cannot be built on [Hill] tiles","Can only be built on [Coastal] tiles",
 			"Cannot be built on [Land] tiles <with [3] to [6] neighboring [Canal] tiles>"],
 		"techRequired": "Engineering"
+	},
+	//Removals
+	// These are unique and have unique in-game checks related to them
+	{
+		"name": "Remove Land Trade Route (Production)",
+		"terrainsCanBeBuiltOn": ["Land","Forest","Jungle","Marsh","Oasis"],
+		"uniques": [
+			"Excluded from map editor"
+		],
+		"turnsToBuild": 0
+	},
+	{
+		"name": "Remove Land Trade Route (Food)",
+		"terrainsCanBeBuiltOn": ["Land","Forest","Jungle","Marsh","Oasis"],
+		"uniques": [
+			"Excluded from map editor"
+		],
+		"turnsToBuild": 0
+	},
+	{
+		"name": "Remove Land Trade Route (Gold)",
+		"terrainsCanBeBuiltOn": ["Land","Forest","Jungle","Marsh","Oasis"],
+		"uniques": [
+			"Excluded from map editor"
+		],
+		"turnsToBuild": 0
+	},
+	{
+		"name": "Remove Sea Trade Route (Production)",
+		"terrainsCanBeBuiltOn": ["Coast","Ocean","Atoll"],
+		"uniques": [
+			"Excluded from map editor"
+		],
+		"turnsToBuild": 0
+	},
+	{
+		"name": "Remove Sea Trade Route (Food)",
+		"terrainsCanBeBuiltOn": ["Coast","Ocean","Atoll"],
+		"uniques": [
+			"Excluded from map editor"
+		],
+		"turnsToBuild": 0
+	},
+	{
+		"name": "Remove Sea Trade Route (Gold)",
+		"terrainsCanBeBuiltOn": ["Coast","Ocean","Atoll"],
+		"uniques": [
+			"Excluded from map editor"
+		],
+		"turnsToBuild": 0
 	},
 	// Removals
 	// Any improvement that starts with 'Remove ' is automatically changed into
@@ -411,8 +977,31 @@
         "uniques": ["Unbuildable", "Excluded from map editor"],
         "civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
     },
-
-
+	// Extra Great Person improvements
+	{
+		"name": "Seminary",
+		"faith": 4,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [10]%",
+			"Removes removable features when built",
+			"[+2 Faith] <after discovering [Education]>",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+	{
+		"name": "Prison farm",
+		"production": 2,
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Great Improvement",
+			"Gives a defensive bonus of [10]%",
+			"Provides [2] [Slaves]",
+			"[+1 Production] for each adjacent [Farm]",
+			"[+4 Production] <after discovering [Social Engineering]>",
+			"Removes removable features when built",
+			"Pillaging this improvement yields approximately [+20 Gold]"]
+	},
     // Great Person improvements
 	{
 		"name": "Academy",
