@@ -1,0 +1,575 @@
+[
+	{
+		"name": "[Mountie] ability",
+		"uniques": ["[+25]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "[Combat Engineer] ability",
+		"uniques": ["[+50]% Strength <vs [Armored] units>"]
+	},
+	{
+		"name": "[BT-42] ability",
+		"uniques": ["[+15]% Strength <when fighting in [Snow] tiles>",
+			"[+15]% Strength <when fighting in [Tundra] tiles>",
+			"Double movement in [Snow]",
+			"Double movement in [Tundra]",
+			"[+35]% Strength <vs [Armor] units>"]
+	},
+	{
+		"name": "Field Medic",
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "All adjacent units heal [+10] HP when healing"],
+	},
+	//The USSR
+	{
+		"name": "Reliable Parts",
+		"uniques": ["[+15] HP when healing"],
+	},
+	{
+		"name": "Siberian Home",
+		"uniques": ["[+20]% Strength <when fighting in [Snow] tiles>",
+			"[+20]% Strength <when fighting in [Tundra] tiles>",]
+	},
+	//Nauru
+	{
+		"name": "[Egatow] ability",
+		"uniques": ["Earn [75]% of killed [Military] unit's [Strength] as [Faith]","Earn [75]% of killed [Military] unit's [Strength] as [Culture]"],
+	},
+	//New Zealand
+	{
+		"name": "Maori Heritage",
+		"uniques": ["[+100]% Strength <when defending> <when [Embarked]>", "Can instantly construct a [Pa] improvement <once> <for all movement>"]
+	},
+	{
+		"name": "[Zealand Defender-ship] ability",
+		"uniques": ["[+20]% Strength decreasing with distance from the capital", "Ignores Zone of Control"],
+	},
+	//Hong Kong
+	{
+		"name": "[Red Djong] ability",
+		"uniques": ["Heals [10] damage if it kills a unit", "[+15]% Strength <vs [Wounded] units>"],
+	},
+	//Inuit
+	{
+		"name": "Ice-Walker",
+		"uniques": ["Can enter ice tiles"],
+	},
+	//The Selk'nam
+	{
+	"name": "[Kian-seren] ability",
+	"uniques": ["Can see over obstacles", "Ranged attacks may be performed over obstacles", "[+5] HP when healing <in [Foreign Land] tiles>"],
+	},
+	//Iceland
+	{
+	"name": "[Longship] ability",
+	"uniques": ["Earn [20]% of the damage done to [Water] units as [Gold]","[+10]% Strength <when adjacent to a [Water] unit>"],
+	},
+	{
+	//Mapuche
+	"name": "[Maloon] ability",
+	"uniques": ["Ignores Zone of Control", "No movement cost to pillage"],
+	},
+	//Zapotecs
+	{
+	"name": "Follower of Cociyo",
+	"uniques": ["Double movement in [Plains]", "Heals [15] damage if it kills a unit", "Earn [25]% of killed [Military] unit's [Strength] as [Culture]",],
+	},
+	//Taino
+	{
+	"name": "Blunt Force",
+	"uniques": ["[+15]% Strength <when attacking>"],
+	},
+	{
+		"name": "Guerrilla Tactics",
+		"uniques": ["May withdraw before melee <with [20]% chance>", "Invisible to non-adjacent units <in [Forest] tiles>", "Invisible to non-adjacent units <in [Jungle] tiles>", "Ignores Zone of Control", "[-10]% Strength <when defending>"]
+	},
+	//Cuba
+	{
+		"name": "Cuban Revolutionary",
+		"uniques": ["May withdraw before melee <with [20]% chance>",
+		"May withdraw before melee <with [65]% chance> <when adjacent to a [Revolucionario] unit>",
+	 "Invisible to non-adjacent units <in [Forest] tiles>",
+	 "Invisible to non-adjacent units <in [Jungle] tiles>",
+	 "Can build [Rebel Camp] improvements on tiles",
+	 "May enter foreign tiles without open borders <in [Jungle] tiles>",
+	 "May enter foreign tiles without open borders <in [Forest] tiles>",
+	 "Ignores Zone of Control",
+	 "[-10]% Strength <when defending>"]
+	},
+	{
+		"name": "Capoeira",
+		"uniques": ["May withdraw before melee <with [15]% chance>", "Can move after attacking"]
+	},
+	{
+		"name": "River Walker",
+		"uniques": ["Double movement in [River]"]
+	},
+	{
+		"name": "Ransom I",
+		"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]"]
+	},
+	{
+		"name": "Ransom II",
+		"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]"]
+	},
+	{
+		"name": "Ransom III",
+		"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]"]
+	},
+	//The Vandals
+	{
+	"name": "Sea Wolves",
+	"uniques": ["May capture killed [{Barbarian} {Water}] units"],
+	},
+	//Golden horde
+	{
+	"name": "Horde Mobilization",
+	"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when attacking>", "Can move after attacking <when adjacent to a [Military] unit>", "No movement cost to pillage <when adjacent to a [Military] unit>"],
+	},
+	//Moldova
+	{
+	"name": "[Bessarabia Border Guard] ability",
+	"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when defending>", "[+17]% Strength <when defending>"],
+	},
+	//Samoa
+	{
+	"name": "Island Navigation",
+	"uniques": ["Double movement in [Water] <in [Friendly Land] tiles> <upon discovering [Optics] technology>"],
+	},
+	//Sri Lanka
+	{
+	"name": "[Aetaruva] ability",
+	"uniques": ["[+15] HP when healing <in [River] tiles>"],
+	},
+	//Malaysia
+	{
+	"name": "[Lancaran] ability",
+	"uniques": ["Heals [30] damage if it kills a unit", "May create improvements on water resources"],
+	},
+	//Fiji
+	{
+	"name": "Bau Domination",
+	"uniques": ["[This Unit] heals [25] HP <upon being promoted>", "[+1] Movement <for [This Unit] units> <for [5] turns> <upon being promoted>", "[+15]% Strength <for [This Unit] units> <for [5] turns> <upon being promoted>"],
+	},
+	//Australia
+	{
+	"name": "[Digger] ability",
+	"uniques": ["[+20]% Strength <when fighting in [Coastal] tiles>", "[+15]% Strength <when defending> <in [Coastal] tiles>"],
+	},
+	//Cameroon
+	{
+	"name": "[Talking Drummer] ability",
+	"uniques": ["[+10]% Strength bonus for [Land] units within [1] tiles"],
+	},
+	//Pakistan
+	{
+	"name": "[Pakistani Ghazi] ability",
+	"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Faith]"],
+	},
+	//Barbados
+	{
+	"name": "[Bussa's Revolutionary] ability",
+	"uniques": ["[-50]% maintenance costs", "[+20]% Strength <when fighting in [Plantation] tiles>", "[+20]% Strength <when defending> <in [Plantation] tiles>"],
+	},
+	//Kiribati
+	{
+	"name": "[Shark-Tooth Swordsman] ability",
+	"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles", "[+15]% Strength <when fighting in [Coastal] tiles>"],
+	},
+	//Belize
+	{
+	"name": "[Garifuna Guerrilla] ability",
+	"uniques": ["May withdraw before melee <with [50]% chance>", "Invisible to non-adjacent units <in [Friendly Land] tiles>"],
+	},
+	//The UN
+	{
+	"name": "International Agreements",
+	"uniques": ["May enter foreign tiles without open borders", "Unable to capture cities", "Unable to pillage tiles"],
+	},
+	{
+	"name": "[Peacekeeper] ability",
+	"uniques": ["[+20]% Strength <when defending> <in [Foreign Land] tiles>", "[+10] HP when healing"],
+	},
+	//Corsica
+	{
+	"name": "[Macchieri] ability",
+	"uniques": ["[-15]% Strength for enemy [Military] units in adjacent [Hill] tiles", "[+20]% Strength when stacked with [Great General]"],
+	},
+	//Comanche
+	{
+	"name": "Horse Thieves",
+	"uniques": ["May capture killed [Mounted] units <with [100]% chance> <for [Military] units>", "May capture killed [Armoured] units <with [50]% chance> <for [Military] units>"],
+	},
+	//Syria
+	{
+	"name": "Beast of Damascus",
+	"uniques": ["No movement cost to pillage"],
+	},
+	//The Third German Reich
+	{
+	"name": "Blitzkrieg",
+	"uniques": ["[+1] Movement <for [This Unit] units> <for [5] turns> <upon declaring war with a major Civilization>", "[1] additional attacks per turn <for [This Unit] units> <for [5] turns> <upon declaring war with a major Civilization>",
+							"[+1] Movement <for [This Unit] units> <for [3] turns> <upon conquering a city>", "[1] additional attacks per turn <for [This Unit] units> <for [3] turns> <upon conquering a city>"],
+	},
+	{
+	"name": "[Tiger I] ability",
+	"uniques": ["Destroys tile improvements when attacking <in [Foreign Land] tiles> <with [50]% chance>", "Can move after attacking <with [50]% chance>"],
+	},
+	//Lithuania
+	{
+	"name": "Pagan Faith",
+	"uniques": ["Double movement in [Forest]", "Earn [10]% of killed [Wounded] unit's [Cost] as [Faith]"],
+	},
+	//Latvia
+	{
+	"name": "The Livonian Order",
+	"uniques": ["[+2] Movement <in [Friendly] tiles>", "[+1] Sight <if it hasn't used other actions yet>", "Earn [33]% of killed [Land] unit's [Cost] as [Faith]"],
+	},
+	//Liechtenstein
+	{
+	"name": "[Landespolizei Corp] ability",
+	"uniques": ["[+25]% Strength <when fighting in [All] tiles> <within [1] tiles of a [City center]>", "[+25]% Strength <when fighting in [Friendly Land] tiles>"],
+	},
+	//Belarus
+	{
+		"name": "Man of The Marsh",
+		"uniques": ["[+15]% Strength <when fighting in [Marsh] tiles>", "[+15]% Strength <when fighting in [All] tiles> <within [1] tiles of a [Marsh]>","Double movement in [Marsh]"]
+	},
+	//Manchukuo
+	{
+		"name": "Showa Steel Mill Ability",
+		"uniques": ["Can speed up construction of a building <in cities with a [Showa Steel Mill]>"]
+	},
+	//Nippon Teikoku
+	{
+		"name": "[Yamato Class] ability",
+		"uniques": ["[+35]% Strength <when below [50] HP>", "[+10]% Strength bonus for [Water] units within [1] tiles"]
+	},
+	{
+		"name": "[I-400 Submarine] ability",
+		"uniques": ["Can carry [1] [Aircraft] units", "[+20]% Strength <when defending>"]
+	},
+	//Germania
+	{
+		"name": "Forestman",
+		"uniques": ["Double movement in [Forest]"]
+	},
+	//West Germany
+	{
+		"name": "Autobahn",
+		"uniques": ["Double movement in [Land] <in cities with a [Autobahn]>"]
+	},
+	//Thailand
+	{
+		"name": "[Little Tiger] ability",
+		"uniques": ["[+33]% Strength <when above [50] HP>"]
+	},
+	//Czechoslovakia
+	{
+		"name": "[Legie] ability",
+		"uniques": ["[+15]% Strength <when fighting in [Foreign Land] tiles>", "[+1] Movement <in [Foreign Land] tiles>"],
+	},
+	//Israel
+	{
+		"name": "[Merkava] ability",
+		"uniques": ["[+15]% Strength <when fighting in [Desert] tiles>", "[+2] Movement <in [Desert] tiles>"],
+	},
+	//Hungary
+	{
+		"name": "[Black Army] ability",
+		"uniques": [
+		"[+33]% Strength <vs cities> <when defending>",
+	 	"[+33]% Strength <vs [Barbarian] units>",
+		"[+33]% Strength <vs [City-State] units>"],
+	},
+	//Gunditjmara
+	{
+		"name": "Yereroc Builder",
+		"uniques": ["Can instantly construct a [Yereroc] improvement <by consuming this unit> <in [Lakes] tiles>"],
+	},
+	//The EU
+	{
+		"name": "[Eurocorps] ability",
+		"uniques": [
+		"[+15]% Strength <in [Friendly Land] tiles>",
+		"[+15]% Strength <in [City-State] tiles>",
+		"[+25]% Strength <in [{Friendly Land} {Foreign Land}] tiles>"],
+	},
+	//Xiongnu
+	{
+		"name": "Hero of The Steppes",
+		"uniques": ["May capture killed [Barbadian] units <with [33]% chance> <before the [Renaissance era]>"],
+	},
+	//Yamnaya
+	{
+		"name": "Burial Archaeology",
+		"uniques": ["Can instantly construct a [Ancient ruins] improvement <in [Pit Burial] tiles> <for all movement> <starting from the [Medieval era]>"],
+	},
+	//Jomsviking
+	{
+		"name": "Berserk",
+		"uniques": ["[1] additional attacks per turn <in [Foreign Land] tiles>"],
+	},
+	{
+		"name": "[Jomsviking] ability",
+		"uniques": ["Heals [25] damage if it kills a unit"],
+	},
+	//Apache
+	{
+		"name": "Spirit of Dizil",
+		"uniques": ["[+15]% Strength <when defending> <when above [75] HP>", "[+5]% Strength <when defending>"],
+	},
+	{
+		"name": "Spirit of Ussen",
+		"uniques": ["Ignores Zone of Control", "Eliminates combat penalty for attacking across a coast", "Eliminates combat penalty for attacking over a river"],
+	},
+	{
+		"name": "Spirit of Iisxiinii",
+		"uniques": ["[+20]% Strength <when defending> <when below [75] HP>", "[+15]% Strength <when defending> <when below [50] HP>", "[+5]% Strength <when below [25] HP>"],
+	},
+	{
+		"name": "Spirit of Ma'ii",
+		"uniques": ["No movement cost to pillage", "Heals [20] damage if it kills a unit"],
+	},
+	//Genoa
+	{
+		"name": "Luxury Control",
+		"uniques": ["Gain control over [Luxury resource] tiles in a [2]-tile radius <once> <after which this unit is consumed>"],
+	},
+	//Brunei
+	{
+		"name": "Water Village Builder",
+		"uniques": ["Can build [Water Village] improvements on tiles"],
+	},
+	//Tibet
+	{
+		"name": "Eightfold Path",
+		"uniques": ["Can build [Water Village] improvements on tiles"],
+	},
+	//Indonesia
+	{
+		"name": "[Jong] ability",
+		"uniques": ["[+15]% Strength <when adjacent to a [Water] unit>", "[+1] Movement <when adjacent to a [Water] unit>"],
+	},
+	//Pohnpei
+	{
+		"name": "[Nanparadak Slinger] ability",
+		"uniques": ["[+10]% Strength <when fighting in [Coastal] tiles>", "Withdraws before melee combat <with [66]% chance>"],
+	},
+	//New Caledonia
+	{
+		"name": "[Kanak Warrior] ability",
+		"uniques": ["[+5]% Strength <when fighting in [Friendly Land] tiles>",
+		"[+10]% Strength <when fighting in [Hill] tiles>",
+		"[+10]% Strength <when fighting in [Jungle] tiles>",
+		"[+10]% Strength <when fighting in [Forest] tiles>"],
+	},
+	//Burma
+	{
+		"name": "[Myinsi] ability",
+		"uniques": ["[+10]% Strength <when fighting in [All] tiles> <within [1] tiles of a [city Center]>",
+		"[+10]% Strength <when fighting in [Foreign Land] tiles> <within [1] tiles of a [city Center]>"],
+	},
+	//Great Viet
+	{
+		"name": "Great Viet Civilian Ability",
+		"uniques": ["Turn this tile into a [Jungle] tile <after which this unit is consumed> <after discovering [Civil Service]>"],
+	},
+	{
+		"name": "Great Viet Military Ability",
+		"uniques": ["Ignores terrain cost <in [Jungle] tiles>", "Double movement in [Jungle]"],
+	},
+	//Vietnam
+	{
+		"name": "Vietnam Ability",
+		"uniques": ["Can instantly construct a [Road] improvement <in [Jungle] tiles> <for all movement>",
+	 "Can instantly construct a [Railroad] improvement <in [Jungle] tiles> <for all movement>"],
+	},
+	{
+		"name": "Tunnel User",
+		"uniques": ["[+4] Movement <in [Tunnel Network] tiles>"],
+	},
+	{
+		"name": "Invisiblilty Sight",
+		"uniques": ["Can see invisible [Military] units"],
+	},
+	//Great Moravia
+	{
+		"name": "[Jezdec] ability",
+		"uniques": ["[+22]% Strength <vs [Ranged] units>", "[+10]% Strength <vs [Barbarian] units>"],
+	},
+	//Romani
+	{
+		"name": "Romani Ability",
+		"uniques": ["[+33]% Strength <when defending> <for [6] turns> <upon declaring war with a major Civilization>"],
+	},
+	//Micronesia
+	{
+		"name": "Micronesia Ability",
+		"uniques": ["May attack when embarked"],
+	},
+	//Norfolk
+	{
+		"name": "Norfolk Ability",
+		"uniques": ["May capture killed [City-States] units <with [88]% chance>"],
+	},
+	//Niue
+	{
+		"name": "[Fe'i Warrior] ability",
+		"uniques": [
+			"[+25]% Strength <in tiles adjacent to [Bananas] tiles>",
+			"[+50]% Strength <when fighting in [Bananas] tiles>",
+			"Can build [Plantation] improvements on tiles"],
+	},
+	//Khmer
+	{
+		"name": "[Ballista Elephant] ability",
+		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles"],
+	},
+	{
+		"name": "Baray Builder",
+		"uniques": [
+		"Turn this tile into a [Lakes] tile <in [Land] tiles> <after which this unit is consumed> <after discovering [Machinery]>",
+		"Can instantly construct a [Baray] improvement <by consuming this unit> <in [Lakes] tiles>"],
+	},
+	//China
+	{
+		"name": "PRC Ability",
+		"uniques": ["All healing effects doubled <for [12] turns> <upon declaring war with a major Civilization>"],
+	},
+	//Zimbabwe
+	{
+		"name": "[Gano Axeman] ability",
+		"uniques": ["Earn [100]% of killed [Land] unit's [Strength] as [Gold]", "[+10]% Strength <vs [Seige] units>"],
+	},
+	//Macedonia
+	{
+		"name": "[Hetairoi] ability",
+		"uniques": ["[This Unit] heals [100] HP <upon conquering a city>"],
+	},
+	//Kazakhs
+	{
+		"name": "Kazakh Ability",
+		"uniques": ["Heals [15] damage if it kills a unit", "[+10]% Strength <for [2] turns> <upon defeating a [Military] unit>", "[+1] Movement <for [2] turns> <upon defeating a [Military] unit>"],
+	},
+	{
+		"name": "Kazakh Mounted Ability",
+		"uniques": ["Heals [30] damage if it kills a unit", "[+20]% Strength <for [2] turns> <upon defeating a [Military] unit>", "[+2] Movement <for [2] turns> <upon defeating a [Military] unit>"],
+	},
+	//Secwepemc
+	{
+		"name": "[Tk'emlups Warrior] ability",
+		"uniques": ["[1] additional attacks per turn <in [Forest] tiles>"],
+	},
+	//Cook Island
+	{
+		"name": "[Mau Rakau Warrior] ability",
+		"uniques": ["[+15]% Strength <in [Coastal] tiles>", "Withdraws before melee combat <with [33]% chance>"],
+	},
+	//San Marino
+	{
+		"name": "San Marino Ability",
+		"uniques": ["Founds a new city <by consuming this unit> <if it hasn't used other actions yet>"],
+	},
+	{
+		"name": "[Guard of The Rock] ability",
+		"uniques": ["[1] additional attacks per turn <in [Friendly Land] tiles>"],
+	},
+	//Safavids
+	{
+		"name": "[Gholam] ability",
+		"uniques": ["[+25]% Strength <vs [City] units> <when defending>", "Heals [25] damage if it kills a unit", "[+5]% Strength <when adjacent to a [Wounded] unit>"],
+	},
+	//Druzhina promotions
+	{
+		"name": "Royal Guard I",
+		"uniques": ["[+15]% Strength <when fighting in [Friendly Land] tiles>"],
+		"unitTypes": ["Druzhina"],
+        "column": 27,
+        "row": 1
+	},
+	{
+		"name": "Royal Guard II",
+		"uniques": ["[+15]% Strength <when fighting in [Friendly Land] tiles>"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Royal Guard I"],
+				"column": 27,
+				"row": 2
+	},
+	{
+		"name": "Royal Guard III",
+		"uniques": ["[+15]% Strength <when fighting in [Friendly Land] tiles>", "[+5]% Strength bonus for [Military] units within [1] tiles"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Royal Guard II"],
+				"column": 27,
+				"row": 3
+	},
+	{
+		"name": "Bogatyr I",
+		"uniques": ["[+15]% XP gained from combat", "[+33]% Strength <vs [Barbarian] units>"],
+		"unitTypes": ["Druzhina"],
+				"column": 28,
+				"row": 1
+	},
+	{
+		"name": "Bogatyr II",
+		"uniques": ["[+15]% XP gained from combat", "[+33]% Strength <vs [Barbarian] units>"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Bogatyr I"],
+				"column": 28,
+				"row": 2
+	},
+	{
+		"name": "Bogatyr III",
+		"uniques": ["[+34]% Strength <vs [Barbarian] units>", "May capture killed [Barbarian] units", "[Great General] is earned [25]% faster"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Bogatyr II"],
+				"column": 28,
+				"row": 3
+	},
+	{
+		"name": "Boyer I",
+		"uniques": ["[+33]% Strength <vs cities>", "Earn [50]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Druzhina"],
+				"column": 29,
+				"row": 1
+	},
+	{
+		"name": "Boyer II",
+		"uniques": ["[+17]% Strength <vs cities>", "[-100]% maintenance costs", "Earn [15]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Boyer I"],
+				"column": 29,
+				"row": 2
+	},
+	{
+		"name": "Boyer III",
+		"uniques": ["[+25]% Strength <vs cities>", "Earn [15]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Boyer II"],
+				"column": 29,
+				"row": 3
+	},
+	{
+		"name": "Heal Instantly (Druzhina)",
+		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Druzhina"],
+				"row": 0,
+				"column": 30
+		},
+		{
+			"name": "Horseback Training",
+			"uniques": ["[+2] Movement"],
+			"unitTypes": ["Druzhina"],
+			"prerequisites": ["Bogatyr II", "Boyer II", "Royal Guard II"],
+					"column": 31,
+					"row": 3
+		},
+		{
+			"name": "Behterets",
+			"uniques": ["[+10] HP when healing", "[+15]% Strength <vs [Ranged] units> <when defending>", "[+15]% Strength <vs [Melee] units> <when defending>"],
+			"unitTypes": ["Druzhina"],
+			"prerequisites": ["Bogatyr II", "Boyer II", "Royal Guard II"],
+					"column": 32,
+					"row": 3
+		},
+]
