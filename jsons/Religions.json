@@ -1,11 +1,10 @@
-[   
-    "Hellenism",
-    "Anglicanism",
-    "Baptist Christianity",
-    "Catholicism",
-    "Orthodoxy",
-    "Protestantism",
+[
+    "Mahayana Buddhism",
+    "Vajrayana Buddhism",
+    "Theravada Buddhism",
     "Judaism",
+    "Catholic Church",
+    "Orthodox Church",
     "Sunni Islam",
     "Shia Islam",
     "Confucianism",
@@ -15,14 +14,5 @@
     "Shinto",
     "Sikhism",
     "Zoroastrianism",
-    "Continuation of Pantheon",
-    "Assyrian Christianity", 
-    "Sufi Islam", 
-    "Theravada Buddhism", 
-    "Oriental Orthodoxy",
-    "Roman Catholicism", 
-    "Jodo Buddhism", 
-    "Vajrayana Buddhism",
-    "Manichaeism",
-    "Teotl",
+    "Continuation of Pantheon"
 ]
