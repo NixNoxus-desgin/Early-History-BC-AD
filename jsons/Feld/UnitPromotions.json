@@ -15,6 +15,54 @@
 	},
 ///General
 {
+	"name": "Man of The Marsh",
+	"uniques": ["[+15]% Strength <when fighting in [Marsh] tiles>", "[+15]% Strength <when fighting in [All] tiles> <within [1] tiles of a [Marsh]>","Double movement in [Marsh]"]
+},
+{
+	"name": "Forestman",
+	"uniques": ["Double movement in [Forest]"]
+},
+{
+	"name": "[Legie] ability",
+	"uniques": ["[+15]% Strength <when fighting in [Foreign Land] tiles>", "[+1] Movement <in [Foreign Land] tiles>"],
+},
+{
+	"name": "Berserk",
+	"uniques": ["[1] additional attacks per turn <in [Foreign Land] tiles>"],
+},
+{
+	"name": "[Jomsviking] ability",
+	"uniques": ["Heals [25] damage if it kills a unit"],
+},
+{
+	"name": "Luxury Control",
+	"uniques": ["Gain control over [Luxury resource] tiles in a [2]-tile radius <once> <after which this unit is consumed>"],
+},
+{
+	"name": "Romani Ability",
+	"uniques": ["[+33]% Strength <when defending> <for [6] turns> <upon declaring war with a major Civilization>"]
+},
+{
+	"name": "Norfolk Ability",
+	"uniques": ["May capture killed [City-States] units <with [88]% chance>"]
+},
+{
+	"name": "[Hetairoi] ability",
+	"uniques": ["[This Unit] heals [100] HP <upon conquering a city>"]
+},
+{
+	"name": "San Marino Ability",
+	"uniques": ["Founds a new city <by consuming this unit> <if it hasn't used other actions yet>"]
+},
+{
+	"name": "[Guard of The Rock] ability",
+	"uniques": ["[1] additional attacks per turn <in [Friendly Land] tiles>"]
+},
+{
+	"name": "[Gholam] ability",
+	"uniques": ["[+25]% Strength <vs [City] units> <when defending>", "Heals [25] damage if it kills a unit", "[+5]% Strength <when adjacent to a [Wounded] unit>"]
+},
+{
 	"name": "[Merkava] ability",
 	"uniques": ["[+15]% Strength <when fighting in [Desert] tiles>", "[+2] Movement <in [Desert] tiles>"],
 },
