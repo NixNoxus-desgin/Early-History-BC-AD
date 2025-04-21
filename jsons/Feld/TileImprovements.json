@@ -2,6 +2,20 @@
 
 	//Civilization unique improvements
 	{
+		"name": "Pineapple Plantation",		
+        "uniqueTo": "Costa Rica",
+		"terrainsCanBeBuiltOn": ["Jungle"],
+		"gold": 2,
+		"turnsToBuild": 7,
+		"techRequired": "Calendar",
+		"uniques": [
+				"Provides [1] [Pineapple]",
+				"[+1 Food] <after discovering [Fertilizer]>",
+				"Cannot be built on [Bonus resource] tiles", 
+				"Cannot be built on [Luxury resource] tiles",
+				"Does not need removal of [Jungle]"]
+	},
+	{
 		"name": "Kibbutz",
 		"uniqueTo": "Israel",
 		"terrainsCanBeBuiltOn": ["Desert", "Flood plains"],
