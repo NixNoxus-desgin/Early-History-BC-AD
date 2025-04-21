@@ -219,6 +219,18 @@
                 "maintenance": 1
 	},
 	{
+		"name": "Royal Dockyard",
+		"replaces": "Harbor",
+		"uniqueTo": "England",
+		"cost": 120,
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Production, +1 Gold] from [Coast] tiles [in this city]",
+			"[+1 Production, +1 Gold] from [Ocean] tiles [in this city]",
+			"Connects trade routes over water","Must be next to [Coast]"],
+		"requiredTech": "Compass"
+	},
+	{
 		"name": "Fillipian Harbor",
 		"cost": 120,
 		"gold": 2,
@@ -1010,7 +1022,7 @@
 	{
 		"name": "Phoenician Port",
 		"replaces": "Harbor",
-		"uniqueTo": "-",
+		"uniqueTo": "Phoenicia",
 		"cost": 75,
 		"maintenance": 0,
 		"hurryCostModifier": 25,
@@ -1069,7 +1081,7 @@
 	{
 		"name": "Cothon",
 		"replaces": "Lighthouse",
-		"uniqueTo": "-",
+		"uniqueTo": "Carthage",
 		"cost": 75,
 		"cityStrength": 5,
 		"cityHealth": 50,
@@ -1843,6 +1855,14 @@
 		"uniques": ["New [Gunpowder] units start with [15] Experience [in this city]", "New [Ranged Gunpowder] units start with [15] Experience [in this city]", "New [Siege] units start with [15] Experience [in this city]", "Destroyed when the city is captured"]
 	},
 	{
+		"name": "Lithium Mine",
+		"replaces": "Recycling Center",
+		"uniqueTo": "Bolivia",
+		"maintenance": 0,
+		"requiredTech": "Ecology",
+		"uniques": ["Provides [2] [Aluminum]","Limited to [5] per Civilization", "[+5 Gold] from [Salt] tiles [in all cities]"]
+	},
+	{
 		"name": "Stone Works",
 		"maintenance": 1,
 		"specialistSlots": {"Artist": 1},
@@ -1986,6 +2006,16 @@
 		"uniques": ["Unbuildable","Unsellable","Power Building","[+10]% [Science] <in cities with a [Coal Plant]>","[+10]% [Culture] <in cities with a [Coal Plant]>","[-30]% [Production] <in cities with a [Coal Plant]>","[-1 Production] from [Coal] tiles [in this city]","Provides [1] [Coal]"]
 	},
 ///governmental
+    {
+		"name": "British East India Company",
+		"replaces": "Courthouse",
+		"uniqueTo": "England",
+		"maintenance": 0,
+		"cost": 100,
+		"hurryCostModifier": 0,
+		"uniques": ["Remove extra unhappiness from annexed cities", "Can only be built <in [Annexed] cities>", "Provides [1] [Tea]"],
+		"requiredTech": "Philosophy"
+	},
 	{
 		"name": "Jarliq",
 		"replaces": "Courthouse",
@@ -2660,22 +2690,25 @@
 		"cost": 40,
 		"maintenance": 1,
 		"requiredTech": "Pottery",
-		"uniques": ["[+2 Happiness] [in this city] <before the [Medieval era]>", "[+1 Culture] [in this city] <starting from the [Medieval era]>","Hidden when religion is disabled"]
+		"uniques": ["[+2 Happiness] [in this city] <before the [Medieval era]>",
+		"[+1 Culture] [in this city] <starting from the [Medieval era]>","Only available <when religion is enabled>"]
 	},
 	{
 		"name": "Viking Longhouse",
 		"uniqueTo": "Norway",
-		"cost": 90,
+		"cost": 100,
 		"maintenance": 2,
 		"production": 2,
 		"specialistSlots": {"Engineer": 1},
 		"hurryCostModifier": 25,
-		"uniques": ["[+1 Production, +1 Culture] from [Fishing Boats] tiles [in this city]"],
+		"percentStatBonus": {"production": 10},
+		"uniques": ["[+1 Production] from [Fishing Boats] tiles [in this city]"],
 		"requiredTech": "Metal Casting"
 	},
 	{
 		"name": "Orchestra",
 		"replaces": "Opera House",
+		"uniqueTo": "Austria",
 		"culture": 6,
 		"specialistSlots": {"Artist": 2},
 		"hurryCostModifier": 10,
@@ -2866,6 +2899,17 @@
 		"uniques": ["Cultural Building","[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]"],
 		"hurryCostModifier": 25,
 		"requiredTech": "Irrigation"
+	},
+	{
+		"name": "Torre de Belem",
+		"replaces": "National Epic",
+		"uniqueTo": "Portugal",
+		"cityStrength": 12,
+		"cost": 125,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": ["Comment [Unlocked at Compass]","Must be next to [Coast]","Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>", "[+25]% Great Person generation [in this city]", "Cost increases by [30] per owned city","Free [Caravel] appears"],
+		"requiredTech": "Compass"
 	},
 	{
 		"name": "National Epic",
@@ -3093,7 +3137,7 @@
 		"replaces": "Temple",
 		"uniqueTo": "Persia",
 		"maintenance": 2,
-		"uniques": ["[+2 Faith] <during a Golden Age>","Hidden when religion is disabled", "Destroyed when the city is captured"],
+		"uniques": ["[+2 Faith] <during a Golden Age>","Only available <when religion is enabled>", "Destroyed when the city is captured"],
 		"faith": 4,
 		"requiredBuilding": "Shrine",
 		"hurryCostModifier": 25,
@@ -3109,7 +3153,7 @@
 		"cityStrength": 5,
 		"cityHealth": 50,
 		"uniques": ["Empire enters golden age","Doubles Gold given to enemy if city is captured","Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
-			"[+100]% Natural religion spread [in this city]","Hidden when religion is disabled","Can only be built [in holy cities]"],
+				"[+100]% Natural religion spread [in this city]","Only available <when religion is enabled>","Can only be built <in [in holy cities] cities>"],
 		"requiredTech": "Theology",
 		"isNationalWonder": true
 	},
@@ -3443,17 +3487,17 @@
 	{
 		"name": "Golden Church",
 		"replaces": "Temple",
+		"uniqueTo": "Bulgaria",
 		"faith": 2,
-                "gold": 2,
+        "gold": 2,
 		"culture": 4,
 		"requiredBuilding": "Shrine",
 		"maintenance": 0,
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy",
-		"uniques": ["Worship Place",
-		        "Hidden when religion is disabled", "Destroyed when the city is captured"]
+		"uniques": ["Worship Place","Only available <when religion is enabled>", "Destroyed when the city is captured"]
 	},
-        {
+    {
 		"name": "Basilika",
 		"cost": 0,
 		"faith": 5,
@@ -3543,9 +3587,8 @@
 		"cost": 125,
 		"culture": 1,
 		"faith": 1,
-		"uniques": ["[+100]% Yield from every [Mountain] <in tiles without [Natural Wonder]>","Only available <if [Monastery] is constructed in all [non-[Puppeted]] cities>", 
-			"Cost increases by [30] per owned city",
-			"[+100]% Natural religion spread [in this city]", "Hidden when religion is disabled", "Can only be built [in holy cities]"],
+		"uniques": ["[+100]% Yield from every [Mountain] <in tiles without [Natural Wonder]>","Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
+			"[+100]% Natural religion spread [in this city]", "Only available <when religion is enabled>", "Can only be built <in [in holy cities] cities>"],
 		"requiredTech": "Theology",
 		"isNationalWonder": true
 	},
@@ -3579,7 +3622,7 @@
 			"Comment [+1 [Governor specialist] slots in this city]",
 			"Gain a free [Basilica] [in this city]","May choose [2] additional belief(s) of any type when [enhancing] a religion",
 			"Provides [1] [Scriptures]","Cost increases by [30] per owned city",
-			"[+25]% [Faith] [in all cities]","[+100]% Natural religion spread [in this city]", "Hidden when religion is disabled", 
+			"[+25]% [Faith] [in all cities]","[+100]% Natural religion spread [in this city]", "Only available <when religion is enabled>",
 			"Can only be built <in [in holy cities] cities>"],
 		"requiredTech": "Theology",
 		"isNationalWonder": true,
@@ -3717,7 +3760,8 @@
 		"cost": 125,
 		"culture": 1,
 		"isNationalWonder": true,
-		"uniques": ["Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>", "[+25]% Great Person generation [in this city]", "Cost increases by [30] per owned city", "[+1 Food, +2 Faith] from [Academy] tiles [in this city]"],
+		"uniques": ["Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
+		 "[+25]% Great Person generation [in this city]", "Cost increases by [30] per owned city", "[+1 Food, +2 Faith] from [Academy] tiles [in this city]"],
 		"requiredTech": "Writing"
 	},
         {
@@ -4185,7 +4229,7 @@
 	{
 		"name": "Salon",
 		"uniqueTo": "France",
-                "science": 2,
+        "science": 2,
 		"culture": 4,
 		"specialistSlots": {"Artist": 1},
 		"hurryCostModifier": 10,
@@ -4257,8 +4301,21 @@
 		"requiredTech": "Engineering",
 		"quote": "'Denke positiv und wenn du den Eindruck hast, dass dieses Leben ein Theater ist, dann suche dir eine Rolle aus, die dir wirklich Spaß macht. - William Shakespeare'" 
 	},
-        {
-                "name": "Amphitheater",
+	{
+		"name": "Hippodrome",
+		"replaces": "Amphitheater",
+		"uniqueTo": "Byzantium",
+		"happiness": 1,
+		"culture": 3,
+		"specialistSlots": {"Artist": 1},
+		"requiredBuilding": "Monument",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["Destroyed when the city is captured", "New [Mounted] units start with [15] Experience [in this city]"],
+		"requiredTech": "Drama and Poetry"
+	},
+    {
+        "name": "Amphitheater",
 		"percentStatBonus": {"Gold": 10},
 		"culture": 2,
 		"Happiness": 1,
