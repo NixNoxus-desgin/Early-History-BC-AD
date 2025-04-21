@@ -14,6 +14,17 @@
 		"row": 0
 	},
 ///General
+{
+	"name": "[Merkava] ability",
+	"uniques": ["[+15]% Strength <when fighting in [Desert] tiles>", "[+2] Movement <in [Desert] tiles>"],
+},
+{
+	"name": "[Black Army] ability",
+	"uniques": [
+	"[+33]% Strength <vs cities> <when defending>",
+	 "[+33]% Strength <vs [Barbarian] units>",
+	"[+33]% Strength <vs [City-State] units>"],
+},
     {
 		"name": "Redcoat ability",
 		"uniques": ["[+100]% Strength <when defending> <when [Embarked]>", "[1] Movement point cost to embark", "[1] Movement point cost to disembark"]
