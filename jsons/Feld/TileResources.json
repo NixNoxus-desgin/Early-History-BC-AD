@@ -1088,6 +1088,11 @@
 		"improvementStats": {"gold": 2},
 	},
 	{
+		"name": "Pineapple",
+		"resourceType": "Luxury",
+		"gold": 1
+	},
+	{
 		"name": "Mango",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Grassland", "Forest", "Jungle"],
@@ -1528,7 +1533,11 @@
 					"Doesn't generate naturally <in [{Grassland} {Hill}] tiles>"
 		]
 	},
-
+	{
+		"name": "Amber",
+		"resourceType": "Luxury",
+		"gold": 1
+	},
 	{
 		"name": "Marble",
 		"resourceType": "Luxury",
