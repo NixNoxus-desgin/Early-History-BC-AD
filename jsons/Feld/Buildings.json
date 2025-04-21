@@ -505,26 +505,24 @@
 	{
 		"name": "Free Terracotta",
 		"uniqueTo": "Nok",
-		"cost": -1,
-		"uniques": ["Provides [1] [Terracotta]","Will not be displayed in Civilopedia"]
+		"cost": 1,
+		"uniques": ["Provides [1] [Terracotta]","Will not be displayed in Civilopedia","Unsellable","Destroyed when the city is captured"],
 	},
 	{
-		"name": "Myrrh",
-		"uniqueTo": "Himyar",
-		"cost": -1,
-		"requiredResource": "Incense",
-		"requiredNearbyImprovedResources": ["Incense"],
+        "name": "Myrrh",
+        "uniqueTo": "Himyar",
+        "cost": 1,
 		"cannotBeBuiltWith": "Frankincense",
-		"uniques": ["Provides [1] [Myrrh]","Will not be displayed in Civilopedia","Not displayed as an available construction without [Incense]"]
+		"uniques": ["Consumes [1] [Incense]","Provides [1] [Myrrh]","Unsellable","Will not be displayed in Civilopedia",
+		"Only available <with [Incense]>","Destroyed when the city is captured"]
 	},
 	{
-		"name": "Frankincense",
-		"uniqueTo": "Himyar",
-		"cost": -1,
-		"requiredResource": "Incense",
-		"requiredNearbyImprovedResources": ["Incense"],
-		"cannotBeBuiltWith": "Myrrh",
-		"uniques": ["Provides [1] [Frankincense]","Will not be displayed in Civilopedia","Not displayed as an available construction without [Incense]"]
+        "name": "Frankincense",
+        "uniqueTo": "Himyar",
+        "cost": 1,
+		 "cannotBeBuiltWith": "Myrrh",
+		 "uniques": ["Consumes [1] [Incense]","Provides [1] [Frankincense]","Unsellable",
+		 "Will not be displayed in Civilopedia","Only available <with [Incense]>","Destroyed when the city is captured"]
 	},
 	{
 		"name": "Great Person Bonus1",
@@ -1818,6 +1816,18 @@
 		"requiredTech": "Fertilizer"
 	},
 /// heavy industry
+    {
+		"name": "Smeltery",
+		"replaces": "Forge",
+		"uniqueTo": "Nok",
+		"maintenance": 1,
+		"production": 1,
+		"hurryCostModifier": 25,
+		"requiredTech": "Iron Working",
+		"uniques": ["Provides [2] [Iron]","[+15]% Production when constructing [Spaceship part] units [in this city]",
+			"[+15]% Production when constructing [Land] units [in this city]",
+			"[+1 Production] from [Iron] tiles [in this city]"]
+	},
 	{
 		"name": "Coral Port",
 		"maintenance": 2,
@@ -2078,6 +2088,7 @@
 	},
 	{
 		"name": "Sphinx Gate",
+		"replaces": "Courthouse",
 		"uniqueTo": "The Hittites", 
 		"cityStrength": 2,
 		"cityHealth": 25,
