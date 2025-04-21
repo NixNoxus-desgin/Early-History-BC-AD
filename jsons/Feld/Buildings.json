@@ -3489,7 +3489,7 @@
 		"replaces": "Temple",
 		"uniqueTo": "Bulgaria",
 		"faith": 2,
-        "gold": 2,
+		"gold": 2,
 		"culture": 4,
 		"requiredBuilding": "Shrine",
 		"maintenance": 0,
@@ -3497,7 +3497,7 @@
 		"requiredTech": "Philosophy",
 		"uniques": ["Worship Place","Only available <when religion is enabled>", "Destroyed when the city is captured"]
 	},
-    {
+	{
 		"name": "Basilika",
 		"cost": 0,
 		"faith": 5,
