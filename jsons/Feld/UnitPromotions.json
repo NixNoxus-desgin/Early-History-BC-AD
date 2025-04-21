@@ -14,6 +14,43 @@
 		"row": 0
 	},
 ///General
+    {
+		"name": "Redcoat ability",
+		"uniques": ["[+100]% Strength <when defending> <when [Embarked]>", "[1] Movement point cost to embark", "[1] Movement point cost to disembark"]
+    },
+
+    {
+			"name": "Vytis ability",
+			"uniques": ["No damage penalty for wounded units","Earn [100]% of killed [Military] unit's [Strength] as [Faith]"]
+    },
+    {
+		"name": "Homeric Resilience",
+		"uniques": ["[+10] HP when healing"]
+    },
+    {
+		"name": "Buin ability",
+		"uniques": ["[+15]% Strength <when fighting in [Coastal] tiles>", "[+100]% Strength <when defending> <when [Embarked]>", "[1] Movement point cost to embark", "[1] Movement point cost to disembark","Eliminates combat penalty for attacking across a coast"]
+    },
+    {
+		"name": "River Warlord",
+		"uniques": ["[+15]% Strength <when fighting in [River] tiles>"]
+    },
+    {
+		"name": "Mamluk ability",
+		"uniques": ["Earn [100]% of killed [Military] unit's [Strength] as [Faith]"]
+    },
+    {
+		"name": "Streltsy ability",
+		"uniques": ["[+33]% Strength <when fighting in [Tundra] tiles>", "[-100]% maintenance costs"]
+	},
+    {
+		"name": "Khopesh ability",
+		"uniques": ["[+33]% Strength <when fighting in [Desert] tiles>"]
+	},
+    {
+		"name": "Ignore terrain cost",
+		"uniques": ["Ignores terrain cost"]
+	},
 	{
 		"name": "Sydney's Bridges prom",
 		"uniques": ["[1] Movement point cost to embark", "[1] Movement point cost to disembark"]
@@ -163,21 +200,21 @@
 	},
         {
 		"name": "Mine",
-		"effect": "Can construct [Mine]",
+		"effect": "Can construct [Mine]"
 	},  
 	{
 		"name": "Mount I",
-		"effect": "Access to mount",
+		"effect": "Access to mount"
 	},  
 	{
 		"name": "Mount II",
 		"prerequisites": ["Mount I"],
 		"uniques": ["[+2] Movement","[+15]% Strength <when defending>"],
-			"unitTypes": ["Ranged"],
+			"unitTypes": ["Ranged"]
 	},  
 	{
 		"name": "Pyrrhic Victory",
-		"uniques": ["[+50]% Strength <when attacking>","[-25]% Strength <when defending>"],
+		"uniques": ["[+50]% Strength <when attacking>","[-25]% Strength <when defending>"]
 	},  
 	{
 		"name": "Stewardship",
@@ -1512,7 +1549,7 @@
 	},
 	{
 		"name": "Justified",
-		"uniques": ["[+20]% Strength <when fighting in [Enemy Land] tiles>", ]
+		"uniques": ["[+20]% Strength <when fighting in [Enemy Land] tiles>"]
 	},
 	{
 		"name": "[Mountie] ability",
@@ -1524,35 +1561,35 @@
 	},
 	{
 		"name": "Field Medic",
-		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "All adjacent units heal [+10] HP when healing"],
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "All adjacent units heal [+10] HP when healing"]
 	},
 	{
 		"name": "[Egatow] ability",
-		"uniques": ["Earn [75]% of killed [Military] unit's [Strength] as [Faith]","Earn [75]% of killed [Military] unit's [Strength] as [Culture]"],
+		"uniques": ["Earn [75]% of killed [Military] unit's [Strength] as [Faith]","Earn [75]% of killed [Military] unit's [Strength] as [Culture]"]
 	},
 	{
 		"name": "Ice-Walker",
-		"uniques": ["Can enter ice tiles"],
+		"uniques": ["Can enter ice tiles"]
 	},
 	{
 		"name": "[Kian-seren] ability",
-		"uniques": ["Can see over obstacles", "Ranged attacks may be performed over obstacles", "[+5] HP when healing <in [Foreign Land] tiles>"],
+		"uniques": ["Can see over obstacles", "Ranged attacks may be performed over obstacles", "[+5] HP when healing <in [Foreign Land] tiles>"]
 	},
 	{
 		"name": "[Longship] ability",
-		"uniques": ["Earn [20]% of the damage done to [Water] units as [Gold]","[+10]% Strength <when adjacent to a [Water] unit>"],
+		"uniques": ["Earn [20]% of the damage done to [Water] units as [Gold]","[+10]% Strength <when adjacent to a [Water] unit>"]
 	},
 	{
 		"name": "[Maloon] ability",
-		"uniques": ["Ignores Zone of Control", "No movement cost to pillage"],
+		"uniques": ["Ignores Zone of Control", "No movement cost to pillage"]
 	},
 	{
 		"name": "Follower of Cociyo",
-		"uniques": ["Double movement in [Plains]", "Heals [15] damage if it kills a unit", "Earn [25]% of killed [Military] unit's [Strength] as [Culture]",],
+		"uniques": ["Double movement in [Plains]", "Heals [15] damage if it kills a unit", "Earn [25]% of killed [Military] unit's [Strength] as [Culture]"]
 	},
 	{
 		"name": "Blunt Force",
-		"uniques": ["[+15]% Strength <when attacking>"],
+		"uniques": ["[+15]% Strength <when attacking>"]
 	},
 	{
 		"name": "Guerrilla Tactics",
@@ -1580,39 +1617,39 @@
 	},
 	{
 		"name": "Sea Wolves",
-		"uniques": ["May capture killed [{Barbarian} {Water}] units"],
+		"uniques": ["May capture killed [{Barbarian} {Water}] units"]
 	},
 	{
 		"name": "Horde Mobilization",
-		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when attacking>", "Can move after attacking <when adjacent to a [Military] unit>", "No movement cost to pillage <when adjacent to a [Military] unit>"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when attacking>", "Can move after attacking <when adjacent to a [Military] unit>", "No movement cost to pillage <when adjacent to a [Military] unit>"]
 	},
 	{
 		"name": "[Bessarabia Border Guard] ability",
-		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when defending>", "[+17]% Strength <when defending>"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when defending>", "[+17]% Strength <when defending>"]
 	},
 	{
 		"name": "Spartan Training",
-		"uniques": ["[+15]% Strength <when adjacent to a [Melee] unit> <when defending>", "[+15]% Strength <when attacking>", "[+25]% XP gained from combat"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Melee] unit> <when defending>", "[+15]% Strength <when attacking>", "[+25]% XP gained from combat"]
 	},
 	{
 		"name": "Enlightened Medicine",
-		"uniques": ["[+10] HP when healing"],
+		"uniques": ["[+10] HP when healing"]
 	},
 	{
 		"name": "[Corinthian Trireme] ability",
-		"uniques": ["May withdraw before melee ([50]%)", "Can see over obstacles"],
+		"uniques": ["May withdraw before melee ([50]%)", "Can see over obstacles"]
 	},
 	{
 		"name": "[Naginata] ability",
-		"uniques": ["[+15]% Strength <vs [Melee] units>", "[+33]% Strength <when fighting in [Friendly Land] tiles>"],
+		"uniques": ["[+15]% Strength <vs [Melee] units>", "[+33]% Strength <when fighting in [Friendly Land] tiles>"]
 	},
 	{
 		"name": "Sanada Honor",
-		"uniques": ["Heals [35] damage if it kills a unit", "Unit will heal every turn, even if it performs an action", "[-5] HP when healing"],
+		"uniques": ["Heals [35] damage if it kills a unit", "Unit will heal every turn, even if it performs an action", "[-5] HP when healing"]
 	},
 	{
 		"name": "Electronics Factory Builder",
-		"uniques": ["Can instantly construct a [Electronics Factory] improvement <by consuming this unit>"],
+		"uniques": ["Can instantly construct a [Electronics Factory] improvement <by consuming this unit>"]
 	},
 	{
 		"name": "Royal Guard I",
@@ -1840,7 +1877,7 @@
 	},
 	{
 		"name": "River Mobility",
-		"uniques": ["Ignores terrain cost <in [River] tiles>"], 
+		"uniques": ["Ignores terrain cost <in [River] tiles>"]
 	},
 	{
 		"name": "[Privateer] ability",
@@ -1860,7 +1897,7 @@
 	},
 	{
 		"name": "Organized Warfare",
-		"uniques": ["Can move after attacking", "Ignores Zone of Control"],
+		"uniques": ["Can move after attacking", "Ignores Zone of Control"]
 	},
 	{
 		"name": "[Carolean] ability",
@@ -1954,19 +1991,19 @@
 	},
         {
                 "name": "Swamp Fever",
-                "uniques": ["This Unit takes [12] damage <upon ending a turn in a [All] tile>"],
+                "uniques": ["This Unit takes [12] damage <upon ending a turn in a [All] tile>"]
         },
 	{
 		"name": "Basic Training",
-		"uniques": ["[+5]% Strength <when fighting in [Open terrain] tiles> <when attacking>","[+5]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"uniques": ["[+5]% Strength <when fighting in [Open terrain] tiles> <when attacking>","[+5]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"]
 	},
 	{
 		"name": "Advanced Training",
-		"uniques": ["[+5]% to Flank Attack bonuses"],
+		"uniques": ["[+5]% to Flank Attack bonuses"]
 	},
 	{
 		"name": "Elite Training",
-		"uniques": ["[+15]% to Flank Attack bonuses"],
+		"uniques": ["[+15]% to Flank Attack bonuses"]
 	},
         {
 		"name": "Intimidation",
@@ -1974,29 +2011,29 @@
 	},
         {
 		"name": "Strong Genetics",
-		"uniques": ["[+5]% Strength bonus for [Civilian] units within [2] tiles","[+5]% Strength bonus for [Prey] units within [2] tiles"],
+		"uniques": ["[+5]% Strength bonus for [Civilian] units within [2] tiles","[+5]% Strength bonus for [Prey] units within [2] tiles"]
 	},
         {
                 "name": "Critical",
                 "uniques": ["[+50]% Strength <with [15]% chance> <when above [5] HP> <when attacking>",
-			"[+50]% Strength <with [25]% chance> <when below [5] HP> <when attacking>"],
+			"[+50]% Strength <with [25]% chance> <when below [5] HP> <when attacking>"]
         },
         {
                 "name": "Rage",
-                "uniques": ["[+150]% Strength <when below [30] HP> <when attacking>"],
+                "uniques": ["[+150]% Strength <when below [30] HP> <when attacking>"]
         },
         {
                 "name": "Rabies",
-                "uniques": ["This Unit takes [12] damage <upon ending a turn in a [All] tile>"],
+                "uniques": ["This Unit takes [12] damage <upon ending a turn in a [All] tile>"]
         },
 	{
                 "name": "Swamp Terror",
                 "unitTypes": ["-"],
-                "uniques": ["This Unit takes [5] damage <upon ending a turn in a [Friendly Land] tile>","[+10]% Strength <vs [Theropoda] units>","[+10]% Strength <vs [Fantasy] units>"],
+                "uniques": ["This Unit takes [5] damage <upon ending a turn in a [Friendly Land] tile>","[+10]% Strength <vs [Theropoda] units>","[+10]% Strength <vs [Fantasy] units>"]
         },
 	{
 		"name": "Amphibious",
-		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"],
+		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"]
 	},
 	// Scout
 	{
@@ -2145,21 +2182,21 @@
 	},
 	{
 		"name": "Cradle of Civilizations",
-		"uniques": ["Double movement in [River]"],
+		"uniques": ["Double movement in [River]"]
 	},
 	{
 		"name": "Steppe Hunter",
-		"uniques": ["Can receive bonus movement promotion"],
+		"uniques": ["Can receive bonus movement promotion"]
 	},
 	{
 		"name": "Horseback Rider",
 		"prerequisites": ["Steppe Hunter"],
 		"uniques": ["[+2] Movement"],
-		"unitTypes": ["Archery"],
+		"unitTypes": ["Archery"]
 	},
 	{
 		"name": "Pyrrhic Victory",
-		"uniques": ["[+25]% Strength <vs cities> <when attacking>","[-25]% Strength <vs cities> <when defending>"],
+		"uniques": ["[+25]% Strength <vs cities> <when attacking>","[-25]% Strength <vs cities> <when defending>"]
 	},
 	{
 		"name": "Favorable Winds",
@@ -2218,14 +2255,14 @@
 		"uniques": [
 			"No movement cost to pillage",
 			"[+15]% Strength when stacked with [Civilian]"
-		],
+		]
 	},
 	{
 		"name": "Seek and Capture", // Barbarians Scout
 		"uniques": [
 			"May capture killed [Military] units <with [50]% chance>",
 			"Can upgrade to [Marine]"
-		],
+		]
 	},
 	{
 		"name": "Explorer", // Ruins effecr
@@ -2233,6 +2270,6 @@
 			"[+15]% Strength <when defending>", 
 			"[+1] Sight"
 		]
-	},
+	}
 		
 ]
