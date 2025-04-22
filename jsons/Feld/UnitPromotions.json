@@ -317,7 +317,8 @@
 	},  
 	{
 		"name": "Pyrrhic Victory",
-		"uniques": ["[+50]% Strength <when attacking>","[-25]% Strength <when defending>"]
+		"uniques": ["[+50]% Strength <when attacking>","[-25]% Strength <when defending>",
+		"[+25]% Strength <vs cities> <when attacking>","[-25]% Strength <vs cities> <when defending>"]
 	},  
 	{
 		"name": "Stewardship",
@@ -2296,10 +2297,6 @@
 		"prerequisites": ["Steppe Hunter"],
 		"uniques": ["[+2] Movement"],
 		"unitTypes": ["Archery"]
-	},
-	{
-		"name": "Pyrrhic Victory",
-		"uniques": ["[+25]% Strength <vs cities> <when attacking>","[-25]% Strength <vs cities> <when defending>"]
 	},
 	{
 		"name": "Favorable Winds",
