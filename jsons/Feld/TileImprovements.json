@@ -117,7 +117,10 @@
 		"faith": 1,
 		"terrainsCanBeBuiltOn": ["Forest", "Jungle"],
 		"turnsToBuild": 6,
-		"uniques": ["[+1 Faith] for each adjacent [Mine]", "[+2 Faith] for each adjacent [Quarry]", "[+1 Culture] for each adjacent [Colossal Head]", "[+2 Science] for each adjacent [Great Improvement] <after discovering [Astronomy]>"],
+		"uniques":["[+1 Science] for each adjacent [Great Improvement] <after discovering [Astronomy]>",
+		    "[+1 Faith] for each adjacent [Mine]", "[+2 Faith] for each adjacent [Quarry]", 
+		    "[+1 Culture] for each adjacent [Colossal Head]", 
+		    "[+2 Science] for each adjacent [Great Improvement] <after discovering [Astronomy]>"],
 		"techRequired": "Masonry",
 	},
 	{
@@ -175,15 +178,6 @@
 		"uniques": ["Can only be built on [Coastal] tiles","[+1 Food] for each adjacent [Fishing Boats]","[+1 Production] <after discovering [Navigation]>"]
 	},
 	{
-		"name": "Colossal Head",
-		"uniqueTo": "The Olmec",
-		"terrainsCanBeBuiltOn": ["Jungle","Forest"],
-		"faith": 1,
-		"turnsToBuild": 6,
-		"techRequired": "Calendar",
-		"uniques": ["[+1 Culture] <after discovering [Archaeology]>","[+1 Science] for each adjacent [Great Improvement]","[+1 Science] for each adjacent [Great Improvement] <after discovering [Astronomy]>"]
-	},
-	{
 		"name": "Desert Plantation",
 		"uniqueTo": "Himyar",
 		"terrainsCanBeBuiltOn": ["Desert"],
@@ -200,7 +194,7 @@
 		"faith": 1,
 		"turnsToBuild": 8,
 		"techRequired": "Masonry",
-		"uniques": ["[+1 Culture] <after discovering [Archaeology]>"]
+		//"uniques": ["[+1 Culture] <after discovering [Archaeology]>"]
 	},
 	{
 		"name": "Reef Fishery",
