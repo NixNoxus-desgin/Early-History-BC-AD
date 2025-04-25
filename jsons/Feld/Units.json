@@ -1280,7 +1280,7 @@
 		"upgradesTo": "Knight",
 		"obsoleteTech": "Chivalry",
 		"promotions": ["Shock I","Cover I"],
-		"uniques": ["No defensive terrain bonus","Bonus vs Assault 25%","Rough terrain penalty","Penalty vs City 25%"],
+		"uniques": ["No defensive terrain bonus","Consumes [1] [Horse]","[+25]% Strength <vs [Assault] units>","Rough terrain penalty","Penalty vs City 25%"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
@@ -1306,11 +1306,11 @@
 		"replaces": "Warrior",
 		"movement": 2,
 		"strength": 8,
-		"cost": 30,
+		"cost": 32,
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Metal Casting",
 		"upgradesTo": "Swordsman",
-		"uniques": ["Ignores terrain cost"],
+		"uniques": ["Ignores terrain cost","May upgrade to [Spearman] through ruins-like effects"],
 		"attackSound": "nonmetalhit"
 	},
 	{
