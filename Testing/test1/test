@@ -235,5 +235,16 @@
 },
 
 
-
+{
+		"name": "Trainingslager",
+		"replaces": "Third Armory",
+                "uniqueTo": "Niemandsland",
+                "greatPersonPoints": {"Great Scientist": 2},
+                "culture": 2,
+				"maintenance": 2,
+		"hurryCostModifier": 50,
+		"uniques": ["All newly-trained [non-[Air]] units [in this city] receive the [Elite Training] promotion","[+13]% Production when constructing [Land] units [in this city]","Cost increases by [20] per owned city"],
+		"requiredBuilding": "Second Armory",
+                "requiredTech": "Professional Domestication"
+},
 
