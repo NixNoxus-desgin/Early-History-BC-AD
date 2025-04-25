@@ -2392,6 +2392,30 @@
 		"uniques": ["Gain [15] [Faith] <upon defeating a [Military] unit> <(modified by game speed)>", "Heals [15] damage if it kills a unit"] 
 	},
 ///Barbarian 
+    {
+		"name": "No Suicide",
+		"uniques": [
+		    "Can only attack [Civilian] units", 
+		    "Can only attack [Military] units", 
+		    "[+15]% Strength when stacked with [Worker]",
+		    "Heals [25] damage if it kills a unit",
+		    "This Unit upgrades for free including special upgrades <upon entering the [Classical era]> <with [25]% chance>",
+		    "This Unit upgrades for free including special upgrades <upon entering the [Medieval era]> <with [30]% chance>",
+		    "This Unit upgrades for free including special upgrades <upon entering the [Renaissance era]> <with [60]% chance>",
+		]
+    },
+    {
+		"name": "Barbarian Civilian",
+		"uniques": [
+			"Can move after attacking",
+			"Ignores Zone of Control",
+		    "Can pass through impassable tiles",
+		    "Invisible to non-adjacent units",
+		    "Unit will heal every turn, even if it performs an action",
+		    "Destroys tile improvements when attacking",
+		    "All tiles cost 1 movement"
+	]
+    }
 	{
 		"name": "Barbarian Strength", // Barbarians Land
 		"uniques": [
