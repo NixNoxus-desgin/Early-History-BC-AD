@@ -1018,6 +1018,31 @@
 	},
 	// Extra Plant scoured
 	{
+		"name": "Wild Crops",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Plains"],
+		"food": 1,
+		///"improvement": "Plantation",
+		///"uniques": ["Generated on every [110] tiles <in [Grassland] tiles>","Generated on every [110] tiles <in [Plains] tiles>"]
+	},
+        {
+		"name": "Wild Herbs",
+		"resourceType": "Bonus",
+		///"terrainsCanBeFoundOn": ["Tundra","Snowy Beach"],
+		"food": 1,
+		///"improvement": "Plantation",
+		///"uniques": ["Generated on every [40] tiles <in [Tundra] tiles>","Generated on every [40] tiles <in [Snowy Beach] tiles>"]
+	},
+        
+        {
+		"name": "Wild Berries",
+		"resourceType": "Bonus",
+		///"terrainsCanBeFoundOn": ["Beach","Snowy Beach","Swamp"],
+		"food": 1,
+		///"improvement": "Plantation",
+		///"uniques": ["Generated on every [30] tiles <in [Beach] tiles>","Generated on every [50] tiles <in [Snowy Beach] tiles>"]
+	},
+	{
 		"name": "Saltpeter",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Desert", "Tundra", "Snow", "Plains"],
