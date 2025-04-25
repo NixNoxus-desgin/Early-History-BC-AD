@@ -1,4 +1,46 @@
 [
+
+///Pathology
+{
+	"name": "Common Flu",
+	"uniques": ["[This Unit] takes [1] damage <upon ending a turn in a [All] tile>"],
+},
+{
+	"name": "Cancer",
+	"uniques": ["[This Unit] takes [30] damage <upon ending a turn in a [All] tile>"],
+},
+{
+	"name": "Bone Fracture",
+	"uniques": ["[This Unit] takes [17] damage <upon ending a turn in a [All] tile>"],
+},
+{
+	"name": "Prion",
+	"uniques": ["[This Unit] takes [15] damage <upon ending a turn in a [All] tile>"],
+},
+{
+	"name": "Sedentarism",
+	"uniques": ["[-10]% Strength"],
+},
+{
+	"name": "Pneumonia",
+	"uniques": ["[This Unit] takes [13] damage <upon ending a turn in a [All] tile>"],
+},
+{
+	"name": "Escherichia coli",
+	"uniques": ["[This Unit] takes [12] damage <upon ending a turn in a [All] tile>"],
+},
+{
+	"name": "Salmonella",
+	"uniques": ["[This Unit] takes [10] damage <upon ending a turn in a [All] tile>"],
+},
+{
+	"name": "Thermal Stress",
+	"uniques": ["[This Unit] takes [5] damage <upon ending a turn in a [All] tile>"],
+},
+{
+	"name": "Asthma",
+	"uniques": ["[This Unit] takes [1] damage <upon ending a turn in a [All] tile>"],
+},
 	
 ///Generally Apply
 	{
@@ -72,7 +114,7 @@
 },
 {
 	"name": "Berserk",
-	"uniques": ["[1] additional attacks per turn <in [Foreign Land] tiles>"],
+	"uniques": ["[1] additional attacks per turn <in [Foreign Land] tiles>","[+10]% Strength]"]
 },
 {
 	"name": "[Jomsviking] ability",
@@ -2093,10 +2135,10 @@
         "column": 25,
         "row": 2
 	},
-        {
-                "name": "Swamp Fever",
-                "uniques": ["This Unit takes [12] damage <upon ending a turn in a [All] tile>"]
-        },
+    {
+        "name": "Swamp Fever",
+        "uniques": ["This Unit takes [12] damage <upon ending a turn in a [All] tile>"]
+    },
 	{
 		"name": "Basic Training",
 		"uniques": ["[+5]% Strength <when fighting in [Open terrain] tiles> <when attacking>","[+5]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"]
