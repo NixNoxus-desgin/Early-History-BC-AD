@@ -1,5 +1,22 @@
 [
-    
+    {
+        "name": "squatters willing to assist you", 
+        "notification": "A [Great General] has joined us!", 
+        "uniques": ["Free [Great General] found in the ruins"], 
+        "excludedDifficulties": ["Immortal", "Deity"] 
+    },
+    {
+        "name": "squatters wishing to trade under your rule", 
+        "notification": "A [Great Merchant] has joined us!", 
+        "uniques": ["Free [Great Merchant] found in the ruins"], 
+        "excludedDifficulties": ["Immortal","Deity"] 
+    },
+    {
+        "name": "squatters wishing to entertain under your rule", 
+        "notification": "A [Great Artist] has joined us!", 
+        "uniques": ["Free [Great Artist] found in the ruins"], 
+        "excludedDifficulties": ["Immortal","Deity"] 
+    }, 
     {
 		"name": "into era of greatness",
 		"notification": "Solving a potential problem bring us to the era of greatness!",
@@ -189,6 +206,7 @@
     {
         "name": "your exploring unit receives training",
         "notification": "An ancient tribe trained us in their ways of combat!",
+        "weight": 4,
         "uniques": [
             "[This Unit] gains [20] XP",
             "Only available <after turn number [10]>"
@@ -214,15 +232,15 @@
         "name": "discover a lost technology",
         "notification": "We have discovered the lost technology of [techName] in the ruins!",
         "uniques": [
-            "[1] free random researchable Tech(s) from the [Ancient era]"
-        ],
+            "[2] free random researchable Tech(s) from the [Ancient era]", "[1] free random researchable Tech(s) from the [Medieval era]"
+        ],		
         "color": "#7f7fff"
     },
     {
         "name": "advanced weaponry for your explorer",
         "notification": "Our unit finds advanced weaponry hidden in the ruins!",
         "uniques": [
-            "[This Unit] upgrades for free including special upgrades <before turn number [25]>"
+            "[This Unit] upgrades for free including special upgrades <before turn number [30]>", "This Unit gains [10] XP"
         ]
     },
     {
@@ -243,8 +261,11 @@
     {
         "name": "discover holy symbols",
         "notification": "We have found holy symbols in the ruins, giving us a deeper understanding of religion! (+[faithAmount] Faith)",
+        "weight": 4,
         "uniques": [
             "Only available <when religion is enabled>",
+            "Gain [25]-[50] [Faith]",
+            "Gain [15] [Culture]",
             "Gain enough Faith for a Pantheon",
             "Only available <before founding a Pantheon>",
             "Only available <after turn number [10]>"
@@ -254,12 +275,13 @@
     {
         "name": "an ancient prophecy",
         "notification": "We have found an ancient prophecy in the ruins, greatly increasing our spiritual connection! (+[faithAmount] Faith)",
+        "weight": 3,
         "uniques": [
             "Only available <when religion is enabled>",
             "Gain enough Faith for [33]% of a Great Prophet",
             "Unavailable <after generating a Great Prophet>",
             "Only available <after founding a Pantheon>",
-            "Only available <after turn number [10]>"
+            "Only available <after turn number [15]>"
         ],
         "color": "#CDDDF4"
     }
