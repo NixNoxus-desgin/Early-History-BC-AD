@@ -3789,6 +3789,7 @@
 		"culture": 1,
 		"faith": 3,
 		"happiness": 1,
+		"science": 2,
 		"production": 2,
 		"food": 1,
 		"percentStatBonus": {"science": 5},
