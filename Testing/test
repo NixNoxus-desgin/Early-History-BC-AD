@@ -1,4 +1,4 @@
-
+//building
   {
 		"name": "Trash event",
                 "uniques": ["Triggers a [Trash] event <hidden from users>","Unbuildable <hidden from users>","Cannot be purchased <hidden from users>"],
@@ -17,6 +17,7 @@
 		"hurryCostModifier": 50,
                 "requiredTech": "Island Bosses"
 	},
+//personal
 
 {
 		"name": "Helena Walker",
@@ -42,6 +43,7 @@
 		"civilopediaText": [
 			{"text": "Helena Walker, the survivor chosen to ascend."}
 		]
+//gobal uniques
 	}
 
         "Instantly gain [2] [Alpha Points] <upon entering a Golden Age>",
@@ -63,3 +65,181 @@
         "May buy [Great Artist] units for [1000] [Faith] [in all cities] at an increasing price ([500])",
         "May buy [Great Scholar] units for [300] [Faith] [in all cities] at an increasing price ([250])",
         "May buy [Elf Magic Engineer] units for [440] [Faith] [in all cities] at an increasing price ([250])",
+//Techs
+[
+	{
+		"columnNumber": 0,
+		"era": "Ancient era",
+		"techCost": 20,
+		"buildingCost": 40,
+                "wonderCost": 185,
+		"techs": [
+			{
+				"name": "Agriculture",
+				"row": 6,
+				"quote": "Where am i?",
+				"uniques": ["Starting tech"]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Ancient era",
+		"techCost": 50,
+		"buildingCost": 90,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Torch",
+				"row": 3,
+				"prerequisites": ["Agriculture"],
+				"quote": "This is similar to survivors on the Island waking up naked on a sandy beach."
+			},
+			{
+				"name": "Stone Pick",
+				"row": 6,
+				"prerequisites": ["Agriculture"],
+				"quote": "Mining and mining."             
+			},
+                        {
+				"name": "Notes",
+				"row": 9,
+				"prerequisites": ["Agriculture"],
+				"quote": "Usefull for Understanding Ark´s Creatures."             
+			}
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Ancient era",
+		"techCost": 60,
+		"buildingCost": 120,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Campfire",
+				"row": 2,
+				"prerequisites": ["Torch"],
+				"quote": "Warm place to live."
+			},
+			{
+				"name": "Spear",
+				"row": 5,
+				"prerequisites": ["Stone Pick"],
+                        "quote": "Strike strike."
+			},
+                        {
+				"name": "Stone Hatchet",
+				"row": 7,
+				"prerequisites": ["Stone Pick"],
+                        "quote": "Chop chop."
+			}
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Ancient era",
+		"techCost": 100,
+		"buildingCost": 140,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Waterskin",
+				"row": 2,
+				"prerequisites": ["Campfire"],
+				"quote": "Also it works as a filter."
+			},
+			{
+				"name": "Thatch Houses",
+				"row": 7,
+				"prerequisites": ["Stone Hatchet"],
+                        "quote": "My first house!"
+			},
+                        {
+				"name": "Sleeping Bag",
+				"row": 6,
+				"prerequisites": ["Spear"],
+                        "quote": "Good Night."
+			},
+                        {
+				"name": "Bolas",
+				"row": 9,
+				"prerequisites": ["Notes"],
+                        "quote": "You can use Bolas to catch prehistoric creatures, and study them more."
+			}
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Ancient era",
+		"techCost": 155,
+		"buildingCost": 120,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Slingshot",
+				"row": 9,
+				"prerequisites": ["Thatch Houses","Bolas"],
+				"quote": "Point and Bayou!"
+			},
+                        {
+				"name": "Spyglass",
+				"row": 1,
+				"prerequisites": ["Waterskin"],
+                                "uniques": ["Enables embarkation for land units"],
+				"quote": "Over there and over the hills!"
+			},
+			{
+				"name": "Mortar",
+				"row": 3,
+				"prerequisites": ["Waterskin","Spear"],
+                        "quote": "Crush and Crush."
+			},
+                        {
+				"name": "Narcotics",
+				"row": 8,
+				"prerequisites": ["Thatch Houses"],
+                        "quote": "Sleepy."
+			},
+                        {
+				"name": "Wooden Houses",
+				"row": 5,
+				"prerequisites": ["Thatch Houses", "Sleeping Bag"],
+                        "quote": "Dont worry."
+			}
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Leather era",
+		"techCost": 320,
+		"buildingCost": 450,
+		"wonderCost": 300,
+		"techs": [
+			{
+				"name": "Cementing Paste",
+				"row": 3,
+                                "uniques": ["[+2 Gold] [in all cities]"],
+				"prerequisites": ["Mortar", "Wooden Houses"],
+				"quote": "Stick Together!"
+			},
+			{
+				"name": "Bow and Arrow",
+				"row": 6,
+				"prerequisites": ["Slingshot", "Narcotics"],
+                        "quote": "Poison Arrows?"
+			},
+                        {
+				"name": "Fish Basquet",
+				"row": 1,
+				"prerequisites": ["Spyglass"],
+                        "quote": "Bass?"
+			},
+                        {
+				"name": "Recipes",
+				"row": 9,
+				"prerequisites": ["Spyglass"],
+                        "quote": "From Nature's Bounty to Nutritional Brilliance"
+			}
+		]
+	},
