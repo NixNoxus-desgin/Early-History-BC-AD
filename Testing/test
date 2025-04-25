@@ -1,1 +1,19 @@
 
+  {
+		"name": "Trash event",
+                "uniques": ["Triggers a [Trash] event <hidden from users>","Unbuildable <hidden from users>","Cannot be purchased <hidden from users>"],
+		"hurryCostModifier": 50,
+                "requiredTech": "Island Bosses"
+	},
+	{
+		"name": "Global Event",
+                "uniques": ["Triggers a [Global Event] event <hidden from users>","Unbuildable <hidden from users>","Cannot be purchased <hidden from users>"],
+		"hurryCostModifier": 50,
+                "requiredTech": "Island Bosses"
+	},
+	{
+		"name": "Dom Event",
+                "uniques": ["Triggers a [Dom Event] event <hidden from users>","Unbuildable <hidden from users>","Cannot be purchased <hidden from users>"],
+		"hurryCostModifier": 50,
+                "requiredTech": "Island Bosses"
+	},
