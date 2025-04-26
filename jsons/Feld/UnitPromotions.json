@@ -71,18 +71,51 @@
 {
 	"name": "Echelon",
 	"uniques": ["Bonus vs Rider 17%"],
-	"unitTypes": ["Armor"]
+	"unitTypes": ["Close Combat"]
 },
 {
 	"name": "Thrust",
-	//"uniques": ["Bonus vs Melee 33%"],
-	"unitTypes": ["Armor"]
+	"uniques": ["[+50]% Strength <when attacking> <when above [90] HP>", "[+1] Movement"],
+	"unitTypes": ["Close Combat"]
+},
+{
+	"name": "Pirate Hunter",
+	"uniques": ["[+50]% Strength <vs [Barbarian] units>", "[+50]% Strength <vs [Privateer] units>", 
+	"[+15]% Strength <when fighting in [Coast] tiles> <starting from the [Imperal Era]>"]
+},
+{
+	"name": "Coastal Protector",
+	"uniques": ["[+25]% Strength <within [2] tiles of a [Coast]>"]
+},
+{
+	"name": "Gaucho",
+	//"uniques": ["[+30]% Strength <with [1] to [6] neighboring [Pasture] tiles>"]
+},
+{
+	"name": "Zealot",
+	//"uniques": ["Earn [50]% of the damage done to [Military] units as [Faith]", "[+20]% Strength <before discovering [Military Science]>"]
+},
+{
+	"name": "Desert Bombard",
+	"uniques": ["[+25]% Strength <when fighting in [Desert] tiles>"]
+},
+{
+	"name": "Nuwara",
+	//"uniques": ["[+25]% Strength <vs [Ranged Combat] units>", "[+25]% Strength <vs [-] units>"]
+},
+{
+	"name": "Ranchero",
+	"uniques": ["[+30]% Strength <when fighting in [Farm] tiles>"]
+},
+{
+	"name": "Raider",
+	"uniques": ["No movement cost to pillage"]
 },
 {
 	"name": "Square",
 	"prerequisites": ["Echelon"],
 	"uniques": ["All healing effects doubled"],
-	"unitTypes": ["Armor"]
+	"unitTypes": ["Close Combat"]
 },
 {
 	"name": "Schiltron",
@@ -110,27 +143,27 @@
 },
 {
 	"name": "Shadow Strike",
-	"uniques": ["+[10]% Combat Strength"],
+	"uniques": ["+[10]% Combat Strength"]
 },
 {
 	"name": "Exploding Palms",
 	"prerequisites": ["Shadow Strike"],
-	"uniques": ["+[33]% Combat Strength"],
+	"uniques": ["+[33]% Combat Strength"]
 },
 {
 	"name": "Sweeping Wind",
 	"prerequisites": ["Exploding Palms"],
-	"uniques": ["1 additional attack per turn"],
+	"uniques": ["1 additional attack per turn"]
 },
 {
 	"name": "Dancing Crane",
 	"prerequisites": ["Exploding Palms"],
-	"uniques": ["+1 Movement"],
+	"uniques": ["+1 Movement"]
 },
 {
 	"name": "Cobra Strike",
 	"prerequisites": ["Sweeping Wind, Dancing Crane"],
-	"uniques": ["+[50]% Combat Strength"],
+	"uniques": ["+[50]% Combat Strength"]
 },
 {
 	"name": "Battlecry",
@@ -314,7 +347,7 @@
 },
 {
 	"name": "[Legie] ability",
-	"uniques": ["[+15]% Strength <when fighting in [Foreign Land] tiles>", "[+1] Movement <in [Foreign Land] tiles>"],
+	"uniques": ["[+15]% Strength <when fighting in [Foreign Land] tiles>", "[+1] Movement <in [Foreign Land] tiles>"]
 },
 {
 	"name": "Berserk",
@@ -322,11 +355,11 @@
 },
 {
 	"name": "[Jomsviking] ability",
-	"uniques": ["Heals [25] damage if it kills a unit"],
+	"uniques": ["Heals [25] damage if it kills a unit"]
 },
 {
 	"name": "Luxury Control",
-	"uniques": ["Gain control over [Luxury resource] tiles in a [2]-tile radius <once> <after which this unit is consumed>"],
+	"uniques": ["Gain control over [Luxury resource] tiles in a [2]-tile radius <once> <after which this unit is consumed>"]
 },
 {
 	"name": "Romani Ability",
@@ -354,14 +387,14 @@
 },
 {
 	"name": "[Merkava] ability",
-	"uniques": ["[+15]% Strength <when fighting in [Desert] tiles>", "[+2] Movement <in [Desert] tiles>"],
+	"uniques": ["[+15]% Strength <when fighting in [Desert] tiles>", "[+2] Movement <in [Desert] tiles>"]
 },
 {
 	"name": "[Black Army] ability",
 	"uniques": [
 	"[+33]% Strength <vs cities> <when defending>",
 	 "[+33]% Strength <vs [Barbarian] units>",
-	"[+33]% Strength <vs [City-State] units>"],
+	"[+33]% Strength <vs [City-State] units>"]
 },
     {
 		"name": "Redcoat ability",
@@ -547,7 +580,43 @@
 		"name": "Suahili warrior",
 		"uniques": ["[+25]% Strength <when fighting in [Friendly Land] tiles>", "[+15]% Strength <when fighting units from a Civilization with more Cities than you>"]
 	},
-        {
+	{
+		"name": "Granadian Army",
+		"uniques": ["[+1] Movement <before discovering [Imperal era]>", "Can move after attacking"]
+	},
+	{
+		"name": "Emir's Army",
+		"uniques": ["[+33]% Strength <vs cities> <when defending>", "[+33]% Strength <vs [Ranged Combat] units> <when defending>"]
+	},	
+	{
+		"name": "Nome Militia",
+		"uniques": ["[+25]% Strength <when defending>", "[+10]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "Mounted Velites",
+		"uniques": ["Damage is ignored when determining unit Strength <when fighting in [Enemy Land] tiles>", "[+10]% Strength <before discovering [Combustion]>"]
+	},
+	{
+		"name": "Berber Pirates",
+		"uniques": ["[+20]% Strength <when fighting in [Coast] tiles>", "Earn [12]% of killed [Military] unit's [Cost] as [Faith]"]
+	},
+	{
+		"name": "Swiss Pikeman",
+		"uniques": ["[+25]% Strength <when fighting in [Foreign Land] tiles>"]
+	},
+	{
+		"name": "Sapotec",
+		"uniques": ["[+40]% Strength <when fighting in [Jungle] tiles>", "[+20]% Strength <when fighting in [Forest] tiles>"]
+	},
+	{
+		"name": "Hitties Chariot",
+		"uniques": ["[+1] Movement", "[+20]% Strength <when fighting in [Plains] tiles>"]
+	},
+	{
+		"name": "Kshatriya",
+		"uniques": ["[1] additional attacks per turn", "[+20]% Strength <vs cities> <when attacking> <before discovering [Military Science]>"]
+	},
+    {
 		"name": "Mine",
 		"effect": "Can construct [Mine]"
 	},  
@@ -2477,7 +2546,7 @@
 		"name": "Elite Training",
 		"uniques": ["[+15]% to Flank Attack bonuses"]
 	},
-        {
+    {
 		"name": "Intimidation",
 		"uniques": ["[-20]% Strength for enemy [Military] units in adjacent [All] tiles"]
 	},
@@ -2723,7 +2792,7 @@
 		    "Heals [25] damage if it kills a unit",
 		    "This Unit upgrades for free including special upgrades <upon entering the [Classical era]> <with [25]% chance>",
 		    "This Unit upgrades for free including special upgrades <upon entering the [Medieval era]> <with [30]% chance>",
-		    "This Unit upgrades for free including special upgrades <upon entering the [Renaissance era]> <with [60]% chance>",
+		    "This Unit upgrades for free including special upgrades <upon entering the [Renaissance era]> <with [60]% chance>"
 		]
     },
     {
@@ -2737,7 +2806,7 @@
 		    "Destroys tile improvements when attacking",
 		    "All tiles cost 1 movement"
 	]
-    }
+    },
 	{
 		"name": "Barbarian Strength", // Barbarians Land
 		"uniques": [
