@@ -44,6 +44,17 @@
 	
 ///Generally Apply
 {
+	"name": "Wolfpack",
+	"prerequisites":// ["Observation","Silent Running"],
+	"uniques": ["1 additional attack per turn"],
+	"unitTypes": ["Close Combat Ship"]
+},
+{
+	"name": "Boarding",
+	"uniques": ["Bonus vs City 50%"],
+	"unitTypes": ["Close Combat Ship"]
+},
+{
 	"name": "Taxis", // Byzantium
 	"uniques": ["+[10]% Combat Strength"]
 },
