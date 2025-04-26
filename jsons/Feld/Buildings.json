@@ -3781,7 +3781,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 2,
 		"requiredTech": "Theology",
-		"quote": "'Alle Menschen aber sind Toren mit ihrer Kunst, und alle Goldschmiede stehen beschämt da mit ihren Bildern; denn ihre Götzen sind Trug und haben kein Leben. 2. Mose 20, 4f; Apostelgeschichte 17, 29; Jeremia 10, 3; 51, 17. Du sollst dir kein Kultbild machen, keine Gestalt von irgendetwas am Himmel droben, auf der Erde unten oder im Wasser unter der Erde. Dtn 5,8 '"
+		///"quote": "'Alle Menschen aber sind Toren mit ihrer Kunst, und alle Goldschmiede stehen beschämt da mit ihren Bildern; denn ihre Götzen sind Trug und haben kein Leben. 2. Mose 20, 4f; Apostelgeschichte 17, 29; Jeremia 10, 3; 51, 17. Du sollst dir kein Kultbild machen, keine Gestalt von irgendetwas am Himmel droben, auf der Erde unten oder im Wasser unter der Erde. Dtn 5,8 '"
 	},
 	{
 		"name": "Monastery",
@@ -3789,12 +3789,12 @@
 		"culture": 1,
 		"faith": 3,
 		"happiness": 1,
-		"science": 2,
+		///"science": 2, (After adopting (-)), (Requires (-) building) Vielleicht mehr
 		"production": 2,
 		"food": 1,
 		"percentStatBonus": {"science": 5},
 		"uniques": ["Practice Ground","[-10]% Unhappiness from [Population] [in this city]","Provides [1] [Wine] <with [Grape]>","[+1 Gold, +1 Culture] from [Grape] tiles [in this city]",
-			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Industrial era]> <after adopting [Monastic Warrior]>",
+			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Imperal Era]> <after adopting [Monastic Warrior]>",
 			"Unbuildable","Hidden when religion is disabled", "Destroyed when the city is captured"],
 		"requiredTech":"Theology",
 		"quote ": "'Siehe, ich stehe vor der Tür und klopfe an. Wenn jemand meine Stimme hören wird und die Tür auftun, zu dem werde ich hineingehen und das Abendmahl mit ihm halten und er mit mir.'"
