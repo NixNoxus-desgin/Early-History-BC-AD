@@ -56,6 +56,31 @@
         },
 ///Civilian 
 {
+	"name": "Genoese Merchant",
+	"replaces": "Great Merchant",
+	"uniqueTo": "Genoa",
+	"unitType": "Civilian",
+	"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [90] Influence",
+		"Can instantly construct a [Customs house] improvement <by consuming this unit>", "Great Person - [Gold]", "Unbuildable", "Uncapturable","Double movement in [Coast]"],
+	"movement": 2
+},
+{
+	"name": "Trader",
+	"unitType": "Civilian",
+	"movement": 2,
+	"cost": 40,
+	//"requiredResource": "Trade Route", (!Uniques!)
+	"uniques": ["Can construct [Trade Route (Domestic)]","Can construct [Trade Route (International)]",
+		"Trade Routes on Coastal cities provide +3 yield","Requires [Foreign Trade]"]
+},
+{
+	"name": "Envoy",
+	"unitType": "Civilian",
+	"movement": 4,
+	"cost": -1,
+	"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [10] Influence","Unbuildable"]
+},
+{
 	"name": "Colonist",
 	"unitType": "Civilian",
 	"uniqueTo": "Phoenicia",
@@ -382,6 +407,50 @@
 		"attackSound": "shot"
 	},
 ///RC
+{
+	"name": "Conquistador",
+	"uniqueTo": "Spain",
+	"replaces": "Musketman",
+	"unitType": "Ranged Combat",
+	"movement": 2,
+	"strength": 55,
+	"cost": 250,
+	//"requiredTech": "Gunpowder",
+	"requiredResource": "Saltpeter",
+	"upgradesTo": "Infantry",
+	"uniques": ["Bonus for units in 2 tile radius 15%","Bonus vs Armor 33%"],
+	"attackSound": "shot"
+},
+{
+	"name": "Saka Horse Archer",
+	"uniqueTo": "Scythia",
+	"unitType": "Ranged Combat",
+	"movement": 4,
+	"range": 1,
+	"strength": 15,
+	"rangedStrength": 25,
+	"cost": 50,
+	"requiredTech": "Horseback Riding",
+	//"obsoleteTech": "Ballistics",
+	//"upgradesTo": "Field Cannon",
+	"uniques": ["Penalty vs City 57%","Penalty vs water units 57%"],
+	"attackSound": "arrow"
+},
+{
+	"name": "Immortal",
+	"uniqueTo": "Persia",
+	"replaces": "Swordsman",
+	"unitType": "Ranged Combat",
+	"movement": 2,
+	"strength": 30,
+	"rangedStrength": 25,
+	"cost": 100,
+	//"requiredTech": "Iron Working",
+	//"obsoleteTech": "Gunpowder",
+	//"upgradesTo": "Musketman",
+	"uniques": ["Penalty vs City 57%","Bonus vs Close Combat 33%","Penalty vs water units 57%"],
+	"attackSound": "arrow"
+},
 {
 	"name": "Nim",
 	"unitType": "Ranged Combat",
@@ -816,9 +885,8 @@
 		"rangedStrength": 52,
 		"range":1,
 		"cost": 165,
-		"upgradesTo":"Sharpshooter",
-		"requiredTech": "Military Science",
-		"obsoleteTech": "Replaceable Parts",
+		//"upgradesTo":"Sharpshooter",
+		//"requiredTech": "Military Science",
 		"requiredResource":"Standing Army Maintainance",
 		"uniques": ["Consumes [1] [Weapon Parts]","Gunpowder","Skirmish","Standing Army","Infantry","Never appears as a Barbarian unit"],
 		"promotions":["Skirmisher Training","The Standing Army"],
@@ -907,7 +975,7 @@
 	},
 	{
 		"name": "Janissary",
-                "requiredResource": "Weapon Parts",
+        "requiredResource": "Weapon Parts",
 		"unitType": "Ranged Combat",
 		"replaces": "Musketman",
 		"uniqueTo": "The Ottomans",
@@ -937,6 +1005,59 @@
 	},
 
 ///CC
+{
+	"name": "Khevsur",
+	"uniqueTo": "Georgia",
+	"unitType": "Close Combat",
+	"movement": 2,
+	"strength": 45,
+	"cost": 160,
+	//"requiredTech": "Military Tactics",
+	//"obsoleteTech": "Gunpowder",
+	"requiredResource": "Iron",
+	//"upgradesTo": "Musketman",
+	"uniques": ["Ignores terrain cost","+[25]% combat bonus in [Hill]","Bonus vs Close Combat 33%"],
+	"attackSound": "metalhit"
+},
+{
+	"name": "Berserker",
+	"uniqueTo": "Norway",
+	"unitType": "Close Combat",
+	"movement": 3,
+	"strength": 40,
+	"cost": 160,
+	//"requiredTech": "Military Tactics",
+	//"obsoleteTech": "Gunpowder",
+	"requiredResource": "Iron",
+	//"upgradesTo": "Musketman",
+	"uniques": ["+[33]% Strength when attacking","No movement cost to pillage","Bonus vs Armor 33%"],
+	"attackSound": "metalhit"
+},
+{
+	"name": "Hypaspist",
+	"uniqueTo": "Macedon",
+	"replaces": "Swordsman",
+	"unitType": "Close Combat",
+	"movement": 2,
+	"strength": 36,
+	"cost": 100,
+	"requiredTech": "Iron Working",
+	"obsoleteTech": "Gunpowder",
+	"requiredResource": "Iron",
+	//"upgradesTo": "Musketman",
+	"uniques": ["Bonus vs City 16%","Bonus vs wounded units 10%","Bonus vs Close Combat 33%"],
+	"attackSound": "metalhit"
+},
+{
+	"name": "Warrior Monk",
+	"unitType": "Close Combact",
+	"movement": 2,
+	"strength": 35,
+	"cost": -1,
+	"uniques": ["Unbuildable"],
+	"promotions": ["Shadow Strike"],
+	"attackSound": "nonmetalhit"
+},
 {
 	"name": "Halberdman",
 	"unitType": "Close Combat",
@@ -1397,7 +1518,7 @@
 	}, 
 	{
 		"name": "Hoplite",
-                "requiredResource": "Copper",
+        "requiredResource": "Copper",
 		"unitType": "Close Combat",
 		"replaces": "Spearman",
 		"uniqueTo": "Greece",
@@ -1412,7 +1533,7 @@
 	},
 	{
 		"name": "Persian Immortal",
-                "requiredResource": "Copper",
+        "requiredResource": "Copper",
 		"unitType": "Close Combat",
 		"replaces": "Spearman",
 		"uniqueTo": "Persia",
@@ -1765,6 +1886,56 @@
 		"attackSound": "metalhit"
 	},
 ///Rider
+{
+	"name": "Tagma",
+	"uniqueTo": "Byzantium",
+	//"replaces": "Knight",
+	"unitType": "Rider",
+	"movement": 4,
+	"strength": 48,
+	"cost": 220,
+	//"obsoleteTech": "Ballistics",
+	"requiredResource": "Iron",
+	//"upgradesTo": "Cuirassier",
+	"uniques": ["Bonus for units in 2 tile radius 15%","Requires [Divine Right]"],
+	"attackSound": "horse"
+},
+{
+	"name": "Courser",
+	"unitType": "Rider",
+	"movement": 4,
+	"strength": 27,
+	"cost": 110,
+	//"requiredTech": "Castles",
+	//"obsoleteTech": "Military Science",
+	"requiredResource": "Horse",
+	//"upgradesTo": "Cavalry",
+	"attackSound": "horse"
+},
+{
+	"name": "Horseman",
+	"unitType": "Rider",
+	"movement": 2,
+	"strength": 10,
+	"cost": 50,
+	"requiredTech": "Horseback Riding",
+	//"obsoleteTech": "Castles",
+	"requiredResource": "Horse",
+	"upgradesTo": "Courser",
+	"attackSound": "horse"
+},
+{
+	"name": "War-Cart",
+	"uniqueTo": "Sumeria",
+	"unitType": "Rider",
+	"movement": 4,
+	"strength": 30,
+	"cost": 55,
+	"uniques": ["Bonus vs Armor 16%"],
+	"upgradesTo": "Knight",
+	"obsoleteTech": "Stirrups",
+	"attackSound": "horse"
+},
 {
 	"name": "Amazon",
 	"unitType": "Rider",
@@ -2254,6 +2425,21 @@
 		"attackSound": "tankshot"
 	},
 ///Assault
+{
+	"name": "Maryannu Chariot Archer",
+	"uniqueTo": "Egypt",
+	"replaces": "Heavy Chariot",
+	"unitType": "Assault",
+	"movement": 3,
+	"strength": 25,
+	"rangedStrength": 35,
+	"cost": 120,
+	"requiredTech": "Wheel",
+	"obsoleteTech": "Machinery",
+	"upgradesTo": "Crossbowman",
+	"uniques": ["Penalty vs City 57%","Penalty vs water units 57%"],
+	"attackSound": "arrow"
+},
 	{
 		"name": "Chariot",
 		"unitType": "Assault",
@@ -2531,13 +2717,46 @@
 	},
 ///Ships
 {
-	"name": "Genoese Merchant",
-	"replaces": "Great Merchant",
-	"uniqueTo": "Genoa",
-	"unitType": "Civilian",
-	"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [90] Influence",
-		"Can instantly construct a [Customs house] improvement <by consuming this unit>", "Great Person - [Gold]", "Unbuildable", "Uncapturable","Double movement in [Coast]"],
-	"movement": 2
+	"name": "Caravel",
+	"unitType": "Ranged Combact Ship",
+	"movement": 4,
+	"strength": 55,
+	"cost": 240,
+	//"requiredTech": "Cartography",
+	//"obsoleteTech": "Steam Power",
+	"upgradesTo": "Ironclad",
+	"uniques": ["+1 Visibility Range"],
+	"attackSound": "nonmetalhit"
+},
+{
+	"name": "Barbary Corsair",
+	"uniqueTo": "The Ottomans",
+	//"replaces": "Privateer",
+	"unitType": "Ranged Combat Ship",
+	"movement": 4,
+	"strength": 40,
+	"rangedStrength": 50,
+	"cost": 240,
+	"uniques": ["No movement cost to pillage","Invisible to others",
+		//"Requires [Medieval Faires]"],
+	"attackSound": "shot"
+},
+{
+	"name": "Dromon",
+	"uniqueTo": "Byzantium",
+	"replaces": "Quadrireme",
+	"unitType": "Ranged Combat Ship",
+	"movement": 3,
+	"range": 2,
+	"strength": 20,
+	"rangedStrength": 25,
+	"cost": 120,
+	"requiredTech": "Shipbuilding",
+	//"obsoleteTech": "Square Rigging",
+	"upgradesTo": "Frigate",
+	"uniques": ["Bonus vs land units 33%","Bonus vs water units 33%",
+		"Cannot enter ocean tiles until Astronomy"],
+	"attackSound": "arrow"
 },
 {
 	"name": "Brigantine",
@@ -2664,6 +2883,28 @@
 		"promotions": ["Favorable Winds"],
 		"hurryCostModifier": 20,
 		"attackSound": "arrow"
+	},
+	{
+		"name": "Privateer",
+		"unitType": "Close Combact Ship",
+		"movement": 4,
+		"strength": 40,
+		"rangedStrength": 50,
+		"cost": 280,
+		//"uniques": ["Invisible to others","Can attack submarines","Requires [Mercantilism]"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sea Dog",
+		"uniqueTo": "England",
+		"replaces": "Privateer",
+		"unitType": "Close Combact Ship",
+		"movement": 4,
+		"strength": 40,
+		"rangedStrength": 50,
+		"cost": 240,
+		//"uniques": ["Invisible to others","Can attack submarines","Requires [Mercantilism]"],
+		"attackSound": "shot"
 	},
 	{
 		"name": "Carraca",
@@ -3249,6 +3490,7 @@
 			"Low Tech",
 			"[+50]% Strength <vs cities>",
 			"[+50]% Strength <vs [Low Tech] units>",
+			"Can construct [Roman Fort]","Bonus vs Armor 33%",
 			"Only available <if [Foundry] is constructed>"
 		],
 		"attackSound": "metalhit"
