@@ -2,6 +2,15 @@
 
 	//Civilization unique improvements
 	{
+		"name": "Elam Mausoleum",
+		"culture": 2,
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Plains", "Desert"],
+		"uniques": ["Only available <with [Elam Mausoleum res]>", "Only available <after discovering [Masonry]>",
+		"[+1 Culture] for each adjacent [Fort]"]
+	}
+	
+	{
 		"name": "Pineapple Plantation",		
         "uniqueTo": "Costa Rica",
 		"terrainsCanBeBuiltOn": ["Jungle"],
