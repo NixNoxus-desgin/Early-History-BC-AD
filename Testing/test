@@ -1,5 +1,28 @@
 //building
-  {
+ {
+        "name": "~l1",
+        "isNationalWonder": "true",
+        "cost": -1,
+        "uniques": ["Will not be displayed in Civilopedia","Unbuildable"],
+    },
+    {
+        "name": "Australia Bonus",
+        "isNationalWonder": true,
+        "uniqueTo": "Australia",
+        "cost": -1,
+        "uniques": ["Must be next to [Coast]","[5]% of food is carried over after population increases"
+            "Will not be displayed in Civilopedia","Unbuildable"]
+    },
+    {
+        "name": "Macedon Bonus",
+        "uniqueTo": "Macedon",
+        "cost": -1,
+        "cannotBeBuiltWith": "~l1",
+        "providesFreeBuilding": "~l1",
+        "uniques": ["Can only be built in annexed cities","Free Technology","Free Social Policy",
+            "Will not be displayed in Civilopedia"]
+    },
+    {
 		"name": "Trash event",
                 "uniques": ["Triggers a [Trash] event <hidden from users>","Unbuildable <hidden from users>","Cannot be purchased <hidden from users>"],
 		"hurryCostModifier": 50,
