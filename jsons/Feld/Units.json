@@ -1,6 +1,6 @@
 [
 	
-	///God
+	///Gods
         {
                 "name": "Barong",
 		"unitType": "Deity",
@@ -190,49 +190,47 @@
 		"unitType": "Civilian",
 		"requiredTech": "Fire Making",
 		"movement": 2,
-		"obsoleteTech": "Industrialization",
-		"upgradesTo": "Civil Engineer",
 		"uniques": ["Can build [Land] improvements on tiles"],
-		"cost": 70
+		"cost": 100
 	},
 	{
 		"name": "Agrarian",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 70,
-		"replacementTextForUniques": "Can instantly build Farms, Pastures or Plantations 3 times",
-		"uniques": ["Can instantly construct a [Farm] improvement <[2] times> <after which this unit is consumed>",
-			"Can instantly construct a [Pasture] improvement <[1] times> <after which this unit is consumed>",
-			"Can instantly construct a [Plantation] improvement <[1] times> <after which this unit is consumed>"]
+		"cost": 120,
+		"replacementTextForUniques": ///"Can instantly build Farms, Pastures or Plantations 1 times",
+		///"uniques": ["Can instantly construct a [Farm] improvement <[1] times> <after which this unit is consumed>",
+			///"Can instantly construct a [Pasture] improvement <[1] times> <after which this unit is consumed>",
+			///"Can instantly construct a [Plantation] improvement <[1] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Miner",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 70,
+		"cost": 120,
 		"requiredTech": "Mining",
-		"replacementTextForUniques": "Can instantly build Mines or Quarries 3 times",
-		"uniques": ["Can instantly construct a [Mine] improvement <[2] times> <after which this unit is consumed>",
-			"Can instantly construct a [Quarry] improvement <[2] times> <after which this unit is consumed>"]
+		"replacementTextForUniques":// "Can instantly build Mines or Quarries 1 times",
+		"uniques": //["Can instantly construct a [Mine] improvement <[1] times> <after which this unit is consumed>",
+			//"Can instantly construct a [Quarry] improvement <[1] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Huntsman",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 70,
+		"cost": 100,
 		"requiredTech": "Trapping",
-		"replacementTextForUniques": "Can instantly build Trading posts or Camps 3 times",
-		"uniques": ["Can instantly construct a [Trading post] improvement <[2] times> <after which this unit is consumed>",
-			"Can instantly construct a [Camp] improvement <[2] times> <after which this unit is consumed>"]
+		"replacementTextForUniques": ///"Can instantly build Trading posts or Camps 1 times",
+		///"uniques": ["Can instantly construct a [Trading post] improvement <[1] times> <after which this unit is consumed>",
+			///"Can instantly construct a [Camp] improvement <[1] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Machinist",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 70,
+		"cost": 85,
 		"requiredTech": "Construction",
-		"replacementTextForUniques": "Can instantly build Lumber mills or Oil wells 3 times",
-		"uniques": ["Can instantly construct a [Lumber mill] improvement <[2] times> <after which this unit is consumed>"]
+		///"replacementTextForUniques": "Can instantly build Lumber mills or () 1 times",
+		///"uniques": ["Can instantly construct a [Lumber mill] improvement <[1] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Renovator",
@@ -249,42 +247,10 @@
 		"name": "Military Engineer",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 100,
+		"cost": 120,
 		"requiredTech": "Engineering",
-		"replacementTextForUniques": "Can instantly build Roads or Forts 3 times",
-		"uniques": ["Can instantly construct a [Road] improvement <[3] times> <after which this unit is consumed>"]
-	},
-	{
-		"name": "Civil Engineer",
-		"unitType": "Civilian",
-		"movement": 2,
-		"cost": 225,
-		"requiredTech": "Industrialization",
-		"uniques": ["Can build [Land] improvements on tiles",
-			"[-33]% tile improvement construction time",
-			"[+1] Movement <after discovering [Combustion]>",
-			"[+1] Movement <after discovering [Tactics]>"]
-	},
-	{
-		"name": "Worker",
-		"unitType": "Civilian",
-		"requiredTech": "Fire Making",
-		"movement": 2,
-		"upgradesTo":"Mechanised Worker",
-		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
-		"cost": 70
-	},
-	{
-		"name": "Mechanised Worker",
-		"unitType": "Civilian",
-		"movement": 4,
-		"requiredBuilding": "Construction Vehicle Factory",
-		"requiredTech": "Combustion",
-		"uniques": ["[-25]% construction time for [All] improvements",
-					"Mechanised","Can build [Land] improvements on tiles", 
-					"Automation is a primary action"],
-		"promotions":["Transport Truck"],
-		"cost": 210
+		"replacementTextForUniques": "Can instantly build Roads or Forts 2 times",
+		"uniques": ["Can instantly construct a [Road] improvement <[2] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Galley Work Ship",
@@ -328,29 +294,29 @@
 		"movement": 2
 	},
 ///Scouts
-        {
+    {
 		"name": "Scout",
-	        "unitType": "Scout",
-	        "upgradesTo": "Wayfarer",
-	        "movement": 2,
-	        "strength": 5,
-	        "cost": 25,
-	        "uniques": ["May upgrade to [Archer] through ruins-like effects"],
-	        "promotions": ["Ignore terrain cost"],
-                "attackSound": "nonmetalhit"
-        },
-        {
-         	"name": "Wayfarer",
-    	        "unitType": "Scout",
-    	        "movement": 2,
-    	        "strength": 20,
-    	        "range": 1,
-    	        "cost": 250,
-             ///"requiredTech" : "Scientific Theory",
-	        "uniques": ["Invisible to non-adjacent units", "[+1] Sight"],
-	        "promotions": ["Ignore terrain cost"],
-	        "attackSound": "nonmetalhit"
-        },
+	    "unitType": "Scout",
+	    "upgradesTo": "Wayfarer",
+	    "movement": 2,
+	    "strength": 5,
+	    "cost": 25,
+	    "uniques": ["May upgrade to [Archer] through ruins-like effects"],
+	    "promotions": ["Ignore terrain cost"],
+        "attackSound": "nonmetalhit"
+    },
+    {
+    	"name": "Wayfarer",
+    	"unitType": "Scout",
+    	"movement": 2,
+    	"strength": 20,
+    	"range": 1,
+    	"cost": 250,
+    	///"requiredTech" : "Scientific Theory",
+	    "uniques": ["Invisible to non-adjacent units", "[+1] Sight"],
+	    "promotions": ["Ignore terrain cost"],
+	    "attackSound": "nonmetalhit"
+    },
 	{
 		"name": "Slave Hunter",
 		"unitType": "Scout",
