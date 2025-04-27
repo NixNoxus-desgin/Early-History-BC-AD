@@ -1,4 +1,8 @@
 //Units
+"Can be earned through combat"
+"[-33]% Strength <vs cities> <when attacking>",
+"Can move after attacking",
+"No defensive terrain bonus",
  //"Earn [100]% of killed [Military] unit's [Strength] as [Faith]",
  //"Free [Hawkman Brave] appears <upon being defeated> <with [33]% chance>"],
  //"Cannot move",
