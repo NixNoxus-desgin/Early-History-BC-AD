@@ -54,7 +54,21 @@
                 "uniques": ["Unbuildable","Never appears as a Barbarian unit","Invisible to non-adjacent units",
 	                  "May capture killed [All] units","[+64]% Strength <when defending>","Can [Spread Religion] [2] times"],
         },
-///Civilian 
+///Civilian
+{
+	//"name": "Persevering Pax Researcher",
+	//"uniqueTo": "The Pax",
+	"unitType": "Civilian",
+	"uniques": [
+		"Withdraws before melee combat <with [100]% chance>",
+		//"Can instantly construct a [Preservator] improvement <by consuming this unit>",
+	"promotions": [-],
+		"Unbuildable",
+		"Uncapturable",
+		"Unable to capture cities",
+		],
+		"movement": 2
+}, 
 {
 	"name": "Genoese Merchant",
 	"replaces": "Great Merchant",
