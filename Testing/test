@@ -1,6 +1,14 @@
+//Units
+ //"Cannot move",
+ //"Can only attack [Military] units", "Can only attack [Civilian] units",
+ //"[+20]% Strength <when attacking>",
+			//"Only available <for [City-States] Civilizations>",
+			//"Only available <with a garrison>",
+			//"Never appears as a Barbarian unit",
+			//"Limited to [3] per Civilization"],
 //building
-//"[-100]% maintenance on road & railroads",
-//"Only available <in cities with a [-]>",
+ //"[-100]% maintenance on road & railroads",
+ //"Only available <in cities with a [-]>",
  {
         "name": "~l1",
         "isNationalWonder": "true",
