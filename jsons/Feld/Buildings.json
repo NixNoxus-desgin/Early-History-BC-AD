@@ -722,6 +722,36 @@
 		"percentStatBonus": {"gold":15, "culture":15},
 		"uniques": ["Can only be built in annexed cities","Will not be displayed in Civilopedia"]
 	},
+//
+	{
+		"name": "Defense Directorate",
+		"cityHealth": 50,
+		"cost": 0,
+		"uniques": [
+			"[3] units cost no maintenance",
+			"[+3] Unit Supply",
+			"Free [State Guard] appears",
+			//"[2] free [Pre-War Turret] units appear",
+			"Automatically built in all cities where it is buildable",
+			"Can only be built <in [Capital] cities>",
+			"Only available <for [City-States] Civilizations>",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Lay of the Land",
+		"cost": 0,
+		"uniques": [
+			"Will not be displayed in Civilopedia",
+			"[+1] Sight <for [Scout] units>",
+			"Free [Scout] appears",
+			"Reveals the entire map",
+			"Automatically built in all cities where it is buildable",
+			"Can only be built <in [Capital] cities>",
+			"Only available <for [City-States] Civilizations>",
+			"Destroyed when the city is captured"
+		]
+	},
 // Neolithikum (Untertitel Ändern!!(Verrübergehend))
     {
 		"name": "Place Mark",
