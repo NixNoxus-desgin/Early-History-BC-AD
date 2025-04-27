@@ -724,7 +724,7 @@
 	},
 //
 	{
-		"name": "Defense Directorate",
+		//"name": "Defense Directorate",
 		"cityHealth": 50,
 		"cost": 0,
 		"uniques": [
@@ -739,7 +739,7 @@
 		]
 	},
 	{
-		"name": "Lay of the Land",
+		//"name": "Lay of the Land",
 		"cost": 0,
 		"uniques": [
 			"Will not be displayed in Civilopedia",
@@ -2372,20 +2372,20 @@
 	{
 		"name": "Embassy",
 		"replaces": "Council",
-		"unique to": "-",
+		//"unique to": "-",
 		"cost": 100,
 		"requiredTech": "Civil Service",
-		"uniques": ["[+10]% growth [in all cities]",
-			"[+5]% Production when constructing [All] buildings [in this city]",
-			"Gifts of Gold to City-States generate [25]% more Influence",
+		"uniques": [
+			"When declaring friendship, both parties gain a [10]% boost to great person generation",
+			"Gifts of Gold to City-States generate [7]% more Influence",
 			"Gain [30] Influence with a [Military] gift to a City-State",
 			"Can only be built <in [Capital] cities>",
-			"Only available <in cities without a [Government Complex]>",
+			"Only available <in cities without a [Parliament]>",
 			"Destroyed when the city is captured"]
 	},
 	{
 		"name": "Trader's Congress",
-		"uniqueTo": "-",
+		//"uniqueTo": "-",
 		"replaces": "Congress",
 		"cost": 100,
 		"requiredTech": "Trade Network",
@@ -2393,9 +2393,9 @@
 			"[+1 Gold] from each Trade Route",
 			"Resting point for Influence with City-States is increased by [20]",
 			"Allied City-States provide [Culture] equal to [10]% of what they produce for themselves",
-			"Only available <if [Search for Survivors] is constructed>",
+			//"Only available <if [Search for Survivors] is constructed>",
 			"Can only be built <in [Capital] cities>",
-			"Only available <in cities without a [Investors' Chamber]>",
+			//"Only available <in cities without a [Investors' Chamber]>",
 			"Destroyed when the city is captured"]
 	},
 	{
@@ -2406,7 +2406,7 @@
 		"requiredTech": "Civil Service",
 		"uniques": ["[+1 Culture, +1 Gold] per [4] population [in all cities]",
 			"[-5]% Unhappiness from [Population] [in all cities]",
-			"[+25]% Production towards any buildings that already exist in the Capital",
+			"[+20]% Production towards any buildings that already exist in the Capital",
 			"Can only be built <in [Capital] cities>",
 			"Only available <in cities without a [Consulate]>",
 			"Destroyed when the city is captured"]
@@ -2575,11 +2575,41 @@
 		"requiredTech": "Civil Service",
 		"uniques": ["[+10]% growth [in all cities]",
 			"[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
-			"[+10]% Production when constructing [{Military} {Land}] units [in all cities]",
+			"[+20]% Production when constructing [Military] units [in all cities]",
 			"Only available <if [Town Hall] is constructed>",
 			"Can only be built <in [Capital] cities>",
 			"Only available <in cities without a [Citizens' Assembly]>",
 			"Destroyed when the city is captured"]
+	},
+	{
+		"name": "Think Tank",
+		"replaces": "Council",
+		//"uniqueTo": "-",
+		"cost": 50,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"Production to [Science] conversion in cities changed by [33]%",
+			"[+10]% Production when constructing [Science] buildings [in all cities]",
+			//"Only available <if [-] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			//"Only available <in cities without a [-]>",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Board of Directors",
+		"replaces": "Council",
+		//"uniqueTo": "-",
+		"cost": 50,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+1 Gold] from every [Town Hall]",
+			"[Gold] cost of purchasing items in cities [-20]%",
+			//"Only available <if [-] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			//"Only available <in cities without a [-]>",
+			"Destroyed when the city is captured"
+		]
 	},
 	{
 		"name": "Trustees' Committee",
@@ -2624,12 +2654,13 @@
 		"greatPersonPoints": {"Great Administrator": 2},
 		"cost": 150,
 		"requiredTech": "Civil Service",
-		"uniques": ["Only available <after adopting [Constitution]>",
-			"Can only be built <in [Capital] cities>",
+		"uniques": [
 			"[+25]% Production when constructing [Civilian] units [in all cities]",
 			"[+2 Production] [in all cities connected to capital]",
 			"[+20]% Golden Age length",
 			"Empire enters golden age",
+			"Only available <after adopting [Constitution]>",
+			"Can only be built <in [Capital] cities>",
 			"Only available <if [Town Hall] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [30] per owned city"]
 	},
@@ -2640,14 +2671,16 @@
 		"requiredTech": "Civil Service",
                 "requiredBuilding": "Town Hall",
                 "uniques": ["Only available after adopting [Constitution]",
-			"[+1 Culture] [in all cities]",
-                        "[+1 Culture, +2 Science] per [1] social policies adopted",
+                        "[+1 Culture, +1 Science] per [1] social policies adopted",
                         "[+10]% [Culture] [in all cities connected to capital]",
-                        "[+5]% [Culture]",
+						"[-10]% Unhappiness from [Population] [in all cities]",
 
                         "[2] Free Social Policies",
                         "[+1] population [in all cities]",
                         "Reveal up to [5] [River] within a [40] tile radius",
+
+						"Can only be built <in [Capital] cities>",
+						"Only available <in cities without a [Embassy]>",
 
                         "Hidden until [2] social policy branches have been completed",
                         "Requires at least [10] population",
@@ -2728,8 +2761,9 @@
 		"cityStrength": 5,
 		"specialistSlots": {"Artist": 1,"Merchant": 1,"Engineer": 1,"Scientist": 1},
 		"uniques": ["Political Building","Only available <after adopting [Anarchism]>",
+		            "[-5]% Gold cost of acquiring tiles [in this city]",
 					"[+3 Happiness, -5 Gold] per [5] population [in this city]",
-					"Destroyed when the city is captured"],
+					"Destroyed when the city is captured","Unsellable"],
 		"hurryCostModifier": 0,
 		"requiredTech":"Radio"
 	},
@@ -3526,7 +3560,7 @@
 		"requiredBuilding": "Shrine",
 		"requiredTech": "Theology"
 	},
-        {
+    {
 		"name": "Beth Manda",
 		"cost": 0,
 		"faith": 1,
@@ -3585,6 +3619,7 @@
 		"happiness": 1,
 		"uniques": ["[+34]% Natural religion spread [in this city]",
 			"Unbuildable", "Hidden when religion is disabled"]
+		//"quote": „Wir erklären unser Recht, auf dieser Erde ein Mensch zu sein, als Mensch respektiert zu werden und die Rechte eines Menschen in dieser Gesellschaft, auf dieser Erde, an diesem Tag zu erhalten, den wir mit allen erforderlichen Mitteln verwirklichen wollen.“
 	},
 	{
 		"name": "Pagoda",
@@ -3804,7 +3839,9 @@
 		"faith": 5,
 		"percentStatBonus": {"faith": 25},
 		"uniques": ["Worship Place",
-		        "Unbuildable", "Hidden when religion is disabled"]
+		        "Unbuildable", "Hidden when religion is disabled"],
+
+		//"quote": „Deine Hände sollen mit heiligem Öl gesalbt werden.\nDeine Brust soll mit heiligem Öl gesalbt werden.\nDein Haupt soll mit heiligem Öl gesalbt werden.\nWie Könige, Priester und Propheten gesalbt wurden.\nUnd wie Salomon vom Priester Zadok und vom Propheten Nathan zum König gesalbt wurde, so sollst auch du gesalbt werden.“,
 	},
 	{
 		"name": "Basilica",
@@ -4352,8 +4389,18 @@
 		"specialistSlots": {"Scientist": 1,"Artist": 1,"Governor": 1},
 		"maintenance": 2,
 		"hurryCostModifier": 25,
-		"uniques": ["Political Building","Cultural Building","Only available <after adopting [Scholarship]>","Destroyed when the city is captured"],
-		"requiredTech":"Philosophy"
+		"uniques": ["Political Building","Cultural Building","Only available <after adopting [Scholarship]>","Destroyed when the city is captured"
+		"[-10]% Unhappiness from [Population] [in all cities]",
+			//"Free [Swordsman] appears",
+			//"Can only be built <in [Capital] cities>",
+			//"Gain a free [Food Store] [in this city]"],
+		"requiredTech":"Philosophy",
+		"quote": „Was auch immer ein Mensch tut oder sagt, du musst gut sein; nicht um irgendjemandes willen, sondern um deiner eigenen Natur willen; als ob Gold, Smaragd oder Purpur sich jemals sagen würden: Was auch immer ein Mensch tut oder sagt, ich muss immer noch ein Smaragd sein und meine Farbe behalten.“,
+		"civilopediaText": [
+			{
+				"text": „Was auch immer ein Mensch tut oder sagt, du musst gut sein; nicht um irgendjemandes willen, sondern um deiner eigenen Natur willen; als ob Gold, Smaragd oder Purpur sich jemals sagen würden: Was auch immer ein Mensch tut oder sagt, ich muss immer noch ein Smaragd sein und meine Farbe behalten.“
+			}
+		]
 	},
 	{
 
@@ -4662,10 +4709,10 @@
 	{
 		"name": "Riding Arena",
 		"replaces": "Stable",
-		"requiredNearbyImprovedResources": ["Horses"],
+		"requiredNearbyImprovedResources": ["Horse"],
 		"culture": 2,
 		"happiness": 2,
-		"cost": 50,
+		"cost": 65,
 		"hurryCostModifier": -25,
 		"uniques": ["New [Rider] units start with [15] Experience [in this city]",
 			"[New [Assault] units start with [15] Experience [in this city]",
@@ -4674,11 +4721,15 @@
 	},
 	{
 		"name": "Arena",
+		"cost": 50,
 		"maintenance": 2,
 		"happiness": 2,
 		"food": -1,
 		"hurryCostModifier": 25,
-		"uniques": ["Entertainment Building","Only available <after adopting [Militant]>","[-5]% Unhappiness from [Population] [in this city]"],
+		"uniques": ["Entertainment Building","Only available <after adopting [Militant]>",
+		"[+1 Happiness, +1 Culture] [in this city] <when above [0] [Slaves]>",
+		"[-5]% Unhappiness from [Population] [in this city]",
+		"Only available <in cities without a [Prison Camp]>"],
 		"requiredTech":"Drama and Poetry"
 	},
 	{
@@ -4894,10 +4945,11 @@
 	},
 	{
 		"name": "Listening Post",
+		"cost": 125,
 		"maintenance": 1,
 		"gold": 1,
 		"happiness": -2,
-		"hurryCostModifier": 25,
+		"hurryCostModifier": 30,
 		"uniques": [
 			"Remove extra unhappiness from annexed cities",
 			"[+75]% Great Person generation [in this city]",
@@ -6555,7 +6607,7 @@
         /// Salvery
 	{
 		"name": "Hub Work Camp",
-		"uniqueTo": "-",
+		//"uniqueTo": "-",
 		"replaces": "Work Camp",
 		"percentStatBonus": {"production": 15},
 		"production": 1,
@@ -6573,7 +6625,8 @@
 		"percentStatBonus": { "production": 10 },
 		"replaces": "Cathedral School",
 		"uniqueTo": "Rome",
-		"uniques": ["[+1 Happiness] [in all cities connected to capital]",
+		"uniques": [
+			"[+1 Happiness] [in all cities connected to capital]",
 			"Provides [3] [Slaves]",
 			"[+50]% Production when constructing [Worker] units [in all cities]",
 			"Free [Auxiliary] appears"]
@@ -6599,7 +6652,7 @@
 		"gold": 2,
 		"hurryCostModifier": 25,
 		"uniques": [
-			"[+25]% Production when constructing [Civilian] units [in this city]",
+			"[+30]% Production when constructing [Civilian] units [in this city]",
 			"[+1 Gold, +1 Production] [in this city] <when above [0] [Slaves]>",
 			"Only available <with [Slaves]>",
 			"Consumes [1] [Slaves]"],
@@ -6612,7 +6665,8 @@
 		"specialistSlots": { "Engineer": 1 },
 		"maintenance": 1,
 		"hurryCostModifier": 0,
-		"uniques": ["[+1 Production] [in this city] <when above [0] [Happiness]>",
+		"uniques": [
+			"[+1 Production] [in this city] <when above [0] [Food]>",
 			"[+2 Production] [in this city] <when above [0] [Slaves]>",
 			"Consumes [1] [Slaves]",
 			"Only available <with [Slaves]>"],
