@@ -463,6 +463,23 @@
 	},
 ///RC
 {
+     
+	"name": "Cretan Archer",
+	"unitType": "Ranged Combat",
+	"requiredTech": "Archery",
+	"range": 2,
+	"movement": 2,
+	"strength": 7,
+	"rangedStrength": 9,
+	"cost": 70,
+	"obsoleteTech": "Construction",
+	//"upgradesTo": "Composite Bowman",
+	"replaces": "Archer",
+	"uniqueTo": "Crete",
+	"uniques": ["Never appears as a Barbarian unit", "[+20]% Strength <vs [Close Combat] units> <when defending>", "[+10]% Strength <vs [Ranged Combat] units>"],
+
+},
+{
 	"name": "Stone thrower",
 	"unitType": "Ranged Frontier Hunter",
 	//"requiredTech": "Archery",
@@ -1090,6 +1107,101 @@
 	},
 
 ///CC
+{
+     
+	"name": "SickleSwordsman",
+   "unitType": "Sword",
+   "requiredTech": "Bronze Working",
+   "movement": 2,
+   "strength": 15,
+   "cost": 140,
+   "obsoleteTech": "Gunpowder",
+   "upgradesTo": "Musketman",
+   "upgradesFrom": "Assyrian Warrior",
+   "replaces": "Swordsman",
+   "requiredResource": "Bronze",
+   "uniqueTo": "Assyria",
+   "uniques": ["[+15]% Strength <vs [Melee] units>", "[-10]% Strength <vs [Mounted] units>", "[+20]% Strength <vs [Ranged] units> <when defending>", "[-33]% Strength <vs cities>"],
+  
+   },
+   {
+  
+	"name": "Assyrian Warrior",
+   "unitType": "Sword",
+   "requiredTech": "Agriculture",
+   "movement": 2,
+   "strength": 10,
+   "cost": 70,
+   "obsoleteTech": "Iron Working",
+   "upgradesTo": "SickleSwordsman",
+   "replaces": "Warrior",
+   "uniqueTo": "Assyria",
+   "uniques": ["[+20]% Strength <vs [Melee] units>", "[-33]% Strength <vs cities>"],
+  
+   },
+{
+  
+   "name": "Pantodapoi",
+   "unitType": "Close Combat",
+   //"requiredTech": "Agriculture",
+   "movement": 2,
+   "strength": 4,
+   "cost": 20,
+   "obsoleteTech": "Iron Working",
+   "upgradesTo": "Leukaspidai",
+   "replaces": "Warrior",
+   //"uniqueTo": "Pontus",
+   //"uniques": ["[-33]% Strength <vs cities>"],
+  
+},
+{
+     
+	//"name": "Macedonian Phalanx",
+	"uniqueTo": "Macedon",
+	"unitType": "Close Combat",
+	"requiredTech": "Bronze Working",
+	"movement": 2,
+	"strength": 15,
+	"cost": 110,
+	"obsoleteTech": "Civil Service",
+	"upgradesTo": "Pikeman",
+	"replaces": "Spearman",
+	"requiredResource": "Bronze",
+	"promotions": ["Phalanx"],
+	//"uniques": ["Never appears as a Barbarian unit","[+10]% Strength <when adjacent to a [Melee] unit>", "[-33]% Strength <vs cities>"],
+   
+},
+{
+   
+	//"name": "Spartan Phalanx",
+	//"uniqueTo": "Sparta",
+	"unitType": "Close Combat",
+	"requiredTech": "Bronze Working",
+	"movement": 2,
+	"strength": 12,
+	"cost": 80,
+	"obsoleteTech": "Civil Service",
+	"upgradesTo": "Pikeman",
+	"replaces": "Spearman",
+	"requiredResource": "Bronze",
+	"promotions": ["Phalanx"],
+	//"uniques": ["Never appears as a Barbarian unit", "[-10]% Strength <vs [Melee] units>","[+20]% Strength <vs [Mounted] units>", "[+20]% Strength <vs [Ranged] units> <when defending>"],
+},	
+{
+   "name": "Krypteia",
+   "unitType": "Close Combat",
+   "requiredTech": "Iron Working",
+   "movement": 2,
+   "strength": 15,
+   "cost": 80,
+   //"obsoleteTech": "Gunpowder",
+   //"upgradesTo": "Musketman",
+   "replaces": "Swordsman",
+   //"uniqueTo": "Sparta",
+   //"uniques": ["Never appears as a Barbarian unit", "Only available <after adopting [Honor]>", "[+15]% Strength <when attacking>", "[-13]% Strength <when defending>"],
+   "requiredResource": "Iron",
+
+},
 {
 	"name": "Khevsur",
 	"uniqueTo": "Georgia",
