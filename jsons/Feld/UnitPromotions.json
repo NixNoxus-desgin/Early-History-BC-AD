@@ -44,10 +44,338 @@
 	
 ///Generally Apply
 {
-	"name": "Wolfpack",
+	"name": "Medic I",
+	"prerequisites": [
+		"Assault",
+		"Pursuit",
+		"Formation",
+		"Ambush",
+		"Precision",
+		"Suppression",
+		"Sentry",
+		"Guerilla Warfare II",
+		"Urban Warfare II",
+		"Reconnaissance I"
+	],
+	"uniques": [
+		"[+5] HP when healing",
+		"All adjacent units heal [+5] HP when healing",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper","Scout","Rider","Close Combat"],
+	"column": 10,
+	"row": 1
+},
+{
+	"name": "Medic II",
+	"prerequisites": ["Medic I"],
+	"uniques": [
+		"[+5] HP when healing",
+		"All adjacent units heal [+5] HP when healing",
+		"[+5] HP when healing <in [Foreign Land] tiles>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Scout", "Rider", "Close Combat"],
+	"column": 10,
+	"row": 2
+},
+{
+	"name": "Logistics",
+	"prerequisites": [
+		"Mobility",
+		"Extended Range",
+		"March",
+		"Flank Speed",
+		"Convoy",
+		"Wolfpack III",
+		"Siege III",
+		//"Sortie"
+	],
+	"uniques": [
+		"[1] additional attacks per turn",
+		"Can move after attacking",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": [
+		"Siege",
+		"Close Combat",
+		"Ranged Combat Ship",
+	],
+	"column": 9,
+	"row": 5
+},
+{
+	"name": "Extended Range",
+	"prerequisites": [
+		"Precision",
+		"Suppression",
+		"Sentry",
+		"Barrage",
+		"Resupply",
+		"Flank Speed",
+		"Convoy"
+	],
+	"uniques": [
+		"[+1] Range",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Siege", "Ranged Combat Ship", "Ranged Combat"],
+	"column": 8,
+	"row": 4
+},
+{
+	"name": "Amphibious",
+	"prerequisites": ["Blitz","Tortoise","Commando","March","Extended Range"],
+	"uniques": [
+		"Eliminates combat penalty for attacking over a river",
+		"Eliminates combat penalty for attacking across a coast",
+		"[+100]% Strength <when defending> <when [Embarked]>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Scout", "Rider", "Ranged Combat"],
+	"column": 8,
+	"row": 5
+},
+{
+	"name": "Seafarer",
+	"prerequisites": ["Amphibious"],
+	"uniques": [
+		"May attack when embarked",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Scout", "Rider"],
+	"column": 8,
+	"row": 6
+},
+{
+	"name": "Convoy",
+	"prerequisites": [
+		//"Naval Combat",
+		"Exploit Weakness",
+		"Damage Control",
+		"Sentry",
+		"Wolfpack II"
+	],
+	"uniques": [
+		"[+10] HP when healing",
+		"May heal outside of friendly territory",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": [
+		"Close Combat Ship",
+		"Ranged Combat Ship",
+	],
+	"column": 7,
+	"row": 9
+},
+{
+	"name": "Flank Speed",
+	"prerequisites": [
+		//"Naval combat",
+		"Exploit Weakness",
+		"Damage Control",
+		"Sentry",
+		"Wolfpack I"
+	],
+	"uniques": [
+		"[+1] Movement",
+		"[+25]% to Flank Attack bonuses",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": [
+		"Close Combat Ship",
+		"Ranged Combat Ship"
+	],
+	"column": 7,
+	"row": 8
+},
+{
+	"name": "Damage Control",
+	"prerequisites": [
+		"Bombardment",
+		"Targeting III",
+		"Armor Plating"
+	],
+	"uniques": [
+		"[+5] HP when healing",
+		"All adjacent units heal [+20] HP when healing",
+		"May heal outside of friendly territory",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Ranged Combat Ship"],
+	"column": 7,
+	"row": 6
+},
+{
+	"name": "Resupply",
+	"prerequisites": ["Accuracy", "Combat Drill", "Awe", "Maneuver"],
+	"uniques": [
+		"[+10] HP when healing",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat", "Siege"],
+	"column": 7,
+	"row": 2
+},
+{
+	"name": "Precision",
+	"prerequisites": ["Skirmish"],
+	"uniques": [
+		"[+25]% Strength <vs [Wounded] units>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Ranged Combat"],
+	"column": 6,
+	"row": 5
+},
+{
+	"name": "Maneuver",
+	"prerequisites": ["Hull Down", "Shock I"],
+	"uniques": [
+		"[+1] Movement",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat"],
+	"column": 6,
+	"row": 2
+},
+{
+	"name": "Awe",
+	"prerequisites": ["Hull Down", "Shock III"],
+	"uniques": [
+		"[+25]% Strength <vs [Wounded] units>",
+		"[+10]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat"],
+	"column": 6,
+	"row": 1
+},
+{
+	"name": "Pursuit",
+	"prerequisites": ["Loose Formation", "Shock II"],
+	"uniques": [
+		"[+25]% Strength <vs [Wounded] units>",
+		"Heals [25] damage if it kills a unit",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Rider"],
+	"column": 5,
+	"row": 6
+},
+{
+	"name": "Assault",
+	"prerequisites": [//"Entrench", //"Forage", "Loose Formation", "Shock III"],
+	"uniques": [
+		"[+10]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Rider"],
+	"column": 5,
+	"row": 5
+},
+{
+	"name": "Loose Formation",
+	"uniques": [
+		"[+33]% Strength <vs [Ranged Combat] units> <when defending>",
+		"Withdraws before Close combat <with [25]% chance>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Rider", "Close Combat"],
+	"column": 1,
+	"row": 5
+},
+{
+	"name": "Hull Down",
+	"uniques": [
+		"[+15]% Strength <when defending>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat"],
+	"column": 1,
+	"row": 6
+},
+{
+	"name": "Guerilla Warfare I",
+	"uniques": [
+		"[+10]% Strength <when fighting in [Rough terrain] tiles>",
+		"Can move after attacking",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Ranged Combat", "Rider"],
+	"column": 2,
+	"row": 3
+},
+{
+	"name": "Guerilla Warfare II",
+	"prerequisites": ["Guerilla Warfare I"],
+	"uniques": [
+		"[+30]% Strength <when fighting in [Hill] tiles>",
+		"[+10]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Ranged Combat", "Scout", "Rider"],
+	"column": 2,
+	"row": 4
+},
+{
+	"name": "Exploit Weakness",
+	"uniques": [
+		"[+25]% Strength <vs [Wounded] units>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"prerequisites": ["Evasion", "Strike"],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 7,
+	"row": 5
+},
+{
+	"name": "Evasion",
+	"uniques": [
+		"[+33]% Strength <vs [Ranged Combat] units> <when defending>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 1,
+	"row": 7
+},
+{
+	"name": "Strike",
+	"uniques": [
+		"[+33]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 1,
+	"row": 8
+},
+{
+	"name": "Wolfpack I",
 	"prerequisites":// ["Observation","Silent Running"],
 	"uniques": ["1 additional attack per turn"],
 	"unitTypes": ["Close Combat Ship"]
+},
+{
+	"name": "Wolfpack II",
+	"prerequisites": ["Wolfpack I"],
+	"uniques": [
+		"[+25]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 3,
+	"row": 4
+},
+{
+	"name": "Wolfpack III",
+	"prerequisites": ["Wolfpack II"],
+	"uniques": [
+		"[+25]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 3,
+	"row": 5
 },
 {
 	"name": "Boarding",
@@ -109,7 +437,9 @@
 },
 {
 	"name": "Raider",
-	"uniques": ["No movement cost to pillage"]
+	"uniques": ["[-50]% XP gained from combat",
+			//"[Great General] is earned [250]% faster"
+			"No movement cost to pillage"]
 },
 {
 	"name": "Square",
@@ -179,12 +509,6 @@
 	"name": "Commando",
 	"prerequisites": ["Battlecry","Amphibous"],
 	"uniques": ["+1 Movement"],
-	"unitTypes": ["Melee"]
-},
-{
-	"name": "Amphibious",
-	"prerequisites": ["Tortoise","Commando"],
-	"uniques": ["Amphibious","Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"],
 	"unitTypes": ["Melee"]
 },
 {
@@ -813,8 +1137,9 @@
 	{
 		"name": "Barrage",
 		"prerequisites": ["Firepower Doctrine"],
-		"uniques": ["[+15]% Strength <vs [Massed] units> <when attacking>","[+5]% Strength <vs [Skirmish] units> <when attacking>"],
-		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
+		"uniques": ["[+15]% Strength <vs [Massed] units> <when attacking>","[+20]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+		"[+5]% Strength <vs [Skirmish] units> <when attacking>"],
+		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship"],
 		"column": 9,
 		"row": 2
 	},
@@ -882,11 +1207,21 @@
 	},
 	{
 		"name": "Formation",
-		"prerequisites": ["Intensive Doctrine"],
-		"uniques": ["[+25]% Strength <vs [Massed] units>"],
-		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
-		"column": 11,
-		"row": 2
+		"prerequisites": [
+			//"Entrench",
+			//"Forage",
+			"Loose Formation",
+			"Shock III",
+			"Guerilla Warfare I",
+			"Urban Warfare I"
+		],
+		"uniques": [
+			"[+33]% Strength <vs [Rider] units>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper","Close Combat","Assault","Close Combat Ship"],
+		"column": 6,
+		"row": 3
 	},
 	{
 		"name": "Swift Formation",
@@ -1657,9 +1992,21 @@
 	},
 	{
 		"name": "Ambush",
-		"prerequisites": ["Guerrilla"],
-		"uniques": ["+[20]% Combat Strength"],
-		"unitTypes": ["Scout"]
+		"prerequisites": [
+			//"Entrench",
+			//"Forage",
+			"Loose Formation",
+			"Shock",
+			"Hull Down",
+			"Guerilla Warfare I",
+			"Urban Warfare I"
+		],
+		"uniques": ["+[20]% Combat Strength",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper","Scout","Close Combat","Rider"],
+		"column": 6,
+		"row": 4
 	},
 	{
 		"name": "Camoflage",
@@ -1869,12 +2216,6 @@
 	
 	//Adjusted promotions from base scenario (mostly nerfs)
 	{
-		"name": "Gas Mask",
-		"uniques": ["Gas Mask", "No defensive terrain penalty"],
-		"column": 4,
-		"row": 11
-	},
-	{
 		"name": "Headhunter",
 		"uniques": [
 			"Earn [10]% of killed [Military] unit's [Cost] as [Gold]",
@@ -1896,11 +2237,39 @@
 	},
 	{
 		"name": "Reconnaissance I",
-		"uniques": ["Ignores terrain cost",
-			"Only available <for units without [Promotion Nullifier]>"],
-		"unitTypes": ["Scrapper", "Shooter", "Scout", "Mounted", "Mounted Ranged"],
+		"uniques": [
+			"Ignores terrain cost",
+			"[25]% XP gained from combat",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Rider"],
 		"column": 5,
 		"row": 1
+	},
+	{
+		"name": "Reconnaissance II",
+		"prerequisites": ["Reconnaissance I"],
+		"uniques": [
+			"[+1] Movement",
+			"No movement cost to pillage",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Rider"],
+		"column": 5,
+		"row": 2
+	},
+	{
+		"name": "Reconnaissance III",
+		"prerequisites": ["Reconnaissance II"],
+		"uniques": [
+			"[+1] Movement", 
+			"[+50]% Strength <vs [Siege] units>",
+			"Ignores Zone of Control",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Rider"],
+		"column": 5,
+		"row": 3
 	},
 	{
 		"name": "March",
@@ -2153,9 +2522,29 @@
 	},
 	// Ranged+Siege
 	{
+		"name": "Evasion",
+		"uniques": [
+			"[+33]% Strength <vs [Ranged Combat] units> <when defending>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Close Combat Ship"],
+		"column": 1,
+        "row": 7
+	},
+	{
+		"name": "Combat Drill",
+		"uniques": [
+			"[+20]% Strength <when defending>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Siege"],
+		"column": 3,
+        "row": 2
+	},
+	{
 		"name": "Accuracy I",
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Assault","Ranged Combat"],
+		"unitTypes": ["Siege","Assault","Ranged Combat"],
 		"column": 1,
 		"row": 1
 	},
@@ -2450,6 +2839,16 @@
 		"unitTypes": ["WaterMelee"]
 	},
 	{
+		"name": "Bombardment",
+		"uniques": [
+			"[+33]% Strength <vs [Land] units>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Ranged Combat Ship"],
+		"column": 1,
+        "row": 9
+	},
+	{
 		"name": "Targeting I",
 		"uniques": ["[+15]% Strength <vs [Water] units>"],
 		"unitTypes": ["Ranged Combat Ship"],
@@ -2492,18 +2891,44 @@
 		"name": "Mobility",
 		"prerequisites": ["Shock II","Drill II","Targeting I",
 			"Bombardment I","Boarding Party I", "Coastal Raider I", "Wolfpack I"],
-		"uniques": ["[+1] Movement"],
+		"uniques": ["[+2] Movement"],
 		"unitTypes": ["Mounted","Close Combat Ship","Ranged Combat Ship","Armored","Submarine"],
         "column": 24,
         "row": 3
 	},
 	{
 		"name": "Sentry",
-		"prerequisites": ["Accuracy I","Barrage I","Shock II","Drill II","Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],
-		"uniques": ["[+1] Sight"],
-		"unitTypes": ["Sword","Ranged Combat","Mounted","Ranged Combat Ship","Armored","Close Combat Ship"],
-        "column": 24,
-        "row": 4
+		"prerequisites": [
+            "Drill II",
+			"Accuracy I",
+			"Skirmish",
+			"Loose Formation",
+			"Shock II",
+			"Guerilla Warfare I",
+			"Urban Warfare I",
+			"Reconnaissance I",
+			"Bombardment",
+			"Targeting",
+			"Evasion",
+			"Strike",
+			"Barrage"
+		],
+		"uniques": [
+			"[+1] Sight",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": [
+			"Scrapper",
+			"Scout",
+			"Ranged Combat Ship",
+			"Close Combat Ship",
+			"Rider",
+			"Close Combat",
+			"Ranged Combat",
+			"Assault"
+		],
+		"column": 8,
+		"row": 1
 	},
 	{
 		"name": "Logistics",
@@ -2605,7 +3030,7 @@
 	},
 	{
 		"name": "Survivalism II",
-		"prerequisites": ["Survivalism I"],
+		"prerequisites": ["Survivalism I","Medic I", "Resupply", "March", "Damage Control"],
 		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
 		"unitTypes": ["Scout"],
         "column": 9,
@@ -2613,8 +3038,8 @@
 	},
 	{
 		"name": "Survivalism III",
-		"prerequisites": ["Survivalism II"],
-		"uniques": ["Unit will heal every turn, even if it performs an action", "May withdraw before melee ([75]%)"], // This number is not based on any source
+		"prerequisites": ["Survivalism II","Medic I", "Resupply", "March", "Damage Control"],
+		"uniques": ["Unit will heal every turn, even if it performs an action", "May withdraw before melee ([75]%)","[-50]% maintenance costs",], // This number is not based on any source
 		"unitTypes": ["Scout"],
         "column": 9,
         "row": 3
