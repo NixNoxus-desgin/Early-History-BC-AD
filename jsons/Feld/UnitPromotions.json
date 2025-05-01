@@ -44,6 +44,51 @@
 	
 ///Generally Apply
 {
+	"name": "Local knowledge I",
+	"uniques": [
+		"[-10]% Strength for enemy [Military] units in adjacent [Fort] tiles",
+		"[-10]% Strength for enemy [Military] units in adjacent [Rough terrain] tiles"
+	],
+	///"unitTypes": ["Ranged Frontier Hunter"],
+	"row": 22,
+	"column": 0
+},
+{
+	"name": "Local knowledge II",
+	"prerequisites": ["Local knowledge I"],
+	"uniques": [
+		"[+10]% Strength <in [Friendly Land] tiles>",
+		"Can see invisible [Land] units <in [Friendly Land] tiles>"
+	],
+	///"unitTypes": ["Ranged Frontier Hunter"],
+	"row": 22,
+	"column": 1
+},
+{
+	"name": "Local knowledge III",
+	"prerequisites": ["Local knowledge II"],
+	"uniques": [
+		"Eliminates combat penalty for attacking over a river <in [Friendly Land] tiles>",
+		"Ranged attacks may be performed over obstacles <in [Friendly Land] tiles>",
+		"Can see over obstacles <in [Friendly Land] tiles>"
+	],
+	///"unitTypes": ["Ranged Frontier Hunter"],
+	"row": 22,
+	"column": 2
+},
+{
+	"name": "Local knowledge IV",
+	"prerequisites": ["Local knowledge III"],#
+	"uniques": [
+		"Can see invisible [Military] units <in [Friendly Land] tiles>",
+	    "Double movement in [Friendly Land]",
+	    "Can enter ice tiles <in [Friendly Land] tiles>"
+	],
+	///"unitTypes": ["Scout"],
+    "row": 22,
+    "column": 3
+},
+{
 	"name": "Medic I",
 	"prerequisites": [
 		"Assault",
