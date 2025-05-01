@@ -56,6 +56,20 @@
         },
 ///Civilian
 {
+	//"name": "Civilian Convoy",
+	"unitType": "Civilian",
+	"movement": 3,
+	"cost": 106,
+	"uniques": [
+		"Founds a new city <by consuming this unit>",
+		"[+15] HP when healing",
+		"All adjacent units heal [+15] HP when healing",
+		"Excess Food converted to Production when under construction",
+		"Requires at least [2] population"
+	],
+	"hurryCostModifier": 20
+},
+{
 	//"name": "Persevering Pax Researcher",
 	//"uniqueTo": "The Pax",
 	"unitType": "Civilian",
@@ -325,7 +339,7 @@
 		"unitType": "Civilian",
 		"uniques": [
 			"Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
-			"Can instantly construct a [Prison farm] improvement <by consuming this unit>",
+			//"Can instantly construct a [Prison farm] improvement <by consuming this unit>",
 			"Great Person - [Gold]",
 			"Unbuildable",
 			"Uncapturable"
@@ -3129,6 +3143,49 @@
 	//	"promotions":["Marine Training"],
 	//	"attackSound": "nonmetalhit"
 	//},
+	{
+		"name": "Robber",
+		"uniqueTo": "Barbarians",
+		//"replaces": "Light Cavalry",
+		"unitType": "Rider",
+		"range": 1,
+		"movement": 4,
+		"strength": 30,
+		"rangedStrength": 24,
+		"interceptRange": 1,
+		"cost": 115,
+		//"requiredTech": "Rifling",
+		//"upgradesTo": "Helicopter",
+		"uniques": [
+			"Personnel",
+			"Rider",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"[-33]% Strength <vs cities> <when attacking>"
+		],
+		"promotions": [
+			"Skirmish",
+			"Raider",
+			"Guerilla Warfare I",
+			"Urban Warfare I"
+		],
+		"hurryCostModifier": 20,
+		//"attackSound": "shot"
+	
+	{
+		"name": "Bandit",
+		"unitType": "Close Combact",
+		"uniqueTo": "Barbarians",
+		//"replaces": "Spearman",
+		"movement": 2,
+		"strength": 20,
+		"cost": 20,
+		//"obsoleteTech": "Engineering",
+		//"upgradesTo": "Soldier",
+		//"uniques": ["Low Tech"],
+		"promotions": ["Forage", "Raider"],
+		"attackSound": "nonmetalhit"	
+	},	
 	{
 		"name": "Aggressive Tribes",
 		"unitType": "Close Combat",
