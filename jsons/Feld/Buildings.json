@@ -4027,7 +4027,7 @@
 		"faith": 2,
 		"requiredTech": "Architecture",
 		"uniques": ["Hidden when religion is disabled","[+30]% [Faith]",
-			"[+25]% [Faith] [in all cities connected to capital]",                       "[+25]% [Re] [in all cities connected to capital]"],
+			"[+25]% [Faith] [in all cities connected to capital]","[+25]% [Re] [in all cities connected to capital]"],
 		"isWonder": true
 	},
 	{
