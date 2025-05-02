@@ -1,8 +1,53 @@
 [
 	
 	///Gods
-        {
-                "name": "Barong",
+	{
+		"name": "Jesus",
+		"unitType": "Civilian",
+		"replaces": "Great Prophet",
+		"uniqueTo": "",
+		"uniques": [
+		    "Can instantly construct a [Holy site] improvement <by consuming this unit>",
+		    "Religious Unit",
+            "Can Spread Religion <for [2] movement> <[6] times>",
+			"Removes other religions when spreading religion",
+			"May enter foreign tiles without open borders",
+			"Unbuildable", "Uncapturable", "Religious Unit",
+			//"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>"
+			],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Muhammad",
+		"unitType": "Civilian",
+		"replaces": "Great Prophet",
+		"uniqueTo": "",
+		"uniques": [
+		    "Religious Unit",
+		    "[+20]% Strength bonus for [Land] units within [1] tiles", 
+		    "Can Spread Religion <for [2] movement> <[4] times>",
+			"Unbuildable", "Uncapturable",
+			//"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>"
+			],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "JHWH",
+		"unitType": "Civilian",
+		"replaces": "Great Prophet",
+		"uniqueTo": "",
+		"uniques": [
+		    "Religious Unit",
+		    "Gain enough Faith for [115]% of a Great Prophet <by consuming this unit>",
+			"Unbuildable", "Uncapturable",
+			//"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>"
+			],
+		"movement": 2,
+	},	
+    {
+        "name": "Barong",
 		"unitType": "Deity",
 	  	"rangedStrength": "70",
 		"movement": "3",
@@ -463,6 +508,65 @@
 	},
 ///RC
 {
+	"name": "Composite Bowman",
+	"unitType": "Ranged Combat",
+	"movement": 2,
+	"strength": 7,
+	"rangedStrength": 11,
+	"cost": 60,
+	"requiredTech": "Iron Working",
+	"obsoleteTech": "Steel",
+	"upgradesTo": "Crossbowman",
+	"uniques":["[+10]% Strength <vs [Anti-Mobile] units> <when attacking>"],
+	"attackSound": "arrow"
+},
+{
+	"name": "Mobile Archer",
+	"unitType": "Ranged Combat",
+	"replaces": "Composite Bowman",
+	"uniqueTo": "Scythian",
+	"movement": 2,
+	"strength": 6,
+	"rangedStrength": 11,
+	"cost": 60,
+	"requiredTech": "Iron Working",
+	"obsoleteTech": "Steel",
+	"upgradesTo": "Crossbowman",
+	"promotions": ["[Mobile Archer] ability"],
+	"uniques":["[+10]% Strength <vs [Anti-Mobile] units> <when attacking>"],
+	"attackSound": "arrow"		
+},
+{
+	"name": "Longbowman",
+	"unitType": "Shooter",
+	"range": 2,
+	"movement": 2,
+	"strength": 13,
+	"rangedStrength": 18,
+	"replaces": "Crossbowman",
+	"uniqueTo": "England",
+	"cost": 160,
+	"requiredTech": "Steel",
+	"uniques":["[+10]% Strength <vs [Anti-Mobile] units> <when attacking>"],
+	"promotions": ["Additional Range"],
+	"attackSound": "arrow"	
+},
+{
+	"name": "War Chariot",
+	"unitType": "Ranged Combat",
+	"uniqueTo": "Egypt",
+	//"replaces": "Chariot Archer",
+	"movement": 5,
+	"strength": 7,
+	"rangedStrength": 10,
+	"cost": 60,
+	"requiredTech": "The Wheel",
+	"upgradesTo": "Knight",
+	"obsoleteTech": "Chivalry",
+	"uniques": ["No defensive terrain bonus", "Rough terrain penalty", "[+10]% Strength <vs [Anti-Mobile] units> <when attacking>"],
+	"attackSound": "arrow"		
+},
+{
      
 	"name": "Cretan Archer",
 	"unitType": "Ranged Combat",
@@ -520,7 +624,11 @@
 	//"requiredTech": "Gunpowder",
 	"requiredResource": "Saltpeter",
 	"upgradesTo": "Infantry",
-	"uniques": ["Bonus for units in 2 tile radius 15%","Bonus vs Armor 33%"],
+	"uniques": ["Bonus for units in 2 tile radius 15%","Bonus vs Armor 33%","Consumes [1] [Horses]", "Costs [10] [Iron]", 
+	"Can move after attacking","No defensive terrain bonus", "[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>", 
+	"[-33]% Strength <vs cities> <when attacking>", "[+10]% Strength <when attacking> <on foreign continents>",
+	"[This Unit] heals [10] HP <costs [1] [Iron]> <for [2] movement>"],
+	"promotions": ["[Conquistador] ability"],
 	"attackSound": "shot"
 },
 {
@@ -1242,6 +1350,7 @@
 	"obsoleteTech": "Gunpowder",
 	"requiredResource": "Iron",
 	//"upgradesTo": "Musketman",
+	"promotions": ["[Hypaspist] ability"],
 	"uniques": ["Bonus vs City 16%","Bonus vs wounded units 10%","Bonus vs Close Combat 33%"],
 	"attackSound": "metalhit"
 },
@@ -1592,6 +1701,34 @@
 		"attackSound": "metalhit"
 	},
 	{
+		"name": "Landsknecht",
+		"unitType": "Assault",
+		"replaces": "Pikeman",
+		"uniqueTo": "Germania",
+		"movement": 2,
+		"strength": 16,
+		"cost": 80,
+		//"uniques": ["[+50]% Strength <vs [Rider] units>", "Can move immediately once bought", "Consumes [-1] [Number of Fighters] <for [Palestine] Civilizations>  <hidden from users>"],
+		"requiredTech": "Defensive Fortification",
+		"upgradesTo": "Lancer",
+	    "obsoleteTech": "Metallurgy",
+		"attackSound": "metalhit"
+	},   
+	{
+		"name": "Sipahi",
+		"unitType": "Assault",
+		"replaces": "Lancer",
+		"uniqueTo": "The Ottomans",
+		"movement": 5,
+		"strength": 25,
+		"cost": 248,
+		"requiredTech": "Metallurgy",
+		"uniques": ["Consumes [1] [Horse]", "Costs [10] [Steels]", "Can move after attacking","No defensive terrain bonus", "[+33]% Strength <vs [Rider] units>", "[This Unit] heals [10] HP <costs [1] [Steels]> <for [2] movement>"],
+		"promotions": ["Raid I"],
+		//"obsoleteTech": "Combined Arms",
+		"attackSound": "metalhit"
+	},
+	{
 		"name": "Phalanx",
 		"unitType": "Assault",
 		"uniqueTo": "Sumer",
@@ -1746,7 +1883,7 @@
 	},
 	{
 		"name": "Battering Ram",
-                "requiredResource": "Copper",
+        "requiredResource": "Copper",
 		"unitType": "Close Combat", // You might expect this to be a siege unit, but apparently it is not
 		"replaces": "Spearman",
 		"uniqueTo": "The Huns",
@@ -1763,7 +1900,7 @@
 	},
 	{
 		"name": "Pictish Warrior",
-                "requiredResource": "Copper",
+        "requiredResource": "Copper",
 		"unitType": "Close Combat",
 		"replaces": "Spearman",
 		"uniqueTo": "Celts",
@@ -2083,6 +2220,61 @@
 		"attackSound": "metalhit"
 	},
 ///Rider
+{
+	"name": "Companion Cavalry",
+	"unitType": "Rider",
+	"uniqueTo": "Macedonia",
+	"replaces": "Horseman",
+	"movement": 4,
+	"strength": 13,
+	"cost": 65,
+	"requiredTech": "Horseback Riding",
+	"upgradesTo": "Knight",
+	"obsoleteTech": "Chivalry",
+	"promotions": ["[Companion Cavalry] ability"],
+	"uniques": ["Consumes [1] [Horse]",  "Can move after attacking", "No defensive terrain bonus", "[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[-33]% Strength <vs cities> <when attacking>"],
+	"attackSound": "horse"
+},
+{
+	"name": "Templar Knight",
+	"unitType": "Rider",
+	"replaces": "Knight",
+	"uniqueTo": "Papel States",
+	"movement": 4,
+	"strength": 20,
+	"cost": 150,
+	"requiredTech": "Chivalry",
+	"upgradesTo": "Cavalry",
+	"uniques": ["Consumes [1] [Horse]", "Costs [10] [Iron]", "Can be purchased for [200] [Faith] [in cities following our religion]", "Can move after attacking","No defensive terrain bonus", "[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[-33]% Strength <vs cities> <when attacking>", "[This Unit] heals [10] HP <costs [1] [Iron]> <for [2] movement>"],
+	"promotions": ["[Templar Knight] ability"],
+	"attackSound": "horse"		
+},
+{
+	"name": "Elite Cavalry",
+	"unitType": "Rider",
+	"uniqueTo": "The Ottomans",
+	"replaces": "Knight",	
+	"movement": 5,
+	"strength": 20,
+	"cost": 165,
+	"requiredTech": "Chivalry",
+	"upgradesTo": "Cavalry",
+	"uniques": ["Consumes [1] [Horse]", "Costs [10] [Iron]",  "Can move after attacking","No defensive terrain bonus", "[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[-33]% Strength <vs cities> <when attacking>", "[This Unit] heals [10] HP <costs [1] [Iron]> <for [2] movement>"],
+	"promotions": ["[Elite Cavalry] ability"],
+	"attackSound": "horse"	
+},
+{
+	"name": "Cavalry",
+	"unitType": "Rider",
+	"movement": 4,
+	"strength": 34,
+	"cost": 325,
+	"requiredTech": "Military Science",
+	"obsoleteTech": "Combustion",
+	"upgradesTo": "Landship",
+	"uniques": ["Consumes [1] [Horse]",  "Can move after attacking","No defensive terrain bonus", "[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[-33]% Strength <vs cities> <when attacking>"],
+	"attackSound": "shot"	
+},
 {
 	"name": "Tagma",
 	"uniqueTo": "Byzantium",
@@ -2623,6 +2815,19 @@
 	},
 ///Assault
 {
+	"name": "Persian Immortal(Ranged)",
+	"unitType": "Assault",
+	"uniqueTo": "Persia",
+	"cost": 55,
+	"movement": 2,
+	"strength": 8,
+	"rangedStrength": 9,
+	"upgradesTo": "Pikeman",
+	"uniques": ["Unbuildable","Cannot be purchased","[+33]% Strength <vs [MRiderbile] units>","Can transform to [Persian Immortal]"],
+	"promotions":["[Persian Immortal] ability"],
+	"attackSound": "metalhit"		
+},
+{
 	"name": "Maryannu Chariot Archer",
 	"uniqueTo": "Egypt",
 	"replaces": "Heavy Chariot",
@@ -2913,6 +3118,71 @@
 		"attackSound": "artillery"
 	},
 ///Ships
+{
+	"name": "Quinquereme",
+	"unitType": "Melee Water",
+	"uniqueTo": "Carthage",
+	"replaces": "Trireme",
+	"movement": 4,
+	"strength": 13,
+	"cost": 40,
+	"requiredTech": "Sailing",
+	"upgradesTo": "Caravel",
+	"obsoleteTech": "Astronomy",
+	"attackSound": "nonmetalhit"
+},
+{
+	"name": "Dragon Boat",
+	"unitType": "Melee Water",
+	"replaces": "Caravel",
+	"uniqueTo": "Denmark",
+	"movement": 6,
+	"strength": 20,
+	"cost": 150,
+	"requiredTech": "Astronomy",
+	"upgradesTo": "Ironclad",
+	"obsoleteTech": "Steam Power",
+	"promotions": ["Boarding Party I"],
+	"uniques": ["[+1] Sight"],
+	"attackSound": "cannon"
+},	
+{
+	"name": "Calavera Boat",
+	"unitType": "Ranged Water",
+	"movement": 4,
+	"strength": 16,
+	"rangedStrength": 17,
+	"cost": 125,
+	"replaces": "Galleass",
+	"uniqueTo": "Portugal",
+	"requiredTech": "Optics",
+	"obsoleteTech": "Navigation",
+	"upgradesTo": "Frigate",
+	"uniques": ["Cannot enter ocean tiles <before discovering [Compass]>"],
+	"attackSound": "arrow"
+},
+{
+	"name": "Frigate",
+	"unitType": "Ranged Water",
+	"movement": 3,
+	"strength": 25,
+	"rangedStrength": 28,
+	"cost": 239,
+	"requiredTech": "Navigation",
+	"attackSound": "cannon"	
+},
+{
+	"name": "Ship of the Line",
+	"unitType": "Ranged Water",
+	"replaces": "Frigate",
+	"uniqueTo": "England",
+	"movement": 3,
+	"strength": 30,
+	"rangedStrength": 35,
+	"cost": 275,
+	"requiredTech": "Navigation",
+	"attackSound": "cannon"	
+},
 {
 	"name": "Caravel",
 	"unitType": "Ranged Combact Ship",
