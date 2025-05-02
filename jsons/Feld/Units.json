@@ -101,6 +101,21 @@
         },
 ///Civilian
 {
+	"name": "Belisarius",
+	"unitType": "Civilian",
+	"replaces": "Great General",
+	"uniqueTo": "Byzantium",
+	"uniques": [
+	"[+15]% Strength bonus for [Land] units within [2] tiles", 
+	"All adjacent units heal [+10] HP when healing",
+	"[-15]% Strength for enemy [Land] units in adjacent [Land] tiles <during the [Medieval era]>",
+	"Unbuildable", "Uncapturable",
+	"Great General",
+	"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>"
+	],
+	"movement": 2
+},
+{
 	"name": "Wise person",
 	//"unitType": "Medical",
 	//"requiredTech": "Writing",
