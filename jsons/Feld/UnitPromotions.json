@@ -40,9 +40,321 @@
 {
 	"name": "Asthma",
 	"uniques": ["[This Unit] takes [1] damage <upon ending a turn in a [All] tile>"]
-},
-	
+}	
 ///Generally Apply
+{
+	"name": "Street Battle I",
+	"prerequisites": ["Drill II","Shock II"]
+	"uniques": ["[+20]% Strength <within [2] tiles of a [City center]>"],
+	"unitTypes": ["Close Combat"],
+	"row": 2,
+	"column": 1
+},
+{
+	"name": "Street Battle II",
+	"prerequisites": ["Street Battle I","Commando","Amphibious"],
+	"uniques": ["[+20]% Strength <within [2] tiles of a [City center]>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 4
+},	
+{
+	"name": "Hold Ground I",
+	"prerequisites": ["Drill II","Shock II"],
+	"uniques": ["[+20]% Strength <when defending>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 2
+},
+{
+	"name": "Hold Ground II",
+	"prerequisites": ["Hold Ground I"],
+	"uniques": ["[+20]% Strength <when defending>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 5, 
+},	
+{
+	"name": "Attack City I",
+	"prerequisites": ["Drill II","Shock II"],
+	"uniques": ["[+50]% Strength <vs cities>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 3
+},	
+{
+	"name": "Attack City II",
+	"prerequisites": ["Attack City I"],
+	"uniques": ["[+50]% Strength <vs cities>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 6          
+},
+{
+	"name": "Salvo I",
+	"uniques": ["[+10]% Strength  <when attacking>"],
+	"unitTypes": ["Shooter"],
+	"row": 1,
+	"column": 7
+},
+{
+	"name": "Shooting Support I",
+	"uniques": ["[+15]% Strength <when adjacent to a [Melee] unit> <when attacking>"],
+	"unitTypes": ["Shooter"],
+	"row": 1,
+	"column": 8
+},
+{
+	"name": "Salvo II",
+	"prerequisites": ["Salvo I"],
+	"uniques": ["[+10]% Strength  <when attacking>"],
+	"unitTypes": ["Shooter"],
+	"row": 1,
+	"column": 9
+},
+{
+	"name": "Shooting Support II",
+	"prerequisites": ["Shooting Support I"],
+	"uniques": ["[+15]% Strength <when adjacent to a [Melee] unit> <when attacking>"],
+	"unitTypes": ["Shooter"],
+	"row": 1,
+	"column": 10    
+},
+{
+	"name": "Salvo III",
+	"prerequisites": ["Salvo II"],
+	"uniques": ["[+10]% Strength  <when attacking>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 1,
+	"column": 11
+},
+{
+	"name": "Shooting Support III",
+	"prerequisites": ["Shooting Support II"],
+	"uniques": ["[+15]% Strength <when adjacent to a [Close Combat] unit> <when attacking>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 1,
+	"column": 12
+},
+{
+	"name": "Cover I",
+	"prerequisites": ["Salvo II","Shooting Support II"],
+	"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+	"unitTypes": ["Shooter"],
+	"row": 2,
+	"column": 7
+},
+{
+	"name": "Apply Poison I",
+	"prerequisites": ["Salvo II","Shooting Support II"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 8
+},
+{
+	"name": "Bayonet Charge I",
+	"prerequisites": ["Salvo II","Shooting Support II"],
+	"uniques": ["[+20]% Strength <vs [{Land} {Melee}] units> <when defending>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 9
+},
+{
+	"name": "Cover II",
+	"prerequisites": ["Cover I"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 10      
+},
+{
+	"name": "Apply Poison II",
+	"prerequisites": ["Apply Poison I"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 11  
+},
+{
+	"name": "Bayonet Charge II",
+	"prerequisites": ["Bayonet Charge I"],
+	"uniques": ["[+20]% Strength <vs [{Land} {Melee}] units> <when defending>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 12                  
+},
+{
+	"name": "Trample I",
+	"uniques": ["[+15]% Strength <vs [Close Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Ranged Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Assault] units> <when attacking>"],
+	"unitTypes": ["Rider"],
+	"row": 1,
+	"column": 13
+},
+{
+	"name": "Charge I",
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes": ["Rider"],
+	"row": 1,
+	"column": 14
+},
+{
+	"name": "Trample II",
+	"prerequisites": ["Trample I"],
+	"uniques": ["[+15]% Strength <vs [Close Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Ranged Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Assault] units> <when attacking>"],
+	"unitTypes":["Rider"],
+	"row": 1,
+	"column": 15
+},
+{
+	"name": "Charge II",
+	"prerequisites": ["Charge I"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes":["Rider"],
+	"row": 1,
+	"column": 16    
+},
+{
+	"name": "Trample III",
+	"prerequisites": ["Trample II"],
+	"uniques": ["[+15]% Strength <vs [Close Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Ranged Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Assault] units> <when attacking>"],
+	"unitTypes": ["Rider"],
+	"row": 1,
+	"column": 17
+},
+{
+	"name": "Charge III",
+	"prerequisites": ["Charge II"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes": ["Rider"],
+	"row": 1,
+	"column": 18
+},
+{
+	"name": "Wear Armor I",
+	"prerequisites": ["Trample II","Charge II"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 13 
+},
+{
+	"name": "Storm Fortification I",
+	"prerequisites": ["Trample II","Charge II"],
+	"uniques": ["[+33]% Strength <vs cities>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 14  
+},
+{
+	"name": "Rout I",
+	"prerequisites": ["Trample II","Charge II"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 15 
+},	
+{
+	"name": "Wear Armor II",
+	"prerequisites": ["Wear Armor I"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 16 
+},	
+{
+	"name": "Storm Fortification II",
+	"prerequisites": ["Storm Fortification I"],
+	"uniques": ["[+33]% Strength <vs cities>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 17      
+},	
+{
+	"name": "Rout II",
+	"prerequisites": ["Rout I"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 18         
+},	
+{
+	"name": "Raid I",
+	"uniques": ["[+15]% Strength <vs [Melee] units> <when attacking>"],
+	"unitTypes": ["Assault"],
+	"row": 1,
+	"column": 20
+},	
+{
+	"name": "Raid II",
+	"prerequisites": ["Raid I"],
+	"uniques": ["[+15]% Strength <vs [Melee] units> <when attacking>"],
+	"unitTypes": ["Assault"],
+	"row": 1,
+	"column": 22  
+},	
+{
+	"name": "Raid III",
+	"prerequisites": ["Raid II"],
+	"uniques": ["[+15]% Strength <vs [Melee] units> <when attacking>"],
+	"unitTypes": ["Assault"],
+	"row": 1,
+	"column": 24  
+},
+{
+	"name": "Expose Armor I",
+	"prerequisites": ["Formation II","Raid II"],
+	"uniques": ["[+25]% Strength <vs [Rider] units>","[+25]% Strength <vs [Air] units>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 19 
+},
+{
+	"name": "Break City I",
+	"prerequisites": ["Formation II","Raid II"],
+	"uniques": ["[+50]% Strength <vs cities>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 20  
+},
+{
+	"name": "Pass I",
+	"prerequisites": ["Formation II","Raid II"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>","[+15]% Strength <when fighting in [Marsh] tiles>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 21            
+},
+{
+	"name": "Expose Armor II",
+	"prerequisites": ["Expose Armor I"],
+	"uniques": ["[+25]% Strength <vs [Rider] units>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 22   
+},
+{
+	"name": "Break City II",
+	"prerequisites": ["Break City I"],
+	"uniques": ["[+50]% Strength <vs cities>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 23
+},
+{
+	"name": "Pass II",
+	"prerequisites": ["Pass I"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>","[+15]% Strength <when fighting in [Marsh] tiles>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 24  
+},
 {
 	"name": "Local knowledge I",
 	"uniques": [
@@ -99,7 +411,7 @@
 		"Suppression",
 		"Sentry",
 		"Guerilla Warfare II",
-		"Urban Warfare II",
+		"Street Battle II",
 		"Reconnaissance I"
 	],
 	"uniques": [
@@ -123,6 +435,108 @@
 	"unitTypes": ["Scrapper", "Scout", "Rider", "Close Combat"],
 	"column": 10,
 	"row": 2
+},
+{
+	"name": "Quick Offensive",
+	"prerequisites": ["Drill III","Shock III","Street Battle I","Hold Ground I","Attack City I",
+	"Trample III","Charge III","Wear Armor I","Storm Fortification I","Rout I",
+	"Detection III","Survivalism III",
+	"Formation III","Raid III","Expose Armor I","Break City I","Pass I",
+	"Boarding Party III","Coastal Raider III","Armor I","Landfall I","Escort I"],
+	"uniques": ["[1] additional attacks per turn"],
+	"unitTypes": ["Close Combat",
+	"Assault",
+	"Raider","Close Combat Ship","Ranged Combat Ship"],
+	"row": 3,	
+	"column": 1
+},
+{
+	"name": "Rescue",
+	"prerequisites": ["Drill III","Shock III","Street Battle I","Hold Ground I","Attack City I",
+	"Detection III","Survivalism III",
+	"Hard III","Bombard III","Strategic Deployment I","Shrapnel I","Detonate I"],
+	"uniques": ["All adjacent units heal [+10] HP when healing"],
+	"unitTypes": ["Close Combat",
+	"Assault",
+	"Siege"],
+	"row": 3,  
+	"column": 5
+},
+{
+	"name": "Rush",
+	"prerequisites": [
+	"Trample III","Charge III","Wear Armor I","Storm Fortification I","Rout I",
+	"Detection III","Survivalism III",
+	"Formation III","Raid III","Expose Armor I","Break City I","Pass I",
+	"Boarding Party III","Armor I","Landfall I","Escort I",
+	"Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Aim III","Firepower Coverage III","Cruise I","Fire Support I","Queue I",
+	"Wolfpack III","Dive III","Armor Piercing I","Noise Reduction I","Carrying Missile I"
+	],
+	"uniques": ["[+1] Movement"],
+	"unitTypes": ["Rider",
+	"Assault",
+	"Close Combat Ship","Ranged Combat Ship",
+	"Ranged Combat"],
+	"row": 3,  
+	"column": 8 
+},
+{
+	"name": "Alert",
+	"prerequisites": [
+	"Boarding Party III","Coastal Raider III","Armor I","Landfall I","Escort I",
+	"Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Aim III","Firepower Coverage III","Cruise I","Fire Support I","Queue I",
+	"Wolfpack III","Dive III","Armor Piercing I"
+	],
+	"uniques": ["[+1] Sight"],
+	"unitTypes": [
+	"Close Combat Ship","Ranged Combat Ship",
+	"Ranged Combat"],
+	"row": 3,
+	"column": 11
+},
+{
+	"name": "Indirect Fire",
+	"prerequisites": ["Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Hard III","Bombard III","Strategic Deployment I","Shrapnel I","Detonate I",
+	"Aim III","Firepower Coverage III","Cruise I","Fire Support I","Queue I"],
+	"uniques": ["Ranged attacks may be performed over obstacles"],
+	"unitTypes": ["Ranged Combat",
+	"Siege",
+	"Ranged Combat Ship"],
+	"row": 3,
+	"column": 12
+},
+{
+	"name": "Continuous Attack",
+	"prerequisites": ["Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Hard III","Bombard III","Strategic Deployment I","Shrapnel I","Detonate I",
+	"Aim III","Cruise I","Fire Support I","Queue I",
+	"Wolfpack III","Armor Piercing I","Ambush I","Tactical Evasion I"
+	],
+	"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
+	"unitTypes": ["Ranged Combat",
+	"Siege",
+	"Ranged Combat Ship"
+	],
+	 "row": 3,
+	 "column": 13    
+},
+{
+	"name": "Additional Range",
+	"prerequisites": ["Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Hard III","Bombard III","Strategic Deployment I","Shrapnel I","Detonate I",
+	"Aim III","Cruise I","Fire Support I","Queue I",
+	"Wolfpack III","Dive III","Armor Piercing I"
+	],
+	"uniques": ["[+1] Range"],
+	"unitTypes": ["Shooter",
+	"Siege",
+	"Ranged Combat Ship"
+	],
+	 "row": 3
+	 "column": 14,     
 },
 {
 	"name": "Logistics",
@@ -180,6 +594,54 @@
 	"unitTypes": ["Scrapper", "Scout", "Rider", "Ranged Combat"],
 	"column": 8,
 	"row": 5
+},
+{
+	"name": "Armor I",
+	"prerequisites": ["Boarding Party II","Coastal Raider II"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat Ship] units> <when defending>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 37
+},
+{
+	"name": "Landfall I",
+	"prerequisites": ["Boarding Party II","Coastal Raider II"],
+	"uniques": ["[+15]% Strength <when fighting in [Coast] tiles>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 38  
+},
+{
+	"name": "Escort I",
+	"prerequisites": ["Boarding Party II","Coastal Raider II"],
+	"uniques": ["[+10]% Strength bonus for [Water] units within [1] tiles <when defending>"],
+	"unitTypes": ["Close Combat Ship"],
+	"row": 2,
+	"column": 39        
+},
+{
+	"name": "Armor II",
+	"prerequisites": ["Armor I"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat Ship] units> <when defending>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 40, 
+},
+{
+	"name": "Landfall II",
+	"prerequisites": ["Landfall I"],
+	"uniques": ["[+15]% Strength <when fighting in [Coast] tiles>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 41
+},
+{
+	"name": "Escort II",
+	"prerequisites": ["Escort I"],
+	"uniques": ["[+10]% Strength bonus for [Water] units within [1] tiles <when defending>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 42                 
 },
 {
 	"name": "Seafarer",
@@ -563,14 +1025,8 @@
 	"unitTypes": ["Melee"]
 },
 {
-	"name": "Urban Warfare",
-	"prerequisites": ["Commando","Amphibious"],
-	"uniques": ["+[30]% combat bonus in [Friendly Land]"],
-	"unitTypes": ["Melee"]
-},
-{
 	"name": "Elite Guard",
-	"prerequisites": ["Zweihander","Urban Warfare"],
+	"prerequisites": ["Zweihander","Street Battle II"],
 	"uniques": ["1 additional attack per turn","Can move after attacking"],
 	"unitTypes": ["Melee"]
 },
@@ -587,6 +1043,54 @@
 		"row": 0
 	},
 ///General
+{
+	"name": "Strategic Deployment I",
+	"prerequisites": ["Hard II","Bombard II"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 31 
+},
+{
+	"name": "Shrapnel I",
+	"prerequisites": ["Hard II","Bombard II"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 32
+},
+{
+	"name": "Detonate I",
+	"prerequisites": ["Hard II","Bombard II"],
+	"uniques": ["[+33]% Strength <vs cities> <when attacking>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 33      
+},
+{
+	"name": "Strategic Deployment II",
+	"prerequisites": ["Strategic Deployment I"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 34
+},
+{
+	"name": "Shrapnel II",
+	"prerequisites": ["Shrapnel I"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 35  
+},
+{
+	"name": "Detonate II",
+	"prerequisites": ["Detonate I"],
+	"uniques": ["[+33]% Strength <vs cities> <when attacking>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 36    
+},
 {
 	"name": "Grape Shot",
 	"uniques": ["Bonus vs land units 25%"],
@@ -1258,7 +1762,7 @@
 			"Loose Formation",
 			"Shock III",
 			"Guerilla Warfare I",
-			"Urban Warfare I"
+			"Street Battle I"
 		],
 		"uniques": [
 			"[+33]% Strength <vs [Rider] units>",
@@ -1543,6 +2047,153 @@
 		"name": "[Housecarl] ability",
 		"uniques": ["Double movement in [Snow]","Double movement in [Tundra]","Double movement in [Hill]","Double movement in [Coast]","Normal vision when embarked"]
 	}, 
+	{
+		"name": "[Companion Cavalry] ability",
+		"uniques": ["[+15]% Strength <when attacking> <when above [90] HP>"]		
+	},
+	{
+		"name": "[Hypaspist] ability",
+		"uniques": ["[+75]% to Flank Attack bonuses"]			
+	},
+	{
+		"name": "[Keshik] ability",
+		"uniques": ["[Great General] is earned [50]% faster","[+50]% XP gained from combat"]		
+	},
+	{
+		"name": "[Iron Wall Legion] ability",
+		"uniques": ["Can build [Fort] improvements on tiles", "[+20]% Strength <when defending>"]			
+	},
+	{
+        "name": "[Mobile Archer] ability",
+        "uniques": ["Ignores terrain cost"]
+	},  
+	{
+		"name": "[Conquistador] ability",
+		"uniques": ["[+100]% Strength <when defending> <when [Embarked]>"]
+	},
+	{
+		"name": "[Hakkapeliitta] ability",
+		"uniques": ["Transfer Movement to [Great General]", "[+15]% Strength when stacked with [Great General]"]
+	},
+	{
+		"name": "[Impi] ability",
+		"unniques": ["[+50]% XP gained from combat", "[+50]% to Flank Attack bonuses"]	
+	},
+	{
+		"name": "[Andean Army] ability",
+		"uniques": ["Ignores terrain cost", "Can pass through impassable tiles"]		
+	},
+	{
+		"name": "[Templar Knight] ability",
+		"uniques": ["Prevents spreading of religion to the city it is next to", "Gain [200] [Gold] <(modified by game speed)> <upon being defeated>", "Gain [40] [Faith] <(modified by game speed)> <upon being promoted>"]
+	},
+	{
+		"name": "Pictish Courage",
+		"uniques": ["No movement cost to pillage", "[+15]% Strength <when fighting in [Foreign Land] tiles>"]	
+	},
+    {
+        "name": "[Heavy Spear Cavalry] ability",
+        "uniques": ["[+25]% Strength <vs [Mobile] units>"]
+	},
+    {
+        "name": "[Red Mirror Horseman] ability",
+        "uniques": ["[+10]% Strength <when adjacent to a [Shooter] unit>"]
+    },
+    {
+        "name": "[Spartacus] ability",
+        "uniques": ["May capture killed [Foot Soldier] units <with [20]% chance> <during the [Classical era]>"],
+    },
+    {
+        "name": "[Timur] ability I",
+        "uniques": ["[This Unit] gains [1] movement", "[+1] additional attacks per turn"],
+    },
+    {
+        "name": "[Khalid ibn al-Walid] ability",
+        "uniques": ["[+25]% Strength <vs cities> <during the [Medieval era]>"],
+    },
+    {
+        "name": "[Bayezid I] ability",
+        "uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking> <during the [Medieval era]>"],
+    },
+	{
+        "name": "[Narses] ability",
+        "uniques": ["[-33]% Gold cost of upgrading <during the [Medieval era]>"],
+    },
+    {
+        "name": "[Mohawk Warrior] ability",
+        "uniques": ["[+25]% Strength <when fighting in [Enemy Land] tiles>", "[Great General] is earned [50]% faster"],
+    },
+    {
+        "name": "[Black Watch] ability",
+        "uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles>"],
+    },
+    {
+        "name": "[Mandekalu Cavalry] ability",
+        "uniques": ["[-10]% Strength"],
+    },
+    {
+        "name": "[Elite Cavalry] ability",
+        "uniques": ["[+15]% Strength <when adjacent to a [Great General] unit>"],
+    },
+    {
+        "name": "[Miner Corps] ability",
+        "uniques": ["[+20]% Strength <when fighting in [Mine] tiles>"],
+    },
+	{     
+		"name": "Rejuvenation", 
+		"uniques": ["All healing effects doubled"]
+	},
+	{
+		"name": "Morale", // Heroic Epic
+		"uniques": ["[+15]% Strength"]
+	},
+	{
+		"name": "Crossing the Mountain",
+		"uniques": ["Can pass through impassable tiles"]
+	},
+	{
+		"name": "More Fight More Brave",
+		"uniques": ["Heals [15] damage if it kills a unit", "Can move after attacking"]	
+	},
+	{
+		"name": "TomyrisAbility", // 托米丽司
+		"uniques": ["Free [Horseman] appears"]
+	},
+	{
+		"name": "Defend the Motherland",
+		"uniques": ["[+10]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "Blizzard Wind Ability",
+		"uniques": [
+		"Turn this tile into a [Tundra] tile <once> <in [Your] cities> <in [Desert] tiles>",
+		"Turn this tile into a [Tundra] tile <once> <in [Your] cities> <in [Grassland] tiles>",
+		"Turn this tile into a [Tundra] tile <once> <in [Your] cities> <in [Plains] tiles>", 
+		"Turn this tile into a [Snow] tile <once> <in [Your] cities> <in [Tundra] tiles>"]
+	},
+	{
+		"name": "With One Heart",
+		"uniques": [
+		"[+3]% Strength <when adjacent to a [Foot Soldier] unit>",
+		"[+3]% Strength <when adjacent to a [Shooter] unit>",
+		"[+3]% Strength <when adjacent to a [Anti-Mobile] unit>",
+		"[+3]% Strength <when adjacent to a [Mobile] unit>",
+		]
+	},
+	{
+		"name": "Record",
+		"uniques": [
+		"Earn [50]% of killed [Military] unit's [Strength] as [Science]"
+		]
+	},
+    {
+        "name": "Turk ability",
+        "uniques":["[Target Unit] takes [5] damage <upon damaging a [Wounded] unit>"]
+    },
+	{
+		"name": "Military City ability",
+		"uniques": ["[+10]% Strength"]
+	}
 	///Equipments
 	{
 		"name": "Primitive Arms",
@@ -2044,7 +2695,7 @@
 			"Shock",
 			"Hull Down",
 			"Guerilla Warfare I",
-			"Urban Warfare I"
+			"Street Battle I"
 		],
 		"uniques": ["+[20]% Combat Strength",
 			"Only available <for units without [Promotion Nullifier]>"
@@ -2666,12 +3317,6 @@
 		"prerequisites": ["Charge","Rout"],
 		"uniques": ["Bonus vs City 25%"],
 		"unitTypes": ["Mounted"]
-	},
-	{
-		"name": "Rout",
-		"prerequisites": ["Barding","Marauding"],
-		"uniques": ["Bonus vs wounded units 17%"],
-		"unitTypes": ["Mounted"]
 	},	
 	{
 		"name": "Armor Piercing",
@@ -2916,10 +3561,127 @@
         "column": 13,
         "row": 3
 	},
+	{
+		"name": "Aim I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Water"],
+		"row": 1,
+        "column": 43
+    },	
+    {
+		"name": "Firepower Coverage I",
+		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 1,
+        "column": 44    
+    },	
+    {
+		"name": "Aim II",
+		"prerequisites": ["Aim I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 1,
+        "column": 45
+    },	
+    {
+		"name": "Firepower Coverage II",
+		"prerequisites": ["Firepower Coverage I"],
+		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 1,
+        "column": 46        
+    },	
+    {
+		"name": "Aim III",
+		"prerequisites": ["Aim II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 1,
+        "column": 47
+    },	
+    {
+		"name": "Firepower Coverage III",
+		"prerequisites": ["Firepower Coverage II"],
+		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Water"],
+		"row": 1,
+        "column": 48    
+    },
+    {
+    	"name": "Cruise I",
+    	"prerequisites": ["Aim II","Firepower Coverage II"],
+		"uniques": ["[+10] HP when healing"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 43
+    },
+    {
+    	"name": "Fire Support I",
+        "prerequisites": ["Aim II","Firepower Coverage II"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when attacking>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 44
+    },
+    {
+    	"name": "Queue I",
+        "prerequisites": ["Aim II","Firepower Coverage II"],
+		"uniques": ["[+10]% Strength bonus for [Ranged Combat Ship] units within [1] tiles"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 45
+    },
+    {
+    	"name": "Cruise II",
+    	"prerequisites": ["Cruise I"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 46
+    },
+    {
+    	"name": "Fire Support II",
+    	"prerequisites": ["Fire Support I"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when attacking>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 47
+    },
+    {
+    	"name": "Queue II",
+    	"prerequisites": ["Queue I"],
+		"uniques": ["[+10]% Strength bonus for [Ranged Combat Ship] units within [1] tiles"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 48       
+    },
+	{
+		"name": "Boarding Party I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+		"row": 1,
+        "column": 37
+    },	
+    {
+		"name": "Boarding Party II",
+		"prerequisites": ["Boarding Party I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+		"row": 1,
+        "column": 38
+    },	
+    {
+		"name": "Boarding Party III",
+		"prerequisites": ["Boarding Party II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+		"row": 1,
+        "column": 39
+    },
 	// Mixed
 	{
 		"name": "Cover I",
-		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>"],
 		"unitTypes": ["Sword","Close Combat","Archery","Ranged Combat","Siege"],
         "column": 24,
         "row": 1
@@ -2935,7 +3697,7 @@
 	{
 		"name": "Mobility",
 		"prerequisites": ["Shock II","Drill II","Targeting I",
-			"Bombardment I","Boarding Party I", "Coastal Raider I", "Wolfpack I"],
+			"Bombardment I","Boarding Party", "Coastal Raider I", "Wolfpack I"],
 		"uniques": ["[+2] Movement"],
 		"unitTypes": ["Mounted","Close Combat Ship","Ranged Combat Ship","Armored","Submarine"],
         "column": 24,
@@ -2950,7 +3712,7 @@
 			"Loose Formation",
 			"Shock II",
 			"Guerilla Warfare I",
-			"Urban Warfare I",
+			"Street Battle I",
 			"Reconnaissance I",
 			"Bombardment",
 			"Targeting",
