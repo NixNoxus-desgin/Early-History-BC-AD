@@ -26,6 +26,11 @@
     },
     ///Place worship
     {
+        "name": "Miracle",
+        "type": "Pantheon",
+        "uniques": ["[+15]% Production when constructing [All] wonders [in cities following this religion]"]
+    },
+    {
 		"name": "Pray for Water",
 		"type": "Pantheon",
 		"uniques": [
@@ -302,7 +307,36 @@
 ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
 
     ///Common
-
+    {
+        "name": "Unification of The State and The Church",
+        "type": "Founder",
+        "uniques": ["[+1 Culture] from every [2] global followers [in all cities]"]
+    },
+    {
+        "name": "Nation Led by God",
+        "type": "Founder",
+        "uniques": ["[+15 Faith] from every [Core of Religion]", "[+1 Culture] from every [Worship Place]"]
+    },
+    {
+        "name": "Liberation Theology",
+        "type": "Founder",
+        "uniques": ["[+3 Production] [in all cities] <with a garrison> <after discovering [Theology]>"]
+    },
+    {
+        "name": "Popular Religion",
+        "type": "Founder",
+        "uniques": ["[+1 Faith, +2 Culture] from every [Amphitheater]", "[+1 Food, +1 Gold] from every [Temple]"]
+    },
+    {
+        "name": "State Religion",
+        "type": "Founder",
+        "uniques": ["[+2 Culture, +1 Science, +2 Gold, +1 Faith] [in all cities]"]
+    },
+    {
+        "name": "Religious Syncretism",
+        "type": "Founder",
+        "uniques": ["When spreading religion to a city, gain [25] times the amount of followers of other religions as [Science]"]
+    },
     {
         "name": "Benevolent",
         "type": "Founder",
@@ -711,6 +745,31 @@
 
     },
     {
+        "name": "Commonplace Belief",
+        "type": "Follower",
+        "uniques": ["[+2]% [Culture] from every follower, up to [20]%"]    
+    },
+    {
+        "name": "Heal the World and Guide the Lost",
+        "type": "Follower",
+        "uniques": ["Comment [[+2]% Yield from every [{non-[Wonder]} {Faith}]]"]        
+    },
+    {
+        "name": "Monumentality",
+        "type": "Follower",
+        "uniques": ["May buy [Culture] buildings with [Faith] for [3] times their normal Production cost", "May buy [Happiness] buildings with [Faith] for [3] times their normal Production cost"]
+    },
+    {
+        "name": "Inspiration",
+        "type": "Follower",
+        "uniques": ["[+2 Faith] from every [Wonder]"] 
+    },
+    {
+        "name": "Professional Ethics",
+        "type": "Follower",
+        "uniques": ["[+2 Production] from every [Holy site]"]    
+    },
+    {
         "name": "Holy Warriors",
         "type": "Follower",
         "uniques": ["May buy [{Military} {Land}] units with [Faith] for [2] times their normal Production cost <before the [Industrial era]>"]
@@ -762,6 +821,36 @@
         "uniques": ["[+33]% Great Person generation [in this city]"]
     },
     {
+        "name": "Incense Fire Sacrifice",
+        "type": "Follower",
+        "uniques": ["[+2 Faith] from every [Temple]","[+1 Faith, +1 Gold] from every [Shrine]"]    
+    },
+    {
+        "name": "Choral Chant",
+        "type": "Follower",
+        "uniques": ["[+4 Faith] from every [Opera House]"]  
+    },
+    {
+        "name": "Inspiration",
+        "type": "Follower",
+        "uniques": ["[+2 Faith] from every [Wonder]"] 
+    },
+    {
+        "name": "Professional Ethics",
+        "type": "Follower",
+        "uniques": ["[+2 Production] from every [Holy site]"]    
+    },
+    {
+        "name": "Atonement Certificate",
+        "type": "Follower",
+        "uniques": ["[+5 Gold] from every [Holy site]"]    
+    },
+    {
+        "name": "Religious Painting",
+        "type": "Follower",
+        "uniques": ["[+3 Culture] from every [Painted Monastery]"]         
+    },      
+    {
         "name": "Church Property",
         "type": "Founder",
         "uniques": ["[+2 Gold] for each global city following this religion"]
@@ -781,6 +870,31 @@
         "name": "World Church",
         "type": "Founder",
         "uniques": ["[+1 Culture] from every [4] global followers [in this city]"]
+    },
+    {
+        "name": "Religious War",
+        "type": "Enhancer",
+        "uniques": ["[+15]% Strength <for [All] units> <when adjacent to a [Religious Unit] unit>"] 
+    },
+    {
+        "name": "Crusader",
+        "type": "Enhancer",
+        "uniques": ["[+20]% Strength <for [All] units> <when fighting in [Enemy Land] tiles>"]
+    },
+    {
+        "name": "Religious Solidarity",
+        "type": "Enhancer",
+        "uniques": ["[+100]% Natural religion spread [in City-State cities]"]
+    },
+    {
+        "name": "Holy City of Faith",
+        "type": "Enhancer",
+        "uniques": ["[+100]% Natural religion spread [in holy cities]",]
+    },
+    {
+        "name": "Devout Palmer",
+        "type": "Enhancer",
+        "uniques": ["[Faith] cost of purchasing items in cities [-15]%"]
     },
     {
         "name": "Holy Order",
@@ -1733,6 +1847,21 @@
      "name": "Religious Community",
      "type": "Follower",
      "uniques": ["[+1]% [Production] from every follower, up to [15]%"]
+  },
+  {
+    "name": "Strong Holy City",
+    "type": "Follower",
+    "uniques": ["[+30]% Strength for cities <when defending>"]    
+  },
+  {
+    "name": "Way of Pilgrimage",
+    "type": "Follower",
+    "uniques": ["[+2 Faith, +2 Culture] [in all cities connected to capital]"] 
+  },
+  {
+    "name": "Tithes",
+    "type": "Follower",
+    "uniques": ["[+10]%" //10% Ertrags zahlen an die Kirche oder weltliche Herrscher, [+3 Gold] from all [Faith] buildings"]    
   },
   {
      "name": "Swords into Ploughshares",
