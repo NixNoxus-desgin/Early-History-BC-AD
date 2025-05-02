@@ -252,6 +252,16 @@
 	},
 	// Extra Bonus resources
 	{
+		"name": "Bison",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains"],
+		"improvementStats": {"production": 1},
+		//"improvement": "Pasture",
+		"uniques": ["Generated on every [30] tiles <in [{Featureless} {Plains}] tiles>",
+		"Generated on every [35] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"],
+		"improvementStats": {"food": 1}
+	},
+	{
 		"name": "Camel",
 		"resourceType": "Bonus",
 		"revealedBy": "Animal Husbandry",
@@ -259,9 +269,16 @@
 		"production": 1,
 		"gold": 1,
 		"improvedBy": ["Pasture"],
+		"uniques": ["Generated on every [70] tiles <in [{Featureless} {Plains}] tiles>",
+		           "Generated on every [70] tiles <in [{Featureless} {Grassland}] tiles>",
+		           "Generated on every [20] tiles <in [{Featureless} {Desert}] tiles>",
+				   "Generated on every [10] tiles <in [{Desert} {Fresh Water}] tiles> <in tiles without [Hill]>",
+					"Generated on every [40] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+					"Generated on every [20] tiles <in [{Fresh Water} {Desert}] tiles> <in tiles without [Hill]> <in [Hill] Regions>",
+		"Doesn't generate naturally <in [Hill] tiles>"		
+					],
 		"improvementStats": {"production": 1}
 	},
-
 	{
 		"name": "Cod",
 		"resourceType": "Bonus",
@@ -314,8 +331,8 @@
 		"food": 1,
 		"gold": 1,
 		"improvedBy": ["Coast Fishing Boats"],
-		"uniques": ["Generated on every [20] tiles <in [{Featureless} {Coast}] tiles>",
-			"Generated on every [30] tiles <in [{Featureless} {Ocean}] tiles>",
+		"uniques": ["Generated on every [10] tiles <in [{Featureless} {Coast}] tiles>",
+		"Generated on every [20] tiles <in [{Featureless} {Ocean}] tiles>"
 		]
 	},
 	{
