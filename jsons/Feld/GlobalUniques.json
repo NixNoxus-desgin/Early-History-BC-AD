@@ -2,7 +2,7 @@
     "name": "Global uniques",
     "uniques": [
         "[+10] HP when healing <for [Apache] units> <in [Medicine Wheel] tiles>", "[+33]% Strength <for [Apache] units> <in [Medicine Wheel] tiles>",
-
+//
         "[-75]% growth [in all cities] <when between [-10] and [0] Happiness>",
         "Nullifies Growth [in all cities] <when below [-10] Happiness>",
         "[-25]% [Production] [in all cities] <when below [-10] Happiness>",
@@ -14,14 +14,29 @@
         "Rebel units may spawn <when below [-15] Happiness>",
         "[-1] Sight <for [Embarked] units>",
         "Notified of new Barbarian encampments",
-
+//
         "[-10]% Strength <vs [Mechanised] units>",
         "[-15]% Strength <vs [Mechanised] units>",
+//
 
         "May buy [Rise Tax] buildings with [Culture] for [3] times their normal Production cost",
         "May buy [Down Tax] buildings with [Culture] for [3] times their normal Production cost",
         "Gain [15]-[35] [Gold] <upon defeating a [Treasury Galleon] unit>"
+//Beispiele Codeing
 
+        //"Triggers a [...] event <upon entering a new era> <after turn number [...]>",
+
+       // "[-5]% [...] <when above [...] [...]> <(modified by game speed)>",
+       //"[-20]% [...] [in all cities] <when above [...] [...]> <(modified by game speed)>",
+       //"[+5]% ... from [...] [in all cities] <when above [...] [...]> <(modified by game speed)>",    
+
+     //  "Instantly consumes [20] [Feat] <upon constructing [Classical Era Special Military Great Person Project]>",
+     //  "[+2]% Yield from every [{non-[Wonder]} {Faith}] <after adopting [Heal the World and Guide the Lost]>"
+     //  "[+5 Gold] <with [Infrastructure Investment]> <for [The Netherlands] Civilizations>",
+     //  "Earn [50]% of killed [Barbarian] unit's [Strength] as [Science] <on [Barbarian Breakout] game speed>",
+     //"Triggers a [Choose New Civilization Capability !] event <upon turn end> <when number of [turns] is equal to [6]> <when [Roguelike Mode] Victory is enabled>",
+     //"Gain a free [Seed-I] [in capital] <with [80]% chance> <upon turn end> <when number of [turns] is equal to [16]> <when number of [Seed] is less than [2]> <if [Seed-I] is not constructed>",
+    
             // Bonuses
     
             ///"[+1 Gold] per every [200] [Gold] <after discovering [Banking]>",
