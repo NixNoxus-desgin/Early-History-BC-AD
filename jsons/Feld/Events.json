@@ -1078,7 +1078,40 @@
 			{ "text": "Our coasts are weak and undefended. The Emperor worries that our foes might exploit this weakness. Therefore we will build new defences so that the Emperor can sleep easy at night.",
 			  "uniques": [	 "All newly-trained [Water] units [in all cities] receive the [Yamato] promotion <for [9999] turns>"] }]
   	},
-         ]  
+         ], 
       ]
-    }   
+    }, 
+	{
+        "name": "The Great Prophet",
+        "text": "Am Anfang war das Wort, und das Wort war bei Gott, und das Wort war Gott. Am Anfang war es bei Gott. Alles ist durch das Wort geworden und ohne das Wort wurde nichts, was geworden ist. In ihm war das Leben und das Leben war das Licht der Menschen. Und das Licht leuchtet in der Finsternis und die Finsternis hat es nicht erfasst. - Joh. 1,1-5",
+        "choices": [
+            {
+                "text": "Jesus",
+                "civilopediaText": [
+            {
+            "text": "[Jesus] can Spread Religion for 2 movement 6 times and can instantly construct a [Holy site] improvement by consuming [Jesus]"
+            }
+                ]                
+                "uniques": ["Only available <during the [Classical era]>", "Unavailable <if [Jesus] is constructed by anybody>", "Provides a [Jesus] in your first [1] cities for free"]
+            },
+            {
+                "text": "Muhammad",
+                "civilopediaText": [
+            {
+            "text": "[Muhammad] can Spread Religion for 2 movement 4 times and +20% †Strength bonus for Land units within 1 tiles"
+            }
+                ]                
+                "uniques": ["Only available <during the [Classical era]>", "Unavailable <if [Muhammad] is constructed by anybody>", "Provides a [Muhammad] in your first [1] cities for free"]
+            },
+            {
+                "text": "JHWH",
+                "civilopediaText": [
+            {
+            "text": "Gain enough [Faith] for 115% of a [Great Prophet] by consuming [JHWH]"
+            }
+                ]                
+                "uniques": ["Only available<during the [Classical era]>", "Unavailable <if [JHWH] is constructed by anybody>", "Provides a [JHWH] in your first [1] cities for free"]
+            }
+        ]
+    }  
  ]
