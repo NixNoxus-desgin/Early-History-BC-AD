@@ -248,7 +248,9 @@
 					"May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
 		"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
 		"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
-		"[+15]% Strength bonus for [Military] units within [2] tiles",
+		"[+10]% Strength bonus for [Military] units within [2] tiles",
+		"[+20]% Strength bonus for [Military] units within [1] tiles",
+		"[+25]% Strength bonus for [Military] units within [0] tiles",
 		"All adjacent units heal [+20] HP when healing",
 		"Can be earned through combat",
 		"Takes your religion over the one in their birth city"],
@@ -301,10 +303,12 @@
 		"unitType": "Civilian",
 		"uniqueTo": "Lithuania",
 		"replaces": "Inquisitor",
-		"uniques": ["Takes your religion over the one in their birth city","Prevents spreading of religion to the city it is next to","Can [Remove Foreign religions from your own cities] [1] times",
-			"Can be purchased with [Faith] [in all cities]","Can construct [Sacred altar] <if it hasn't used other actions yet>",
+		"uniques": ["Takes your religion over the one in their birth city","Prevents spreading of religion to the city it is next to",
+		    "Can [Remove Foreign religions from your own cities] [1] times",
+			"Can be purchased with [Faith] [in all cities]",
+			"Can construct [Sacred altar] <if it hasn't used other actions yet>",
 			"[+1] Sight", "Hidden when religion is disabled", "Unbuildable", "Religious Unit"],
-		"movement": 3,
+		"movement": 3
 	},
 	{
 		"name": "Kavkhan",
@@ -314,7 +318,7 @@
 		"replaces": "Great General",
 		"upgradesTo": "Knight",
 		"promotions": ["Kavkhan"],
-		"uniques": ["Great Person - [War]","Can construct [Citadel]","Can start an [8]-turn golden age","Unbuildable","[+1] Sight"]
+		"uniques": ["Great Person - [War]","Can construct [Citadel]","Can start an [8]-turn golden age","Unbuildable","[+1] Sight"],
 		"movement": 4
 	},
 	{
@@ -1158,7 +1162,7 @@
 		"upgradesTo": "Rifleman",
 		"obsoleteTech": "Rifling",
 		"hurryCostModifier": -25,
-		"attackSound": "shot"
+		"attackSound": "shot",
 		"uniques": ["Can move immediately once bought","Cheaper to buy"],
 	},
 	{
@@ -1230,6 +1234,21 @@
 	},
 
 ///CC
+   {
+		"name": "Housecarl",
+        "uniqueTo": "Norway",
+        "replaces": "Swordsman",
+        "unitType": "Close Combat",
+		"movement": 2,
+		"strength": 15,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		//"obsoleteTech": "Steel",
+		//"upgradesTo": "Longswordsman",
+		"uniques": ["Can move after attacking","[1] Movement point cost to disembark"],
+        "promotions": ["[Housecarl] ability"],
+        "attackSound": "metalhit"
+},
 {
      
 	"name": "SickleSwordsman",
@@ -2013,7 +2032,11 @@
 		"cost": 275,
 		"requiredTech": "Chivalry",
 		"promotions": ["Formation I"],
-		"uniques": ["[+25]% Strength <when fighting in [Friendly Land] tiles>","Unit will heal every turn, even if it performs an action","[+10]% Strength <after discovering [Tactics]>","[+30]% Strength <after discovering [Chivalry]>","[+60]% Strength <after discovering [Gunpowder]>","[+100]% Strength <after discovering [Steels]>","[+1] Movement <after discovering [Flintlock]>"],
+		"uniques": [
+			    "[+25]% Strength <when fighting in [Friendly Land] tiles>","Unit will heal every turn, even if it performs an action",
+	        	"[+10]% Strength <after discovering [Tactics]>","[+30]% Strength <after discovering [Chivalry]>",
+		        "[+60]% Strength <after discovering [Gunpowder]>","[+100]% Strength <after discovering [Steels]>",
+				"[+1] Movement <after discovering [Flintlock]>"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
