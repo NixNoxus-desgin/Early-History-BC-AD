@@ -2945,31 +2945,6 @@
 		"cities": ["Karachi", "Islamabad", "Lahore", "Faisalabad", "Rawalpindi", "Gujranwala", "Multan", "Peshawar", "Hyderabad", "Quetta", "Sargodha", "Sialkot", "Bahawalpur", "Sukkur", "Larkana", "Nawabshah", "Sheikhupura", "Mirpur Khas", "Dera Ghazi Khan", "Gujrat", "Jhang", "Tando Adam Khan", "Sahiwal", "Muzaffarabad", "Khanewal", "Chiniot", "Attock", "Mardan", "Rahim Yar Khan"]
 	},
 	{
-		"name": "Afghanistan",
-		"leaderName": "Ahmad Shah Massoud",
-		"adjective": ["Afgan"],
-		"startBias": ["Desert","Plains"],
-		"preferredVictoryType": "Cultural",
-
-		"declaringWar": "I declare that our nation shall rise against those who threaten our sovereignty. Let it be known that we will not yield to oppression!",
-		"attacked": "Our enemies may strike, but they shall find us with fangs.",
-		"defeated": "Though we may have faced defeat, we shall not be discouraged. Our spirit remains unbroken, and our commitment unwavering. We shall return.",
-		"introduction": "Peace and blessings be upon you, my esteemed compatriots. May our nations prosper and thrive under the guidance of unity and resilience",
-
-		"neutralHello": "Greetings.",
-		"hateHello": "I have no tolerance for those who sow discord and division among our people.",
-
-		"tradeRequest": "I extend my hand in friendship and cooperation, Let us build bridges of prosperity and strengthen our regional ties.",
-
-		"innerColor": [187, 154, 199],
-		"outerColor": [30, 30, 30],
-		"favoredReligion": "Islam",
-		"uniqueName": "Saffron Harvest",
-		"uniques": ["[+2 Food] from [Luxury resource] tiles [in all cities]",
-			"[+1 Culture] from each Trade Route"],
-		"cities": ["Kabul", "Kandahar", "Herat", "Mazar-i-Sharif", "Jalalabad", "Kunduz", "Ghazni", "Balkh", "Baghlan", "Gardez", "Khost", "Sheberghan", "Charikar", "Sar-e Pol", "Lashkar Gah"]
-	},
-	{
 		"name": "The Ottomans",
 		"leaderName": "Suleiman I",
 		"adjective": ["Ottoman"],
@@ -3822,31 +3797,186 @@
 	},
 	{
 		"name": "Afghanistan",
-		"leaderName": "Ahmad Shah Massoud",
-		"adjective": ["Afgan"],
-		"startBias": ["Desert","Plains"],
-		"preferredVictoryType": "Cultural",
+		"leaderName": "Leader",
+		"personality": "Afghanistan",
+		"adjective": ["Afghans"],
+		"startBias": ["Hill"],
+		"preferredVictoryType":"Domination",
 
-		"declaringWar": "I declare that our nation shall rise against those who threaten our sovereignty. Let it be known that we will not yield to oppression!",
-		"attacked": "Our enemies may strike, but they shall find us with fangs.",
-		"defeated": "Though we may have faced defeat, we shall not be discouraged. Our spirit remains unbroken, and our commitment unwavering. We shall return.",
-		"introduction": "Peace and blessings be upon you, my esteemed compatriots. May our nations prosper and thrive under the guidance of unity and resilience",
+		"startIntroPart1": "Let's begin!",
 
-		"neutralHello": "Greetings.",
-		"hateHello": "I have no tolerance for those who sow discord and division among our people.",
+		"declaringWar": "Your behavior has angered me. I declare a just war against you",
+		"attacked": "How dare you attack me! My sword will be the only thing waiting for you, and you will return with nothing",
+		"defeated": "Although I failed, I will come back one day. I hope you can treat my people well",
+		"introduction": "I welcome you very much, dear stranger, do you need to sit down and talk?",
 
-		"tradeRequest": "I extend my hand in friendship and cooperation, Let us build bridges of prosperity and strengthen our regional ties.",
+		"neutralHello": "Greetings!",
+		"hateHello": "What?",
 
-		"innerColor": [187, 154, 199],
-		"outerColor": [30, 30, 30],
+		"tradeRequest": "I will provide enough goods to impress you, and I hope the goods you provide will also impress me",
+
+		"innerColor": [255, 213, 15],
+		"outerColor": [0,0,0],
 		"favoredReligion": "Islam",
-		"uniqueName": "Saffron Harvest",
-		"uniques": ["[+2 Food] from [Luxury resource] tiles [in all cities]",
-			"[+1 Culture] from each Trade Route"],
+		"uniqueName": "Graveyard of Empires",
+		"uniqueText": "Enemy military units must spend 2 extra ➡movement points when inside your territory\nEnemy Mobile units must spend 1 extra ➡movement points when inside your territory",
+		"uniques": ["Enemy [Military] units must spend [2] extra movement points when inside your territory", "Enemy [Mobile] units must spend [1] extra movement points when inside your territory", "[-5]% Strength <for [Military] units> <vs [Byzantium] units> <after founding a religion> <before enhancing a religion>", "[-10]% Strength <for [Military] units> <vs [Byzantium] units> <after enhancing a religion>"],
+		"cities": ["Kabul", "Kandahar", "Talukan", "Kunduz", "Nawab", "Baghlan", "Mazar-i-Sharif", "Chaghcharan", "Mahmoud-Eraqi", "Salpul", "Bamiyan", "Kad", "Maimana", "Ghazni", "Herat", "Host", "Lashkargah", "Sheberghan", "Fazabad", "Maidan", "Meydaram", "Pul-e Alam", "Jalalabad", "Zaranj", "Talinkot", "Gardez", "Sharana", "Charikar", "Bazarak"],
+        "spyNames": ["Kim", "Park", "Han", "Na", "Kong", "Yu", "Ahn", "Na", "Da", "Eun"]
+    },
+	{
+		"name": "The Huns",
+		"leaderName": "Leader",
+		"personality": "The Huns",
+		"adjective": ["Hunnic"],
+		"startBias": ["Avoid [Jungle]", "Avoid [Forest]"],
+		"preferredVictorType": "Domination",
 
-		"spyNames": ["Aaban", "Abdul-Karim", "Ahmad", "Ali", "Farid", "Gulzar", "Khyber", "Mahmud", "Rahman", "Zia"],
-		"cities": ["Kabul", "Kandahar", "Herat", "Mazar-i-Sharif", "Jalalabad", "Kunduz", "Ghazni", "Balkh", "Baghlan", "Gardez", "Khost", "Sheberghan", "Charikar", "Sar-e Pol", "Lashkar Gah"],
-	},
+        "startIntroPart1": "Let's begin!",
+
+	    "declaringWar": "Your behavior has angered me. I declare a just war against you",
+		"attacked": "How dare you attack me! My sword will be the only thing waiting for you, and you will return with nothing",
+		"defeated": "Although I failed, I will come back one day. I hope you can treat my people well",
+		
+		"introduction": "I welcome you very much, dear stranger, do you need to sit down and talk?",
+		
+		"neutralHello": "Greetings!",
+		"hateHello": "What?",
+		
+		"tradeRequest": "I will provide enough goods to impress you, and I hope the goods you provide will also impress me",
+		"outerColor": [180, 178, 164],
+		"innerColor": [70, 0, 4],
+		"favoredReligion": "Tengriism",
+		"uniqueName": "Scourge of God",
+		"uniqueText": "+1 ⚙Production from every [Pasture]\nCities are razed 2 times as fast\nStarts with [Animal Husbandry]\nBorrows city names from other civilizations in the game",
+		"uniques": ["[+1 Production] from every [Pasture]", "Cities are razed [2] times as fast", "Starts with [Animal Husbandry]", "\"Borrows\" city names from other civilizations in the game", "[-5]% Strength <for [Military] units> <vs [Byzantium] units> <after founding a religion> <before enhancing a religion>", "[-10]% Strength <for [Military] units> <vs [Byzantium] units> <after enhancing a religion>"],
+		"cities": ["Attila's Court"],
+        "spyNames": ["Balamber", "Uldin", "Donatus", "Charato", "Octar", "Bleda", "Ellac", "Dengizik", "Hildico", "Gudrun"]
+    
+    },
+	{
+		///"name": "Palestine",
+		"leaderName": "Leader",
+		"personality": "base",
+		"adjective": ["Palestinian"],
+		"startBias": ["Grassland"],
+		"preferredVictoryType": "Domination",
+
+        "startIntroPart1": "From the river to  sea, Palestine will be free!",
+
+	    "declaringWar": "Your behavior has angered me. I declare a just war against you",
+		"attacked": "How dare you attack me! My sword will be the only thing waiting for you, and you will return with nothing",
+		"defeated": "Palestine will never surrender!",
+		
+		"introduction": "I welcome you very much, dear stranger, do you need to sit down and talk?",
+		
+		"neutralHello": "Greetings!",
+		"hateHello": "What?",
+		
+		"tradeRequest": "I will provide enough goods to impress you, and I hope the goods you provide will also impress me",
+
+		"outerColor": [60, 110, 38],
+		"innerColor": [182, 182, 182],
+		"favoredReligion": "Islam",
+		"uniqueName": "Freedom Will",
+		"uniqueText": "When you have n cities, if your basic military units are less than n, you will automatically receive 1 basic military units evry 3 turns, up to a maximum of two\nThe fewer cities there are, the higher the †Strength of military units",
+		"uniques": [
+		
+		"[1] free [Warrior] units appear <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <before discovering [Bronze Working]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <before discovering [Bronze Working]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		"[1] free [Warrior] units appear <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <before discovering [Bronze Working]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <before discovering [Bronze Working]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		"[1] free [Spearman] units appear <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Bronze Working]> <before discovering [Defensive Fortification]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Bronze Working]> <before discovering [Defensive Fortification]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+	    "[1] free [Spearman] units appear <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Bronze Working]> <before discovering [Defensive Fortification]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Bronze Working]> <before discovering [Defensive Fortification]> <upon turn end> <when number of [CD] is equal to [0]>",
+	
+		"[1] free [Pikeman] units appear <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Defensive Fortification]> <before discovering [Gunpowder]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Defensive Fortification]> <before discovering [Gunpowder]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		"[1] free [Pikeman] units appear <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Defensive Fortification]> <before discovering [Gunpowder]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Defensive Fortification]> <before discovering [Gunpowder]> <upon turn end> <when number of [CD] is equal to [0]>",
+	
+	
+	
+	
+	
+		"[1] free [Musketman] units appear <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Gunpowder]> <before discovering [Rifling]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Gunpowder]> <before discovering [Rifling]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		"[1] free [Musketman] units appear <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Gunpowder]> <before discovering [Rifling]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Gunpowder]> <before discovering [Rifling]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		
+		
+		"[1] free [Rifleman] units appear <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Rifling]> <before discovering [Replaceable Parts]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Rifling]> <before discovering [Replaceable Parts]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		"[1] free [Rifleman] units appear <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Rifling]> <before discovering [Replaceable Parts]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Rifling]> <before discovering [Replaceable Parts]> <upon turn end> <when number of [CD] is equal to [0]>",
+	
+	
+		"[1] free [Great War Infantry] units appear <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Replaceable Parts]> <before discovering [Materials Science]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Replaceable Parts]> <before discovering [Materials Science]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		"[1] free [Great War Infantry] units appear <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Replaceable Parts]> <before discovering [Materials Science]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Replaceable Parts]> <before discovering [Materials Science]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		
+		
+		
+		
+		"[1] free [Infantry] units appear <when below [1] [Number of Fighters]> <when number of [Cities] is more than [0]> <after discovering [Materials Science]> <upon turn end>",
+		"[1] free [Infantry] units appear <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Materials Science]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [1] [Number of Fighters]> <when number of [Cities] is equal to [1]> <after discovering [Materials Science]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		"[1] free [Infantry] units appear <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Materials Science]> <upon turn end> <when number of [CD] is equal to [3]>",
+		"Instantly provides [4] [CD] <when below [2] [Number of Fighters]> <when number of [Cities] is more than [1]> <after discovering [Materials Science]> <upon turn end> <when number of [CD] is equal to [0]>",
+		
+		
+		
+		"[+20]% Strength <for [Military] units> <when number of [Cities] is equal to [1]>", "[+15]% Strength <for [Military] units> <when number of [Cities] is equal to [2]>", "[+12]% Strength <for [Military] units> <when number of [Cities] is equal to [3]>", "[+9]% Strength <for [Military] units> <when number of [Cities] is equal to [4]>", "[+7]% Strength <for [Military] units> <when number of [Cities] is equal to [5]>", "[+5]% Strength <for [Military] units> <when number of [Cities] is more than [5]>",
+		"[-5]% Strength <for [Military] units> <vs [Byzantium] units> <after founding a religion> <before enhancing a religion>", "[-10]% Strength <for [Military] units> <vs [Byzantium] units> <after enhancing a religion>"],
+		"cities": ["Ramallah", "Gaza", "Rafah", "Northern Province", "Khan Yunis", "Dair al-Balah", "Hebron", "Bethlehem", "Jenin", "Tulkarm", "Nablus", "Jericho"],
+        "spyNames": ["Refaat", "Heba", "Salah", "Ahmed", "Zakaria", "Bastet", "Ma'at", "Nebhet", "Tefenet", "Neuth"]
+                                     
+    },
+	{
+		"name": "Serbia",
+		"leaderName": "Leader",
+		"personality": "Serbia",
+		"adjective": ["Serb"],
+		"startBias": ["Hill"],
+		"preferredVictoryType": "Domination",
+
+        "startIntroPart1": "Let's begin!",
+
+	    "declaringWar": "Your behavior has angered me. I declare a just war against you",
+		"attacked": "How dare you attack me! My sword will be the only thing waiting for you, and you will return with nothing",
+		"defeated": "Although I failed, I will come back one day. I hope you can treat my people well",
+		
+		"introduction": "I welcome you very much, dear stranger, do you need to sit down and talk?",
+
+		"neutralHello": "Greetings!",
+		"hateHello": "What?",
+
+		"tradeRequest": "I will provide enough goods to impress you, and I hope the goods you provide will also impress me",
+
+        "outerColor": [199,58,64],
+        "innerColor": [255,255,255],
+
+		"favoredReligion": "Christianity",
+		"uniqueName": "Balkan Tiger",
+		"uniqueText": "Earn 20% of the damage done to Military units as ♪Culture\n+10%/15%/20% †Strength for Military units when below 75/50/25 HP\n[No damage penalty for wounded units]",
+		"uniques": ["No damage penalty for wounded units <for [Military] units>", "Earn [20]% of the damage done to [Military] units as [Culture]", "[+10]% Strength <for [Military] units> <when below [75] HP>", "[+5]% Strength <for [Military] units> <when below [50] HP>", "[+5]% Strength <for [Military] units> <when below [25] HP>", "[-5]% Strength <for [Military] units> <vs [Byzantium] units> <after founding a religion> <before enhancing a religion>", "[-10]% Strength <for [Military] units> <vs [Byzantium] units> <after enhancing a religion>"],
+		"cities": ["Belgrade","Novisad","Nais","Kragujevac","Kosovo State","Podunavski","Toplički","Kolubarski","Mitrovica","Sremski","Rasinski",
+			"Pomoravski","Zaječar","Severnobanatski","Južnobanatski","Srednjebanatski","Pirotski","Jablanički","Zlatiborski","Severnobački","Južnobački","Zapadnobački",
+			"Pčinjski","Nišavski","Mačvanski","Prizren","Raški","Borski","Toplički"],
+        "spyNames": ["Ibrahim", "Bayezid", "Sokollu", "Mahmut", "Uveys", "Roxelana", "Safiye", "Hafsa", "Kosem", "Nurbanu"]  
+    },
 	{
 		"name": "Luxembourg",
 		"leaderName": "Charlotte",
