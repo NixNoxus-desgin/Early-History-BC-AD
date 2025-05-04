@@ -6,11 +6,6 @@
 		//"uniques": [ ]
 	},
 	{
-		"name": "Purple Glass",
-		"resourceType": "Luxury",
-		//"uniques": [ ]
-	},
-	{
 		"name": "Aport production res",
 		"resourceType": "Bonus",
 		"uniques": ["Will not be displayed in Civilopedia"]
@@ -1586,7 +1581,10 @@
 	{
 		"name": "Amber",
 		"resourceType": "Luxury",
-		"gold": 1
+		"terrainsCanBeFoundOn": [ "Tundra", "Grassland", "Plains", "Desert", "Hill" ],
+		"gold": 2,
+		"improvement": "Mine",
+		"improvementStats": { "gold": 1 }
 	},
 	{
 		"name": "Marble",
