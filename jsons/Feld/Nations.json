@@ -2683,6 +2683,313 @@
 			"Ura","Milid","Urshu","Arwada","Sanahuitta","Dimashku","Millawanda","Gaziura","Ugarit"]
 	},
 	{
+		"name": "The Nabataeans",
+		"leaderName": "Aretas IV",
+		"adjective": ["Nabataean"],
+		"startBias": ["Desert"],
+		"personality": "Aretas IV",
+		"preferredVictoryType": "Cultural",
+
+		"startIntroPart1": "Aretas, King of the Nabataeans, Friend of his People, your rule was the zenith of the Nabataean civilization as your capital, Petra was one of the largest economical hubs and cities in the world at that time. Art and culture flourished while under your rule, and the culture that has grown during your rule is still being felt till today. Can you once again strike the world in awe with your culture? Can you create an economy that can eclipse your last achievements? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "Apologies, friend. But you must die!",
+		"attacked": "Darn you!",
+		"defeated": "You will be cursed for eternity for what you've done! You will pay!",
+		"introduction": "I am Aretas IV, friend of his people.",
+
+		"neutralHello": "Yes?",
+		"hateHello": "If I knew magic, I would've cursed you by now.",
+
+		"tradeRequest": "Shall we trade our wealth?",
+
+		"outerColor": [112, 30, 4],
+		"innerColor": [218, 145, 38],
+		"favoredReligion": "Christianity",
+		"uniqueName": "Ancient Sandstone Geniuses",
+		"uniques": ["[+2 Culture] <in cities connected to the capital> <starting from the [Medieval era]>", "[+1 Production] from [Desert] tiles [in all cities] <starting from the [Medieval era]>"],
+		"cities": ["Petra","Hegra","Bosra","Avdat","Sela","Madain Saleh","Dumatha","Aila","Jauf","Rekem",
+			"Raqmu","Oboda","Hijr","Egra","Kadesh","Humeima","Philoteria","Al-`Ula","Gerasa","Gaulane",
+			"Rabathmoba","Zoara","Mecca","Dedan","Edom","Moab","Tafila","Amman","Yotvata","Humayma",
+			"Tayma","Tabuk","Wadi Rum","Qasr al-Bint","Mampsis","Kurnub","Halasa","Aslah","Jauf","Negev",
+			"Shobak","Kadesh","Aretas","Bir Madhkur","Qasr Usaykhim","Al-Hijr"]
+    },
+	{
+		"name": "Bosnia",
+		"leaderName": "Tvrtko I",
+		"adjective": ["Bosnian"],
+		"startBias": ["Hill"],
+		"personality": "Tvrtko I",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Tvrtko I, first king of Bosnia. Early in your personal rule, you quarrelled with his country's Roman Catholic clergy but later enjoyed cordial relations with all the religious communities in your realm. After initial difficulties—the loss of large parts of Bosnia to your overlord, King Louis I of Hungary, and being briefly deposed by your magnates, your power grew considerably. In 1377, you were crowned king of Bosnia and Serbia, claiming to be the heir of Serbia's extinct Nemanjić dynasty. Oh, Tvrtko I. Can you seize the opportunity to expand your realm? Can you create a new dominant power within this world? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "For Bosnia and all its people!",
+		"attacked": "Your blundering will get you no-where but death!",
+		"defeated": "Your tyranny will end soon, I know it.",
+		"introduction": "Who would you be, stranger? I am Tvrtko I of the Kingdom of Bosnia.",
+
+		"neutralHello": "What do you need?",
+		"hateHello": "What?",
+
+		"tradeRequest": "I assure you there are no strings attached here.",
+
+		"outerColor": [0, 8, 35],
+		"innerColor": [199, 235, 255],
+		"favoredReligion": "Christianity",
+		"uniqueName": "Bosansko Superiority",
+		"uniques": ["[+10 Happiness] <for [10] turns> <upon conquering a city>", "Free [Inquisitor] appears <upon gaining a [Missionary] unit>", "Free [Missionary] appears <upon gaining a [Inquisitor] unit>"],
+		"cities": ["Visoko","Mostar","Banja Luka","Tuzla","Zenica","Sarajevo","Doboj","Travnik","Trebinje","Gračanica",
+			"Konjic","Goražde","Grude","Srebrenica","Cazin","Sanski Most","Livno","Bihać",
+			"Foča","Brčko","Kakanj","Prijedor","Široki Brijeg","Lukavac","Maglaj","Kladanj","Bugojno",
+			"Teslić","Prozor","Posušje","Zvornik","Čapljina","Nevesinje","Tomislavgrad","Mrkonjić Grad",
+			"Vitez","Orašje","Kiseljak","Čitluk","Novi Travnik","Gradačac","Šipovo"]
+    },
+	{
+		"name": "Wallachia",
+		"leaderName": "Vlad III",
+		"adjective": ["Wallachian"],
+		"startBias": ["Forest"],
+		"personality": "Vlad III",
+		"preferredVictoryType": "Diplomatic",
+
+		"startIntroPart1": "Vlad III, the Impaler. You became the ruler of Wallachia in 1436, during your time you were known for your cruel methods of punishments and executions, being mostly notorious for your impalements, even once creating a forest of impaled people within Targoviste. Oh, Vlad the Impaler, your cruelty is what protects your borders. Can you win against a larger force by striking fear into their hearts? Can you impale your enemies to make a forest to send a message to your potential foes? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "Your head will look great on a pike.",
+		"attacked": "Welcome to my wonderland.",
+		"defeated": "Atleast my punishment is not impalement... That would be cruel irony.",
+		"introduction": "Do not be afraid, just do not attract my wrath.",
+
+		"neutralHello": "Welcome, take a seat.",
+		"hateHello": "See those people outside? I hope you join them.",
+
+		"tradeRequest": "Let us prosper in trade and wealth.",
+
+		"outerColor": [70, 43, 40],
+		"innerColor": [255, 255, 255],
+		"favoredReligion": "Christianity",
+		"uniqueName": "Forest of the Impaled",
+		"uniques": ["[+10]% Strength <when fighting in [your] tiles>", "[+5]% Strength <when fighting in [Forest] tiles>"],
+		"cities": ["Târgoviște","Bucharest","Curtea de Argeș","Suceava","Ploiești","Giurgiu","Câmpulung","Făgăraș","Brașov","Sibiu",
+			"Buzău","Râmnicu Vâlcea","Târgu Jiu","Craiova","Pitești","Drobeta-Turnu Severin","Focșani","Slatina","Brăila",
+			"Tulcea","Caracal","Alexandria","Galați","Mizil","Tecuci","Mangalia","Medgidia","Cernavodă","Constanța",
+			"Târnava","Sfântu Gheorghe","Lugoj","Orșova","Târgu Secuiesc","Bistrița","Reghin","Săcele",
+			"Deva","Miercurea Ciuc","Turda","Hunedoara","Alba Iulia","Zalău","Petroșani"]
+    },
+	{
+		"name": "Seljuk",
+		"leaderName": "Alp Arslan",
+		"adjective": ["Seljuk"],
+		"startBias": ["River"],
+		"personality": "Alp Arslan",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Alp Arslan, the second Sultan of the Seljuk Turks. You greatly expanded the Seljuk territory and consolidated your power, defeating rivals to the south, east and northwest, and your victory over the Byzantines at the Battle of Manzikert, in 1071, ushered in the Turkmen settlement of Anatolia. Oh, Alp Arslan, the world needs you once more. Can you expand your lands to the edges of the world? Can you topple large empires and usurp their throne? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "My empire shall expand to the edges of the world with you on the ground!",
+		"attacked": "Hah! A futile attempt, you will not defeat me!",
+		"defeated": "Ahh... My ambitions seem to have lead me to my own bitter end.",
+		"introduction": "I am Alp Arslan of the Seljuks, we come in peace... For now.",
+
+		"neutralHello": "Hey.",
+		"hateHello": "Bha! Who let this insolent scum in?!",
+
+		"tradeRequest": "Come on now, you know you want this trade.",
+
+		"outerColor": [133, 1, 1],
+		"innerColor": [64, 224, 208],
+		"favoredReligion": "Islam",
+		"uniqueName": "Invaders from the Unknown",
+		"uniques": ["[+2] Sight <in [Desert] tiles>", "Free [Horseman] appears <during the [Classical era]> <upon conquering a city>", "Free [Knight] appears <during the [Medieval era]> <upon conquering a city>", "Free [Lancer] appears <during the [Renaissance era]> <upon conquering a city>", "Free [Cavalry] appears <starting from the [Industrial era]> <upon conquering a city>"],
+		"cities": ["Seljuk Merv","Nishapur","Rayy","Seljuk Hamadan","Tabriz","Isfahan","Kashgar","Herat","Bukhara","Seljuk Samarkand",
+                        "Mosul","Seljuk Aleppo","Seljuk Baghdad","Seljuk Damascus","Seljuk Konya","Seljuk Ankara","Sivas","Bursa","Kermanshah","Tbilisi",
+                        "Shiraz","Kerman","Ardabil","Khiva","Balkh","Amol","Bistam","Qazvin","Ganja",
+                        "Qom","Shamakhi","Fustat","Sari","Kufa","Basra","Mosul","Seljuk Aksaray","Urfa","Malatya",
+                        "Seljuk Antioch","Seljuk Edessa","Manzikert","Van","Ahlat","Bitlis","Khoy","Diyarbakır","Seljuk Erzurum"]
+    },
+	{
+		"name": "The Rashidun",
+		"leaderName": "Abu Bakr",
+		"adjective": ["Rashidi"],
+		"startBias": ["Desert"],
+		"personality": "Abu Bakr",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Abu Bakr, the first Rashidun Caliph. A close companion and father-in-law of Muhammad, You are referred to with the honorific title al-Siddiq by Sunni Muslims. You were amongst the earliest converts to Islam and propagated dawah to the Mushrikites. You were considered the first Muslim missionary as several companions of Muhammad converted through you. Following Muhammad's death, You succeeded the leadership of the Muslim community as the first caliph. Oh Abu Bakr, the world needs your holiness once more. Can you guide your people to greatness once more? Can you repel the attacks of the non-believers and create a mighty caliphate? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "I am very sorry, but this is necesarry.",
+		"attacked": "Good luck, as Allah is not on your side.",
+		"defeated": "Congratulations... Please lead my people into greatness and do not let them fall into darkness...",
+		"introduction": "As-salamu alaykum, I am Abu Bakr. It is very nice to meet you, friend."
+
+		"neutralHello": "Hello, do you need something?",
+		"hateHello": "Oh... Greetings.",
+
+		"tradeRequest": "Let us bring prosperity to both of our people, friend.",
+
+		"outerColor": [255, 255, 255],
+		"innerColor": [1, 78, 3],
+		"favoredReligion": "Islam",
+		"uniqueName": "Rightly Guided",
+		"uniques": ["[+3] Movement <for [Missionary] units>", "[+3] Movement <for [Great Prophet] units>", "Free [Great Prophet] appears <upon entering a Golden Age>", "[+1 Faith] <in cities following our religion>", "[+1 Faith] <in cities following our religion> <starting from the [Medieval era]>"],
+		"cities": ["Rashidun Medina","Kufa","Basra","Fustat","Rashidun Damascus","Ctesiphon","Rashidun Jerusalem","Rashidun Cairo","Rashidun Alexandria","Mosul",
+			"Rashidun Baghdad","Aleppo","Tripoli","Aden","Rashidun Mecca","Sana'a","Homs","Amman","Beirut","Harran",
+			"Tiberias","Tarsus","Antioch","Palmyra","Qadisiyah","Homs","Diyar Bakr","Ramla","Hama",
+			"Najaf","Karbala","Yamama","Yathrib","Tabuk","Al-Ubulla","Bukhara","Samarqand","Merv","Nishapur",
+			"Herat","Qandahar","Ghazni","Multan","Isfahan","Rayy","Kerman","Gorgan","Tus"]
+    },
+	{
+		"name": "Scotland",
+		"leaderName": "William Wallace",
+		"adjective": ["Scottish"],
+		"startBias": ["Hill"],
+		"personality": "William Wallace",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Sir William Wallace, knight of the Kingdom of Scotland and soon one of its great leaders during the first war of scottish independence. You defeated an English army at the Battle of Stirling Bridge, then you were appointed Guardian of Scotland and served until your defeat at the Battle of Falkirk. Oh Sir William, can you lead Scotland back into greatness? Can you rise against those who threaten your freedom? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "Your existance is a threat to our freedom! Prepare to die!",
+		"attacked": "Your tyranny won't last long, I will make sure of that!",
+		"defeated": "Another will take my place, you WILL fall.",
+		"introduction": "I am Sir William Wallace, a knight of the great nation of Scotland.",
+
+		"neutralHello": "Yes?",
+		"hateHello": "We don't want the likes of you here.",
+
+		"tradeRequest": "We require some of your resources, and thus I will exchange some of mine for yours.",
+
+		"outerColor": [174, 213, 255],
+		"innerColor": [1, 42, 101],
+		"favoredReligion": "Christianity",
+		"uniqueName": "Highland Spirit",
+		"uniques": ["[+10]% Strength <when fighting in [Hill] tiles>", "All newly-trained [Land] units [in all cities] receive the [Highlands] promotion", "[+1 Culture] from every [Luxury resource]"],
+		"cities": ["Edinburgh","Glasgow","Aberdeen","Dundee","Inverness","Stirling","Perth","Dumfries","Ayr","Inveraray",
+			"Falkirk","Paisley","Kilmarnock","Elgin","Dunfermline","Fort William","Oban","St. Andrews","Kirkwall","Lerwick",
+			"Brechin","Forfar","Melrose","Kelso","Peebles","Selkirk","Dornoch","Stranraer","Campbeltown","Thurso",
+			"Stonehaven","Montrose","Haddington","Linlithgow","Motherwell","Greenock","Alloa","Crieff","Nairn","Dunbar",
+			"Wick","Largs","Duns","Burntisland","Tain","Cupar","Callander"]
+    },
+	{
+		"name": "Switzerland",
+		"leaderName": "Henry Dunant",
+		"adjective": ["Swiss"],
+		"startBias": ["Hill"],
+		"personality": "Henry Dunant",
+		"preferredVictoryType": "Diplomatic",
+
+		"startIntroPart1": "Henry Dunant, Swiss Humanitarian, businessman, and co-founder of the red cross, your humanitarian efforts won you the first noble peace prize in 1901. Your kindness is unmatched as seen from your efforts within the early days of the red cross, but you managed to endure and became a hero to many. Oh, Mr. Dunant, we need your kindness in our world once more. Can you safe the lives of many once more? Can you become the paragon of good to the eyes of many once more? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "I am sorry... This is for the greater good!",
+		"attacked": "I understand... Come at me if it makes you feel better.",
+		"defeated": "Have mercy and atleast let me continue my efforts... Please...",
+		"introduction": "Hello, do you require any assistance?",
+
+		"neutralHello": "Greetings.",
+		"hateHello": "Are you hurt?",
+
+		"tradeRequest": "This exchange will benefit us both.",
+
+		"outerColor": [218, 40, 28],
+		"innerColor": [214, 255, 146],
+		"favoredReligion": "Christianity",
+		"uniqueName": "The Red Cross",
+		"uniques": ["All newly-trained [Melee] units [in all cities] receive the [Medic] promotion", "[+33]% Production when constructing [Food] buildings [in all cities]"],
+		"cities":["Bern","Zurich","Geneve","Basel","Lausanne","Winterthur","Sankt Gallen","Lugano","Luzern","Biel",
+			"Thun","Koniz","La Chaux-de-Fonds","Rapperswil","Schaffhausen","Fribourg","Chur","Neuchatel","Vernier","Sitten",
+			"Lancey","Emmen","Kriens","Yverdon-les-Bains","Zug","Uster","Montreux","Frauenfeld","Dietikon","Baar","Riehen",
+			"Dubendorf","Meyrin","Carouge","Wettingen","Allschwil", "Renens","Kreuzlingen","Jona","Onex","Gossau","Muttenz"]
+	},
+	{
+		"name": "Kushan",
+		"leaderName": "Kanishka I",
+		"adjective": ["Kushan"],
+		"startBias": ["Plains"],
+		"personality": "Kanishka I",
+		"preferredVictoryType": "Cultural",
+
+		"startIntroPart1": "Kanishka I, the emperor of the Kushan Empire at its zenith, famous for your military, diplomatic, and spiritual advancements, your patronage of buddhist religions was a major part of the creation of the silk road. Oh, great Kanisha I, we the world once again needs your skills once more. Can you once again swiftly defeat your enemies? Can you once again diplomatically charm your contemporaries?  Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "You are in the way of my ambitions! Begone!",
+		"attacked": "You are a fool, and will be remembered in history as such!",
+		"defeated": "My empire! Nooo!!",
+		"introduction": "Greetings, are you a friend, or a foe?",
+
+		"neutralHello": "Greetings.",
+		"hateHello": "Make it quick.",
+
+		"tradeRequest": "I patronize you to accept this trade.",
+
+		"outerColor": [95, 176, 95],
+		"innerColor": [105, 52, 0],
+		"favoredReligion": "Buddhism",
+		"uniqueName": "Pax Kushanica",
+		"uniques": ["[+2 Faith, +3 Culture] [in all cities] <when not at war> <starting from the [Classical era]>", "Gain [150] [Gold] <upon conquering a city> <starting from the [Classical era]>", "Gain [250] [Faith] <upon conquering a city> <starting from the [Classical era]>", "Gain [200] [Culture] <upon conquering a city> <starting from the [Classical era]>"],
+		"cities": ["Peshawar","Lahore","Faisalabad","Rawalpindi","Multan","Hyderabad","Gujranwala","Karachi","Quetta","Islamabad",
+			"Srinagar","Kabul","Kandahar","Herat","Mazar-i-Sharif","Kunduz","Dushanbe","Khujand","Kulob","Tashkent",
+			"Samarkand","Bukhara","Nukus","Namangan","Andijan","Fergana","Urgench","Qarshi","Termez","Jizzakh",
+			"Zahedan","Mashhad","Kerman","Ahvaz","Birjand","Qazvin","Rasht","Chabahar","Yazd","Shiraz","Esfahan",
+			"Lucknow","Amritsar","Chandigarh","Jammu","Ludhiana"]
+    },
+	{
+		"name": "Aragon",
+		"leaderName": "James II",
+		"adjective": ["Aragonian"],
+		"startBias": ["Coast"],
+		"personality": "James II",
+		"preferredVictoryType": "Diplomatic",
+
+		"startIntroPart1": "Oh, James II... King of Aragon, Valencia, Sardinia and Corsica, along with the Count of Barcelona, you conquered the lands of Sardinia in 1324, and created another kingdom to put into your collection. The world needs you once more, Can you conquer your enemies again? Can you create multiple large prosperous kingdoms? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "Another kingdom to my collection!",
+		"attacked": "You will pay!",
+		"defeated": "Nooo!! I... I have failed...",
+		"introduction": "Hello there, are you interested in becoming a vassal?",
+
+		"neutralHello": "Hello!",
+		"hateHello": "What is it?!",
+
+		"tradeRequest": "My vast realm has offered you this exchange!",
+
+		"outerColor": [17, 67, 204],
+		"innerColor": [247, 183, 45],
+		"favoredReligion": "Christianity",
+		"uniqueName": "Crown of Aragon",
+		"uniques":["May not annex cities", "[-25]% [Culture] [in puppeted cities]", "[-25]% [Production] [in puppeted cities]", "[-25]% [Science] [in puppeted cities]", "[+1 Happiness] per [1] population [in puppeted cities]"],
+		"cities":["Zaragoza","Palermo","Catania","Messina","Siracusa","Marsala","Gela","Huesca","Teruel","Calatayud",
+			"Utebo","Monzon","Barbastro","Ejea de los Caballeros","Alcaniz","Fraga","Cuarte de Huerva","Jaca","Tarazona","Caspe","Binefar","Sabinanigo",
+			"Zuera","La Almunia de Doña Godina","Andorra","Alagon","Tauste","La Puebla de Alfindén","María de Huerva","La Muela","Borja","Villanueva de Gállego",
+			"Fuentes de Ebro","Calamocha","Epila","Cadetre","Floresta","Condro","Sclafani Bagni","Gallodro","Roccafioritra","Campofelice di Fitalia", "Bompensiere","Scillato"]
+    },
+	{
+		"name": "Wales",
+		"leaderName": "Owain Gwynedd",
+		"adjective": ["Welsh"],
+		"startBias": ["Hill"],
+		"personality": "Owain Gwynedd",
+		"preferredVictoryType": "Cultural",
+
+		"startIntroPart1": "Owain Gwynedd, the self-proclaimed Prince of Wales and true King of Powys, you captured many lands east pushing into the territories of the large nation of England. You gained many victories in the wars you've been waged against and ended up above your contemporaries, your kingdom needs you once more, oh great Owain. Can you withstand the pressure from foreign forces once more? Can you withstand the perils of the world? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "Your lands are very plenty, I will be taking them.",
+		"attacked": "This is not my first time on the battlefield, don't underestimate me!",
+		"defeated": "I have lost, I surrender my kingdom to you, oh mighty ruler.",
+		"introduction": "I say hello to you, stranger.",
+
+		"neutralHello": "Hello.",
+		"hateHello": "Got something to say?",
+
+		"tradeRequest": "My kingdom offers you this trade deal, it shall be best for you to accept.",
+
+		"outerColor": [101, 14, 1],
+		"innerColor": [255, 191, 1],
+		"favoredReligion": "Christianity",
+		"uniqueName": "The Red Dragon",
+		"uniques": ["Enables conversion of city production to [Culture]", "Each city founded increases culture cost of policies [+20]% less than normal"],
+		"cities":["Cardiff","Swansea","Newport","Barry","Bridgend","Cwmbrand","Wrexham","Llanelli","Neath","Merthyr Tydfil",
+			"Aberdare","Caerphilly","Pontypridd","Talbot","Colwyn","Pontypool","Penarth","Rhyl","Ebbw Vale","Maesteg",
+			"Tonypandy","Bangor","Connah's Quay","Prestatyn","Carmarthen","Porthcawl","Conwy","Risca","Llandudno","Aberystwyth","Tredegar",
+			"Hawarden","Milford Haven","Church Village","Gorseinon","Pyle", "Abergavenny","Buckley","Porth","Rhondda","Rhosllanerchrugog","Flint"]
+    },
+	{
 		"name": "Armenian",
 		"leaderName": "Tigranes II",
 		"adjective": ["Armenian"],
@@ -4429,6 +4736,30 @@
 		"cities": ["Mogadishu"]
 	},
 	//Militaristic
+	{
+		"name": "Antioch",
+		"adjective": ["Antiochian"],
+		"cityStateType": "Militaristic",
+
+		"declaringWar": "In the name of God, Christ, and the Holy Spirit, I SHALL RIP YOU APART!",
+		"attacked": "YOU INSIGNIFICANT HEATHEN!",
+		"defeated": "May your woes be many, and your days few.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [173,0,17],
+		"cities": ["Antioch"]
+	},
+	{
+		"name": "Edessa",
+		"adjective": ["Edessan"],
+		"cityStateType": "Militaristic",
+
+		"declaringWar": "You have angered me, God, and everything else!",
+		"attacked": "How dare you?!",
+		"defeated": "Noo! Ahhh!!!",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,238,147],
+		"cities": ["Edessa"]
+	},
 	{
 		"name": "Almaty",
 		"adjective": ["Almaty"],
