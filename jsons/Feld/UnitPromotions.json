@@ -40,11 +40,27 @@
 {
 	"name": "Asthma",
 	"uniques": ["[This Unit] takes [1] damage <upon ending a turn in a [All] tile>"]
-}	
+},	
 ///Generally Apply
 {
+	"name": "Diwylliedig",
+    "uniques": ["Earn [20]% of killed [Wounded] unit's [Cost] as [Culture]"]
+},
+{
+	"name": "Pirate",
+    "uniques": ["May enter foreign tiles without open borders", "May withdraw before melee ([50]%)"]
+},
+{
+	"name": "Highlands",
+    "uniques": ["Double movement in [Hill]"]
+},
+{
+	"name": "Muzakka",
+    "uniques": ["[+35]% Strength <in cities following our religion>"]
+},
+{
 	"name": "Street Battle I",
-	"prerequisites": ["Drill II","Shock II"]
+	"prerequisites": ["Drill II","Shock II"],
 	"uniques": ["[+20]% Strength <within [2] tiles of a [City center]>"],
 	"unitTypes": ["Close Combat"],
 	"row": 2,
