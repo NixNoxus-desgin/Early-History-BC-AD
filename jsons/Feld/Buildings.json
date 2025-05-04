@@ -114,16 +114,16 @@
 	"[+7]% [Science] [in this city] <in cities with a [City Level IV]> <in cities with a [Printing House]>", 
 	
 	"[+7]% maintenance cost for buildings [in this city] <in cities with a [City Level V]>",
-	"[+7]% [Science] [in this city] <in cities with a [City Level V]> <in cities with a [Public School]>", 
+	"[+7]% [Science] [in this city] <in cities with a [City Level V]> <in cities with a [Public School]>" 
 	]
 },
 {
 	"name": "Cultural City",
 	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[[+1 Culture] from all [Culture] buildings] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level III]:\n    [+15% [Culture] if has a world wonder in this city]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level IV]:\n    [[[+10]% [Culture] from [Printing House]] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level V]:\n    [[Production to [Culture] conversion in cities changed by [100]%] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]"
+	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[[+1 Culture] from all [Culture] buildings] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level III]:\n    [+15% [Culture] if has a world wonder in this city]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level IV]:\n    [[[+10]% [Culture] from [Printing House]] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level V]:\n    [[Production to [Culture] conversion in cities changed by [100]%] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]",
 	"uniques": [
 	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
+	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>", 
 	"Specialized City",
 	"Cost increases by [25] when built",
 	
@@ -131,7 +131,7 @@
 	"[+1 Culture] from all [Culture] buildings <in this city> <in cities with a [City Level II]>", 
 	
 	"[+15]% maintenance cost for buildings [in this city] <in cities with a [City Level III]>",
-	"[+15]% [Culture] [{in all cities with a world wonder} {in this city}] <in cities with a [City Level III]>"
+	"[+15]% [Culture] [{in all cities with a world wonder} {in this city}] <in cities with a [City Level III]>",
 	
 	"[+15]% maintenance cost for buildings [in this city] <in cities with a [City Level IV]>",
 	"[+10]% [Culture] <in this city> <in cities with a [City Level IV]> <in cities with a [Printing House]>", 
@@ -143,7 +143,7 @@
 {
 	"name": "Religious City",
 	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[[+10]% [Faith] from [Temple]] [in this city]]\n    [[-5]% [Science] [in this city]]\n\n[City Level III]:\n    [[[Faith] cost of purchasing items in cities [-10]%] [in this city]]\n    [[-5]% [Gold] [in this city]]\n\n[City Level IV]:\n    [[May buy [Buildings] buildings with [Faith] for [3] times their normal Production cost] [in this city]]\n    [[May buy [Military] units with [Faith] for [3] times their normal Production cost] [in this city]]\n    [[-5]% [Science] [in this city]]\n\n[City Level V]:\n    [[[+25]% Yield from every [Holy site]] [in this city]]\n    [[-5]% [Gold] [in this city]]"        
+	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[[+10]% [Faith] from [Temple]] [in this city]]\n    [[-5]% [Science] [in this city]]\n\n[City Level III]:\n    [[[Faith] cost of purchasing items in cities [-10]%] [in this city]]\n    [[-5]% [Gold] [in this city]]\n\n[City Level IV]:\n    [[May buy [Buildings] buildings with [Faith] for [3] times their normal Production cost] [in this city]]\n    [[May buy [Military] units with [Faith] for [3] times their normal Production cost] [in this city]]\n    [[-5]% [Science] [in this city]]\n\n[City Level V]:\n    [[[+25]% Yield from every [Holy site]] [in this city]]\n    [[-5]% [Gold] [in this city]]",        
 	"uniques": [
 	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
 	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
@@ -526,6 +526,17 @@
 		"maintenance": 1
 	},
 	{
+		"name": "Sandstone Mausoleum",
+		"replaces": "Garden",
+		"uniqueTo": "The Nabataeans",
+		"culture": 1,
+		"faith": 1,
+		"maintenance": 2,
+		"uniques": ["[+25]% Great Person generation [in this city]"],
+		"requiredTech": "Theology",
+		"hurryCostModifier": 25
+	},
+	{
 		"name": "Garden",
 		"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]",
 			"Only available <in cities without a [Batu Caves]>"],
@@ -621,6 +632,20 @@
 			"Only available <in cities without a [Genoese Port]>", 
 			"Only available <in cities without a [Fillipian Harbor]>",
 			"Only available <in cities without a [Venetian Arsenal]>", "Only available <in cities without a [Entrepot]>"],
+		"requiredTech": "Compass"
+	},
+	{
+		"name": "Galleon's Harbor",
+		"replaces": "Harbor",
+		"uniqueTo": "Aragon",
+		"cost": 120,
+		"production": 1,
+		"gold": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Production] from [Water resource] tiles [in this city]",
+			"Connects trade routes over water","Must be next to [Coast]"
+		],
 		"requiredTech": "Compass"
 	},
 	{
@@ -854,7 +879,7 @@
 		"name": "Free Terracotta",
 		"uniqueTo": "Nok",
 		"cost": 1,
-		"uniques": ["Provides [1] [Terracotta]","Will not be displayed in Civilopedia","Unsellable","Destroyed when the city is captured"],
+		"uniques": ["Provides [1] [Terracotta]","Will not be displayed in Civilopedia","Unsellable","Destroyed when the city is captured"]
 	},
 	{
         "name": "Myrrh",
@@ -1143,6 +1168,18 @@
 		"requiredTech": "Campfire"
 	},
 /// Agricultural
+    {
+		"name": "Izba",
+       	"uniqueTo": "Kievan Rus",
+	    "replaces": "Granary",
+	    "food": 2,
+	    "maintenance": 1,
+	    //"uniques": ["Agriculture",
+		//"[+1 Food] from [Deer] tiles [in this city]", "[+1 Food] from [Bananas] tiles [in this city]", 
+	    //"[+1 Food] from [Wheat] tiles [in this city]", "[+1 Faith] from [Forest] tiles [in this city]"],
+	    "requiredTech": "Pottery",
+		"hurryCostModifier": 25
+    },
     {
     	"name": "Farm",
 	    "hurryCostModifier": 20,
@@ -1657,6 +1694,19 @@
 		"requiredTech": "Horseback Riding"
 	},
 /// light industry
+    {
+		"name": "Distillery",
+	    "replaces": "Windmill",
+	    "uniqueTo": "Scotland",
+	    "production": 2,
+	    "gold": 2,
+	    "happiness": 1,
+	    "specialistSlots": {"Engineer": 1},
+	    "uniques": ["Light Industry",
+				"[+10]% Production when constructing [All] buildings [in this city]"],
+	    "requiredTech": "Economics",
+	    "hurryCostModifier": 25
+    },
     {
 		"name": "Wood Works",
 		"maintenance": 2,
@@ -2296,6 +2346,19 @@
 	},
 /// heavy industry
     {
+		"name": "Kushana Stone Works",
+	    "replaces": "Stone Works",
+	    "uniqueTo": "Kushan",
+	    "production": 1,
+	    "culture": 1,
+	    "faith": 1,
+	    "requiredNearbyImprovedResources": ["Marble", "Stone"],
+	    "uniques": ["Heavy Industry",
+			"[+1 Production] from [Stone] tiles [in this city]", "[+1 Production] from [Marble] tiles [in this city]"],
+	    "requiredTech": "Calendar",
+		"hurryCostModifier": 0
+    },
+    {
 		"name": "Flint Mine",
 		"production": 1,
 	    "hurryCostModifier": 20,
@@ -2519,13 +2582,26 @@
 	},
 ///governmental
     {
+		"name": "Alan Courthouse",
+	    "replaces": "Courthouse",
+	    "uniqueTo": "The Vandals",
+	    "maintenance": 1,
+	    "happiness": 1,
+	    "uniques": ["Political Building",
+			"Remove extra unhappiness from annexed cities",
+		    "Can only be built <in [Annexed] cities>"],
+    	"requiredTech": "Mathematics",
+		"hurryCostModifier": 50
+	},
+    {
 		"name": "British East India Company",
 		"replaces": "Courthouse",
 		"uniqueTo": "England",
 		"maintenance": 0,
 		"cost": 100,
 		"hurryCostModifier": 0,
-		"uniques": ["Remove extra unhappiness from annexed cities", "Can only be built <in [Annexed] cities>", "Provides [1] [Tea]"],
+		"uniques": ["Political Building",
+		    "Remove extra unhappiness from annexed cities", "Can only be built <in [Annexed] cities>", "Provides [1] [Tea]"],
 		"requiredTech": "Philosophy"
 	},
 	{
@@ -2536,7 +2612,8 @@
 	  	"maintenance": 0,
                 "cost": 100,
 		"hurryCostModifier": 0,
-		"uniques": ["Unlocked at Writing","Remove extra unhappiness from annexed cities", "Can only be built [in annexed cities]"],
+		"uniques": ["Political Building",
+			"Unlocked at Writing","Remove extra unhappiness from annexed cities", "Can only be built [in annexed cities]"],
 		"requiredTech": "Writing"
 	},
 	{
@@ -2547,7 +2624,8 @@
 		"faith": 3,
 		"cost": 100,
 		"hurryCostModifier": 0,
-		"uniques": ["Remove extra unhappiness from annexed cities", "Can only be built [in annexed cities]"],
+		"uniques": ["Political Building",
+			"Remove extra unhappiness from annexed cities", "Can only be built [in annexed cities]"],
 		"requiredTech": "Philosophy"
 	},
 	{
@@ -2556,7 +2634,8 @@
 		"food": 2,
 		"maintenance": 1,
 		"hurryCostModifier": 25,
-		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
+		"uniques": ["Political Building",
+			"[+1 Food] from [Deer] tiles [in this city]",
 			"[+1 Food] from [Bananas] tiles [in this city]",
 			"[+1 Food] from [Wheat] tiles [in this city]",
 			"[+1 Culture] from [Plantation] tiles [in this city]",
@@ -2564,7 +2643,7 @@
 		"requiredTech": "Pottery"
 	},
 	{
-		"name": "Latifundium",
+		//"name": "Latifundium",
 		"uniqueTo": "Rome",
 		"maintenance": 0,
 		"cost": 100,
@@ -3174,7 +3253,13 @@
 		"uniques": ["Unsellable","Onikat Pest Epidemie","[-5]% growth [in this city]"],
 		"requiredTech": "Theology"
 	},
-///cultural 
+///cultural
+    {
+		"name": "Stecak",
+	    "uniqueTo": "Bosnia",
+	    "culture": 1,
+	    "requiredTech": "Masonry"
+	},
     {
 		"name": "Horse Racing",
 		"hurryCostModifier": 25,
@@ -3770,6 +3855,21 @@
 	},
 ///religion Pagan (Überarbeiten!)
     {
+		"name": "Norse Temple",
+		"replaces": "Temple",
+		"uniqueTo": "Norway",
+		"maintenance": 1,
+		"faith": 2,
+	    "culture": 1,
+		"requiredBuilding": "Shrine",
+		"uniques": ["Worship Place","Practice Ground",
+			"[+1 Faith] from [Tundra] tiles [in this city] <upon adopting [Polytheism]>",
+		    "Only available <before adopting [One true God]>",
+			"Only available <when religion is enabled>","Destroyed when the city is captured"],
+		"requiredTech": "Philosophy",
+		"hurryCostModifier": 25
+	},
+    {
        	"name": "Hunter Temple",
 	    "cost": 0,
 		"maintenance": 1,
@@ -3846,6 +3946,28 @@
 		    "Unbuildable", "Only available <when religion is enabled>", "Destroyed when the city is captured"]
 	},
 ///religion
+    {
+		"name": "Enclos Paroissial", //Umfriedeter Pfarrbezirk
+	    "uniqueTo": "France",
+	    "culture": 2,
+	    "production": 1,
+	    "happiness": 1,
+	    "cost": 45,
+	    "hurryCostModifier": 40,
+	    "uniques": ["Destroyed when the city is captured", "[+1 Faith] [in this city] <starting from the [Classical era]>"]
+	},
+    {
+		"name": "Masjid",
+		"replaces": "Temple",
+		"uniqueTo": "The Rashidun",
+	    "faith": 2,
+	    "culture": 1,
+	    "happiness": 2,
+	    "requiredBuilding": "Shrine",
+		"uniques": "Only available <after adopting [One true God]> <in cities with a [Islam] religion>",
+	    "requiredTech": "Philosophy",
+	    "hurryCostModifier": 25
+	},
     {
         "name": "Al-Masdschid an-nabawi",
 		///"unique to"
@@ -4515,6 +4637,48 @@
 	},
 
 ///education
+    {
+		"name": "Medrese",
+	    "replaces": "University",
+	    "uniqueTo": "Seljuk",
+	    "faith": 2,
+	    "happiness": 1,
+	    "maintenance": 2,
+	    "percentStatBonus": {"science": 33},
+	    "specialistSlots": {"Scientist": 3},
+	    "requiredBuilding": "Library",
+	    "uniques": ["[+2 Science] from [Jungle] tiles [in this city]"],
+	    "requiredTech": "Education",
+	    "hurryCostModifier": 15
+    },
+    {
+		"name": "Glagolitic School",
+	    "replaces": "Library",
+	    "uniqueTo": "Croatia",
+     	"science": 1,
+        "culture": 1,
+	    "maintenance": 1,
+	    "uniques": ["Education Building",
+			"[+1 Science] per [2] population [in this city]"],
+	    "requiredTech": "Writing",
+	    "hurryCostModifier": 25
+    },
+    {
+		"name": "Literary School",
+	    "replaces": "University",
+	    "uniqueTo": "Bulgaria",
+	    "culture": 3,
+	    "happiness": 1,
+	    "maintenance": 2,
+	    "greatPersonPoints": {"Great Artist": 1},
+	    "percentStatBonus": {"science": 33},
+	    "specialistSlots": {"Scientist": 2},
+	    "requiredBuilding": "Library",
+	    "uniques": ["Education Building",
+		    "[+2 Science] from [Jungle] tiles [in this city]"],
+    	"requiredTech": "Education",
+	    "hurryCostModifier": 15
+	},
 	{
 		"name": "Urdu School",
 		"uniqueTo": "Pakistan",
@@ -5210,6 +5374,15 @@
 		"requiredTech": "Steam Power"
 	},
 ///barrack
+    {
+		"name": "Sapitu",
+	    "replaces": "Barracks",
+	    "uniqueTo": "Akkad",
+	    "hurryCostModifier": 25,
+	    "uniques": ["Military Building",
+		    "New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured", "[+15]% Production when constructing [All] units [in this city]"],
+	    "requiredTech": "Bronze Working"
+	},
 	{
 		"name": "Barbican",
 		"replaces": "Armory",
@@ -5524,6 +5697,32 @@
 
 ///defence
     {
+		"name": "Trakai Castle",
+		"replaces": "Castle",
+	    "uniqueTo": "Lithuania",
+	    "cost": 150,
+	    "cityStrength": 8,
+	    "cityHealth": 30,
+	    "happiness": 2,
+	    "requiredBuilding": "Walls",
+		"uniques": ["Static Defense",
+			"Destroyed when the city is captured"],
+	    "requiredTech": "Chivalry",
+	    "hurryCostModifier": 25
+	},
+    {
+		"name": "Bryngaer",
+		"replaces": "Walls",
+		"cost": 50,
+		"uniqueTo": "Wales",
+		"cityStrength": 5,
+		"cityHealth": 65,
+		"culture": 3,
+		"hurryCostModifier": 20,
+		"requiredTech": "Masonry",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+    {
 		"name": "Tsikhe",
 	    "replaces": "Walls",
 	    "uniqueTo": "Georgia",
@@ -5803,6 +6002,30 @@
 
 ///economy
     {
+		"name": "Numismatics",
+	    "uniqueTo": "Bactria",
+	    "replaces": "Mint",
+	    "maintenance": 0,
+	    "gold": 2,
+		"happiness": 1,
+        "uniques": ["Economic Building",
+			"[+2 Gold] from [Gold Ore] tiles [in this city]", "[+2 Gold] from [Silver] tiles [in this city]"],
+	    "requiredTech": "Currency",
+		"hurryCostModifier": 25
+    },
+    {
+		"name": "Caravanserai",
+		"replaces": "Market",
+		"uniqueTo": "The Nabataeans",
+		"gold": 3,
+		"specialistSlots": {"Merchant": 2},
+		"percentStatBonus": {"gold": 25},
+		"uniques": ["Economic Building",
+			"[+1 Production] from [Desert] tiles [in this city]", "[+2 Food] from [Oasis] tiles [in this city]"],
+		"requiredTech": "Currency",
+		"hurryCostModifier": 25
+    },
+    {
 		"name": "Sukiennice",
 	    //(Die Krakauer Tuchhallen wurden im Mittelalter auf Veranlassung von König Kasimir dem Großen errichtet.
 	    // Die überdeckten Gebäude dienten dem Handel mit englischen und flämischen Tuchen)
@@ -5910,12 +6133,12 @@
 	},
 	{
 		"name": "Fruit Market",
-                "gold": 3,
-                "food": 1,
-                "uniques": ["[+1 Food] from [Citrus] tiles [in this city]", "[+1 Food] from [Fruit] tiles [in this city]"],
+        "gold": 3,
+        "food": 1,
+        "uniques": ["[+1 Food] from [Citrus] tiles [in this city]", "[+1 Food] from [Fruit] tiles [in this city]"],
 		"hurryCostModifier": 70,
-                "requiredBuilding": "Market",
-                "requiredTech": "Currency"
+        "requiredBuilding": "Market",
+        "requiredTech": "Currency"
 	},
 	{
 		"name": "Market",
