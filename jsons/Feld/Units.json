@@ -822,10 +822,10 @@
 		"strength": 4,
 		"rangedStrength": 8,
 		"cost": 40,
-		"requiredTech": "Mathematics",
+		"requiredTech": "Archery",
 		"obsoleteTech": "Construction",
 		"upgradesTo": "Composite Bowman",
-		"promotions": ["Steppe Hunter"],
+		"promotions": ["Steppe Hunter","Mount I"],
 		"attackSound": "arrow"
 	},
 	{
@@ -987,7 +987,7 @@
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Tarantine Cavalry",
+		//"name": "Tarantine Cavalry",
 		"unitType": "Ranged Combat",
 		"uniqueTo": "Epirus",
 		"replaces": "Chariot Archer",
@@ -1000,21 +1000,6 @@
 		"obsoleteTech": "Machinery",
 		"promotions": ["Mobility"],
 		"uniques": ["Can move after attacking","No defensive terrain bonus","Penalty vs City 33%","May withdraw before melee ([133]%)"],
-		"attackSound": "arrow"
-	},
-	{	
-		"name": "Nomadic Archer",
-		"replaces": "Archer",
-		"unitType": "Ranged Combat",
-		"uniqueTo": "Scythia",
-		"movement": 2,
-		"strength": 4,
-		"rangedStrength": 8,
-		"cost": 30,
-		"requiredTech": "Archery",
-		"obsoleteTech": "Machinery",
-		"upgradesTo": "Crossbowman",
-		"promotions": ["Mount I"],
 		"attackSound": "arrow"
 	},
         {
