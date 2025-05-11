@@ -5696,6 +5696,18 @@
 	},
 
 ///defence
+	{
+		"name": "Nuraghe",
+		"replaces": "Walls",
+		"cost": 45,
+		//"uniqueTo": "rome/Sardinien",
+		"cityStrength": 7,
+		"cityHealth": 50,
+		"production": 2,
+		"hurryCostModifier": 20,
+		"requiredTech": "Masonry",
+		"uniques": ["Destroyed when the city is captured"]
+	},
     {
 		"name": "Trakai Castle",
 		"replaces": "Castle",
@@ -6002,6 +6014,18 @@
 
 ///economy
     {
+		"name": "Suq",
+		"replaces": "Bank",
+		//"uniqueTo": "Mogadishu",//Arabia
+		"gold": 3,
+		"culture": 1,
+		"specialistSlots": {"Merchant": 2},
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"gold": 25},
+		"requiredBuilding": "Market",
+		"requiredTech": "Banking"
+	},
+    {
 		"name": "Numismatics",
 	    "uniqueTo": "Bactria",
 	    "replaces": "Mint",
@@ -6009,7 +6033,7 @@
 	    "gold": 2,
 		"happiness": 1,
         "uniques": ["Economic Building",
-			"[+2 Gold] from [Gold Ore] tiles [in this city]", "[+2 Gold] from [Silver] tiles [in this city]"],
+			"[+2 Gold] from [Gold] tiles [in this city]", "[+2 Gold] from [Silver] tiles [in this city]"],
 	    "requiredTech": "Currency",
 		"hurryCostModifier": 25
     },
