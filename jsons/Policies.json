@@ -4,9 +4,9 @@
         "era": "Neolithic era",
         "uniques": [
             "Only available <before adopting [Monotheism]>",
-            "Only available <before the [Renaissance era]>",
+            "Only available <before the [Medieval era]>",
             "[+1 Faith] [in all cities]",
-            "Comment [Enables you to build Shrines and its equivalents, a low cost 'Worship Place' that produces culture in addition to faith]"
+            "Comment [Enables you to build [Shrine]s and its equivalents, a low cost 'Worship Place' that produces [Culture] in addition to [Faith]]"
         ],
         "policies": [
             {
@@ -21,8 +21,10 @@
             {
                 "name": "Apotheosis of Leaders",
                 "uniques": [
-                    "[+1 Faith, +1 Science, +3 Happiness] [in capital]",
-                    "[+5]% Strength <for [All] units> <upon founding a Pantheon>"
+                    "[+1 Faith, +1 Science, +1 Happiness] [in capital]",
+                    "[+17]% Production when constructing [Military] units [in all cities] <in cities with a [Shrine]> <before the [Medieval era]>",
+                    "[+16]% Production when constructing [Military] units [in all cities] <in cities with a [Shrine]>"
+                    
                 ],
                 "row": 1,
                 "column": 5
@@ -30,8 +32,7 @@
             {
                 "name": "Pantheon Incorporation",
                 "uniques": [
-                    "[+1 Gold] [in all cities connected to capital]",
-                    "[+25]% Production when constructing [Military] units [in all cities] <in cities with a [Shrine]>",
+                    "[+5]% Strength <for [All] units> <upon founding a Pantheon>",
                     "[+50]% Production when constructing [Intergration] buildings [in annexed cities]"
                 ],
                 "requires": [
@@ -55,6 +56,7 @@
             {
                 "name": "Polytheism Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "Gain a free [Pantheon] belief"
                 ]
             }
@@ -65,9 +67,9 @@
         "era": "Neolithic era",
         "uniques": [
             "Only available <before adopting [Polytheism]>",
-            "Only available <before the [Renaissance era]>",
+            "Only available <before the [Medieval era]>",
             "[+2 Faith, +1 Culture] [in capital]",
-            "Comment [Enables you to build Chapels, a low cost 'Worship Place' that produces faith exclusively]"
+            "Comment [Enables you to build [Chapel]s, a low cost 'Worship Place' that produces [Faith] exclusively]"
         ],
         "policies": [
             {
@@ -82,7 +84,7 @@
             {
                 "name": "Testaments",
                 "uniques": [
-                    "[+33]% Production when constructing [All] wonders [in holy cities]",
+                    "[+33]% Production when constructing [Faith] wonders [in holy cities]",
                     "[+1 Happiness] [in all cities]"
                 ],
                 "requires": [
@@ -95,8 +97,7 @@
                 "name": "Idol Abolishment",
                 "uniques": [
                     "[+25]% Spread Religion Strength <for [Missionary] units>",
-                    "[+5]% Strength <for [All] units> <upon founding a Religion>",
-                    "[+33]% Strength <vs [Barbarian] units>"
+                    "[+33]% Strength <vs [{Barbarian} {Land}] units>"
                 ],
                 "requires": [
                     "Enlightenment from the Lord"
@@ -119,7 +120,8 @@
             {
                 "name": "Monotheism Complete",
                 "uniques": [
-                    "[+1 Gold, +1 Faith] per [3] population [in holy cities]"
+                    "Instantly provides [5] [Influence]",
+                    "[+1 Gold, +1 Faith] per [2] population [in holy cities]"
                 ]
             }
         ]
@@ -128,15 +130,21 @@
         "name": "Unity",
         "era": "Neolithic era",
         "uniques": [
-            "Only available <before the [Renaissance era]>",
-            "[+25]% Production when constructing [{Civilian} {Civil Ship}] units [in capital]"
+            "Only available <before the [Medieval era]> <after turn number [1]>",
+            "Comment [Enables you to build Garrison Units, a variant of Levy close combat units that has bonus promotions and have expertise in defense, they can also be trained like the standing army.]",
+            "Remove [Tribes] [in all cities]",
+            "Gain a free [Unified] [in capital] <for [2] turns> <before the [Classical era]>",
+            "Gain a free [Tribal Union] [in capital] <for [2] turns> <before the [Classical era]>"
         ],
         "policies": [
             {
                 "name": "Chiefdom Confederation",
                 "uniques": [
-                    "[10]% Strength for cities",
-                    "[+10]% growth [in all cities]"
+                    "Provides [1] [Influence]",
+                    "[+50]% Production when constructing [Town Hall] buildings [in all cities]",
+                    "[+50]% Production when constructing [Basilica] buildings [in all cities]",
+                    "[+50]% Production when constructing [Satrap's Manor] buildings [in all cities]",
+                    "[+50]% Production when constructing [European Longhouse] buildings [in all cities]"
                 ],
                 "row": 1,
                 "column": 3
@@ -145,7 +153,7 @@
                 "name": "Early Colonization",
                 "uniques": [
                     "Each city founded increases culture cost of policies [33]% less than normal",
-                    "[+10]% Production when constructing ['Light Industry'] buildings [in all cities connected to capital]"
+                    "Free [Worker] appears"
                 ],
                 "requires": [
                     "Chiefdom Confederation"
@@ -157,7 +165,7 @@
                 "name": "Peace Under Force",
                 "uniques": [
                     "[+1 Production] per [5] population [in all cities]",
-                    "[+33]% Production when constructing [Ancient era] wonders [in all cities connected to capital]"
+                    "[+50]% Production when constructing [Ancient era] wonders [in all cities connected to capital]"
                 ],
                 "requires": [
                     "Chiefdom Confederation"
@@ -168,8 +176,9 @@
             {
                 "name": "Codification",
                 "uniques": [
-                    "[+50]% Production when constructing [Town Hall] buildings [in all cities]",
-                    "[+1 Gold] from every ['Political Building']"
+                    "[+25]% Production when constructing [National Wonder] buildings [in all cities connected to capital]",
+                    "[+50]% Production when constructing [Courthouse] buildings [in all cities]",
+                    "[+50]% Production when constructing [Sanhedrin] buildings [in all cities]"
                 ],
                 "requires": [
                     "Early Colonization",
@@ -181,9 +190,8 @@
             {
                 "name": "Unity Complete",
                 "uniques": [
-                    "Free [Settler] appears",
-                    "[+25]% Production when constructing ['Expansion'] buildings [in all cities connected to capital]",
-                    "[Gold] cost of purchasing ['Expansion'] buildings [-10]%"
+                    "Instantly provides [5] [Influence]",
+                    "Free Great Person"
                 ]
             }
         ]
@@ -192,14 +200,14 @@
         "name": "Militant",
         "era": "Classical era",
         "uniques": [
-            "[-33]% Gold cost of upgrading <for [Military] units>",
-            "Comment [Enables you to build Arena,an 'Entertainment Building' that lessens unhappiness from population]"
+            "Provides a [Barrack] in your first [5] cities for free",
+            "Comment [Enables you to build [Arena],an 'Entertainment Building' that lessens unhappiness from population]"
         ],
         "policies": [
             {
                 "name": "Military Tradition",
                 "uniques": [
-                    "Comment [Less happiness are deducted by Call to Arms]",
+                    "Comment [Less [Happiness] are deducted by [Call to Arms]]",
                     "[Gold] cost of purchasing [All] units [-10]%"
                 ],
                 "row": 1,
@@ -220,9 +228,9 @@
                 "column": 1
             },
             {
-                "name": "Early Mobilisation",
+                "name": "Early Mobilization",
                 "uniques": [
-                    "[+50]% Production when constructing ['Levy Army'] units [in all cities]",
+                    "[+25]% Production when constructing ['Static Defense'] buildings [in all cities]",
                     "[+3 Food, +1 Production] [in all cities with a garrison]"
                 ],
                 "requires": [
@@ -236,8 +244,6 @@
                 "uniques": [
                     "[+10]% Strength <for ['Noble Army'] units>",
                     "Provides [1] [Noble Army Maintainance]",
-                    "Provides [2] [Standing Army Maintainance]",
-                    "[+25]% Production when constructing ['Static Defense'] buildings [in all cities]",
                     "Provides [1] [Noble Army Maintainance] <after adopting [Unity Complete]>"
                 ],
                 "requires": [
@@ -249,6 +255,7 @@
             {
                 "name": "Militant Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "[+25]% XP gained from combat",
                     "Free [Great Commander] appears"
                 ]
@@ -259,10 +266,11 @@
         "name": "Scholarship",
         "era": "Classical era",
         "uniques": [
-            "[+1 Culture] per [3] population [in all cities] <in cities with [3] [Artist]>",
-            "[+1 Science] per [6] population [in all cities] <in cities with [3] [Scientist]>",
-            "[+1 Happiness] per [3] population [in all cities] <in cities with [3] [Governor]>",
-            "Comment [Enables you to build Forum, a 'Political/Cultural Building' that provides great person generation and specialist slots.]"
+            "Instantly provides [5] [Influence]",
+            "[+1 Culture] per [3] population [in all cities] <in cities with at least [3] [Artist]>",
+            "[+1 Science] per [6] population [in all cities] <in cities with at least [3] [Scientist]>",
+            "[+1 Happiness] per [3] population [in all cities] <in cities with at least [3] [Governor]>",
+            "Comment [Enables you to build [Forum], a 'Political/Cultural Building' that provides great person generation and specialist slots]"
         ],
         "policies": [
             {
@@ -290,7 +298,7 @@
             {
                 "name": "Schools of Thought",
                 "uniques": [
-                    "[+1 Faith, +1 Science, +1 Culture] <in cities with at least [5] [Population]>",
+                    "[+1 Science, +1 Culture] <in cities with at least [5] [Population]>",
                     "Allied City-States provide [Science] equal to [25]% of what they produce for themselves"
                 ],
                 "requires": [
@@ -316,7 +324,8 @@
             {
                 "name": "Scholarship Complete",
                 "uniques": [
-                    "Free Great Person"
+                    "Instantly provides [5] [Influence]",
+                    "Free Social Policy"
                 ]
             }
         ]
@@ -326,7 +335,7 @@
         "era": "Classical era",
         "uniques": [
             "[+10]% [Gold] from Trade Routes",
-            "Comment [Enables you to build Primitive Property Sector, an 'Economic Building' that exchanges building speed with gold production.]"
+            "Comment [Enables you to build [Primitive Property Sector], an 'Economic Building' that exchanges building speed with [Gold] production]"
         ],
         "policies": [
             {
@@ -377,6 +386,7 @@
             {
                 "name": "Plutocracy Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
                     "[+50]% Gold from Great Merchant trade missions"
                 ]
@@ -387,15 +397,15 @@
         "name": "Meritocracy",
         "era": "Medieval era",
         "uniques": [
-            "[+5]% [Production] [in all cities]",
             "Only available <before adopting [Feudalism]>",
-            "Only available <before adopting [Theocracy]>"
+            "Only available <before adopting [Theocracy]>",
+            "[+5]% [Production] [in all cities]"
         ],
         "policies": [
             {
                 "name": "Imperial Examinations",
                 "uniques": [
-                    "Comment [Enables you to build Examination Hall,a 'Political/Educational' Building that produces happiness,culture and provides building speed of capital buildings and unit XP.]",
+                    "Comment [Enables you to build [Examination Hall]s,a 'Political/Educational' Building that produces [Happiness],[Culture] and provides building speed of capital buildings and unit XP]",
                     "[+10]% [Culture] from every [Examination Hall] <after adopting [Scholarship]>",
                     "Comment [Examination Hall increases extra Unit starting XP after adopting Military Tradition from Militant Policy.]"
                 ],
@@ -415,6 +425,7 @@
             {
                 "name": "Court of Scholars",
                 "uniques": [
+                    "Provides [1] [Influence]",
                     "[100]% Great Person generation [in capital]"
                 ],
                 "requires": [
@@ -428,7 +439,7 @@
                 "name": "Provincial Government",
                 "uniques": [
                     "[+15]% Production when constructing ['Infrastructure'] buildings [in all cities]",
-                    "Comment [Enables you to build Garrison Units, a variant of Levy close combat units that has bonus promotions and have expertise in defense, they can also be trained like the standing army.]"
+                    
                 ],
                 "requires": [
                     "Imperial Examinations",
@@ -440,6 +451,7 @@
             {
                 "name": "Meritocracy Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "[-17]% Culture cost of adopting new Policies"
                 ]
             }
@@ -449,8 +461,9 @@
         "name": "Feudalism",
         "era": "Medieval era",
         "uniques": [
+            "Instantly provides [5] [Influence]",
             "[+1 Gold] from every ['Agricultural Improvement']",
-            "Comment [Enables you to build Jousting Place, an 'entertainment building' that lessens unhappiness from population and dont need maintainance]",
+            "Comment [Enables you to build [Jousting Place], an 'entertainment building' that lessens unhappiness from population and dont need maintainance]",
             "Only available <before adopting [Meritocracy]>",
             "Only available <before adopting [Theocracy]>"
         ],
@@ -470,7 +483,7 @@
                 "uniques": [
                     "[+1 Culture] from every ['Static Defense']",
                     "[Gold] cost of purchasing ['Military Building'] buildings [-10]% <after adopting [Convoy and Mecenaries]>",
-                    "Comment [Enables you to build Knights and its equivalents but disables your access to build Heavy Cavalry and its equivalents(those which are already built remains), switching your source of assult units to purely nobles]"
+                    "Comment [Enables you to build [Knight]s and its upgrades but disables your access to build [Heavy Cavalry] and its upgrades(those which are already built remains), switching your source of assult units to purely from [The Noble Army]]"
                 ],
                 "row": 2,
                 "column": 1
@@ -478,7 +491,7 @@
             {
                 "name": "Manorialism",
                 "uniques": [
-                    "Comment [Enables you to build Manor,an 'policy improvement' that provides noble army maintainance and culture at cost of less potential food production increase]",
+                    "Comment [Enables you to build [Manor],an 'policy improvement' that provides [Noble Army Maintainance] and [Culture] at cost of less potential [Food] production increase]",
                     "[+1 Gold] from every ['Light Industry']",
                     "[+2 Culture] from every [Manor] <after adopting [Philosopher King]>"
                 ],
@@ -501,6 +514,7 @@
             {
                 "name": "Feudalism Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "Militaristic City-States grant units [2] times as fast when you are at war with a common nation",
                     "[+10]% Strength <for ['Noble Army'] units>"
                 ]
@@ -513,7 +527,7 @@
         "uniques": [
             "Gain a free [Enhancer] belief <after adopting [Monotheism]>",
             "Gain a free [Follower] belief <after adopting [Polytheism]>",
-            "Comment [Enables you to have believes exclusive to theoracy]",
+            "Comment [Enables you to have beliefs exclusive to [Theoracy]]",
             "Only available <before adopting [Meritocracy]>",
             "Only available <before adopting [Feudalism]>"
         ],
@@ -531,7 +545,7 @@
                 "name": "Scholasticism",
                 "uniques": [
                     "[+3]% [Science] from every ['Practice Ground']",
-                    "Comment [Enables Missionary to provide 5 science per turn in city centre tiles]"
+                    "Comment [Enables [Missionary] to provide 3-5 [Science] per turn in [City center] tiles]"
                 ],
                 "row": 1,
                 "column": 5
@@ -553,7 +567,6 @@
             {
                 "name": "Proxy of the god",
                 "uniques": [
-                    "[+1 Faith] from every ['Political Building']",
                     "[+2 Gold] from every ['Worship Place']",
                     "[+2 Culture] from every ['Organise Place']"
                 ],
@@ -566,6 +579,7 @@
             {
                 "name": "Theocracy Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "[+25]% Natural religion spread [in all non-occupied cities]",
                     "[+33]% Production when constructing ['Organise Place'] buildings [in all cities connected to capital]",
                     "Gain a free [Enhancer] belief"
@@ -577,15 +591,15 @@
         "name": "Humanism",
         "era": "Renaissance era",
         "uniques": [
-            "Comment [Enables you to build Printing House,a 'Cultural Building']",
-            "[+1 Happiness, +1 Production] per [8] population [in all cities] <in cities with at least [10] [Population]>"
+            "Comment [Enables you to build [Printing House],a 'Cultural Building' that acts as a [Printing Factory] except much earlier unlocked]",
+            "[+1 Happiness, +1 Production] per [5] population [in all cities] <in cities with at least [15] [Population]>"
         ],
         "policies": [
             {
                 "name": "Rise of Citizens",
                 "uniques": [
-                    "[+25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
-                    "[Gold] cost of purchasing ['Infrastructure'] buildings [-10]%"
+                    "[+25]% Production when constructing ['Expansion'] buildings [in all cities]",
+                    "[Gold] cost of purchasing ['Expansion'] buildings [-10]%"
                 ],
                 "row": 1,
                 "column": 3
@@ -593,8 +607,8 @@
             {
                 "name": "Education Focus",
                 "uniques": [
-                    "[+3 Science] per [8] population [in all cities] <in cities with at least [10] [Population]>",
-                    "[-2 Gold, +2 Culture, +1 Happiness] from every ['Educational Building']",
+                    "[+1 Science] per [5] population [in all cities] <in cities with at least [15] [Population]>",
+                    "[-1 Gold, +1 Culture] from every ['Educational Building']",
                     "[+1 Culture, +1 Happiness] from every ['Worship Place'] <after adopting [Theocracy]>"
                 ],
                 "requires": [
@@ -609,7 +623,7 @@
                     "Gifts of Gold to City-States generate [25]% more Influence",
                     "[+1 Culture] from ['Policy Improvement'] tiles [in all cities]",
                     "[+1 Culture] from every ['Political Building'] <after adopting [Meritocracy]>",
-                    "Comment [Faster City State Intergration if Personal Union is adopted.]"
+                    "Comment [Faster City State Intergration if [Personal Union] is adopted]"
                 ],
                 "requires": [
                     "Rise of Citizens"
@@ -622,7 +636,7 @@
                 "uniques": [
                     "[+1 Happiness, +2 Culture] [in all cities] <after adopting [Polytheism]>",
                     "[+3 Faith] from every ['Worship Place'] <after adopting [Monotheism]>",
-                    "[+1 Faith, +1 Culture] <in cities with at least [10] [Population]>"
+                    "[+1 Faith, +1 Culture] <in cities with at least [5] [Population]>"
                 ],
                 "requires": [
                     "Education Focus",
@@ -634,6 +648,7 @@
             {
                 "name": "Humanism Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "[+25]% Golden Age length"
                 ]
             }
@@ -645,15 +660,15 @@
         "uniques": [
             "[-20]% Gold cost of upgrading <for [Military] units>",
             "[-13]% Gold cost of upgrading <for [Military] units> <after adopting [Militant]>",
-            "[-1 Culture, -1 Faith] [in all cities] <for [20] turns>",
-            "Comment [Enables you to build Chartered Company,a 'Political/Economic Building' only available in annexed cities]",
+            "Instantly provides [5] [Influence]",
+            "Comment [Enables you to build [Chartered Company],a 'Political/Economic Building' only available in annexed cities]",
             "Only available <before adopting [Revolution]>"
         ],
         "policies": [
             {
                 "name": "Colonialism",
                 "uniques": [
-                    "Comment [Enables you to build Colony Plantation, An improvement that generates lots of gold]",
+                    "Comment [Enables you to build [Colony Plantation], An improvement that generates lots of [Gold]]",
                     "[+1] Movement <for [Settler] units>",
                     "[+1] Movement <for [Pioneer] units>"
                 ],
@@ -693,7 +708,7 @@
                 "uniques": [
                     "[+3 Culture] from every [Palace]",
                     "[+5]% [Culture] from every [Wonder]",
-                    "[+1 Culture] from every ['Military Building'] <after adopting [Knighthood]>"
+                    "[+2 Culture] from every ['Military Building'] <after adopting [Knighthood]>"
                 ],
                 "row": 3,
                 "requires": [
@@ -704,6 +719,7 @@
             {
                 "name": "Imperialism Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "[+15]% [Science] <while the empire is happy>",
                     "[+15]% [Culture] <while the empire is happy>"
                 ]
@@ -714,18 +730,18 @@
         "name": "Revolution",
         "era": "Imperial era",
         "uniques": [
-            "[+1 Happiness] [in all cities]",
             "Triggers a [Bourgeoisie Revolution!] event",
             "Only available <before adopting [Imperialism]>",
             "Only available <with [Revolution Oppotunity]>",
-            "Comment [Revolution Oppotunity is automatically gained upon entering Imperial era and Modern era.]"
+            "Comment [[Revolution Oppotunity] is automatically gained upon entering Imperial era and Modern era.]",
+            "Comment [During Imperial Era, You can get [United States] as your civilization form if you adopt this.]"
         ],
         "policies": [
             {
                 "name": "Long Live the Revolution!",
                 "uniques": [
                     "[+25]% Production when constructing ['Standing Army'] units [in all cities]",
-                    "Comment [Enables you to build Revolutionaries, a Cheaper Granadier that may have extra promotion if the right event is chosen.]"
+                    "Comment [Enables you to build [Revolutionaries], a Cheaper [Grenadier] that may have extra promotion if the right event is chosen]"
                 ],
                 "row": 1,
                 "column": 3
@@ -771,6 +787,7 @@
             {
                 "name": "Revolution Complete",
                 "uniques": [
+                    "Instantly provides [5] [Influence]",
                     "[-10]% Culture cost of adopting new Policies",
                     "[-5]% Culture cost of adopting new Policies <after adopting [Humanism]>"
                 ]
@@ -782,7 +799,7 @@
         "era": "Modern era",
         "uniques": [
             "[+1] Happiness from each type of luxury resource",
-            "Comment [Enables you to build Statue of Liberty, an unique wonder that increase production toward building any buildings that produce gold.]",
+            "Comment [Enables you to build [Statue of Liberty], an unique wonder that increase [Production] toward building any buildings that produce [Gold]]",
             "Only available <before adopting [Socialism]>",
             "Only available <before adopting [Conservatism]>",
             "Only available <before adopting [Fascism]>",
@@ -792,7 +809,7 @@
             {
                 "name": "Privatised Property",
                 "uniques": [
-                    "Comment [Enables you to build Property Sector, an 'Economic Building' that exchanges building speed with lower gold cost of purchasing buildings and gold production.]",
+                    "Comment [Enables you to build [Property Sector], an 'Economic Building' that exchanges building speed with lower gold cost of purchasing buildings and [Gold] production]",
                     "[+10]% [Culture] from every [Primitive Property Sector] <after adopting [Plutocracy]>",
                     "Triggers a [New economy policies] event",
                     "May buy items in puppet cities"
@@ -801,7 +818,7 @@
                 "column": 1
             },
             {
-                "name": "Freedom of Experssion",
+                "name": "Freedom of Expression",
                 "uniques": [
                     "[-33]% Food consumption by specialists [in all cities]",
                     "[-20]% Unhappiness from [Specialists] [in all cities]",
@@ -826,7 +843,7 @@
             {
                 "name": "Neo-colonialism",
                 "uniques": [
-                    "Gifts of Gold to City-States generate [+33]% more Influence",
+                    "Provides [1] [Influence]",
                     "Allied City-States provide [Gold] equal to [33]% of what they produce for themselves",
                     "Resting point for Influence with City-States is increased by [-50]"
                 ],
@@ -866,6 +883,7 @@
             {
                 "name": "Liberalism Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "[+50]% Yield from every [Great Improvement]",
                     "[50]% of excess happiness converted to [Science]"
                 ]
@@ -882,7 +900,7 @@
             "Only available <before adopting [Liberalism]>",
             "Only available <before adopting [Fascism]>",
             "Only available <before adopting [Anarchism]>",
-            "Comment [Enables you to build Cathedral of the Holy Family, an unique wonder that gives you the ability to buy any building that provides culture with faith.]"
+            "Comment [Enables you to build [Cathedral of the Holy Family], an unique wonder that gives you the ability to buy any building that provides [Culture] with [Faith]]"
         ],
         "policies": [
             {
@@ -899,7 +917,7 @@
                 "name": "Romantised Tradition",
                 "uniques": [
                     "Triggers a [The Legacy We Inhereited.] event",
-                    "Comment [Enables you to build Elite Guards, A Noble Alternative to Heavy Infantry that may have extra promotion if the right event is chosen.]"
+                    "Comment [Enables you to build [Elite Guard]s, A Noble Alternative to [Heavy Infantry] that may have extra promotion if the right event is chosen]"
                 ],
                 "row": 1,
                 "column": 3
@@ -943,7 +961,7 @@
                 "column": 1
             },
             {
-                "name": "Deradicalisation",
+                "name": "Deradicalization",
                 "uniques": [
                     "[-10]% [Culture] from every ['Educational Building']",
                     "[-33]% City-State Influence degradation",
@@ -958,6 +976,7 @@
             {
                 "name": "Conservatism Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "Double quantity of [Noble Army Maintainance] produced",
                     "[-33]% spy effectiveness [in all cities]"
                 ]
@@ -973,7 +992,9 @@
             "Only available <before adopting [Liberalism]>",
             "Only available <before adopting [Conservatism]>",
             "Only available <before adopting [Anarchism]>",
-            "Comment [Enables you to build Hall of Nation,an unique wonder that increases strength of attacks.]"
+            "Only available <when above [1] [Revolution Oppotunity]>",
+            "Triggers a [Fascist Revolution!] event",
+            "Comment [Enables you to build [Hall of the Nation],an unique wonder that increases strength of attacks]"
         ],
         "policies": [
             {
@@ -1000,7 +1021,7 @@
                 "name": "Militarised Nation",
                 "uniques": [
                     "Triggers a [New economy policies] event",
-                    "Comment [Enables you to build Protection Squadron, A limited unit that is an alternative from Heavy Infantry, having higher strength and regeneration. One civ can only have 5 of them at a time]"
+                    "Comment [Enables you to build [Protection Squadron], A limited unit that is an alternative from [Heavy Infantry], having higher strength and regeneration. They are limited by both [Standing Army Maintainance] and number of [Recuitment Centre] built.]"
                 ],
                 "row": 1,
                 "column": 5
@@ -1048,7 +1069,8 @@
             {
                 "name": "Fascism Complete",
                 "uniques": [
-                    "New [Military] units start with [10] XP [in all cities]",
+                    "Instantly provides [10] [Influence]",
+                    "Provides [1] [Influence]",
                     "[+33]% growth [in all cities]"
                 ]
             }
@@ -1065,7 +1087,7 @@
             "Only available <before adopting [Conservatism]>",
             "Only available <before adopting [Anarchism]>",
             "Only available <with [Revolution Oppotunity]>",
-            "Comment [Enables you to build Tower of Constructivism, giving you futher production when building any building that provides culture.]"
+            "Comment [Enables you to build [Tower of Constructivism], giving you futher [Production] when building any building that provides [Culture]]"
         ],
         "policies": [
             {
@@ -1095,7 +1117,7 @@
                 "name": "Red Army",
                 "uniques": [
                     "[Military] units gain the [Commissar] promotion",
-                    "Comment [Enables you to build Red Army Troop, a alternative to sharpshooter that can be upgraded from 'Levy Army' Units and can be upgraded to Motorised Infantry]",
+                    "Comment [Enables you to build [Red Army Troop], a alternative to [Sharpshooter] that can be upgraded from 'Levy Army' Units and can be upgraded to [Motorised Infantry]]",
                     "[+5 Happiness] [in annexed cities]"
                 ],
                 "requires": [
@@ -1107,7 +1129,7 @@
             {
                 "name": "Comintern",
                 "uniques": [
-                    "Gifts of Gold to City-States generate [50]% more Influence",
+                    "Provides [1] [Influence]",
                     "[+50]% resources gifted by City-States",
                     "Military Units gifted from City-States start with [25] XP"
                 ],
@@ -1121,7 +1143,7 @@
                 "name": "Interal Purges",
                 "uniques": [
                     "[+1 Happiness, -3 Culture] [in all cities]",
-                    "[+5]% Culture cost of adopting new Policies",
+                    "[-5]% Culture cost of adopting new Policies",
                     "[-25]% enemy spy effectiveness [in all cities]"
                 ],
                 "requires": [
@@ -1145,6 +1167,7 @@
             {
                 "name": "Socialism Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "[+1 Production] from every ['Extraction Improvement']",
                     "[+1 Science, +1 Production] from every ['Educational Building']"
                 ]
@@ -1162,19 +1185,14 @@
             "Only available <before adopting [Conservatism]>",
             "Only available <before adopting [Socialism]>",
             "Only available <with [Revolution Oppotunity]>",
-            "Comment [Enables you to build Commume, a self-governing 'political building' that provide happiness bonus with population.]"
+            "Comment [Enables you to build [Commune], a self-governing 'political building' that provide [Happiness] bonus with population.]"
         ],
         "policies": [
             {
                 "name": "Abolishment of Government",
                 "uniques": [
                     "Gain a free [Anarchist Ruling] [in all cities]",
-                    "[-1 Culture] from every ['Political Building']",
-                    "[-50]% Culture cost of natural border growth [in all cities] <during a Golden Age>",
-                    "[+25]% [Food] <during a Golden Age>",
-                    "[+25]% [Production] <during a Golden Age>",
-                    "[+25]% [Gold] <during a Golden Age>",
-                    "[+25]% [Faith] <during a Golden Age>"
+                    "[-50]% Culture cost of natural border growth [in all cities] <during a Golden Age>"
                 ],
                 "row": 1,
                 "column": 1
@@ -1182,7 +1200,9 @@
             {
                 "name": "Redistribution of Means of Production(Anarchist)",
                 "uniques": [
-                    "Triggers a [New economy policies] event"
+                    "Triggers a [New economy policies] event",
+                    "[+25]% [Production] <during a Golden Age>",
+                    "[+25]% [Gold] <during a Golden Age>"
                 ],
                 "requires": [
                     "Abolishment of Government"
@@ -1193,8 +1213,9 @@
             {
                 "name": "Militia Army",
                 "uniques": [
-                    "Comment [Enables you to construct Modern Guerrilla, A Modern levy skirmisher Infantry unit.]",
-                    "Comment ['Levy Army' Units maintainance past Industrial era decrased by 2 Gold]"
+                    "Comment [[Commune] provides 1[Standing Army Maintainance]]",
+                    "Comment [Remove strength defuff from [Anarchy]]",
+                    "Comment [Enables you to construct [Modern Guerrilla], A Modern levy skirmisher Infantry unit.]"
                 ],
                 "requires": [
                     "Redistribution of Means of Production(Anarchist)"
@@ -1205,7 +1226,7 @@
             {
                 "name": "Complete Autonomy",
                 "uniques": [
-                    "[+50]% Production when constructing [Commune] buildings [in all cities]",
+                    "Comment [[Commune] provides 4[Happiness]]",
                     "[+100]% Yield from every [Great Improvement]"
                 ],
                 "row": 1,
@@ -1214,8 +1235,8 @@
             {
                 "name": "Diversity of Opinions",
                 "uniques": [
-                    "[-20]% Culture cost of adopting new Policies",
-                    "[+50]% Strength for cities"
+                    "Provides [1] [Influence]",
+                    "Comment [[Commune] provides 1% great person generation in all cities]"
                 ],
                 "requires": [
                     "Complete Autonomy"
@@ -1226,8 +1247,8 @@
             {
                 "name": "Direct Democracy",
                 "uniques": [
-                    "[+1]% [Food] from every ['Political Building']",
-                    "Gain a free [Civil Expansion] [in all cities]"
+                    "Comment [[Commune] provides 1 [Living Condition]]",
+                    "[+33]% Strength for cities"
                 ],
                 "requires": [
                     "Diversity of Opinions"
@@ -1238,6 +1259,7 @@
             {
                 "name": "Anarchism Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "[+15]% Strength <for ['Levy Army'] units>",
                     "[-33]% Food consumption by specialists [in all cities]"
                 ]
@@ -1248,7 +1270,7 @@
         "name": "Sustainability",
         "era": "Atomic era",
         "uniques": [
-            "Comment [Enables you to build Natural Reserve,an 'Policy Improvement' that synergies with undeveloped tiles]",
+            "Comment [Enables you to build [Natural Reserve],an 'Policy Improvement' that synergies with undeveloped tiles]",
             "[-10]% maintenance cost for buildings [in all cities]"
         ],
         "policies": [
@@ -1287,10 +1309,10 @@
                 "column": 3
             },
             {
-                "name": "Decarbonisation",
+                "name": "Decarbonization",
                 "uniques": [
                     "Gain a free [Carbon Capture] [in all cities]",
-                    "Comment [Upgrade all existing and future Coal Plant with 'Carbon Capture',a style that provides more science and culture at cost of production, also produces 1 waste material]"
+                    "Comment [Upgrade all existing and future [Coal Plant] with [Carbon Capture],a style that provides more [Science] and [Culture] at cost of [Production], also produces 1 [Waste Material]]"
                 ],
                 "requires": [
                     "Protected Areas",
@@ -1303,15 +1325,16 @@
             {
                 "name": "Sustainability Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "Empire enters golden age",
-                    "[+2 Science, +2 Culture] from every [Permaculture]",
+                    "Provides [1] [Influence]",
                     "[+25]% Great Person generation [in all cities]"
                 ]
             }
         ]
     },
     {
-        "name": "Digitisation",
+        "name": "Digitization",
         "era": "Atomic era",
         "uniques": [
             "[+33]% Production when constructing ['High Tech Industry'] buildings [in all cities]"
@@ -1362,8 +1385,9 @@
                 "column": 3
             },
             {
-                "name": "Digitisation Complete",
+                "name": "Digitization Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "Double quantity of [Electronic Parts] produced",
                     "Double quantity of [Microchips] produced"
                 ]
@@ -1389,7 +1413,7 @@
             {
                 "name": "Science Cities",
                 "uniques": [
-                    "Comment [Enables you to build Science City ,an 'policy improvement' that is a smaller version of Academy]",
+                    "Comment [Enables you to build [Science City] ,an 'policy improvement' that is a smaller version of [Academy]]",
                     "[+1 Science] from every specialist [in all cities]"
                 ],
                 "row": 1,
@@ -1422,6 +1446,7 @@
             {
                 "name": "Control of the Orbit",
                 "uniques": [
+                    "Provides [1] [Influence]",
                     "[+20]% Production when constructing [Spaceship part] units [in all cities]"
                 ],
                 "requires": [
@@ -1433,6 +1458,7 @@
             {
                 "name": "Space Race Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "[2] Free Technologies"
                 ]
             }
@@ -1489,6 +1515,7 @@
             {
                 "name": "Utopia",
                 "uniques": [
+                    "Provides [1] [Influence]",
                     "[+100]% Production when constructing [Overwhelming Superiority] buildings [in all cities]"
                 ],
                 "requires": [
@@ -1501,6 +1528,7 @@
             {
                 "name": "Automation Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "[+1 Faith] [in all cities]"
                 ]
             }
@@ -1569,6 +1597,7 @@
             {
                 "name": "Transhumanism Complete",
                 "uniques": [
+                    "Instantly provides [10] [Influence]",
                     "[+1 Faith] [in all cities]"
                 ]
             }

@@ -1,45 +1,76 @@
 [
   // Each entry is a tutorial, but the tutorial may be spread over separate paragraphs.
 
-  {
-    "name": "Introduction",
-    "steps": [
-      "Welcome to Emperors and Dieties\nThis is a ruleset mod that focuses on actually building the civ from the ground up. It is less gamey to a certain extend, perhaps more realistic and with more options? There are SERVERAL SINIFICANT GAMEPLAY changes from the original civ 5, so you are advised to look through tutorial at least once.\nRemeber to send feedback to the developer in official discord thread! You may notice the icons are different, props to bucketeer for making these icons."
+    {
+    "name": "Emperors and Deities Mod Manual",
+    "civilopediaText": [
+      {"text":"Emperors and Deities is an overhaul mod for Sid meier's Civilization 5/Unciv."},
+      {"text":"The mod's main goal is to reshape civ 5 into a more complex and nuanced game. With many new mechanics incorporated into the mod.\nMajor Differences:"},
+      {"text":"1.Keep in mind that Luxury Resources no longer provide any [Happiness] by default, they provide a large amount of [Gold] and development potential, however, 'We Love King Day' and city state quests still require Luxury Resources. As for how you gain [Happiness], you can build a lot of buildings and create a religion with suitable beliefs."},
+      {"text":"2.Army are now separated into four major categories:\n 'Levy Army','Standing Army','Noble Army' and 'Mercenary Army'. Each with different characteristics."},
+      {"text":"'Levy Army' units are free and can be summoned using [Call to Arms] function in any city with five or more population at cost of [Happiness]  and short term negative effects, [Call to Arms] status can be reverted by disbanding your levies in peaceful times using [Enact Policies] at the capital so that they can be summoned again."},
+      {"text":"'Standing Army','Noble Army' and 'Mercenary Army' behave like normal units except 'Mercenary Army' can only be bought and requires a [Mercenary Office] to be built. 'Standing Army' and its elite variant 'Noble Army' is what you would rely upon most of the time, however, they do require resources like [Iron] and [Weapon Parts] to be built."},
+      {"text":"3.Tag system is used widely in this mod, a tag is a word surrounded using '', many mechanics revolve around this system, they are also in the civilopedia of any object, feel free to check. You don't need to remember this well to use it effectively as most tags are intuitive."},
+      {"text":"4.The cities now have [Living Condition] as a indicator of overpopulation, with Living Condition below 2, your city will lose [Happiness] production and gain debuff on population growth gradually, you can counteract this by building 'infrastructure's like [Clinic] and [Town Square]."},
+      {"text":"5.[Influence] is a new currency that affects the political status of your civilization. You get it by keeping the empire happy or choosing the right policies. If your [Influence] is negative, you will be getting a negative event that applies debuff. You can check the civilopedia page of [Influence] for more information."},
+
+      {"text": "See also: Living Condition", "link": "Resources/Living Condition"},
+      {"text": "See also: Influence", "link": "Resources/Influence"}
     ]
   },
   {
-    "name": "New Game",
+    "name": "Avaliable Civilzation Form of different eras",
     "civilopediaText": [
-      {"text":"Settling near fresh water now gives +2 Food to your cities and grants access to more river buildings afterward. There are also more changes toward the resources and tile improvements, overall theres much more rewards in development. But a crucial thing is that luxury resources dont reward happiness anymore.\nThey rewards large amount of stats to maintain your future empires instead."}
+      {"text":"There are two major 'Civilzation Form' Categories: 'United' and 'Divided'"},
+      {},
+      {"text":"Neolithic era:","header":3},
+      {"text":"United"},
+      {"text":"Tribal Union", "link": "Buildings/Tribal Union"},
+      {"text":"Divided"},
+      {"text":"Tribes", "link": "Buildings/Tribes"},
+      {"text":"Nomadic Tribes", "link": "Buildings/Nomadic Tribes"},
+      {},
+      {"text":"Ancient era:","header":3},
+      {"text":"United"},
+      {"text":"Early Empire", "link": "Buildings/Early Empire"},
+      {"text":"Divided"},
+      {"text":"City States", "link": "Buildings/City States"},
+      {},
+      {"text":"Classical era:","header":3},
+      {"text":"United"},
+      {"text":"Feudal Empire", "link": "Buildings/Feudal Empire"},
+      {"text":"Centralized Empire", "link": "Buildings/Centralized Empire"},
+      {"text":"Divided"},
+      {"text":"City States", "link": "Buildings/City States"},
+      {"text":"Sucessor States", "link": "Buildings/Sucessor States"},
+      {},
+      {"text":"Medieval era:","header":3},
+      {"text":"United"},
+      {"text":"Empire of Electors", "link": "Buildings/Empire of Electors"},
+      {"text":"Celestial Empire", "link": "Buildings/Celestial Empire"},
+      {"text":"Theocratic Empire", "link": "Buildings/Theocratic Empire"},
+      {"text":"Divided"},
+      {"text":"Kingdoms", "link": "Buildings/Kingdoms"},
+      {},
+      {"text":"Renaissance era:","header":3},
+      {"text":"United"},
+      {"text":"Colonial Empires", "link": "Buildings/Colonial Empires"},
+      {"text":"Autocratic Empire", "link": "Buildings/Autocratic Empire"},
+      {},
+      {"text":"Imperial era:","header":3},
+      {"text":"United"},
+      {"text":"Federation", "link": "Buildings/Federation"},
+      {"text":"United States", "link": "Buildings/United States"},
+      {"text":"Personal Union", "link": "Buildings/Personal Union"},
+      {"text":"Divided"},
+      {"text":"Republics", "link": "Buildings/Republics"},
+      {},
+      {"text":"Modern era:","header":3},
+      {"text":"United"},
+      {"text":"Fascist Autocracy", "link": "Buildings/Fascist Autocracy"},
+      {"text":"Socialist Republics", "link": "Buildings/Socialist Republics"},
+      {"text":"Divided"},
+      {"text":"Anarchist Alliances", "link": "Buildings/Anarchist Alliances"}
     ]
   }
-  {
-    "name": "Happiness",
-    "steps": [
-      "As cities grow in size and influence, you have to deal with a happiness mechanic which repersents your ability to rule your empire.\nAs your cities grow in population you’ll find that it is more and more difficult to keep your empire well governed."    ,
-      "If your empire’s happiness ever goes below zero the population growth rate of your cities will suffer.\nIf your empire becomes severely out of control (as indicated by the smiley-face icon at the top of the interface)\n  your armies will have a big penalty slapped on to their overall combat effectiveness."
-    ]
-  },
-  {
-    "name": "Unhappiness",
-    "steps": [
-      "It seems that your citizens are unhappy!\nWhile unhappy, your civilization will suffer many detrimental effects, increasing in severity as unhappiness gets higher.",
-      "Unhappiness has two main causes: Population and cities.\n  Each city causes 3 unhappiness, and each population, 1",
-      "There are 2 main ways to combat unhappiness:\n  by building happiness buildings for your population\n  or by adopting appriate policies/beliefs in your religion."
-    ]
-  },
-  {
-    "name": "Luxury Resource",
-    "steps": [
-      "Luxury resources within your domain and with their specific improvement are connected to your trade network.\nEach unique Luxury resource tile provides a lot of gold and other stats, but extra resources of the same type don't add anything, so use them for trading with other civilizations to activate we love king day more often!"
-    ]
-  },
-  {
-    "name": "Strategic Resource",
-    "steps": [
-      "Strategic resources within your domain and with their specific improvement are connected to your trade network.\nStrategic resources allow you to train units and construct buildings that require those specific resources, for example the Horseman requires Horses.",
-	    "Unlike Luxury Resources, each Strategic Resource on the map provides more than one of that resource.\nThe top bar keeps count of how many unused strategic resources you own.\nA full drilldown of resources is available in the Resources tab in the Overview screen.",
-      "You will also be able to produce Strategic Resources if you have certain bonus resources and corresponding buildings.n/Strategic Resources can also be made into more advanced ones to produce powerful units."
-    ]
-  },
 ]
