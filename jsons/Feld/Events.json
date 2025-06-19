@@ -301,7 +301,7 @@
                 "Only available <before adopting [Conservatism]>",
                 "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
                 "Gain a free [Self-management Focus] [in capital]"]
-            },
+            }
 
         ]
     },
@@ -406,8 +406,8 @@
                {
                 "text": "Faith",
                 "triggeredUniques": ["[+20]% [Faith] [in all cities] <for [12] turns>"]
-               }
-                   {
+               },
+   {
 		"name": "Comet Sighted",
 		"text": "People are often superstitious and the appearance of a comet has convinced many that the end of times is soon to come. Whether or not this is actually the case, this is bound to cause some instability within the nation.",
 		"choices": [
@@ -426,7 +426,6 @@
 					"Gain [60] [Science] <during the [Classical era]> <hidden from users>",
 			 		"Gain [100] [Science] <during the [Medieval era]> <hidden from users>"] } ]
   },
-
   {
 		    "name": "Comet Spotted",
 		    "text": "A comet was sighted in the sky. Some people in the past believed that this portents fell times ahead. Others used to believe that they are in fact pixie fairies floating in the sky. Such primitive ways of thinking, it's almost embarrasing that our ancestors used to believe in such nonsensical rubbish like that.",
@@ -593,7 +592,7 @@
 		    "name": "Codify Laws",
 		    "text": "Over the years various laws and decrees have been accumulated. In the interests of efficient administration it would be better to codify them into a single corpus of law so everyone will know their rights.",
 		    "choices": [
-			    {"text": "Very well.",
+			    {"text": "And so it shall be.",
 			     "uniques": ["Gain a free [Code of Laws] [in capital]"] } ]
 	
 	},
@@ -649,9 +648,9 @@
       
      			{ "text": "Tell the mystic to be quiet! I deal with enough crazy people already!",
 			  "uniques": [ 	"Comment [Grants a burst of Science]",
-				  	"Comment [Lose 20 Faith]",
+				  	"Comment [Lose 30 Faith]",
                                        	"[-2 Happiness] [in all cities] <for [5] turns>",
-				  	 "Gain [-20] [Faith] <hidden from users>",
+				  	 "Gain [-30] [Faith] <hidden from users>",
 					"Gain [25] [Science] <during the [Ancient era]> <hidden from users>",
 					"Gain [65] [Science] <during the [Classical era]> <hidden from users>",
 			 		"Gain [110] [Science] <during the [Medieval era]> <hidden from users>",
@@ -692,7 +691,7 @@
       
      			{ "text": "Execute any deserters. We need to set an example to stop our troops leaving the front.",
 			  "uniques": [ 	 "[-15]% Strength <for [All] units> <for [10] turns>",
-			  		 "[-1 Happiness] [in all cities] <for [10] turns>"] } ]
+			  		 "[-2 Happiness] [in all cities] <for [10] turns>"] } ]
   	},
 	
 	{
@@ -727,6 +726,47 @@
 			  		"[+5 Happiness] [in capital] <for [5] turns>",
 			  		"Only available <when at war> <hidden from users>"] }]
   	},
+		{
+		    "name": "Economic Depression",
+		    "text": "A rapid turn of events have lead to the collapse of our nation's economy, and the Stock Market falling to levels unseen before. Former barons and lords of business are finding their money losing their value rapidly, and the workers and nearly workers are now in crippling poverty. The next few years shall be remembered as an economic torment for the rest of history!",
+		    "choices": [
+			    {"text": "Damn.",
+			     "uniques": ["[-25]% [Gold] [in all cities] <for [5] turns>",
+				         "[+10 Gold] [in all cities] <for [10] turns>",
+			     		"[-5 Happiness] [in all cities] <for [5] turns>"] } ]
+	
+	},
+	{
+		    "name": "Economic Boom",
+		    "text": "Crowd gather around the stock markets as the conomy starts to boom. Businesses are rapidly growing in size, and their worker's standard of living has never been better. The next few years shall be known as an economic paradise for the rest of history!",
+		    "choices": [
+			    {"text": "Great!",
+			     "uniques": ["[+25]% [Gold] [in all cities] <for [5] turns>",
+				         "[+10 Gold] [in all cities] <for [10] turns>",
+			     		"[+5 Happiness] [in all cities] <for [5] turns>"] } ]
+	
+	},
+	{
+		    "name": "Research",
+		    "text": "Some of our top scientists have rapidly increased our understanding on how the world works. How shall our nation support these researchers?",
+		    "choices": [
+
+			    { "text": "Use their research to support our current military effort",
+			  "uniques": ["[-1 Science] from all [Science] buildings <for [10] turns>",
+			  		"[-25]% Production when constructing [Military] units [in all cities] <for [10] turns>",
+			  		"[+5]% Strength <for [All] units> <for [10] turns>",
+			  		"Only available <when at war> <hidden from users>"]},
+
+			     { "text": "Knowledge is of no use if it is not passed on.",
+			  "uniques": ["[+3 Happiness, +3 Science] from all [Science] buildings <for [10] turns>"]},
+			    
+			    {"text": "Support the Academia, and fund their research.",
+			     "uniques": ["Comment [Lose 500 Gold]",
+				     	 "[+3 Science] from every [Academy]  <for [10] turns>",
+				     	 "Free Technology",
+				     	 "Gain [-500] [Gold] <hidden from users>"] } ]
+	
+	},
 	{
 		"name": "America UE", //On Economics   [-4 Food] [in all cities] <for [20] turns>  [+10 Gold] [in all cities] <for [20] turns>//
 		"text": "Mr President, there has been recent discontent across our nation. Our people are at odds with each other, with one group advocating for the expansion of the use of slaves in order to revitalise the economy, while another is promoting the idea of 'Manifest Destiny' and the expansion of our nation to the uncivilised wilderness so that it can secure all the potential resources it needs. If one side does not triumph over another soon, our nation will decend into Civil War. What shall we do, Mr President?",
@@ -832,11 +872,11 @@
 		"choices": [
 			{ "text": "It may be in our best interests to marry this young admiral. He has strong Phonecian heritage and will allow us to bolster our naval economy. He is the best choice for new consort, even if he smells of fish all the time.",
 			  "uniques": [	 "[+2 Culture] from [Fishing Boats] tiles [in all cities] <for [1000] turns>",
-			  		 "[+25]% [Gold] [in capital] <for [20] turns>"]}
+			  		 "[+25]% [Gold] [in capital] <for [20] turns>"]},
       
       			{ "text": "I have heard of a local warlord that will be willing to be the new King. Marrying him will strengthen our army significantly. This will be a match made in heaven, ...or wherever this warlord beleives he will end up.",
 			  "uniques": [	"[2] free [African Forest Elephant] units appear",
-			  		"[+100]% [Faith] [in capital] <for [20] turns>"] }
+			  		"[+100]% [Faith] [in capital] <for [20] turns>"] },
 
 			{ "text": "There is a young naval commander that has successfuly led many daring raids on the ports of our enemies. This will help us strengthen our navy significantly. As long as he doesn't have an eyepatch or pegleg, he shall be my new husband.",
 			  "uniques": [	"[+3 Production, +3 Gold] from every [Harbor]  <for [20] turns>",
@@ -849,11 +889,11 @@
 		"choices": [
 			{ "text": "Our lands are full of tin and lead. If we manage to exploit these resources, we could have a monopoly on the worlds tin supply!",
 			  "uniques": [	 "[+1 Gold] from every [Mine] <for [1000] turns>",
-			  		 "[+50]% [Gold] [in capital] <for [20] turns> <with [50]% chance>"]}
+			  		 "[+50]% [Gold] [in capital] <for [20] turns> <with [50]% chance>"]},
       
       			{ "text": "Our tribes need to unite so that we do not falter to the iron fist of our enemies. There shall be one united Celtica, a nation against imperialism and oppression!",
 			  "uniques": [	"[2] free [Pictish Warrior] units appear",
-			  		"[2] free [Berserker] units appear"] }
+			  		"[2] free [Berserker] units appear"] },
 
 			{ "text": "We need to ensure that our culture does not be overcomed be our enemy's traditions. We must encourage our people to take up the arts, so that the Celtic culture shall stand the test of time!",
 			  "uniques": [	"[+2 Faith] from every [Landmark] <for [1000] turns>",
@@ -867,12 +907,12 @@
 			{ "text": "Isn't that the son of my rival?... You Fool! This is an assassin, not a messenger! Guards! Guards!",
 			  "uniques": [	 "[+2 Food, +1 Gold] from every [Plantation] <for [20] turns>",
 				  	 "[+1 Production] from every [Farm] <for [1000] turns>",
-			  		 "[-5 Happiness] [in all cities] <for [20] turns>"]}
+			  		 "[-5 Happiness] [in all cities] <for [20] turns>"]},
       
       			{ "text": "A tea merchant? An offer to establish a tea pavilion in the capital in exchange for some patronage. My, why would I reject such an offer!",
 			  "uniques": [	"[+3 Culture, +2 Happiness] from all [Opera House] buildings <for [1000] turns>",
 			  		"Comment [Lose 400 Gold]",
-				 	 "Gain [-400] [Gold] <hidden from users>"] }
+				 	 "Gain [-400] [Gold] <hidden from users>"] },
 
 			{ "text": "An envoy? There is news of a rediscovered religious text after an excavation of an old palace? This text could change the way we see the world forever!",
 			  "uniques": [	"[+2 Food, +2 Culture] from every [Holy Site] <for [1000] turns>",
@@ -885,10 +925,10 @@
 		"choices": [
 			{ "text": "They are angry due to the lack of housing in the winter. What good will happen if we let our people freeze? Open up the barracks so that these men have a place to rest!",
 			  "uniques": [	 "[+2 Food, +2 Culture] from all [Barracks] buildings  <for [1000] turns>",
-			 		 "[+5 Food] [in all cities] <for [20] turns>"]}
+			 		 "[+5 Food] [in all cities] <for [20] turns>"]},
       
       			{ "text": "They are angry because of the lack of faith in our empire. Maybe we shouldn't have pillaged all those monestaries... No worry! We shall build our own churches!",
-			  "uniques": [	"Gain a free [Stave Church] [in all cities] <upon founding a city>"] }
+			  "uniques": [	"Gain a free [Stave Church] [in all cities] <upon founding a city>"] },
 
 			{ "text": "They are angry as our coast have been left unprotected. Even the most pathetic cities can bolster a navy greater than ours! This shall not be the case, as the seas belong to the Danes!",
 			  "uniques": [	"[+5 Production] from every [Citadel] <for [1000] turns>",
@@ -900,11 +940,11 @@
 		"text": "Great Pharaoh, the orphan that your wife has been raising has matured to an age where people have noticed his intelligence and ingenious ways. How will you direct this orphan so that his gifts benefit us?",
 		"choices": [
 			{ "text": "Fate should be left to Ra and Horus, not the pharaoh. The boy shall be whoever he wants.",
-			  "uniques": [	 "Free Great Person"]}
+			  "uniques": [	 "Free Great Person"]},
       
       			{ "text": "He shall guide our engineers to construct machines accross our rivers, so that we can predict their flooding.",
 			  "uniques": [	"[+2 Production] from [Flood plains] tiles [in all cities] <for [20] turns>",
-			  		"[+1 Food] from [Flood plains] tiles [in all cities] <for [1000] turns>"] }
+			  		"[+1 Food] from [Flood plains] tiles [in all cities] <for [1000] turns>"] },
 
 			{ "text": "He shall help me purge the old, idiosyncratic ways of the nobility and start a lineage of fresh leaders. Now Egypt shall not fall behind its enemies!",
 			  "uniques": [	"[+4 Culture] from [Farm] tiles  <for [20] turns>",
@@ -917,11 +957,11 @@
 		"choices": [
 			{ "text": "We can claim that he has found the legendary Excalibur! That will surely unite the people, knowing that the successor of the mythical King Arthur is with us.",
 			  "uniques": [	 "[2] free [Longbowman] units appear",
-			  		 "Empire enters golden age"]}
+			  		 "Empire enters golden age"]},
       
       			{ "text": "We need to keep the church united and free from external influence. Make him the new Archbishop of Canterbury, and let him restore the faith in our empire! ",
 			  "uniques": [	"Gain a free [Parish Church] [in all cities]",
-			  		"[+50]% resources gifted by City-States <in cities following our religion> <for [1000] turns>"] }
+			  		"[+50]% resources gifted by City-States <in cities following our religion> <for [1000] turns>"] },
 
 			{ "text": "The fringes of our empire may be susceptible to rebellion and distrust. This will hamper our imperial ambitions. Let this man be our colonial governor, so that the sun shall never set on the empire.",
 			  "uniques": [	"Gain a free [Colonial Offices] [in all cities]",
@@ -933,11 +973,11 @@
 		"text": "Ras Tafari, your people gather in the city square, waiting for you to show them the wisdom of Solomon. Show them the wisdom of Solomon, oh Negusa Nagast!",
 		"choices": [
 			{ "text": "With only 30 pieces of silver, our Lord was betrayed. We will print His likeness into seventy times seven coins, and spread them around the whole World! So every man, woman, and child knows the name of their savior!",
-			  "uniques": [	 "[+2 Faith] from all [Market] buildings <for [1000] turns> <hidden from users>"]}
+			  "uniques": [	 "[+2 Faith] from all [Market] buildings <for [1000] turns> <hidden from users>"]},
       
       			{ "text": "In this world plagued by division, we allow things like race and creed to set us apart. But God does not see the color of our skin, only the goodness of our soul. We will write it in our songs, in our tales, in our laws.",
 			  "uniques": [	 "[3] free [Pikeman] units appear",
-			  		 "Empire enters a [20]-turn Golden Age"] }
+			  		 "Empire enters a [20]-turn Golden Age"] },
 
 			{ "text": "When they came to hear the Lord, they were called away to eat. But instead, he told them, stay, and fed them with manna from Heaven. How can we come closer to the Lord when our thoughts are shackled to the necessities of Earth. I will see that no man wants for bread, but no man can live by bread alone...",
 			  "uniques": [	"[+2 Food] from every [Farm] <for [20] turns>",
@@ -950,12 +990,12 @@
 		"choices": [
 			{ "text": "The support of the intelligensia has waned because salon culture has declined. If I partake in this activity, it may revitalise it, and bring the brains of the nation back to being loyal.",
 			  "uniques": [	 "[+3 Science] from every [Garden] <for [20] turns>",
-			  		"[+3 Culture] from every [Garden]  <for [9999] turns>" ]} //
+			  		"[+3 Culture] from every [Garden]  <for [9999] turns>" ]}, //
       
       			{ "text": "French culture has been inhibited be th Academei of Paris, trying to moderate and standardise every pathetic thing, crushing the will of the people under its hobnailed boot. The arts shall be left free of control, for the people and by the people!",
 			  "uniques": [	 "Comment [ +5 Culture from every National Wonder ]",
 				  	"[+5 Culture] from every [National Wonder] <for [9999] turns> <hidden from users>",
-			  		 "Empire enters a [10]-turn Golden Age"] }
+			  		 "Empire enters a [10]-turn Golden Age"] },
 
 			{ "text": "Bah! Can the people not see that I am a master leader!? If those ungratful brutes believe they deserve anything more than they already got, then I'll make them grateful!",
 			  "uniques": [	"Rebel units may spawn <for [30] turns>",
@@ -973,12 +1013,12 @@
 			{ "text": "These divisions between the pagans and the church have left our enemies an opportunity to see our weaknesses. We must unite ourselves under one banner, and forge a new people to dominate this world",
 			  "uniques": [	"All newly-trained [Land] units [in all cities] receive the [Woodsman] promotion <for [1000] turns>",
 			  		"[Land] units gain the [Woodsman] promotion",
-			  		"[+1 Culture] from every [Forest] <for [9999] turns>" ]} 
+			  		"[+1 Culture] from every [Forest] <for [9999] turns>" ]}, 
       
       			{ "text": "Crusaders and hires knights are constantly being hired by dukes and barons, forming paramilitaries that threaten our stability. We must merge them into one order, for the betterment of the people.",
 			  "uniques": [	 "[2] free [Teutonic Order Knight] units appear",
 			  		"[2] free [Livonian Order Knight] units appear",
-			  		"[1] free [Pomeranian Knight] units appear"] }
+			  		"[1] free [Pomeranian Knight] units appear"] },
 
 			{ "text": "German trade has fallen dramatically, causing our craftsmen and merchants to become penniless. We shall form the Hanseatic League to improve trade relations and stop us from entering an economic disaster.",
 			  "uniques": [	"Gain a free [Hanse Guild] [in all  cities] <for [9999] turns>",
@@ -993,11 +1033,11 @@
 			{ "text": "I recognise these people... they are my old teachers! These men taught me all the skills I have used to become such a great leader! Show them hospitality and give them a place in my court, it is the least I can do!",
 			  "uniques": [	 "[+3 Culture] from every [Library] <for [20] turns>",
 			  		 "[+2 Science] from every [Library]  <for [9999] turns>",
-			  		 "Free Technology"]} 
+			  		 "Free Technology"]}, 
       
       			{ "text": "These men are priests from Mount Athos. They bring news of a great birth, as revealed to them in an Oracle's prophecy. How glorious!",
 			  "uniques": [	 "Free Great Person",
-			  		"[+50]% Great Person generation [in capital] <for [20] turns>"] }
+			  		"[+50]% Great Person generation [in capital] <for [20] turns>"] },
 
 			{ "text": "Emmisaries from a... secret society?! They claim to have underground links and spies around my empire and beyond, and they wish to help me? My... I shouldn't be turning down an opportunity like this!",
 			  "uniques": [	"[+20]% [Culture] [in all cities] <for [20] turns>",
@@ -1011,11 +1051,11 @@
 		"choices": [
 			{ "text": "The backbone of our nation is our livestock, without it, travel and commerce would be impossible. So I shall demand my vassals to give me their alpacas and llamas, to ensure our nation has enough livestock to thrive.",
 			  "uniques": [	 "[+2 Culture, +1 Food] from every [Sheep] <for [9999] turns>",
-			  		"[+2 Happiness] [in all cities] <for [20] turns>"]} 
+			  		"[+2 Happiness] [in all cities] <for [20] turns>"]}, 
       
       			{ "text": "Riches from the mountains and rare goods from the earth have been gifted to us by the Gods. My vassals shall gift me these luxuries, so we can uncover the vast riches the Gods have given to us",
 			  "uniques": [	 "[+10 Gold] from every [Mountain] <for [9999] turns>",
-			  		 "[+2 Production] from every [Hill] <for [20] turns>"] }
+			  		 "[+2 Production] from every [Hill] <for [20] turns>"] },
 
 			{ "text": "I shall not demand tribute, but instead order them to expand the mountain shrines of the Waka'a Trail, so that we shall be closer to the Gods, and let them know that we shall eternally be their loyal servants.",
 			  "uniques": [	"[+200]% [Faith] [in all cities] <for [20] turns>",
@@ -1029,20 +1069,19 @@
 		"choices": [
 			{ "text": "Faith is nessecary for men to do great things. My lords shall need to lean closer to heaven, and only then shall they reap the rewards for their actions.",
 			  "uniques": [	  "[+5 Food] from every [Monument] <for [20] turns>",
-			  		   "Gain a free [Temple] [in this city] <upon founding a city>"]} 
+			  		   "Gain a free [Temple] [in this city] <upon founding a city>"]}, 
       
       			{ "text": "We need to protect ourselves from outside threats. Our enemies will spare no expense to drestroy our nation, so we shall do everything in our power to prevent it!",
 			  "uniques": [	 "[+3 Culture] from every [Mughal Fort] <for [20] turns>",
-			  		 "[+2 Faith] from every [Mughal Fort]  <for [9999] turns>" ] }
+			  		 "[+2 Faith] from every [Mughal Fort]  <for [9999] turns>" ] },
 
 			{ "text": "The people in the lands we have recently expanded into have complained about how they are treated under the caste system. We must abolish this backwards system, even if it might anger the lords of the nation",
 			  "uniques": [	"Rebel units may spawn <for [30] turns>",
 			  		"[-20 Happiness] [in all cities] <for [2] turns>",
 				  	"Nullifies [Science] [in all cities] <for [2] turns>",
 				  	"Nullifies [Culture] [in all cities] <for [2] turns>",
-			  		"[+100]% [Food] [in all cities] <for [100] turns>",] }]
+			  		"[+100]% [Food] [in all cities] <for [100] turns>"] }]
   	},
-
 	{
 
 		"name": "Iroquois UE", //On 
@@ -1050,18 +1089,17 @@
 		"choices": [
 			{ "text": "We have fought in many wars recently, and now many families mourn the loss of their kin. We shall devout this year for retribution against our enemies, for these soldiers have not died in vain!",
 			  "uniques": [	  "All newly-trained [Land] units [in all cities] receive the [Eternal Mourning] promotion <for [1000] turns>",
-			  		   "[+2 Food] from every [Barracks] <for [20] turns>"]} 
+			  		   "[+2 Food] from every [Barracks] <for [20] turns>"]}, 
       
       			{ "text": "Our people have grow weary, as morale within tribes have faltered. Therefore we shall unite our people and help rid them of their idleness by making them participate in more sports!",
 			  "uniques": [	  "[+2 Happiness] in cities on [unimproved] tiles <for [20] turns>",
-				  	  "[+2 Culture] from all [Happiness] buildings <for [9999] turns>"] }
+				  	  "[+2 Culture] from all [Happiness] buildings <for [9999] turns>"] },
 
 			{ "text": "Foriegn empires have taken interest in our decorative Wampum beads. By producing more of them and selling them to these people, we will surely benefit.",
 			  "uniques": [	"[+3 Gold, +2 Production] from every [Longhouse] <for [20] turns>",
-			  		"[+3 Culture] from every [Luxury] <for [9999] turns>",] }]
+			  		"[+3 Culture] from every [Luxury] <for [9999] turns>"] }]
   	},
-
-		{
+	{
 
 		"name": "Japan UE", //On Gunpowder
 		"text": "Great Shogun! Your presence is needed at the Chrysanthemum Throne. The Emperor urgently requires you to be there.",
@@ -1069,17 +1107,14 @@
 			{ "text": "The Emperor is displeased with his court musicians. For commiting the crime of displeasing the emperor, we shall have them and their families killed!",
 			  "uniques": [	   "Comment [Lose 300 Gold]",
 				  	   "Gain [-300] [Gold]" ,
-			  		   "[+3 Culture] from every [Castle] <for [9999] turns>"]} 
+			  		   "[+3 Culture] from every [Castle] <for [9999] turns>"]}, 
       
       			{ "text": "Foriegn nations look down upon Japan, calling us barbaric, and the Emperor knows this. We shall not worry however, as our ingenuity will pull Japan into the ranks of elite nations.  ",
-			  "uniques": [	   "Double quantity of [Coal] produced",
-			  		   "Double quantity of [Aluminum] produced"] }
+			   "uniques": [	   "Double quantity of [Coal] produced <for [9999] turns>",
+			  		   "Double quantity of [Aluminum] produced <for [9999] turns>"] },
 
 			{ "text": "Our coasts are weak and undefended. The Emperor worries that our foes might exploit this weakness. Therefore we will build new defences so that the Emperor can sleep easy at night.",
 			  "uniques": [	 "All newly-trained [Water] units [in all cities] receive the [Yamato] promotion <for [9999] turns>"] }]
-  	},
-         ], 
-      ]
     }, 
 	{
         "name": "The Great Prophet",
@@ -1109,9 +1144,8 @@
             {
             "text": "Gain enough [Faith] for 115% of a [Great Prophet] by consuming [JHWH]"
             }
-                ]                
+                ],                
                 "uniques": ["Only available<during the [Classical era]>", "Unavailable <if [JHWH] is constructed by anybody>", "Provides a [JHWH] in your first [1] cities for free"]
             }
-        ]
-    }  
+        ],
  ]
