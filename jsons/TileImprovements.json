@@ -43,6 +43,20 @@
 		"shortcutKey": "P"
 	},
 	{
+		"name": "Rubber Plantation",
+		"production":1,
+		"gold": 2,
+		"techRequired": "Industrialization",
+		"terrainsCanBeBuiltOn":["Forest","Jungle"],
+		"uniques": [
+			"'Agricultural Improvement'",
+			"Provides [2] [Rubber]",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+18 Gold]"
+		],
+		"shortcutKey": "P"
+	},
+	{
 		"name": "Mechanised Farm",
 		"terrainsCanBeBuiltOn": [
 			"Plains",
@@ -57,8 +71,9 @@
 			"'Agricultural Improvement'",
 			"[-2 Food] from [Grassland] tiles",
 			"[-2 Food] from [Desert] tiles",
-			"[+1 Food] for each adjacent [Power Plant]",
+			"[+2 Food] for each adjacent [Power Plant]",
 			"[+2 Food] <after discovering [Designer Genetic]>",
+			"Tile provides yield without assigned population",
 			"Cannot be built on [Hill] tiles",
 			"Cannot be built on [Coast] tiles",
 			"Pillaging this improvement yields approximately [+36 Gold]"
@@ -163,7 +178,8 @@
 		"techRequired": "Replaceable Parts",
 		"uniques": [
 			"'Lumber Improvement'",
-			"[+1 Production] for each adjacent [Power Plant]",
+			"Tile provides yield without assigned population",
+			"[+2 Production] for each adjacent [Power Plant]",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 		"shortcutKey": "L"
@@ -193,7 +209,8 @@
 		"techRequired": "Steam Power",
 		"uniques": [
 			"'Extraction Improvement'",
-			"[+1 Production] for each adjacent [Power Plant]",
+			"Tile provides yield without assigned population",
+			"[+2 Production] for each adjacent [Power Plant]",
 			"Pillaging this improvement yields approximately [+40 Gold]"
 		],
 		"shortcutKey": "M"
@@ -229,6 +246,7 @@
 			"'Agricultural Improvement'",
 			"[-1 Food] from [Tundra] tiles",
 			"[-1 Food] from [Hill] tiles",
+			"Tile provides yield without assigned population",
 			"[+1 Food] for each adjacent [Power Plant]",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
@@ -319,6 +337,21 @@
 		"shortcutKey": "F"
 	},
 	{
+		"name": "Deep Sea Fishing Boats",
+		"terrainsCanBeBuiltOn": [
+			"Ocean"
+		],
+		"turnsToBuild": 7,
+		"requiredTech": "Cartography",
+		"uniques": [
+			"'Water Improvement'",
+			"Provides [2] [Deep Sea Fish(Stored)]",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		],
+		"shortcutKey": "F"
+	},
+	{
 		"name": "Aquaculture",
 		"terrainsCanBeBuiltOn": [
 			"Coast"
@@ -335,21 +368,7 @@
 		],
 		"shortcutKey": "F"
 	},
-	{
-		"name": "Deep Sea Fishing Boats",
-		"terrainsCanBeBuiltOn": [
-			"Ocean"
-		],
-		"turnsToBuild": 7,
-		"techRequired": "Refrigeration",
-		"uniques": [
-			"'Water Improvement'",
-			"Provides [2] [Deep Sea Fish(Stored)]",
-			"Can only be built to improve a resource",
-			"Pillaging this improvement yields approximately [+10 Gold]"
-		],
-		"shortcutKey": "F"
-	},
+	
 	{
 		"name": "Camp",
 		"turnsToBuild": 4,
@@ -893,71 +912,30 @@
 		"uniques": [
 			"Ensures a minimum tile yield of [+2 Food, +1 Production]",
 			"[+2 Food] from [Fresh water] tiles",
+			"Provides [2] [Consumption Demand] <in cities with between [0] and [5] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [4] [Consumption Demand] <in cities with between [5] and [10] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [6] [Consumption Demand] <in cities with between [10] and [15] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [8] [Consumption Demand] <in cities with between [15] and [20] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [10] [Consumption Demand] <in cities with between [20] and [25] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [12] [Consumption Demand] <in cities with between [25] and [30] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [14] [Consumption Demand] <in cities with between [30] and [35] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [16] [Consumption Demand] <in cities with between [35] and [40] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [18] [Consumption Demand] <in cities with between [40] and [45] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [20] [Consumption Demand] <in cities with between [45] and [50] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [22] [Consumption Demand] <in cities with between [50] and [55] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [24] [Consumption Demand] <in cities with between [55] and [60] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [26] [Consumption Demand] <in cities with between [60] and [65] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [28] [Consumption Demand] <in cities with between [65] and [70] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [30] [Consumption Demand] <in cities with between [70] and [75] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [32] [Consumption Demand] <in cities with between [75] and [80] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [34] [Consumption Demand] <in cities with between [80] and [85] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [36] [Consumption Demand] <in cities with between [85] and [90] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [38] [Consumption Demand] <in cities with between [90] and [95] [Population]> <starting from the [Industrial era]> <hidden from users>",
+			"Provides [40] [Consumption Demand] <in cities with between [95] and [100] [Population]> <starting from the [Industrial era]> <hidden from users>",
 			"Unpillagable",
 			"Irremovable",
 			"Unbuildable",
-			"Excluded from map editor",
-			"Provides [1] [Living Condition] <in [Coastal] cities> <in this city>",
-			"Provides [1] [Living Condition] <within [1] tiles of a [Fresh water]> <in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [5] [Population]> <in this city>",
-			"Comment [Every 5 Population costs 1 Living Condition.]",
-			"Consumes [1] [Living Condition] <in cities with at least [10] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [15] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [20] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [25] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [30] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [35] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [40] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [45] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [50] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [55] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [60] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [65] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [70] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [80] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [85] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [90] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [95] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [100] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [105] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [110] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [115] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [120] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [125] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [130] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [135] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [140] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [145] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [150] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [155] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [160] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [165] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [170] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [175] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [180] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [185] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [190] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [195] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [200] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [205] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [210] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [215] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [220] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [225] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [230] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [235] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [240] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [245] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [250] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [255] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [260] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [265] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [270] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [275] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [280] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [285] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [290] [Population]><hidden from users><in this city>",
-			"Consumes [1] [Living Condition] <in cities with at least [295] [Population]><hidden from users><in this city>"
+			"Excluded from map editor"
 		],
 		"civilopediaText": [
 			{

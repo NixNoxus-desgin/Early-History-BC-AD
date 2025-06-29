@@ -21,13 +21,13 @@
 		"unitType": "Civilian",
 		"movement": 4,
 		"uniques": [
+			"Only available <if [Invention of Professional Vehicles] is constructed>",
 			"'Mechanised'",
 			"Costs [5] [Vehicle Parts]",
 			"[-50]% construction time for [All] improvements",
 			"Can build [Land] improvements on tiles",
 			"Automation is a primary action"
 		],
-		"requiredBuilding": "Construction Vehicle Factory",
 		"requiredTech": "Combustion",
 		"hurryCostModifier": 25
 	},
@@ -46,6 +46,21 @@
 		],
 		"upgradesTo": "Modern Work Ship",
 		"requiredTech": "Fire Making",
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Expeditionary Work Ship",
+		"cost": 55,
+		"unitType": "Civil Ship",
+		"movement": 3,
+		"uniques": [
+			"'Sailing Ship'",
+			"May create improvements on water resources <in [Deep Sea Fish] tiles>",
+			"Automation is a primary action"
+		],
+		"obsoleteTech":"Advanced Shipbuilding",
+		"upgradesTo": "Modern Work Ship",
+		"requiredTech": "Cartography",
 		"hurryCostModifier": 10
 	},
 	{
@@ -1268,6 +1283,40 @@
 		"upgradesTo": "Mercenary Hand Cannoneer",
 		"requiredResource": "Mercenary Contract",
 		"attackSound": "crossbow"
+	},
+	{
+		"name": "Palace Guard",
+		"unitType": "Close Combat",
+		"cost": 70,
+		"movement": 2,
+		"strength": 31,
+		"uniques": [
+			"Limited to [3] per Civilization",
+			"Only available <if [Celestial Empire] is constructed>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]><after adopting [Long Live the Revolution!]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]><removing the [The Noble Army] promotion/status>",
+			"Consumes [1] [Metal]",
+			"'Standing Army'",
+			"'Infantry'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+15]% Strength <after discovering [Steels]>",
+			"[This Unit] takes [25] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Hardened",
+			"Stewardship",
+			"Shock Doctrine",
+			"Chainmail Armour",
+			"Halberd"
+		],
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Flintlock",
+		"requiredResource": "Standing Army Maintainance",
+		"attackSound": "metalhit"
 	},
 	{
 		"name": "Levy Archer",
@@ -3037,10 +3086,12 @@
 		"uniques": [
 			"Only available <if [Military Factory Complex] is constructed>",
 			"Costs [30] [Weapon Parts]",
+			"Consumes [1] [Fuel]",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Dense Formation'",
 			"'Firearms'",
+			"Blast radius [1]",
 			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking>",
 			"[+25]% Strength <vs cities> <when attacking>",
 			"[-25]% Strength <when defending>",
@@ -3070,7 +3121,7 @@
 			"[-100]% maintenance costs",
 			"Never appears as a Barbarian unit"
 		],
-		"requiredBuilding": "Military Factory Complex",
+		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Ballistics",
 		"attackSound": "missile"
 	},
@@ -3085,7 +3136,7 @@
 		"cost": 550,
 		"requiredTech": "Nuclear Fission",
 		"uniques": [
-			"Consumes [3] [Enriched Uranium]",
+			"Costs [2] [Enriched Uranium]",
 			"Nuclear weapon of Strength [1]",
 			"Only available <if [Nuclear Option] is constructed>",
 			"Self-destructs when attacking",
@@ -3265,6 +3316,7 @@
 		"rangedStrength": 72,
 		"range": 2,
 		"uniques": [
+			"Only available <if [Invention of Helicopter] is constructed>",
 			"Costs [24] [Aircraft Parts]",
 			"Consumes [1] [Fuel]",
 			"'Standing Army'",
@@ -3295,6 +3347,7 @@
 		"rangedStrength": 75,
 		"range": 2,
 		"uniques": [
+			"Only available <if [Invention of Helicopter] is constructed>",
 			"Costs [27] [Aircraft Parts]",
 			"Consumes [1] [Fuel]",
 			"'Standing Army'",
@@ -3361,6 +3414,7 @@
 			"'Firearms'",
 			"'Dense Formation'",
 			"'Jet Engine Aircraft'",
+			"Blast radius [1]",
 			"Never appears as a Barbarian unit"
 		],
 		"promotions": [
@@ -3487,6 +3541,7 @@
 			"[-75]% maintenance costs",
 			"Never appears as a Barbarian unit"
 		],
+		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Advanced Ballistics",
 		"attackSound": "missile"
 	},
@@ -3500,11 +3555,12 @@
 		"range": 32,
 		"uniques": [
 			"Only available <if [Nuclear Option] is constructed>",
-			"Consumes [1] [Enriched Uranium]",
+			"Costs [5] [Enriched Uranium]",
 			"Nuclear weapon of Strength [2]",
 			"Blast radius [4]",
 			"Never appears as a Barbarian unit"
 		],
+		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Advanced Ballistics",
 		"attackSound": "nuke"
 	},
@@ -3524,6 +3580,7 @@
 			"'Motorised'",
 			"'Dense Formation'",
 			"'Firearms'",
+			"Blast radius [1]",
 			"[+50]% Strength <vs ['Dense Formation'] units> <when attacking>",
 			"[+50]% Strength <vs cities> <when attacking>",
 			"Ranged attacks may be performed over obstacles",
@@ -3534,7 +3591,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
-		"requiredBuilding": "Military Factory Complex",
+		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Advanced Ballistics",
 		"requiredResource": "Standing Army Maintainance",
 		"attackSound": "missile"
@@ -3564,6 +3621,7 @@
 		"promotions": [
 			"The Standing Army"
 		],
+		"requiredBuilding": "Rocketry Industry",
 		"requiredTech": "Lasers",
 		"attackSound": "missile"
 	},
@@ -3606,6 +3664,7 @@
 		"requiredResource": "Standing Army Maintainance",
 		"requiredTech": "Data Science",
 		"uniques": [
+			"Only available <if [Invention of Helicopter] is constructed>",
 			"Costs [1] [Microchips]",
 			"'Standing Army'",
 			"'Low Altitude Aircraft'",
@@ -4176,9 +4235,10 @@
 		"name": "SS Booster",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 2000,
+		"cost": 3000,
 		"requiredTech": "Railguns",
 		"requiredResource": "Aluminum",
+		"requiredBuilding": "Rocketry Industry",
 		"uniques": [
 			"Spaceship part",
 			"Cannot be purchased",
@@ -4193,9 +4253,10 @@
 		"name": "SS Cockpit",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 2000,
+		"cost": 3000,
 		"requiredTech": "Space Elevator",
 		"requiredResource": "Graphene",
+		"requiredBuilding": "Rocketry Industry",
 		"uniques": [
 			"Spaceship part",
 			"Cannot be purchased",
@@ -4210,9 +4271,10 @@
 		"name": "SS Engine",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 2000,
+		"cost": 3000,
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Enriched Uranium",
+		"requiredBuilding": "Rocketry Industry",
 		"uniques": [
 			"Spaceship part",
 			"Cannot be purchased",
@@ -4227,9 +4289,10 @@
 		"name": "SS Stasis Chamber",
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 2000,
+		"cost": 3000,
 		"requiredTech": "Nanotechnology",
 		"requiredResource": "Microchips",
+		"requiredBuilding": "Rocketry Industry",
 		"uniques": [
 			"Spaceship part",
 			"Cannot be purchased",
