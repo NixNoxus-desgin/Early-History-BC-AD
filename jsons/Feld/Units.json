@@ -1260,6 +1260,23 @@
 
 ///CC
     {
+		"name": "Kosynier",
+		"unitType": "Close Combat",
+		"uniqueTo": "Poland",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 22,
+		"cost": 50,
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Militia",
+		"uniques": [
+			"Low Tech",
+			"[+50]% Strength <vs [Rider] units>",
+			"Can instantly construct a [Farm] improvement <by consuming this unit>"
+		],
+		"attackSound": "metalhit"
+	},
+    {
 		"name": "Arma Toxotis",
 	    "unitType": "Ranged Combat",
 	    "replaces": "Knight",
@@ -2440,6 +2457,66 @@
 		"attackSound": "metalhit"
 	},
 ///Rider
+	{
+		"name": "Uhlan",
+		"unitType": "Rider",
+		"uniqueTo": "Poland",
+		"replaces": "Cavalry",
+		"movement": 5,
+		"strength": 42,
+		"cost": 140,
+		//"requiredTech": "-",
+		"uniques": [
+			"Personnel",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"[+20]% Strength <vs [Armor] units> <when attacking>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Earn [100]% of killed [Military] unit's [Strength] as [Culture]",
+			"Can only be built <in cities with a [Stable]>"
+		],
+		"promotions": ["Pursuit"],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+	{
+		"name": "Winged Hussar",
+		"unitType": "Rider",
+		"uniqueTo": "Nowa Polska",
+		"replaces": "Hussar",
+		"movement": 5,
+		"strength": 38,
+		"interceptRange": 1,
+		"cost": 80,
+		//"requiredTech": "-",
+		"upgradesTo": "Cavalry",
+		"uniques": [
+			"Personnel",
+			"Consumes [1] [Horse]",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Can only be built <in cities with a [Stable]>"
+		],
+		"promotions": ["Shock"],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+},
+{
+		"name": "Tarkhan",
+		"unitType": "Rider",
+		"replaces": "Knight",
+		"uniqueTo": "Khazaria",
+		"movement": 5,
+		"strength": 13,
+		"cost": 120,
+		"requiredTech": "Chivalry",
+		"obsoleteTech": "Military Science",
+		"upgradesTo": "Cavalry",
+		"requiredResource": "Horse",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[+100]% Strength <when adjacent to a [Rider] unit>", "Never appears as a Barbarian unit"],
+		"attackSound": "horse"
+	},
 {
 	"name": "Calaret",
 	"unitType": "Rider",
@@ -3113,6 +3190,58 @@
 	},
 ///Assault
 {
+		"name": "Bashi-bazouk",
+		"replaces": "-",
+		//"uniqueTo": "The Caliphate",
+		"unitType": "Assault",
+		"range": 1,
+		"movement": 4,
+		"strength": 33,
+		"rangedStrength": 28,
+		"interceptRange": 1,
+		"cost": 90,
+		"requiredTech": "Redomestication",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Light Cavalry",
+		"uniques": [
+			"Personnel",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"Earn [10]% of the damage done to [All] units as [Gold]",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"No movement cost to pillage",
+			"Can only be built <in cities with a [Stable]>"
+		],
+		"promotions": ["Raider", "Reconnaissance I"],
+		"hurryCostModifier": 20,
+		"attackSound": "-"
+	},
+	{
+		"name": "Hamidiye",
+		"replaces": "Light Cavalry",
+		//"uniqueTo": "The Caliphate",
+		"unitType": "Assault",
+		"range": 1,
+		"movement": 5,
+		"strength": 40,
+		"rangedStrength": 35,
+		"interceptRange": 1,
+		"cost": 155,
+		"requiredTech": "-",
+		"uniques": [
+			"Personnel",
+			"No defensive terrain bonus",
+			"Can move after attacking",
+			"Earn [20]% of the damage done to [All] units as [Gold]",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"No movement cost to pillage",
+			"Can only be built <in cities with a [Stable]>"
+		],
+		"promotions": ["Raider", "Reconnaissance I"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+},
+{
 	"name": "Persian Immortal(Ranged)",
 	"unitType": "Assault",
 	"uniqueTo": "Persia",
@@ -3517,7 +3646,7 @@
 	"strength": 40,
 	"rangedStrength": 50,
 	"cost": 240,
-	"uniques": ["No movement cost to pillage","Invisible to others",
+	//"uniques": ["No movement cost to pillage","Invisible to others",
 		//"Requires [Medieval Faires]"],
 	"attackSound": "shot"
 },
@@ -4158,8 +4287,9 @@
 		"replaces": "Great General",
 		"uniqueTo": "Rome",
 		"unitType": "Civilian",
-		"uniques": ["Can instantly construct a [Outpost] improvement <by consuming this unit>",
-                        "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+		"uniques": [
+			"Can instantly construct a [Outpost] improvement <by consuming this unit>",
+            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
 			"Can undertake a trade mission with City-State, giving a large sum of gold and [45] Influence",
 			"[+15]% Strength bonus for [Military] units within [2] tiles",
 			"Can be earned through combat",

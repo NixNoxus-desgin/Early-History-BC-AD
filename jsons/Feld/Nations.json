@@ -322,6 +322,38 @@
 		"spyNames": ["Abbo", "Acco", "Ariogaisos", "Brennus", "Crixus", "Dumnorix", "Segolatia", "Sirona", "Carantus", "Adietumarus", "Asterix", "Fulliautomatix"],
 		"cities": ["Atuatuca", "Bibrax", "Noviodunum", "Samarobriva", "Durocorteron", "Ratumacos", "Lugdunum", "Augusta Treverorum", "Mediolanum Santonum", "Lutetia", "Narbo Martius", "Burdigala", "Vesontio", "Arelate", "Aginnum", "Agennum", "Aquae Sextiae", "Augustodunum", "Baeterrae", "Bibracte", "Burdigala", "Cabillonum", "Camaracum", "Carantum", "Cenabum", "Condate", "Durocortorum", "Equana", "Etunum", "Evoria", "Gallia Narbonensis", "Gallia Aquitania", "Gallia Belgica", "Gallia Lugdunensis", "Gallia Narbonensis", "Juliobona", "Lindum Colonia", "Lugdunum Batavorum", "Nemetacum", "Noviomagus", "Ratiatum", "Rotomagus", "Samarobriva", "Segusiavi", "Senones", "Somnodorum", "Vienna", "Vindonissa", "Volcae Arecomici", "Volcae Tectosages"]
 	},
+		{
+		"name": "Khazaria",
+		"leaderName": "Bulan Sabriel",
+		"adjective": ["Khazar"],
+		"startBias": ["Grassland"],
+		"personality": "Bulan Sabriel",
+		"preferredVictoryType": "Diplomatic",
+
+		"startIntroPart1": "Bulan Sabriel, Khagan of Khazaria. Founder of the Bulanid dynasty, you are typically seen as the king who led the khazar conversion to Judaism. Oh, Bulan, your people need you once more. Can you strike a balance between trade and expansion? Can you lead your peoples to prosperity once more? Can you build a civilization that will stand the test of time?",
+
+		"declaringWar": "Do not worry, I'll be merciful.",
+		"attacked": "You will never defeat us!",
+		"defeated": "No! My people need me!",
+		"introduction": "I am Bulan, or Sabriel, whichever you may prefer.",
+
+		"neutralHello": "I welcome you!",
+		"hateHello": "I ask you to leave quick.",
+
+		"tradeRequest": "From Asia to Europe, my riches know no bounds!",
+
+		"outerColor": [1,90,186],
+		"innerColor": [243,237,209],
+		"favoredReligion": "Judaism",
+		"uniqueName": "Nomadic Syncretism",
+		"uniques": ["[+25]% Natural religion spread [in all cities]", "Religion naturally spreads to cities [1] tiles away", "May choose [1] additional [Enhancer] beliefs when [enhancing] a religion"],
+		"cities": ["Itil","Sarkel","Samandar","Atil","Balanjar","Semender","Bardha'a","Derbent","Belendzher","Tmutarakan",
+			"Kazarki","Khumar","Kerch","Tanais","Samukh","Baylagan","Shemakha","Kisi","Kondiak","Tamantarkhan",
+			"Bospor","Matrega","Phanagoria","Khalag","Kyzyl-Yar","Bershud","Samar","Saqsin","Aqsu","Shirvan",
+			"Kabala","Terek","Don-Portage","Alania","Sarykamysh","Balasagun","Aqtobe","Kutatisi",
+			"Makhachkala","Kamyshin","Atyrau","Derbend","Mangyshlak","Kostroma","Sukhumi"]
+
+	},
 	{
 		"name": "The Crimean Khanate",
 		"adjective": ["Crimean"],

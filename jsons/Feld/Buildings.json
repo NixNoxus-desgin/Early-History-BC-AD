@@ -1,4 +1,13 @@
 [
+
+
+///Befehle***
+//Gain control over [positiveAmount] tiles [cityFilter]
+//Gain control over [tileFilter] tiles in a [nonNegativeAmount]-tile radius
+//denounced Zitate
+
+
+
 //Sonderverbesserungen
 
 {
@@ -624,6 +633,21 @@
 		"maintenance": 2
 	},
 	{
+        //"name": "Feitoria",
+        "uniqueTo": "Portugal",
+        "replaces": "Harbor",
+        "cost": 100,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Connects trade routes over water",
+            "Must be next to [Coast]",
+            "[+1 Gold] from [Sea Trade Route (Gold)] tiles [in this city]",
+            "[+1 Gold] from [Water resource] tiles [in this city]",
+            "New [Water] units start with [15] XP [in this city]"
+        ],
+        "requiredTech": "Compass"
+    },
+	{
 		"name": "Harbor",
 		"cost": 120,
 		"maintenance": 2,
@@ -1169,6 +1193,39 @@
 	},
 /// Agricultural
     {
+        "name": "Quara U'y",
+        "replaces": "Stable",
+        "uniqueTo": "The Huns",
+        "maintenance": 1,
+        "requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Provides [2] [Horses]",
+            "[+15]% Production when constructing [Mounted] units [in this city]",
+            "[+1 Production] from [Cattle] tiles [in this city]",
+            "[+1 Production, +1 Faith] from [Horses] tiles [in this city]",
+            "[+1 Production] from [Sheep] tiles [in this city]"
+        ],
+        "requiredTech": "Horseback Riding"
+    },
+    {
+        "name": "Khambar",
+        "uniqueTo": "Bulgaria",
+        "replaces": "Granary",
+        "cost": 48,
+        "food": 2,
+        "maintenance": 1,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "[+1 Food] from [Deer] tiles [in this city]",
+            "[+1 Food] from [Bison] tiles [in this city]",
+            "[+1 Food] from [Bananas] tiles [in this city]",
+            "[+1 Food, +1 Gold] from [Wheat] tiles [in this city]",
+            "[+1 Food, +1 Gold] from [Maize] tiles [in this city]"
+        ],
+        "requiredTech": "Pottery"
+    },
+    {
 		"name": "Izba",
        	"uniqueTo": "Kievan Rus",
 	    "replaces": "Granary",
@@ -1694,6 +1751,15 @@
 		"requiredTech": "Horseback Riding"
 	},
 /// light industry
+    {
+		"name": "Houri Brothel",
+		"replaces": "Distillery",
+		//"uniqueTo": "The Caliphate",
+		"happiness": 2,
+		"maintenance": 1,
+		"uniques": ["Provides [2] [Slaves]", "[+10]% growth [in this city]"],
+		"requiredTech": "Construction"
+	},
     {
 		"name": "Distillery",
 	    "replaces": "Windmill",
@@ -2582,6 +2648,118 @@
 	},
 ///governmental
     {
+        "name": "Outremer",
+        "uniqueTo": "Jerusalem",
+        "replaces": "Courthouse",
+        "culture": 2,
+        "faith": 2,
+        "happiness": 2,
+        "hurryCostModifier": 50,
+        "uniques": [
+            "Removes extra unhappiness from annexed cities",
+            "Can only be built <in [Annexed] cities>"
+        ],
+        "requiredTech": "Mathematics"
+    },
+    {
+        "name": "Orszaggyules",
+        "uniqueTo": "Hungary",
+        "replaces": "Palace",
+        "isNationalWonder": false,
+        "cost": 100,
+        "production": 3,
+        "science": 3,
+        "gold": 3,
+        "culture": 1,
+        "cityStrength": 2,
+        "requiredTech": "Mathematics",
+        "uniques": [
+            "Indicates the capital city",
+            "[+25]% Great Person generation [in this city]",
+            "[+10]% Production when constructing [All] buildings [in this city]",
+            "Limited to [2] per Civilization"
+        ]
+    },
+    {
+		"name": "Sejmik",
+		"replaces": "Town Hall",
+		//"uniqueTo": "Nowa Polska",
+		"culture": 2,
+		"specialistSlots": {"Administrator": 1},
+		"maintenance": 1,
+		"uniques": [
+			"[-25]% Culture cost of natural border growth [in this city]",
+			"[-25]% Gold cost of acquiring tiles [in this city]",
+			"[+1 Happiness] [in this city] <for every [Completed Policy branches]>"
+		],
+		"hurryCostModifier": 25,
+		"requiredTech": "Civil Service"
+	},
+    {
+		"name": "Sejm",
+		"replaces": "Congress",
+		//"uniqueTo": "Nowa Polska",
+		"cost": 100,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+1 Culture] per [4] population [in all cities]",
+			"[-5]% Unhappiness from [Population] [in all cities]",
+			"[+1 Gold] from all [{non-[Wonder]} {Gold}] buildings",
+			"Only available <if [Search for Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Rada Ocalenia]>",
+			"Destroyed when the city is captured"
+		]
+	},
+    {
+		"name": "Rada Ocalenia",
+		"replaces": "Council",
+		//"uniqueTo": "Nowa Polska",
+		"cost": 100,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+10]% growth [in all cities]",
+			"[+5]% Production when constructing [All] buildings [in all cities connected to capital]",
+			"[+30]% Strength decreasing with distance from the capital",
+			"Only available <if [Search for Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Sejm]>",
+			"Destroyed when the city is captured"
+		]
+	},
+    {
+		"name": "Consultative Assembly",
+		"replaces": "Congress",
+		"uniqueTo": "The Caliphate",
+		"cost": 100,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+1 Production, +1 Faith] per [4] population [in all cities]",
+			"[-10]% Unhappiness from [Followers of the Majority Religion] [in cities following our religion]",
+			"Only available <if [Revert Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Allegiance Council]>",
+			"Destroyed when the city is captured"
+		]
+	},
+    {
+		"name": "Allegiance Council",
+		"replaces": "Council",
+		"uniqueTo": "The Caliphate",
+		"cost": 100,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+10]% growth [in all cities]",
+			"[+10]% Production when constructing [Military] units [in all cities]",
+			"May buy [Enslaved] units with [Faith] for [2] times their normal Production cost",
+			"May buy [Mounted Ranged] units with [Faith] for [2] times their normal Production cost",
+			"Only available <if [Revert Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Consultative Assembly]>",
+			"Destroyed when the city is captured"
+		]
+	},
+    {
 		"name": "Alan Courthouse",
 	    "replaces": "Courthouse",
 	    "uniqueTo": "The Vandals",
@@ -3254,6 +3432,47 @@
 		"requiredTech": "Theology"
 	},
 ///cultural
+{
+        "name": "Ceilidh Hall",
+        "replaces": "Opera House",
+        "uniqueTo": "Scotland",
+        "culture": 3,
+        "happiness": 3,
+        "hurryCostModifier": 10,
+        "requiredBuilding": "Amphitheater",
+        "maintenance": 2,
+        "requiredTech": "Acoustics",
+        "uniques": [
+            "Destroyed when the city is captured",
+            "Comment [Has 1 Great Work of Music Slot]"
+        ]
+},
+{
+        "name": "Mead Hall",
+        "replaces": "Colosseum",
+        "uniqueTo": "Franks",
+        "cost": 75,
+        "happiness": 3,
+        "culture": 1,
+        "hurryCostModifier": 25,
+        "requiredTech": "Construction"
+},
+{
+		"name": "Burj al-Shuhada",
+		"uniqueTo": "-",
+		"isWonder": true,
+		"culture": 1,
+		"cost": 0,
+		"uniques": [
+			"[4] units cost no maintenance",
+			"[+4] Unit Supply",
+			"Free [Mutawa] appears",
+			"Automatically built in all cities where it is buildable",
+			"Can only be built <in [Capital] cities>",
+			"Gain a free [Food Store] [in this city]"
+		],
+		//"quote": "'We must stick together and hold our peace until the time comes. You can't see anything yet, but everything is being prepared in secret. You must hold yourself in readiness for the right moment.' - Pre-Cataclysm sermon in Bavaria"
+	},
     {
 		"name": "Stecak",
 	    "uniqueTo": "Bosnia",
@@ -3947,6 +4166,34 @@
 	},
 ///religion
     {
+        "name": "Grand Cathedral of Vilnius",
+        "replaces": "Grand Temple",
+        "uniqueTo": "Lithuania",
+        "cost": 95,
+        "culture": 1,
+        "faith": 8,
+        "uniques": [
+            "Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+            "Cost increases by [30] per owned city",
+            "Only available <when religion is enabled>"
+        ],
+        "requiredTech": "Theology",
+        "isNationalWonder": true
+    },
+    {
+		"name": "Musalla",
+		"replaces": "Shrine",
+		//"uniqueTo": "The Caliphate",
+		"production": 1,
+		"faith": 1,
+		"cost": 40,
+		//"requiredTech": "Secrets of the Past",
+		"uniques": [
+			"Only available <when religion is enabled>",
+			//"[+1 Production] [in this city] <when above [0] [Power]>"
+		]
+	},
+    {
 		"name": "Enclos Paroissial", //Umfriedeter Pfarrbezirk
 	    "uniqueTo": "France",
 	    "culture": 2,
@@ -4045,8 +4292,11 @@
 		"faith": 8,
 		"cityStrength": 5,
 		"cityHealth": 50,
-		"uniques": ["Empire enters golden age","Doubles Gold given to enemy if city is captured","Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
-				"[+100]% Natural religion spread [in this city]","Only available <when religion is enabled>","Can only be built <in [in holy cities] cities>"],
+		"uniques": [
+			"Empire enters golden age","Doubles Gold given to enemy if city is captured","Only available <if [Synagogue] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
+		    "Gain [75] [Faith] <upon expending a [Great Person] unit>","Gain [75] [Science] <upon expending a [Great Person] unit>",
+			"[+100]% Natural religion spread [in this city]","Only available <when religion is enabled>","Can only be built <in [in holy cities] cities>"
+		],
 		"requiredTech": "Theology",
 		"isNationalWonder": true
 	},
@@ -4638,6 +4888,21 @@
 
 ///education
     {
+        "name": "Darbas",
+        "replaces": "Observatory",
+        "uniqueTo": "Armenia",
+        "maintenance": 1,
+        "science": 4,
+        "culture": 4,
+        "hurryCostModifier": 15,
+        "requiredBuilding": "Library",
+        "uniques": [
+            "[+5 Science, +2 Culture] from [Mountain] tiles [in this city]",
+            "[+1 Science] from [Tundra] tiles [in this city]"
+        ],
+        "requiredTech": "Astronomy"
+    },
+    {
 		"name": "Medrese",
 	    "replaces": "University",
 	    "uniqueTo": "Seljuk",
@@ -4951,6 +5216,19 @@
 		"requiredTech": "Iron Working"
 	},
 	{
+		///"name": "College of Theology",
+        "cost": 180,
+        "hurryCostModifier": 180,
+		"faith": 4,
+        "science": 4,
+        "maintenance": 6,
+        "requiredTech": "Theology",
+        "specialistSlots": {
+        "Philosopher": 2
+	 },
+       "uniques": ["Hidden when religion is disabled"]
+    },
+	{
 		"name": "College of Rhetoric",
 		"replaces": "University",
 		"uniqueTo": "Rome",
@@ -5263,6 +5541,20 @@
 		"uniques": ["Destroyed when the city is captured", "New [Mounted] units start with [15] Experience [in this city]"],
 		"requiredTech": "Drama and Poetry"
 	},
+	{
+        //"name": "Odeon",
+        "replaces": "Amphitheater",
+        "uniqueTo": "Greece",
+        "culture": 4,
+        "gold": 1,
+        "specialistSlots": {"Writer": 1},
+        "requiredBuilding": "Monument",
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Drama and Poetry"
+    },
     {
         "name": "Amphitheater",
 		"percentStatBonus": {"Gold": 10},
@@ -5374,6 +5666,22 @@
 		"requiredTech": "Steam Power"
 	},
 ///barrack
+    {
+		"name": "Amsar",
+		"replaces": "Barracks",
+		//"uniqueTo": "The Caliphate",
+		"cityStrength": 2,
+		"cityHealth": 20,
+		"faith": 1,
+		"cost": 50,
+		"hurryCostMultiplier": 25,
+		"maintenance": 1,
+		"uniques": [
+			"New [Military] units start with [15] XP [in this city]",
+			//"Provides [1] [Slaves]",
+			"Destroyed when the city is captured"
+		]
+	},
     {
 		"name": "Sapitu",
 	    "replaces": "Barracks",
@@ -5696,6 +6004,25 @@
 	},
 
 ///defence
+{
+		"name": "Zamość Fortress",
+		"isWonder": true,
+		"uniqueTo": "Polen",
+		"culture": 1,
+		"production": 1,
+		"cityStrength": 5,
+		"cityHealth": 60,
+		"cost": 0,
+		"uniques": [
+			"[+2] Unit Supply per city",
+			//"Provides [2] [Weapons]",
+			"[2] free [Kosynier] units appear",
+			"Automatically built in all cities where it is buildable",
+			"Can only be built <in [Capital] cities>",
+			//"Gain a free [Food Store] [in this city]",
+			"Gain a free [Stadnina Koni] [in this city]"
+		]
+	},
 	{
 		"name": "Nuraghe",
 		"replaces": "Walls",
@@ -6013,6 +6340,62 @@
 	},
 
 ///economy
+{
+    "name": "Yam Route",
+    "replaces": "Caravansary",
+    "uniqueTo": "Golden Horde",
+    "cost": 100,
+    "hurryCostModifier": 25,
+    "science": 3,
+    "uniques": ["[+2 Gold] from [Land Trade Route (Gold)] tiles [in this city]"],
+    "requiredTech": "The Wheel"
+},
+{
+		"name": "Esir",
+		"replaces": "Town Hall",
+		"uniqueTo": "-",
+		"percentStatBonus": {"food": 10},
+		"specialistSlots": {"Administrator": 1},
+		"culture": 1,
+		"happiness": 1,
+		"uniques": [
+			"[+50]% Production when constructing [Worker] units [in this city]",
+			"[+2 Production] [in this city] <when above [0] [Slaves]>",
+			"Only available <with [Slaves]>",
+			"Consumes [1] [Slaves]"
+		],
+		"requiredTech": "Trade"
+	},
+    {
+		"name": "Exotic Bazaar",
+		"replaces": "-",
+		"uniqueTo": "The Caliphate",
+		"percentageStatBonus": {"gold": 10},
+		"cost": 150,
+		"isNationalWonder": true,
+		"uniques": [
+			"Provides 1 extra copy of each improved luxury resource near this City",
+			"Provides [4] [Slaves]",
+			"Comment [+1 Water from all non-wonder buildings that provide Slaves]",
+			"[+1 Gold] from every [Prison Camp] <hidden from users>",
+			"[+1 Gold] from every [Amsar] <hidden from users>",
+			"[+1 Gold] from every [Houri Brothel] <hidden from users>",
+			"Only available <if [Esir] is constructed in at least [4] of [Your] cities>",
+			"Cost increases by [30] per owned city"
+		],
+		"requiredTech": "Currency"
+	},
+    {
+		"name": "Khazar Marketplace",
+		"uniqueTo": "Khazaria",
+		"replaces": "Market",
+		"gold": 3,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"gold": 25},
+		"uniques": ["[+2]% [Gold] from Trade Routes"],
+		"requiredTech": "Currency"
+	}
     {
 		"name": "Suq",
 		"replaces": "Bank",
@@ -6403,7 +6786,8 @@
 		"culture": 2,
 		"happiness": 1,
 		"cost": 0,
-		"uniques": ["[+6 Culture] [in this city] <after discovering [Flight]>",
+		"uniques": [
+			"[+6 Culture] [in this city] <after discovering [Flight]>",
 			"[+10]% Production when constructing [All] units [in this city]",
 			"[2] free [Knight] units appear",
 			"Automatically built in all cities where it is buildable",
