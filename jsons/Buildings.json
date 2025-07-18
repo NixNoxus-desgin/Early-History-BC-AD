@@ -690,7 +690,7 @@
 		"uniques": [
 			"'Agricultural Building'",
 			"[+1 Food] from [Fresh water] tiles [in this city]",
-			"Must be on [River]",
+			"[+1 Food] from [River] tiles [in this city]",
 			"Only available <in cities without a [Irrigation System]>",
 			"Only available <in cities without a [Agricultural Water Storage]>"
 		],
@@ -1333,7 +1333,7 @@
 		"name": "Bathhouse",
 		"maintenance": 3,
 		"culture": 1,
-		"happiness":1,
+		"happiness":2,
 		"uniques": [
 			"'Infrastructure'",
 			"[10]% Food is carried over after population increases [in this city]"
@@ -1911,6 +1911,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[+1 Food] from [Fresh water] tiles [in this city]",
+			"[+1 Food] from [River] tiles [in this city]",
 			"Only available <in cities without a [Early Irrigation System]>",
 			"Only available <in cities without a [Agricultural Water Storage]>"
 		],
@@ -4473,6 +4474,7 @@
 		"uniques": [
 			"'Infrastructure'",
 			"[+1 Culture] from [Fresh water] tiles [in this city]",
+			"[+1 Culture] from [River] tiles [in this city]",
 			"[20]% Food is carried over after population increases [in this city]"
 		],
 		"requiredBuilding": "Sewer",
@@ -4939,17 +4941,17 @@
 			"[+25]% Production when constructing [All] buildings [in this city]",
 			"[+25]% Production when constructing [{Civilian} {Civil Ship}] units [in this city]",
 			"Provides [1] [Artifact] <in this city> <after discovering [Archaeology]>",
-			"Gain a free [Neolithic Era Start] [in this city] <for [1] turns> <if starting in the [Neolithic era]> <hidden from users>",
-			"Gain a free [Ancient Era Start] [in this city] <for [1] turns> <if starting in the [Ancient era]> <hidden from users>",
-			"Gain a free [Classical Era Start] [in this city] <for [1] turns> <if starting in the [Classical era]> <hidden from users>",
-			"Gain a free [Medieval Era Start] [in this city] <for [1] turns> <if starting in the [Medieval era]> <hidden from users>",
-			"Gain a free [Renaissance Era Start] [in this city] <for [1] turns> <if starting in the [Renaissance era]> <hidden from users>",
-			"Gain a free [Imperial Era Start] [in this city] <for [1] turns> <if starting in the [Imperial era]> <hidden from users>",
-			"Gain a free [Industrial Era Start] [in this city] <for [1] turns> <if starting in the [Industrial era]> <hidden from users>",
-			"Gain a free [Modern Era Start] [in this city] <for [1] turns> <if starting in the [Modern era]> <hidden from users>",
-			"Gain a free [Atomic Era Start] [in this city] <for [1] turns> <if starting in the [Atomic era]> <hidden from users>",
-			"Gain a free [Information Era Start] [in this city] <for [1] turns> <if starting in the [Information era]> <hidden from users>",
-			"Gain a free [Future Era Start] [in this city] <for [1] turns> <if starting in the [Future era]> <hidden from users>",
+			"Gain a free [Neolithic Era Start] [in capital] <for [1] turns> <if starting in the [Neolithic era]> <hidden from users>",
+			"Gain a free [Ancient Era Start] [in capital] <for [1] turns> <if starting in the [Ancient era]> <hidden from users>",
+			"Gain a free [Classical Era Start] [in capital] <for [1] turns> <if starting in the [Classical era]> <hidden from users>",
+			"Gain a free [Medieval Era Start] [in capital] <for [1] turns> <if starting in the [Medieval era]> <hidden from users>",
+			"Gain a free [Renaissance Era Start] [in capital] <for [1] turns> <if starting in the [Renaissance era]> <hidden from users>",
+			"Gain a free [Imperial Era Start] [in capital] <for [1] turns> <if starting in the [Imperial era]> <hidden from users>",
+			"Gain a free [Industrial Era Start] [in capital] <for [1] turns> <if starting in the [Industrial era]> <hidden from users>",
+			"Gain a free [Modern Era Start] [in capital] <for [1] turns> <if starting in the [Modern era]> <hidden from users>",
+			"Gain a free [Atomic Era Start] [in capital] <for [1] turns> <if starting in the [Atomic era]> <hidden from users>",
+			"Gain a free [Information Era Start] [in capital] <for [1] turns> <if starting in the [Information era]> <hidden from users>",
+			"Gain a free [Future Era Start] [in capital] <for [1] turns> <if starting in the [Future era]> <hidden from users>",
 
 			"Consumes [1] [Influence] <when below [10] [Happiness]> <starting from the [Imperial era]>",
         	"Consumes [1] [Influence] <when below [4] [Happiness]>",
@@ -5786,7 +5788,6 @@
 			"Unbuildable",
 			"Unsellable",
 			"'Outcome'",
-			"Consumes [2] [Revolution Oppotunity]",
 			"Provides [2] [Noble Army Maintainance]",
 			"Provides [2] [Horse]",
 			"[+33]% Strength <for ['Noble Army'] units>",
@@ -5801,7 +5802,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [1] [Standing Army Maintainance]",
 			"[-25]% [Culture] [in all cities] <for [15] turns>",
@@ -5818,7 +5818,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [2] [Standing Army Maintainance]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
@@ -5839,7 +5838,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Standing Army Maintainance]",
 			"[Revolutionaries] units gain the [Hardened] promotion",
@@ -5860,7 +5858,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Mercenary Contract]",
 			"[+15]% Strength <for ['Mercenary Army'] units>",
@@ -5876,7 +5873,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [1] [Standing Army Maintainance]",
 			"[+8]% [Happiness] [in all cities]",
@@ -5891,7 +5887,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Standing Army Maintainance]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
@@ -5913,7 +5908,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [5] [Standing Army Maintainance]",
 			"[Red Army Troop] units gain the [Hardened] promotion",
@@ -5936,7 +5930,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Provides [3] [Mercenary Contract]",
 			"[+15]% Strength <for ['Mercenary Army'] units>",
@@ -5951,7 +5944,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes"
@@ -5964,7 +5956,6 @@
 		"uniques": [
 			"Unbuildable",
 			"Unsellable",
-			"Consumes [1] [Revolution Oppotunity]",
 			"'Outcome'",
 			"[+8]% [Happiness] [in all cities]",
 			"Triggers a global alert upon completion",
@@ -6977,7 +6968,7 @@
 			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 			"Provides [4] [Standing Army Maintainance]",
 			"[Gold] cost of purchasing [Civilian] units [-17]%",
-			"May buy [Great Engineer] units with [Gold] [in all cities]",
+			"May buy [Great Engineer] units for [1000] [Gold] [in all cities] at an increasing price ([500])",
 			"Comment [Unique Unit: [State Millitia Musketeer] and [State Millitia Rifleman], which are garrison units..]",
 			"Comment [Cannot Enter [Harmony] State.]",
 			"Triggers a global alert upon completion",
@@ -7308,18 +7299,17 @@
 	{
 		"name": "Overproduction",
 		"cost":50,
-		"percentStatBonus":{
-			"food":5,
-			"happiness":10,
-			"gold":-20
-		},
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[-50]% Production when constructing ['Light Industry'] buildings [in this city]",
-			"[-50]% Production when constructing ['Heavy Industry'] buildings [in this city]",
-			"[-25]% Production when constructing ['Infrastructure'] buildings [in this city]",
+			"[+5]% [Food] [in all cities]",
+			"[+5]% [Happiness] [in all cities]",
+			"[+20]% [Gold] [in all cities]",
+			"[-20]% [Gold] [in all cities]",
+			"[-50]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[-50]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[-25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[Gold] cost of purchasing items in cities [-15]%"
 		],
 		"hurryCostModifier": -50
@@ -7327,18 +7317,16 @@
 	{
 		"name": "Underproduction",
 		"cost":50,
-		"percentStatBonus":{
-			"food":-10,
-			"happiness":-5,
-			"gold":20
-			},
 		"uniques": [
 			"Unavailable",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[+50]% Production when constructing ['Light Industry'] buildings [in this city]",
-			"[+25]% Production when constructing ['Heavy Industry'] buildings [in this city]",
-			"[+25]% Production when constructing ['Infrastructure'] buildings [in this city]",
+			"[-10]% [Food] [in all cities]",
+			"[-10]% [Happiness] [in all cities]",
+			"[+20]% [Gold] [in all cities]",
+			"[+50]% Production when constructing ['Light Industry'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Heavy Industry'] buildings [in all cities]",
+			"[+25]% Production when constructing ['Infrastructure'] buildings [in all cities]",
 			"[Gold] cost of purchasing items in cities [+10]%"
 		],
 		"hurryCostModifier": -50
