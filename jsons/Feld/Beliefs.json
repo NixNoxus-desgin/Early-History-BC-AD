@@ -114,6 +114,11 @@
 
     ///Common Bonus
     {
+        "name": "Choral Music",
+        "type": "Follower",
+        "uniques": ["[+1 Culture] from all [Faith] buildings"]
+    },
+    {
 		"name": "Labor of Love",
 		"type": "Follower",
 		"uniques": ["[+1]% [Production] from every follower, up to [15]%"]
@@ -235,6 +240,13 @@
     },
     ////////////////////////////////////// Enhancer beliefs ///////////////////////////////////////
     {
+        "name": "Religious Expeditions",
+        "type": "Enhancer",
+        "uniques": ["Comment [+1 Movement and Sight for religious units]", "Comment [Missionaries take your religion over the one in their birth city]",
+                    "[+1] Movement <for [Religious Unit] units> <hidden from users>", "[+1] Sight <for [Religious Unit] units> <hidden from users>", 
+                    "[+1 Culture] for each global city following this religion <for [Byzantium] Civilizations> <hidden from users>"]
+    },
+    {
         "name": "Interfaith Dialogue",
         "type": "Enhancer",
         "uniques": ["When spreading religion to a city, gain [10] times the amount of followers of other religions as [Science]",
@@ -244,12 +256,19 @@
     {
         "name": "Pilgrimage",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Meissiah Worship]>","Only available <before adopting [Papal Primacy]>","Comment [Enables you to buy Mosque and House of God, Mosque is a Organise Place that gives faith bonus to Holy city.House of God is a wonder that gives huge stats]","May buy [Mosque] buildings with [Faith] [in cities following this religion]","[+2 Faith] for each global city following this religion"]
+        "uniques": [
+            "Only available <after adopting [Meissiah Worship]>","Only available <before adopting [Papal Primacy]>",
+            "Comment [Enables you to buy Mosque and House of God, Mosque is a Organise Place that gives faith bonus to Holy city.House of God is a wonder that gives huge stats]",
+            "May buy [Mosque] buildings with [Faith] [in cities following this religion]","[+2 Faith] for each global city following this religion"]
     },
     {
         "name": "Papal Primacy",
         "type": "Enhancer",
-        "uniques": ["Only available <after adopting [Meissiah Worship]>","Only available <before adopting [Pilgrimage]>","Comment [Enables you to buy Cathedral and Holy See, Cathedral is a Organise Place that gives 1 Artist Slot.Holy See is a wonder that gives Governor Slot and huge stats]","May buy [Cathedral] buildings with [Faith] [in cities following this religion]","Resting point for Influence with City-States following this religion [+15]"]
+        "uniques": [
+            "Only available <after adopting [Meissiah Worship]>","Only available <before adopting [Pilgrimage]>",
+            "Comment [Enables you to buy Cathedral and Holy See, Cathedral is a Organise Place that gives 1 Artist Slot.Holy See is a wonder that gives Governor Slot and huge stats]",
+            "May buy [Cathedral] buildings with [Faith] [in cities following this religion]","Resting point for Influence with City-States following this religion [+15]",
+            "[+1 Culture] for each global city following this religion <for [Byzantium] Civilizations> <hidden from users>"]
     },
     {
         "name": "Order of the Faith",
@@ -854,6 +873,19 @@
         "uniques": ["[+10]% [Food] [in this city] <when not at war>"]
     },
     {
+        "name": "Religious Teetotality",
+        "type": "Follower",
+        "uniques": [
+            "Comment [+5% [Faith] in this city for every Alcohol Luxury type you don't own]",
+            "[+5]% [Faith] [in this city] <without [Beer]> <hidden from users>",
+            "[+5]% [Faith] [in this city] <without [Wine]> <hidden from users>",
+            "[+5]% [Faith] [in this city] <without [Rum]> <hidden from users>",
+            "[+5]% [Faith] [in this city] <without [Whisky]> <hidden from users>",
+            "[+5]% [Faith] [in this city] <without [Vodka]> <hidden from users>",
+            "[+5]% [Faith] [in this city] <without [Cognac]> <hidden from users>"
+        ]
+    },
+    {
         "name": "Divine Spark",
         "type": "Follower",
         "uniques": ["[+33]% Great Person generation [in this city]"]
@@ -889,9 +921,29 @@
         "uniques": ["[+3 Culture] from every [Painted Monastery]"]         
     },      
     {
+        "name": "Divine Leadership",
+        "type": "Founder",
+        "uniques": [
+            "[+1 Happiness, +1 Gold] from every [2] global followers [in capital]", 
+            "[+1 Culture] for each global city following this religion <for [Byzantium] Civilizations> <hidden from users>"
+        ]
+    },
+    {
         "name": "Church Property",
         "type": "Founder",
-        "uniques": ["[+2 Gold] for each global city following this religion"]
+        "uniques": [
+            "[+2 Gold] for each global city following this religion",
+            "[+1 Culture] for each global city following this religion <for [Byzantium] Civilizations> <hidden from users>"
+              ///An jeder Religösen Stätte/Politik Abhängig///"[+2 Gold][in all cities]"///
+        ]
+    },
+    {
+        "name": "Lay Ministry",
+        "type": "Founder",
+        "uniques": [
+            "[+1 Culture, +1 Science, +1 Faith] for each global city following this religion", 
+            "[+1 Culture] for each global city following this religion <for [Byzantium] Civilizations> <hidden from users>"
+        ]
     },
     {
         "name": "Holy Patronage",
@@ -1399,17 +1451,38 @@
                 "[+1 Faith] from every [10] global followers [in all cities]",
                 "May buy [Missionary] units with [Faith] [in cities following this religion]"
                 ]
-  },
-  {
-     "name": "The Grand Pantheon",
-     "type": "Pantheon",
-     "uniques": [
-                "Gain a free [All Are Welcome] [in cities following this religion]",
-                "[+2 Faith] for each global city following this religion",
-                "[+25]% Spread Religion Strength"
-                ]
-  },
-  {
+},
+{
+    "name": "Eleusinian Mysteries",
+    "type": "Pantheon",
+    "uniques": [
+        "Comment [+1 [Food] from every [Wheat], [Grape], [Poppy]]", "[+1 Food] from every [Wheat] <hidden from users>", "[+1 Food] from every [Grape] <hidden from users>", "[+1 Food] from every [Poppy] <hidden from users>"
+    ]
+},
+{
+    "name": "Nature Shamans",
+    "type": "Pantheon",
+    "uniques": [
+        "[+1 Faith] from every [Rare feature]"
+    ]
+},
+{
+    "name": "Promised Frontiers",
+    "type": "Pantheon",
+    "uniques": [
+        "[-25]% Culture cost of natural border growth [in this city]"
+    ]
+},
+{
+    "name": "The Grand Pantheon",
+    "type": "Pantheon",
+    "uniques": [
+        "Gain a free [All Are Welcome] [in cities following this religion]",
+        "[+2 Faith] for each global city following this religion",
+        "[+25]% Spread Religion Strength"
+    ]
+},
+{
      "name": "World Church",
      "type": "Founder",
      "uniques": [
@@ -1674,8 +1747,8 @@
                  "May buy [Hunting Rites] buildings for [10] [Faith] [in cities following this religion] at an increasing price ([5])",
                  "[Faith] cost of purchasing [{Ranged} {Land}] units [-10]%"
                 ]
-  },
-  {
+},
+{
      "name": "Ritual Burial",
      "type": "Enhancer",
      "uniques": [
@@ -1684,48 +1757,55 @@
                 "May buy [Burial Ground] buildings for [50] [Faith] [in cities following this religion] at an increasing price ([25])",
                 "[+1 Happiness] from every [Basic Religion] <in cities with a [Burial Ground]>"//again an effect that's getting moved so it works as intended (hopefully)
                 ]
-  },
-  {
-     "name": "Global Church",
-     "type": "Enhancer",
-     "uniques": [
-                "[+1 Culture] for each global city following this religion",
-                "May buy [Central Temple] buildings for [800] [Faith] [in holy cities]",
-                "[+1 Culture] from every [Basic Religion] <in cities with a [Seminary]>"
-                ]
-  },
-  {
-     "name": "Tithe",
-     "type": "Enhancer",
-     "uniques": [
-                "[+1 Gold] for each global city following this religion",
-                "May buy [Church Treasury] buildings for [800] [Faith] [in holy cities]",
-                "May buy [Blessed Market] buildings for [50] [Faith] [in cities following this religion] at an increasing price ([25])",
-                "[+1 Gold] from every [Basic Religion] <in cities with a [Blessed Market]>"
-                ]
-  },
-  {
-     "name": "Pilgrimage",
-     "type": "Enhancer",
-     "uniques": [
-                "[+1 Faith] for each global city following this religion",
-                "May buy [Humble Church] buildings for [100] [Faith] [in cities following this religion]",
-                "May buy [Storied Temple] buildings for [200] [Faith] [in cities following this religion]",
-                "May buy [Sacred Grave] buildings for [400] [Faith] [in cities following this religion]",
-                "May buy [Grand Idol] buildings for [800] [Faith] [in cities following this religion]"
-                ]
-  },
-  {
-     "name": "Balance",
-     "type": "Enhancer",
-     "uniques": [
-                "[+1 Science] for each global city following this religion",
-                "May buy [Temple Complex] buildings for [800] [Faith] [in holy cities]",
-                "May buy [Temple of Contemplation] buildings for [50] [Faith] [in cities following this religion] at an increasing price ([25])",
-                "[+1 Science] from every [Basic Religion] <in cities with a [Temple of Contemplation]>"
-                ]
-  },
-  {
+},
+{
+    "name": "Sacred Landmarks",
+    "type": "Enhancer",
+    "uniques": [
+        "[+1 Faith] from every [Land] <within [1] tiles of a [Great Improvement]>", "[-1 Faith] from every [Great Improvement] <hidden from users>"
+    ]
+},
+{
+    "name": "Global Church",
+    "type": "Enhancer",
+    "uniques": [
+        "[+1 Culture] for each global city following this religion",
+        "May buy [Central Temple] buildings for [800] [Faith] [in holy cities]",
+        "[+1 Culture] from every [Basic Religion] <in cities with a [Seminary]>"
+    ]
+},
+{
+    "name": "Tithe",
+    "type": "Enhancer",
+    "uniques": [
+        "[+1 Gold] for each global city following this religion",
+        "May buy [Church Treasury] buildings for [800] [Faith] [in holy cities]",
+        "May buy [Blessed Market] buildings for [50] [Faith] [in cities following this religion] at an increasing price ([25])",
+        "[+1 Gold] from every [Basic Religion] <in cities with a [Blessed Market]>"
+    ]
+},
+{
+    "name": "Pilgrimage",
+    "type": "Enhancer",
+    "uniques": [
+        "[+1 Faith] for each global city following this religion",
+        "May buy [Humble Church] buildings for [100] [Faith] [in cities following this religion]",
+        "May buy [Storied Temple] buildings for [200] [Faith] [in cities following this religion]",
+        "May buy [Sacred Grave] buildings for [400] [Faith] [in cities following this religion]",
+        "May buy [Grand Idol] buildings for [800] [Faith] [in cities following this religion]"
+    ]
+},
+{
+    "name": "Balance",
+    "type": "Enhancer",
+    "uniques": [
+        "[+1 Science] for each global city following this religion",
+        "May buy [Temple Complex] buildings for [800] [Faith] [in holy cities]",
+        "May buy [Temple of Contemplation] buildings for [50] [Faith] [in cities following this religion] at an increasing price ([25])",
+        "[+1 Science] from every [Basic Religion] <in cities with a [Temple of Contemplation]>"
+    ]
+},
+{
      "name": "Dedication Ceremonies",
      "type": "Enhancer",
      "uniques": [
@@ -2137,11 +2217,6 @@
                    "May buy [Grand Mausoleum] buildings for [2000] [Faith] [in cities following this religion]",
                    "May buy [Grand Crypt] buildings for [1000] [Faith] [in cities following this religion]"
                    ]
-    },
-    {
-        "name": "Church Property",
-        "type": "Founder",
-        "uniques": ["[+2 Gold] for each global city following this religion"]
     },
     {
         "name": "World Church",

@@ -538,6 +538,83 @@
 		"attackSound": "shot"
 	},
 ///RC
+    {
+        "name": "Carolean",
+        "replaces": "Musketman",
+        "uniqueTo": "Sweden",
+        "unitType": "Ranged Combat",
+        "movement": 2,
+        "strength": 24,
+        "cost": 150,
+        "requiredTech": "Gunpowder",
+        "promotions": ["March", "Extra Movement"],
+       // "upgradesTo": "Rifleman",
+       //"obsoleteTech": "Rifling",
+        "attackSound": "shot"
+    },
+    {
+        "name": "Saethwyr",
+        "uniqueTo": "Wales",
+        "replaces": "Crossbowman",
+        "unitType": "Ranged Combat",
+        "movement": 2,
+        "strength": 15,
+        "rangedStrength": 18,
+        "cost": 120,
+       // "requiredTech": "Machinery",
+       // "obsoleteTech": "Industrialization",
+        "attackSound": "crossbow"
+    },
+    {
+        "name": "Camel Archer",
+        "unitType": "Ranged Combat",
+        "replaces": "Knight",
+        "uniqueTo": "Arabia",
+        "movement": 4,
+        "strength": 14,
+        "rangedStrength": 20,
+        "cost": 120,
+        "requiredTech": "Chivalry",
+        "requiredResource": "Horse",
+        "upgradesTo": "Cavalry",
+        "obsoleteTech": "Military Science",
+        "uniques": [
+            "Can move after attacking",
+            "No defensive terrain bonus"
+        ],
+        "attackSound": "arrow"
+    },
+    {
+        "name": "Chariot Archer",
+        "unitType": "Ranged Combat",
+        "movement": 4,
+        "strength": 6,
+        "rangedStrength": 10,
+        "cost": 56,
+        "requiredTech": "The Wheel",
+        "requiredResource": "Horse",
+        "upgradesTo": "Knight",
+        "obsoleteTech": "Chivalry",
+        "uniques": [
+            "No defensive terrain bonus",
+            "Rough terrain penalty"
+        ],
+        "attackSound": "arrow"
+    },
+    {
+        "name": "Bowman",
+        "replaces": "Archer",
+        "uniqueTo": "Babylon",
+        "unitType": "Ranged Combat",
+        "movement": 2,
+        "strength": 7,
+        "rangedStrength": 9,
+        "cost": 40,
+        "requiredTech": "Archery",
+        "obsoleteTech": "Construction",
+        "upgradesTo": "Composite Bowman",
+        "attackSound": "arrow"
+    },
 {
 	"name": "Highlander",
 	//"unitType": "Ranged Combat",
@@ -1259,6 +1336,129 @@
 	},
 
 ///CC
+    {
+        "name": "Koa",
+        "replaces": "Longswordsman",
+        "uniqueTo": "Polynesia",
+        "unitType": "Close Combat",
+        "movement": 2,
+        "strength": 23,
+        "cost": 120,
+        "requiredTech": "Steel",
+        "promotions": ["Amphibious"],
+        //"upgradesTo": "Musketman",
+        //"obsoleteTech": "Rifling",
+        "attackSound": "metalhit"
+    },
+    {
+        "name": "Pedite",
+        "replaces": "Longswordsman",
+        "uniqueTo": "Normandy",
+        "unitType": "Close Combat",
+        "movement": 2,
+        "strength": 20,
+        "cost": 115,
+        "requiredTech": "Metal Casting",
+        "upgradesTo": "Musketman",
+        "obsoleteTech": "Gunpowder",
+        "requiredResource": "Iron",
+        "promotions": ["Shock I"],
+        "uniques": ["Can build [Motte and Bailey] improvements on tiles"],
+        "attackSound": "metalhit"
+    },
+    {
+        "name": "Crusader",
+        "replaces": "Longswordsman",
+       // "uniqueTo": "Jerusalem",
+        "unitType": "Close Combat",
+        "movement": 2,
+        "strength": 17,
+        "cost": 105,
+        "requiredTech": "Theology",
+        "promotions": ["Foreign Land Bonus", "Can Enter Rival Territory"],
+        "uniques": [
+            "Earn [200]% of killed [Military] unit's [Strength] as [Faith]"
+        ],
+        "upgradesTo": "Musketman",
+        "obsoleteTech": "Gunpowder",
+        "requiredResource": "Iron",
+        "attackSound": "metalhit"
+    },
+    {
+        "name": "Gadrauht",
+        "replaces": "Longswordsman",
+        "uniqueTo": "Goths",
+        "unitType": "Close Combat",
+        "movement": 2,
+        "strength": 22,
+        "cost": 108,
+        "requiredTech": "Steel",
+       // "upgradesTo": "Musketman",
+       // "obsoleteTech": "Gunpowder",
+        "promotions": ["Heals 25 Damage If Kill a Unit"],
+        "attackSound": "metalhit"
+    },
+    {
+        "name": "Noble Swordsman",
+        "replaces": "Longswordsman",
+        "uniqueTo": "Gaul",
+        "unitType": "Close Combat",
+        "movement": 2,
+        "strength": 20,
+        "cost": 120,
+        "requiredTech": "Steel",
+        "promotions": ["Forest Native"],
+        //"obsoleteTech": "Rifling",
+        "attackSound": "metalhit"
+    },
+    {
+        "name": "Seaxman",
+        "replaces": "Longswordsman",
+        "uniqueTo": "Franks",
+        "unitType": "Close Combat",
+        "movement": 2,
+        "strength": 22,
+        "cost": 115,
+        "requiredTech": "Chivalry",
+        "promotions": ["Amphibious","Cover I"],
+        //"upgradesTo": "Musketman",
+        //"obsoleteTech": "Gunpowder",
+        "requiredResource": "Iron",
+        "attackSound": "metalhit"
+    },
+    {
+        "name": "Reislaufer",
+        "uniqueTo": "Switzerland",
+        "unitType": "Close Combat",
+        "movement": 3,
+        "strength": 20,
+        "cost": 120,
+        "requiredTech": "Steel",
+        "upgradesTo": "Rifleman",
+        "promotions": [
+            "Mountaineer"
+        ],
+        "uniques": [
+            "Earn [200]% of killed [Military] unit's [Strength] as [Gold]",
+            "Only available <in cities with a [Reislauder Post]>",
+            "Cannot be purchased"
+        ],
+        "attackSound": "metalhit"
+    },
+    {
+        "name": "Sarissophoroi",
+        "uniqueTo": "Macedonia",
+        "replaces": "Pikeman",
+        "unitType": "Close Combat",
+        "movement": 2,
+        "strength": 14,
+        "cost": 90,
+        "requiredTech": "Philosophy",
+        "uniques": ["[+100]% Strength <vs [Rider] units>"],
+        "upgradesTo": "Lancer",
+        "obsoleteTech": "Metallurgy",
+        "attackSound": "metalhit"
+    },
     {
 		"name": "Kosynier",
 		"unitType": "Close Combat",
@@ -2232,6 +2432,7 @@
 		"requiredTech": "Chivalry",
 		"promotions": ["Formation I"],
 		"uniques": [
+			    "[+50]% Strength <vs [Rider] units>",
 			    "[+25]% Strength <when fighting in [Friendly Land] tiles>","Unit will heal every turn, even if it performs an action",
 	        	"[+10]% Strength <after discovering [Tactics]>","[+30]% Strength <after discovering [Chivalry]>",
 		        "[+60]% Strength <after discovering [Gunpowder]>","[+100]% Strength <after discovering [Steels]>",
@@ -2457,6 +2658,108 @@
 		"attackSound": "metalhit"
 	},
 ///Rider
+    {
+        "name": "Konnitsa",
+        "uniqueTo": "Bulgaria",
+        "replaces": "Knight",
+        "unitType": "Rider",
+        "movement": 4,
+        "strength": 20,
+        "cost": 120,
+        "requiredTech": "Chivalry",
+        "obsoleteTech": "Military Science",
+        "upgradesTo": "Cavalry",
+        "requiredResource": "Horses",
+        "uniques": [
+            "Can move after attacking",
+            "No defensive terrain bonus",
+            "[-33]% Strength <vs cities> <when attacking>",
+            "[+25]% Strength <vs [Ranged Combat] units>",
+            "[1] additional attacks per turn"
+        ],
+        "attackSound": "horse"
+    },
+    {
+        "name": "Mamluk",
+        "replaces": "Knight",
+        "uniqueTo": "The Ottomans",
+        "unitType": "Rider",
+        "movement": 4,
+        "strength": 20,
+        "cost": 128,
+        "requiredTech": "Chivalry",
+        "obsoleteTech": "Military Science",
+        "upgradesTo": "Cavalry",
+        "requiredResource": "Horse",
+        "promotions": ["Swift Charge"],
+        "uniques": [
+            "Can move after attacking",
+            "No defensive terrain bonus",
+            "[-33]% Strength <vs cities> <when attacking>"
+        ],
+        "attackSound": "horse"
+    },
+    {
+        "name": "Ulan",
+        "uniqueTo": "Golden Horde",
+        "replaces": "Pikeman",
+        "unitType": "Rider",
+        "movement": 4,
+        "strength": 17,
+        "cost": 90,
+        "requiredTech": "Civil Service",
+        "requiredResource": "Horse",
+        "promotions": ["Charge"],
+        "uniques": [
+            "[+50]% Strength <vs [Rider] units>",
+            "Can move after attacking",
+            "No defensive terrain bonus"
+        ],
+        "upgradesTo": "Lancer",
+        "obsoleteTech": "Metallurgy",
+        "attackSound": "metalhit"
+    },
+    {
+        "name": "African Forest Elephant",
+        "unitType": "Rider",
+        "uniqueTo": "Carthage",
+        "replaces": "Horseman",
+        "movement": 3,
+        "strength": 14,
+        "cost": 100,
+        "requiredTech": "Horseback Riding",
+        "upgradesTo": "Knight",
+        "obsoleteTech": "Chivalry",
+        "promotions": ["Great Generals II","Heavy Charge"],
+        "uniques": [
+            "Can move after attacking",
+            "No defensive terrain bonus",
+            "[-33]% Strength <vs cities> <when attacking>",
+            "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+        ],
+        "hurryCostModifier": 20,
+        "attackSound": "elephant"
+    },
+    {
+        "name": "Sparapet",
+        "replaces": "Horseman",
+        "uniqueTo": "Armenia",
+        "unitType": "Rider",
+        "movement": 4,
+        "strength": 17,
+        "cost": 120,
+        "requiredTech": "Horseback Riding",
+        "upgradesTo": "Knight",
+        "promotions": ["Leadership"],
+        "uniques": [
+            "Consumes [2] [Horse]",
+            "Can move after attacking",
+            "No defensive terrain bonus",
+            "[-33]% Strength <vs cities> <when attacking>"
+        ],
+        "hurryCostModifier": 20,
+        "attackSound": "horse"
+    },
 	{
 		"name": "Uhlan",
 		"unitType": "Rider",
@@ -3189,7 +3492,22 @@
 		"attackSound": "tankshot"
 	},
 ///Assault
-{
+    {
+        "name": "Hand-Axe",
+        "uniqueTo": "Barbarians",
+        "replaces": "Chariot Archer",
+        "unitType": "Assault",
+        "movement": 2,
+        "strength": 9,
+        "rangedStrength": 9,
+        "range": 1,
+        "cost": 56,
+        "requiredTech": "The Wheel",
+        "upgradesTo": "Knight",
+        "obsoleteTech": "Chivalry",
+        "attackSound": "arrow"
+    },
+    {
 		"name": "Bashi-bazouk",
 		"replaces": "-",
 		//"uniqueTo": "The Caliphate",
@@ -3285,6 +3603,7 @@
 	},
 	{
 		"name": "Cataphract",
+		"uniqueTo": "Byzantium",
 		"unitType": "Assault",
 		"movement": 3,
 		"strength": 26,
@@ -3382,7 +3701,48 @@
 		"promotions":["The Noble Army","Chivalry","Partial Plate Armour"],
 		"attackSound": "nonmetalhit"
 	},
-	///
+	///Siege
+	{
+        "name": "Ballista",
+        "unitType": "Siege",
+        "replaces": "Catapult",
+        "uniqueTo": "Rome",
+        "movement": 2,
+        "strength": 8,
+        "rangedStrength": 10,
+        "cost": 75,
+        "requiredTech": "Mathematics",
+        "obsoleteTech": "Physics",
+        "upgradesTo": "Trebuchet",
+        "promotions": ["Indirect Fire"],
+        "uniques": [
+            "[+200]% Strength <vs cities> <when attacking>",
+            "No defensive terrain bonus",
+            "[-1] Sight"
+        ],
+        "hurryCostModifier": 20,
+        "attackSound": "throw"
+    },
+	{
+        "name": "Siege Tower",
+        "unitType": "Siege",
+        "uniqueTo": "Assyria",
+        "replaces": "Catapult",
+        "movement": 2,
+        "strength": 12,
+        "cost": 75,
+        "requiredTech": "Mathematics",
+        "obsoleteTech": "Physics",
+        "upgradesTo": "Trebuchet",
+        "promotions": ["Cover I", "Extra Sight"],
+        "uniques": [
+            "[+200]% Strength <vs cities> <when attacking>",
+            "No defensive terrain bonus",
+            "Can only attack [City] units"
+        ],
+        "hurryCostModifier": 20,
+        "attackSound": "metalhit"
+    },
 	{
 		"name": "Great Bombard",
 		"unitType": "Siege",
@@ -3547,7 +3907,7 @@
 ///Ships
 {
 	"name": "Quinquereme",
-	"unitType": "Melee Water",
+	"unitType": "Close Combat Ship",
 	"uniqueTo": "Carthage",
 	"replaces": "Trireme",
 	"movement": 4,
@@ -3560,7 +3920,7 @@
 },
 {
 	"name": "Dragon Boat",
-	"unitType": "Melee Water",
+	//"unitType": "Melee Water",
 	"replaces": "Caravel",
 	"uniqueTo": "Denmark",
 	"movement": 6,
@@ -3622,6 +3982,45 @@
 	"uniques": ["+1 Visibility Range"],
 	"attackSound": "nonmetalhit"
 },
+    {
+        "name": "Nau",
+        "uniqueTo": "Portugal",
+        "replaces": "Caravel",
+        "unitType": "Ranged Combat Ship",
+        "movement": 6,
+        "strength": 20,
+        "cost": 120,
+        "requiredTech": "Astronomy",
+        "upgradesTo": "Ironclad",
+        "obsoleteTech": "Combustion",
+        "uniques": [
+            "[+1] Sight",
+            "Withdraws before melee combat <with [80]% chance>",
+            "Can move after attacking"
+        ],
+        "hurryCostModifier": 30,
+        "attackSound": "cannon"
+    },
+    {
+        "name": "Baghlah",
+        "uniqueTo": "Arabia",
+        "replaces": "Galley",
+        "unitType": "Ranged Combat Ship",
+        "movement": 4,
+        "strength": 8,
+        "rangedStrength": 12,
+        "cost": 60,
+        "requiredTech": "Optics",
+        "promotions": ["Coastal Raider I"],
+        "uniques": [
+            "Earn [100]% of killed [Military] unit's [Strength] as [Faith]",
+            "Earn [100]% of killed [Military] unit's [Strength] as [Gold]",
+            "Cannot enter ocean tiles"
+        ],
+        "obsoleteTech": "Compass",
+        "upgradesTo": "Galleass",
+        "attackSound": "arrow"
+    },
 {
 	"name": "Galleon",
 	"unitType": "Ranged Combat Ship",
@@ -3845,6 +4244,39 @@
 		"obsoleteTech": "Astronomy",
 		"attackSound": "nonmetalhit"
 	},
+	{
+        "name": "Quinquereme",
+        "uniqueTo": "Rome",
+        "unitType": "Close Combat Ship",
+        "movement": 4,
+        "strength": 13,
+        "uniques": [
+            "Can move after attacking",
+            "Unbuildable",
+            "Unable to pillage tiles",
+            "[-33]% Strength <vs cities> <when attacking>"
+        ],
+        "upgradesTo": "Privateer",
+        "attackSound": "nonmetalhit"
+    },
+	{
+        "name": "Square Sail Ship",
+        "replaces": "Trireme",
+        "uniqueTo": "Phoenicia",
+        "unitType": "Close Combat Ship",
+        "movement": 4,
+        "strength": 10,
+        "cost": 38,
+        "requiredTech": "Sailing",
+        "promotions": ["Extra Sight", "Supply"],
+        "uniques": [
+            "Can move after attacking",
+            "[-33]% Strength <vs cities> <when attacking>"
+        ],
+        "upgradesTo": "Caravel",
+        "obsoleteTech": "Astronomy",
+        "attackSound": "nonmetalhit"
+    },
 	{
 		"name": "Galley Scout",
 		"uniqueTo": "Rhodes",
@@ -4190,7 +4622,7 @@
 			"Can only attack [City] units",
 			"Self-destructs when attacking",
 			"Nuclear weapon of Strength [1]",
-			"Blast radius [3]",
+			"Blast radius [2]",
 			"Earn [50]% of the damage done to [City] units as [Gold]"
 		],
 		"attackSound": "shot"
