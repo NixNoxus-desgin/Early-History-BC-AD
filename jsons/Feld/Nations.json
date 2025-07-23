@@ -1320,6 +1320,44 @@
 		"cities": ["Dushanbe", "Khujand", "Sarazm", "Penjikent", "Istaravshan", "Khorog", "Kulob", "Bokhtar", "Isfara", "Hisor", "Panjakent", "Vahdat", "Nurek", "Qurghonteppa", "Konibodom", "Tursunzoda", "Murghab", "Shahrituz", "Vose", "Farkhor", "Vanj", "Ishkoshim", "Rogun", "Gharm", "Tavildara"],
 	},
 	{
+		"name": "Songhai",
+		"leaderName": "Askia",
+		"adjective": ["Songhai"],
+		"startBias": ["Desert"],
+		"preferredVictoryType": "Religious",
+		"personality": "Askia",
+
+		"startIntroPart1": "May the blessings of God, who is greatest of all, be upon you Askia, leader of the Songhai people! For many years your kingdom was a vassal of the mighty West African state of Mali, until the middle of the 14th century, when King Sunni Ali Ber wrested independence from the Mali, conquering much territory and fighting off numerous foes who sought to destroy him. Ultimately, his conquest of the wealthy cities of Timbuktu and Jenne gave the growing Songhai empire the economic power to survive for some 100 years, until the empire was destroyed by foes with advanced technology - muskets against spearmen.",
+		"startIntroPart2": "King Askia, your people look to you to lead them to glory. To make them powerful and wealthy, to keep them supplied with the weapons they need to defeat any foe. Can you save them from destruction, oh King? Can you build a civilization that will stand the test of time?",
+		
+		"declaringWar": "You are an abomination to heaven and earth, the chief of ignorant savages! You must be destroyed!",
+		"attacked": "Fool! You have doomed your people to fire and destruction!",
+		"defeated": "We have been consumed by the fires of hatred and rage. Enjoy your victory in this world - you shall pay a heavy price in the next!",
+		"introduction": "I am Askia of the Songhai. We are a fair people - but those who cross us will find only destruction. You would do well to avoid repeating the mistakes others have made in the past.",
+		"neutralHello": "Greetings.",
+		"hateHello": "Oh, it's you.",
+		"tradeRequest": "Can I interest you in this deal?",
+		"favoredReligion": "Islam",
+		
+		"outerColor": [214,145,19],
+		"innerColor": [90,0,10],
+		
+		"uniqueName": "Trans-Saharan Trade",
+		"uniqueText": "Gain +1 [Faith] for every 50 [Gold] and +1 [Gold] for every 50 [Faith] available in your respective reserves (modified by game speed)\nMay buy [Gold] buildings with [Faith]",
+		"uniques": ["[+1 Faith] <for every [13] [Gold]> <on [Turbo] game speed>", "[+1 Gold] <for every [13] [Faith]> <on [Turbo] game speed>",
+			    "[+1 Faith] <for every [25] [Gold]> <on [Online] game speed>", "[+1 Gold] <for every [25] [Faith]> <on [Online] game speed>",
+			    "[+1 Faith] <for every [38] [Gold]> <on [Quick] game speed>", "[+1 Gold] <for every [38] [Faith]> <on [Quick] game speed>",
+			    "[+1 Faith] <for every [50] [Gold]> <on [Standard] game speed>", "[+1 Gold] <for every [50] [Faith]> <on [Standard] game speed>",
+			    "[+1 Faith] <for every [75] [Gold]> <on [Epic] game speed>", "[+1 Gold] <for every [75] [Faith]> <on [Epic] game speed>",
+			    "[+1 Faith] <for every [100] [Gold]> <on [Marathon] game speed>", "[+1 Gold] <for every [100] [Faith]> <on [Marathon] game speed>",
+			    "[+1 Faith] <for every [125] [Gold]> <on [Endless] game speed>", "[+1 Gold] <for every [125] [Faith]> <on [Endless] game speed>",
+			    "May buy [Market] buildings with [Faith] for [2] times their normal Production cost", "May buy [Mint] buildings with [Faith] for [2] times their normal Production cost", "May buy [Bank] buildings with [Faith] for [2] times their normal Production cost", "May buy [Stock Exchange] buildings with [Faith] for [2] times their normal Production cost"],
+		"cities": ["Gao","Timbuktu","Djenne","Taghaza","Tondibi","Kumbi Saleh","Kukia","Walata","Tegdaoust","Argungu","Gwandu",
+			"Kebbi","Boussa","Motpi","Bamako","Wa","Kayes","Awdaghost","Ouadane","Dakar","Tadmekket","Tekedda","Kano",
+			"Agadez","Niamey","Torodi","Ouatagouna","Dori","Bamba","Segou"],
+		"spyNames": ["Ahmadou", "Ayub", "Badru", "Bokhari", "Guedado", "Adhiambo", "Chinaka", "Laila", "Mariama", "Oni"]
+	},
+	{
 		"name": "Macedon",
 		"adjective": ["Macedonian"],
 		"leaderName": "Alexander The Great",
@@ -1870,7 +1908,7 @@
 		"name": "Papal States",
 		"leaderName": "Pope Innocent III",
 		"adjective": ["Papal"],
-		"startBias": ["Avoid [Tundra]"],
+		"startBias": ["Avoid [Tundra]","Avoid [Desert]"],
 		"preferredVictoryType": "Diplomatic",
 		
 		"startIntroPart1": "Blessings upon His Holiness, Pope Innocent III, sovereign of the Papal States. As the Catholic Church's most powerfull Pontiff, you reigned supreme over the crowned heads of Europe. Rooting out heresy wherever it dwelt, you presided over the Churches' most important reforms as well as her most infamous crusades. Commanding the Christian faith with diplomatic skill and political acumen, you papacy would mark the height of its power on earth.",
@@ -1897,7 +1935,12 @@
 		"innerColor": [255, 204, 0],
 		"uniqueName": "Deus Vult",
 		"uniqueText": "Land units may move immediately once bought. Receive free Shrine in capital at the beginning of the game and then in each of your cities after researching Philosophy. Receive a free Temple after researching Education",
-		"uniques": ["[Land] units gain the [Crusader] promotion","Gain a free [Shrine] [in capital]","Gain a free [Shrine] [in all cities] <after discovering [Philosophy]>","Gain a free [Temple] [in all cities] <after discovering [Education]>"],
+		///Überarbeiten///
+		"uniques": ["[Land] units gain the [Crusader] promotion","Gain a free [Cathedral] [in capital]","Gain a free [Chapel] [in all cities] <after discovering [///]>","Gain a free [Temple] [in all cities] <after discovering [Education]>",
+		   /// "City-States territory always counts as friendly territory <when number of [Piety] is more than [5]",
+	        "Gain enough Faith for a Pantheon",
+			"May choose [1] additional [Any] beliefs when [founding] a religion",
+			"May choose [1] additional [Any] beliefs when [enhancing] a religion"],
 		"cities": ["Roma","Benevento","Ravenna","Avignon","Bologna","Ponte Corvo","Ferrara","Ascoli","Camerino","Rieti","Assisi","Orvieto","Rimini","Todi","Viterbo"]
 	},
 	{

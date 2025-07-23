@@ -13,9 +13,9 @@
 {
 	"name": "Comprehensive City",
 	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [30] when built]\n\n\n[City Level II]:\n    [[+10]% growth [in this city]]\n\n[City Level III]:\n    [[+10]% Production when constructing [All] buildings [in this city]]\n\n[City Level IV]:\n    [[+15]% growth [in this city]]\n\n[City Level V]:\n    [+5% Yield in this city]"
+	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [30] when built]\n\n\n[City Level II]:\n    [[+10]% growth [in this city]]\n\n[City Level III]:\n    [[+10]% Production when constructing [All] buildings [in this city]]\n\n[City Level IV]:\n    [[+15]% growth [in this city]]\n\n[City Level V]:\n    [+5% Yield in this city]",
 	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", "Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>"
+	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", "Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>",
 	"Specialized City",
 	"Cost increases by [25] when built",
 	
