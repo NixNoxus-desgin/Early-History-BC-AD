@@ -4165,6 +4165,7 @@
 		    "Unbuildable", "Only available <when religion is enabled>", "Destroyed when the city is captured"]
 	},
 ///religion
+
     {
         "name": "Grand Cathedral of Vilnius",
         "replaces": "Grand Temple",
@@ -4530,16 +4531,15 @@
 		"requiredTech": "Philosophy",
 		"uniques": ["Hidden when religion is disabled", "Destroyed when the city is captured", "All newly-trained [Land] units [in this city] receive the [Enlightened Medicine] promotion", "[+1 Science, +1 Faith] per [4] population [in this city]"]
 	},
-        {
+    {
 		"name": "Sacred Space",
-                "cost": 100,
-                "hurryCostModifier": 100,
-                "faith": 5,
-                "maintenance": 3,
-                "specialistSlots": {"Ascetic": 2},
-                "uniques": ["Destroyed when the city is captured","Hidden when religion is disabled"]
-        },
-        {
+        "cost": 100,
+        "hurryCostModifier": 100,
+        "faith": 5,
+        "specialistSlots": {"Ascetic": 2},
+        "uniques": ["Destroyed when the city is captured","Hidden when religion is disabled"]
+    },
+    {
 		"name": "Sacred Cave",
 		"replaces": "Shrine",
 		"uniqueTo": "-",
@@ -4587,8 +4587,10 @@
 		"name": "Chaple",
 		"faith": 3,
 		"maintenance": 1,
-		"uniques": ["Worship Place","Only available <after adopting [Monotheism]>","[+5]% Faith from [Population] [in this city] <when at war>",
-			"Hidden when religion is disabled","Destroyed when the city is captured"],
+		"uniques": [
+			"Worship Place","Only available <after adopting [Monotheism]>","[+5]% Faith from [Population] [in this city] <when at war>",
+			"Hidden when religion is disabled","Destroyed when the city is captured"
+		],
 		"requiredTech":"Calendar",
 		"quote": "'Jesus Christus ist „das Wort“ (Joh 1; Offb 19,13). In ihm hat Gott endgültig alles gesagt. Er ist die Selbstmitteilung Gottes in Person.'"
 	},
@@ -4613,7 +4615,7 @@
 		"uniques": ["Worship Place","Unbuildable","Hidden when religion is disabled"],
 		"requiredTech": "Theology"
 	},
-        {
+    {
 		"name": "Stave Church",
 		"replaces": "Temple",
 		"uniqueTo": "Norway",
@@ -4623,9 +4625,11 @@
 		"maintenance": 3,
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy",
-		"uniques": ["Worship Place",
-		        "Hidden when religion is disabled", "Destroyed when the city is captured","[+10]% Production when constructing [{Military} {Water}] units [in this city]",
-                        "[+15]% Great Person generation [in this city]","[+10]% Faith from [Population] [in this city] <when at war>"],
+		"uniques": [
+			"Worship Place",
+		    "Hidden when religion is disabled", "Destroyed when the city is captured","[+10]% Production when constructing [{Military} {Water}] units [in this city]",
+            "[+15]% Great Person generation [in this city]","[+10]% Faith from [Population] [in this city] <when at war>"
+		],
 		"quote": "'So seid ihr nun nicht mehr Gäste und Fremdlinge, sondern Mitbürger der Heiligen und Gottes Hausgenossen, erbaut auf den Grund der Apostel und Propheten, da Jesus Christus der Eckstein ist. Epheser 2:19-20'"
 	},
 	{
@@ -4639,15 +4643,19 @@
 		"maintenance": 0,
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy",
-		"uniques": ["Worship Place","Only available <when religion is enabled>", "Destroyed when the city is captured"]
+		"uniques": [
+			"Worship Place","Only available <when religion is enabled>", "Destroyed when the city is captured"
+		]
 	},
 	{
 		"name": "Basilika",
 		"cost": 0,
 		"faith": 5,
 		"percentStatBonus": {"faith": 25},
-		"uniques": ["Worship Place",
-		        "Unbuildable", "Hidden when religion is disabled"],
+		"uniques": [
+			"Worship Place",
+		    "Unbuildable", "Hidden when religion is disabled"
+		],
 
 		//"quote": „Deine Hände sollen mit heiligem Öl gesalbt werden.\nDeine Brust soll mit heiligem Öl gesalbt werden.\nDein Haupt soll mit heiligem Öl gesalbt werden.\nWie Könige, Priester und Propheten gesalbt wurden.\nUnd wie Salomon vom Priester Zadok und vom Propheten Nathan zum König gesalbt wurde, so sollst auch du gesalbt werden.“,
 	},
@@ -4662,10 +4670,12 @@
 		"cost": 115,
 		"hurryCostModifier": 25,
 		"requiredTech": "Theology",
-		"uniques": ["Worship Place","Only available <after adopting [Testaments]>","[+15]% Natural religion spread [in this city]",
-                            "[+1 Gold, +1 Faith] per [4] population [in this city]","[+10]% Faith from [Population] [in this city] <when at war>",
-                            "Hidden when religion is disabled"],
-		"quote": "'Lasst das Wort Christi reichlich unter euch wohnen: Lehrt und ermahnt einander in aller Weisheit; mit Psalmen, Lobgesängen und geistlichen Liedern singt Gott dankbar in euren Herzen. Selig bist du, Simon Barjona; denn nicht Fleisch und Blut haben dir das offenbart, sondern mein Vater im Himmel. Dieses Evangelium vom Reich wird in der ganzen Welt gepredigt werden zum Zeugnis für alle Nationen. (Joseph Smith – Matthäus 1:31.) Die Kirche wird nie wieder von der Erde genommen werden.'"
+		"uniques": [
+			"Worship Place","Only available <after adopting [Testaments]>","[+15]% Natural religion spread [in this city]",
+            "[+1 Gold, +1 Faith] per [4] population [in this city]","[+10]% Faith from [Population] [in this city] <when at war>",
+            "Hidden when religion is disabled"
+		],
+		"quote": "'Lasst das Wort Christi reichlich unter euch wohnen: Lehrt und ermahnt einander in aller Weisheit; mit Psalmen, Lobgesängen und geistlichen Liedern singt Gott dankbar in euren Herzen.'"
 	},
 	{
 		"name": "Cathedral",
@@ -4673,21 +4683,24 @@
 		"faith": 3,
 		"gold": 1,
 		"specialistSlots": {"Artist": 1},
-		"uniques": ["Unbuildable","Organise Place","[+10]% Faith from [Population] [in this city] <when at war>",
-			"Hidden when religion is disabled",
-                        "Destroyed when the city is captured"],
+		"uniques": [
+			"Unbuildable","Organise Place","[+10]% Faith from [Population] [in this city] <when at war>",
+			"Hidden when religion is disabled","Destroyed when the city is captured"
+		],
 		"requiredTech":"Theology",
-		"quote": "'Gott selber lebt und ist in sich Gemeinschaft. Gemeinschaft in Liebe und Einheit. Er hat uns nach Seinem Abbild geschaffen und um als Sein Abbild zu leben, brauchen wir Gemeinschaft. 1Joh 1,3. Was wir nun selbst gesehen und gehört haben, das geben wir euch weiter, damit auch ihr mit uns im Glauben verbunden seid. So haben wir Gemeinschaft miteinander und zugleich mit Gott, dem Vater, und mit seinem Sohn Jesus Christus'"
+		"quote": "'Gott selber lebt und ist in sich Gemeinschaft. Gemeinschaft in Liebe und Einheit. Er hat uns nach Seinem Abbild geschaffen und um als Sein Abbild zu leben, brauchen wir Gemeinschaft. 1Joh 1,3. Was wir nun selbst gesehen und gehört haben, das geben wir euch weiter, damit auch ihr mit uns im Glauben verbunden seid. So haben wir Gemeinschaft miteinander und zugleich mit Gott, dem Vater, und mit seinem Sohn Jesus Christus'"
 	},
 	{
 		"name": "Painted Monastery",
 		"replaces": "Garden",
+		"hurryCostModifier": 25,
+		"maintenance": 2,
 		"faith": 2,
 		"culture": 1,
 		"specialistSlots": {"Artist": 1},
-		"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Hills]"],
-		"hurryCostModifier": 25,
-		"maintenance": 2,
+		"uniques": [
+			"[+25]% Great Person generation [in this city]", "Must be next to [Hills]"
+		],
 		"requiredTech": "Theology",
 		///"quote": "'Alle Menschen aber sind Toren mit ihrer Kunst, und alle Goldschmiede stehen beschämt da mit ihren Bildern; denn ihre Götzen sind Trug und haben kein Leben. 2. Mose 20, 4f; Apostelgeschichte 17, 29; Jeremia 10, 3; 51, 17. Du sollst dir kein Kultbild machen, keine Gestalt von irgendetwas am Himmel droben, auf der Erde unten oder im Wasser unter der Erde. Dtn 5,8 '"
 	},
@@ -4696,14 +4709,17 @@
 		"cost": 0,
 		"culture": 1,
 		"faith": 3,
-		"happiness": 1,
-		///"science": 2, (After adopting (-)), (Requires (-) building) Vielleicht mehr
 		"production": 2,
 		"food": 1,
-		"percentStatBonus": {"science": 5},
-		"uniques": ["Practice Ground","[-10]% Unhappiness from [Population] [in this city]","Provides [1] [Wine] <with [Grape]>","[+1 Gold, +1 Culture] from [Grape] tiles [in this city]",
+		"percentStatBonus": {
+			"happiness": 5
+		},
+		"uniques": [
+			"Practice Ground","[-10]% Unhappiness from [Population] [in this city]","Provides [1] [Wine] <with [Grape]>","[+1 Gold, +1 Culture] from [Grape] tiles [in this city]",
+			"[10]% [Science] from every [Monastery] <after adopting [Early Theology]>",
 			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Imperal Era]> <after adopting [Monastic Warrior]>",
-			"Unbuildable","Hidden when religion is disabled", "Destroyed when the city is captured"],
+			"Unbuildable","Hidden when religion is disabled", "Destroyed when the city is captured"
+		],
 		"requiredTech":"Theology",
 		"quote ": "'Siehe, ich stehe vor der Tür und klopfe an. Wenn jemand meine Stimme hören wird und die Tür auftun, zu dem werde ich hineingehen und das Abendmahl mit ihm halten und er mit mir.'"
 	},
@@ -4712,8 +4728,10 @@
 		"cost": 0,
 		"culture": 2,
 		"faith": 3,
-		"uniques": ["Organise Place","Unbuildable","[+5]% [Faith] [in holy cities]","[+10]% Faith from [Population] [in this city] <when at war>",
-                        "Hidden when religion is disabled","Destroyed when the city is captured"],
+		"uniques": [
+			"Organise Place","Unbuildable","[+5]% [Faith] [in holy cities]","[+10]% Faith from [Population] [in this city] <when at war>",
+            "Hidden when religion is disabled","Destroyed when the city is captured"
+		],
 		"requiredTech":"Theology"
 	},
 	{
@@ -4723,119 +4741,216 @@
 		"faith": 3,
 		"happiness": 1,
 		"percentStatBonus":{"culture": 10},
-		"uniques": ["Unbuildable","Practice Ground","[+10]% Faith from [Population] [in this city] <when at war>",
-                        "Hidden when religion is disabled","Destroyed when the city is captured"],
+		"uniques": [
+			"Unbuildable","Practice Ground","[+10]% Faith from [Population] [in this city] <when at war>",
+            "Hidden when religion is disabled","Destroyed when the city is captured"
+		],
 		"requiredTech":"Theology"
 	},
 	{
 		"name": "Tatev Monastery",
-		"replaces": "Grand Temple",
 		"uniqueTo": "Armenia",
+		"isNationalWonder": true,
+		"replaces": "Grand Temple",
 		"cost": 125,
 		"culture": 1,
 		"faith": 1,
-		"uniques": ["[+100]% Yield from every [Mountain] <in tiles without [Natural Wonder]>","Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
-			"[+100]% Natural religion spread [in this city]", "Only available <when religion is enabled>", "Can only be built <in [in holy cities] cities>"],
-		"requiredTech": "Theology",
-		"isNationalWonder": true
+		"uniques": [
+			"[+100]% Yield from every [Mountain] <in tiles without [Natural Wonder]>","Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
+			"[+100]% Natural religion spread [in this city]", "Only available <when religion is enabled>", "Can only be built <in [in holy cities] cities>"
+		],
+		"requiredTech": "Theology"
 	},
 	{
-                "name": "St Peter's Basilica",
-                "faith": 8,
-                "culture": 2,
-                "production": 4,
-                "isWonder": true,
-                "greatPersonPoints": {"Great Prophet": 4},
-                "requiredTech": "Theology",
-		"uniques": ["Organise Place","Only available <after adopting [Proxy of the god]>","Provides [1] [Scriptures]",
-			"Hidden when religion is disabled","May choose [1] additional belief(s) of any type when [enhancing] a religion"],
-	  	"quote": "'I saw the angel in the marble and carved until I set him free.' - Michelangelo Buonarroti"
-        },
-        {
+	    "name": "Kaserne der Päpstlichen Schweizergarde",
+		"unique to": "Papal States",
+		"cost": 140,
+		"culture": 2,
+		"specialslots": {"Governor":1},
+		"greatPersonPoints": {"Governor": 1},
+		"uniques": ["Static Defense",
+		    "[2] Unit Supply per [5%] population [in capital]",
+		    "Earn [40]% of the damage done to [Wounded] units as [Faith]",
+		    "All newly-trained [Swiss Guard] units [In this City] receive the [Awe] promotion",
+		    "All newly-trained [Swiss Guard] units [In this City] receive the [Elite Training] promotion  <after adopting [Militant Complete]>",
+		    "Only available <if [Barrack] is not constructed> <in this City> <if [Holy See] is constructed> <if [St. Peter's Basilica] is constructed > <after adopting [Code of Warrior]>",
+	        "Can only be built <in [Holy] cities>"
+	],
+		"requiredTech": "Theology",
+		"quote": "22. Januar 1506, der Tag, an dem 150 Schweizer unter ihrem Hauptmann Kaspar von Silenen aus dem Kanton Uri durch die «Porta del Popolo» in Rom einmarschierten und danach zum ersten Mal in den Vatikan einzogen, wo sie von Papst Julius II."
+
+	},
+	{
+		"name": "Apostolic Palace",
+		"unique to": "Papal States",
+		"isNationalWonder": true,
+		"cost": 420,
+		"faith": 6,
+		"culture": 5,
+		"uniques": [
+			"Organise Place",
+			"Can spend Gold to annex or puppet a City-State that has been your Ally for [10] turns <after adopting [Papal Primacy]> <in cities following our religion>",
+			"[+1 Production] from all [Faith] buildings",
+		    "Gain [100] [Gold] <after generating a Great Prophet>",
+			"May choose [1] additional belief(s) of any type when [enhancing] a religion",
+			"Can only be built <after adopting [Apostolic Palace]>",
+		    "Can only be built <if [Holy See] is constructed>",
+			"Can only be built <in [Holy] cities>",
+			"Hidden when religion is disabled"
+		],
+		"requiredTech": "Theology",
+		"quote": "'A rock pile ceases to be a rock pile the moment a single man contemplates it, bearing within him the image of a cathedral.' - Antoine de Saint-Exupery"
+	},
+	{
 		"name": "St. Peter's Basilica",
 		"uniqueTo": "Papal States",
 		"cost": 600,
-		"culture": 2,
+		"culture": 5,
 		"faith": 8,
 		"Happiness": 2,
-		"percentStatBonus":{"gold": 25},
-			"specialistSlots": {"Artist": 1},
-			"specialistSlots": {"Priest": 2},
-			"specialistSlots": {"Governor":1},
-		"uniques": ["Organise Place","Only available <after adopting [The One True God]>","[+100]% Yield from every [Holy site]",
-			"Only available <if [Cathedral] is constructed in all [non-[Puppeted]] cities>",
+		"percentStatBonus": {"gold": 25},
+		"specialistSlots": [{"Artist": 1}, {"Governor":1}, {"Great Prophet": 4}],
+		"greatPersonPoints": [{"Artist": 2}, {"Great Prophet": 2}],
+		"uniques": [
+			"Organise Place",
+			"Provides [1] [Scriptures]","[+100]% Yield from every [Holy site]",
 			"Comment [+1 [Artist specialist] slots in this city]",
 			"Comment [+2 [Priest specialist] slots in this city]",
 			"Comment [+1 [Governor specialist] slots in this city]",
 			"Gain a free [Basilica] [in this city]","May choose [2] additional belief(s) of any type when [enhancing] a religion",
 			"Provides [1] [Scriptures]","Cost increases by [30] per owned city",
-			"[+25]% [Faith] [in all cities]","[+100]% Natural religion spread [in this city]", "Only available <when religion is enabled>",
-			"Can only be built <in [in holy cities] cities>"],
+			"[+25]% [Faith] [in all cities]","[+100]% Natural religion spread [in this city]", 
+			"Can only be built <in [in holy cities] cities>",
+			"Only available <after adopting [Proxy of the god]>",
+			"Only available <if [Cathedral] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			"Only available <when religion is enabled>"
+		],
 		"requiredTech": "Theology",
 		"isNationalWonder": true,
 		"quote": "'You are Peter and on this rock I will build my church and I will give you the keys of the kingdom of heaven. - Pope Sylvester I'"
+
+		//"'I saw the angel in the marble and carved until I set him free.' - Michelangelo Buonarroti'"
 	},
 	{
 		"name": "St. Basil's Cathedral",
 		"faith": 3,
 		"cost": 625,
 		"isWonder": true,
-		"uniques": ["Must be next to [Val Land]",
+		"uniques": [
 			"Gain a free [Cathedral] [in this city]",
 			"[+1 Food, +1 Production, +1 Culture] from [Val Land] tiles [in this city]",
 			"Only available <after adopting [Reformation]>",
-			"Hidden when religion is disabled"],
+			"Hidden when religion is disabled"
+		],
 		"requiredTech": "Architecture",
 		"quote": "'One had a twisted design, red, on a green ground; another, all prickly angles, yellow and black; a third was ornamented with scales of blue and crimson; a fourth was in quarters like a melon.' - Katherine Blanche Guthrie"
 	},
+	//Zusammenfassend lässt sich sagen, dass der Heilige Stuhl eine einzigartige Institution ist, die sowohl eine spirituelle als auch
+	//  eine diplomatische und soziale Rolle spielt. Seine Bedeutung liegt in der Leitung der Kirche, 
+	// der Vertretung der katholischen Weltkirche in internationalen Angelegenheiten und seinem Engagement für das Gemeinwohl. 
 	{
 		"name": "Holy see",
 		"uniqueTo": "Papal States",
+		"isNationalWonder": true,
 		"cost": 125,
 		"culture": 3,
-		"production": 2,
-		"gold": 3,
-		"faith": 6,
-		"greatPersonPoints": {"Great Artist": 2},
-		"specialistSlots":{"Governor":2},
-		"uniques": ["Organise Place","Only available <if [Cathedral] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
+		"faith": 4,
+		"gold": 4,
+		"percentStatBonus": {
+			"faith": 25
+		},
+		"specialistSlots": {
+			"Governor": 2,
+			"Great Artist": 2,
+			"Great Engineer": 2
+		},
+		
+		"uniques": [
+			"'Core of Religion'",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"[+2 Faith] from every [Governor] <in this city>",
+		        //Gain control over [Unowned] tiles(...)
+			"Gain control over [{non-[Major]} {non-[City-State]} tiles in a [2]-tile radius",
+			"New [Religious] units start with [25] XP [in cities following our religion]",
+			"Allied City-States provide [Gold] equal to [15]% of what they produce for themselves <(modified by game speed)>",
+			"All newly-trained [Missionary] units [in cities following our religion] receive the [Holy Calling] promotion <after discovering [Theology]>",
 			"May choose [1] additional [Founder] beliefs when [founding] a religion",
-			"[+100]% Natural religion spread [in this city]", "Hidden when religion is disabled", "Can only be built <in [in holy cities] cities>"],
+			"[50]% Natural religion spread [in all cities]",
+			"[+100]% Natural religion spread [in this city]", 
+			"Cost increases by [30] per owned city",
+			"Can only be built <upon adopting [Papal Primacy]> <after adopting [Monotheism]>",
+			"Can only be built <in [in holy cities] cities>",
+			"Only available <if [Cathedral] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			"Hidden when religion is disabled"
+		],
 		"requiredTech": "Theology",
-		"isNationalWonder": true,
 		"quote": "'Man, created in God’s image, is destined to imitate His ways of mercy. He has delegated to man the power to act on his behalf. We are His representatives when we relieve suffering and bring joy.'"
 	},
 	{
 		"name": "House of God",
+		"isNationalWonder": true,
 		"cost": 125,
-		"culture": 1,
+		"faith": 4,
 		"science": 1,
-		"gold": 2,
-		"faith": 8,
-		"greatPersonPoints": {"Great Scientist": 2,"Great Artist": 2},
-		"specialistSlots":{"Governor":1},
-		"uniques": ["Organise Place","Only available <if [Mosque] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
-			"[+100]% Natural religion spread [in this city]", "Hidden when religion is disabled", "Can only be built <in [in holy cities] cities>"],
-		"requiredTech": "Theology",
-		"isNationalWonder": true
+		"culture": 1,
+		"percentStatBonus": {
+			"faith": 20,
+			"science": 5
+		},
+		"specialistSlots": {
+			"Governor": 2
+		},
+		"greatPersonPoints": [{"Great Prophet": 2}],
+		"uniques": [
+			"'Core of Religion'",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"[-20]% Faith cost of generating Great Prophet equivalents",
+			"Religion naturally spreads to cities [2] tiles away <after adopting [Pilgrimage]>",
+			"[40]% Natural religion spread [in all cities]",
+			"[+100]% Natural religion spread [in this city]",
+			"[+3 Faith] from every [Governor] <in this city>",
+			"Cost increases by [30] per owned city",
+			"Only available <after adopting [Enlightenment from the Lord]>",
+			"Only available <if [Mosque] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			"Only available <when religion is enabled>",
+			"Can only be built <in [in holy cities] cities>",
+			"Hidden when religion is disabled"
+		],
+		"quote": "'The Kaaba was rebuilt several times throughout history, most famously by Ibrahim and his son Ismail, when he returned to the valley of Mecca several years after leaving his wife Hajar and Ismail there upon Allah's command. Circling the Kaaba seven times counterclockwise, known as Tawaf, is a Fard rite for the completion of the Hajj and Umrah pilgrimages.'",
+		"requiredTech": "Theology"
 	},
 	{
 		"name": "Tower of Devotion",
-		"culture": 4,
-		"faith": 4,
-		"happiness": 2,
-		"percentStatBonus":{"culture":20,"gold":20},
-		"greatPersonPoints": {"Great Engineer": 3,"Great Artist": 5},
-		"uniques": ["Organise Place","Only available <if [Pagoda] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [10] per owned city", "Hidden when religion is disabled","[+75]% Natural religion spread [in this city]", "Can only be built <in [in holy cities] cities>"],
-		"requiredTech": "Theology",
-		"isNationalWonder": true
+		"isNationalWonder": true,
+		"cost": 125,
+		"culture": 2,
+		"faith": 2,
+		"happiness": 1,
+		"percentStatBonus": {
+			"culture": 25
+		},
+		"specialistSlots": {
+			"Governor": 1
+		},
+		"uniques": [
+			"'Core of Religion'",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"[+100]% Natural religion spread [in this city]",
+			"[+2 Culture] from every [Governor] <in this city>",
+			"Only available <if [Pagoda] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			"Only available <when religion is enabled>",
+			"Can only be built <in [in holy cities] cities>"
+		],
+		"requiredTech": "Theology"
 	},
 	{
 		"name": "Holy temple",
 		"faith": 2,
 		"requiredTech": "Architecture",
-		"uniques": ["Hidden when religion is disabled","[+30]% [Faith]",
-			"[+25]% [Faith] [in all cities connected to capital]","[+25]% [Re] [in all cities connected to capital]"],
+		"uniques": [
+			"Hidden when religion is disabled","[+30]% [Faith]",
+			"[+25]% [Faith] [in all cities connected to capital]","[+25]% [Re] [in all cities connected to capital]"
+		],
 		"isWonder": true
 	},
 	{
@@ -5632,11 +5747,13 @@
 		"happiness": 2,
 		"maintenance": 1,
 		"hurryCostModifier": 25,
-		"uniques": ["New [Military] units start with [15] Experience [in this city]",
+		"uniques": [
+			"New [Military] units start with [15] Experience [in this city]",
 			"Remove extra unhappiness from annexed cities",
 			"[+1 Happiness, +1 Culture] [in this city] <when above [0] [Slaves]>",
 			"Only available <in cities without a [Prison Camp]>",
-			"Destroyed when the city is captured"],
+			"Destroyed when the city is captured"
+		],
 		"requiredTech": "Engineering"
 	},
 	{
@@ -6843,7 +6960,7 @@
 		"happiness": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
-	"uniques": ["Only available <after adopting [Sprit in Everything]>","[+1 Faith] per [3] population [in all cities]","[+15]% Production when constructing [Levy Army] units [in all cities]"],
+     	"uniques": ["Only available <after adopting [Sprit in Everything]>","[+1 Faith] per [3] population [in all cities]","[+15]% Production when constructing [Levy Army] units [in all cities]"],
 		"requiredTech": "Calendar",
 		"quote": "'You must be absolutely honest and true in the depicting of a totem for meaning is attached to every line. You must be most particular about detail and proportion.' - Emily Carr"
 	},
@@ -6853,7 +6970,9 @@
 		"happiness": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great General": 1},
-	"uniques": ["Only available <after adopting [God of the Open Sky]>","[+1 Food] from [Pasture] tiles [in this city]","[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]", "[+15]% Production when constructing [Mounted] units [in all cities]"],
+	    "uniques": [
+			"Only available <after adopting [God of the Open Sky]>","[+1 Food] from [Pasture] tiles [in this city]","[+1 Food] from [Mechanised Livestock Farm] tiles [in this city]", "[+15]% Production when constructing [Mounted] units [in all cities]"
+		],
 		"requiredTech": "Animal Husbandry",
 		"quote": "'Full Moon rises to the sky, Why aren't there clouds around? I am waiting for a beautiful girl, why haven't you come?' - Meeting at Ovoo by Mala Qinfu, 1951 "
 	},
@@ -6863,7 +6982,9 @@
 		"happiness": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
-	"uniques": ["Only available <after adopting [Hunting Tradition]>","[+10]% [Food] [in all cities]", "[+15]% Production when constructing [Skirmish] units [in all cities]"],
+	    "uniques": [
+			"Only available <after adopting [Hunting Tradition]>","[+10]% [Food] [in all cities]", "[+15]% Production when constructing [Skirmish] units [in all cities]"
+		],
 		"requiredTech": "Trapping",
 		"quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson"
 	},
@@ -6898,6 +7019,42 @@
 	"uniques": ["Only available <after adopting [Harvest Ritual]>","[+1 Food] from [Manual Farm] tiles [in this city]","[+1 Food] from [Mechanised Farm] tiles [in this city]","[+1 Food] from [Permaculture] tiles [in this city]","[+10]% Production when constructing [Civilian] units [in all cities]"],
 		"requiredTech": "Pottery",
 		"quote": "'Dancing along the sacred trees, Competeting in drums and flutes to please the god of the soils' - Wang Wei"
+	},
+	///Überarbeiten Wonder
+
+	   //Der Apostolische Palast, auch bekannt als Papstpalast oder Vatikanpalast, ist die offizielle Residenz des Papstes in der Vatikanstadt. 
+	// Er dient sowohl als Wohnsitz des Papstes als auch als Zentrum der Verwaltung der katholischen Kirche und des Heiligen Stuhls. 
+
+	//Der Apostolische Palast ist ein Symbol für die Macht und das geistliche Zentrum der katholischen Kirche.
+
+	//Er ist nicht nur die offizielle Residenz des Papstes, sondern auch das administrative Zentrum der katholischen Kirche und beherbergt wichtige 
+	// Institutionen und Kunstwerke, die für die Religion von großer Bedeutung sind
+	//30. April 1589
+	///Wikipedia alle Gebäudekomplexe des Vatikans Integrieren
+	{
+		"name": "Catacombs of Kom El Shoqafa",
+		"unique to": "Egypt",
+		"isWonder": true,
+		"culture": 4,
+		"faith": 2,
+		"happiness": 2,
+		"greatPersonPoints": {"Great Engineer": 2},
+		"requiredTech": "Construction",
+		"quote": "'The catacombs lie beneath the western necropolis of Alexandria and consist of three levels cut through solid rock.'"
+	},
+	//Das Haus der Weisheit (arabisch دار الحكمة , DMG dār al-ḥikma) oder Haus der Wissenschaft ( دار العلم dār al-ʿilm) war eine Art Akademie und ein Zentrum der 
+	// theologischen und philosophischen Studien mit einer umfangreichen Bibliothek in Kairo in der Ära der Dynastie der schiitisch-ismailitischen Fatimiden.
+	{
+		"name": "House of Wisdom", 
+		//"unique to": "Assyria",
+		"isWonder": true,
+		"science": 5,
+		"culture": 2,
+		//"greatPersonPoints": {"Great Scientist": 1},
+		//"specialistSlots": {"Scientist": 1},
+		//"uniques": ["[+10]% [Science] <in this city> <during a Golden Age>"]
+		"requiredTech": "Education",
+		"quote": "'The center of knowledge during the Islamic Golden Age, the House of Wisdom stored many knowledge and intellect.'"
 	},
 	///Concept of afterlife:in egypt its eternal, another concept is heaven and hell.
 	{
@@ -6980,20 +7137,7 @@
 			"Provides [1] [Great Work of Art]",
 			"Instantly consumes [1] [Great Work of Art]",
 			"[+1 Culture] <in cities with a [Sistine Chapel Great Art Slot 1]>"]
-        },
-	{
-		"name": "Apostolic Palace",
-		"isWonder": true,
-		"culture": 4,
-		"faith": 8,
-		"cost": 420,
-		"uniques": ["[+2 Production] from all [Faith] buildings",
-			"May choose [1] additional belief(s) of any type when [enhancing] a religion",
-			"Can only be built <in [Holy] cities>",
-			"Hidden when religion is disabled"],
-		"requiredTech": "Theology",
-		"quote": "'A rock pile ceases to be a rock pile the moment a single man contemplates it, bearing within him the image of a cathedral.' - Antoine de Saint-Exupery"
-	},
+    },
 	{
 		"name": "Grand Master's Chapel",
 		"faith": 5,
@@ -7057,33 +7201,57 @@
 	},
 	{
 		"name": "Church of Holy Wisdom",
-		"faith": 3,
-		"happiness": 1,
+		"faith": 4,
+		"happiness": 2,
 		"isWonder": true,
-		"uniques": ["Only available <after adopting [The One True God]>","Gain a free [Chaple] [in this city]","Gain a free [Enhancer] belief", "Hidden when religion is disabled"],
+		"uniques": [
+			"'Organise Place'",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"Only available <after adopting [Monotheism]>",
+			"Gain a free [Chapel] [in this city]",
+			"Gain a free [Enhancer] belief",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
 		"requiredTech": "Theology",
 		"quote": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty' - Procopius, De Aedificis"
 	},
 	{
 		"name": "Mosque of Holy Wisdom",
-		"faith": 2,
-		"happiness": 1,
-		"cost": 200,
 		"isWonder": true,
-		"uniques": ["Only available <after adopting [The One True God]>","Only available <after adopting [Pilgrimage]>","Can only be built <in [Annexed] cities>","Gain a free [Mosque] [in this city]", "Hidden when religion is disabled"],
+		"faith": 1,
+		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Strategist": 1
+		},
+		"cost": 100,
+		"uniques": [
+			"'Worship Place'",
+			"Only available <after adopting [Monotheism]>",
+			"Only available <after adopting [Pilgrimage]>",
+			"Can only be built <in [Annexed] cities>",
+			"Gain a free [Mosque] [in this city]"
+		],
 		"requiredTech": "Theology",
-		"requiredBuilding":"Church of Holy Wisdom",
-		"quote": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty' - Procopius, De Aedificis"
+		"requiredBuilding": "Church of Holy Wisdom",
+		"quote": "'Fortune is a woman, and if you want to keep her under your thumb, you must use violence and force.' - Sultan Mehmed II"
 	},
 	{
 		"name": "Giant Mosque",
-		"culture": 2,
-		"science": 2,
+		"isWonder": true,
+		"culture": 3,
 		"faith": 3,
 		"happiness": 1,
-		"greatPersonPoints": {"Great Engineer": 1},
-		"isWonder": true,
-		"uniques": ["Only available <after adopting [The One True God]>","Only available <after adopting [Pilgrimage]>","Gain a free [Mosque] [in this city]", "Hidden when religion is disabled"],
+		"greatPersonPoints": {
+			"Great Engineer": 1
+		},
+		"uniques": [
+			"'Worship Place'",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"Only available <after adopting [Monotheism]>",
+			"Only available <after adopting [Pilgrimage]>",
+			"Gain a free [Mosque] [in this city]",
+			"Only available <if [No Wonder] is not constructed> <hidden from users>"
+		],
 		"requiredTech": "Theology",
 		"quote": "'With the magnificence of eternity before us, let time, with all its fluctuations, dwindle into its own littleness.' - Thomas Chalmers"
 	},
@@ -8485,12 +8653,13 @@
 		"culture": 1,
 		"faith": 8,
 		"isNationalWonder": true,
-		"uniques": ["Requires a [Temple] in all cities", 
-                           "Cost increases by [30] per owned city",
-			   "[+100]% Natural religion spread [in this city]", 
-                           "Hidden when religion is disabled", 
-                           "Can only be built [in holy cities]",
-                           "Religious Wonder", "Agnostic"],
+		"uniques": [
+			"Requires a [Temple] in all cities", 
+            "Cost increases by [30] per owned city",
+			"[+100]% Natural religion spread [in this city]", 
+            "Hidden when religion is disabled", 
+            "Can only be built [in holy cities]",
+            "Religious Wonder", "Agnostic"],
 		"requiredTech": "Theology"
 	}
 ]

@@ -616,8 +616,8 @@
 	"Siege",
 	"Ranged Combat Ship"
 	],
-	 "row": 3
-	 "column": 14,     
+	 "row": 3,
+	 "column": 14    
 },
 {
 	"name": "Logistics",
@@ -628,7 +628,7 @@
 		"Flank Speed",
 		"Convoy",
 		"Wolfpack III",
-		"Siege III",
+		"Siege III"
 		//"Sortie"
 	],
 	"uniques": [
@@ -706,7 +706,7 @@
 	"uniques": ["[+33]% Strength <vs [Ranged Combat Ship] units> <when defending>"],
 	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
 	"row": 2,
-	"column": 40, 
+	"column": 40
 },
 {
 	"name": "Landfall II",
@@ -3366,10 +3366,6 @@
 		"uniques": ["Prevents spreading of religion to the city it is next to", "Gain [200] [Gold] <(modified by game speed)> <upon being defeated>", "Gain [40] [Faith] <(modified by game speed)> <upon being promoted>"]
 	},
 	{
-		"name": "Elite Training", 
-		"uniques": ["[+25]% Strength"]
-	},
-	{
 		"name": "Monastic Training", 
 		"uniques": ["[+10]% Strength","Earn [50]% of the damage done to [Military] units as [Faith]"]
 	},
@@ -4534,16 +4530,22 @@
 ///Religious Promotions
 	{
         "name": "Messiah Unique",
-        "uniques": ["Can Spread Religion <[1] additional time(s)>", "Ignores Zone of Control", "May travel on Water tiles without embarking"]
+        "uniques": [
+			"Can Spread Religion <[1] additional time(s)>", "Ignores Zone of Control", "May travel on Water tiles without embarking"
+		]
     },
 	{
 	    "name": "Devout",
-        "uniques": ["Can Spread Religion <[1] additional time(s)>"]
+        "uniques": [
+			"Can Spread Religion <[1] additional time(s)>"
+		]
     },
 	{
 		"name": "Holy Calling",
-		"uniques": ["[+15]% Strength when stacked with [Missionary]", 
-			"[+15]% Strength when stacked with [Great Prophet]"]
+		"uniques": [
+			"[+15]% Strength when stacked with [Missionary]", 
+			"[+15]% Strength when stacked with [Great Prophet]"
+		]
 	},
 	{
         "name": "Zeal",
