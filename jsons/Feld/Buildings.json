@@ -1482,7 +1482,6 @@
 		"requiredTech": "Horseback Riding"
 	},
 /// light industry
-
     //Mühlstein - Einfache Methode Mahl- und Ölgewinnung
 	//Ölmühle - Verbesserte Methode zur Gewinnung von Flüssigkeiten wie bsp. Ölen
 	//Schreinerei - ((-)Summe))Geld/Bretter/Werkzeug/Stein - Benötigt Gebäude/Ressourcen
@@ -1696,8 +1695,9 @@
 		"culture": 2,
 		"happiness": 1,
 		"maintenance": 1,
-		 "uniques": ["Light Industry",
-			 "Consumes [1] [Beer]"],
+		 "uniques": [
+			"Light Industry",
+			"Consumes [1] [Beer]"],
 		"requiredTech": "Calendar"
 	},
 	{
@@ -1706,10 +1706,10 @@
 		"culture": 1,
 		"food": 1,
 		"maintenance": 1,
-		"uniques": ["Light Industry",
-			 "Consumes [4] [Tools]","Consumes [6] [Wood]","Consumes [4] [Boards]","Consumes [5] [Bricks]",
-			 "Provides [1] [Wine] <with [Grape]>",
-			 "[+1 Production] <in cities with a [Guild Complex]>"],
+		"uniques": [
+			"Light Industry",
+			"Provides [1] [Wine] <with [Grape]>",
+			"[+1 Production] <in cities with a [Guild Complex]>"],
 		"requiredNearbyImprovedResources": ["Grape"],
 		"requiredTech": "Pottery"
 	},
@@ -1725,47 +1725,110 @@
 		"uniques": ["[-15]% unhappiness from [Population] [in this city]"],
 		"requiredTech": "Chemistry"
 	},
+
+	//[relativeAmount]% construction time for [improvementFilter] improvements 
+	//Can build [improvementFilter] improvements at a [relativeAmount]% rate 
+	//[relativeAmount]% maintenance cost for [buildingFilter] buildings [cityFilter] 
+
+	////////////////////Expansion///////////////////////
+    {
+		"name": "Kloster Erweiterung I" //((I,II,III, IV (usw)), (Kloster Spezialsierung)
+	},
+	{
+		"name": "Kloster Erweiterung II",
+		"cost": 600,
+		"uniques": [
+			"Unsellable",
+			"'Expansion'",
+			"Comment [Nur wenn alle Gebäude/Erweiterungen in diesem Packet nicht gebaut wurden, ist dieses Packet verfügbar.]",
+			"Only available <in cities with a [Kloster Erweiterung I]>",
+			"Only available <in cities without a [Kloster Erweiterung III]>",
+			"Only available <in cities without a [///]>",
+			"Comment [Erlaubt dir alle Gebäude in diesem Packet zu bauen, die eine Kloster Erweiterung II brauchen]",
+		//"Gain a free []", //Extra Gebäude, Erweiterung; die weitere Gebäude brauchen
+			"[-15]% [Gold] [in this city] <upon constructing [Kloster Brauerrei] [in this city]>",
+			"[+15]% production cost <upon constructing [Kloster Brauerrei]> <in this city>"
+		],
+		"requiredTech": "Theology",
+		"hurryCostModifier": -25
+	},
+	{
+		"name": "Kloster Erweiterung III"
+	}
+	////////////////
+	{
+		"name": "Hopfendarre",
+
+
+	},
+	//
+	{
+		//Cultural
+		"name": "Wirtshaus",
+		//
+	},
+	{
+		"name": "Kloster Heilkräutergarten"
+	},
+	{
+		"name": "Kloster Brauerrei",
+		"maintenance": 2,
+		"happiness": 1,
+
+		"requiredNearbyImprovedResources": ["Hops", "Grain"],
+		"uniques": [
+			"'Light Industry'",
+			"Provides [1] [Beer] <with [Grain]> <with [Hops]> <in cities with a [Hopfendarre]> <in this city>",
+			"[+1 Production] from [{'Manual Farm'} {Hops}] tiles [in this city] <if [Hopfendarre] is constructed",
+			"[+8]% [culture] [in this city] <if [Wirtshaus] is constructed> <in cities with at least [6] [Population]> <after turn number [8]>",
+			"[+4]% [faith] [in cities following our religion] <if [Cathedral] is constructed> <in cities with at least [6] [Followers of this Religion]>",
+			"Only available <if [Well] is constructed> <if [Monastery] is constructed> <in this city>",
+			"Only available <if [Brewery] is not constructed> <in this city>",
+			"Only available <if [Kloster Erweiterung II] is constructed <in this city>",
+		],
+		"requiredTech": "Pottery",
+		"hurryCostModifier": 25
+	},
 	{
 		"name": "Brewery",
-		"maintenance": 1,
-		"culture": 1,
 		"happiness": 1,
-		"hurryCostModifier": 0,
-		"uniques": ["Light Industry",
-			"Consumes [4] [Tools]","Consumes [5] [Wood]","Consumes [5] [Boards]","Consumes [7] [Bricks]",
-			                "Provides [1] [Beer] <with [Grain]>",
-			                "Provides [1] [Alcohol] <with [Grain]>",
-					"Provides [1] [Alcohol] <with [Grape]>",
-					"Provides [1] [Alcohol] <with [Tuber]>",
-					"Provides [1] [Alcohol] <with [Fruit]>",
-			"[+1 Production] <in cities with a [Guild Complex]>"],
-		"obsoleteTech": "Apprenticeship",
-		"requiredTech": "Pottery"
+		"gold": 1,
+		"uniques": [
+			"'Light Industry'",
+			"Provides [2] [Beer] <with [Grain]>",
+			"Provides [1] [Alcohol] <with [Grain]>",
+			"Provides [1] [Alcohol] <with [Fruit]>",
+			"Provides [1] [Alcohol] <with [Grape]>",
+			"Provides [1] [Alcohol] <with [Sugar]> <after discovering [Chemistry]>",
+			"Provides [1] [Alcohol] <with [Tuber]> <after discovering [Chemistry]>"
+		],
+		"requiredTech": "Pottery",
+		"hurryCostModifier": 5
 	},
 	{
 		"name": "Bakery",
-		"maintenance": 1,
-		"food": 2,
 		"happiness": 1,
-		"hurryCostModifier": 0,
-		"uniques": ["Light Industry",
-                        "Consumes [5] [Wood]","Consumes [3] [Boards]","Consumes [6] [Bricks]",
-			"[+1 Gold] from [Grain] tiles [in this city]","[+1 Gold] from [Tuber] tiles [in this city]",
-			"[+1 Production] <in cities with a [Guild Complex]>"],
-		"obsoleteTech": "Apprenticeship",
-		"requiredTech": "Pottery"
+		"food": 1,
+		"uniques": [
+			"'Light Industry'",
+			"[+1 Gold] from [{'Agricultural Improvement'} {Grain}] tiles [in this city]",
+			"[+1 Gold] from [{'Agricultural Improvement'} {Tuber}] tiles [in this city]"
+		],
+		"requiredTech": "Pottery",
+		"hurryCostModifier": 5
 	},
-        {
+    {
 		"name": "Pig Farm",
 		"cost": 140,
 		"production": 2,
 		"maintenance": 1,
 		"requiredNearbyImprovedResources": ["Pigs"],
-		"uniques": ["Light Industry",
-		        "Consumes [5] [Wood]","Consumes [6] [Boards]","Consumes [2] [Stone]",
-			"Consumes [1] [Thatch]","Consumes [1] [Water]",
+		"uniques": [
+			"Light Industry",
+			"Consumes [1] [Thatch]",
+			"Consumes [1] [Water]",
 			"Provides [2] [Pigs]"],
-                "requiredTech": "Animal Husbandry"
+        "requiredTech": "Animal Husbandry"
 	},
 	{
 		"name": "Slaughterhouse",
@@ -1773,53 +1836,65 @@
 		"food": 2,
 		"maintenance": 2,
 		"requiredNearbyImprovedResources": ["Caprinae","Deer","Bovine","Horse"],
-		"uniques": ["Light Industry",
-			"Consumes [3] [Boards]","Consumes [6] [Stone]","Consumes [2] [Tools]",
-			"Consumes [1] [Pigs]","Consumes [1] [Herbs]",
-			"Provides [3] [Meat]","Provides [2] [Sausage]","Provides [1] [Animal skins]",
+		"uniques": [
+			"Light Industry",
+			"Consumes [1] [Pigs]",
+			"Consumes [1] [Herbs]",
+			"Provides [3] [Meat]",
+			"Provides [2] [Sausage]",
+			"Provides [1] [Animal skins]",
 			"[+1 Production] <in cities with a [Hunting lodge]>"],
 		"requiredBuilding": "Pig Farm",
 		"requiredTech": "Animal Husbandry"
 	}, 
 	{
 		"name": "Smokery",
+		"requiredBuilding": "Slaughterhouse",
 		"cost": 100,
 		"maintenance": 1,
 		"production": 1,
 		"percentStatBonus": {"food": 20},
-		"uniques": ["Light Industry",
-			"Consumes [2] [Stone]",
-			"Consumes [2] [Wood]","Consumes [1] [Pot]",
+		"uniques": [
+			"Light Industry",
+			//"Consumes [2] [Wood]",
+			"Consumes [1] [Pot]",
 			"[+1 Production] <in cities with a [Guild Complex]>"],
-		"requiredBuilding": "Slaughterhouse",
 		"requiredTech": "Animal Husbandry"
 	},
-        {
+    {
 		"name": "Colossal Wine Cellar",
+		"requiredBuilding": "Pottery Workshop",
 		"cost": 225,
 		"food": 1,
 		"gold": 3,
 		"maintenance": 1,
-		"specialistSlots": {"Merchant": 1},
-		"hurryCostModifier": 15,
-                "percentStatBonus": {"gold": 25},
-	        "requiredNearbyImprovedResources": ["Grape"],
-		"uniques":["Light Industry",
+		"specialistSlots": {
+			"Merchant": 1
+		},
+        "percentStatBonus": {
+			"gold": 25
+		},
+	    "requiredNearbyImprovedResources": ["Grape"],
+		"uniques":[
+			"Light Industry",
 			"[+1 Gold] from [Plantation] tiles [in this city]", 
 			"Provides [1] [Wine] <with [Grape]>",
 			"Provides [1] [Cognac] <with [Grape]>",
 			"[+1 Production] <in cities with a [Guild Complex]>"],
-		"requiredBuilding": "Pottery Workshop",
-		"requiredTech": "Calendar"
+		"requiredTech": "Calendar",
+		"hurryCostModifier": 15
 	},
 	{
 		"name": "Olive Oil Vineyard",
+		"cost": 100,
 		"gold": 2,
 		"food": 1,
-		"cost": 100,
-		"uniques": ["Provides [1] [Olive Oil] <with [Olives]>",
+		"requiredNearbyImprovedResources": ["Olives"],
+		"uniques": [
+			"Provides [1] [Olive Oil] <with [Olives]>",
 			"[+1 Production] <in cities with a [Guild Complex]>",
-			"Unsellable","Destroyed when the city is captured","Unbuildable"],
+			"Destroyed when the city is captured",
+		],
 		"requiredTech": "Calendar"
 	},
 	{
@@ -4528,7 +4603,10 @@
 			"[-10]% Unhappiness from [Population] [in this city] <before adopting [Tithe]",
 			"[+10]% [Science] from every [Monastery] <after adopting [Early Theology]>",
 			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Imperal Era]> <after adopting [Monastic Warrior]>",
-			"Unbuildable","Hidden when religion is disabled", "Destroyed when the city is captured"
+			//"Can only be built <if [Mosque] is not constructed>", //Bevor Islam, Budismus, Judentum etc. Religion als Nationale Religion anerkannt wird
+			"Only available <after adopting [Monotheism]>",
+			"Destroyed when the city is captured",
+			"Hidden when religion is disabled"
 		],
 		"requiredTech":"Theology",
 		"quote ": "'Siehe, ich stehe vor der Tür und klopfe an. Wenn jemand meine Stimme hören wird und die Tür auftun, zu dem werde ich hineingehen und das Abendmahl mit ihm halten und er mit mir.'"
