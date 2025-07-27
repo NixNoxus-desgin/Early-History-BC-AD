@@ -4540,11 +4540,13 @@
 			"Can Spread Religion <[1] additional time(s)>"
 		]
     },
+			//"[+15]% Strength when stacked with [Missionary]", 
+			//"[+15]% Strength when stacked with [Great Prophet]"
 	{
 		"name": "Holy Calling",
 		"uniques": [
-			"[+15]% Strength when stacked with [Missionary]", 
-			"[+15]% Strength when stacked with [Great Prophet]"
+			"[20]% Spread Religion Strength <when stacked with a [Missionary] unit>",
+			"[20]% Spread Religion Strength <when stacked with a [Great Prophet] unit>"
 		]
 	},
 	{

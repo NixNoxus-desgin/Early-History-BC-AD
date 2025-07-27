@@ -260,16 +260,16 @@
 	"replaces": "Great Prophet",
 	"unitType": "Civilian",
 	"uniques": [
-					"Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
-					"Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
-		"Removes other religions when spreading religion",
-					"May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
-					"May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
-		"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
-		"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
-		"[+10]% Strength bonus for [Military] units within [2] tiles",
-		"[+20]% Strength bonus for [Military] units within [1] tiles",
-		"[+25]% Strength bonus for [Military] units within [0] tiles",
+		"Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+		"Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+	"Removes other religions when spreading religion",
+		"May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+		"May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+	    "May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
+	"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
+		"[+10]% Strength bonus for [Military] units within [3] tiles",
+		"[+20]% Strength bonus for [Military] units within [2] tiles",
+		"[+25]% Strength bonus for [Military] units within [1] tiles",
 		"All adjacent units heal [+20] HP when healing",
 		"Can be earned through combat",
 		"Takes your religion over the one in their birth city"],
@@ -2425,8 +2425,10 @@
 		"movement": 2,
 		"strength": 16,
 		"cost": 90,
-		"requiredTech": "Civil Service",
-		"uniques": ["[+50]% Strength <vs [Rider] units>"],
+		//"requiredTech": "Civil Service",
+		"uniques": [
+			"[+50]% Strength <vs [Rider] units>"
+		],
 		"upgradesTo": "Mercenary Rider",
 		"obsoleteTech": "Metallurgy",
 		"attackSound": "metalhit"
@@ -2610,22 +2612,37 @@
 		"promotions": ["[Housecarl] ability"],
 		"attackSound": "metalhit"
 	},
+	//
+	{
+        "name": "Swiss Pikeman",
+		"unitType":"Close Combat",
+		"replaces": "Pikeman",
+		"uniqueTo": "Switzerland",
+		"movement": 1,
+		/////////Bearbeiten//////////
+	},
+	//
 	{
 		"name": "Swiss Guard",
 		"unitType": "Close Combat",
 		"replaces": "Light Cavalry",
 		"uniqueTo": "Papal States",
 		"movement": 2,
-		"strength": 30,
+		"strength": 25,
 		"cost": 275,
 		"requiredTech": "Chivalry",
 		"promotions": ["Formation I"],
 		"uniques": [
 			    "[+50]% Strength <vs [Rider] units>",
-			    "[+25]% Strength <when fighting in [Friendly Land] tiles>","Unit will heal every turn, even if it performs an action",
-	        	"[+10]% Strength <after discovering [Tactics]>","[+30]% Strength <after discovering [Chivalry]>",
-		        "[+60]% Strength <after discovering [Gunpowder]>","[+100]% Strength <after discovering [Steels]>",
-				"[+1] Movement <after discovering [Flintlock]>"],
+				"[25]% Strength <when fighting in [Friendly Land] tiles> <upon gaining the [Awe] status>",
+	        	"[+10]% Strength <after discovering [Tactics]>",
+				"[+30]% Strength <after discovering [Chivalry]>",
+		        "[+60]% Strength <after discovering [Gunpowder]>",
+				"[+100]% Strength <after discovering [Steels]> <upon gaining the [Elite Training] promotion>",
+				"Unit will heal every turn, even if it performs an action",
+				"[+1] Movement <after discovering [Flintlock]>",
+				"[25]% Strength for enemy [Ranged Combat] units in adjacent [Foreign Land] tiles <when attacking>"
+			],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},

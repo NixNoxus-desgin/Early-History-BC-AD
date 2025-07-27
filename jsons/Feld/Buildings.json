@@ -7,281 +7,6 @@
 //denounced Zitate
 
 
-
-//Sonderverbesserungen
-
-{
-	"name": "Comprehensive City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [30] when built]\n\n\n[City Level II]:\n    [[+10]% growth [in this city]]\n\n[City Level III]:\n    [[+10]% Production when constructing [All] buildings [in this city]]\n\n[City Level IV]:\n    [[+15]% growth [in this city]]\n\n[City Level V]:\n    [+5% Yield in this city]",
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", "Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>",
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[+10]% growth [in this city] <in cities with a [City Level II]>", 
-	"[+10]% Production when constructing [All] buildings [in this city] <in cities with a [City Level III]>",
-	"[+15]% growth [in this city] <in cities with a [City Level IV]>",
-	"[+5]% [Production] [in this city] <in cities with a [City Level V]>",
-	"[+5]% [Gold] [in this city] <in cities with a [City Level V]>",
-	"[+5]% [Science] [in this city] <in cities with a [City Level V]>",
-	"[+5]% [Faith] [in this city] <in cities with a [City Level V]>",
-	"[+5]% [Food] [in this city] <in cities with a [City Level V]>",
-	"[+5]% [Happiness] [in this city] <in cities with a [City Level V]>",
-	"[+5]% [Culture] [in this city] <in cities with a [City Level V]>",
-	]
-},
-{
-	"name": "Agricultural City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[+1 Food, +1 Gold] from [Bonus resource] tiles [in this city]]\n    [[-5]% [Production] [in this city]]\n\n[City Level III]:\n    [[+1 Food, +3 Gold] from [Plantation] tiles [in this city]]\n    [[-5]% [Production] [in this city]]\n\n[City Level IV]:\n    [[+1 Food, +1 Gold] from [Farm] tiles [in this city]]\n    [[-5]% [Production] [in this city]]\n\n[City Level V]:\n    [[+1 Food, +3 Production] from [Pasture] tiles [in this city]]\n    [[-5]% [Production] [in this city]]"
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", "Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[-7]% [Production] [in this city]",
-	"[+1 Food, +1 Gold] from [Bonus resource] tiles [in this city] <in cities with a [City Level II]>",
-	
-	"[-7]% [Production] [in this city] <in cities with a [City Level III]>",
-	"[+1 Food, +3 Gold] from [Plantation] tiles [in this city] <in cities with a [City Level III]>",
-	
-	"[-7]% [Production] [in this city] <in cities with a [City Level IV]>",
-	"[+1 Food, +1 Gold] from [Farm] tiles [in this city] <in cities with a [City Level IV]>"
-	
-	"[-7]% [Production] [in this city] <in cities with a [City Level V]>",
-	"[+1 Food, +3 Production] from [Pasture] tiles [in this city] <in cities with a [City Level V]>", 
-	]
-},
-{
-	"name": "Resource-Based City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[+1 Production, +1 Food] from [Strategic resource] tiles [in this city]]\n    [[Provides [5] [Horses]] [after discovering [Animal Husbandry]]]\n    [[-5]% [Food] [in this city]]\n\n[City Level III]:\n    [[Provides [5] [Iron]] [after discovering [Iron Working]]]\n    [[Provides [5] [Coal]] [after discovering [Chemistry]]]\n    [[-5]% [Food] [in this city]]\n\n[City Level IV]\n    [[Provides [5] [Steels]] [after discovering [Metal Casting]]]\n    [[Provides [5] [Oil]] [after discovering [Biology]]]\n    [[-5]% [Food] [in this city]]\n\n[City Level V]:\n    [[Provides [3] [Aluminum]] [after discovering [Electricity]]]\n    [[Provides [3] [Uranium]] [after discovering [Atomic Theory]]]\n    [[-5]% [Food] [in this city]]"
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[-5]% [Food] [in this city]",
-	"[+1 Production, +1 Food] from [Strategic resource] tiles [in this city] <in cities with a [City Level II]>",
-	"Provides [5] [Horses] <after discovering [Animal Husbandry]> <in this city> <in cities with a [City Level II]>",
-	
-	"[-7]% [Food] [in this city] <in cities with a [City Level III]>",
-	"Provides [5] [Iron] <after discovering [Iron Working]> <in this city> <in cities with a [City Level III]>",
-	"Provides [5] [Coal] <after discovering [Chemistry]> <in this city> <in cities with a [City Level III]>",
-	
-	"[-8]% [Food] [in this city] <in cities with a [City Level IV]>",
-	"Provides [5] [Steels] <after discovering [Metal Casting]> <in this city> <in cities with a [City Level IV]>",
-	"Provides [5] [Oil] <after discovering [Biology]> <in this city> <in cities with a [City Level IV]>",
-	
-	"[-8]% [Food] [in this city] <in cities with a [City Level V]>",
-	"Provides [3] [Aluminum] <after discovering [Electricity]> <in this city> <in cities with a [City Level V]>",
-	"Provides [3] [Uranium] <after discovering [Atomic Theory]> <in this city> <in cities with a [City Level V]>",
-	]	
-},
-{
-	"name": "Commercial City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[[+3 Gold] from all [Happiness] buildings] [in this city]]\n    [[-5]% [Food] [in this city]]\n\n[City Level III]:\n    [[[+5 Gold] from all [Culture] buildings] [in this city]]\n    [[-5]% [Production] [in this city]]\n\n[City Level IV]:\n    [[[+20]% [Gold] from every [Bank]] [in this city]]\n    [[-5]% [Food] [in this city]]\n\n[City Level V]:\n    [[+3 Gold, +3 Science] from [Trading post] tiles [in this city]]\n    [[-5]% [Production] [in this city]]"
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[-5]% [Food] [in this city]",
-	"[+3 Gold] from all [Happiness] buildings <in this city> <in cities with a [City Level II]>", 
-	
-	"[-5]% [Production] [in this city] <in cities with a [City Level III]>",
-	"[+5 Gold] from all [Culture] buildings <in this city> <in cities with a [City Level III]>", 
-	
-	"[-5]% [Food] [in this city] <in cities with a [City Level IV]>",
-	"[+20]% [Gold] [in this city] <in cities with a [City Level IV]> <in cities with a [Bank]>", 
-	
-	"[-5]% [Production] [in this city] <in cities with a [City Level V]>",
-	"[+3 Gold, +3 Science] from [Trading post] tiles [in this city] <in cities with a [City Level V]>"
-	]	
-},
-{
-	"name": "Research-Oriented City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[[+1 Science] from all [Science] buildings] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level III]:\n    [[[+7]% [Science] from [University]] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level IV]:\n    [[[+7]% [Science] from [Printing House]] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level V]:\n    [[[+7]% [Science] from [Public School]] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]"
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[+10]% maintenance cost for buildings [in this city]",
-	"[+1 Science] from all [Science] buildings <in this city> <in cities with a [City Level II]>", 
-	
-	"[+20]% maintenance cost for buildings [in this city] <in cities with a [City Level III]>",
-	"[+5]% [Science] [in this city] <in cities with a [City Level III]> <in cities with a [University]>", 
-	
-	"[+25]% maintenance cost for buildings [in this city] <in cities with a [City Level IV]>",
-	"[+7]% [Science] [in this city] <in cities with a [City Level IV]> <in cities with a [Printing House]>", 
-	
-	"[+7]% maintenance cost for buildings [in this city] <in cities with a [City Level V]>",
-	"[+7]% [Science] [in this city] <in cities with a [City Level V]> <in cities with a [Public School]>" 
-	]
-},
-{
-	"name": "Cultural City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[[+1 Culture] from all [Culture] buildings] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level III]:\n    [+15% [Culture] if has a world wonder in this city]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level IV]:\n    [[[+10]% [Culture] from [Printing House]] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]\n\n[City Level V]:\n    [[Production to [Culture] conversion in cities changed by [100]%] [in this city]]\n    [[+10]% maintenance cost for buildings [in this city]]",
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>", 
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[+10]% maintenance cost for buildings [in this city]",
-	"[+1 Culture] from all [Culture] buildings <in this city> <in cities with a [City Level II]>", 
-	
-	"[+15]% maintenance cost for buildings [in this city] <in cities with a [City Level III]>",
-	"[+15]% [Culture] [{in all cities with a world wonder} {in this city}] <in cities with a [City Level III]>",
-	
-	"[+15]% maintenance cost for buildings [in this city] <in cities with a [City Level IV]>",
-	"[+10]% [Culture] <in this city> <in cities with a [City Level IV]> <in cities with a [Printing House]>", 
-	
-	"[+20]% maintenance cost for buildings [in this city] <in cities with a [City Level V]>",
-	"Production to [Culture] conversion in cities changed by [100]% <in this city> <in cities with a [City Level V]>"
-	]
-},
-{
-	"name": "Religious City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[[+10]% [Faith] from [Temple]] [in this city]]\n    [[-5]% [Science] [in this city]]\n\n[City Level III]:\n    [[[Faith] cost of purchasing items in cities [-10]%] [in this city]]\n    [[-5]% [Gold] [in this city]]\n\n[City Level IV]:\n    [[May buy [Buildings] buildings with [Faith] for [3] times their normal Production cost] [in this city]]\n    [[May buy [Military] units with [Faith] for [3] times their normal Production cost] [in this city]]\n    [[-5]% [Science] [in this city]]\n\n[City Level V]:\n    [[[+25]% Yield from every [Holy site]] [in this city]]\n    [[-5]% [Gold] [in this city]]",        
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[-5]% [Science] [in this city]",
-	"[+10]% [Faith] [in this city] <in cities with a [City Level II]> <in cities with a [Temple]>", 
-	
-	"[-5]% [Gold] [in this city] <in cities with a [City Level III]>",
-	"[Faith] cost of purchasing items in cities [-10]% <in this city> <in cities with a [City Level III]>",
-	
-	"[-5]% [Science] [in this city] <in cities with a [City Level IV]>",
-	"May buy [Buildings] buildings with [Faith] for [3] times their normal Production cost <in this city> <in cities with a [City Level IV]>",
-	"May buy [Military] units with [Faith] for [3] times their normal Production cost <in this city> <in cities with a [City Level IV]>", 
-	
-	"[-5]% [Gold] [in this city] <in cities with a [City Level V]>",
-	"[+25]% Yield from every [Holy site] <in this city> <in cities with a [City Level V]>",
-	]
-},
-{
-	"name": "Military City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[+15]% Production when constructing [Military] units [in this city]]\n    [[-5]% [Food] [in this city]]\n\n[City Level III]:\n    [All newly-trained [Military] units [in this city] receive the [Military City ability] promotion]\n    [[Military City ability]: [[+10]% Strength]]\n    [[-5]% [Gold] [in this city]]\n\n[City Level IV]:\n    [[[+10]% [Production] from [Armory]] [in this city]]\n    [[[+10]% [Science] from [Military Academy]] [in this city]]\n    [[-5]% [Food] [in this city]]\n\n[City Level V]:\n    [New [Military] units start with [25] XP [in this city]]\n    [[-5]% [Gold] [in this city]]",
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[-5]% [Food] [in this city]",
-	"[+15]% Production when constructing [Military] units [in this city] <in cities with a [City Level II]>",
-	
-	"[-5]% [Gold] [in this city] <in cities with a [City Level III]>",
-	"All newly-trained [Military] units [in this city] receive the [Military City ability] promotion <in cities with a [City Level III]>",
-		
-	"[-5]% [Food] [in this city] <in cities with a [City Level IV]>",
-	"[+10]% [Production] [in this city] <in cities with a [City Level IV]> <in cities with a [Armory]>", 
-	"[+10]% [Science] [in this city] <in cities with a [City Level IV]> <in cities with a [Military Academy]>", 	
-	
-	"[-5]% [Gold] [in this city] <in cities with a [City Level V]>",
-	"New [Military] units start with [25] XP [in this city] <in cities with a [City Level V]>"
-	]
-},
-{
-
-	"name": "Fortress City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [City strength]+5\n    [City health]+100\n    [[-5]% [Food] [in this city]]\n\n[City Level III]:\n    [[+1 Production] from [Fort] tiles [in this city]]\n    [[-5]% [Gold] [in this city]]\n\n[City Level IV]:\n    [[[+25]% City Strength from defensive buildings] [in this city]]\n    [[-5]% [Food] [in this city]]\n\n[City Level V]:\n    [[[+25]% Strength for cities] [in this city]]\n    [[-5]% [Gold] [in this city]]",
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>" 
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[-5]% [Food] [in this city]",
-	"Gain a free [Fortress City ability] [in this city]"
-	
-	"[-5]% [Gold] [in this city] <in cities with a [City Level III]>",
-	"[+1 Production] from [Fort] tiles [in this city] <in cities with a [City Level III]>",
-	
-	"[-5]% [Food] [in this city] <in cities with a [City Level IV]>",
-	"[+25]% City Strength from defensive buildings <in cities with a [Fortress City]> <in cities with a [City Level IV]>",
-
-	"[-5]% [Gold] [in this city] <in cities with a [City Level V]>",
-	"[+25]% Strength for cities <in this city> <in cities with a [City Level V]>"
-	]
-},
-{
-	"name": "Fortress City ability",
-	"cost": 10000,
-	"cityStrength": 5,
-	"cityHealth": 100,
-	"maintenance": 0,
-	"uniques":["Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when the city is captured"]	
-},
-{
-	"name": "Port City",
-	"cost": 100,
-	"replacementTextForUniques": "[Only available in cities with at least 5 Population and at least II Level]\n[Must be next to [Coast]]\n\n[Cost increases by [25] when built]\n\n\n[City Level II]:\n    [[+1 Production] from [Fishing Boats] tiles [in this city]]\n    [[-5]% growth [in this city]]\n\n[City Level III]:\n    [[+20]% Production when constructing [Seaside Building] buildings [in this city]]\n    [[-5]% growth [in this city]]\n\n[City Level IV]:\n    [[[+5]% [Production] from [Harbor]] [in this city]]\n    [[[+10]% [Gold] from [Harbor]] [in this city]]\n    [[-5]% growth [in this city]]\n\n[City Level V]:\n    [[[+100]% [Gold] from Trade Routes] [in this city]]\n    [[-5]% growth [in this city]]",
-	"uniques": [
-	"Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
-	"Only available <in cities with a [City Level II]>", "Only available <in cities with at least [5] [Population]>", "Only available <in cities without a [Specialized City]>", "Must be next to [Coast]",
-	"Specialized City",
-	"Cost increases by [25] when built",
-	
-	"[-5]% growth [in this city]",
-	"[+1 Production] from [Fishing Boats] tiles [in this city] <in cities with a [City Level II]>"
-	
-	"[-5]% growth [in this city] <in cities with a [City Level III]>",
-	"[+20]% Production when constructing [Seaside Building] buildings [in this city] <in cities with a [City Level III]>",
-	
-	"[-5]% growth [in this city] <in cities with a [City Level IV]>",
-	"[+10]% [Gold] [in this city] <in cities with a [City Level IV]> <in cities with a [Harbor]>", 
-	"[+5]% [Production] [in this city] <in cities with a [City Level IV]> <in cities with a [Harbor]>", 
-	
-	"[-5]% growth [in this city] <in cities with a [City Level V]>",
-	"[+100]% [Gold] from Trade Routes <in this city> <in cities with a [City Level V]>"]
-	
-},
-//Sonderverbesserung Stadt-Level
-{
-	"name": "City Level I",
-	"cost": 5000,
-	"uniques": ["Never destroyed when the city is captured", "Cannot be purchased", "Unsellable", "Automatically built in all cities where it is buildable", "City Level",
-	//"Connects trade routes over water <for [Portugal] Civilizations> <hidden from users>"
-	]	
-},
-{
-	"name": "City Level II",
-	"cost": 5000,
-	//"uniques": ["Only available <starting from the [Classical era]>", "Only available <when above [3] [Number of Buildings]>", "Never destroyed when the city is captured", "Cannot be purchased", "Unsellable", "Automatically built in all cities where it is buildable", "Connects trade routes over water <for [The Netherlands] Civilizations> <if [Civilized Leader-Willem Oranje] is constructed> <hidden from users>", "City Level"]	
-},
-{
-	"name": "City Level III",
-	"cost": 5000,
-	//"uniques": ["Only available <starting from the [Medieval era]>", "Only available <when above [7] [Number of Buildings]>", "Never destroyed when the city is captured", "Cannot be purchased", "Unsellable", "Automatically built in all cities where it is buildable", "City Level"]	
-},
-{
-	"name": "City Level IV",
-	"cost": 5000,
-	//"uniques": ["Only available <starting from the [Renaissance era]>", "Only available <when above [12] [Number of Buildings]>", "Never destroyed when the city is captured", "Cannot be purchased", "Unsellable", "Automatically built in all cities where it is buildable", "City Level"]
-},
-{
-	"name": "City Level V",
-	"cost": 5000,
-	"uniques": [
-	//"Only available <starting from the [Industrial era]>", "Only available <when above [16] [Number of Buildings]>", "Never destroyed when the city is captured", "Cannot be purchased", "Unsellable", "Automatically built in all cities where it is buildable", "City Level"]
-},
 //Sonderführer Papel States
 {	
 	"name": "Pope-Innocent III",
@@ -309,21 +34,9 @@
 },
 
 //////////////////////////////////////////////////////////
-{
-	//"name": "Basilica Di San Pietro In Vaticano",
-	"isNationalWonder": true,
-	"production": 3,
-	"science": 3,
-	"gold": 3,
-	"culture": 1,
-	"faith": 2,
-	"cityStrength": 2,
-	"cost": 1,
-	"uniqueTo": "Papal States",
-	//"replaces": "Palace",
-	"uniques": ["Indicates the capital city", "[+1 Faith] per [3] population [in cities following our religion]"]	
-},
+
 //Eventbezogen
+
 {
 	"name": "The Great Prophet",
 	"maintenance": 0,
@@ -345,8 +58,8 @@
 	"maintenance": 0,
 	"cost": 10000,
 	"uniques": [
-	"Free [Jesus] appears",
-	"Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
+	    "Free [Jesus] appears",
+	    "Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
 	]
 },
 {
@@ -599,6 +312,22 @@
                 "maintenance": 1
 	},
 	{
+		"name": "Seaside Market", //Handelszentren am Hafen
+		//Die phönizischen Stadtstaaten waren auf den Handel und die Seefahrt spezialisiert 
+		// und stark in den florierenden Mittelmeerhandel eingebunden /Wikipedia /zahlreiche Handelsniederlassungen 
+		//Wichtige Exportgüter / Holz, Purpur und gefärbte Textilien, Elfenbein und Elfenbeinobjekte, sowie Nahrungsmittel
+		// wie z. B. Wein und Olivenöl. Besonders gefragt war das Zedernholz aus dem Libanongebirge. (...)
+		"uniqueTo": "Phoenicia",
+		"cost": 75,
+		"gold": 3,
+		"uniques": [
+			"Must be next to [Coast]", 
+			//"[+1 Food] from [Ocean] tiles [in this city]",
+			//"[+1 Food] from [Coast] tiles [in this city]", 
+			"[+1 Food] from [Fish] tiles [in this city]"],
+		"requiredTech": "Optics"
+	},
+	{
 		"name": "Fillipian Harbor",
 		"cost": 120,
 		"gold": 2,
@@ -651,11 +380,13 @@
 		"name": "Harbor",
 		"cost": 120,
 		"maintenance": 2,
-		"uniques": ["[+1 Production] from [Water resource] tiles [in this city]",
-		"Connects trade routes over water","Must be next to [Coast]",
+		"uniques": [
+			"[+1 Production] from [Water resource] tiles [in this city]",
+		    "Connects trade routes over water","Must be next to [Coast]",
 			"Only available <in cities without a [Genoese Port]>", 
 			"Only available <in cities without a [Fillipian Harbor]>",
-			"Only available <in cities without a [Venetian Arsenal]>", "Only available <in cities without a [Entrepot]>"],
+			"Only available <in cities without a [Venetian Arsenal]>", 
+			"Only available <in cities without a [Entrepot]>"],
 		"requiredTech": "Compass"
 	},
 	{
@@ -867,7 +598,7 @@
 	{
 		"name": "Walls",
 		"cityStrength": 5,
-		"cityHealth": 50,
+		"cityHealth": 30,
 		"cost": 75,
 		"requiredTech": "Masonry",
 		"uniques": ["Destroyed when the city is captured", "Only available <in cities without a [Lion Gate]>"]
@@ -1751,6 +1482,10 @@
 		"requiredTech": "Horseback Riding"
 	},
 /// light industry
+
+    //Mühlstein - Einfache Methode Mahl- und Ölgewinnung
+	//Ölmühle - Verbesserte Methode zur Gewinnung von Flüssigkeiten wie bsp. Ölen
+	//Schreinerei - ((-)Summe))Geld/Bretter/Werkzeug/Stein - Benötigt Gebäude/Ressourcen
     {
 		"name": "Houri Brothel",
 		"replaces": "Distillery",
@@ -3432,25 +3167,32 @@
 		"requiredTech": "Theology"
 	},
 ///cultural
-{
+    {
+		"name": "Casa de la Vall", //Haus des Tales/Patrizierhaus mit Verteidigungsturm//Mitglied des altrömischen Adels
+		"uniqueTo": "Andorra",
+		"hurryCostModifier": 25,
+		"uniques": [],
+		"requiredTech": ""
+	},
+    {
         "name": "Ceilidh Hall",
+		"uniqueTo": "Scotland",
         "replaces": "Opera House",
-        "uniqueTo": "Scotland",
+		"requiredBuilding": "Amphitheater",
         "culture": 3,
         "happiness": 3,
-        "hurryCostModifier": 10,
-        "requiredBuilding": "Amphitheater",
-        "maintenance": 2,
-        "requiredTech": "Acoustics",
+		"maintenance": 2,
         "uniques": [
-            "Destroyed when the city is captured",
-            "Comment [Has 1 Great Work of Music Slot]"
-        ]
-},
-{
+            "Destroyed when the city is captured"
+			//
+        ],
+		"requiredTech": "Acoustics",
+		"hurryCostModifier": 10
+    },
+    {
         "name": "Mead Hall",
+		"uniqueTo": "Franks",
         "replaces": "Colosseum",
-        "uniqueTo": "Franks",
         "cost": 75,
         "happiness": 3,
         "culture": 1,
@@ -3789,15 +3531,18 @@
 	{
 		"name": "Crucifixion Fields",
 		"replaces": "Prison Camp",
-		"uniqueTo": "Rome",
+		"unique to": "Rome",
+		//"unique to": "Jerusalem",
 		"culture": 2,
 		"happiness": -2,
-		"uniques": ["Cultural Building","[-1] population [in this city]", 
+		"uniques": [
+			"Cultural Building","[-1] population [in this city]", 
 			"Free [Legate] appears",
 			"Can only be built <in [Annexed] cities>",
 			"Only available <in cities without a [Listening Post]>",
 			"Unsellable",
-			"Destroyed when the city is captured"],
+			"Destroyed when the city is captured"
+		],
 		"requiredTech": "Construction",
 		"quote": "'Er, der in göttlicher Gestalt war, hielt es nicht für einen Raub, Gott gleich zu sein, sondern entäußerte sich selbst und nahm Knechtsgestalt an, ward den Menschen gleich und der Erscheinung nach als Mensch erkannt. Er erniedrigte sich selbst und ward gehorsam bis zum Tode, ja zum Tode am Kreuz. Philipper 2:6-8'"
 	},
@@ -4064,13 +3809,15 @@
 	},
 	{
 		"name": "Thermal Bath",
+		"uniqueTo": "Hungary",
 		"replaces": "Garden",
 		"production": 2,
-		"uniqueTo": "Hungary",
-		"uniques": ["[+50]% Great Person generation [in this city] <during a Golden Age>", "Must be next to [Fresh water]"],
-		"hurryCostModifier": 25,
 		"maintenance": 1,
-		"requiredTech": "Theology"
+		"uniques": [
+			"[+30]% Great Person generation [in this city] <during a Golden Age>",
+			 "Must be next to [Fresh water]"],
+		"requiredTech": "Theology",
+		"hurryCostModifier": 25
 	},
 ///religion Pagan (Überarbeiten!)
     {
@@ -4165,7 +3912,34 @@
 		    "Unbuildable", "Only available <when religion is enabled>", "Destroyed when the city is captured"]
 	},
 ///religion
-
+    {
+		"name": "Templum Domini", //Chorherrenstift am Templum Domini in Jerusalem
+		 //Das Chorherrenstift am Templum Domini in Jerusalem war eine wohl noch 1099 eingerichtete Gemeinschaft (Kapitel) 
+		//von zunächst Säkularklerikern, spätestens ab 1130/36 nach der Augustinerregel lebenden Kanonikern am Templum Domini (heute Felsendom)
+		"uniqueTo": "Jerusalem",
+		"isNationalWonder": true,
+		"replaces": "Grand Temple",
+		"cost": 125,
+		"culture": 1,
+		"faith": 8,
+		"uniques": [
+			//
+			"Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>", 
+			"Cost increases by [40] per owned city",
+			"[+100]% Natural religion spread [in this city]", 
+			"Only available <when religion is enabled>","[+10]% Golden Age length","Free [Inquisitor] appears"
+		],
+		"requiredTech": "Theology"
+	},
+	{
+		"name": "Alka", //Der Name eines heiligen Ortes oder einer Opferstättein der baltischen Religion
+		"uniqueTo": "Lithuania",
+		"replaces": "Garden",
+		"faith": 1,
+		"uniques": [""],
+		//"requiredTech": "Theology",
+		"hurryCostModifier": 25
+	},
     {
         "name": "Grand Cathedral of Vilnius",
         "replaces": "Grand Temple",
@@ -4283,23 +4057,6 @@
 		"requiredBuilding": "Shrine",
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy"
-	},
-	{
-		"name": "Temple of King Solomon",
-		"replaces": "Grand Temple",
-		"uniqueTo": "Israel",
-		"cost": 125,
-		"culture": 1,
-		"faith": 8,
-		"cityStrength": 5,
-		"cityHealth": 50,
-		"uniques": [
-			"Empire enters golden age","Doubles Gold given to enemy if city is captured","Only available <if [Synagogue] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
-		    "Gain [75] [Faith] <upon expending a [Great Person] unit>","Gain [75] [Science] <upon expending a [Great Person] unit>",
-			"[+100]% Natural religion spread [in this city]","Only available <when religion is enabled>","Can only be built <in [in holy cities] cities>"
-		],
-		"requiredTech": "Theology",
-		"isNationalWonder": true
 	},
 	{
 		"name": "Rock-Hewn Church",
@@ -4558,7 +4315,9 @@
 		"happiness":1,
 		"maintenance": 1,
 		"hurryCostModifier": -50,
-		"uniques": ["Practice Ground","Unbuildable","Hidden when religion is disabled","Destroyed when the city is captured"],
+		"uniques": [
+			"Practice Ground","Unbuildable","Hidden when religion is disabled","Destroyed when the city is captured"
+		],
 		"requiredTech":"Calendar"
 	},
 	{
@@ -4568,28 +4327,35 @@
 		"happiness": 1,
 		"maintenance": 2,
 		"hurryCostModifier": 50,
-		"uniques": ["Remove extra unhappiness from annexed cities", "[+2 Science] <after discovering [Education]>", "Can only be built <in [in all cities] cities>"],
+		"uniques": [
+			"Remove extra unhappiness from annexed cities", "[+2 Science] <after discovering [Education]>", "Can only be built <in [in all cities] cities>"
+		],
 		"requiredTech": "Mathematics"
 	},
 	{
 		"name": "Arian Church",
 		"uniqueTo": "The Vandals",
 		"replaces": "Temple",
+		"requiredBuilding": "Chapel",
 		"faith": 3,
 		"cost": 90,
-		"requiredBuilding": "Shrine",
 		"maintenance": 2,
 		"hurryCostModifier": 25,
+		"uniques": [
+			"Only available <when religion is enabled>","Destroyed when the city is captured"
+		],
 		"requiredTech": "Philosophy",
-		"uniques": ["Only available <when religion is enabled>","Destroyed when the city is captured"]
 	},
 	{
-		"name": "Chaple",
-		"faith": 3,
-		"maintenance": 1,
+		"name": "Chapel",
+		"cost": 20,
+		"faith": 2,
 		"uniques": [
-			"Worship Place","Only available <after adopting [Monotheism]>","[+5]% Faith from [Population] [in this city] <when at war>",
-			"Hidden when religion is disabled","Destroyed when the city is captured"
+			"Worship Place",
+			"[+5]% Faith from [Population] [in this city] <when at war>",
+			"Only available <after adopting [Monotheism]>",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured"
 		],
 		"requiredTech":"Calendar",
 		"quote": "'Jesus Christus ist „das Wort“ (Joh 1; Offb 19,13). In ihm hat Gott endgültig alles gesagt. Er ist die Selbstmitteilung Gottes in Person.'"
@@ -4602,18 +4368,40 @@
 		"maintenance": 2,
 		"hurryCostModifier": 25,
 		"requiredTech": "Drama and Poetry",
-		"uniques": ["Worship Place","Hidden when religion is disabled","Destroyed when the city is captured"]
+		"uniques": [
+			"Worship Place","Hidden when religion is disabled","Destroyed when the city is captured"
+		]
 	},
 	{
 		"name": "Altar",
 		"cost": 0,
-		"culture": 3,
-		"faith": 2,
-		"food":-1,
-		"percentStatBonus": {"culture": 5,"gold": 5},
-		
-		"uniques": ["Worship Place","Unbuildable","Hidden when religion is disabled"],
+		"faith": 3,
+		"happiness": 2,
+		"percentStatBonus": {
+			"faith": 5,
+			"gold": -5,
+			"food": -5
+		},
+		"uniques": [
+			"'Worship Place'",
+			"Unbuildable",
+			"Only available <when religion is enabled>"
+		],
 		"requiredTech": "Theology"
+	},
+	{
+		"name": "Karpatenkirche", //Die Holzkirchen in den slowakischen Karpaten sind ein bemerkenswertes kulturelles Erbe, das von der UNESCO als Weltkulturerbe anerkannt wurde.
+		"uniqueTo": "Slovakia",
+		"replaces": "Temple",
+		"faith": 2,
+		"culture": 2,
+		"maintenance": 1,
+		"uniques": [
+			"Destroyed when the city is captured",
+			"Only available <when religion is enabled>",
+		],
+		"requiredTech": "Philosophy",
+		"hurryCostModifier": 25
 	},
     {
 		"name": "Stave Church",
@@ -4643,40 +4431,49 @@
 		"maintenance": 0,
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy",
-		"uniques": [
-			"Worship Place","Only available <when religion is enabled>", "Destroyed when the city is captured"
-		]
 	},
 	{
 		"name": "Basilika",
 		"cost": 0,
-		"faith": 5,
+		"faith": 4,
 		"percentStatBonus": {"faith": 25},
 		"uniques": [
 			"Worship Place",
-		    "Unbuildable", "Hidden when religion is disabled"
+		    "Hidden when religion is disabled"
 		],
-
-		//"quote": „Deine Hände sollen mit heiligem Öl gesalbt werden.\nDeine Brust soll mit heiligem Öl gesalbt werden.\nDein Haupt soll mit heiligem Öl gesalbt werden.\nWie Könige, Priester und Propheten gesalbt wurden.\nUnd wie Salomon vom Priester Zadok und vom Propheten Nathan zum König gesalbt wurde, so sollst auch du gesalbt werden.“,
+		"requiredTech": "Masonry",
+		"quote": "'Deine Hände sollen mit heiligem Öl gesalbt werden.\nDeine Brust soll mit heiligem Öl gesalbt werden.\nDein Haupt soll mit heiligem Öl gesalbt werden.\nWie Könige, Priester und Propheten gesalbt wurden.\nUnd wie Salomon vom Priester Zadok und vom Propheten Nathan zum König gesalbt wurde, so sollst auch du gesalbt werden.'"
 	},
 	{
 		"name": "Basilica",
 		"replaces": "Temple",
+		"requiredBuilding": "Cathedral",
+		"cost": 115,
 		"faith": 4,
 		"gold": 2,
 		"Happiness": 1,
 		"percentStatBonus": {"gold": 10},
-		"requiredBuilding": "Cathedral",
-		"cost": 115,
-		"hurryCostModifier": 25,
-		"requiredTech": "Theology",
 		"uniques": [
-			"Worship Place","Only available <after adopting [Testaments]>","[+15]% Natural religion spread [in this city]",
-            "[+1 Gold, +1 Faith] per [4] population [in this city]","[+10]% Faith from [Population] [in this city] <when at war>",
+			"Worship Place",
+			"Only available <after adopting [Testaments]>",
+			"[+15]% Natural religion spread [in this city]",
+			"[+10]% Faith from [Population] [in this city] <when at war>",
+            "[+1 Gold, +1 Faith] per [4] population [in this city]",
             "Hidden when religion is disabled"
 		],
+		"requiredTech": "Theology",
+		"hurryCostModifier": 25,
 		"quote": "'Lasst das Wort Christi reichlich unter euch wohnen: Lehrt und ermahnt einander in aller Weisheit; mit Psalmen, Lobgesängen und geistlichen Liedern singt Gott dankbar in euren Herzen.'"
-	},
+	//Joh 1,1	Im Anfang war das Wort, / und das Wort war bei Gott, / und das Wort war Gott.	
+    //Joh 1,2	Im Anfang war es bei Gott.	
+    //Joh 1,3	Alles ist durch das Wort geworden / und ohne das Wort wurde nichts, was geworden ist.	
+    //Joh 1,4	In ihm war das Leben / und das Leben war das Licht der Menschen.	
+    //Joh 1,5	Und das Licht leuchtet in der Finsternis / und die Finsternis hat es nicht erfasst.
+	//Ich bin das Alpha und das Omega[1], der Erste und der Letzte, der Anfang und das Ende[2]. (Offb 1,8; Offb 1,17)	
+    //Und er ist das Haupt des Leibes, nämlich der Gemeinde. Er ist der Anfang, der Erstgeborene von den Toten, auf dass er in allem der Erste sei.Kolosser 1:18
+	//"Der Engel aber antwortete und sprach zu den Frauen: Fürchtet euch nicht! Ich weiß, dass ihr Jesus, den Gekreuzigten, sucht. Er ist nicht hier; er ist auferstanden, wie er gesagt hat. Kommt her und seht die Stätte, wo der Herr gelegen hat." 
+	// Fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott. Ich stärke dich, ich helfe dir auch, ich halte dich durch die rechte Hand meiner Gerechtigkeit. Jesaja 41:10
+	},  
 	{
 		"name": "Cathedral",
 		"cost": 0,
@@ -4684,7 +4481,10 @@
 		"gold": 1,
 		"specialistSlots": {"Artist": 1},
 		"uniques": [
-			"Unbuildable","Organise Place","[+10]% Faith from [Population] [in this city] <when at war>",
+			"Organise Place",
+			"Unbuildable",
+			"[+10]% Natural religion spread [in this city] <if [Chaple] is constructed>",
+			"[+10]% Faith from [Population] [in this city] <when at war>",
 			"Hidden when religion is disabled","Destroyed when the city is captured"
 		],
 		"requiredTech":"Theology",
@@ -4699,10 +4499,14 @@
 		"culture": 1,
 		"specialistSlots": {"Artist": 1},
 		"uniques": [
-			"[+25]% Great Person generation [in this city]", "Must be next to [Hills]"
+
+			"[+25]% Great Person generation [in this city]", 
+			"Gain [15] [Culture] <for every [2] [Piety]>",
+			"[5]% Natural religion spread [in this city]",
+			"Must be next to [Hills]"
 		],
 		"requiredTech": "Theology",
-		///"quote": "'Alle Menschen aber sind Toren mit ihrer Kunst, und alle Goldschmiede stehen beschämt da mit ihren Bildern; denn ihre Götzen sind Trug und haben kein Leben. 2. Mose 20, 4f; Apostelgeschichte 17, 29; Jeremia 10, 3; 51, 17. Du sollst dir kein Kultbild machen, keine Gestalt von irgendetwas am Himmel droben, auf der Erde unten oder im Wasser unter der Erde. Dtn 5,8 '"
+		"quote": "'Im Anfang war das Wort, und das Wort war bei Gott, und das Wort war Gott. Im Anfang war es bei Gott. Alles ist durch das Wort geworden und ohne das Wort wurde nichts, was geworden ist. In ihm war das Leben und das Leben war das Licht der Menschen. Und das Licht leuchtet in der Finsternis und die Finsternis hat es nicht erfasst - John 1:1 - 1:5'"
 	},
 	{
 		"name": "Monastery",
@@ -4710,12 +4514,18 @@
 		"culture": 1,
 		"faith": 3,
 		"production": 2,
-		"food": 1,
+		"food": 2,
 		"percentStatBonus": {
 			"happiness": 5
 		},
 		"uniques": [
-			"Practice Ground","[-10]% Unhappiness from [Population] [in this city]","Provides [1] [Wine] <with [Grape]>","[+1 Gold, +1 Culture] from [Grape] tiles [in this city]",
+			"Practice Ground",
+			"Provides [1] [Wine] <with [Grape]>","[+1 Gold, +1 Culture] from [Grape] tiles [in this city]",
+			"[10]% [Food] from every ['Agricultural Building' Building] <after adopting [Tithe]>",
+			"[5]% [Gold] from every ['Light Industry' Building] <after adopting [Tithe]>",
+			"[-20]% [Happiness] <every [20] turns> <after adopting [Tithe]>",
+        	"Consumes [2] [Influence] <after adopting [Tithe]>",
+			"[-10]% Unhappiness from [Population] [in this city] <before adopting [Tithe]",
 			"[10]% [Science] from every [Monastery] <after adopting [Early Theology]>",
 			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Imperal Era]> <after adopting [Monastic Warrior]>",
 			"Unbuildable","Hidden when religion is disabled", "Destroyed when the city is captured"
@@ -4724,13 +4534,27 @@
 		"quote ": "'Siehe, ich stehe vor der Tür und klopfe an. Wenn jemand meine Stimme hören wird und die Tür auftun, zu dem werde ich hineingehen und das Abendmahl mit ihm halten und er mit mir.'"
 	},
 	{
+		////////////////////////
+		"name": "Felsendom",
+		"unique to": "",
+
+		"qoute": "'Im Namen Allahs, des Allerbarmers, des Barmherzigen. 1. Gepriesen ist Derjenige, Der Seinen Diener nachts von der heiligen Moschee zur Al-Aqsa-Moschee führte, deren Umgebung Wir gesegnet haben, um ihm (einige) Unserer Zeichen zu zeigen.- Sure 17 (Al-Isra):'"
+		//////////////////////
+		//Der Felsendom in Jerusalem ist ein bedeutendes islamisches Heiligtum, das auf dem Tempelberg steht. Er ist von großer religiöser Bedeutung für Muslime, 
+		//da er als der Ort gilt, von dem aus der Prophet Mohammed seine Himmelsreise (Isra und Miراج) angetreten haben soll
+	},
+	{
 		"name": "Mosque",
 		"cost": 0,
 		"culture": 2,
 		"faith": 3,
 		"uniques": [
-			"Organise Place","Unbuildable","[+5]% [Faith] [in holy cities]","[+10]% Faith from [Population] [in this city] <when at war>",
-            "Hidden when religion is disabled","Destroyed when the city is captured"
+			"Organise Place",
+			"Unbuildable",
+			"[+5]% [Faith] [in holy cities]",
+			"[+10]% Faith from [Population] [in this city] <when at war>",
+			"Destroyed when the city is captured",
+			"Hidden when religion is disabled"
 		],
 		"requiredTech":"Theology"
 	},
@@ -4740,12 +4564,29 @@
 		"culture": 2,
 		"faith": 3,
 		"happiness": 1,
-		"percentStatBonus":{"culture": 10},
+		"percentStatBonus":{
+			"culture": 10
+		},
 		"uniques": [
-			"Unbuildable","Practice Ground","[+10]% Faith from [Population] [in this city] <when at war>",
-            "Hidden when religion is disabled","Destroyed when the city is captured"
+			"Practice Ground",
+			"Unbuildable",
+			"[+10]% Faith from [Population] [in this city] <when at war>",
+			"Destroyed when the city is captured",
+            "Hidden when religion is disabled"
 		],
 		"requiredTech":"Theology"
+	},
+	{
+		"name": "Vank", //"Vank" (Վանք) ist ein armenisches Wort und bedeutet auf Deutsch Kloster oder Konvent.
+        "uniqueTo": "Armenia",
+		"replaces": "Temple",
+		"faith": 2,
+		"uniques": [
+			//
+			"[+1 Culture] in cities on [Hill] tiles",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Philosophy"
 	},
 	{
 		"name": "Tatev Monastery",
@@ -4756,11 +4597,167 @@
 		"culture": 1,
 		"faith": 1,
 		"uniques": [
-			"[+100]% Yield from every [Mountain] <in tiles without [Natural Wonder]>","Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city",
-			"[+100]% Natural religion spread [in this city]", "Only available <when religion is enabled>", "Can only be built <in [in holy cities] cities>"
+			"[+100]% Yield from every [Mountain] <in tiles without [Natural Wonder]>",
+			"[+100]% Natural religion spread [in this city]", 
+			"Cost increases by [30] per owned city",
+			"Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>", 
+			"Only available <when religion is enabled>", "Can only be built <in [in holy cities] cities>"
 		],
 		"requiredTech": "Theology"
 	},
+	/////////////////////////////
+     //Weitere ((Nur einmal erbaubare)(in Jerusalem)) Bsp. für Religöse Gebäude sind:
+
+	 //Chr: der Garten Getsemani, Die Paternosterkirche, Erlöserkirche,/
+	 //Jüd: die Hurva-Synagoge und die vier sephardischen Synagogen, Davidsgrab/
+	 //Musli:Felsendom, Al-Aqsa-Moschee
+
+	 //
+	/////////////////////////////
+	{
+		"name": "Diözese", //Eine Diözese (auch Bistum genannt) ist ein abgegrenzter kirchlicher Verwaltungsbezirk,
+		// der von einem Bischof geleitet wird. Im Deutschen wird der Begriff "Diözese" oft synonym mit "Bistum" verwendet. 
+		//Nach errichtung des heilligen Stuhl
+		"uniqueTo": "Papal States",
+		"uniques": [
+			"Unsellable",
+			"Unbuildable",
+			"[+2 Faith] from [City center] tiles [in this city]","Destroyed when the city is captured"
+		]
+		// "Ecclesia semper reformanda" - Papst Gregor dem Großen
+	},
+	{
+		"name": "Das Salvatorkloster",
+		"unique to": "Jerusalem", //The Kingdom of Israel/Jerusalem
+		"faith": 2,
+		"culture": 1, 
+		"percentStatBonus":{
+			"happiness": 3
+		},
+		"uniques": [ 
+			"Light Industry","Organise Place",
+			"[+15]% Natural religion spread [in this city] <in cities with a [major] religion> <in cities with between [5] and [15] [Followers of this Religion]>",
+			"[+10]% [Faith] [in this city] <after adopting [Way of Pilgrimage]>",
+			"[-4]% maintenance cost for [{'Worship Place'} {'Buildings'}] buildings [in this city] <in cities with a [Schreinerei]>",
+			"Provides [1] [Olive Oil] <with [Olives]> <when above [2] [Olives]> <in this city> <in cities with a [Mühlstein]>",
+			"[+1 Production] from [{'Manual Farm'} {'Olives'}] tiles [in this city]",
+			"[10]% [Production] [in this city] <in cities with a [Ölmühle]> <if [Mühlstein] is constructed in at least [3] of [your cities] cities>",
+			"Comment [Und ich arbeitete mit meinen Händen und will arbeiten]",
+			"[+1 Gold] [in this city] <in cities with a [Ölmühle]> <in cities connected to the capital> <in cities with a [Guilds]>",
+			"Comment [Patrozinium des Salvator mundi]"
+		]
+
+	},
+	{
+	    "name": "Maria-Magdalena Kirche",
+		"unique to": "Jerusalem", //The Kingdom of Israel/Jerusalem
+	},
+	{
+		"name": "Kirche aller Völker",
+		"unique to": "Jerusalem", //The Kingdom of Israel/Jerusalem
+
+	},
+
+	//Als Grabeskirche oder Kirche vom heiligen Grab wird die Kirche in der Altstadt Jerusalems 
+	// bezeichnet, die an der überlieferten Stelle der Kreuzigung und des Grabes Jesu steht. 
+	// Die Kirche zählt zu den größten Heiligtümern des Christentums und ist heute eine Simultankirche verschiedener Konfessionen. 
+	//Christen verehren dort den Ort der Kreuzigung, Grablegung und Auferstehung Jesu.
+
+	//Die Grabeskirche ist eng mit den Berichten über die Kreuzigung und Auferstehung Jesu im Neuen Testament verbunden, insbesondere mit den Evangelien. 
+    //Die Kirche befindet sich an dem Ort, der als Golgatha bekannt ist, wo Jesus nach biblischer Überlieferung gekreuzigt wurde. 
+    //Das Grab Jesu, das sich in der Kirche befindet, ist der Ort, an dem er nach seinem Tod gemäß den Evangelien bestattet wurde. 
+    //Die Auferstehung Jesu, die im Zentrum des christlichen Glaubens steht, soll an diesem Ort stattgefunden haben, was die Grabeskirche zu einem Ort von großer Bedeutung für Christen macht. 
+
+
+	//////////Crucifixion Field/ Grab Jesu hinzufügen//////////////
+	{
+		"name": " Die Grabeskirche",
+		"unique to": "Jerusalem", //The Kingdom of Israel/Jerusalem
+		"isWonder": true,
+		"cost": 475,
+		"gold": 1,
+		"culture": 4,
+		"faith": 8,
+		"specialslots": {
+			"Great Prophet": 2
+		},
+		"percentStatBonus":{
+			"faith": 25, "Gold": 10
+		},
+		"uniques": [
+			"'Core of Religion'",
+			"Provides [1] [Scriptures] <in this city> <when above [1] [Piety]> <in cities with a [Library]>",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"All newly-trained [Missionary] units [in this city] receive the [Devout] promotion <upon constructing [Die Grabeskirche]>",
+			"[+15]% Natural religion spread [in this city] <in cities with a [foreign] religion> <in cities with between [7] and [25] [Followers of this Religion]>",
+			"[+15]% [Faith] [in this city] <after adopting [Pilgrimage]>",
+		    "[+50]% [Faith] <in cities with a [major] religion>",
+		    "[+80]% Natural religion spread [in this city] <in cities with a [major] religion>",
+		    "[+70]% Natural religion spread [in cities following this religion] <after adopting [The One True God]>",
+			"Religion naturally spreads to cities [2] tiles away <in cities with a [major] religion>",
+			"[+30]% Spread Religion Strength <for units with [Evangelism]> <in cities with a [foreign] religion>",
+			"[20]% Faith cost of generating Great Prophet equivalents <upon adopting [Saints Worship]>",
+			"May choose [1] additional [Founder] beliefs when [founding] a religion",
+			"May choose [1] additional [Follower] beliefs when [enhancing] a religion",
+			//"Can only be built <in [in holy cities] cities>",
+			"Only available <after adopting [Monotheism]>",
+			"Only available <if [Crucifixion Field] is constructed <in this city>",
+			"Only available <if [Grab Jesu] is constructed <in this city>",
+			"Only available <when religion is enabled>","Unsellable"
+		],
+		"requiredTech": "Masonry",
+		"quote ": "'Ich bin die Auferstehung und das Leben. Wer an mich glaubt, wird leben, auch wenn er stirbt; und wer da lebt und glaubt an mich, wird nimmermehr sterben. Glaubst du das? - Johannes 11:25-26:'"
+	},
+	{
+		"name": "Temple of King Solomon", //The Kingdom of Israel
+		"uniqueTo": "Judea",
+		"isNationalWonder": true,
+		"cost": 125,
+		"culture": 1,
+		"faith": 8,
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"uniques": [
+			"'Core of Religion'",
+			"Empire enters golden age",
+			"Doubles Gold given to enemy if city is captured",
+			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"[+7]% [Gold] [in this city] <after adopting [Pessach]>",
+		    "Gain [75] [Faith] <upon expending a [Great Person] unit>",
+			"Gain [75] [Science] <upon expending a [Great Person] unit>",
+			"[+100]% Natural religion spread [in this city]",
+			"[25]% Natural religion spread [in all cities connected to capital]",
+			"May choose [1] additional [Founder] beliefs when [foundingOrEnhancing] a religion <after adopting [Monotheism]>",
+			"Only available <when religion is enabled>","Can only be built <in [in holy cities] cities>",
+			"Only available <if [Synagogue] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			"Cost increases by [30] per owned city",
+			"Unsellable"
+		],
+		"requiredTech": "Theology",
+		"quote": "'Und David, der König, stund auf seinen Füßen und sprach: Höret mir zu, meine Brüder und mein Volk! Ich hatte mir vorgenommen, ein Haus zu bauen, da ruhen sollte die Lade des Bundes des HERRN, und ein Fußschemel den Füßen unsers Gottes, und hatte mich geschickt zu bauen. Aber Gott ließ mir sagen: Du sollst meinem Namen nicht ein Haus bauen; denn du bist ein Kriegsmann und hast Blut vergossen.'"
+		 //1 Chronik 22:19 So gebet nun euer Herz und eure Seele, den HERRN, euren Gott, zu suchen. Und machet euch auf und bauet Gott dem HERRN ein Heiligtum, daß man die Lade des Bundes des HERRN und die heiligen Gefäße Gottes ins Haus bringe, das dem Namen des HERRN gebauet soll werden.
+	},
+	{
+	    "name": "Die Leoninische Mauer",
+		"unique to": "Papal States",
+		"replaces": "Walls",
+		"cost": 90,
+		"maintenance": 2,
+		"happiness": 1,
+		"cityHealth": 55,
+		"cityStrength": 15,
+		"uniques":[
+			"'Static Defense'",
+			"Can only be built <in [in holy cities] cities>",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Masonry",
+		"hurryCostModifier": 25,
+		"quote": "'Die Mauer die der Herrschaft von Papst Leo IV. (790–855) errichtet wurde. Sie sollte vor weiteren Angriffen durch die Sarazenen schützen, welche 846 die vor der Stadtmauer liegenden Kirchenschätze geplündert hatten. Eine karolingische Sondersteuer finanzierte in der Folge den Bau der neuen Stadtmauer'"
+	},
+    //Bsp.
+	//Provides [4] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
+
 	{
 	    "name": "Kaserne der Päpstlichen Schweizergarde",
 		"unique to": "Papal States",
@@ -4769,13 +4766,14 @@
 		"specialslots": {"Governor":1},
 		"greatPersonPoints": {"Governor": 1},
 		"uniques": ["Static Defense",
-		    "[2] Unit Supply per [5%] population [in capital]",
+		    "[2] Unit Supply per [20%] population [in capital] <if [Armory] is constructed> <if [Warehouses] is constructed>",
 		    "Earn [40]% of the damage done to [Wounded] units as [Faith]",
 		    "All newly-trained [Swiss Guard] units [In this City] receive the [Awe] promotion",
 		    "All newly-trained [Swiss Guard] units [In this City] receive the [Elite Training] promotion  <after adopting [Militant Complete]>",
-		    "Only available <if [Barrack] is not constructed> <in this City> <if [Holy See] is constructed> <if [St. Peter's Basilica] is constructed > <after adopting [Code of Warrior]>",
-	        "Can only be built <in [Holy] cities>"
+		    "Only available <if [Barrack] is not constructed> <in this city> <if [Holy See] is constructed> <if [St. Peter's Basilica] is constructed > <after adopting [Code of Warrior]>",
+	        "Can only be built <in [in holy cities] cities>"
 	],
+	    //Ändern Mittelalter Tech.
 		"requiredTech": "Theology",
 		"quote": "22. Januar 1506, der Tag, an dem 150 Schweizer unter ihrem Hauptmann Kaspar von Silenen aus dem Kanton Uri durch die «Porta del Popolo» in Rom einmarschierten und danach zum ersten Mal in den Vatikan einzogen, wo sie von Papst Julius II."
 
@@ -4789,13 +4787,13 @@
 		"culture": 5,
 		"uniques": [
 			"Organise Place",
-			"Can spend Gold to annex or puppet a City-State that has been your Ally for [10] turns <after adopting [Papal Primacy]> <in cities following our religion>",
-			"[+1 Production] from all [Faith] buildings",
-		    "Gain [100] [Gold] <after generating a Great Prophet>",
+			"Can spend Gold to annex or puppet a City-State that has been your Ally for [20] turns <after adopting [Papal Primacy]> <in cities following our religion>",
+		    "Gain [50] [Gold] <after generating a Great Prophet>",
 			"May choose [1] additional belief(s) of any type when [enhancing] a religion",
 			"Can only be built <after adopting [Apostolic Palace]>",
 		    "Can only be built <if [Holy See] is constructed>",
-			"Can only be built <in [Holy] cities>",
+			"Can only be built <in [in holy cities] cities>",
+			"Unsellable",
 			"Hidden when religion is disabled"
 		],
 		"requiredTech": "Theology",
@@ -4804,6 +4802,7 @@
 	{
 		"name": "St. Peter's Basilica",
 		"uniqueTo": "Papal States",
+		"isNationalWonder": true,
 		"cost": 600,
 		"culture": 5,
 		"faith": 8,
@@ -4813,20 +4812,22 @@
 		"greatPersonPoints": [{"Artist": 2}, {"Great Prophet": 2}],
 		"uniques": [
 			"Organise Place",
-			"Provides [1] [Scriptures]","[+100]% Yield from every [Holy site]",
-			"Comment [+1 [Artist specialist] slots in this city]",
-			"Comment [+2 [Priest specialist] slots in this city]",
-			"Comment [+1 [Governor specialist] slots in this city]",
-			"Gain a free [Basilica] [in this city]","May choose [2] additional belief(s) of any type when [enhancing] a religion",
-			"Provides [1] [Scriptures]","Cost increases by [30] per owned city",
-			"[+25]% [Faith] [in all cities]","[+100]% Natural religion spread [in this city]", 
+			"Provides [1] [Scriptures]",
+			"Gain a free [Basilica] [in this city]",
+			"Free [Carroccio] appears <after discovering [Theology]>",
+			"[+100]% Yield from every [Holy site]",
+			"May choose [2] additional belief(s) of any type when [enhancing] a religion",
+			"[+30]% [Faith] [in all cities]",
+			"[+100]% Natural religion spread [in this city]",
+			"Cost increases by [30] per owned city", 
 			"Can only be built <in [in holy cities] cities>",
 			"Only available <after adopting [Proxy of the god]>",
 			"Only available <if [Cathedral] is constructed in at least [6] of [non-[Puppeted]] cities>",
 			"Only available <when religion is enabled>"
+			"Unsellable",
+			  //Triggers a [event] event <
 		],
 		"requiredTech": "Theology",
-		"isNationalWonder": true,
 		"quote": "'You are Peter and on this rock I will build my church and I will give you the keys of the kingdom of heaven. - Pope Sylvester I'"
 
 		//"'I saw the angel in the marble and carved until I set him free.' - Michelangelo Buonarroti'"
@@ -4852,7 +4853,7 @@
 		"name": "Holy see",
 		"uniqueTo": "Papal States",
 		"isNationalWonder": true,
-		"cost": 125,
+		"cost": 140,
 		"culture": 3,
 		"faith": 4,
 		"gold": 4,
@@ -4869,18 +4870,21 @@
 			"'Core of Religion'",
 			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
 			"[+2 Faith] from every [Governor] <in this city>",
+			    //"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
 		        //Gain control over [Unowned] tiles(...)
 			"Gain control over [{non-[Major]} {non-[City-State]} tiles in a [2]-tile radius",
-			"New [Religious] units start with [25] XP [in cities following our religion]",
 			"Allied City-States provide [Gold] equal to [15]% of what they produce for themselves <(modified by game speed)>",
 			"All newly-trained [Missionary] units [in cities following our religion] receive the [Holy Calling] promotion <after discovering [Theology]>",
+			"New [Religious] units start with [20] XP [in cities following our religion]",
 			"May choose [1] additional [Founder] beliefs when [founding] a religion",
-			"[50]% Natural religion spread [in all cities]",
+			"[+40]% Natural religion spread [in all cities]",
 			"[+100]% Natural religion spread [in this city]", 
 			"Cost increases by [30] per owned city",
 			"Can only be built <upon adopting [Papal Primacy]> <after adopting [Monotheism]>",
 			"Can only be built <in [in holy cities] cities>",
-			"Only available <if [Cathedral] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			"Only available <if [Basilika] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			    //Triggers a [event] event <
+			"Unsellable",
 			"Hidden when religion is disabled"
 		],
 		"requiredTech": "Theology",
@@ -4888,6 +4892,7 @@
 	},
 	{
 		"name": "House of God",
+		"unique to": "Arabia",
 		"isNationalWonder": true,
 		"cost": 125,
 		"faith": 4,
@@ -4904,7 +4909,8 @@
 		"uniques": [
 			"'Core of Religion'",
 			"Provides [1] [Piety] <when [Religious] Victory is enabled>",
-			"[-20]% Faith cost of generating Great Prophet equivalents",
+			"May choose [1] additional [Founder] beliefs when [foundingOrEnhancing] a religion",
+			"[-25]% Faith cost of generating Great Prophet equivalents",
 			"Religion naturally spreads to cities [2] tiles away <after adopting [Pilgrimage]>",
 			"[40]% Natural religion spread [in all cities]",
 			"[+100]% Natural religion spread [in this city]",
@@ -4945,34 +4951,38 @@
 	},
 	{
 		"name": "Holy temple",
+		"isWonder": true,
 		"faith": 2,
-		"requiredTech": "Architecture",
 		"uniques": [
 			"Hidden when religion is disabled","[+30]% [Faith]",
 			"[+25]% [Faith] [in all cities connected to capital]","[+25]% [Re] [in all cities connected to capital]"
 		],
-		"isWonder": true
+		"requiredTech": "Architecture"
 	},
 	{
-               "name": "Fushimi Inari Taisha",
-               "faith": 4,
-               "culture": 4,
-               "food": 3,
-	       "Gold": 3,
-               "isWonder": true,
-               "greatPersonPoints": {"Great Prophet": 4},
-               "requiredTech": "Masonry",
-               "uniques": ["Only available <after adopting [Polytheism]>","Hidden when religion is disabled","Free [Great Prophet] appears"]
-        },
-        {
+        "name": "Fushimi Inari Taisha",
+		"isWonder": true,
+		"faith": 4,
+        "culture": 4,
+        "food": 3,
+	    "Gold": 3,
+        "greatPersonPoints": {"Great Prophet": 4},
+        "uniques": [
+			"Only available <after adopting [Polytheism]>","Hidden when religion is disabled","Free [Great Prophet] appears"
+		],
+		"requiredTech": "Masonry"
+    },
+    {
 		"name": "Pura Agung",
 		"cost": 0,
 		"faith": 3,
 		"food": 1,
-		"uniques": ["Unbuildable","Hidden when religion is disabled","Can only be built <in [in holy cities] cities>",
-                          "Free [Barong] appears"]
+		"uniques": [
+			"Unbuildable","Hidden when religion is disabled","Can only be built <in [in holy cities] cities>",
+            "Free [Barong] appears"
+		]
 	},
-        {
+    {
 		"name": "Hueyi Teocalli",
 		"cost": 0,
 		"faith": 2,
@@ -5002,6 +5012,20 @@
 	},
 
 ///education
+    {
+		"name": "Stoa", 
+		//  Als Stoa (στοά) oder stoische Philosophie bzw. Stoizismus wird eines der wirkungsmächtigsten philosophischen Lehrgebäude
+		//  in der abendländischen Geschichte bezeichnet.
+		//  Es wurde von Zenon von Kition um 300 v. Chr. begründet. Der Name (griechisch στοὰ ποικίλη stoá poikílē, deutsch ‚bunte Vorhalle‘) geht auf eine Säulenhalle (Stoa) 
+        "uniqueTo": "Sparta",
+		"replaces": "Library",
+        "culture": 2,
+		"maintenance": 1,
+		"uniques": [//
+			"[+1 Science] per [2] population [in this city]"
+		],
+		"requiredTech": "Writing"
+	},
     {
         "name": "Darbas",
         "replaces": "Observatory",
@@ -5953,20 +5977,20 @@
 	},
 	{
 		"name": "Third Armory",
-                "greatPersonPoints": {"Great General": 2},
-                "maintenance": 4,
+        "greatPersonPoints": {"Great General": 2},
+        "maintenance": 4,
 		"hurryCostModifier": 50,
 		"uniques": ["All newly-trained [non-[Air]] units [in this city] receive the [Elite Training] promotion","[+10]% Production when constructing [Land] units [in this city]","Cost increases by [30] per owned city"],
 		"requiredBuilding": "Military Blacksmith",
-                "requiredTech": "Chivalry"
+        "requiredTech": "Chivalry"
 	},
 	{
 		"name": "Sword Armory",
-                "maintenance": 1,
+        "maintenance": 1,
 		"hurryCostModifier": 50,
 		"uniques": ["[+1 Production] from [Iron] tiles [in this city]","Consumes [1] [Weapon Parts]"],
 		"requiredBuilding": "Weapon Parts Workshop",
-                "requiredTech": "Engineering"
+        "requiredTech": "Engineering"
 	},
 	{
 		"name": "Balista Trap",
@@ -6105,10 +6129,17 @@
 		"name": "Armory",
 		"hurryCostModifier": 25,
 		"maintenance": 2,
-		"production":-1,
+		"percentStatBonus": {
+			"production": -5
+		},
+		"uniques": [
+			"'Military Building'",
+			"Comment [Increases [Call to Arms]'s amount of free close combat unit given.]",
+			"Provides [1] [Standing Army Maintainance]",
+			"New [Military] units start with [15] XP [in this city]"
+		],
 		"requiredBuilding": "Barrack",
-		"uniques": ["Military Building","Consumes [2] [Steel]","Provides [1] [Standing Army Maintainance]","New [Military] units start with [15] Experience [in this city]"],
-		"requiredTech": "Construction"
+		"requiredTech": "Logistics"
 	},
 	{
 		"name": "Arsenal",
@@ -6121,15 +6152,97 @@
 	},
 
 ///defence
-{
+    {
+		"name": "Oppidum",
+		//Ein Oppidum (Mehrzahl: Oppida) ist eine befestigte, stadtähnliche Siedlung der Eisenzeit, besonders der keltischen Spätlatènezeit 
+		// (ca. 2. und 1. Jahrhundert v. Chr.). Diese Siedlungen waren oft groß und komplex und dienten als wirtschaftliche, politische und kulturelle Zentren. 
+        "uniqueTo": "Gaul",
+		"replaces": "Walls",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Culture] from [Mine] tiles [in this city]","Destroyed when the city is captured"
+			//
+		],
+		//"requiredTech": "Masonry",
+	},
+	{
+		"name": "Drei Türme von San Marino",
+		//Die drei Türme von San Marino, auch als Tre Torri di San Marino bekannt, sind Guaita, Cesta und Montale. 
+		// Sie sind Wahrzeichen der ältesten Republik der Welt und thronen auf den Gipfeln des Monte Titano
+		"uniqueTo": "San Marino",
+		"requiredBuilding": "Walls",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"faith":1,
+		"uniques": [
+
+			//"[+15]% Production when constructing [Culture] buildings [in this city]",
+			//"[+10]% Production when constructing [Faith] buildings [in this city]",
+			"Destroyed when the city is captured"
+		],
+		//"requiredTech": "Chivalry",
+		"hurryCostModifier": 25
+	},
+    //Der Deutsche Orden ist eine katholische religiöse Institution, die um  1190 in Akko im Königreich Jerusalem als Militärgesellschaft gegründet wurde . Der Orden der Brüder
+	// vom Deutschen Haus der Heiligen Maria in Jerusalem wurde gegründet, um Christen auf ihren Pilgerreisen ins Heilige Land zu unterstützen und Krankenhäuser zu errichten .
+	{
+		"name": "Ordensburg", //Als Ordensburgen bezeichnet man die meist im 13. und 14. Jahrhundert von Ritterorden erbauten Burgen.
+		"uniqueTo": "Deutscher Orden", //Teutonic Order
+		"replaces": "Castle",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"faith":3,
+		"uniques": [
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Chivalry",
+		"hurryCostModifier": 25
+	},
+    {
+		"name": "Burg St. Hilarion", //„Schloss der 1000 Gemächer“/Wikipedia
+		"uniqueTo": "Cyprus",
+		"requiredBuilding": "Monastery",
+		"cityHealth": 25,
+		"cityStrength": 7,
+		"faith": 1,
+		"uniques": [
+			"'Static Defense'",
+			//Kann nur einmal Gebaut werden
+			//Muss neben ein Hügel/Berg sein
+			//"Can be purchased with [Faith] [in all cities]","Destroyed when the city is captured"
+		],
+		//"requiredTech": "Masonry",
+		"hurryCostModifier": 25
+	},
+    {
+		"name": "Caernarfon Castle", //Wikipedia
+		"uniqueTo": "Wales",
+		"replaces": "Castle",
+		"requiredBuilding": "Walls",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"specialistSlots":{
+			"Artist": 1
+		},
+		"uniques": ["'Static Defense'",
+		   
+			"Destroyed when the city is captured"
+		],
+		//"requiredTech": "Chivalry",
+		"hurryCostModifier": 25,
+		"qoute": "'Um das Jahr 1280 begann König Eduard I. mit dem Bau von Caernarfon Castle, das er zu seinem Sitz in der Grafschaft Gwynedd machen wollte, die jahrhundertelang Zentrum des Widerstands gegen die englische Krone war.'"
+	},
+    {
 		"name": "Zamość Fortress",
-		"isWonder": true,
 		"uniqueTo": "Polen",
-		"culture": 1,
-		"production": 1,
+		"isNationalWonder": true,
+		"cost": 200,
 		"cityStrength": 5,
 		"cityHealth": 60,
-		"cost": 0,
+		"culture": 1,
+		"production": 1,
 		"uniques": [
 			"[+2] Unit Supply per city",
 			//"Provides [2] [Weapons]",
@@ -6142,54 +6255,87 @@
 	},
 	{
 		"name": "Nuraghe",
+		//"uniqueTo": "rome/Sardinien",
 		"replaces": "Walls",
 		"cost": 45,
-		//"uniqueTo": "rome/Sardinien",
 		"cityStrength": 7,
 		"cityHealth": 50,
 		"production": 2,
-		"hurryCostModifier": 20,
-		"requiredTech": "Masonry",
-		"uniques": ["Destroyed when the city is captured"]
+		"uniques": [
+			"Destroyed when the city is captured"
+		],
+	    "requiredTech": "Masonry",
+		"hurryCostModifier": 20
 	},
     {
 		"name": "Trakai Castle",
+		"uniqueTo": "Lithuania",
 		"replaces": "Castle",
-	    "uniqueTo": "Lithuania",
 	    "cost": 150,
 	    "cityStrength": 8,
 	    "cityHealth": 30,
 	    "happiness": 2,
 	    "requiredBuilding": "Walls",
-		"uniques": ["Static Defense",
-			"Destroyed when the city is captured"],
+		"uniques": [
+			"Static Defense",
+			"Destroyed when the city is captured"
+		],
 	    "requiredTech": "Chivalry",
 	    "hurryCostModifier": 25
 	},
     {
 		"name": "Bryngaer",
-		"replaces": "Walls",
-		"cost": 50,
 		"uniqueTo": "Wales",
+		"replaces": "Walls",
+		"cost": 40,
 		"cityStrength": 5,
 		"cityHealth": 65,
-		"culture": 3,
-		"hurryCostModifier": 20,
+		"culture": 1,
+		"uniques": [
+			"Destroyed when the city is captured",
+			"[+5]% City Strength from defensive buildings <in [Hill] tiles>"
+		],
 		"requiredTech": "Masonry",
-		"uniques": ["Destroyed when the city is captured"]
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Okros Ziche",  
+		"uniqueTo": "Georgia",
+		"maintenance": 2,
+		"culture": 2,
+		"cityHealth": 60,
+		"cityStrength": 27,
+		"uniques": [
+			"'Static Defense'",
+			"Must be on [Hill]",
+			"[+7]% City Strength from defensive buildings <if [Watch Tower] is constructed>",
+			"Enemy [Land] units must spend [1] extra movement points when inside your territory <in tiles adjacent to [Hill] tiles> <upon entering a [Hill] tile> <in this city>",
+			"[+10]% Strength <upon entering combat> <vs [Close Combat]> <for [Ranged Combat] units> <in this city>",
+			"[+1] Range <in this city> <for [Ranged Combat] units>",
+			"[+8]% maintenance costs <in this city>",
+			"Only available <in cities without a [City Citadel]>",
+			"Only available <in cities with a [Walls]>",
+			"Can only be built <once> <in [in your cities] cities>"
+		],
+		"requiredTech": "Masonry",
+		"hurryCostModifier": 25,
+		"qoute": "'Okros Ziche (georgisch : ოქროს ციხე , wörtlich „die goldene Festung“) ist eine mittelalterliche Festung die eine wichtige Rolle bei den georgisch-osmanischen Auseinandersetzungen des 16. Jahrhunderts war'"
 	},
     {
 		"name": "Tsikhe",
 	    "replaces": "Walls",
 	    "uniqueTo": "Georgia",
-	    "cost": 260,
-	    "culture": 5,
-	  //"cityHealth": 200,
-	    "cityStrength": 10,
-	  //"requiredBuilding": "Medieval Walls",
-	  //"uniques": ["Requires a [Medieval Walls] in this city","Cannot be purchased",
-		///"+3 Culture once Conservation is adopted"],
-	 ///"requiredTech": "Siege Tactics"
+		"maintenance": 1,
+		"happiness": 1,
+	    "cityHealth": 30,
+	    "cityStrength": 5,
+		"uniques": [
+			"'Static Defense'",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Masonry",
+		"hurryCostModifier": 25
+
     }, 
 	{
 		"name": "Fortifications of Famagusta",
@@ -6202,27 +6348,63 @@
 		"requiredTech": "Masonry",
 		"uniques": ["[+1 Culture, +1 Gold] <after discovering [Flight]>"]
 	},
+	//Reveal up to [positiveAmount/'all'] [tileFilter] within a [positiveAmount] tile radius
 	{
 		"name": "Watch Tower",
 		"maintenance": 1,
 		"happiness": 1,
-		"cityStrength": 10,
-		"cityHealth": 20,
-		"hurryCostModifier": 25,
+		"cityStrength": 5,
+		"cityHealth": 15,
+		"uniques": [
+			"'Static Defense'",
+			"Destroyed when the city is captured",
+			//"Notified of new Barbarian encampments <once>"
+		],
+		"requiredBuilding": "Walls",
 		"requiredTech": "Construction",
-		"uniques": ["Static Defense","Destroyed when the city is captured"]
+		"hurryCostModifier": 25
 	},
 	{
-		"name": "Byzantine Walls",
-		"replaces": "Walls",
+		"name": "Theodosianische Mauer",
+		//Anfang des 5. Jahrhunderts unter Kaiser Theodosius II.
+		// und dem Präfekten Anthemius errichtete, etwa 19–20 Kilometer lange Befestigungsanlage (Land- und Seemauern) 
+		// zum Schutz von Konstantinopel, dem heutigen Istanbul. //Wikipedia Geschichte
 		"uniqueTo": "Byzantium",
 		"faith": 2,
-		"cost": 65,
-		"cityStrength": 8,
-		"cityHealth": 50,
-		"hurryCostModifier": 25,
+		"culture": 2,
+		"cityHealth": 70,
+		"cityStrength": 30,
+		"uniques": [
+			"'Static Defense'",
+			"[+10]% maintenance costs <when defending> <when at war> <in this city>",
+			"[-8]% Culture cost of natural border growth [in this city]",
+			//"[Ranged Combat] units gain the [(///)] promotion <upon entering combat> <when fighting in [your] tiles> <in this city>",
+			"[+10]% City Strength from defensive buildings <if [Watch Tower] is constructed> <in this city>",
+			"[+10]% Strength <when attacking> <when adjacent to a [Ranged Combat] unit> <in this city>",
+			//"[+8]% Strength <vs [Close Combat] units> <for units with [(///)]> <upon losing at least [40] HP in a single attack> <in this city>",
+			"[1] additional attacks per turn <when defending> <for [Ranged Combat] units> <every [10] turns> <in this city>",
+			"Can only be built <in cities without a [Walls]>",
+			"Can only be built <in [in holy cities] cities>"
+		],
 		"requiredTech": "Masonry",
-		"uniques": ["Destroyed when the city is captured"]
+		"hurryCostModifier": 25,
+		//"quote": "'///'"
+	},
+	{
+		"name": "Byzantinische Mauern",
+		"uniqueTo": "Byzantium",
+		"replaces": "Walls",
+		"cost": 65,
+		"culture": 1,
+		"happiness": 1,
+		"cityHealth": 30,
+		"cityStrength": 8,
+		"uniques": [
+			"'Static Defence'"
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Masonry",
+		"hurryCostModifier": 25
 	},
 	{
 		"name": "Citadelle",
@@ -6339,18 +6521,6 @@
 		"uniques": ["[+1 Culture, +1 Gold] <after discovering [Flight]>"]
 	},
 	{
-		"name": "Tsikhe",
-		"replaces": "Walls",
-		"cost": 60,
-		"uniqueTo": "Georgia",
-		"faith": 1,
-		"cityStrength": 7,
-		"cityHealth": 25,
-		"hurryCostModifier": 25,
-		"requiredTech": "Masonry",
-		"uniques": ["Destroyed when the city is captured", "[+1 Faith, +1 Culture] <in [Hill] tiles>", "Obsolete with [Rifling]", "[+1 Culture] <after discovering [Archaeology]>", "[+1 Culture] <after discovering [Flight]>"]
-	},
-	{
 		"name": "Kasbah",
 		"cost": 120,
 		"replaces": "Castle",
@@ -6457,17 +6627,55 @@
 	},
 
 ///economy
-{
-    "name": "Yam Route",
-    "replaces": "Caravansary",
-    "uniqueTo": "Golden Horde",
-    "cost": 100,
-    "hurryCostModifier": 25,
-    "science": 3,
-    "uniques": ["[+2 Gold] from [Land Trade Route (Gold)] tiles [in this city]"],
-    "requiredTech": "The Wheel"
-},
-{
+    {
+		"name": "Speisen Straßenmarkt",
+		//Essen auf pakistanischen Straßenmärkten hat eine lange Geschichte, die eng mit der kulinarischen Tradition des Landes und seiner kulturellen Entwicklung verbunden ist. 
+		// Die Straßenstände bieten eine Vielzahl von Gerichten, die oft auf traditionellen Rezepten basieren und von Generation zu Generation weitergegeben wurden. 
+        "uniqueTo": "Pakistan",
+		//"replaces": "Market",
+		"gold": 2,
+        "food": 2,
+		"specialistSlots": {
+			"Merchant": 1
+		},
+		"percentStatBonus": {
+			"gold": 25
+		},
+		"requiredTech": "Currency"
+	},
+    {
+		"name": "Souk",
+		//Ein Souk in Palästina ist ein traditioneller Markt, oft mit überdachten Gassen, der als Zentrum für Handel, Handwerk und soziale Interaktion dient.
+        "uniqueTo": "Palestine",
+		"replaces": "Market",
+		"gold": 2,
+		"specialistSlots": {
+			"Merchant": 1
+		},
+		"percentStatBonus": {
+			"gold": 25
+		},
+        "uniques": [
+			//
+			"[+1 Culture] from [Dyes] tiles [in this city]",
+			"[+1 Culture] from [Incense] tiles [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Currency"
+	},
+    {
+		"name": "Yam Route", //Mongolisches Postsystem bzw. ein Botensystem für Versorgungsrouten 
+        "uniqueTo": "Golden Horde",
+		//"replaces": "Caravansary",
+        "cost": 100,
+        "science": 3,
+        "uniques": [
+			//"[+2 Gold] from [Land Trade Route (Gold)] tiles [in this city]"
+		],
+        "requiredTech": "The Wheel",
+		"hurryCostModifier": 25
+    },
+    {
 		"name": "Esir",
 		"replaces": "Town Hall",
 		"uniqueTo": "-",

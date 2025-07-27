@@ -1936,11 +1936,13 @@
 		"uniqueName": "Deus Vult",
 		"uniqueText": "Land units may move immediately once bought. Receive free Shrine in capital at the beginning of the game and then in each of your cities after researching Philosophy. Receive a free Temple after researching Education",
 		///Überarbeiten///
-		"uniques": ["[Land] units gain the [Crusader] promotion","Gain a free [Cathedral] [in capital]","Gain a free [Chapel] [in all cities] <after discovering [///]>","Gain a free [Temple] [in all cities] <after discovering [Education]>",
+		"uniques": [
+			"[Land] units gain the [Crusader] promotion","Gain a free [Cathedral] [in capital]","Gain a free [Chaple] [in all cities] <after discovering [///]>","Gain a free [Temple] [in all cities] <after discovering [Education]>",
 		   /// "City-States territory always counts as friendly territory <when number of [Piety] is more than [5]",
 	        "Gain enough Faith for a Pantheon",
 			"May choose [1] additional [Any] beliefs when [founding] a religion",
-			"May choose [1] additional [Any] beliefs when [enhancing] a religion"],
+			"May choose [1] additional [Any] beliefs when [enhancing] a religion"
+		],
 		"cities": ["Roma","Benevento","Ravenna","Avignon","Bologna","Ponte Corvo","Ferrara","Ascoli","Camerino","Rieti","Assisi","Orvieto","Rimini","Todi","Viterbo"]
 	},
 	{

@@ -1,4 +1,6 @@
 [   
+
+//Bsp. Pessach
     {
     "name": "The One True God",
     "type": "Pantheon",
@@ -243,15 +245,14 @@
         "name": "Religious Expeditions",
         "type": "Enhancer",
         "uniques": ["Comment [+1 Movement and Sight for religious units]", "Comment [Missionaries take your religion over the one in their birth city]",
-                    "[+1] Movement <for [Religious Unit] units> <hidden from users>", "[+1] Sight <for [Religious Unit] units> <hidden from users>", 
-                    "[+1 Culture] for each global city following this religion <for [Byzantium] Civilizations> <hidden from users>"]
+             "[+1] Movement <for [Religious Unit] units> <hidden from users>", "[+1] Sight <for [Religious Unit] units> <hidden from users>"]
     },
     {
         "name": "Interfaith Dialogue",
         "type": "Enhancer",
         "uniques": ["When spreading religion to a city, gain [10] times the amount of followers of other religions as [Science]",
-        "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Culture]",
-        "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Faith]"]
+            "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Culture]",
+            "When spreading religion to a city, gain [10] times the amount of followers of other religions as [Faith]"]
     },
     {
         "name": "Pilgrimage",
@@ -559,6 +560,7 @@
                     "[-2 Food, -2 Production, +1 Gold, +2 Culture] from all [Faith] buildings <in cities with at least [4] [Followers of this Religion]>",
                     "[+2 Culture, -3 Faith] from every [Ascetic]"]
     },
+    
     {
         "name": "Incarnation of God",
         "type": "Founder",
@@ -2366,51 +2368,6 @@
     "name": "Saints",
     "type": "Follower",
     "uniques": ["[+3 Faith] from every [Castle]","[+1 Culture] from every [Castle]"]
-},
-{
-    "name": "Hunt God",
-    "type": "Founder",
-    "uniques": ["May buy [Hunter Temple] buildings for [250] [Faith] [in cities following this religion]"]
-},
-{
-    "name": "Intelligence God",
-    "type": "Founder",
-    "uniques": ["May buy [Clever Temple] buildings for [250] [Faith] [in cities following this religion]"]
-},
-{
-    "name": "Sky God",
-    "type": "Founder",
-    "uniques": ["May buy [Skylord Temple] buildings for [250] [Faith] [in cities following this religion]"]
-},
-{
-    "name": "War God",
-    "type": "Founder",
-    "uniques": ["May buy [Strong Temple] buildings for [250] [Faith] [in cities following this religion]"]
-},
-{
-    "name": "Marine God",
-    "type": "Founder",
-    "uniques": ["May buy [Deep Temple] buildings for [250] [Faith] [in cities following this religion]"]
-},
-{
-    "name": "Shadows God",
-    "type": "Founder",
-    "uniques": ["May buy [Shadows Temple] buildings for [250] [Faith] [in cities following this religion]"]
-},
-{
-    "name": "Pack God",
-    "type": "Founder",
-    "uniques": ["May buy [Pack Temple] buildings for [250] [Faith] [in cities following this religion]"]
-},
-{
-    "name": "Void God",
-    "type": "Founder",
-    "uniques": ["May buy [Void Temple] buildings for [250] [Faith] [in cities following this religion]"]
-},
-{
-    "name": "Chaos God",
-    "type": "Founder",
-    "uniques": ["May buy [Chaos Temple] buildings for [250] [Faith] [in cities following this religion]"]
 },
 //
 {
