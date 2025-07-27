@@ -4521,12 +4521,12 @@
 		"uniques": [
 			"Practice Ground",
 			"Provides [1] [Wine] <with [Grape]>","[+1 Gold, +1 Culture] from [Grape] tiles [in this city]",
-			"[10]% [Food] from every ['Agricultural Building' Building] <after adopting [Tithe]>",
-			"[5]% [Gold] from every ['Light Industry' Building] <after adopting [Tithe]>",
+			"[+10]% [Food] from every [{'Agricultural Building'} {'Building'}] <after adopting [Tithe]>",
+			"[+5]% [Gold] from every [{'Light Industry'} {'Building'}] <after adopting [Tithe]>",
 			"[-20]% [Happiness] <every [20] turns> <after adopting [Tithe]>",
-        	"Consumes [2] [Influence] <after adopting [Tithe]>",
-			"[-10]% Unhappiness from [Population] [in this city] <before adopting [Tithe]",
-			"[10]% [Science] from every [Monastery] <after adopting [Early Theology]>",
+        	"Consumes [1] [Influence] <after adopting [Tithe]>",
+			"[-10]% Unhappiness from [Population] [in this city] <after adopting [Tithe]",
+			"[+10]% [Science] from every [Monastery] <after adopting [Early Theology]>",
 			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Imperal Era]> <after adopting [Monastic Warrior]>",
 			"Unbuildable","Hidden when religion is disabled", "Destroyed when the city is captured"
 		],
