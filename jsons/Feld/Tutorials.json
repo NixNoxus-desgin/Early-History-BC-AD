@@ -1,0 +1,117 @@
+[
+  // Each entry is a tutorial, but the tutorial may be spread over separate paragraphs.
+
+    {
+    "name": "Emperors and Deities Mod Manual",
+    "civilopediaText": [
+      {"text":"Emperors and Deities is an overhaul mod for Sid meier's Civilization 5/Unciv."},
+      {"text":"The mod's main goal is to reshape civ 5 into a more complex and nuanced game. With many new mechanics incorporated into the mod.\nMajor Differences:"},
+      {"text":"1.Keep in mind that Luxury Resources no longer provide any [Happiness] by default, they provide a large amount of [Gold] and development potential, however, 'We Love King Day' and city state quests still require Luxury Resources. As for how you gain [Happiness], you can build a lot of buildings and create a religion with suitable beliefs."},
+      {"text":"2.Army are now separated into four major categories:\n 'Levy Army','Standing Army','Noble Army' and 'Mercenary Army'. Each with different characteristics."},
+      {"text":"'Levy Army' units are free and can be summoned using [Call to Arms] function in any city with five or more population at cost of [Happiness]  and short term negative effects, [Call to Arms] status can be reverted by disbanding your levies in peaceful times using [Enact Policies] at the capital so that they can be summoned again."},
+      {"text":"'Standing Army','Noble Army' and 'Mercenary Army' behave like normal units except 'Mercenary Army' can only be bought and requires a [Mercenary Office] to be built. 'Standing Army' and its elite variant 'Noble Army' is what you would rely upon most of the time, however, they do require resources like [Iron] and [Weapon Parts] to be built."},
+      {"text":"3.Tag system is used widely in this mod, a tag is a word surrounded using '', many mechanics revolve around this system, they are also in the civilopedia of any object, feel free to check. You don't need to remember this well to use it effectively as most tags are intuitive."},
+      {"text":"4.[Influence] is a new currency that affects the political status of your civilization, it is limited by [Influence Limit]. You get it by keeping the [Happiness] positive, choosing the right policies and through [Enact Policies] decisions. If your [Influence] is negative, you will be getting a negative event that lowers stability which provides huge amount of debuff. You can check the civilopedia page of [Influence] for more information."},
+
+      {"text": "See also: Influence", "link": "Resources/Influence"},
+      {"text": "See also: Stability and Events", "link": "Tutorials/Stability and Events"}
+    ]
+  },
+  {
+    "name": "The Industrial Age of Emperors and Deities",
+    "civilopediaText": [
+      {"text":"Arriving at Industrial Age, theres a few distinctive new features"},
+      {"text":"[Consumption Supply] and [Consumption Demand] are two new parameters you should keep in mind if you want to industrialise your civilization."},
+      {"text":"If [Consumption Supply] outgrows [Consumption Demand] by 3 + Current Number of Cities*2, you will gain [Overproduction], which slows down constrcution of new industries, but adds some positive effects."},
+      {"text":"If [Consumption Demand] outgrows [Consumption Supply] by 3 + Current Number of Cities*2, you will gain [Underproduction], which speed up constrcution of new industries, but adds some negative effects."},
+      {"text":"[Power] is also a new resource you should keep in mind if you want to make your industries stay productive."},
+      {"text":"Every Industry will consume a certain amount of [Power], if the [Power] is above [0], they will have the full benefit of electric in cities with [Power Grid], like increased stats and resources production rate."},
+
+      {"text": "See also: Overproduction", "link": "Buildings/Overproduction"},
+      {"text": "See also: Underproduction", "link": "Buildings/Underproduction"},
+      {"text": "See also: Power", "link": "Resources/Power"},
+      {"text": "See also: Power Grid", "link": "Buildings/Power Grid"}
+    ]
+  },
+  {
+    "name": "Stability and Events",
+    "civilopediaText": [
+      {"text":"The original unciv/civ 5 offers a flat debuff when the empire is unhappy. But Emperors and Deities turned the flat debuff into instability and negative events. Negative events often interacts with variables like number of cities or what era you are in. To cure the debuff from them, you can check out options in [Enact Policies] or in the building tab."},
+      {"text":"[Chaos Ensue] is a event that lowers your stability. If you are lacking on [Happiness], [Influence] or [Gold] into the negative, it would occur. It also occurs more frequently in [Unified] states. You will need to make a choice of either spending some [Influence] and [Gold] to prevent it. Or your stability would be lowered. Disabiling some abilities like building workers when you are in a state of [Strife]."},
+      {"text":"To keep [Chaos Ensue] from occuring, you will need to keep your [Happiness] and [Influence] higher than normal. Which is not ideal. So it is a risk you will always face. Remember to always keep some spare [Gold] and [Influence]"},
+      {"text":"[Wealth Gap Widens], [Rampent Corruption] and [Vagrancy Crisis] are event that only occur you are lacking on [Happiness]. They may apply debuff in all the cities you own, which can be a nightmare to deal with."},
+      {"text":"Luckily, you can use your capital to deal with them. Unluckily, your capitals are limited, so do what you can to prevent the lack of [Happiness]"},
+
+      {"text": "See also: Peace", "link": "Buildings/Peace"},
+      {"text": "See also: Struggle", "link": "Buildings/Struggle"},
+      {"text": "See also: Strife", "link": "Buildings/Strife"},
+      {"text": "See also: Anarchy", "link": "Buildings/Anarchy"},
+      {"text": "See also: Slum", "link": "Buildings/Slum"},
+      {"text": "See also: Unjust Ruling", "link": "Buildings/Unjust Ruling"},
+      {"text": "See also: Peasant Rebellion", "link": "Buildings/Peasant Rebellion"},
+      {"text": "See also: Remove Slums", "link": "Buildings/Remove Slums"},
+      {"text": "See also: Clear Corruption", "link": "Buildings/Clear Corruption"},
+      {"text": "See also: Stop Rebellion", "link": "Buildings/Stop Rebellion"}
+    ]
+  },
+  {
+    "name": "Avaliable Civilzation Form of different eras",
+    "civilopediaText": [
+      {"text":"There are two major 'Civilzation Form' Categories: 'United' and 'Divided'"},
+      {},
+      {"text":"Neolithic era:","header":3},
+      {"text":"United"},
+      {"text":"Tribal Union", "link": "Buildings/Tribal Union"},
+      {"text":"Egyptian Dynasties", "link": "Buildings/Egyptian Dynasties"},
+      {"text":"Divided"},
+      {"text":"Tribes", "link": "Buildings/Tribes"},
+      {"text":"Early City States", "link": "Buildings/Early City States"},
+      {"text":"Nomadic Tribes", "link": "Buildings/Nomadic Tribes"},
+      {},
+      {"text":"Ancient era:","header":3},
+      {"text":"United"},
+      {"text":"Early Empire", "link": "Buildings/Early Empire"},
+      {"text":"Zhou Dynasty", "link": "Buildings/Zhou Dynasty"},
+      {"text":"Divided"},
+      {"text":"City States", "link": "Buildings/City States"},
+      {"text":"Greek City States", "link": "Buildings/Greek City States"},
+      {},
+      {"text":"Classical era:","header":3},
+      {"text":"United"},
+      {"text":"Feudal Empire", "link": "Buildings/Feudal Empire"},
+      {"text":"Centralized Empire", "link": "Buildings/Centralized Empire"},
+      {"text":"SPQR", "link": "Buildings/SPQR"},
+      {"text":"Divided"},
+      {"text":"City States", "link": "Buildings/City States"},
+      {"text":"Successor States", "link": "Buildings/Successor States"},
+      {},
+      {"text":"Medieval era:","header":3},
+      {"text":"United"},
+      {"text":"Empire of Electors", "link": "Buildings/Empire of Electors"},
+      {"text":"Celestial Empire", "link": "Buildings/Celestial Empire"},
+      {"text":"Theocratic Empire", "link": "Buildings/Theocratic Empire"},
+      {"text":"Divided"},
+      {"text":"Kingdoms", "link": "Buildings/Kingdoms"},
+      {},
+      {"text":"Renaissance era:","header":3},
+      {"text":"United"},
+      {"text":"Colonial Empires", "link": "Buildings/Colonial Empires"},
+      {"text":"Autocratic Empire", "link": "Buildings/Autocratic Empire"},
+      {},
+      {"text":"Imperial era:","header":3},
+      {"text":"United"},
+      {"text":"Federation", "link": "Buildings/Federation"},
+      {"text":"United States", "link": "Buildings/United States"},
+      {"text":"Personal Union", "link": "Buildings/Personal Union"},
+      {"text":"Divided"},
+      {"text":"Republics", "link": "Buildings/Republics"},
+      {},
+      {"text":"Modern era:","header":3},
+      {"text":"United"},
+      {"text":"Fascist Autocracy", "link": "Buildings/Fascist Autocracy"},
+      {"text":"Socialist Republics", "link": "Buildings/Socialist Republics"},
+      {"text":"Divided"},
+      {"text":"Anarchist Alliances", "link": "Buildings/Anarchist Alliances"}
+    ]
+  }
+]

@@ -1,8 +1,1480 @@
- [
-    ///Natural Disaster Events
-    
-    ///Civilisation Events
-
+[
+    ///Disaster Events
+    {
+        "name": "Chaos Ensue",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Influence], lack of [Happiness]!",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                    "Only available <if [Harmony] is constructed> <when above [0] [Influence]>",
+                    "Comment [Preventing losing stability for this one time...]",
+                    "Instantly consumes [3] [Influence]",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "[-10]% [Production] [in all cities] <for [3] turns>"
+                ]
+            },
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                    "Only available <if [Peace] is constructed> <when above [0] [Influence]>",
+                    "Comment [Preventing losing stability for this one time...]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-225] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "[-10]% [Production] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Only available <if [Harmony] is constructed>",
+                    "Comment [Lose your current stability and enter a worse state.]",
+                    "Gain a free [Peace] [in capital] <if [Harmony] is constructed> <hidden from users>",
+                    "Remove [Harmony] [in all cities] <if [Harmony] is constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Only available <if [Peace] is constructed>",
+                    "Comment [Lose your current stability and enter a worse state.]",
+                    "Gain a free [Struggle] [in capital] <if [Peace] is constructed> <hidden from users>",
+                    "Remove [Peace] [in all cities] <if [Peace] is constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Only available <if [Struggle] is constructed>",
+                    "Comment [Lose your current stability and enter a worse state.]",
+                    "Gain a free [Strife] [in capital] <if [Struggle] is constructed> <hidden from users>",
+                    "Remove [Struggle] [in all cities] <if [Struggle] is constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Only available <if [Strife] is constructed>",
+                    "Comment [Lose your current stability and enter a worse state.]",
+                    "Gain a free [Anarchy] [in capital] <if [Strife] is constructed> <hidden from users>",
+                    "Remove [Strife] [in all cities] <if [Strife] is constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Rock Bottom",
+                "uniques": [
+                    "Only available <if [Anarchy] is constructed>",
+                    "Comment [Yep, theres nothing worse. Go ahead and try to return to a somewhat normal form.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Wealth Gap Widens",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]! As inequality in wealth is detrimental to societal stability.",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Instantly consumes [3] [Influence]",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-300] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Gain a free [Slum] [in capital]",
+                    "Gain a free [Slum] [in all cities] <when number of [[in all cities] Cities] is more than [6]>",
+                    "[-10]% growth [in all cities] <for [5] turns>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Rampent Corruption",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]! As unjust ruling causes outrage in your towns.",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-200] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Gain a free [Unjust Ruling] [in capital]",
+                    "Gain a free [Unjust Ruling] [in all cities] <when number of [[in all cities] Cities] is more than [6]>",
+                    "[-10]% Strength <for [5] turns>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Vagrancy Crisis",
+        "text": "The civilization starts to lose its grasp with order and splendor due to lack of [Happiness]! As more and more yeoman loses their land to giant landlords, they either became serfs or vargants. Which exacerbates the risk of revolts and the decline of living condition.",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-300] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Comment [The Population shifts between cities...]",
+                    "[+1] population in a random city <when number of [[in all cities] Cities] is less than [4]> <hidden from users>",
+                    "[-1] population in a random city <when number of [[in all cities] Cities] is less than [4]> <hidden from users>",
+                    "[+3] population in a random city <when number of [[in all cities] Cities] is more than [4]> <hidden from users>",
+                    "[-3] population in a random city <when number of [[in all cities] Cities] is more than [4]> <hidden from users>",
+                    "[+5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
+                    "[-5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
+                    "[+5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
+                    "[-5] population in a random city <when number of [[in all cities] Cities] is more than [8]> <hidden from users>",
+                    "Gain a free [Peasant Rebellion] [in capital]"
+                ]
+            }
+        ]
+        
+    },
+        {
+        "name": "Spreading Chaos",
+        "text": "Tho the disorder can be better controlled in a small civilization, but it still needs a permanent solution.",
+        "choices": [
+            {
+                "text": "We need to take precaution!",
+                "uniques": [
+                    "Only available <when above [0] [Influence]>",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Instantly consumes [5] [Influence]"
+                ]
+            },
+            {
+                "text": "The situation gets worse",
+                "uniques": [
+                    "Gain a free [Slum] [in all cities] <if [Slum] is constructed>",
+                    "Gain a free [Unjust Ruling] [in all cities] <if [Unjust Ruling] is constructed>",
+                    "Gain a free [Peasant Rebellion] [in all cities] <if [Peasant Rebellion] is constructed>"
+                ]
+            }
+        ]
+        
+    },
+    ///Civilization Events
+    {
+        "name": "Enact Policies",
+        "text": "Decisions reguarding the civilization's internal affair.",
+        "choices": [
+            {
+                "text": "Total mobilization in every cities!",
+                "uniques": [
+                    "Only available <if [Unified] is constructed>",
+                    "Comment [We need more soldiers at the frontline.]",
+                    "Gain a free [Call to Arms] [in all non-occupied cities]",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>",
+                    "Triggers a [Enact Policies] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Disband the Levies.",
+                "uniques": [
+                    "Only available <when not at war>",
+                    "Comment [Since there are currently no conflict, we may disband our levied armies.]",
+                    "Remove [Call to Arms] [in all cities]",
+                    "Gain a free [Levies Disbandment] [in capital]",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>",
+                    "Triggers a [Enact Policies] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Increase [Influence]",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]>",
+                    "Triggers a [Popularity Crisis] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Spread our [Influence]",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]> <when above [5] [Influence]>",
+                    "Instantly consumes [5] [Influence] <before the [Medieval era]>",
+                    "Instantly consumes [10] [Influence] <starting from the [Medieval era]> <before the [Industrial era]>",
+                    "Instantly consumes [15] [Influence] <starting from the [Industrial era]> <before the [Information era]>",
+                    "Resting point for Influence with City-States is increased by [25] <for [10] turns>",
+                    "City-State Influence recovers at twice the normal rate <for [10] turns>",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>",
+                    "Triggers a [Enact Policies] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Build Agreements",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed>",
+                    "Comment [Tho our civilization is divided, we are not weak.]",
+                    "Triggers a [Building Alliance] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Build Agreements",
+                "uniques": [
+                    "Only available <if [Personal Union] is constructed>",
+                    "Only available <starting from the [Industrial era]>",
+                    "Comment [Commonwealth needs futher cooperation.]",
+                    "Triggers a [Building Alliance] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Adoption of European Cultures",
+                "uniques": [
+                    "Only available <for [Europa] Civilizations> <before the [Medieval era]>",
+                    "Only available <when above [5] [Influence]>",
+                    "Triggers a [The Tribes of Europe] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Adoption of Schools of Thought",
+                "uniques": [
+                    "Only available <if [Warring States] is constructed>",
+                    "Only available <when above [0] [Avaliable School of Thoughts]>",
+                    "Only available <when above [10] [Influence]>",
+                    "Triggers a [The way to rule] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Socialist Education",
+                "uniques": [
+                    "Only available <if [Socialist Republics] is constructed>",
+                    "[-50]% [Gold] [in all cities] <for [1] turns>",
+                    "[+33]% [Science] [in all cities] <for [3] turns>",
+                    "[+33]% [Culture] [in all cities] <for [3] turns>",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>",
+                    "Triggers a [Enact Policies] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "State Reform",
+                "uniques": [
+                    "Only available <if [Unified] is constructed> <when above [10] [Influence]>",
+                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
+                    "Triggers a [Reformation of the unified state] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Increasing Stability.",
+                "uniques": [
+                    "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
+                    "Only available <when number of [Influence] is more than [5]>",
+                    "Comment [We must make our empire even more stable]",
+                    "Triggers a [Stablising our side of the globe] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Increasing Stability.",
+                "uniques": [
+                    "Only available <if [Struggle] is constructed>",
+                    "Only available <when number of [Influence] is more than [5]>",
+                    "Comment [We must take action against the coming chaos.]",
+                    "Triggers a [Stablising our side of the globe] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Increasing Stability.",
+                "uniques": [
+                    "Only available <if [Strife] is constructed>",
+                    "Only available <when number of [Influence] is more than [5]>",
+                    "Comment [We must take action against the coming chaos.]",
+                    "Triggers a [Stablising our side of the globe] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Increasing Stability.",
+                "uniques": [
+                    "Only available <if [Anarchy] is constructed> <before adopting [Anarchism]>",
+                    "Only available <when number of [Influence] is more than [5]>",
+                    "Comment [We must take action against the coming chaos.]",
+                    "Triggers a [Stablising our side of the globe] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Changing Economic Policies",
+                "uniques": [
+                    "Only available <if ['Economic Policy'] is constructed>",
+                    "Comment [If the current economic policies fail to meet the situation...]",
+                    "Triggers a [Changing economy policies] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Changing Civilization Form",
+                "uniques": [
+                    "Only available <when number of [Influence] is more than [10]>",
+                    "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
+                    "Instantly consumes [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>",
+                    "Triggers a [Shift in Politic] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Check Current Status",
+                "uniques": [
+                    "Triggers a [Present Current Status] event",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            },
+            {
+                "text": "Actually...I was checking what I can do.",
+                "uniques": [
+                    "Comment [Nothing happens.]",
+                    "Remove [Enact Policies] [in all cities] <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Shift in Politic",
+        "text": "The structure of our civilization changes to adapt to the time. What path shall we partake?",
+        "choices": [
+            {
+                "text": "No significant changes",
+                "uniques": [
+                    "Comment [We are still a bunch of countries prone to infighting and invasion, but what we do have is countless oppotunities.]",
+                    "Only available <if [Unified] is not constructed> <if [Great Qin] is not constructed>",
+                    "Gain a free [City States] [in capital] <if [Tribes] is constructed> <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
+                    "Remove [Tribes] [in all cities] <if [Tribes] is constructed> <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
+                    "Gain a free [Kingdoms] [in capital] <if [Successor States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
+                    "Remove [Successor States] [in all cities] <if [Successor States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
+                    "Gain a free [Kingdoms] [in capital] <if [City States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
+                    "Remove [City States] [in all cities] <if [City States] is constructed> <starting from the [Medieval era]> <before the [Imperial era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <if [Kingdoms] is constructed> <starting from the [Industrial era]> <hidden from users>",
+                    "Remove [Kingdoms] [in all cities] <if [Kingdoms] is constructed> <starting from the [Industrial era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Qin has collapsed!",
+                "uniques": [
+                    "Only available <if [Great Qin] is constructed>",
+                    "Triggers a [Collapse of the Great Qin] event"
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed> <when above [10] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed> <when above [15] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Medieval era]> <before the [Industrial era]>",
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed> <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Industrial era]> <before the [Information era]>",
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We are able to unify ourselves!",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed> <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Information era]>",
+                    "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
+                    "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Imperial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "The empire of the past crumbles...",
+                "uniques": [
+                    "Comment [Our unification cannot last onto another stage of the world. Maybe its ultimately for the better, as it was stale.]",
+                    "Only available <if [Unified] is constructed>",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [City States] [in capital] <during the [Neolithic era]> <hidden from users>",
+                    "Gain a free [City States] [in capital] <during the [Ancient era]> <hidden from users>",
+                    "Gain a free [Successor States] [in capital] <during the [Classical era]> <hidden from users>",
+                    "Gain a free [Kingdoms] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Kingdoms] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Imperial era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Republics] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Our empire lasts onto another era!",
+                "uniques": [
+                    "Only available <when above [10] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <before the [Medieval era]>",
+                    "Only available <when above [15] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Medieval era]> <before the [Industrial era]>",
+                    "Only available <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Industrial era]> <before the [Information era]>",
+                    "Only available <when above [25] [Influence]> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <starting from the [Information era]>",
+                    "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
+                    "Only available <if [Unified] is constructed>",
+                    "Instantly consumes [15] [Influence]",
+                    "Triggers a [Reformation of the unified state] event"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Reformation of the unified state",
+        "text": "If an empire is stale in upward mobility, political reform and other essential aspect, it would fall behind, and crumble to ash.",
+        "choices": [
+            {
+                "text": "There needs to be an Emperor",
+                "uniques": [
+                    "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Tribal Union] is constructed> <if [Early Empire] is not constructed>",
+                    "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <after adopting [Unity]>"
+                ]
+            },
+            {
+                "text": "Focus on Centrailizing Power Structure.",
+                "uniques": [
+                    "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Early Empire] is constructed> <if [Centralized Empire] is not constructed>",
+                    "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <after adopting [Unity]>"
+                ]
+            },
+            {
+                "text": "Focus on Dispersing Power Structure.",
+                "uniques": [
+                    "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Early Empire] is constructed> <if [Feudal Empire] is not constructed>",
+                    "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <after adopting [Unity]>"
+                ]
+            },
+            {
+                "text": "We can use our new formed policy.",
+                "uniques": [
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Empire of Electors] is not constructed> <if [Celestial Empire] is not constructed> <if [Theocratic Empire] is not constructed>",
+                    "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [Empire of Electors] [in capital] <after adopting [Feudalism]> <during the [Medieval era]>",
+                    "Gain a free [Celestial Empire] [in capital] <after adopting [Meritocracy]> <during the [Medieval era]>",
+                    "Gain a free [Theocratic Empire] [in capital] <after adopting [Theocracy]> <during the [Medieval era]>"
+                ]
+            },
+            {
+                "text": "We shall dominate the Land!",
+                "uniques": [
+                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Colonial Empires] is not constructed>",
+                    "Comment [Although our empire has stood tall, it would be more efficient if we take the new route...]",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [Autocratic Empire] [in capital]"
+                ]
+            },
+            {
+                "text": "We shall dominate the Ocean!",
+                "uniques": [
+                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Autocratic Empire] is not constructed>",
+                    "Comment [Although our empire has stood tall, it would be more efficient if we take the new route...]",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [Colonial Empires] [in capital]"
+                ]
+            },
+            {
+                "text": "We will continue our empire's glory.",
+                "uniques": [
+                    "Only available <starting from the [Industrial era]> <before adopting [Socialism]> <before adopting [Anarchism]> <before adopting [Fascism]>",
+                    "Remove ['United'] [in all cities] <hidden from users>",
+                    "Gain a free [Personal Union] [in capital]"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                    "Comment [We need more contemplation...]",
+                    "Instantly provides [10] [Influence] <when number of [[in all cities] Cities] is more than [4]>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Stablising our side of the globe",
+        "text": "The peace is no more. We are suffering from effects of low stability.",
+        "choices": [
+            {
+                "text": "Building a harmonious civilization is essential",
+                "uniques": [
+                    "Only available <if [Peace] is constructed> <when above [-10] [Influence]>",
+                    "Comment [We can make it so that it takes more to unstablise our civilization]",
+                    "Instantly consumes [15] [Influence]",
+                    "Gain [-250] [Gold] <(modified by game speed)>",
+                    "Gain [-150] [Faith] <(modified by game speed)> <before the [Renaissance era]>",
+                    "Gain [-300] [Faith] <(modified by game speed)> <starting from the [Renaissance era]>",
+                    "Gain a free [Harmony] [in capital] <hidden from users>",
+                    "Remove [Peace] [in capital] <hidden from users>"
+                ]
+            },
+            {
+                "text": "We must make haste before situation gets any worse",
+                "uniques": [
+                    "Only available <if [Anarchy] is constructed>",
+                    "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "Gain a free [Struggle] [in capital] <hidden from users>",
+                    "Remove [Anarchy] [in capital] <hidden from users>",
+                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We must make haste before situation gets any worse",
+                "uniques": [
+                    "Only available <if [Strife] is constructed>",
+                    "Comment [By investing a vast amount of social-political capital, we can stablise the situation quickly.]",
+                    "Instantly consumes [10] [Influence]",
+                    "Gain [-200] [Gold] <(modified by game speed)>",
+                    "Gain a free [Peace] [in capital] <hidden from users>",
+                    "Remove [Strife] [in capital] <hidden from users>",
+                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Ruling a country requires patience and subtlety",
+                "uniques": [
+                    "Only available <if [Anarchy] is constructed>",
+                    "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Strife] [in capital] <hidden from users>",
+                    "Remove [Anarchy] [in capital] <hidden from users>",
+                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Ruling a country requires patience and subtlety",
+                "uniques": [
+                    "Only available <if [Strife] is constructed>",
+                    "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Struggle] [in capital] <hidden from users>",
+                    "Remove [Strife] [in capital] <hidden from users>",
+                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Ruling a country requires patience and subtlety",
+                "uniques": [
+                    "Only available <if [Struggle] is constructed>",
+                    "Comment [By carefully planning the route back to normal, we can stablise the situation slowly.]",
+                    "Instantly consumes [5] [Influence]",
+                    "Gain [-125] [Gold] <(modified by game speed)>",
+                    "Gain a free [Peace] [in capital] <hidden from users>",
+                    "Remove [Struggle] [in capital] <hidden from users>",
+                    "Triggers a [Stablising our side of the globe] event <if [Peace] is not constructed> <hidden from users>"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                    "Only available <for [non-[AI player]] Civilizations>",
+                    "Comment [We need more contemplation...]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Building Alliance",
+        "text": "Our civilization consists of multiple countries. If they do not reach agreement in some way. We are at the danger of being foods on a plate.",
+        "choices": [
+            {
+                "text": "[Military Alliance] is the most practical",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Collective Security] is not constructed> <if [Military Alliance] is not constructed>",
+                    "Only available <when above [10] [Influence]>",
+                    "Only available <when above [8] [Influence]> <for [Europa] Civilizations>",
+                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
+                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
+                    "Gain [-125] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain a free [Military Alliance] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Cultural Exchange] is the most elegant",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Reseach Exchange] is not constructed> <if [Cultural Exchange] is not constructed>",
+                    "Only available <when above [10] [Influence]>",
+                    "Only available <when above [8] [Influence]> <for [Europa] Civilizations>",
+                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
+                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
+                    "Gain [-125] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain a free [Cultural Exchange] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Trade Alliance] is the most attractive",
+                "uniques": [
+                    "Only available <before the [Industrial era]> <if [Economic Community] is not constructed> <if [Trade Alliance] is not constructed>",
+                    "Only available <when above [10] [Influence]>",
+                    "Only available <when above [8] [Influence]> <for [Europa] Civilizations>",
+                    "Instantly consumes [8] [Influence] <for [non-[Europa]] Civilizations>",
+                    "Instantly consumes [5] [Influence] <for [Europa] Civilizations>",
+                    "Gain [-125] [Gold] <(modified by game speed)> <for [non-[Europa]] Civilizations>",
+                    "Gain [-125] [Gold] <(modified by game speed)> <for [Europa] Civilizations>",
+                    "Gain a free [Trade Alliance] [in capital]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Collective Security] secures our footing",
+                "uniques": [
+                    "Only available <starting from the [Industrial era]> <if [Collective Security] is not constructed>",
+                    "Only available <when above [20] [Influence]>",
+                    "Instantly consumes [15] [Influence]",
+                    "Gain [-250] [Gold] <(modified by game speed)>",
+                    "Gain a free [Collective Security] [in capital]",
+                    "Remove [Military Alliance] [in all cities]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Reseach Exchange] secures our progess",
+                "uniques": [
+                    "Only available <starting from the [Industrial era]> <if [Reseach Exchange] is not constructed>",
+                    "Only available <when above [20] [Influence]>",
+                    "Instantly consumes [15] [Influence]",
+                    "Gain [-250] [Gold] <(modified by game speed)>",
+                    "Gain a free [Reseach Exchange] [in capital]",
+                    "Remove [Cultural Exchange] [in all cities]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "[Economic Community] secures our interest",
+                "uniques": [
+                    "Only available <starting from the [Industrial era]> <if [Economic Community] is not constructed>",
+                    "Only available <when above [20] [Influence]>",
+                    "Instantly consumes [15] [Influence]",
+                    "Gain [-250] [Gold] <(modified by game speed)>",
+                    "Gain a free [Economic Community] [in capital]",
+                    "Remove [Trade Alliance] [in all cities]",
+                    "Triggers a [Building Alliance] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                    "Comment [We need more contemplation...]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Disolution of Union",
+        "text": "As the civ enters its downfall, the Union crumbles away.",
+        "choices": [
+            {
+                "text": "No!",
+                "uniques": [
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Struggle] [in capital]",
+                    "Remove ['Civilization Form'] [in all cities]",
+                    "Remove [Unified] [in all cities]",
+                    "Gain a free [Republics] [in capital]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Present Current Status",
+        "text": "Behold! The options below doesnt do anything, they just display what status your civilization is in.",
+        "choices": [
+            {
+                "text": "Harmony",
+                "uniques": [
+                    "Only available <if [Harmony] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Peace",
+                "uniques": [
+                    "Only available <if [Peace] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Struggle",
+                "uniques": [
+                    "Only available <if [Struggle] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Strife",
+                "uniques": [
+                    "Only available <if [Strife] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Anarchy",
+                "uniques": [
+                    "Only available <if [Anarchy] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Tribes",
+                "uniques": [
+                    "Only available <if [Tribes] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Early City States",
+                "uniques": [
+                    "Only available <if [Early City States] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Tribal Union",
+                "uniques": [
+                    "Only available <if [Tribal Union] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Earliest Empire",
+                "uniques": [
+                    "Only available <if [Earliest Empire] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Nomadic Tribes",
+                "uniques": [
+                    "Only available <if [Nomadic Tribes] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Egyptian Dynasties",
+                "uniques": [
+                    "Only available <if [Egyptian Dynasties] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "City States",
+                "uniques": [
+                    "Only available <if [City States] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Greek City States",
+                "uniques": [
+                    "Only available <if [Greek City States] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Early Empire",
+                "uniques": [
+                    "Only available <if [Early Empire] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Shang Dynasty",
+                "uniques": [
+                    "Only available <if [Shang Dynasty] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Zhou Dynasty",
+                "uniques": [
+                    "Only available <if [Zhou Dynasty] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Persian Dynasties",
+                "uniques": [
+                    "Only available <if [Persian Dynasties] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "SPQR",
+                "uniques": [
+                    "Only available <if [SPQR] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Carthage Obligarchy",
+                "uniques": [
+                    "Only available <if [Carthage Obligarchy] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Great Qin",
+                "uniques": [
+                    "Only available <if [Great Qin] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Carthage Obligarchy",
+                "uniques": [
+                    "Only available <if [Carthage Obligarchy] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Feudal Empire",
+                "uniques": [
+                    "Only available <if [Feudal Empire] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Centralized Empire",
+                "uniques": [
+                    "Only available <if [Centralized Empire] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Successor States",
+                "uniques": [
+                    "Only available <if [Successor States] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Alexandrian Successor States",
+                "uniques": [
+                    "Only available <if [Carthage Obligarchy] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Warring States",
+                "uniques": [
+                    "Only available <if [Carthage Obligarchy] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Chu Dynasty",
+                "uniques": [
+                    "Only available <if [Chu Dynasty] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Han Dynasty",
+                "uniques": [
+                    "Only available <if [Han Dynasty] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Kingdoms",
+                "uniques": [
+                    "Only available <if [Kingdoms] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Empire of Electors",
+                "uniques": [
+                    "Only available <if [Empire of Electors] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Celestial Empire",
+                "uniques": [
+                    "Only available <if [Celestial Empire] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Theocratic Empire",
+                "uniques": [
+                    "Only available <if [Theocratic Empire] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Colonial Empires",
+                "uniques": [
+                    "Only available <if [Colonial Empires] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Autocratic Empire",
+                "uniques": [
+                    "Only available <if [Autocratic Empire] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Republics",
+                "uniques": [
+                    "Only available <if [Republics] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Federation",
+                "uniques": [
+                    "Only available <if [Federation] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "United States",
+                "uniques": [
+                    "Only available <if [United States] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Personal Union",
+                "uniques": [
+                    "Only available <if [Personal Union] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Fascist Autocracy",
+                "uniques": [
+                    "Only available <if [Fascist Autocracy] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Socialist Republics",
+                "uniques": [
+                    "Only available <if [Socialist Republics] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Anarchist Alliances",
+                "uniques": [
+                    "Only available <if [Anarchist Alliances] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            }, 
+            {
+                "text": "Overproduction",
+                "uniques": [
+                    "Only available <if [Overproduction] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Underproduction",
+                "uniques": [
+                    "Only available <if [Underproduction] is constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Balanced Production",
+                "uniques": [
+                    "Only available <starting from the [Industrial era]><if [Underproduction] is not constructed> <if [Overproduction] is not constructed>",
+                    "Triggers a [Present Current Status] event <hidden from users>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Popularity Crisis",
+        "text": "If the current system cant be trusted, the [Influence] of it will be stranded.",
+        "choices": [
+            {
+                "text": "We shall arrange a great hunt to show our military prowess!",
+                "uniques": [
+                    "Only available <before the [Medieval era]> <if [Army Maintainance Cost] is not constructed>",
+                    "Instantly provides [5] [Influence]",
+                    "Gain a free [Army Maintainance Cost] [in capital]",
+                    "[-5]% [Food] [in capital] <for [2] turns>",
+                    "[-10]% [Gold] [in capital] <for [2] turns>",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "We shall arrange a Customary Meeting.",
+                "uniques": [
+                    "Only available <if [Zhou Dynasty] is constructed> <if [Army Maintainance Cost] is not constructed>",
+                    "Instantly provides [8] [Influence]",
+                    "Gain a free [Army Maintainance Cost] [in capital]",
+                    "[+10]% [Culture] [in all cities] <for [5] turns>",
+                    "[-10]% [Gold] [in capital] <for [2] turns>",
+                    "[-10]% [Production] [in capital] <for [2] turns>",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "We shall arrange a great feast to show our wealth!",
+                "uniques": [
+                    "Only available <starting from the [Medieval era]> <before the [Imperial era]> <if [Army Maintainance Cost] is not constructed>",
+                    "Instantly provides [5] [Influence]",
+                    "Gain a free [Army Maintainance Cost] [in capital]",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "[-10]% [Food] [in capital] <for [5] turns>",
+                    "[-15]% [Gold] [in capital] <for [5] turns>",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "We shall do a military march to demostrate our might!",
+                "uniques": [
+                    "Only available <starting from the [Imperial era]> <if [Army Maintainance Cost] is not constructed>",
+                    "Instantly provides [5] [Influence]",
+                    "Instantly consumes [10] [Weapon Parts]",
+                    "Gain a free [Army Maintainance Cost] [in capital]",
+                    "Gain [-50] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-100] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Remove the [Army Maintainance Cost]",
+                "uniques": [
+                    "Only available <if [Army Maintainance Cost] is constructed>",
+                    "Gain [-10] [Gold] <when number of [[in all cities] Cities] is less than [4]> <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is more than [4]>  <(modified by game speed)>",
+                    "Gain [-25] [Gold] <when number of [[in all cities] Cities] is more than [8]> <(modified by game speed)>",
+                    "Remove [Army Maintainance Cost] [in all cities]",
+                    "Triggers a [Popularity Crisis] event <hidden from users>"
+                ]
+            },
+            {
+                "text": "Can we wait?",
+                "uniques": [
+                    "Comment [We need more contemplation...]"
+                ]
+            }
+        ]
+    },
+    ///Mediterranean
+    {
+        "name": "Alexander the Conqueror",
+        "text": "A talented young prince called Alexander decides that his dream to be the conqueror of the world...",
+        "choices": [
+            {
+                "text": "We shall support him at all cost!",
+                "uniques": [
+                "Gain a free [Alexander Event Flag] [in capital] <hidden from users>",
+                "Instantly consumes [10] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>",
+                "[-25]% [Gold] [in all cities] <for [10] turns>",
+                "[Gold] cost of purchasing ['Mercenary Army'] units [-33]% <for [10] turns>",
+                "[-33]% Production when constructing [All] buildings [in all cities] <for [10] turns>",
+                "Instantly provides [10] [Alexandrian Empire Period]",
+                "[2] free [Hetairoi Cavalry] units appear",
+                "[2] free [Phalanx] units appear",
+                "Free [Great Commander] appears",
+                "Remove ['Civilization Form'] [in all cities]",
+                "Gain a free [Feudal Empire] [in capital]",
+                "Comment [Gain access to [Alexandrian Successor States]]"
+                ]
+            },
+            {
+                "text": "Too much investment",
+                "uniques": [
+                "Comment [Nothing happens.]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Alexander's death",
+        "text": "Alexander the great has died... how could it be? But his generals seems to care less about the death than the power they now holds.",
+        "choices": [
+            {
+                "text": "The hellenic period begins...",
+                "uniques": [
+                "Remove ['Civilization Form'] [in all cities]",
+                "Gain a free [Alexandrian Successor States] [in capital]",
+                ]
+            }
+        ]
+    },
+    ///Central and West Asia
+    {
+        "name": "Rise of the Persians",
+        "text": "One of the mountain tribe has became a power to be recognized.",
+        "choices": [
+            {
+                "text": "What a nice candidate...",
+                "uniques": [
+                "Remove ['Civilization Form'] [in all cities]",
+                "Gain a free [Persian Dynasties] [in capital]",
+                "Remove ['Civilization State'] [in all cities]",
+                "Gain a free [Struggle] [in capital]"
+                ]
+            },
+            {
+                "text": "Babylon's Gate remains shut.",
+                "uniques": [
+                "Gain [125] [Science] <(modified by game speed)>",
+                "Gain [125] [Culture] <(modified by game speed)>",
+                "Gain [50] [Faith] <(modified by game speed)>",
+                "Free [Archer] appears"
+                ]
+            }
+        ]
+    },
+    ///East Asian
+    {
+        "name": "So called Mandate...",
+        "text": "A radical reformation is occuring in Shang Dynasty by the Emperor Xin, this results in a civil war.",
+        "choices": [
+            {
+                "text": "The Zhou State has won.",
+                "uniques": [
+                "Remove ['Civilization Form'] [in all cities]",
+                "Gain a free [Zhou Dynasty] [in capital]",
+                "Free [Gong Shi Colonizer] appears"
+                ]
+            },
+            {
+                "text": "Emperor Xin remain undefeated!",
+                "uniques": [
+                "Remove ['Civilization Form'] [in all cities]",
+                "Gain a free [Shang Dynasty] [in capital]",
+                "Remove ['Civilization State'] [in all cities]",
+                "Gain a free [Struggle] [in capital]",
+                "Gain [100] [Gold] <(modified by game speed)>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "The way to rule",
+        "text": "It seems like a lot of different new ideologies have appeared in our civilization... Maybe some of them are beneficial",
+        "choices": [
+            {
+            "text": "Confucianism",
+            "uniques": [
+                "Only available <if [Confucianism Influence] is not constructed>",
+                "Gain a free [Confucianism Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text": "Daoism",
+            "uniques": [
+                "Only available <if [Daoism Influence] is not constructed>",
+                "Gain a free [Daoism Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text": "Mohism",
+            "uniques": [
+                "Only available <if [Mohism Influence] is not constructed>",
+                "Gain a free [Mohism Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text": "Legalism",
+            "uniques": [
+                "Only available <if [Legalism Influence] is not constructed>",
+                "Gain a free [Legalism Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text": "School of Diplomacy",
+            "uniques": [
+                "Only available <if [Diplomatism Influence] is not constructed>",
+                "Gain a free [Diplomatism Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text": "School of Forms and Names",
+            "uniques": [
+                "Only available <if [Early Rationalism Influence] is not constructed>",
+                "Gain a free [Early Rationalism Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text": "School of Naturalists",
+            "uniques": [
+                "Only available <if [Naturalist Influence] is not constructed>",
+                "Gain a free [Naturalist Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text": "School of Agrarianism",
+            "uniques": [
+                "Only available <if [Agrarianism Influence] is not constructed>",
+                "Gain a free [Agrarianism Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text": "School of Military Strategy",
+            "uniques": [
+                "Only available <if [Militant Influence] is not constructed>",
+                "Gain a free [Militant Influence] [in capital]",
+                "Instantly consumes [1] [Avaliable School of Thoughts]",
+                "Instantly consumes [10] [Influence]",
+                "Triggers a [The way to rule] event <hidden from users> <when above [0] [Avaliable School of Thoughts]>"
+            ]
+        },
+        {
+            "text":"Can we wait?",
+            "uniques":[
+                "Comment [Nothing happens.]"
+            ]
+        }
+        ]
+    },
+    {
+        "name": "Collapse of the Great Qin",
+        "text": "Qin collapsed, two new leader emerged and is battling it out. Which one of them have won?",
+        "choices": [
+            {
+                "text": "Liu Bang the snake slayer",
+                "uniques": [
+                "Remove [Honor Bound Territory] [in all cities]",
+                "Remove ['Civilization Form'] [in all cities]",
+                "Gain a free [Han Dynasty] [in capital]",
+                "Free [Great Strategist] appears",
+                "Remove ['Civilization State'] [in all cities]",
+                "Gain a free [Strife] [in capital]"
+                ]
+            },
+            {
+                "text": "Xiang Yu the dominator",
+                "uniques": [
+                "Remove [Honor Bound Territory] [in all cities]",
+                "Remove ['Civilization Form'] [in all cities]",
+                "Gain a free [Chu Dynasty] [in capital]",
+                "Free [Great Commander] appears",
+                "Remove ['Civilization State'] [in all cities]",
+                "Gain a free [Strife] [in capital]"
+                ]
+            }
+        ]
+    },
+    ///Europa
+        {
+        "name": "The Tribes of Europe",
+        "text": "Europa has a variety of cultures scattered around. Certain culture's futher developments can improve our Civilisation's performance greatly.",
+        "choices": [
+        {
+            "text": "Gauls",
+            "uniques": [
+                "Only available <if [Gaulish Influence] is not constructed>",
+                "Gain a free [Gaulish Influence] [in capital]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>",
+                "Triggers a [The Tribes of Europe] event <hidden from users>"
+            ]
+        },
+        {
+            "text": "Albions",
+            "uniques": [
+                "Only available <if [Albions Influence] is not constructed>",
+                "Gain a free [Albions Influence] [in capital]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>",
+                "Triggers a [The Tribes of Europe] event <hidden from users>"
+            ]
+        },
+        {
+            "text": "Goths",
+            "uniques": [
+                "Only available <if [Gothic Influence] is not constructed>",
+                "Gain a free [Gothic Influence] [in capital]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>",
+                "Triggers a [The Tribes of Europe] event <hidden from users>"
+            ]
+        },
+        {
+            "text": "Saxons",
+            "uniques": [
+                "Only available <if [Saxonian Influence] is not constructed>",
+                "Gain a free [Saxonian Influence] [in capital]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>",
+                "Triggers a [The Tribes of Europe] event <hidden from users>"
+            ]
+        },
+        {
+            "text":"Can we wait?",
+            "uniques":[
+                "Comment [Nothing happens.]"
+            ]
+        }
+        ]
+    },
+    ///North Afican
+    {
+        "name": "Rise of the Punics",
+        "text": "As the egyptian dynasty countinues to be... a new power in the same region grows...",
+        "choices": [
+            {
+                "text": "New culture, new blood...",
+                "uniques": [
+                "Remove ['Civilization Form'] [in all cities]",
+                "Gain a free [Carthage Obligarchy] [in capital]",
+                "Remove ['Civilization State'] [in all cities]",
+                "Gain a free [Struggle] [in capital]"
+                ]
+            },
+            {
+                "text": "Who dares to defy the pharoh?",
+                "uniques": [
+                "Gain [125] [Science] <(modified by game speed)>",
+                "Gain [125] [Culture] <(modified by game speed)>",
+                "Gain [50] [Faith] <(modified by game speed)>",
+                "Free [Noble Swordsman] appears"
+                ]
+            }
+        ]
+    },
+    ///Unit Events
+    {
+        "name": "Great Commander's Retirement",
+        "text": "Well every story has an end. The Great Commander finally steps down from his position in the army. But how does it play out is a story of its own.",
+        "choices": [
+            {
+                "text": "Honorable Retirement",
+                "uniques": [
+                    "Comment [The Great Commander has inspired countless people. His retirement is well deserved. He will be idolised.]",
+                    "Gain [50]-[100] [Culture] <(modified by game speed)><before the [Medieval era]>",
+                    "Gain [100]-[200] [Culture] <(modified by game speed)><starting from the [Medieval era]><before the [Industrial era]>",
+                    "Gain [200]-[500] [Culture] <(modified by game speed)><starting from the [Industrial era]>",
+                    "Gain [75]-[150] [Gold] <(modified by game speed)><before the [Medieval era]>",
+                    "Gain [150]-[225] [Gold] <(modified by game speed)><starting from the [Medieval era]><before the [Industrial era]>",
+                    "Gain [225]-[300] [Gold] <(modified by game speed)><starting from the [Industrial era]>"
+                ]
+            },
+            {
+                "text": "Backstabbed",
+                "uniques": [
+                    "Comment [Lets just say that there are no perfect man. It would seems like power struggle and other caused this General to step down. Maybe he was too greedy? Too proud of himself? The history can't give a clear answer.]",
+                    "Gain an extra spy"
+                ]
+            }
+        ]
+    },
     ///Ideology Events
     {
         "name": "Bourgeoisie Revolution!",
@@ -11,163 +1483,212 @@
             {
                 "text": "The Revolution has failed.",
                 "uniques": [
-                "Comment [The revolution is dead. The government of nobilities continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy. But 'Noble Army' strength are increased by a third permanently.]",
-
-                "Remove [Revolution] and refund [100]% of its cost",
-                "Gain a free [Failed Bourgeoisie Revolution] [in capital]",
-                "Free [Great General] appears",
-                "[2] free [Royal Cuirassier] units appear"]
+                    "Comment [The revolution is dead. The government of nobilities continue their ruling,'Noble Army' strength are increased by a third permanently.]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Remove [Revolution] and refund [100]% of its cost",
+                    "Gain a free [Failed Bourgeoisie Revolution] [in capital]",
+                    "Free [Great Commander] appears",
+                    "[2] free [Royal Cuirassier] units appear",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Struggle] [in capital]",
+                    "Remove ['Civilization Form'] [in all cities]",
+                    "Gain a free [Personal Union] [in capital]"
+                ]
             },
             {
                 "text": "Peaceful Transition.",
                 "uniques": [
-                "Comment [Long term societal divide hinders futher policy and economic development. But the revolution have its main goal achieved]",
-
-                "Free Social Policy",
-                "Gain a free [Peaceful Bourgeoisie Revolution] [in capital]",
-                "Free [Revolutionaries] appears"]
+                    "Comment [Long term societal divide hinders futher policy and economic development. But the revolution have its main goal achieved]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Free Social Policy",
+                    "Gain a free [Peaceful Bourgeoisie Revolution] [in capital]",
+                    "Free [Revolutionaries] appears",
+                    "Remove ['Civilization Form'] [in all cities]",
+                    "Gain a free [Personal Union] [in capital]"
+                ]
             },
             {
                 "text": "Both negotiations and conflicts are happening...",
                 "uniques": [
-                "Comment [The revolution...is chaotic. Some cities have peacefully transitioned their power to the new ruling class, while some starts to infight violently. Rebel unit will spawn for 8 turns, but there are overall less side effects. All Revolutionaries gain some basic promotions and the 'Standing Army' gains 5% strength bonus permanently.]",
-                
-                "Gain a free [Chaotic Bourgeoisie Revolution] [in capital]",
-                "[2] free [Revolutionaries] units appear"]
+                    "Comment [The revolution...is chaotic. Some cities have peacefully transitioned their power to the new ruling class, while some starts to infight violently. Our civilization has entered a state of struggle. All Revolutionaries gain some basic promotions and the 'Standing Army' gains 5% strength bonus permanently.]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Gain a free [Chaotic Bourgeoisie Revolution] [in capital]",
+                    "[2] free [Revolutionaries] units appear",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Struggle] [in capital]"
+                ]
             },
             {
                 "text": "Clean the parasites!",
                 "uniques": [
-                "Comment [The revolution violently shaked the basis of our society, but our society is able to leap toward progressiveness! Rebel unit will spawn for 24 turns and the economy will suffer for a while, but the will of the revolution is well preserved and people are more accepting to societal changes. All Revolutionaries gain many promotions and the 'Standing Army' gains 10% strength bonus permanently.]",
-
-                "Gain a free [Violent Bourgeoisie Revolution] [in capital]",
-                "[3] free [Revolutionaries] units appear"]
+                    "Comment [The revolution violently shaked the basis of our society, but our society is able to leap toward progressiveness! the civilization enters a state of [Strife], but the will of the revolution is well preserved and people are more accepting to societal changes. All Revolutionaries gain many promotions and the 'Standing Army' gains 10% strength bonus permanently.]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Gain a free [Violent Bourgeoisie Revolution] [in capital]",
+                    "[3] free [Revolutionaries] units appear",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Strife] [in capital]",
+                    "Remove ['Civilization Form'] [in all cities]",
+                    "Gain a free [Republics] [in capital]"
+                ]
             }
         ]
     },
     {
         "name": "The Legacy We Inhereited.",
-        "text": "Through out the history of our grand civilisation, what aspect should guide us to the future?",
+        "text": "Through out the history of our grand civilization, what aspect should guide us to the future?",
         "choices": [
             {
                 "text": "We have no history!",
                 "uniques": [
-                "Comment [How does one get conservative with no tradition to begin with?]",
-                "Only available <if starting in the [Modern era]>",
-                "Gain a free [How?] [in capital]"
+                    "Comment [How does one get conservative with no tradition to begin with?]",
+                    "Only available <if starting in the [Modern era]>",
+                    "Gain a free [Schrodingers Tradition] [in capital]"
                 ]
             },
             {
                 "text": "We have no history!",
                 "uniques": [
-                "Comment [How does one get conservative with no tradition to begin with?]",
-                "Only available <if starting in the [Atomic era]>",
-                "Gain a free [How?] [in capital]"
+                    "Comment [How does one get conservative with no tradition to begin with?]",
+                    "Only available <if starting in the [Atomic era]>",
+                    "Gain a free [Schrodingers Tradition] [in capital]"
                 ]
             },
             {
                 "text": "We have no history?",
                 "uniques": [
-                "Comment [How does one get conservative with no tradition to begin with?]",
-                "Only available <if starting in the [Information era]>",
-                "Gain a free [How?] [in capital]"
+                    "Comment [How does one get conservative with no tradition to begin with?]",
+                    "Only available <if starting in the [Information era]>",
+                    "Gain a free [Schrodingers Tradition] [in capital]"
                 ]
             },
             {
                 "text": "We have no history...",
                 "uniques": [
-                "Comment [How does one get conservative with no tradition to begin with?]",
-                "Only available <if starting in the [Future era]>",
-                "Gain a free [How?] [in capital]"
+                    "Comment [How does one get conservative with no tradition to begin with?]",
+                    "Only available <if starting in the [Future era]>",
+                    "Gain a free [Schrodingers Tradition] [in capital]"
                 ]
             },
             {
                 "text": "The Gods",
                 "uniques": [
-                "Comment [The polytheistic root of our faith leads us to splendor, we are the most blessed out of all civilisation in the world.]",
-                "Only available <after adopting [Polytheism]>",
-                "Gain a free [Polytheistic Root] [in capital]"]
+                    "Comment [The polytheistic root of our faith leads us to splendor, we are the most blessed out of all civilization in the world.]",
+                    "Only available <after adopting [Polytheism]>",
+                    "Gain a free [Polytheistic Root] [in capital]"
+                ]
             },
             {
                 "text": "Our Lord",
                 "uniques": [
-                "Comment [The monotheistic root of our faith leads us to connect with the truth, the faith is our sword and our plow.]",
-                "Only available <after adopting [Monotheism]>",
-                "Gain a free [Monotheistic Root] [in capital]"
-                
+                    "Comment [The monotheistic root of our faith leads us to connect with the truth, the faith is our sword and our plow.]",
+                    "Only available <after adopting [Monotheism]>",
+                    "Gain a free [Monotheistic Root] [in capital]"
                 ]
             },
             {
                 "text": "Our will to unite",
                 "uniques": [
-                "Comment [The power of unity has guided us through most of our history, without it, where would we be?]",
-                "Only available <after adopting [Unity]>",
-                "[2] free [Elite Guard] units appear",
-                "Gain a free [National Unity] [in capital]"
+                    "Comment [The power of unity has guided us through most of our history, without it, where would we be?]",
+                    "Only available <after adopting [Unity]>",
+                    "[2] free [Elite Guard] units appear",
+                    "Gain a free [National Unity] [in capital]"
                 ]
             },
             {
                 "text": "Our wisdom",
                 "uniques": [
-                "Comment [Our civilisation were once master of philosophy. They lived with great wisdom and we shall never give it up.]",
-                "Only available <after adopting [Scholarship]>",
-                "Gain a free [Ancient Wisdom] [in capital]"
+                    "Comment [Our civilization were once master of philosophy. They lived with great wisdom and we shall never give it up.]",
+                    "Only available <after adopting [Scholarship]>",
+                    "Gain a free [Ancient Wisdom] [in capital]"
                 ]
             },
             {
                 "text": "Our honor",
                 "uniques": [
-                "Comment [Our civilisation were once the most honored warriors. They died with honor and we shall never give it up.]",
-                "Only available <after adopting [Militant]>",
-                "Gain a free [Ancient Honor] [in capital]",
-                "Free [Great General] appears"]
-            },
+                    "Comment [Our civilization were once the most honored warriors. They died with honor and we shall never give it up.]",
+                    "Only available <after adopting [Militant]>",
+                    "Gain a free [Ancient Honor] [in capital]",
+                    "Free [Great Commander] appears"
+                ]
+            }
             {
                 "text": "Our wealth",
                 "uniques": [
-                "Comment [Our civilisation were once the smartest traders. They left us with all the capital and insights so that we may stay flourished]",
-                "Only available <after adopting [Plutocracy]>",
-                "Gain a free [Ancient Wealth] [in capital]"
+                    "Comment [Our civilization were once the smartest traders. They left us with all the capital and insights so that we may stay flourished]",
+                    "Only available <after adopting [Plutocracy]>",
+                    "Gain a free [Ancient Wealth] [in capital]"
                 ]
             },
             {
                 "text": "Our noble bloodline",
                 "uniques": [
-                "Comment [Our ruiling class has the purest blood with virtues passing down from father to son, we will stay true to the noble blood.]",
-                "Only available <after adopting [Feudalism]>",
-                "[2] free [Elite Guard] units appear",
-                "Gain a free [Neo Feudalism] [in capital]"]
+                    "Comment [Our ruiling class has the purest blood with virtues passing down from father to son, we will stay true to the noble blood.]",
+                    "Only available <after adopting [Feudalism]>",
+                    "[2] free [Elite Guard] units appear",
+                    "Gain a free [Neo Feudalism] [in capital]"
+                ]
             },
             {
                 "text": "Our efficient bureaucracy",
                 "uniques": [
-                "Comment [The fair and great system our ancestor has passed onto us is a testament to our longevity.]",
-                "Only available <after adopting [Meritocracy]>",
-                "Gain a free [Bureaucracy Tradition] [in capital]"
+                    "Comment [The fair and great system our ancestor has passed onto us is a testament to our longevity.]",
+                    "Only available <after adopting [Meritocracy]>",
+                    "Gain a free [Bureaucracy Tradition] [in capital]"
                 ]
             },
             {
                 "text": "Our divinity",
                 "uniques": [
-                "Comment [Our civilisation has engraved our faith into everything, we are reaching for ultimate goals.]",
-                "Only available <after adopting [Theocracy]>","Gain a free [Theocracy Asended] [in capital]"
-               ]
+                    "Comment [Our civilization has engraved our faith into everything, we are reaching for ultimate goals.]",
+                    "Only available <after adopting [Theocracy]>",
+                    "Gain a free [Theocracy Asended] [in capital]"
+                ]
             },
             {
                 "text": "Our humanitarianistic view",
                 "uniques": [
-                "Comment [We are the pioneer for progressive value to love all human beings. We will spread our care to the world for it to become a better place.]",
-                "Only available <after adopting [Humanism]>","Gain a free [Nation That Has No Enemies] [in capital]"
-                
+                    "Comment [We are the pioneer for progressive value to love all human beings. We will spread our care to the world for it to become a better place.]",
+                    "Only available <after adopting [Humanism]>",
+                    "Gain a free [Nation That Has No Enemies] [in capital]"
                 ]
             },
             {
                 "text": "Our glorious empire",
                 "uniques": [
-                "Comment [Flower and Beauty doesnt keep our splendor. Iron and Blood Does!]",
-                "Only available <after adopting [Imperialism]>",
-                "[2] free [Elite Guard] units appear",
-                "Gain a free [Pride and Prejudice] [in capital]"
+                    "Comment [Flower and Beauty doesnt keep our splendor. Iron and Blood Does!]",
+                    "Only available <after adopting [Imperialism]>",
+                    "[2] free [Elite Guard] units appear",
+                    "Gain a free [Pride and Prejudice] [in capital]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fascist Revolution!",
+        "text": "As the gap between classes widen, the capitalists started to go overboard with their mistreatment of the working class. After struggles in the politics and countless protest, another revolution has unveiled. The Bourgeoisie had it coming... But how did this went down?",
+        "choices": [
+            {
+                "text": "Do not let them pass!",
+                "uniques": [
+                    "Comment [The government and all the left wing power has sucessfully stopped Facists from taking over the civilization.]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Gain [1000] [Culture] <(modified by game speed)>",
+                    "Gain a free [Anti-Fascism Legacy] [in capital]",
+                    "Remove [Fascism] and refund [100]% of its cost",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Strife] [in capital]"
+                ]
+            },
+            {
+                "text": "For the Leader!",
+                "uniques": [
+                    "Comment [The Facists and their paramilitary militias took over the most important cities and then gradually took over the entire civilization by storm.]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "[2] free [Protection Squadron] units appear",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Struggle] [in capital]",
+                    "Remove ['Civilization Form'] [in all cities]",
+                    "Gain a free [Fascist Autocracy] [in capital]"
                 ]
             }
         ]
@@ -179,33 +1700,51 @@
             {
                 "text": "The Revolution has failed.",
                 "uniques": [
-                "Comment [The revolution is dead. The government of capitalists continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy and 8 turns of remaining Communist Revolt, But the route to Conservatism is unlocked]",
-                "Adopt [Conservatism]",
-                "Remove [Socialism] and refund [100]% of its cost",
-                "Gain a free [Failed Socialist Revolution] [in capital]",
-                "[3] free [Security Company] units appear"]
+                    "Comment [The revolution is dead. The government of capitalists continue their ruling, our civilization enters a state of [Struggle], But the route to Conservatism is unlocked]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Adopt [Conservatism]",
+                    "Remove [Socialism] and refund [100]% of its cost",
+                    "Gain a free [Failed Socialist Revolution] [in capital]",
+                    "[3] free [Security Company] units appear",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Struggle] [in capital]"
+                ]
             },
             {
                 "text": "Socialist Democracy will save the day..",
                 "uniques": [
-                "Comment [Is this even a revolution when at least half of the bourgeoisie are still up on their place? Who knows. The conflict is resolved peacefully but there are long term consequences toward policy and industry development, planned economy is not available in this route.]",
-                "Free Social Policy",
-                "[1] free [Red Army Troop] units appear",
-                "Gain a free [Socialist Democracy Reform] [in capital]"]
+                    "Comment [Is this even a revolution when at least half of the bourgeoisie are still up on their place? Who knows. The conflict is resolved peacefully but there are long term consequences toward policy and industry development, planned economy is not available in this route.]",
+                    "Free Social Policy",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "[1] free [Red Army Troop] units appear",
+                    "Gain a free [Socialist Democracy Reform] [in capital]"
+                ]
             },
             {
                 "text": "The Workers have nothing to lose but their chains, they have a world to win.",
                 "uniques": [
-                "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built. Gold and food production takes a hit due to the civil war. Civilian Industries now provide bonuses to culture and a bonus to production is now provided to all cities. Newly born red army specialises into tactics. Remaining reactionary revolt continues for 10 turns.]",
-                "[3] free [Red Army Troop] units appear",
-                "Gain a free [Worker's Socialist Revolution] [in capital]"]
+                    "Comment [promotions.One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built. Our civilization enters [Struggle] due to the civil war. Newly born [Red Army Troop] now have more promotions.]",
+                    "[3] free [Red Army Troop] units appear",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Gain a free [Worker's Socialist Revolution] [in capital]",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Struggle] [in capital]",
+                    "Remove ['Civilization Form'] [in all cities]",
+                    "Gain a free [Socialist Republics] [in capital]"
+                ]
             },
             {
                 "text": "Workers, Farmers, Soldiers, Students, all shall be united to bring down the capitalists!",
                 "uniques": [
-                "Comment [Compare to a worker's revolution, this revolution is a combined effort of all proletariats alike, althought that makes the process of revolution much faster, but the organisation of the new country is much more complicated. Culture ,gold and food production takes a bigger hit, but 'Educational Buildings' and 'Agricultural Building' provides production bonus and a culture boost is applied to all cities. Newly born red army specialises into command structure. Remaining reactionary revolt continues for 10 turns.]",
-                "[5] free [Red Army Troop] units appear",
-                "Gain a free [United Socialist Revolution] [in capital]"]
+                    "Comment [Compare to a worker's revolution, this revolution is a combined effort of all proletariats alike, althought that makes the process of revolution much faster, but the organization of the new country is much more complicated. Our Civilization enters [Strife], Newly born red army specialises into command promotion.]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "[5] free [Red Army Troop] units appear",
+                    "Gain a free [United Socialist Revolution] [in capital]",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Strife] [in capital]",
+                    "Remove ['Civilization Form'] [in all cities]",
+                    "Gain a free [Socialist Republics] [in capital]"
+                ]
             }
         ]
     },
@@ -216,972 +1755,188 @@
             {
                 "text": "The Revolution has failed.",
                 "uniques": [
-                "Comment [The revolution is dead. The government of capitalists continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy and 8 turns of remaining Anarchist Revolt, But the route to Conservatism is unlocked]",
-                "Adopt [Conservatism]",
-                "Remove [Anarchism] and refund [100]% of its cost",
-                "Gain a free [Failed Anarchist Revolution] [in capital]",
-                "[3] free [Security Company] units appear"]
+                    "Comment [The revolution is dead. The government of capitalists continue their ruling, our civilization enters a state of [Struggle], But the route to Conservatism is unlocked.]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Adopt [Conservatism]",
+                    "Remove [Anarchism] and refund [100]% of its cost",
+                    "Gain a free [Failed Anarchist Revolution] [in capital]",
+                    "[3] free [Security Company] units appear",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Struggle] [in capital]"
+                ]
             },
             {
                 "text": "What we proclaim is the Right to Well-Being; Well-Being for All!",
                 "uniques": [
-                "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. There are no oppressions anymore. Culture, Gold, Science, Food production takes a hit due to the civil war and the disbanding of government. Remaining reactionary revolt continues for 15 turns.]",
-                "Comment [Installs Anarchist Ruling in all of your cities,an alternative ruling style ('Political Building') that replaces the intergration. It is free and built instantly, only providing small amount of debuff and needs Commune to be built to nullify its downsides.]",
-                "Adopt [Abolishment of Government]",
-                "[8] free [Modern Guerrilla] units appear",
-                "Gain a free [The Last Revolution] [in capital]"]
+                    "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. There are no oppressions anymore. We have eliminated those ticks. Now is the time we enter [Anarchy] and turn it into something else.]",
+                    "Comment [Installs Anarchist Ruling in all of your cities,an alternative ruling style ('Political Building') that replaces the intergration. It is free and built instantly, only providing small amount of debuff and needs Commune to be built to nullify its downsides.]",
+                    "Instantly consumes [1] [Revolution Oppotunity]",
+                    "Adopt [Abolishment of Government]",
+                    "[8] free [Modern Guerrilla] units appear",
+                    "Gain a free [The Last Revolution] [in capital]",
+                    "Remove ['Civilization State'] [in all cities]",
+                    "Gain a free [Anarchy] [in capital]",
+                    "Gain a free [Anarchist Alliances] [in capital]"
+                ]
             }
         ]
     },
     {
-        "name": "New economy policies.",
+        "name": "New economy policies",
         "text": "We've rebuilt our government in pursuit to adapt to the new era, but the current economy policy is outdated. We will need a economy reform before we can do anything else.",
         "choices": [
             {
                 "text": "Free Market",
                 "uniques": [
-                "Only available <after adopting [Liberalism]>",
-                "Comment [We should believe in the unseen hand and solve all our problems with massive amount of capitals.]",
-                "Gain a free [Free Market Focus] [in capital]"]
+                    "Only available <after adopting [Liberalism]>",
+                    "Comment [We should believe in the unseen hand and solve all our problems with massive amount of capitals.]",
+                    "Gain a free [Free Market Focus] [in capital]"
+                ]
             },
             {
                 "text": "Market Interventionism",
                 "uniques": [
-                "Only available <before adopting [Anarchism]>",
-                "Only available <before adopting [Fascism]>",
-                "Only available <before adopting [Socialism]>",
-                "Comment [The unseen hand of market economy is not to be fully relied upon. We should spend effort to properly and use more refined policy to guide our nation's productivity.]",
-                "Gain a free [Market Interventionism] [in capital]"]
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Socialism]>",
+                    "Comment [The unseen hand of market economy is not to be fully relied upon. We should spend effort to properly and use more refined policy to guide our nation's productivity.]",
+                    "Gain a free [Market Interventionism] [in capital]"
+                ]
             },
             {
                 "text": "Stability First",
                 "uniques": [
-                "Only available <before adopting [Anarchism]>",
-                "Only available <before adopting [Socialism]>",
-                "Only available <before adopting [Liberalism]>",
-                "Comment [Our economy must serve the national unity first and formost, nothing is impossible when our nation is strong and its people united.]",
-                "Gain a free [Corporatism Focus] [in capital]"]
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Socialism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Comment [Our economy must serve the national unity first and formost, nothing is impossible when our nation is strong and its people united.]",
+                    "Gain a free [Corporatism Focus] [in capital]"
+                ]
             },
             {
                 "text": "The might of our military overshadows any greed!",
                 "uniques": [
-                "Only available <before adopting [Anarchism]>",
-                "Only available <before adopting [Socialism]>",
-                "Only available <before adopting [Liberalism]>",
-                "Only available <before adopting [Conservatism]>",
-                "Comment [Nothing is beyond the power of winning in a direct conflict. We must direct all our effort into military!]",
-                "Gain a free [Militristic Economy] [in capital]"]
-            },           
+                    "Only available <after adopting [Militarised Nation]>",
+                    "Comment [Nothing is beyond the power of winning in a direct conflict. We must direct all our effort into military!]",
+                    "Gain a free [Militristic Economy] [in capital]"
+                ]
+            },
             {
                 "text": "Centralised Economic Planning",
                 "uniques": [
-                "Only available <before adopting [Anarchism]>",
-                "Only available <before adopting [Liberalism]>",
-                "Only available <before adopting [Fascism]>",
-                "Only available <before adopting [Conservatism]>",
-                "Only available <when above [0] [Revolution Oppotunity]>",
-                "Comment [The market economy only benefits capitalists and speculators, our new socialist economy should maximise our development potential and distributes the goods to those who need it.]",
-                "Gain a free [Planned Economy] [in capital]"]
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Only available <when above [0] [Revolution Oppotunity]>",
+                    "Comment [The market economy only benefits capitalists and speculators, our new socialist economy should maximise our development potential and distributes the goods to those who need it.]",
+                    "Gain a free [Planned Economy] [in capital]"
+                ]
             },
             {
                 "text": "Decentralised Economy",
                 "uniques": [
-                "Only available <before adopting [Fascism]>",
-                "Only available <before adopting [Liberalism]>",
-                "Only available <before adopting [Conservatism]>",
-                "Comment [The economy suffered from monopoly and hierarchy, we should liberate the economy in favour of enabling peoples'agency to work for the masses. With nationalised industries and policies being guiding forces.]",
-                "Gain a free [Cooperative Economy] [in capital]"]
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Comment [The economy suffered from monopoly and hierarchy, we should liberate the economy in favour of enabling peoples'agency to work for the masses. With nationalised industries and policies being guiding forces.]",
+                    "Gain a free [Cooperative Economy] [in capital]"
+                ]
             },
             {
                 "text": "Self-Management Economy",
                 "uniques": [
-                "Only available <before adopting [Fascism]>",
-                "Only available <before adopting [Socialism]>",
-                "Only available <before adopting [Liberalism]>",
-                "Only available <before adopting [Conservatism]>",
-                "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
-                "Gain a free [Self-management Focus] [in capital]"]
-            }
-
-        ]
-    },
-    {
-        "name":"Velvet Revolution Era Boost",
-        "text":"Choose a Boost!",
-        "choices":[
-            {
-              "text": "Science",
-              "triggeredUniques": ["[+25]% [Science] [in all cities] <for [8] turns>"]
-            },
-            {
-              "text": "Culture",
-              "triggeredUniques": ["[+20]% [Culture] [in all cities] <for [8] turns>"]
-            },
-            {
-              "text": "Production",
-              "triggeredUniques": ["[+15]% [Production] [in all cities] <for [8] turns>"]
-            },
-            {
-              "text": "Gold",
-              "triggeredUniques": ["[+30]% [Gold] [in all cities] <for [8] turns>"]
+                    "Only available <after adopting [Redistribution of Means of Production(Anarchism)]>",
+                    "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
+                    "Gain a free [Self-management Focus] [in capital]"
+                ]
             }
         ]
     },
     {
-         "name":"Velvet Revolution Building Boost",
-         "text":"Choose a Boost!",
-         "choices":[
-             {
-               "text": "Science",
-               "triggeredUniques": ["[+5]% [Science] [in all cities] <for [12] turns>"]
-             },
-             {
-               "text": "Great Person",
-               "triggeredUniques": ["[+10]% Great Person generation [in all cities] <for [12] turns>"]
-             }
-         ]
-    },
-    {
-         "name":"Eightfold Path",
-         "text":"Choose a path...",
-         "choices": [
-               {
-                "text": "Right View",
-                "uniques": "+1 [Science] from all [Faith] buildings for 8 turns",
-                "triggeredUniques": ["[+1 Science] from all [Faith] buildings <for [8] turns>"]
-               },
-               {
-                 "text": "Right Intention",
-                 "uniques":["+3 [Gold] from each Trade Route for 8 turns"],
-                 "triggeredUniques": ["[+3 Gold] from each Trade Route <for [8] turns>"]
-               },
-               {
-                 "text": "Right Speech",
-                 "uniques":["Resting point for Influence with City-States is increased by 30 for 8 turns",
-                  "City-State Influence recovers at twice the normal rate for 8 turns,"],
-                 "triggeredUniques": ["Resting point for Influence with City-States is increased by [30] <for [8] turns>",
-                  "City-State Influence recovers at twice the normal rate <for [8] turns>]"]
-               },
-               {
-                 "text": "Right Action",
-                 "uniques": ["Empire enters a 8-turn Golden Age","+50% [Happiness] [in all cities] for 8 turns"],
-                 "triggeredUniques": ["Empire enters a [8]-turn Golden Age", "[+50]% [Happiness] [in all cities] <for [8] turns>"]
-               },
-               {
-                 "text": "Right Livelihood",
-                 "uniques": ["+25% growth in all cities for 8 turns"],
-                 "triggeredUniques": ["[+25]% growth [in all cities] <for [8] turns>"]
-               },
-               {
-                 "text": "Right Effort",
-                 "uniques": [
-                   "+15% [Production] when constructing Wonder buildings for 8 turns",
-                   "+25% [Production] when constructing Culture buildings for 8 turns",
-                   "+50% [Production] when constructing Faith buildings for 8 turns"],
-                 "triggeredUniques": [
-                   "[+15]% Production when constructing [Wonder] buildings [in all cities] <for [8] turns>",
-                   "[+25]% Production when constructing [Culture] buildings [in all cities] <for [8] turns>",
-                   "[+50]% Production when constructing [Faith] buildings [in all cities] <for [8] turns>"]
-               },
-               {
-                 "text": "Right Mindfulness",
-                 "uniques": ["+1 [Culture] from every specialist for 8 turns"],
-                 "triggeredUniques": ["[+1 Culture] from every specialist [in all cities] <for [8] turns>"]
-               },
-               {
-                 "text": "Right Concentration",
-                 "uniques": ["-50% [Culture] cost of natural border growth for 8 turns",
-                   "-25% [Gold] cost of acquiring tiles for 8 turns"],
-                 "triggeredUniques": ["[-50]% Culture cost of natural border growth [in all cities] <for [8] turns>",
-                   "[-25]% Gold cost of acquiring tiles [in all cities] <for [8] turns>"]
-               },
-               {
-                 "name":"Khmer Boost",
-                 "text":"Choose a Boost!",
-                 "choices":[
-                   {
-                "text": "Food",
-                "triggeredUniques": ["[+10]% [Food] [in all cities] <for [12] turns>"]
-               },
-               {
-                "text": "Faith",
-                "triggeredUniques": ["[+20]% [Faith] [in all cities] <for [12] turns>"]
-               },
-   {
-		"name": "Comet Sighted",
-		"text": "People are often superstitious and the appearance of a comet has convinced many that the end of times is soon to come. Whether or not this is actually the case, this is bound to cause some instability within the nation.",
-		"choices": [
-			{ "text": "It is an omen!",
-			  "uniques": [	"Gain [10]-[25] [Faith]",
-					"Gain [10]-[20] [Culture]"]},
-      
-      			{ "text": "The end is nigh!",
-			  "uniques": [	"[-2 Happiness] [in all cities] <for [5] turns>",
-                      		       	"Gain [20]-[40] [Culture]" ] },
-      
-     			{ "text": "Keep looking at the sky!",
-			  "uniques": [ 	"Comment [Grants a burst of Science]",
-                                       	"[-1 Happiness] [in all cities] <for [5] turns>",
-					"Gain [20] [Science] <during the [Ancient era]> <hidden from users>",
-					"Gain [60] [Science] <during the [Classical era]> <hidden from users>",
-			 		"Gain [100] [Science] <during the [Medieval era]> <hidden from users>"] } ]
-  },
-  {
-		    "name": "Comet Spotted",
-		    "text": "A comet was sighted in the sky. Some people in the past believed that this portents fell times ahead. Others used to believe that they are in fact pixie fairies floating in the sky. Such primitive ways of thinking, it's almost embarrasing that our ancestors used to believe in such nonsensical rubbish like that.",
-		    "choices": [
-			    {"text": "Thank God we live in such enlightened times.",
-			     "uniques": ["Gain [175]-[275] [Faith]",
-					 "[+2 Happiness] [in all cities] <for [5] turns>"] } ]
-	
-	},
-
-  {
-		"name": "Artists Protest the Eiffel Tower",
-		"text": "'We, writers, painters, sculptors, architects and passionate devotees of the hitherto untouched beauty of this nation, protest with all our strength, against the erection of this useless and monstrous Eiffel Tower. To bring our arguments home, imagine for a moment a giddy, ridiculous tower dominating this city like a gigantic black smokestack, crushing under its barbaric bulk all of our humiliated monuments which will disappear in this ghastly dream.'",
-		"choices": [
-			{ "text": "Idiots" } ,
-      
-     			{ "text": "We can't take it down! We're using it as a radio tower!",
-			  "uniques": [ "Gain a free [Broadcast Tower] [in this city]",
-                      			"Comment [Lose 250 Gold]",
-					"Gain [-250] [Gold] <hidden from users>" ]},
-      
-     			{ "text": "Fine, let's tear it down.",
-			  "uniques": ["Comment [Lose Eiffel Tower benefits]",
-				      "Remove [Eiffel Tower] [in all cities <in cities with a [Eiffel Tower]>] <hidden from users>",
-                                      "[2] free [Great Artist] units appear",
-                                      "[1] free [Great Engineer] units appear"] }]
-  },
-
-	 {
-		"name": "A Destitute Noble",
-		"text": "A destitute nobleman has arrived at your court. He is without Lord and pledges his service your name. The nobleman is ragged and unkempt, but adorned with many scars, and has evidently fielded many battles. It is up to you what is to be done with him.",
-		"choices": [
-			{ "text": "Turn him away! We don't need him stinking up the Court!" } ,
-      
-     			{ "text": "Have him cleaned up and suited with armor.",
-			  "uniques": [ "[1] free [Great General] units appear",
-                      			"Comment [Lose 100 Gold]",
-					"Gain [-100] [Gold] <hidden from users>" ]},
-      
-     			{ "text": "Confiscate what little estate he possesses and then have him executed!",
-			  "uniques": ["[-2 Happiness] [in all cities] <for [10] turns>",
-				      "Gain [60] [Gold]",
-                  		      "Gain [25]-[35] [Culture]"] }]
-  },
-
-	{
-		"name": "The Guest Star",
-		"text": "The year is 1054, a star has appeared in the heavens. It glows with a breathtaking brilliance, captivating the entirety of the nation. The event is surely one of great significance.",
-		"choices": [
-			{ "text": "Such beauty!",
-			  "uniques": [ "[1] free [Great Artist] units appear"]},
-      
-     			{ "text": "A astronomical miracle!",
-			  "uniques": ["[1] free [Great Scientist] units appear"] }]
-  },
-
-	{
-		"name": "Solar Eclipse",
-		"text": "The nation stares in awe as the Sun slowly disappears behind the black disc suspended in the sky, and the world turns to darkness despite it being mid-day. Your subjects are absolutely terrified.",
-		"choices": [
-			{ "text": "Our prayers and sacrifices shall bring back the light.",
-			  "uniques": [ "[+20]% [Culture] [in all cities] <for [8] turns>",
-			  		"[+50]% [Faith] [in all cities] <for [8] turns>"]},
-      
-     			{ "text": "There must be a reasonable explanation.",
-			  "uniques": [ "[+20]% [Culture] [in all cities] <for [8] turns>",
-			  	       "[+20]% [Science] [in all cities] <for [8] turns>" ]}]
-  },
-
-	{
-		"name": "Mercenaries",
-		"text": "A band of mercenaries, fresh from some foreign war now settled, has arrived at your Palace, and offer their services to you. These are no mere vagabonds; these are professional soldiers. If not us, then they might turn to our enemies.",
-		"choices": [
-			{ "text": "We shall have no foreigners in our armies!",
-			  "uniques": [ "Rebel units may spawn <for [10] turns>",
-					"Gain [100] [Culture]"]},
-
-			{ "text": "We must turn them away!",
-			  "uniques": [ "Comment [The mercenaries leave.]"]},
-      
-     			{ "text": "Pay them well, and bring them into our service!",
-			  "uniques": [ "Comment [Lose 300 Gold]",
-				  	"Free [Landsknecht] appears",
-				  	"Free [Landsknecht] appears",
-				  	"Free [Landsknecht] appears",
-					"Gain [-300] [Gold] <hidden from users>" ] }]
-  },
-
-	{
-		"name": "PMCs",
-		"text": "An organisation of PMCs, fresh from some foreign war now settled, has sent a message to the military, and offer their services to you. These are no mere insurgents; these are true veterans. If not us, then they might turn to our enemies.",
-		"choices": [
-			{ "text": "We shall have no guns-for-hire in our armies!",
-			  "uniques": [ "Rebel units may spawn <for [10] turns>",
-					"Gain [100] [Culture]"]},
-
-			{ "text": "We must turn them away!",
-			  "uniques": [ "Comment [The PMC's leave.]"]},
-      
-     			{ "text": "Pay them well, and bring them into our service!",
-			  "uniques": [ "Comment [Lose 500 Gold]",
-				  	"Free [PMC] appears",
-				  	"Free [PMC] appears",
-				  	"Free [PMC] appears",
-					"Gain [-500] [Gold] <hidden from users>" ] }]
-  },
-
-	{
-		"name": "Struck Oil!",
-		"text": "Glorious news! Our workers have found a new, rich source of oil on a nearby our existing oil wells! The oil is sitting there, just waiting for us to drill it out.",
-		"choices": [
-			{ "text": "Wonderful news!",
-			  "uniques": [ "Double quantity of [Oil] produced <for [20] turns>"] }]
-  },
-
-	{
-		"name": "A Beast Stalks the City",
-		"text": "Rumors have begun to filter into the Palace that a monstrous beast stalks the city streets at the dead of night. Eye-witnesses claim that the beast is a demon, others claim it is the elusive wild haggis. Regardless, it is beginning to disquiet the city, and so the matter must be dealt with.",
-		"choices": [
-			{ "text": "I do not address mere rumors." } ,
-      
-     			{ "text": "Send out some guards and bring back the pelt of this beast.",
-			  "uniques": [ "[+2 Happiness] [in all cities] <for [5] turns>",
-                      			"Comment [Lose 25 Gold]",
-					"Gain [-25] [Gold] <hidden from users>" ]},
-
-			{ "text": "Capture it, put it in a zoo, and charge extra to have it seen.",
-			  "uniques": [ "[+2 Culture] [in all cities] <for [10] turns>",
-                      			"Comment [Lose 50 Gold]",
-					"Gain [-50] [Gold] <hidden from users>" ]},
-      
-     			{ "text": "I shall hunt this beast myself!",
-			  "uniques": ["[+3 Happiness] [in all cities] <for [10] turns>",
-				      "[+5 Culture] [in all cities] <for [5] turns>",
-				      "Comment [Lose 100 Gold]",
-				      "Gain [-100] [Gold] <hidden from users>"] }]
-  },
-
-	 {
-		    "name": "Miracle Harvest!",
-		    "text": "Owing to discovering fertilisers, our farmers accross the nation report an amazing surplus of food. Rarely has the earth ever yielded so much!",
-		    "choices": [
-			    {"text": "Food for all!",
-			     "uniques": ["[+999 Food] [in all cities] <for [1] turns>"] } ]
-	
-	},
-
-	{
-		"name": "Social Reforms",
-		"text": "Your advisors have proposed a number of policies that would likely profit our nation greatly if taken into effect. They are extremely radical, however, and it is possible that many will not take well to the changes.",
-		"choices": [
-			{ "text": "No! These drastic reforms will harm the nation, not help it!" } ,
-      
-     			{ "text": "These reforms shall be of great use, implement them at once!",
-			  "uniques": [ "Free Social Policy",
-				       "[-3 Happiness] [in all cities] <for [10] turns>" ]},
-			
-     			{ "text": "Whoever thinks this is a good idea are traitors to the state! Have them executed!",
-			  "uniques": ["[-3 Culture] [in all cities] <for [5] turns>",
-				      "[+2 Happiness] [in all cities] <for [10] turns>"] }]
-  },
-
-	 {
-		    "name": "Codify Laws",
-		    "text": "Over the years various laws and decrees have been accumulated. In the interests of efficient administration it would be better to codify them into a single corpus of law so everyone will know their rights.",
-		    "choices": [
-			    {"text": "And so it shall be.",
-			     "uniques": ["Gain a free [Code of Laws] [in capital]"] } ]
-	
-	},
-
-	{
-		    "name": "Nationalize the Utilities",
-		    "text": "Should we nationalize those industries which are essential for our people's welfare? The industries' owners won't like it, but the nation will be better off for it in the long run.",
-		    "choices": [
-
-			    { "text": "No! These industries shall stay private!",
-			  "uniques": [ "Gain [300] [Gold]" ,
-				       "[+15 Gold] [in all cities] <for [15] turns>",
-				       "[-3 Happiness] [in all cities] <for [10] turns>"]},
-			    
-			    {"text": "For the People!",
-			     "uniques": ["Comment [Lose 300 Gold]",
-				     	 "[+10 Production] [in all cities] <for [15] turns>",
-				     	 "Gain [-300] [Gold] <hidden from users>",
-			     		 "Gain a free [Factory] [in capital]"] } ]
-	
-	},
-
-	{
-		    "name": "Subsidize",
-		    "text": "Problems with traffic congestion hinder productivity in our nation. If we were to promote public transport, we should be able to ensure that both people and resources can get to where they need to be on time.",
-		    "choices": [
-
-			    { "text": "Expand bus and tram routes.",
-			  "uniques": [ "Comment [Lose 300 Gold]",
-				  "Gain [-300] [Gold]" ,
-				       "[+15 Gold] [in all cities] <for [20] turns>",
-				       "[+4 Happiness] [in all cities] <for [30] turns>",
-			  		"Gain a free [Bus Routes] [in capital]"]},
-			    
-			    {"text": "Fund an underground subway.",
-			     "uniques": ["Comment [Lose 650 Gold]",
-				     	 "[+20 Production] [in all cities] <for [20] turns>",
-				     	 "[+10 Culture] [in all cities] <for [10] turns>",
-				     	 "Gain [-650] [Gold] <hidden from users>",
-			     		"Gain a free [Underground Subway] [in capital]"] } ]
-	
-	},
-	{
-		"name": "Mystic",
-		"text": "An itinerant mystic had made some spiced cider from the fruit trees he has planted during his annual pilgrimage. Crowds are already gathering, sharing food and listening to the mystic's sermons.",
-		"choices": [
-			{ "text": "Listen to his sermons, they are quite thought-provoking.",
-			  "uniques": [	"Gain [15]-[30] [Faith]",
-					"Gain [15]-[30] [Culture]"]},
-      
-      			{ "text": "Take up the product, and share it with the world!",
-			  "uniques": [	"[+15 Food] [in all cities] <for [1] turns>"] },
-      
-     			{ "text": "Tell the mystic to be quiet! I deal with enough crazy people already!",
-			  "uniques": [ 	"Comment [Grants a burst of Science]",
-				  	"Comment [Lose 30 Faith]",
-                                       	"[-2 Happiness] [in all cities] <for [5] turns>",
-				  	 "Gain [-30] [Faith] <hidden from users>",
-					"Gain [25] [Science] <during the [Ancient era]> <hidden from users>",
-					"Gain [65] [Science] <during the [Classical era]> <hidden from users>",
-			 		"Gain [110] [Science] <during the [Medieval era]> <hidden from users>",
-			  		"Gain [170] [Science] <during the [Renaissance era]> <hidden from users>"] } ]
-  	},
-	{
-		    "name": "Harvest",
-		    "text": "This years harvest was more bountiful than normal, with granaries, flour mills and bakeries full to the brim with food for the people!",
-		    "choices": [
-			    {"text": "A glorious harvest for a glorious year!",
-			     "uniques": ["[+50 Food] [in all cities] <for [1] turns>"] } ]
-	
-	},
-	{
-		    "name": "Famine",
-		    "text": "This years harvest was less bountiful than normal, with granaries, flour mills and bakeries practically empty. How will the people feed themselves this year?",
-		    "choices": [
-			    {"text": "Who could have cursed this land with famine?",
-			     "uniques": [ "[-50 Food] [in all cities] <for [1] turns>" ]} ]
-	
-	},
-	{
-		"name": "Desertion",
-		"text": "Some of our troops have grown weary because of this war. Many of them are deserting their ranks and running away, making it difficult for our attacks to succeed.",
-		"choices": [
-			{ "text": "There is nothing we can do. Tell our generals to just bear this burden for now.",
-			  "uniques": [	"[-20]% Strength <for [All] units> <for [10] turns>"]},
-      
-      			{ "text": "Increase their pay! A man will walk to Hell and back as long as they are given enough gold.",
-			  "uniques": [	"Comment [Lose 300 Gold]",
-				  	"Gain [-300] [Gold] <hidden from users>"] },
-
-			{ "text": "Put the deserters on trial and court-martial them. There is no space for conscientious objectors in our army!",
-			  "uniques": [	"[-10]% Strength <for [All] units> <for [10] turns>",
-				  	"Comment [Lose 75 Gold]",
-				  	"Gain [-75] [Gold] <hidden from users>",
-			  		"Only available <starting from the [Modern era]>"] },
-      
-     			{ "text": "Execute any deserters. We need to set an example to stop our troops leaving the front.",
-			  "uniques": [ 	 "[-15]% Strength <for [All] units> <for [10] turns>",
-			  		 "[-2 Happiness] [in all cities] <for [10] turns>"] } ]
-  	},
-	
-	{
-		"name": "Modern Olympics",
-		"text": "Our archaeologists have discovered that our ancestors from antiquity participated in a large sports competition called 'The Olympics' every four years to appease the Gods.",
-		"choices": [
-			{ "text": "I have heard talks about some nations setting up an organisation in order to revive these games. I don't see why we shouldn't join it!",
-			  "uniques": [	"Gain a free [IOC Membership] [in capital]" ] }]
-  	},
-	
-	{
-		"name": "Olympiad",
-		"text": "The International Olympics Committee have decided that we should host the next Olympic Games! How should we plan for this event?",
-		"choices": [
-			{ "text": "Prepare the Capital for the Games. It is the most suitable venue for the event.",
-			  "uniques": [	"[+15 Gold] [in capital] <for [5] turns>",
-			  		"[+15 Culture] [in capital] <for [5] turns>",
-			  		"[+15 Happiness] [in capital] <for [5] turns>",
-			  		"[+30 Gold] [in capital] <if [Stadium] is constructed> <for [5] turns>",
-			  		"[-25]% [Production] [in capital] <for [5] turns>"]},
-      
-      			{ "text": "Prepare the entire nation for the Games. This way will show the world the glory of our empire!",
-			  "uniques": [	"[+1 Gold] [in all cities] <for [5] turns>",
-			  		"[+2 Culture] [in all cities] <for [5] turns>",
-			  		"[+2 Happiness] [in all cities] <for [5] turns>",
-			  		"[+5 Gold] [in all cities] <in cities with a [Stadium]> <for [5] turns>",
-			  		"[-5 Production] [in all cities] <for [5] turns>"] },
-
-			{ "text": "We shall only accept this offer if we are able to deny our enemies from participating. We need to beat them on the front, not on the field.",
-			  "uniques": [	"[+20]% Strength <for [All] units> <for [5] turns> <with [50]% chance>",
-				  	"[+5 Culture] [in capital] <for [5] turns>",
-			  		"[+5 Happiness] [in capital] <for [5] turns>",
-			  		"Only available <when at war> <hidden from users>"] }]
-  	},
-		{
-		    "name": "Economic Depression",
-		    "text": "A rapid turn of events have lead to the collapse of our nation's economy, and the Stock Market falling to levels unseen before. Former barons and lords of business are finding their money losing their value rapidly, and the workers and nearly workers are now in crippling poverty. The next few years shall be remembered as an economic torment for the rest of history!",
-		    "choices": [
-			    {"text": "Damn.",
-			     "uniques": ["[-25]% [Gold] [in all cities] <for [5] turns>",
-				         "[+10 Gold] [in all cities] <for [10] turns>",
-			     		"[-5 Happiness] [in all cities] <for [5] turns>"] } ]
-	
-	},
-	{
-		    "name": "Economic Boom",
-		    "text": "Crowd gather around the stock markets as the conomy starts to boom. Businesses are rapidly growing in size, and their worker's standard of living has never been better. The next few years shall be known as an economic paradise for the rest of history!",
-		    "choices": [
-			    {"text": "Great!",
-			     "uniques": ["[+25]% [Gold] [in all cities] <for [5] turns>",
-				         "[+10 Gold] [in all cities] <for [10] turns>",
-			     		"[+5 Happiness] [in all cities] <for [5] turns>"] } ]
-	
-	},
-	{
-		    "name": "Research",
-		    "text": "Some of our top scientists have rapidly increased our understanding on how the world works. How shall our nation support these researchers?",
-		    "choices": [
-
-			    { "text": "Use their research to support our current military effort",
-			  "uniques": ["[-1 Science] from all [Science] buildings <for [10] turns>",
-			  		"[-25]% Production when constructing [Military] units [in all cities] <for [10] turns>",
-			  		"[+5]% Strength <for [All] units> <for [10] turns>",
-			  		"Only available <when at war> <hidden from users>"]},
-
-			     { "text": "Knowledge is of no use if it is not passed on.",
-			  "uniques": ["[+3 Happiness, +3 Science] from all [Science] buildings <for [10] turns>"]},
-			    
-			    {"text": "Support the Academia, and fund their research.",
-			     "uniques": ["Comment [Lose 500 Gold]",
-				     	 "[+3 Science] from every [Academy]  <for [10] turns>",
-				     	 "Free Technology",
-				     	 "Gain [-500] [Gold] <hidden from users>"] } ]
-	
-	},
-	{
-		    "name": "Asteroid",
-		    "text": "Worrying news has come from our top astronomers. It appears that an asteroid is expected to hit our planet, directly in our nation! Peaople are anxious, and many are losing hope, believing this is the beginning of Doomsday. What shall we do?",
-		    "choices": [
-
-			    { "text": "We shall prevent that asteroid from hitting Earth, no matter the cost! Our nation shall be the saviour of this planet!",
-			  "uniques": ["Comment [Lose 1100 Gold]",
-				  	"Gain [-1100] [Gold] <hidden from users>",
-				  	"[-100]% [Gold] [in all cities] <for [5] turns>",
-				  	"[+50]% growth [in all cities] <for [10] turns>",
-				  	"[+50]% [Production] [in all cities] <for [10] turns>",
-				  	"[+50]% [Culture] [in all cities] <for [20] turns>",
-				  	"All newly-trained [Military] units [in all cities] receive the [Saviours of the Planet] promotion <for [9999] turns>",
-			  		"[Military] units gain the [Saviours of the Planet] promotion",
-			  		"Only available <when number of [Nuclear Missile] is more than [0]> <hidden from users>"]},
-
-			     { "text": "Evacuate all civilians immediately! We can't stop the asteroid, we can prevevnt the devestation it will cause.",
-			  "uniques": ["[-75]% growth [in all cities] <for [10] turns>",
-				  	"[-50]% [Production] [in all cities] <for [10] turns>",
-				  	"[+25]% [Culture] <in cities with a [Bomb Shelter]> <for [10] turns>",
-				  	"[-25]% [Culture] <in cities without a [Bomb Shelter]> <for [10] turns>",
-			  		"[+5 Happiness] <in cities with a [Bomb Shelter]> <for [10] turns>",
-			  		"[-5 Happiness] <in cities without a [Bomb Shelter]> <for [10] turns>"]},
-			    
-			    {"text": "Screw the people, get all me top advisors and GET ME OUT OF HERE!",
-			     "uniques": ["Rebel units may spawn <for [50] turns>",
-				     	"[-10 Happiness] [in all cities] <for [10] turns>",
-			     		"[-5] population [in all cities]",
-			     		"Free Great Person",
-			     		"Free [Great General] appears",
-			     		"Free [Great Scientist] appears",
-			     		"Free [Great Merchant] appears",
-			     		"Free [Great Artist] appears",
-			     		"Free [Great Engineer] appears"] } ]
-	
-	},
-	{
-		"name": "America UE", //On Economics   [-4 Food] [in all cities] <for [20] turns>  [+10 Gold] [in all cities] <for [20] turns>//
-		"text": "Mr President, there has been recent discontent across our nation. Our people are at odds with each other, with one group advocating for the expansion of the use of slaves in order to revitalise the economy, while another is promoting the idea of 'Manifest Destiny' and the expansion of our nation to the uncivilised wilderness so that it can secure all the potential resources it needs. If one side does not triumph over another soon, our nation will decend into Civil War. What shall we do, Mr President?",
-		"choices": [
-			{ "text": "By expanding into the frontiers and bringing civilisation to these untamed lands, the United States shall secure its position in this world. Forwards to our Destiny!",
-			  "uniques": [	"[+25]% Strength <for [Military] units> <in [Foreign Land] tiles> <for [20] turns> ",
-			  		"[-50]% Culture cost of natural border growth [in all cities] <for [40] turns>"]}, 
-      
-      			{ "text": "Expanding the slave markets will allow us to have access to more cheap labour, allowing us to develop more quickly and efficiently. For industry and progress!",
-			  "uniques": [	"[+15 Production] [in all cities] <for [20] turns>",
-				  	"[-5 Happiness] [in all cities] <for [50] turns>"]}, 
-
-			{ "text": "Both sides ignore the fact that the very existence of this nation is to protect the freedoms of all. We shall not do any of the barbaric practices these groups propose, even if it will cause a Civil War. Liberty for all, no mattter the cost!",
-			  "uniques": [	"Rebel units may spawn <for [50] turns>",
-				  	"All newly-trained [Land] units [in all cities] receive the [We the People] promotion <for [1000] turns>",
-			  		"[Land] units gain the [We the People] promotion"] } ]
-  	},
-	{
-		"name": "Arabia UE", //On Theology
-		"text": "O Great Caliph, from the arid deserts, our people have forged a grand civilisation. Now it is time to decide what path our glorious nation should take. How shall our Caliphate and the Arab people be remembered for the rest of time?",
-		"choices": [
-			{ "text": "It is time for our grand conquest! The world shall look at our conquests in awe, and we shall be remembered indefinitely!",
-			  "uniques": [	"[3] free [Camel Archer] units appear",
-				  	"[+25]% Strength <for [Military] units> <in [Foreign Land] tiles> <for [30] turns>"]},
-      
-      			{ "text": "We should be known for our great contributions to science and philosophy. Our scholars and ulama shall be world-renowned masters of knowledge!",
-			  "uniques": [	"[+4 Science, +5 Faith] from all [Science] buildings  <for [1000] turns>",
-			  		"Empire enters golden age"] },
-
-			{ "text": "Our trade routes have made our people some of the wealthiest in the world. The wonder of our riches should be what we are known for!",
-			  "uniques": [	"Gain a free [Bazaar] [in this city] <upon founding a city>",
-			  		"[3] free [Great Merchant] units appear"] }]
-  	},
-	{
-		"name": "Austria UE", //On Printing Press
-		"text": "Holy Roman Empress, we have had some marriage offers sent to the Palace recently. All of these young men wish to be the one that you call their husband. My... some of them are really good looking... er, b-but it is your decision on who you wish to marry, your highness.",
-		"choices": [
-			{ "text": "This duke has been on my mind recently, his wit and charm amused me greatly last time we met. I believe that he is the one for me!",
-			  "uniques": [	"Free Great Person"]},
-      
-      			{ "text": "In order to secure as much territory for the State, I shall marry this earl. His land shall allow us to greatly expand Austria.",
-			  "uniques": [	"[-75]% Culture cost of natural border growth [in all cities] <for [20] turns>",
-			  		"Free [Settler] appears"] },
-
-			{ "text": "I can't be dealing with such petty attempts trying to win my hand in marriage. If you or any of the other handmaidens are interested in these men, I could arrange your marriages instead!",
-			  "uniques": [	"[+3 Happiness] [in all cities] <for [1000] turns>",
-			  		"[+25]% [Culture] [in capital] <for [20] turns>"] }]
-  	},
-	{
-
-		"name": "Aztecs UE", //On Civil Service
-		"text": "Great Emperor of Tenochtitlan, our sacrifices to the Gods have allowed us to prosper and rise above other nations, but the high preists are concerened about our future. They have observed worrying patterns in the stars, pointing to our nation's demise. What shall we do to prevent these disasters from happening?",
-		"choices": [
-			{ "text": "The Gods are testing us so that they know that we are worthy of life. We shall devote more sacrifices to them. The blood from the temples shall not stop flowing!",
-			  "uniques": [	 "Earn [200]% of killed [Military] unit's [Strength] as [Faith] <for [1000] turns>",
-			  		 "[-2 Happiness] [in all cities] <for [20] turns>"]},
-      
-      			{ "text": "Our cities are slowly being engulfed in waste and filth. Take some of the sacrificial captives and make them clean the streets.",
-			  "uniques": [	"[+10 Happiness] [in all cities]  <for [1000] turns>",
-			  		"[+20]% growth [in all cities] <for [20] turns>"] },
-
-			{ "text": "People on the borders of our empire are starting to not pay tribute to their preists and are showing signs of rebellion. Increase the power of the Tlatoani and the landowners to ensure stability!",
-			  "uniques": [	"[+10 Gold] from [Plantation] tiles [in all cities] <for [20] turns>",
-				  	"[-5 Happiness] [in all cities] <for [20] turns>"] }]
-  	},
-	{
-
-		"name": "Babylon UE", //On Writing
-		"text": "O Great Lawgiver, King of All Four Corners of the Totality, the night sky has been filled with crimson flame and streams of smoke. The great priests have claimed that our creator-god, Marduk, is waging a war against Tiamat, the mother of all Gods. How shall our empire respond to this heavenly conflict?",
-		"choices": [
-			{ "text": "This is a blessing from Marduk! Our creator shall protect us from the envious and vile forces of Tiamat, and Babylon shall be his loyal servant",
-			  "uniques": [	 "[+2 Food, +2 Science] from all [Faith] buildings <for [20] turns>",
-			  		 "[+2 Faith] from every [Scientist]  <for [1000] turns>"]},
-      
-      			{ "text": "Marduk is sending us a warning, showing that if we depart from the Gods, we shall suffer the same fate as his enemies. We shall build a Celestial Gate to show that we remain loyal to Marduk!",
-			  "uniques": [	"Gain a free [Ishtar's Gate] [in capital]"] },
-
-			{ "text": "Get all the wise men in Babylon to observe this holy battle, quick! This war will only happen once, and we shall not have the chance to observe it in a later age.",
-			  "uniques": [	"Gain a free [Observatory] [in this city] <upon founding a city>",
-			  		"[+2 Faith] from every [Academy]  <for [1000] turns>"] }]
-  	},
-	{
-
-		"name": "Byzantium UE", //On Theology
-		"text": "Noble Empress of the Romans, I have worrying news to tell you. Once again the Patriarchy of Constantinople seek to unseat you from your rightful throne, for they refuse to be led by a woman. What plans do you suspect they are carrying ou to depose your rightous rule?",
-		"choices": [
-			{ "text": "They must be planning to stage a coup with the army, maning we cannot trust even or own troops. Hire some mercenaries, so that we have soldiers that are not under the thumb of the Patriarchy!",
-			  "uniques": [	 "[4] free [Horse Archer] units appear",
-			  		 "[2] free [Berserker] units appear"]},
-      
-      			{ "text": "Support of the Church is vital for the Patriarch to exist. If we help the Church deal with its current isues with iconoclasm, we might sway them to our side and deny the Patriachy any legitimate support.",
-			  "uniques": [	"[+2 Culture] from every [Temple]  <for [1000] turns>",
-			  		 "[+5 Gold] from all [Faith] buildings <for [20] turns>"] },
-
-			{ "text": "Only the external threats to Byzantium keep the Patriarchy in power. By destroying our foreign enemies, we would be able to cripple the Patriarchy!",
-			  "uniques": [	"[3] free [Cataphract] units appear",
-			  		"All newly-trained [Military] units [in all cities] receive the [Deus Vult] promotion  <for [1000] turns>"] }]
-  	},
-	{
-
-		"name": "Carthage UE", //On Optics
-		"text": "Your imperial Majesty! I have some.. err... concerns about remarriage. Y-you see... your advisors are a bit... anxious about who you will pick to be the new king. The Kings d-death was quite a while ago, so it is in the b-best interest of the nation for you to pick a new consort. Don't you think so y-your Grace?",
-		"choices": [
-			{ "text": "It may be in our best interests to marry this young admiral. He has strong Phonecian heritage and will allow us to bolster our naval economy. He is the best choice for new consort, even if he smells of fish all the time.",
-			  "uniques": [	 "[+2 Culture] from [Fishing Boats] tiles [in all cities] <for [1000] turns>",
-			  		 "[+25]% [Gold] [in capital] <for [20] turns>"]},
-      
-      			{ "text": "I have heard of a local warlord that will be willing to be the new King. Marrying him will strengthen our army significantly. This will be a match made in heaven, ...or wherever this warlord beleives he will end up.",
-			  "uniques": [	"[2] free [African Forest Elephant] units appear",
-			  		"[+100]% [Faith] [in capital] <for [20] turns>"] },
-
-			{ "text": "There is a young naval commander that has successfuly led many daring raids on the ports of our enemies. This will help us strengthen our navy significantly. As long as he doesn't have an eyepatch or pegleg, he shall be my new husband.",
-			  "uniques": [	"[+3 Production, +3 Gold] from every [Harbor]  <for [20] turns>",
-			  		"All newly-trained [Water] units [in all cities] receive the [Pirate Slaver] promotion <for [1000] turns>"] }]
-  	},
-	{
-
-		"name": "Celts UE", //On Calendar
-		"text": "O queen of the Iceni, the summer solstice has come upon us again, and for the first time in many years, Mars is with Jupiter. For this important day, all the druids and elders of our realm have conveined to discuss on their future matters. What matters do you wish to discuss with them?",
-		"choices": [
-			{ "text": "Our lands are full of tin and lead. If we manage to exploit these resources, we could have a monopoly on the worlds tin supply!",
-			  "uniques": [	 "[+1 Gold] from every [Mine] <for [1000] turns>",
-			  		 "[+50]% [Gold] [in capital] <for [20] turns> <with [50]% chance>"]},
-      
-      			{ "text": "Our tribes need to unite so that we do not falter to the iron fist of our enemies. There shall be one united Celtica, a nation against imperialism and oppression!",
-			  "uniques": [	"[2] free [Pictish Warrior] units appear",
-			  		"[2] free [Berserker] units appear"] },
-
-			{ "text": "We need to ensure that our culture does not be overcomed be our enemy's traditions. We must encourage our people to take up the arts, so that the Celtic culture shall stand the test of time!",
-			  "uniques": [	"[+2 Faith] from every [Landmark] <for [1000] turns>",
-				 	"[+100]% [Culture] [in capital] <for [20] turns>"] }]
-  	},
-	{
-
-		"name": "China UE", //On Banking
-		"text": "Great Empress of the Middle Kingdom, a messenger awits outside the palace. They say that their message is of great importance. Oh look, here he is right now!",
-		"choices": [
-			{ "text": "Isn't that the son of my rival?... You Fool! This is an assassin, not a messenger! Guards! Guards!",
-			  "uniques": [	 "[+2 Food, +1 Gold] from every [Plantation] <for [20] turns>",
-				  	 "[+1 Production] from every [Farm] <for [1000] turns>",
-			  		 "[-5 Happiness] [in all cities] <for [20] turns>"]},
-      
-      			{ "text": "A tea merchant? An offer to establish a tea pavilion in the capital in exchange for some patronage. My, why would I reject such an offer!",
-			  "uniques": [	"[+3 Culture, +2 Happiness] from all [Opera House] buildings <for [1000] turns>",
-			  		"Comment [Lose 400 Gold]",
-				 	 "Gain [-400] [Gold] <hidden from users>"] },
-
-			{ "text": "An envoy? There is news of a rediscovered religious text after an excavation of an old palace? This text could change the way we see the world forever!",
-			  "uniques": [	"[+2 Food, +2 Culture] from every [Holy Site] <for [1000] turns>",
-				 	"[+2 Food, +2 Faith] from all [Culture] buildings <for [20] turns>"] }]
-  	},
-	{
-
-		"name": "Denmark UE", //On Compass
-		"text": "High Thane, may Odin bless your soul! A horde of men have gathered outside the Palace, drunk of fire and anger. What shall be done to quell this rabble?",
-		"choices": [
-			{ "text": "They are angry due to the lack of housing in the winter. What good will happen if we let our people freeze? Open up the barracks so that these men have a place to rest!",
-			  "uniques": [	 "[+2 Food, +2 Culture] from all [Barracks] buildings  <for [1000] turns>",
-			 		 "[+5 Food] [in all cities] <for [20] turns>"]},
-      
-      			{ "text": "They are angry because of the lack of faith in our empire. Maybe we shouldn't have pillaged all those monestaries... No worry! We shall build our own churches!",
-			  "uniques": [	"Gain a free [Stave Church] [in all cities] <upon founding a city>"] },
-
-			{ "text": "They are angry as our coast have been left unprotected. Even the most pathetic cities can bolster a navy greater than ours! This shall not be the case, as the seas belong to the Danes!",
-			  "uniques": [	"[+5 Production] from every [Citadel] <for [1000] turns>",
-				 	"[+2 Production] from all [Culture] buildings <for [20] turns>"] }]
-  	},
-	{
-
-		"name": "Egypt UE", //On Masonry
-		"text": "Great Pharaoh, the orphan that your wife has been raising has matured to an age where people have noticed his intelligence and ingenious ways. How will you direct this orphan so that his gifts benefit us?",
-		"choices": [
-			{ "text": "Fate should be left to Ra and Horus, not the pharaoh. The boy shall be whoever he wants.",
-			  "uniques": [	 "Free Great Person"]},
-      
-      			{ "text": "He shall guide our engineers to construct machines accross our rivers, so that we can predict their flooding.",
-			  "uniques": [	"[+2 Production] from [Flood plains] tiles [in all cities] <for [20] turns>",
-			  		"[+1 Food] from [Flood plains] tiles [in all cities] <for [1000] turns>"] },
-
-			{ "text": "He shall help me purge the old, idiosyncratic ways of the nobility and start a lineage of fresh leaders. Now Egypt shall not fall behind its enemies!",
-			  "uniques": [	"[+4 Culture] from [Farm] tiles  <for [20] turns>",
-			  		"[-5 Happiness] [in all cities] <for [20] turns>"] }]
-  	},
-	{
-
-		"name": "England UE", //On 
-		"text": "Your majesty, our lords have been showing concerns about the stability of the Crown. Infighting in the Privy council, distrust in the Church of England and there being no official heir to the throne are becoming ever increasing issues. Luckily, one man has over the years grown in popularity and power, and we can lererage that to stabilise the nation. What shall we do, my queen?",
-		"choices": [
-			{ "text": "We can claim that he has found the legendary Excalibur! That will surely unite the people, knowing that the successor of the mythical King Arthur is with us.",
-			  "uniques": [	 "[2] free [Longbowman] units appear",
-			  		 "Empire enters golden age"]},
-      
-      			{ "text": "We need to keep the church united and free from external influence. Make him the new Archbishop of Canterbury, and let him restore the faith in our empire! ",
-			  "uniques": [	"Gain a free [Parish Church] [in all cities]",
-			  		"[+50]% resources gifted by City-States <in cities following our religion> <for [1000] turns>"] },
-
-			{ "text": "The fringes of our empire may be susceptible to rebellion and distrust. This will hamper our imperial ambitions. Let this man be our colonial governor, so that the sun shall never set on the empire.",
-			  "uniques": [	"Gain a free [Colonial Offices] [in all cities]",
-			  		"Gain an extra spy"] }]
-  	},
-	{
-
-		"name": "Ethiopia UE", //On Currency
-		"text": "Ras Tafari, your people gather in the city square, waiting for you to show them the wisdom of Solomon. Show them the wisdom of Solomon, oh Negusa Nagast!",
-		"choices": [
-			{ "text": "With only 30 pieces of silver, our Lord was betrayed. We will print His likeness into seventy times seven coins, and spread them around the whole World! So every man, woman, and child knows the name of their savior!",
-			  "uniques": [	 "[+2 Faith] from all [Market] buildings <for [1000] turns> <hidden from users>"]},
-      
-      			{ "text": "In this world plagued by division, we allow things like race and creed to set us apart. But God does not see the color of our skin, only the goodness of our soul. We will write it in our songs, in our tales, in our laws.",
-			  "uniques": [	 "[3] free [Pikeman] units appear",
-			  		 "Empire enters a [20]-turn Golden Age"] },
-
-			{ "text": "When they came to hear the Lord, they were called away to eat. But instead, he told them, stay, and fed them with manna from Heaven. How can we come closer to the Lord when our thoughts are shackled to the necessities of Earth. I will see that no man wants for bread, but no man can live by bread alone...",
-			  "uniques": [	"[+2 Food] from every [Farm] <for [20] turns>",
-			  		"[+2 Food] from every [Plantation]  <for [9999] turns> <hidden from users>"] }] //
-  	},
-	{
-
-		"name": "France UE", //On Steam Power
-		"text": "Glorious Emperor of France, I have some worrying news to tell you. It seems that some of the most recent laws the Republic has passed has not been recieved well by the people. Some rumours have been passed around that there might be a revolt if the laws are not reversed. How shall the Republic act, great Consul?",
-		"choices": [
-			{ "text": "The support of the intelligensia has waned because salon culture has declined. If I partake in this activity, it may revitalise it, and bring the brains of the nation back to being loyal.",
-			  "uniques": [	 "[+3 Science] from every [Garden] <for [20] turns>",
-			  		"[+3 Culture] from every [Garden]  <for [9999] turns>" ]}, //
-      
-      			{ "text": "French culture has been inhibited be th Academei of Paris, trying to moderate and standardise every pathetic thing, crushing the will of the people under its hobnailed boot. The arts shall be left free of control, for the people and by the people!",
-			  "uniques": [	 "Comment [ +5 Culture from every National Wonder ]",
-				  	"[+5 Culture] from every [National Wonder] <for [9999] turns> <hidden from users>",
-			  		 "Empire enters a [10]-turn Golden Age"] },
-
-			{ "text": "Bah! Can the people not see that I am a master leader!? If those ungratful brutes believe they deserve anything more than they already got, then I'll make them grateful!",
-			  "uniques": [	"Rebel units may spawn <for [30] turns>",
-			  		"[-20 Happiness] [in all cities] <for [2] turns>",
-				  	"Nullifies [Science] [in all cities] <for [2] turns>",
-				  	"Nullifies [Culture] [in all cities] <for [2] turns>",
-			  		"[2] Free Social Policies",
-			  		"Empire enters a [7]-turn Golden Age"] }]
-  	},
-	{
-
-		"name": "Germany UE", //On Civil Service
-		"text": "Chancellor, the governors of all of our provnices has arrived at the Bundesrat to discuss solutions to solve rising issues in our nation. Old rivalries have flared up and even the greatest compronise cannot suppress these fueds. The german people need your power to restore order.",
-		"choices": [
-			{ "text": "These divisions between the pagans and the church have left our enemies an opportunity to see our weaknesses. We must unite ourselves under one banner, and forge a new people to dominate this world",
-			  "uniques": [	"All newly-trained [Land] units [in all cities] receive the [Woodsman] promotion <for [1000] turns>",
-			  		"[Land] units gain the [Woodsman] promotion",
-			  		"[+1 Culture] from every [Forest] <for [9999] turns>" ]}, 
-      
-      			{ "text": "Crusaders and hires knights are constantly being hired by dukes and barons, forming paramilitaries that threaten our stability. We must merge them into one order, for the betterment of the people.",
-			  "uniques": [	 "[2] free [Teutonic Order Knight] units appear",
-			  		"[2] free [Livonian Order Knight] units appear",
-			  		"[1] free [Pomeranian Knight] units appear"] },
-
-			{ "text": "German trade has fallen dramatically, causing our craftsmen and merchants to become penniless. We shall form the Hanseatic League to improve trade relations and stop us from entering an economic disaster.",
-			  "uniques": [	"Gain a free [Hanse Guild] [in all  cities] <for [9999] turns>",
-			  		"Gain [300] [Gold]" ] }]
-  	},
-
-	{
-
-		"name": "Greece UE", //On Philosophy
-		"text": "Great Conquerer, some people are seeking an audience in the court, as usual. However they haven't revealed why yet, and they do seem to carry urgent information. What must they need to tell?",
-		"choices": [
-			{ "text": "I recognise these people... they are my old teachers! These men taught me all the skills I have used to become such a great leader! Show them hospitality and give them a place in my court, it is the least I can do!",
-			  "uniques": [	 "[+3 Culture] from every [Library] <for [20] turns>",
-			  		 "[+2 Science] from every [Library]  <for [9999] turns>",
-			  		 "Free Technology"]}, 
-      
-      			{ "text": "These men are priests from Mount Athos. They bring news of a great birth, as revealed to them in an Oracle's prophecy. How glorious!",
-			  "uniques": [	 "Free Great Person",
-			  		"[+50]% Great Person generation [in capital] <for [20] turns>"] },
-
-			{ "text": "Emmisaries from a... secret society?! They claim to have underground links and spies around my empire and beyond, and they wish to help me? My... I shouldn't be turning down an opportunity like this!",
-			  "uniques": [	"[+20]% [Culture] [in all cities] <for [20] turns>",
-			  		"Gain [200] [Faith]"] }]
-  	},
-
-	{
-
-		"name": "Inca UE", //On Guilds
-		"text": "Sapa Inca, the leaders of your vassals have arrives at the Palace today. They are prepared to give you whatever tribute you ask for them. What will demand from your servants, Great Emperor?",
-		"choices": [
-			{ "text": "The backbone of our nation is our livestock, without it, travel and commerce would be impossible. So I shall demand my vassals to give me their alpacas and llamas, to ensure our nation has enough livestock to thrive.",
-			  "uniques": [	 "[+2 Culture, +1 Food] from every [Sheep] <for [9999] turns>",
-			  		"[+2 Happiness] [in all cities] <for [20] turns>"]}, 
-      
-      			{ "text": "Riches from the mountains and rare goods from the earth have been gifted to us by the Gods. My vassals shall gift me these luxuries, so we can uncover the vast riches the Gods have given to us",
-			  "uniques": [	 "[+10 Gold] from every [Mountain] <for [9999] turns>",
-			  		 "[+2 Production] from every [Hill] <for [20] turns>"] },
-
-			{ "text": "I shall not demand tribute, but instead order them to expand the mountain shrines of the Waka'a Trail, so that we shall be closer to the Gods, and let them know that we shall eternally be their loyal servants.",
-			  "uniques": [	"[+200]% [Faith] [in all cities] <for [20] turns>",
-			  		"Gain a free [Shrine] [in this city] <upon founding a city>"] }]
-  	},
-
-	{
-
-		"name": "India UE", //On Education
-		"text": "Namaste, great leader. If it does not bother you, your council of Lords wish you to share some of your wisdom. They believe that it will greatly benefit their work and help them address some of the issues that we have recently been having.",
-		"choices": [
-			{ "text": "Faith is nessecary for men to do great things. My lords shall need to lean closer to heaven, and only then shall they reap the rewards for their actions.",
-			  "uniques": [	  "[+5 Food] from every [Monument] <for [20] turns>",
-			  		   "Gain a free [Temple] [in this city] <upon founding a city>"]}, 
-      
-      			{ "text": "We need to protect ourselves from outside threats. Our enemies will spare no expense to drestroy our nation, so we shall do everything in our power to prevent it!",
-			  "uniques": [	 "[+3 Culture] from every [Mughal Fort] <for [20] turns>",
-			  		 "[+2 Faith] from every [Mughal Fort]  <for [9999] turns>" ] },
-
-			{ "text": "The people in the lands we have recently expanded into have complained about how they are treated under the caste system. We must abolish this backwards system, even if it might anger the lords of the nation",
-			  "uniques": [	"Rebel units may spawn <for [30] turns>",
-			  		"[-20 Happiness] [in all cities] <for [2] turns>",
-				  	"Nullifies [Science] [in all cities] <for [2] turns>",
-				  	"Nullifies [Culture] [in all cities] <for [2] turns>",
-			  		"[+100]% [Food] [in all cities] <for [100] turns>"] }]
-  	},
-	{
-
-		"name": "Iroquois UE", //On 
-		"text": "Great Chieftan! All of the lessert chiefs have gathered here today as the Mid-Winter festival draws to a close. What shall our tribes pla for this year, to ensure our freedom and heratige?",
-		"choices": [
-			{ "text": "We have fought in many wars recently, and now many families mourn the loss of their kin. We shall devout this year for retribution against our enemies, for these soldiers have not died in vain!",
-			  "uniques": [	  "All newly-trained [Land] units [in all cities] receive the [Eternal Mourning] promotion <for [1000] turns>",
-			  		   "[+2 Food] from every [Barracks] <for [20] turns>"]}, 
-      
-      			{ "text": "Our people have grow weary, as morale within tribes have faltered. Therefore we shall unite our people and help rid them of their idleness by making them participate in more sports!",
-			  "uniques": [	  "[+2 Happiness] in cities on [unimproved] tiles <for [20] turns>",
-				  	  "[+2 Culture] from all [Happiness] buildings <for [9999] turns>"] },
-
-			{ "text": "Foriegn empires have taken interest in our decorative Wampum beads. By producing more of them and selling them to these people, we will surely benefit.",
-			  "uniques": [	"[+3 Gold, +2 Production] from every [Longhouse] <for [20] turns>",
-			  		"[+3 Culture] from every [Luxury] <for [9999] turns>"] }]
-  	},
-	{
-
-		"name": "Japan UE", //On Gunpowder
-		"text": "Great Shogun! Your presence is needed at the Chrysanthemum Throne. The Emperor urgently requires you to be there.",
-		"choices": [
-			{ "text": "The Emperor is displeased with his court musicians. For commiting the crime of displeasing the emperor, we shall have them and their families killed!",
-			  "uniques": [	   "Comment [Lose 300 Gold]",
-				  	   "Gain [-300] [Gold]" ,
-			  		   "[+3 Culture] from every [Castle] <for [9999] turns>"]}, 
-      
-      			{ "text": "Foriegn nations look down upon Japan, calling us barbaric, and the Emperor knows this. We shall not worry however, as our ingenuity will pull Japan into the ranks of elite nations.  ",
-			   "uniques": [	   "Double quantity of [Coal] produced <for [9999] turns>",
-			  		   "Double quantity of [Aluminum] produced <for [9999] turns>"] },
-
-			{ "text": "Our coasts are weak and undefended. The Emperor worries that our foes might exploit this weakness. Therefore we will build new defences so that the Emperor can sleep easy at night.",
-			  "uniques": [	 "All newly-trained [Water] units [in all cities] receive the [Yamato] promotion <for [9999] turns>"] }]
-    }, 
-	{
-        "name": "The Great Prophet",
-        "text": "Am Anfang war das Wort, und das Wort war bei Gott, und das Wort war Gott. Am Anfang war es bei Gott. Alles ist durch das Wort geworden und ohne das Wort wurde nichts, was geworden ist. In ihm war das Leben und das Leben war das Licht der Menschen. Und das Licht leuchtet in der Finsternis und die Finsternis hat es nicht erfasst. - Joh. 1,1-5",
+        "name": "Changing economy policies",
+        "text": "The previous policies may have proven to be less potent. A rearrangement is thus needed.",
         "choices": [
             {
-                "text": "Jesus",
-                "civilopediaText": [
-            {
-            "text": "[Jesus] can Spread Religion for 2 movement 6 times and can instantly construct a [Holy site] improvement by consuming [Jesus]"
-            }
-                ]                
-                "uniques": ["Only available <during the [Classical era]>", "Unavailable <if [Jesus] is constructed by anybody>", "Provides a [Jesus] in your first [1] cities for free"]
+                "text": "Free Market",
+                "uniques": [
+                    "Only available <after adopting [Privatised Property]>",
+                    "Comment [We should believe in the unseen hand and solve all our problems with massive amount of capitals.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Free Market Focus] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
             },
             {
-                "text": "Muhammad",
-                "civilopediaText": [
-            {
-            "text": "[Muhammad] can Spread Religion for 2 movement 4 times and +20% †Strength bonus for Land units within 1 tiles"
-            }
-                ]                
-                "uniques": ["Only available <during the [Classical era]>", "Unavailable <if [Muhammad] is constructed by anybody>", "Provides a [Muhammad] in your first [1] cities for free"]
+                "text": "Market Interventionism",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Socialism]>",
+                    "Comment [The unseen hand of market economy is not to be fully relied upon. We should spend effort to properly and use more refined policy to guide our nation's productivity.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Market Interventionism] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
             },
             {
-                "text": "JHWH",
-                "civilopediaText": [
+                "text": "Stability First",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Socialism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Comment [Our economy must serve the national unity first and formost, nothing is impossible when our nation is strong and its people united.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Corporatism Focus] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
             {
-            "text": "Gain enough [Faith] for 115% of a [Great Prophet] by consuming [JHWH]"
+                "text": "The might of our military overshadows any greed!",
+                "uniques": [
+                    "Only available <after adopting [Militarised Nation]>",
+                    "Comment [Nothing is beyond the power of winning in a direct conflict. We must direct all our effort into military!]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Militristic Economy] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Centralised Economic Planning",
+                "uniques": [
+                    "Only available <before adopting [Anarchism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Only available <when above [0] [Revolution Oppotunity]>",
+                    "Comment [The market economy only benefits capitalists and speculators, our new socialist economy should maximise our development potential and distributes the goods to those who need it.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Planned Economy] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Decentralised Economy",
+                "uniques": [
+                    "Only available <before adopting [Fascism]>",
+                    "Only available <before adopting [Liberalism]>",
+                    "Only available <before adopting [Conservatism]>",
+                    "Comment [The economy suffered from monopoly and hierarchy, we should liberate the economy in favour of enabling peoples'agency to work for the masses. With nationalised industries and policies being guiding forces.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Cooperative Economy] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
+            },
+            {
+                "text": "Self-Management Economy",
+                "uniques": [
+                    "Only available <after adopting [Redistribution of Means of Production(Anarchism)]>",
+                    "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
+                    "Remove ['Economic Policy'] [in all cities]",
+                    "Gain a free [Self-management Focus] [in capital]",
+                    "[-33]% [Gold] [in all cities] <for [5] turns>"
+                ]
             }
-                ],                
-                "uniques": ["Only available<during the [Classical era]>", "Unavailable <if [JHWH] is constructed by anybody>", "Provides a [JHWH] in your first [1] cities for free"]
-            }
-        ],
- ]
+        ]
+    }
+]
