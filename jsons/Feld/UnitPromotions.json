@@ -1,2475 +1,4635 @@
 [
-	///Generally Apply
+
+///Pathology
+{
+	"name": "Common Flu",
+	"uniques": ["[This Unit] takes [1] damage <upon ending a turn in a [All] tile>"]
+},
+{
+	"name": "Cancer",
+	"uniques": ["[This Unit] takes [30] damage <upon ending a turn in a [All] tile>"]
+},
+{
+	"name": "Bone Fracture",
+	"uniques": ["[This Unit] takes [17] damage <upon ending a turn in a [All] tile>"]
+},
+{
+	"name": "Prion",
+	"uniques": ["[This Unit] takes [15] damage <upon ending a turn in a [All] tile>"]
+},
+{
+	"name": "Sedentarism",
+	"uniques": ["[-10]% Strength"]
+},
+{
+	"name": "Pneumonia",
+	"uniques": ["[This Unit] takes [13] damage <upon ending a turn in a [All] tile>"]
+},
+{
+	"name": "Escherichia coli",
+	"uniques": ["[This Unit] takes [12] damage <upon ending a turn in a [All] tile>"]
+},
+{
+	"name": "Salmonella",
+	"uniques": ["[This Unit] takes [10] damage <upon ending a turn in a [All] tile>"]
+},
+{
+	"name": "Thermal Stress",
+	"uniques": ["[This Unit] takes [5] damage <upon ending a turn in a [All] tile>"]
+},
+{
+	"name": "Asthma",
+	"uniques": ["[This Unit] takes [1] damage <upon ending a turn in a [All] tile>"]
+},	
+//
+{
+	"name": "Saviours of the Planet",
+    "uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles", "[+10]% Strength when stacked with [Civilian]"],
+},
+{	
+	"name": "We the People",
+    "uniques": ["[+50]% Strength <in [Foreign Land] tiles> <when defending>"],
+},
+{
+	"name": "Deus Vult",
+    "uniques": ["[+15]% Strength <in [Foreign Land] tiles>", "Earn [50]% of killed [Military] unit's [Strength] as [Faith]"],
+},
+{
+	"name": "Pirate Slaver",
+    "uniques": ["Earn [150]% of the damage done to [Water] units as [Gold]"],
+},
+{
+	"name": "Eternal Mourning",
+    "uniques": ["Earn [50]% of the damage done to [Military] units as [Production]", "Earn [25]% of killed [Military] unit's [Strength] as [Faith]"],
+},
+{
+	"name": "Yamato",
+    "uniques": ["[+50]% Strength <when defending>"],
+},
+///Generally Apply
+{
+	"name": "Diwylliedig",
+    "uniques": ["Earn [20]% of killed [Wounded] unit's [Cost] as [Culture]"]
+},
+{
+	"name": "Pirate",
+    "uniques": ["May enter foreign tiles without open borders", "May withdraw before melee ([50]%)"]
+},
+{
+	"name": "Highlands",
+    "uniques": ["Double movement in [Hill]"]
+},
+{
+	"name": "Muzakka",
+    "uniques": ["[+35]% Strength <in cities following our religion>"]
+},
+{
+	"name": "Street Battle I",
+	"prerequisites": ["Drill II","Shock II"],
+	"uniques": ["[+20]% Strength <within [2] tiles of a [City center]>"],
+	"unitTypes": ["Close Combat"],
+	"row": 2,
+	"column": 1
+},
+{
+	"name": "Street Battle II",
+	"prerequisites": ["Street Battle I","Commando","Amphibious"],
+	"uniques": ["[+20]% Strength <within [2] tiles of a [City center]>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 4
+},	
+{
+	"name": "Hold Ground I",
+	"prerequisites": ["Drill II","Shock II"],
+	"uniques": ["[+20]% Strength <when defending>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 2
+},
+{
+	"name": "Hold Ground II",
+	"prerequisites": ["Hold Ground I"],
+	"uniques": ["[+20]% Strength <when defending>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 5, 
+},	
+{
+	"name": "Attack City I",
+	"prerequisites": ["Drill II","Shock II"],
+	"uniques": ["[+50]% Strength <vs cities>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 3
+},	
+{
+	"name": "Attack City II",
+	"prerequisites": ["Attack City I"],
+	"uniques": ["[+50]% Strength <vs cities>"],
+	"unitTypes": ["Foot Soldier"],
+	"row": 2,
+	"column": 6          
+},
+{
+	"name": "Salvo I",
+	"uniques": ["[+10]% Strength  <when attacking>"],
+	"unitTypes": ["Shooter"],
+	"row": 1,
+	"column": 7
+},
+{
+	"name": "Shooting Support I",
+	"uniques": ["[+15]% Strength <when adjacent to a [Melee] unit> <when attacking>"],
+	"unitTypes": ["Shooter"],
+	"row": 1,
+	"column": 8
+},
+{
+	"name": "Salvo II",
+	"prerequisites": ["Salvo I"],
+	"uniques": ["[+10]% Strength  <when attacking>"],
+	"unitTypes": ["Shooter"],
+	"row": 1,
+	"column": 9
+},
+{
+	"name": "Shooting Support II",
+	"prerequisites": ["Shooting Support I"],
+	"uniques": ["[+15]% Strength <when adjacent to a [Melee] unit> <when attacking>"],
+	"unitTypes": ["Shooter"],
+	"row": 1,
+	"column": 10    
+},
+{
+	"name": "Salvo III",
+	"prerequisites": ["Salvo II"],
+	"uniques": ["[+10]% Strength  <when attacking>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 1,
+	"column": 11
+},
+{
+	"name": "Shooting Support III",
+	"prerequisites": ["Shooting Support II"],
+	"uniques": ["[+15]% Strength <when adjacent to a [Close Combat] unit> <when attacking>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 1,
+	"column": 12
+},
+{
+	"name": "Cover I",
+	"prerequisites": ["Salvo II","Shooting Support II"],
+	"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+	"unitTypes": ["Shooter"],
+	"row": 2,
+	"column": 7
+},
+{
+	"name": "Apply Poison I",
+	"prerequisites": ["Salvo II","Shooting Support II"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 8
+},
+{
+	"name": "Bayonet Charge I",
+	"prerequisites": ["Salvo II","Shooting Support II"],
+	"uniques": ["[+20]% Strength <vs [{Land} {Melee}] units> <when defending>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 9
+},
+{
+	"name": "Cover II",
+	"prerequisites": ["Cover I"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 10      
+},
+{
+	"name": "Apply Poison II",
+	"prerequisites": ["Apply Poison I"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 11  
+},
+{
+	"name": "Bayonet Charge II",
+	"prerequisites": ["Bayonet Charge I"],
+	"uniques": ["[+20]% Strength <vs [{Land} {Melee}] units> <when defending>"],
+	"unitTypes": ["Ranged Combat"],
+	"row": 2,
+	"column": 12                  
+},
+{
+	"name": "Trample I",
+	"uniques": ["[+15]% Strength <vs [Close Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Ranged Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Assault] units> <when attacking>"],
+	"unitTypes": ["Rider"],
+	"row": 1,
+	"column": 13
+},
+{
+	"name": "Charge I",
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes": ["Rider"],
+	"row": 1,
+	"column": 14
+},
+{
+	"name": "Trample II",
+	"prerequisites": ["Trample I"],
+	"uniques": ["[+15]% Strength <vs [Close Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Ranged Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Assault] units> <when attacking>"],
+	"unitTypes":["Rider"],
+	"row": 1,
+	"column": 15
+},
+{
+	"name": "Charge II",
+	"prerequisites": ["Charge I"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes":["Rider"],
+	"row": 1,
+	"column": 16    
+},
+{
+	"name": "Trample III",
+	"prerequisites": ["Trample II"],
+	"uniques": ["[+15]% Strength <vs [Close Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Ranged Combat] units> <when attacking>",
+	"[+15]% Strength <vs [Assault] units> <when attacking>"],
+	"unitTypes": ["Rider"],
+	"row": 1,
+	"column": 17
+},
+{
+	"name": "Charge III",
+	"prerequisites": ["Charge II"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes": ["Rider"],
+	"row": 1,
+	"column": 18
+},
+{
+	"name": "Wear Armor I",
+	"prerequisites": ["Trample II","Charge II"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 13 
+},
+{
+	"name": "Storm Fortification I",
+	"prerequisites": ["Trample II","Charge II"],
+	"uniques": ["[+33]% Strength <vs cities>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 14  
+},
+{
+	"name": "Rout I",
+	"prerequisites": ["Trample II","Charge II"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 15 
+},	
+{
+	"name": "Wear Armor II",
+	"prerequisites": ["Wear Armor I"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 16 
+},	
+{
+	"name": "Storm Fortification II",
+	"prerequisites": ["Storm Fortification I"],
+	"uniques": ["[+33]% Strength <vs cities>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 17      
+},	
+{
+	"name": "Rout II",
+	"prerequisites": ["Rout I"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking>"],
+	"unitTypes": ["Rider"],
+	"row": 2,
+	"column": 18         
+},	
+{
+	"name": "Raid I",
+	"uniques": ["[+15]% Strength <vs [Melee] units> <when attacking>"],
+	"unitTypes": ["Assault"],
+	"row": 1,
+	"column": 20
+},	
+{
+	"name": "Raid II",
+	"prerequisites": ["Raid I"],
+	"uniques": ["[+15]% Strength <vs [Melee] units> <when attacking>"],
+	"unitTypes": ["Assault"],
+	"row": 1,
+	"column": 22  
+},	
+{
+	"name": "Raid III",
+	"prerequisites": ["Raid II"],
+	"uniques": ["[+15]% Strength <vs [Melee] units> <when attacking>"],
+	"unitTypes": ["Assault"],
+	"row": 1,
+	"column": 24  
+},
+{
+	"name": "Expose Armor I",
+	"prerequisites": ["Formation II","Raid II"],
+	"uniques": ["[+25]% Strength <vs [Rider] units>","[+25]% Strength <vs [Air] units>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 19 
+},
+{
+	"name": "Break City I",
+	"prerequisites": ["Formation II","Raid II"],
+	"uniques": ["[+50]% Strength <vs cities>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 20  
+},
+{
+	"name": "Pass I",
+	"prerequisites": ["Formation II","Raid II"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>","[+15]% Strength <when fighting in [Marsh] tiles>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 21            
+},
+{
+	"name": "Expose Armor II",
+	"prerequisites": ["Expose Armor I"],
+	"uniques": ["[+25]% Strength <vs [Rider] units>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 22   
+},
+{
+	"name": "Break City II",
+	"prerequisites": ["Break City I"],
+	"uniques": ["[+50]% Strength <vs cities>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 23
+},
+{
+	"name": "Pass II",
+	"prerequisites": ["Pass I"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>","[+15]% Strength <when fighting in [Marsh] tiles>"],
+	"unitTypes": ["Assault"],
+	"row": 2,
+	"column": 24  
+},
+{
+	"name": "Local knowledge I",
+	"uniques": [
+		"[-10]% Strength for enemy [Military] units in adjacent [Fort] tiles",
+		"[-10]% Strength for enemy [Military] units in adjacent [Rough terrain] tiles"
+	],
+	///"unitTypes": ["Ranged Frontier Hunter"],
+	"row": 22,
+	"column": 0
+},
+{
+	"name": "Local knowledge II",
+	"prerequisites": ["Local knowledge I"],
+	"uniques": [
+		"[+10]% Strength <in [Friendly Land] tiles>",
+		"Can see invisible [Land] units <in [Friendly Land] tiles>"
+	],
+	///"unitTypes": ["Ranged Frontier Hunter"],
+	"row": 22,
+	"column": 1
+},
+{
+	"name": "Local knowledge III",
+	"prerequisites": ["Local knowledge II"],
+	"uniques": [
+		"Eliminates combat penalty for attacking over a river <in [Friendly Land] tiles>",
+		"Ranged attacks may be performed over obstacles <in [Friendly Land] tiles>",
+		"Can see over obstacles <in [Friendly Land] tiles>"
+	],
+	///"unitTypes": ["Ranged Frontier Hunter"],
+	"row": 22,
+	"column": 2
+},
+{
+	"name": "Local knowledge IV",
+	"prerequisites": ["Local knowledge III"],
+	"uniques": [
+		"Can see invisible [Military] units <in [Friendly Land] tiles>",
+	    "Double movement in [Friendly Land]",
+	    "Can enter ice tiles <in [Friendly Land] tiles>"
+	],
+	///"unitTypes": ["Scout"],
+    "row": 22,
+    "column": 3
+},
+{
+	"name": "Woodlander",
+	"uniques": ["Double movement in [Forest]", "Double movement in [Jungle]", "[+20]% Strength <in [Forest] tiles>", "[+20]% Strength <in [Jungle] tiles>"],
+	"unitTypes": ["Scout"]
+},
+{
+	"name": "Highlander",
+	"uniques": ["[+20]% Strength <in [Hill] tiles>"],
+	"unitTypes": ["Scout"]
+},
+{
+	"name": "Survivalist",
+	"uniques": ["[+10] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+	"prerequisites": ["Woodlander", "Infiltration"],
+	"unitTypes": ["Scout"]
+},
+{
+	"name": "Infiltration",
+	"uniques": ["[+1] Sight", "May enter foreign tiles without open borders"],
+	"prerequisites": ["Highlander", "Survivalist"],
+	"unitTypes": ["Scout"]
+},
+{
+	"name": "Sneak Attack",
+	"uniques": ["[+100]% Strength"],
+	"prerequisites": ["Survivalist"],
+	"unitTypes": ["Scout"]
+},
+{
+	"name": "Battle Recon",
+	"uniques": ["Ignores Zone of Control", "May withdraw before melee ([50]%)"],
+	"prerequisites": ["Infiltration"],
+	"unitTypes": ["Scout"]
+},
+{
+	"name": "Camouflage",
+	"uniques": ["Invisible to non-adjacent units"],
+	"prerequisites": ["Sneak Attack", "Battle Recon"],
+	"unitTypes": ["Scout"]
+},
+{
+	"name": "Medic I",
+	"prerequisites": [
+		"Assault",
+		"Pursuit",
+		"Formation",
+		"Ambush",
+		"Precision",
+		"Suppression",
+		"Sentry",
+		"Guerilla Warfare II",
+		"Street Battle II",
+		"Reconnaissance I"
+	],
+	"uniques": [
+		"[+5] HP when healing",
+		"All adjacent units heal [+5] HP when healing",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper","Scout","Rider","Close Combat"],
+	"column": 10,
+	"row": 1
+},
+{
+	"name": "Medic II",
+	"prerequisites": ["Medic I"],
+	"uniques": [
+		"[+5] HP when healing",
+		"All adjacent units heal [+5] HP when healing",
+		"[+5] HP when healing <in [Foreign Land] tiles>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Scout", "Rider", "Close Combat"],
+	"column": 10,
+	"row": 2
+},
+{
+	"name": "Quick Offensive",
+	"prerequisites": ["Drill III","Shock III","Street Battle I","Hold Ground I","Attack City I",
+	"Trample III","Charge III","Wear Armor I","Storm Fortification I","Rout I",
+	"Detection III","Survivalism III",
+	"Formation III","Raid III","Expose Armor I","Break City I","Pass I",
+	"Boarding Party III","Coastal Raider III","Armor I","Landfall I","Escort I"],
+	"uniques": ["[1] additional attacks per turn"],
+	"unitTypes": ["Close Combat",
+	"Assault",
+	"Raider","Close Combat Ship","Ranged Combat Ship"],
+	"row": 3,	
+	"column": 1
+},
+{
+	"name": "Rescue",
+	"prerequisites": ["Drill III","Shock III","Street Battle I","Hold Ground I","Attack City I",
+	"Detection III","Survivalism III",
+	"Hard III","Bombard III","Strategic Deployment I","Shrapnel I","Detonate I"],
+	"uniques": ["All adjacent units heal [+10] HP when healing"],
+	"unitTypes": ["Close Combat",
+	"Assault",
+	"Siege"],
+	"row": 3,  
+	"column": 5
+},
+{
+	"name": "Rush",
+	"prerequisites": [
+	"Trample III","Charge III","Wear Armor I","Storm Fortification I","Rout I",
+	"Detection III","Survivalism III",
+	"Formation III","Raid III","Expose Armor I","Break City I","Pass I",
+	"Boarding Party III","Armor I","Landfall I","Escort I",
+	"Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Aim III","Firepower Coverage III","Cruise I","Fire Support I","Queue I",
+	"Wolfpack III","Dive III","Armor Piercing I","Noise Reduction I","Carrying Missile I"
+	],
+	"uniques": ["[+1] Movement"],
+	"unitTypes": ["Rider",
+	"Assault",
+	"Close Combat Ship","Ranged Combat Ship",
+	"Ranged Combat"],
+	"row": 3,  
+	"column": 8 
+},
+{
+	"name": "Alert",
+	"prerequisites": [
+	"Boarding Party III","Coastal Raider III","Armor I","Landfall I","Escort I",
+	"Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Aim III","Firepower Coverage III","Cruise I","Fire Support I","Queue I",
+	"Wolfpack III","Dive III","Armor Piercing I"
+	],
+	"uniques": ["[+1] Sight"],
+	"unitTypes": [
+	"Close Combat Ship","Ranged Combat Ship",
+	"Ranged Combat"],
+	"row": 3,
+	"column": 11
+},
+{
+	"name": "Indirect Fire",
+	"prerequisites": ["Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Hard III","Bombard III","Strategic Deployment I","Shrapnel I","Detonate I",
+	"Aim III","Firepower Coverage III","Cruise I","Fire Support I","Queue I"],
+	"uniques": ["Ranged attacks may be performed over obstacles"],
+	"unitTypes": ["Ranged Combat",
+	"Siege",
+	"Ranged Combat Ship"],
+	"row": 3,
+	"column": 12
+},
+{
+	"name": "Continuous Attack",
+	"prerequisites": ["Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Hard III","Bombard III","Strategic Deployment I","Shrapnel I","Detonate I",
+	"Aim III","Cruise I","Fire Support I","Queue I",
+	"Wolfpack III","Armor Piercing I","Ambush I","Tactical Evasion I"
+	],
+	"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
+	"unitTypes": ["Ranged Combat",
+	"Siege",
+	"Ranged Combat Ship"
+	],
+	 "row": 3,
+	 "column": 13    
+},
+{
+	"name": "Additional Range",
+	"prerequisites": ["Salvo III","Shooting Support III","Cover I","Apply Poison I","Bayonet Charge I",
+	"Hard III","Bombard III","Strategic Deployment I","Shrapnel I","Detonate I",
+	"Aim III","Cruise I","Fire Support I","Queue I",
+	"Wolfpack III","Dive III","Armor Piercing I"
+	],
+	"uniques": ["[+1] Range"],
+	"unitTypes": ["Shooter",
+	"Siege",
+	"Ranged Combat Ship"
+	],
+	 "row": 3,
+	 "column": 14    
+},
+{
+	"name": "Logistics",
+	"prerequisites": [
+		"Mobility",
+		"Extended Range",
+		"March",
+		"Flank Speed",
+		"Convoy",
+		"Wolfpack III",
+		"Siege III"
+		//"Sortie"
+	],
+	"uniques": [
+		"[1] additional attacks per turn",
+		"Can move after attacking",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": [
+		"Siege",
+		"Close Combat",
+		"Ranged Combat Ship",
+	],
+	"column": 9,
+	"row": 5
+},
+{
+	"name": "Extended Range",
+	"prerequisites": [
+		"Precision",
+		"Suppression",
+		"Sentry",
+		"Barrage",
+		"Resupply",
+		"Flank Speed",
+		"Convoy"
+	],
+	"uniques": [
+		"[+1] Range",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Siege", "Ranged Combat Ship", "Ranged Combat"],
+	"column": 8,
+	"row": 4
+},
+{
+	"name": "Amphibious",
+	"prerequisites": ["Blitz","Tortoise","Commando","March","Extended Range"],
+	"uniques": [
+		"Eliminates combat penalty for attacking over a river",
+		"Eliminates combat penalty for attacking across a coast",
+		"[+100]% Strength <when defending> <when [Embarked]>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Scout", "Rider", "Ranged Combat"],
+	"column": 8,
+	"row": 5
+},
+{
+	"name": "Armor I",
+	"prerequisites": ["Boarding Party II","Coastal Raider II"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat Ship] units> <when defending>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 37
+},
+{
+	"name": "Landfall I",
+	"prerequisites": ["Boarding Party II","Coastal Raider II"],
+	"uniques": ["[+15]% Strength <when fighting in [Coast] tiles>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 38  
+},
+{
+	"name": "Escort I",
+	"prerequisites": ["Boarding Party II","Coastal Raider II"],
+	"uniques": ["[+10]% Strength bonus for [Water] units within [1] tiles <when defending>"],
+	"unitTypes": ["Close Combat Ship"],
+	"row": 2,
+	"column": 39        
+},
+{
+	"name": "Armor II",
+	"prerequisites": ["Armor I"],
+	"uniques": ["[+33]% Strength <vs [Ranged Combat Ship] units> <when defending>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 40
+},
+{
+	"name": "Landfall II",
+	"prerequisites": ["Landfall I"],
+	"uniques": ["[+15]% Strength <when fighting in [Coast] tiles>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 41
+},
+{
+	"name": "Escort II",
+	"prerequisites": ["Escort I"],
+	"uniques": ["[+10]% Strength bonus for [Water] units within [1] tiles <when defending>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+	"row": 2,
+	"column": 42                 
+},
+{
+	"name": "Seafarer",
+	"prerequisites": ["Amphibious"],
+	"uniques": [
+		"May attack when embarked",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Scout", "Rider"],
+	"column": 8,
+	"row": 6
+},
+{
+	"name": "Convoy",
+	"prerequisites": [
+		//"Naval Combat",
+		"Exploit Weakness",
+		"Damage Control",
+		"Sentry",
+		"Wolfpack II"
+	],
+	"uniques": [
+		"[+10] HP when healing",
+		"May heal outside of friendly territory",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": [
+		"Close Combat Ship",
+		"Ranged Combat Ship",
+	],
+	"column": 7,
+	"row": 9
+},
+{
+	"name": "Flank Speed",
+	"prerequisites": [
+		//"Naval combat",
+		"Exploit Weakness",
+		"Damage Control",
+		"Sentry",
+		"Wolfpack I"
+	],
+	"uniques": [
+		"[+1] Movement",
+		"[+25]% to Flank Attack bonuses",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": [
+		"Close Combat Ship",
+		"Ranged Combat Ship"
+	],
+	"column": 7,
+	"row": 8
+},
+{
+	"name": "Damage Control",
+	"prerequisites": [
+		"Bombardment",
+		"Targeting III",
+		"Armor Plating",
+		"Observation Tower"
+	],
+	"uniques": [
+		"[+5] HP when healing",
+		"All adjacent units heal [+20] HP when healing",
+		"May heal outside of friendly territory",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Ranged Combat Ship"],
+	"column": 7,
+	"row": 6
+},
+{
+	"name": "Resupply",
+	"prerequisites": ["Accuracy", "Combat Drill", "Awe", "Maneuver"],
+	"uniques": [
+		"[+10] HP when healing",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat", "Siege"],
+	"column": 7,
+	"row": 2
+},
+{
+	"name": "Precision",
+	"prerequisites": ["Skirmish"],
+	"uniques": [
+		"[+25]% Strength <vs [Wounded] units>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Ranged Combat"],
+	"column": 6,
+	"row": 5
+},
+{
+	"name": "Maneuver",
+	"prerequisites": ["Hull Down", "Shock I"],
+	"uniques": [
+		"[+1] Movement",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat"],
+	"column": 6,
+	"row": 2
+},
+{
+	"name": "Awe",
+	"prerequisites": ["Hull Down", "Shock III"],
+	"uniques": [
+		"[+25]% Strength <vs [Wounded] units>",
+		"[+10]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat"],
+	"column": 6,
+	"row": 1
+},
+{
+	"name": "Pursuit",
+	"prerequisites": ["Loose Formation", "Shock II", "Marauders"],
+	"uniques": [
+		"[+25]% Strength <vs [Wounded] units>",
+		"Heals [25] damage if it kills a unit",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Rider"],
+	"column": 5,
+	"row": 6
+},
+{
+	"name": "Assault",
+	"prerequisites": [//"Entrench", //"Forage", "Loose Formation", "Shock III"],
+	"uniques": [
+		"[+10]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Rider"],
+	"column": 5,
+	"row": 5
+},
+{
+	"name": "Loose Formation",
+	"uniques": [
+		"[+33]% Strength <vs [Ranged Combat] units> <when defending>",
+		"Withdraws before Close combat <with [25]% chance>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Rider", "Close Combat"],
+	"column": 1,
+	"row": 5
+},
+{
+	"name": "Hull Down",
+	"uniques": [
+		"[+15]% Strength <when defending>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat"],
+	"column": 1,
+	"row": 6
+},
+{
+	"name": "Guerilla Warfare I",
+	"uniques": [
+		"[+10]% Strength <when fighting in [Rough terrain] tiles>",
+		"Can move after attacking",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Ranged Combat", "Rider"],
+	"column": 2,
+	"row": 3
+},
+{
+	"name": "Guerilla Warfare II",
+	"prerequisites": ["Guerilla Warfare I"],
+	"uniques": [
+		"[+30]% Strength <when fighting in [Hill] tiles>",
+		"[+10]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Scrapper", "Ranged Combat", "Scout", "Rider"],
+	"column": 2,
+	"row": 4
+},
+{
+	"name": "Exploit Weakness",
+	"uniques": [
+		"[+25]% Strength <vs [Wounded] units>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"prerequisites": ["Evasion", "Strike"],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 7,
+	"row": 5
+},
+{
+	"name": "Evasion",
+	"uniques": [
+		"[+33]% Strength <vs [Ranged Combat] units> <when defending>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 1,
+	"row": 7
+},
+{
+	"name": "Strike",
+	"uniques": [
+		"[+33]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 1,
+	"row": 8
+},
+{
+	"name": "Wolfpack I",
+	"prerequisites":// ["Observation","Silent Running"],
+	"uniques": ["1 additional attack per turn"],
+	"unitTypes": ["Close Combat Ship"]
+},
+{
+	"name": "Wolfpack II",
+	"prerequisites": ["Wolfpack I"],
+	"uniques": [
+		"[+25]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 3,
+	"row": 4
+},
+{
+	"name": "Wolfpack III",
+	"prerequisites": ["Wolfpack II"],
+	"uniques": [
+		"[+25]% Strength <when attacking>",
+		"Only available <for units without [Promotion Nullifier]>"
+	],
+	"unitTypes": ["Close Combat Ship"],
+	"column": 3,
+	"row": 5
+},
+{
+	"name": "Boarding",
+	"uniques": ["Bonus vs City 50%"],
+	"unitTypes": ["Close Combat Ship"]
+},
+{
+	"name": "Taxis", // Byzantium
+	"uniques": ["+[10]% Combat Strength"]
+},
+{
+	"name": "Porphyrogennetos", // Byzantium
+	"uniques": ["Bonus vs City 33%"]
+},
+{
+	"name": "Royal Navy Dockyard", // England
+	"prerequisites": ["null"],
+	"uniques": ["+1 Movement"],
+	"unitTypes": ["WaterRanged","WaterSubmarine","WaterMelee","WaterAircraftCarrier"]
+},
+{
+	"name": "Echelon",
+	"uniques": ["Bonus vs Rider 17%"],
+	"unitTypes": ["Close Combat"]
+},
+{
+	"name": "Thrust",
+	"uniques": ["[+50]% Strength <when attacking> <when above [90] HP>", "[+1] Movement"],
+	"unitTypes": ["Close Combat"] //Anti Cavalry
+},
+{
+	"name": "Chokepoint",
+	"uniques": ["[+25]% Strength <in [Rough terrain] tiles>"],
+	"prerequisites": ["Formation", "Thrust", "Caltrops"],
+	"unitTypes": ["Anti Cavalry"] //Close Combat
+},
+{
+	"name": "Caltrops",
+	"uniques": ["[+25]% Strength <when defending> <vs [Light Cavalry] units>", "[+25]% Strength <when defending> <vs [Heavy Cavalry] units>", "[+25]% Strength <when defending> <vs [Counter Cavalry] units>"],
+	"prerequisites": ["Formation", "Thrust", "Chokepoint"],
+	"unitTypes": ["Anti Cavalry"] //Close Combat
+},
+{
+	"name": "Anti Cavalry Suppression",
+	"uniques": ["[-10]% Strength for enemy [Heavy Cavalry] units in adjacent [All] tiles", "[-10]% Strength for enemy [Light Cavalry] units in adjacent [All] tiles", "[-10]% Strength for enemy [Counter Cavalry] units in adjacent [All] tiles"],
+	"prerequisites": ["Caltrops"],
+	"unitTypes": ["Anti Cavalry"] //Close Combat
+},
+{
+	"name": "Rapid Redeployment",
+	"uniques": ["[+1] Movement"],
+	"prerequisites": ["Chokepoint"],
+	"unitTypes": ["Anti Cavalry"] //Close Combat
+},
+{
+	"name": "Endurance",
+	"uniques": ["[+30]% Strength <when defending>", "[+10] HP when healing"],
+	"prerequisites": ["Rapid Redeployment", "Anti Cavalry Suppression"],
+	"unitTypes": ["Anti Cavalry"] //Close Combat
+},
+{
+	"name": "Pirate Hunter",
+	"uniques": ["[+50]% Strength <vs [Barbarian] units>", "[+50]% Strength <vs [Privateer] units>", 
+	"[+15]% Strength <when fighting in [Coast] tiles> <starting from the [Imperal Era]>"]
+},
+{
+	"name": "Coastal Protector",
+	"uniques": ["[+25]% Strength <within [2] tiles of a [Coast]>"]
+},
+{
+	"name": "Gaucho",
+	//"uniques": ["[+30]% Strength <with [1] to [6] neighboring [Pasture] tiles>"]
+},
+{
+	"name": "Zealot",
+	//"uniques": ["Earn [50]% of the damage done to [Military] units as [Faith]", "[+20]% Strength <before discovering [Military Science]>"]
+},
+{
+	"name": "Desert Bombard",
+	"uniques": ["[+25]% Strength <when fighting in [Desert] tiles>"]
+},
+{
+	"name": "Nuwara",
+	//"uniques": ["[+25]% Strength <vs [Ranged Combat] units>", "[+25]% Strength <vs [-] units>"]
+},
+{
+	"name": "Ranchero",
+	"uniques": ["[+30]% Strength <when fighting in [Farm] tiles>"]
+},
+{
+	"name": "Raider",
+	"uniques": ["[-50]% XP gained from combat",
+			//"[Great General] is earned [250]% faster"
+			"No movement cost to pillage"]
+},
+{
+	"name": "Square",
+	"prerequisites": ["Echelon"],
+	"uniques": ["All healing effects doubled"],
+	"unitTypes": ["Close Combat"]
+},
+{
+	"name": "Schiltron",
+	"prerequisites": ["Thrust"],
+	//"uniques": ["Bonus vs Melee 15%"],
+	"unitTypes": ["Armor"]
+},
+{
+	"name": "Redeploy",
+	"prerequisites": ["Square","Schiltron"],
+	"uniques": ["+1 Movement"],
+	"unitTypes": ["Armor"]
+},
+{
+	"name": "Choke Points",
+	"prerequisites": ["Square","Schiltron"],
+	"uniques": ["Bonus vs units in rough terrain 25%"],
+	"unitTypes": ["Armor"]
+},
+{
+	"name": "Hold the Line",
+	"prerequisites": ["Choke Points","Redeploy"],
+	"uniques": ["Bonus for units in 2 tile radius 15%"],
+	"unitTypes": ["Armor"]
+},
+{
+	"name": "Shadow Strike",
+	"uniques": ["+[10]% Combat Strength"]
+},
+{
+	"name": "Exploding Palms",
+	"prerequisites": ["Shadow Strike"],
+	"uniques": ["+[33]% Combat Strength"]
+},
+{
+	"name": "Sweeping Wind",
+	"prerequisites": ["Exploding Palms"],
+	"uniques": ["1 additional attack per turn"]
+},
+{
+	"name": "Dancing Crane",
+	"prerequisites": ["Exploding Palms"],
+	"uniques": ["+1 Movement"]
+},
+{
+	"name": "Cobra Strike",
+	"prerequisites": ["Sweeping Wind, Dancing Crane"],
+	"uniques": ["+[50]% Combat Strength"]
+},
+{
+	"name": "Battlecry",
+	"uniques": ["Bonus vs Melee 25%","Bonus vs Ranged 25%"],
+	"unitTypes": ["Melee"]
+},
+{
+	"name": "Tortoise",
+	"uniques": ["+[33]% Strength when defending"],
+	"unitTypes": ["Melee"]
+},
+{
+	"name": "Commando",
+	"prerequisites": ["Battlecry","Amphibous"],
+	"uniques": ["+1 Movement"],
+	"unitTypes": ["Melee"]
+},
+{
+	"name": "Zweihander",
+	"prerequisites": ["Commando","Amphibious"],
+	"uniques": ["Bonus vs Armor 25%"],
+	"unitTypes": ["Melee"]
+},
+{
+	"name": "Elite Guard",
+	"prerequisites": ["Zweihander","Street Battle II"],
+	"uniques": ["1 additional attack per turn","Can move after attacking"],
+	"unitTypes": ["Melee"]
+},
+	{
+		"name": "Organic Remedies",
+		"uniques": ["[+10] HP when healing <in [Jungle] tiles>","[+10] HP when healing <in [Forest] tiles>","[+5] HP when healing <in [Grassland] tiles>","[+5] HP when healing <in [Plains] tiles>","[+5] HP when healing <in [Tundra] tiles>"],
+		"unitTypes": ["Melee","Gunpowder","Mounted","Scout","Ranged"]
+	},
 	{
 		"name": "Heal Instantly",
-		"uniques": [
-			"[This Unit] heals [50] HP",
-			"Doing so will consume this opportunity to choose a Promotion"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
+		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 0,
 		"row": 0
 	},
-	///General
+///General
+{
+	"name": "Ramming",
+	"uniques": ["[+25]% Strength <vs [Water] units>"],
+	"unitTypes": ["Close Combat Ship","Ranged Combat Ship"]
+},
+{
+	"name": "Experienced Helmsman",
+	"uniques": ["[+1] Movement"],
+	"unitTypes": ["Ranged Combat Ship"]
+},
+{
+	"name": "Coastal Assault",
+	"uniques": ["Eliminates combat penalty for attacking across a coast"],
+	"unitTypes": ["Ranged Combat Ship"]
+},
+{
+	"name": "Observation Tower",
+	"uniques": ["[+1] Sight"],
+	"prerequisites": ["Experienced Helmsman"],
+	"unitTypes": ["Ranged Combat Ship"]
+},
+{
+	"name": "Search and Destroy",
+	"uniques": ["[+20]% Strength <vs [Wounded] units>", "[+30]% Strength <vs [Ranged Combat Ship]>", "[+30]% Strength <vs [Close Combat Ship] units>"],
+	"prerequisites": ["Damage Control"],
+	"unitTypes": ["Ranged Combat Ship"]
+},
+// Naval Ranged
+{
+		"name": "Broadside Barrage",
+		"uniques": ["[+25]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Littoral Warfare",
+		"uniques": ["[+20]% Strength <vs [Land] units>"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Line of Battle",
+		"uniques": ["[+25]% Strength <vs [Water] units>"],
+		"prerequisites": ["Broadside Barrage", "Littoral Warfare"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Navigator",
+		"uniques": ["[+1] Movement"],
+		"prerequisites": ["Broadside Barrage", "Littoral Warfare"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Auxiliary Ships",
+		"uniques": ["May heal outside of friendly territory"],
+		"prerequisites": ["Line of Battle", "Navigator"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Proximity Defense System",
+		"uniques": ["[+15]% Strength <vs [Melee] units> <when defending>"],
+		"prerequisites": ["Line of Battle", "Navigator"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Coincidence Rangefinding",
+		"uniques": ["[+1] Range"],
+		"prerequisites": ["Auxiliary Ships", "Proximity Defense System"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+// Naval Siege
+	{
+		"name": "Naval Targeting",
+		"uniques": ["[+25]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Coastal Bombardment",
+		"uniques": ["[+25]% Strength <vs [Land] units>"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Double Armor Plating",
+		"uniques": ["[+25]% Strength <vs [Ranged Combat Ship] units> <when defending>"],
+		"prerequisites": ["Naval Targeting", "Beachhead"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Beachhead",
+		"uniques": ["[+20]% Strength <in [Coast] tiles> <when defending>", "[+20]% Strength <vs [Land] units>"],
+		"prerequisites": ["Coastal Bombardment", "Double Armor Plating"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Emergency Repair",
+		"uniques": ["May heal outside of friendly territory"],
+		"prerequisites": ["Double Armor Plating"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Naval Blockade",
+		"uniques": ["[+20]% Strength <vs cities>"],
+		"prerequisites": ["Beachhead"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+	{
+		"name": "Veteran Gun Crew",
+		"uniques": ["[1] additional attacks per turn"],
+		"prerequisites": ["Naval Blockade", "Emergency Repair"],
+		"unitTypes": ["Ranged Combat Ship"]
+	},
+//Naval Escort
+    {
+		"name": "Preempted Routing",
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Ranged Combat Ship","Close Combat Ship"]
+	},
+	{
+		"name": "Old Ironside",
+		"uniques": ["[+25]% Strength <vs [Ranged Combat Ship] units> <when defending>"],
+		"unitTypes": ["Ranged Combat Ship","Close Combat Ship"]
+	},
+	{
+		"name": "Let 'em Have It",
+		"uniques": ["[+25]% Strength <vs [Water] units>"],
+		"prerequisites": ["Preempted Routing", "Old Ironside"],
+		"unitTypes": ["Ranged Combat Ship","Close Combat Ship"]
+	},
+	{
+		"name": "Hotfix",
+		"uniques": ["May heal outside of friendly territory"],
+		"prerequisites": ["Let 'em Have It"],
+		"unitTypes": ["Ranged Combat Ship","Close Combat Ship"]
+	},
+	{
+		"name": "Seafaring Spyglass",
+		"uniques": ["[+1] Sight"],
+		"prerequisites": ["Let 'em Have It", "Holdfast"],
+		"unitTypes": ["Ranged Combat Ship","Close Combat Ship"]
+	},
+	{
+		"name": "Improved Threat Detection",
+		"uniques": ["[+15]% Strength <vs [Melee] units> <when defending>"],
+		"prerequisites": ["Hotfix", "Seafaring Spyglass"],
+		"unitTypes": ["Ranged Combat Ship","Close Combat Ship"]
+	},
+//
+{
+	"name": "Strategic Deployment I",
+	"prerequisites": ["Hard II","Bombard II"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 31 
+},
+{
+	"name": "Shrapnel I",
+	"prerequisites": ["Hard II","Bombard II"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 32
+},
+{
+	"name": "Detonate I",
+	"prerequisites": ["Hard II","Bombard II"],
+	"uniques": ["[+33]% Strength <vs cities> <when attacking>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 33      
+},
+{
+	"name": "Strategic Deployment II",
+	"prerequisites": ["Strategic Deployment I"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 34
+},
+{
+	"name": "Shrapnel II",
+	"prerequisites": ["Shrapnel I"],
+	"uniques": ["[+15]% Strength <vs [Wounded] units>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 35  
+},
+{
+	"name": "Detonate II",
+	"prerequisites": ["Detonate I"],
+	"uniques": ["[+33]% Strength <vs cities> <when attacking>"],
+	"unitTypes": ["Siege"],
+	"row": 2,
+	"column": 36    
+},
+{
+	"name": "Grape Shot",
+	"uniques": ["Bonus vs land units 25%"],
+	"unitTypes": ["Siege"]
+},
+{
+	"name": "Crew Weapons",
+	"uniques": ["+[25]% Strength when defending"],
+	"unitTypes": ["Siege"]
+},
+{
+	"name": "Shrapnel",
+	"prerequisites": ["Grape Shot"],
+	"uniques": ["Bonus vs land units 33%"],
+	"unitTypes": ["Siege"]
+},
+{
+	"name": "Shells",
+	"prerequisites": ["Crew Weapons"],
+	"uniques": ["Bonus vs City 33%"],
+	"unitTypes": ["Siege"]
+},
+{
+	"name": "Advanced Rangefinding",
+	"prerequisites": ["Shrapnel","Shells"],
+	"uniques": ["Bonus vs water units 33%"],
+	"unitTypes": ["Siege"]
+},
+{
+	"name": "Expert Crew",
+	"prerequisites": ["Shrapnel","Shells"],
+	"uniques": ["Can move after attacking"],
+	"unitTypes": ["Siege"]
+},
+{
+	"name": "Forward Observers",
+	"prerequisites": ["Advanced Rangefinding","Expert Crew","Flare"],
+	"uniques": ["+1 Range"],
+	"unitTypes": ["Siege"]
+},
+{
+	"name": "Garrison",
+	"uniques": ["+[33]% Strength when defending"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Arrow Storm",
+	"prerequisites": ["Volley"],
+	"uniques": ["Bonus vs land units 25%","Bonus vs water units 25%"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Incendiaries",
+	"prerequisites": ["Garrison"],
+	"uniques": ["Bonus vs City 25%"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Suppression",
+	"prerequisites": ["Arrow Storm","Incendiaries"],
+	"uniques": ["Ranged attacks may be performed over obstacles"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Emplacement",
+	"prerequisites": ["Arrow Storm","Incendiaries"],
+	"uniques": ["Bonus vs City 33%"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Concentrated Barrage",
+	"uniques": ["[+20]% Strength <vs [Water] units>","[+10]% Strength <vs [Land] units>"],
+	"prerequisites": ["Emplacement", "Volley"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Incendiary Munition",
+	"uniques": ["[+30]% Strength <vs cities>", "[+30]% Strength <when attacking> <in [Fort] tiles>"],
+	"prerequisites": ["Concentrated Barrage"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Coordinated Bombardment",
+	"uniques": ["[+8]% Strength bonus for [Ranged Combat] units within [1] tiles"],
+	"prerequisites": ["Counter Battery Tactics"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Coordinated Bombardment",
+	"uniques": ["[+8]% Strength bonus for [Ranged Combat] units within [1] tiles"],
+	"prerequisites": ["Counter Battery Tactics"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Artillery Logistics",
+	"uniques": ["Ignores terrain cost", "[1] additional attacks per turn"],
+	"prerequisites": ["Incendiary Munition", "Coordinated Bombardment"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Counter Battery Tactics",
+	"uniques": ["[+30]% Strength <vs [Siege] units> <when attacking>","[+20]% Strength <vs [Ranged Combat] units> <when attacking>"],
+	"prerequisites": ["Emplacement", "Volley"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Volley",
+	"uniques": ["[+20]% Strength <vs [Close Combat] units>"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Suppressive Fire",
+	"uniques": ["[+15]% Strength <vs [Close Combat] units>"],
+	"unitTypes": ["Ranged Support"]
+},
+{
+	"name": "Mantlet",
+	"uniques": ["[+25]% Strength <vs [Ranged] units> <when defending>"],
+	"prerequisites": ["Precision", "Suppressive Fire"],
+	"unitTypes": ["Ranged Support"]
+},
+{
+	"name": "Skirmisher Tactics",
+	"uniques": ["May withdraw before melee ([40]%)"],
+	"prerequisites": ["Mantlet"],
+	"unitTypes": ["Ranged Support"]
+},
+{
+	"name": "Fire and Maneuver",
+	"uniques": ["[+1] Movement", "Can move after attacking"],
+	"prerequisites": ["Fire Support", "Skirmisher Tactics"],
+	"unitTypes": ["Ranged Support"]
+},
+{
+	"name": "Expert Marksman",
+	"prerequisites": ["Suppression","Emplacement","Precision","Suppressive Fire"],
+	"uniques": ["[+20]% Strength <vs [{Land} {Ranged}] units> <when attacking>"],
+	"unitTypes": ["Ranged Combat"]
+},
+{
+	"name": "Sundering",
+	"uniques": ["[Target Unit] gains the [Sundered!] status for [2] turn(s) <with [40]% chance> <upon damaging a [Land] unit>"]
+},
+		{
+	"name": "Sundered!",
+	"uniques": ["[-20]% Strength <when defending> <vs [Melee] units>"]
+},
+{
+	"name": "Poisoned Tips",
+	"uniques": ["[Target Unit] gains the [Poisoned!] status for [4] turn(s) <with [67]% chance> <upon damaging a [{[non-[Armor]]} {Land}] unit>"]
+},
+{
+	"name": "Poisoned!",
+	"uniques": ["[This Unit] takes [8] damage <upon ending a turn in a [non-[City center]] tile>"]
+},
+{
+	"name": "Scorching",
+	"uniques": ["[Target Unit] gains the [Burning!] status for [2] turn(s) <with [20]% chance> <upon damaging a [Land] unit>", "[Target Unit] gains the [Fire on Deck!] status for [2] turn(s) <with [30]% chance> <upon damaging a [Water] unit> <when attacking>"]
+},
+{
+	"name": "Burning!",
+	"uniques": ["[This Unit] takes [25] damage <upon ending a turn in a [non-[Coastal]] tile> <with [75]% chance>", "[-25]% Strength"]
+},
+{
+	"name": "Fire on Deck!",
+	"uniques": ["[This Unit] takes [20] damage <upon ending a turn in a [Water] tile>"]
+},
+{
+	"name": "Shock and Awe",
+	"uniques": ["[Target Unit] gains the [Disoriented!] status for [2] turn(s) <with [20]% chance> <upon damaging a [Land] unit>", "[Target Unit] gains the [Disorganized!] status for [1] turn(s) <with [10]% chance> <upon damaging a [Land] unit> <when attacking>"],
+	"prerequisites": ["Rout I"]
+},
+{
+	"name": "Shock and Awe II",
+	"uniques": ["[Target Unit] gains the [Disoriented!] status for [2] turn(s) <with [30]% chance> <upon damaging a [Land] unit>", "[Target Unit] gains the [Disorganized!] status for [1] turn(s) <with [15]% chance> <upon damaging a [Land] unit> <when attacking>"]
+},
+{
+	"name": "Disoriented!",
+	"uniques": ["[-20]% Strength <when attacking>", "[-1] Movement"]
+},
+{
+	"name": "Disorganized!",
+	"uniques": ["[-30]% Strength", "Cannot Move"]
+},
+{
+	"name": "Man of The Marsh",
+	"uniques": ["[+15]% Strength <when fighting in [Marsh] tiles>", "[+15]% Strength <when fighting in [All] tiles> <within [1] tiles of a [Marsh]>","Double movement in [Marsh]"]
+},
+{
+	"name": "Forestman",
+	"uniques": ["Double movement in [Forest]"]
+},
+{
+	"name": "[Legie] ability",
+	"uniques": ["[+15]% Strength <when fighting in [Foreign Land] tiles>", "[+1] Movement <in [Foreign Land] tiles>"]
+},
+{
+	"name": "Berserk",
+	"uniques": ["[1] additional attacks per turn <in [Foreign Land] tiles>","[+10]% Strength]"]
+},
+{
+	"name": "[Jomsviking] ability",
+	"uniques": ["Heals [25] damage if it kills a unit"]
+},
+{
+	"name": "Luxury Control",
+	"uniques": ["Gain control over [Luxury resource] tiles in a [2]-tile radius <once> <after which this unit is consumed>"]
+},
+{
+	"name": "Romani Ability",
+	"uniques": ["[+33]% Strength <when defending> <for [6] turns> <upon declaring war with a major Civilization>"]
+},
+{
+	"name": "Norfolk Ability",
+	"uniques": ["May capture killed [City-States] units <with [88]% chance>"]
+},
+{
+	"name": "[Hetairoi] ability",
+	"uniques": ["[This Unit] heals [100] HP <upon conquering a city>"]
+},
+{
+	"name": "San Marino Ability",
+	"uniques": ["Founds a new city <by consuming this unit> <if it hasn't used other actions yet>"]
+},
+{
+	"name": "[Guard of The Rock] ability",
+	"uniques": ["[1] additional attacks per turn <in [Friendly Land] tiles>"]
+},
+{
+	"name": "[Gholam] ability",
+	"uniques": ["[+25]% Strength <vs [City] units> <when defending>", "Heals [25] damage if it kills a unit", "[+5]% Strength <when adjacent to a [Wounded] unit>"]
+},
+{
+	"name": "[Merkava] ability",
+	"uniques": ["[+15]% Strength <when fighting in [Desert] tiles>", "[+2] Movement <in [Desert] tiles>"]
+},
+{
+	"name": "[Black Army] ability",
+	"uniques": [
+	"[+33]% Strength <vs cities> <when defending>",
+	 "[+33]% Strength <vs [Barbarian] units>",
+	"[+33]% Strength <vs [City-State] units>"]
+},
+{
+	"name": "Bayonet Charge",
+	"uniques": ["[+20]% Strength <when attacking>"],
+	"unitTypes": ["Close Combat"]
+},
+{
+	"name": "Shield Wall",
+	"uniques": ["[+25]% Strength <when defending> <vs [Ranged Combat] units>"],
+	"unitTypes": ["Close Combat"]
+},
+{
+	"name": "Greatswords",
+	"uniques": ["[+25]% Strength <vs [Anti Cavalry] units>"],
+	"prerequisites": ["Bayonet Charge", "Field Medic"],
+	"unitTypes": ["Close Combat"]
+},
+{
+	"name": "Captain",
+	"uniques": ["[+25]% Strength"],
+	"prerequisites": ["Field Medic", "Greatswords"],
+	"unitTypes": ["Close Combat"]
+},
+{
+	"name": "Elite Shock Troops",
+	"uniques": ["[1] additional attacks per turn"],
+	"prerequisites": ["Urban Warfare", "Captain"],
+	"unitTypes": ["Close Combat"]
+},
+{
+	"name": "Redcoat ability",
+	"uniques": ["[+100]% Strength <when defending> <when [Embarked]>", "[1] Movement point cost to embark", "[1] Movement point cost to disembark"]
+},
+{
+	"name": "Vytis ability",
+	"uniques": ["No damage penalty for wounded units","Earn [100]% of killed [Military] unit's [Strength] as [Faith]"]
+},
+{
+	"name": "Homeric Resilience",
+	"uniques": ["[+10] HP when healing"]
+},
+    {
+		"name": "Buin ability",
+		"uniques": ["[+15]% Strength <when fighting in [Coastal] tiles>", "[+100]% Strength <when defending> <when [Embarked]>", "[1] Movement point cost to embark", "[1] Movement point cost to disembark","Eliminates combat penalty for attacking across a coast"]
+    },
+    {
+		"name": "River Warlord",
+		"uniques": ["[+15]% Strength <when fighting in [River] tiles>"]
+    },
+    {
+		"name": "Mamluk ability",
+		"uniques": ["Earn [100]% of killed [Military] unit's [Strength] as [Faith]"]
+    },
+    {
+		"name": "Streltsy ability",
+		"uniques": ["[+33]% Strength <when fighting in [Tundra] tiles>", "[-100]% maintenance costs"]
+	},
+    {
+		"name": "Khopesh ability",
+		"uniques": ["[+33]% Strength <when fighting in [Desert] tiles>"]
+	},
+    {
+		"name": "Ignore terrain cost",
+		"uniques": ["Ignores terrain cost"]
+	},
+	{
+		"name": "Sydney's Bridges prom",
+		"uniques": ["[1] Movement point cost to embark", "[1] Movement point cost to disembark"]
+	},
+	{
+		"name": "Fiery Nomad",
+		"uniques": ["[+50]% Strength <vs [Siege] units>"]
+	},
+	{
+		"name": "Slavic Guard",
+		"uniques": ["Unit will heal every turn, even if it performs an action <before the [Atomic era]>",
+			"Heals [25] damage if it kills a unit"]
+	},
+	{
+		"name": "Adageiros",
+		"uniques": ["Founds a new city", "[+20]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "Ambundu",
+		"uniques": ["[+20]% Strength <when fighting in [Friendly Land] tiles>", "[+15]% Strength <before discovering [Gunpowder]>"]
+	},
+	{
+		"name": "Bireme",
+		"uniques": ["Can move after attacking", "Earn [10]% of killed [Military] unit's [Cost] as [Faith]"]
+	},
+	{
+		"name": "Difensur",
+		"uniques": ["Damage is ignored when determining unit Strength <when fighting in [Friendly Land] tiles>", 
+			"[+15]% Strength <before discovering [Industrialization]> <when attacking>"]
+	},
+	{
+		"name": "Slavic Knight",
+		"uniques": ["[+12] HP when healing <in [Friendly Land] tiles>", "[+10]% Strength <before discovering [Military Science]>"]
+	},
+	{
+		"name": "Cahokian warrior",
+		"uniques": ["[+20]% Strength <before discovering [Civil Service]>", "[+100]% Strength <when fighting in [Cahokian Kurgan] tiles> <before discovering [Civil Service]>",
+			"[+50]% Strength <when fighting in [Cahokian Kurgan] tiles> <after discovering [Civil Service]>"]
+	},
+	{
+		"name": "Maccabee",
+		"uniques": ["Earn [50]% of killed [Military] unit's [Cost] as [Faith] <before discovering [Steel]>", 
+			"Earn [25]% of killed [Military] unit's [Cost] as [Faith] <after discovering [Steel]>"]
+	},
+	{
+		"name": "Black Reiter",
+		"uniques": ["[+25]% Strength <when fighting in [Friendly Land] tiles>", "[+15]% Strength <when fighting in [Foreign Land] tiles>"]
+	},
+	{
+		"name": "Sagittaria",
+		"uniques": ["Can move after attacking"]
+	},
+	{
+		"name": "Mong Dong",
+		"uniques": ["Can move after attacking <before discovering [Navigation]>", "[+15]% Strength <before discovering [Navigation]>"]
+	},
+	{
+		"name": "Afghan Air Defense",
+		"uniques": ["[75]% chance to intercept air attacks", "[+75]% Strength <vs [Air] units>", "[+25]% Strength <vs [Helicopter] units>"]
+	},
+	{
+		"name": "Orang Laut",
+		"uniques": ["Earn [50]% of killed [Military] unit's [Cost] as [Gold] <before discovering [Astronomy]>", 
+			"Earn [25]% of killed [Military] unit's [Cost] as [Gold] <after discovering [Astronomy]>"]
+	},
+	{
+		"name": "Shaolin",
+		"uniques": ["Earn [50]% of killed [Military] unit's [Strength] as [Culture]", 
+			"Earn [50]% of killed [Military] unit's [Strength] as [Faith]"]
+	},
+	{
+		"name": "Milanese Knight",
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>", "[+50]% XP gained from combat"]
+	},
+	//
+		{
+		"name": "Volatile Munitions",
+		"uniques": ["[+30]% Strength <vs cities> <when attacking>"],
+		"prerequisites": ["Grapeshot"],
+		"unitTypes": ["Siege"]
+	},
+	{
+		"name": "Entrenched Position",
+		"uniques": ["[+20]% Strength <vs [Ranged Combat] units> <when defending>"],
+		"prerequisites": ["Crew Weapons"],
+		"unitTypes": ["Siege"]
+	},
+	{
+		"name": "Flare",
+		"uniques": ["[+2] Sight"],
+		"prerequisites": ["Volatile Munitions", "Entrenched Position"],
+		"unitTypes": ["Siege", "Siege Nuke"]
+	},
+	{
+		"name": "Coastal Artillery",
+		"uniques": ["[+20]% Strength <vs [Water] units>"],
+		"prerequisites": ["Volatile Munitions", "Entrenched Position"],
+		"unitTypes": ["Siege"]
+	},
+	{
+		"name": "Grapeshot",
+		"uniques": ["[+15]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Siege"]
+	},
+	//
+	{
+		"name": "Huota",
+		"uniques": ["[1] additional attacks per turn"]
+	},
+	{
+		"name": "Amabuto",
+		"uniques": ["[+20]% Strength <when adjacent to a [Spearman] unit>", 
+			"[+50]% to Flank Attack bonuses <before discovering [Metallurgy]>", 
+			"[+25]% to Flank Attack bonuses <after discovering [Metallurgy]>"]
+	},
+	{
+		"name": "Finnish Sniper",
+		"uniques": ["[+2] Range", "[+10]% Strength <when fighting units from a Civilization with more Cities than you>"]
+	},
+	{
+		"name": "Lapu-Lapu warrior",
+		"uniques": ["[+15]% Strength <with [1] to [6] neighboring [Coast] tiles>", "[+20]% Strength <when adjacent to a [Great General] unit>"]
+	},
+	{
+		"name": "Slave Archer",
+		"uniques": ["[+50]% Strength decreasing with distance from the capital <before discovering [Machinery]>", 
+			"[+30]% Strength decreasing with distance from the capital <after discovering [Machinery]>"]
+	},
+	{
+		"name": "African Pirates",
+		"uniques": ["Earn [33]% of killed [Military] unit's [Cost] as [Gold]", "[+12]% Strength <before discovering [Combustion]>"]
+	},
+	//
+	{
+		"name": "Reinforced Armor",
+		"uniques": ["[+20]% Strength <vs [Ranged] units> <when defending>"],
+		"unitTypes": ["Siege"] //Melee
+	},
+	{
+		"name": "Sapping",
+		"uniques": ["[+20]% Strength <vs cities>"],
+		"unitTypes": ["Siege"]//Melee
+	},
+	{
+		"name": "Escort Team",
+		"uniques": ["[+20]% Strength <vs [Melee] units>"],
+		"prerequisites": ["Reinforced Armor", "Sapping"],
+		"unitTypes": ["Siege"]//Melee
+	},
+	{
+		"name": "Recovery",
+		"uniques": ["[+10] HP when healing"],
+		"prerequisites": ["Reinforced Armor", "Sapping"],
+		"unitTypes": ["Siege"]//Melee
+	},
+	{
+		"name": "Forced Breakthrough",
+		"uniques": ["Ignores Zone of Control"],
+		"prerequisites": ["Escort Team"],
+		"unitTypes": ["Siege"]//Melee
+	},
+	{
+		"name": "Saboteur",
+		"uniques": ["[+30]% Strength <vs cities> <when attacking>", "No movement cost to pillage"],
+		"prerequisites": ["Recovery"],
+		"unitTypes": ["Siege"]//Melee
+	},
+	{
+		"name": "Elite Assault Team",
+		"uniques": ["[+20]% Strength <when attacking>", "[1] additional attacks per turn"],
+		"prerequisites": ["Forced Breakthrough", "Saboteur"],
+		"unitTypes": ["Siege"]/Melee
+	},
+	//
+	{
+		"name": "Bandeirants",
+		"uniques": ["Earn [100]% of killed [Military] unit's [Strength] as [Gold]","[+10]% Strength <when fighting in [Jungle] tiles>"]
+        },
+	{
+		"name": "Digger",
+		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles>", "[+17]% Strength <before discovering [Replaceable Parts]>"]
+	},
+	{
+		"name": "Phalanx",
+		"uniques": ["[+25]% Strength <when defending>", "[+15]% Strength <before discovering [Civil Service]>"]
+	},
+	{
+		"name": "Golden Worker",
+		"uniques": ["Can construct [Golden Mine]"]
+	},
+	{
+		"name": "Greatt Galleass",
+		"uniques": ["[+15]% Strength <before discovering [Navigation]>", "[+1] Movement"]
+	},
+	{
+		"name": "Rondachier",
+		"uniques": ["[+50]% Strength <vs [Pikeman] units>", "[+20]% Strength <vs [Sword] units>"]
+	},
+	{
+		"name": "Genoese Crossbowman",
+		"uniques": ["[+33]% Strength <when defending>"]
+	},
+	{
+		"name": "Gurka",
+		"uniques": ["[+25]% Strength <with [1] to [6] neighboring [Mountain] tiles>", "[+15]% Strength <when fighting in [Rough terrain] tiles>",
+			"[+20]% Strength <when fighting in [Foreign Land] tiles>"]
+	},
+	{
+		"name": "Singaporean Fleet",
+		"uniques": ["Can move after attacking"]
+	},
+	{
+		"name": "Khananei",
+		"uniques": ["[+25]% Strength <when fighting in [Foreign Land] tiles>", "[+12]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "Suahili warrior",
+		"uniques": ["[+25]% Strength <when fighting in [Friendly Land] tiles>", "[+15]% Strength <when fighting units from a Civilization with more Cities than you>"]
+	},
+	{
+		"name": "Granadian Army",
+		"uniques": ["[+1] Movement <before discovering [Imperal era]>", "Can move after attacking"]
+	},
+	{
+		"name": "Emir's Army",
+		"uniques": ["[+33]% Strength <vs cities> <when defending>", "[+33]% Strength <vs [Ranged Combat] units> <when defending>"]
+	},	
+	{
+		"name": "Nome Militia",
+		"uniques": ["[+25]% Strength <when defending>", "[+10]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "Mounted Velites",
+		"uniques": ["Damage is ignored when determining unit Strength <when fighting in [Enemy Land] tiles>", "[+10]% Strength <before discovering [Combustion]>"]
+	},
+	{
+		"name": "Berber Pirates",
+		"uniques": ["[+20]% Strength <when fighting in [Coast] tiles>", "Earn [12]% of killed [Military] unit's [Cost] as [Faith]"]
+	},
+	{
+		"name": "Swiss Pikeman",
+		"uniques": ["[+25]% Strength <when fighting in [Foreign Land] tiles>"]
+	},
+	{
+		"name": "Sapotec",
+		"uniques": ["[+40]% Strength <when fighting in [Jungle] tiles>", "[+20]% Strength <when fighting in [Forest] tiles>"]
+	},
+	{
+		"name": "Hitties Chariot",
+		"uniques": ["[+1] Movement", "[+20]% Strength <when fighting in [Plains] tiles>"]
+	},
+	{
+		"name": "Kshatriya",
+		"uniques": ["[1] additional attacks per turn", "[+20]% Strength <vs cities> <when attacking> <before discovering [Military Science]>"]
+	},
+    {
+		"name": "Mine",
+		"effect": "Can construct [Mine]"
+	},  
+	{
+		"name": "Mount I",
+		"effect": "Access to mount"
+	},  
+	{
+		"name": "Mount II",
+		"prerequisites": ["Mount I"],
+		"uniques": ["[+2] Movement","[+15]% Strength <when defending>"],
+			"unitTypes": ["Ranged"]
+	},  
+	{
+		"name": "Pyrrhic Victory",
+		"uniques": ["[+50]% Strength <when attacking>","[-25]% Strength <when defending>",
+		"[+25]% Strength <vs cities> <when attacking>","[-25]% Strength <vs cities> <when defending>"]
+	},  
 	{
 		"name": "Stewardship",
-		"uniques": [
-			"[+5]% XP gained from combat",
-			"[+1] Movement <when fighting in [Friendly Land] tiles>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
+		"uniques": ["[+5]% XP gained from combat","[+5] HP when healing"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 1,
 		"row": 0
 	},
 	{
 		"name": "Centralised Command",
-		"uniques": [
-			"Great General provides double combat bonus",
-			"[+10]% XP gained from combat",
-			"[+33]% Damage when intercepting"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
-		"prerequisites": [
-			"Stewardship"
-		],
+		"uniques": ["[Great General] is earned [+50]% faster","[+10]% Strength <when fighting in [Open terrain] tiles>","[+33]% Damage when intercepting"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"prerequisites": ["Stewardship"],
 		"column": 1,
 		"row": 1
 	},
 	{
 		"name": "Mass Assault",
-		"uniques": [
-			"[Great Commander] is earned [25]% faster",
-			"[+10]% Strength <when attacking> <when fighting in [Open terrain] tiles>",
-			"[+25]% Strength <vs cities>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
-		"prerequisites": [
-			"Centralised Command"
-		],
+		"uniques": ["[+33]% Strength <vs cities>","[+10]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"prerequisites": ["Centralised Command"],
 		"column": 1,
 		"row": 2
 	},
 	{
 		"name": "Resourceful Army",
-		"uniques": [
-			"[+10]% Strength <when attacking> <vs [Wounded] units>",
-			"[+10]% Strength <when attacking> <when fighting in [Rough terrain] tiles>",
-			"Damage taken from interception reduced by [33]%"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
-		"prerequisites": [
-			"Stewardship"
-		],
+		"uniques": ["[+10]% Strength <vs [Wounded] units>","[+10]% Strength <when fighting in [Rough terrain] tiles>","Damage taken from interception reduced by [33]%"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"prerequisites": ["Stewardship"],
 		"column": 2,
 		"row": 1
 	},
 	{
 		"name": "Use of Terrain",
-		"uniques": [
-			"[+1] Movement",
-			"No defensive terrain penalty",
-			"[+15]% Strength <when attacking> <when fighting in [Rough terrain] tiles>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier"
-		],
-		"prerequisites": [
-			"Resourceful Army"
-		],
+		"uniques": ["[+1] Movement","No defensive terrain penalty"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier"],
+		"prerequisites": ["Resourceful Army"],
 		"column": 2,
 		"row": 2
 	},
 	{
 		"name": "Long Range Logistic",
-		"uniques": [
-			"Only available <after discovering [Logistics]>",
-			"Gain [-3] [Gold] <every [1] turns>",
-			"[+10] HP when healing <in [Foreign Land] tiles>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
-		"prerequisites": [
-			"Stewardship"
-		],
+		"uniques": ["[+13] HP when healing <in [Foreign Land] tiles>","All adjacent units heal [+5] HP when healing"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"prerequisites": ["Stewardship"],
 		"column": 3,
 		"row": 1
 	},
 	{
 		"name": "Extra Supply",
-		"uniques": [
-			"Only available <after discovering [Logistics]>",
-			"Gain [-3] [Gold] <every [1] turns>",
-			"[+15] HP when healing <in [Friendly Land] tiles>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
-		"prerequisites": [
-			"Stewardship"
-		],
+		"uniques": ["[+15] HP when healing <in [Friendly Land] tiles>","All adjacent units heal [+2] HP when healing"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"prerequisites": ["Stewardship"],
 		"column": 4,
 		"row": 1
 	},
 	{
 		"name": "Supply Ship",
-		"uniques": [
-			"Only available <after discovering [Compass]>",
-			"[+5] HP when healing",
-			"[+2] HP when healing <after discovering [Monocular]>",
-			"[+3] HP when healing <after discovering [Advanced Shipbuilding]>",
-			"May heal outside of friendly territory"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier"
-		],
-		"prerequisites": [
-			"Long Range Logistic"
-		],
+		"uniques": ["[+2] HP when healing","May heal outside of friendly territory","All adjacent units heal [+5] HP when healing"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Submarine","Carrier"],
+		"prerequisites": ["Long Range Logistic"],
 		"column": 3,
 		"row": 2
 	},
 	{
 		"name": "Field Medic",
-		"uniques": [
-			"[+3] HP when healing",
-			"[+2] HP when healing <after discovering [Apprenticeship]>",
-			"[+2] HP when healing <after discovering [Biology]>",
-			"[+3] HP when healing <after discovering [Pharmaceuticals]>",
-			"All adjacent units heal [+2] HP when healing",
-			"All adjacent units heal [+1] HP when healing <after discovering [Apprenticeship]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Biology]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Pharmaceuticals]>"
-		],
-		"unitTypes": [
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat"
-		],
-		"prerequisites": [
-			"Stewardship"
-		],
+		"uniques": ["[+10] HP when healing","All adjacent units heal [+3] HP when healing"],
+		"unitTypes": ["Scout","Assault","Rider","Close Combat","Ranged Combat"],
+		"prerequisites": ["Stewardship"],
 		"column": 5,
 		"row": 1
 	},
 	{
 		"name": "Technicians",
-		"uniques": [
-			"[+3] HP when healing",
-			"[+2] HP when healing <after discovering [Physics]>",
-			"[+2] HP when healing <after discovering [Machinery]>",
-			"[+3] HP when healing <after discovering [Mass Production]>",
-			"All adjacent units heal [+2] HP when healing",
-			"All adjacent units heal [+1] HP when healing <after discovering [Physics]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Machinery]>",
-			"All adjacent units heal [+1] HP when healing <after discovering [Mass Production]>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
-		"prerequisites": [
-			"Stewardship"
-		],
+		"uniques": ["[+10] HP when healing","All adjacent units heal [+3] HP when healing"],
+		"unitTypes": ["Siege","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
+		"prerequisites": ["Stewardship"],
 		"column": 6,
 		"row": 1
 	},
+///General
 	{
 		"name": "Hardened",
-		"uniques": [
-			"[+5]% XP gained from combat",
-			"[+5]% Strength"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
+		"uniques": ["[+5]% Strength"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 7,
 		"row": 0
 	},
 	{
 		"name": "Veteran",
-		"prerequisites": [
-			"Fast Regrouping",
-			"Old Guard",
-			"Firing Rotation",
-			"Weakpoint Observation",
-			"Combined Arms",
-			"Pilliging",
-			"Rotation Tactic",
-			"Top Speed",
-			"Priating",
-			"Anti-Air Firepower",
-			"Rapid Interception",
-			"Carpet Bombing"
-		],
-		"uniques": [
-			"[+25]% Strength"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Submarine",
-			"Carrier",
-			"Fighter",
-			"Bomber",
-			"Helicopter",
-			"Atomic Bomber"
-		],
+		"prerequisites": ["Fast Recovery","City Guard","Fire Rotation","Weakpoint Observation","Combined Arms","Pilliging","Rotation Tactic","Top Speed","Priating","Anti-Air Firepower","Rapid Interception","Carpet Bombing"],
+		"uniques": ["[+25]% Strength"],
+		"unitTypes": ["Siege","Scout","Assault","Rider","Close Combat","Ranged Combat","Close Combat Ship","Ranged Combat Ship","Submarine","Carrier","Fighter","Bomber","Helicopter","Atomic Bomber"],
 		"column": 7,
 		"row": 5
 	},
-	///Doctrines
+///Doctrines
 	{
 		"name": "Shock Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+5]% Strength <when attacking>",
-			"[+10]% Strength <when attacking> <when fighting in [Open terrain] tiles>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+15]% Strength <when attacking>"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 1
+
 	},
 	{
 		"name": "Rapid Engagement",
-		"prerequisites": [
-			"Shock Doctrine"
-		],
-		"uniques": [
-			"[1] additional attacks per turn"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault"
-		],
+		"prerequisites": ["Shock Doctrine"],
+		"uniques": ["[1] additional attacks per turn"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 2
 	},
 	{
 		"name": "Devistating Charge",
-		"prerequisites": [
-			"Rapid Engagement"
-		],
-		"uniques": [
-			"[+15]% Strength <when attacking> <vs [Wounded] units>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault"
-		],
+		"prerequisites": ["Rapid Engagement"],
+		"uniques": ["[+20]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 3
+
 	},
 	{
-		"name": "Fast Regrouping",
-		"prerequisites": [
-			"Devistating Charge"
-		],
-		"uniques": [
-			"Unit will heal every turn, even if it performs an action",
-			"[-5] HP when healing"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault"
-		],
+		"name": "Fast Recovery",
+		"prerequisites": ["Devistating Charge"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["Close Combat","Assault"],
 		"column": 7,
 		"row": 4
+
 	},
 	{
 		"name": "Defence Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+10]% Strength <when defending>",
-			"[+5]% Strength <vs ['Skirmishers']> <when defending>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Close Combat"],
 		"column": 8,
 		"row": 1
+
 	},
 	{
 		"name": "Reinforced Position",
-		"prerequisites": [
-			"Defence Doctrine"
-		],
-		"uniques": [
-			"[+25]% Strength <vs [Ranged Combat] units> <when defending>",
-			"[+10]% Strength <vs [Siege] units> <when defending>",
-			"[+10]% Strength <vs ['Mounted'] units> <when defending>",
-			"[+10]% Strength <vs ['Motorised'] units> <when defending>",
-			"[+10]% Strength <vs ['Mechanised'] units> <when defending>",
-			"[+10]% Strength <vs ['Low Altitude Aircraft'] units> <when defending>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat"
-		],
+		"prerequisites": ["Defence Doctrine"],
+		"uniques": ["[+25]% Strength <vs [Ranged Combat] units> <when defending>","[+10]% Strength <vs [Assault] units> <when defending>","[+10]% Strength <vs [Rider] units> <when defending>","[+10]% Strength <vs [Helicopter] units> <when defending>"],
+		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 2
 	},
 	{
 		"name": "Ambushing",
-		"prerequisites": [
-			"Reinforced Position"
-		],
-		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when fighting in [Rough terrain] tiles>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat"
-		],
+		"prerequisites": ["Reinforced Position"],
+		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 3
+
 	},
 	{
-		"name": "Old Guard",
-		"prerequisites": [
-			"Ambushing"
-		],
-		"uniques": [
-			"[+10]% XP gained from combat",
-			"[+25]% Strength <when attacking> <in [City center] tiles>",
-			"[+15]% Strength <in [Fort] tiles>",
-			"[+15]% Strength <in [Trench] tiles>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat"
-		],
+		"name": "City Guard",
+		"prerequisites": ["Ambushing"],
+		"uniques": ["[+33]% Strength <in [City center] tiles>","[+33]% Strength <in [Fort] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 8,
 		"row": 4
+
 	},
 	{
 		"name": "Firepower Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+5]% Strength <when attacking>",
-			"[+10]% Strength <when attacking> <vs ['Dense Formation'] units>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Siege",
-			"Ranged Combat Ship",
-			"Helicopter"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+10]% Strength <vs [Massed] units>"],
+		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 1
+
 	},
 	{
 		"name": "Barrage",
-		"prerequisites": [
-			"Firepower Doctrine"
-		],
-		"uniques": [
-			"[+5]% Strength <when above [50] HP>",
-			"[+10]% Strength <vs [Close Combat] units> <when attacking>",
-			"[+10]% Strength <vs [Close Combat Ship] units> <when attacking>",
-			"[+10]% Strength <vs [Rider] units> <when attacking>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Siege",
-			"Ranged Combat Ship",
-			"Helicopter"
-		],
+		"prerequisites": ["Firepower Doctrine"],
+		"uniques": ["[+15]% Strength <vs [Massed] units> <when attacking>","[+20]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+		"[+5]% Strength <vs [Skirmish] units> <when attacking>"],
+		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship"],
 		"column": 9,
 		"row": 2
 	},
 	{
 		"name": "Ammo Supply",
-		"prerequisites": [
-			"Barrage"
-		],
-		"uniques": [
-			"[1] additional attacks per turn <if it hasn't used other actions yet>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Siege",
-			"Ranged Combat Ship",
-			"Helicopter"
-		],
+		"prerequisites": ["Barrage"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Ranged Combat] unit>"],
+		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 3
+
 	},
 	{
-		"name": "Firing Rotation",
-		"prerequisites": [
-			"Ammo Supply"
-		],
-		"uniques": [
-			"[+15]% Strength <when adjacent to a [Ranged Combat] unit>",
-			"[+15]% Strength <when adjacent to a [Ranged Combat Ship] unit>",
-			"[+15]% Strength <when adjacent to a [Siege] unit>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Siege",
-			"Ranged Combat Ship",
-			"Helicopter"
-		],
+		"name": "Fire Rotation",
+		"prerequisites": ["Ammo Supply"],
+		"uniques": ["[1] additional attacks per turn"],
+		"unitTypes": ["Ranged Combat","Siege","Ranged Combat Ship","Helicopter"],
 		"column": 9,
 		"row": 4
+
 	},
 	{
 		"name": "Accuracy Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+5]% XP gained from combat",
-			"[+10]% Strength <vs ['Skirmishers'] units> <when attacking>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Siege"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+1] Range","[+10]% Strength <vs [Skirmish] units>"],
+		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 1
+
 	},
 	{
 		"name": "Sharpshooting",
-		"prerequisites": [
-			"Accuracy Doctrine"
-		],
-		"uniques": [
-			"[+1] Range",
-			"[+10]% Strength <when fighting in [Rough terrain] tiles>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Siege"
-		],
+		"prerequisites": ["Accuracy Doctrine"],
+		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles>","[+15]% Strength <vs cities>"],
+		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 2
 	},
 	{
 		"name": "Ammo Conservation",
-		"prerequisites": [
-			"Sharpshooting"
-		],
-		"uniques": [
-			"[+1] Movement"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Siege"
-		],
+		"prerequisites": ["Sharpshooting"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 3
+
 	},
 	{
 		"name": "Weakpoint Observation",
-		"prerequisites": [
-			"Ammo Conservation"
-		],
-		"uniques": [
-			"[+20]% Strength <when attacking> <vs [Wounded] units>",
-			"[+25]% Strength <vs cities> <when attacking>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Siege"
-		],
+		"prerequisites": ["Ammo Conservation"],
+		"uniques": ["[+20]% Strength <when attacking>"],
+		"unitTypes": ["Ranged Combat","Siege"],
 		"column": 10,
 		"row": 4
+
 	},
 	{
 		"name": "Intensive Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+5]% Strength",
-			"[+15]% Strength <when adjacent to a [Close Combat] unit>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault",
-			"Close Combat Ship"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 1
+
 	},
 	{
 		"name": "Formation",
 		"prerequisites": [
-			"Intensive Doctrine"
+			//"Entrench",
+			//"Forage",
+			"Loose Formation",
+			"Shock III",
+			"Guerilla Warfare I",
+			"Street Battle I"
 		],
 		"uniques": [
-			"[+5]% Strength",
-			"[+10]% Strength <vs ['Dense Formation'] units>"
+			"[+33]% Strength <vs [Rider] units>",
+			"Only available <for units without [Promotion Nullifier]>"
 		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault",
-			"Close Combat Ship"
-		],
-		"column": 11,
-		"row": 2
-	},
-	{
-		"name": "Swift Formation",
-		"prerequisites": [
-			"Formation"
-		],
-		"uniques": [
-			"[+25]% Strength <vs ['Mounted'] units>",
-			"[+10]% Strength <vs [Ranged Combat] units><when defending>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault",
-			"Close Combat Ship"
-		],
-		"column": 11,
+		"unitTypes": ["Scrapper","Close Combat","Assault","Close Combat Ship"], //Anti Cavalry
+		"column": 6,
 		"row": 3
 	},
 	{
+		"name": "Swift Formation",
+		"prerequisites": ["Formation"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
+		"column": 11,
+		"row": 3
+
+	},
+	{
 		"name": "Combined Arms",
-		"prerequisites": [
-			"Swift Formation"
-		],
-		"uniques": [
-			"[+15]% Strength <vs ['Noble Army'] units>",
-			"[+10]% XP gained from combat",
-			"[This Unit] upgrades for free",
-			"[-25]% Gold cost of upgrading"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault",
-			"Close Combat Ship"
-		],
+		"prerequisites": ["Swift Formation"],
+		"uniques": ["[+10]% Strength <vs [Ranged Combat] units><when defending>","[+10]% Strength <vs [Close Combat] units><when attacking>","[+10]% Strength <vs [Rider] units><when attacking>","[+10]% Strength <vs [Assault] units><when defending>","[+10]% Strength <vs [Close Combat Ship] units><when attacking>","[+10]% Strength <vs [Ranged Combat Ship] units><when defending>"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 11,
 		"row": 4
+
 	},
 	{
 		"name": "Skirmishing Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+25]% Strength <when fighting in [Rough terrain] tiles>",
-			"[+1] Sight"
-		],
-		"unitTypes": [
-			"Scout",
-			"Rider",
-			"Ranged Combat Ship",
-			"Helicopter"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles>","[+1] Sight"],
+		"unitTypes": ["Scout","Rider","Ranged Combat Ship","Helicopter"],
 		"column": 12,
 		"row": 1
+
 	},
 	{
 		"name": "Flanking Tactic",
-		"prerequisites": [
-			"Skirmishing Doctrine"
-		],
-		"uniques": [
-			"[-5]% Strength for enemy [Military] units in adjacent [All] tiles",
-			"[+50]% to Flank Attack bonuses"
-		],
-		"unitTypes": [
-			"Scout",
-			"Rider",
-			"Ranged Combat Ship",
-			"Helicopter"
-		],
+		"prerequisites": ["Skirmishing Doctrine"],
+		"uniques": ["[+50]% to Flank Attack bonuses"],
+		"unitTypes": ["Scout","Rider","Ranged Combat Ship","Helicopter"],
 		"column": 12,
 		"row": 2
 	},
 	{
 		"name": "Land Mobility",
-		"prerequisites": [
-			"Flanking Tactic"
-		],
-		"uniques": [
-			"[+1] Movement"
-		],
-		"unitTypes": [
-			"Scout",
-			"Rider",
-			"Ranged Combat Ship",
-			"Helicopter"
-		],
+		"prerequisites": ["Flanking Tactic"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Scout","Rider","Ranged Combat Ship","Helicopter"],
 		"column": 12,
 		"row": 3
+
 	},
 	{
 		"name": "Pilliging",
-		"prerequisites": [
-			"Land Mobility"
-		],
-		"uniques": [
-			"No movement cost to pillage",
-			"[+15]% Strength <when fighting in [Foreign Land] tiles>"
-		],
-		"unitTypes": [
-			"Scout",
-			"Rider",
-			"Ranged Combat Ship",
-			"Helicopter"
-		],
+		"prerequisites": ["Land Mobility"],
+		"uniques": ["No movement cost to pillage","[+10]% Strength <when fighting in [Foreign Land] tiles>"],
+		"unitTypes": ["Scout","Rider","Ranged Combat Ship","Helicopter"],
 		"column": 12,
 		"row": 4
+
 	},
 	{
 		"name": "Assault Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+10]% Strength <when attacking>"
-		],
-		"unitTypes": [
-			"Assault",
-			"Submarine"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+15]% Strength <when attacking>"],
+		"unitTypes": ["Assault","Submarine"],
 		"column": 13,
 		"row": 1
+
 	},
 	{
 		"name": "High Speed Charge",
-		"prerequisites": [
-			"Assault Doctrine"
-		],
-		"uniques": [
-			"[+33]% Strength <vs [Ranged Combat Ship] units> <when attacking>",
-			"[+25]% Strength <vs [Ranged Combat] units> <when attacking>"
-		],
-		"unitTypes": [
-			"Assault",
-			"Submarine"
-		],
+		"prerequisites": ["Assault Doctrine"],
+		"uniques": ["[+33]% Strength <vs [Ranged Combat Ship] units> <when attacking>","[+25]% Strength <vs [Ranged Combat] units> <when attacking>"],
+		"unitTypes": ["Assault","Submarine"],
 		"column": 13,
 		"row": 2
 	},
 	{
 		"name": "Breakthrough",
-		"prerequisites": [
-			"High Speed Charge"
-		],
-		"uniques": [
-			"[+25]% Strength <vs ['Dense Formation'] units> <when attacking>"
-		],
-		"unitTypes": [
-			"Assault",
-			"Submarine"
-		],
+		"prerequisites": ["High Speed Charge"],
+		"uniques": ["[+25]% Strength <vs [Close Combat] units> <when attacking>","[+25]% Strength <vs [Close Combat Ship] units> <when attacking>"],
+		"unitTypes": ["Assault","Submarine"],
 		"column": 13,
 		"row": 3
+
 	},
 	{
 		"name": "Rotation Tactic",
-		"prerequisites": [
-			"Breakthrough"
-		],
-		"uniques": [
-			"[1] additional attacks per turn",
-			"Unit will heal every turn, even if it performs an action",
-			"[-10] HP when healing"
-		],
-		"unitTypes": [
-			"Assault",
-			"Submarine"
-		],
+		"prerequisites": ["Breakthrough"],
+		"uniques": ["[1] additional attacks per turn","Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["Assault","Submarine"],
 		"column": 13,
 		"row": 4
+
 	},
 	{
 		"name": "Sailing Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+1] Movement <when fighting in [Coast] tiles>"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+1] Sight","[+1] Movement <when fighting in [Coast] tiles>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier","Submarine"],
 		"column": 14,
 		"row": 1
+
 	},
 	{
 		"name": "Water Mobility",
-		"prerequisites": [
-			"Sailing Doctrine"
-		],
-		"uniques": [
-			"[+1] Movement <when fighting in [Ocean] tiles>",
-			"[+10]% Strength <vs ['Galley'] units> <when attacking>"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine"
-		],
+		"prerequisites": ["Sailing Doctrine"],
+		"uniques": ["[+1] Movement <when fighting in [Ocean] tiles>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier","Submarine"],
 		"column": 14,
 		"row": 2
 	},
 	{
 		"name": "Hydrology Scouting",
-		"prerequisites": [
-			"Water Mobility"
-		],
-		"uniques": [
-			"[+1] Sight",
-			"[+25]% Strength <vs [Submarine] units> <when attacking>"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine"
-		],
+		"prerequisites": ["Water Mobility"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier","Submarine"],
 		"column": 14,
 		"row": 3
+
 	},
 	{
 		"name": "Top Speed",
-		"prerequisites": [
-			"Hydrology Scouting"
-		],
-		"uniques": [
-			"[+1] Movement"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine"
-		],
+		"prerequisites": ["Hydrology Scouting"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier","Submarine"],
 		"column": 14,
 		"row": 4
+
 	},
 	{
 		"name": "Boarding Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+15]% Strength <when fighting in [Open terrain] tiles>",
-			"Eliminates combat penalty for attacking across a coast"
-		],
-		"unitTypes": [
-			"Close Combat Ship"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+15]% Strength <when fighting in [Coast] tiles>"],
+		"unitTypes": ["Close Combat Ship"],
 		"column": 15,
 		"row": 1
+
 	},
 	{
 		"name": "Naval Ram",
-		"prerequisites": [
-			"Boarding Doctrine"
-		],
-		"uniques": [
-			"[+25]% Strength <vs ['Galley'] units> <when attacking>",
-			"[+20]% Strength <vs ['Sailing Ship'] units> <when attacking>",
-			"[+10]% Strength <vs ['Engine Ship'] units> <when attacking>",
-			"[+5]% Strength <vs ['Nuclear Powered Ship'] units> <when attacking>"
-		],
-		"unitTypes": [
-			"Close Combat Ship"
-		],
+		"prerequisites": ["Boarding Doctrine"],
+		"uniques": ["[+25]% Strength <when attacking>"],
+		"unitTypes": ["Close Combat Ship"],
 		"column": 15,
 		"row": 2
 	},
 	{
 		"name": "Ship Grabbing",
-		"prerequisites": [
-			"Naval Ram"
-		],
-		"uniques": [
-			"May capture killed [Water] units"
-		],
-		"unitTypes": [
-			"Close Combat Ship"
-		],
+		"prerequisites": ["Naval Ram"],
+		"uniques": ["May capture killed [Water] units"],
+		"unitTypes": ["Close Combat Ship"],
 		"column": 15,
 		"row": 3
+
 	},
 	{
 		"name": "Priating",
-		"prerequisites": [
-			"Ship Grabbing"
-		],
-		"uniques": [
-			"No movement cost to pillage",
-			"[+25]% Strength <when fighting in [Foreign Land] tiles>"
-		],
-		"unitTypes": [
-			"Close Combat Ship"
-		],
+		"prerequisites": ["Ship Grabbing"],
+		"uniques": ["No movement cost to pillage", "[+5]% Strength <when fighting in [Foreign Land] tiles>"],
+		"unitTypes": ["Close Combat Ship"],
 		"column": 15,
 		"row": 4
+
 	},
 	{
 		"name": "BVR Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+10]% Strength <when defending>",
-			"Can carry [1] extra [Aircraft] units"
-		],
-		"unitTypes": [
-			"Carrier"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+5]% Strength <when defending>","Can carry [1] extra [Aircraft] units"],
+		"unitTypes": ["Carrier"],
 		"column": 16,
 		"row": 1
+
 	},
 	{
 		"name": "Organized Deck",
-		"prerequisites": [
-			"BVR Doctrine"
-		],
-		"uniques": [
-			"Can carry [2] extra [Aircraft] units"
-		],
-		"unitTypes": [
-			"Carrier"
-		],
+		"prerequisites": ["BVR Doctrine"],
+		"uniques": ["Can carry [2] extra [Aircraft] units"],
+		"unitTypes": ["Carrier"],
 		"column": 16,
 		"row": 2
 	},
 	{
 		"name": "Faster Shift",
-		"prerequisites": [
-			"Organized Deck"
-		],
-		"uniques": [
-			"[+10]% Strength <when defending>",
-			"Can carry [1] extra [Aircraft] units"
-		],
-		"unitTypes": [
-			"Carrier"
-		],
+		"prerequisites": ["Organized Deck"],
+		"uniques": ["[+10]% Strength <when defending>","Can carry [1] extra [Aircraft] units"],
+		"unitTypes": ["Carrier"],
 		"column": 16,
 		"row": 3
+
 	},
 	{
 		"name": "Anti-Air Firepower",
-		"prerequisites": [
-			"Faster Shift"
-		],
-		"uniques": [
-			"[+20]% chance to intercept air attacks",
-			"[+33]% Strength <vs ['Low Altitude Aircraft'] units> <when defending>",
-			"[+33]% Strength <vs [Bomber] units> <when defending>"
-		],
-		"unitTypes": [
-			"Carrier"
-		],
+		"prerequisites": ["Faster Shift"],
+		"uniques": ["[+33]% Strength <vs [Low Altitude Aircraft] units>","[+33]% Strength <vs [Bomber] units> <when defending>"],
+		"unitTypes": ["Carrier"],
 		"column": 16,
 		"row": 4
+
 	},
 	{
 		"name": "Superiority Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+10]% Strength <when attacking>",
-			"[+15]% Damage when intercepting"
-		],
-		"unitTypes": [
-			"Fighter"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+33]% Damage when intercepting"],
+		"unitTypes": ["Fighter"],
 		"column": 17,
 		"row": 1
+
 	},
 	{
 		"name": "Dog fighting",
-		"prerequisites": [
-			"Superiority Doctrine"
-		],
-		"uniques": [
-			"[+10]% XP gained from combat",
-			"[+15]% Strength when performing Air Sweep"
-		],
-		"unitTypes": [
-			"Fighter"
-		],
+		"prerequisites": ["Superiority Doctrine"],
+		"uniques": ["[+33]% Strength when performing Air Sweep"],
+		"unitTypes": ["Fighter"],
 		"column": 17,
 		"row": 2
 	},
 	{
 		"name": "Highlevel Manuver",
-		"prerequisites": [
-			"Dog fighting"
-		],
-		"uniques": [
-			"[+18]% Strength when performing Air Sweep",
-			"[+18]% Damage when intercepting",
-			"Damage taken from interception reduced by [20]%"
-		],
-		"unitTypes": [
-			"Fighter"
-		],
+		"prerequisites": ["Dog fighting"],
+		"uniques": ["[+34]% Strength when performing Air Sweep","[+33]% Damage when intercepting"],
+		"unitTypes": ["Fighter"],
 		"column": 17,
 		"row": 3
+
 	},
 	{
 		"name": "Rapid Interception",
-		"prerequisites": [
-			"Highlevel Manuver"
-		],
-		"uniques": [
-			"[1] extra interceptions may be made per turn"
-		],
-		"unitTypes": [
-			"Fighter"
-		],
+		"prerequisites": ["Highlevel Manuver"],
+		"uniques": ["[1] extra interceptions may be made per turn"],
+		"unitTypes": ["Fighter"],
 		"column": 17,
 		"row": 4
+
 	},
 	{
 		"name": "Devistation Doctrine",
-		"prerequisites": [
-			"Hardened"
-		],
-		"uniques": [
-			"[+15]% Strength <when attacking>"
-		],
-		"unitTypes": [
-			"Bomber",
-			"Atomic Bomber"
-		],
+		"prerequisites": ["Hardened"],
+		"uniques": ["[+33]% Strength <when attacking>"],
+		"unitTypes": ["Bomber","Atomic Bomber"],
 		"column": 18,
 		"row": 1
+
 	},
 	{
 		"name": "Extra Bomb Bay",
-		"prerequisites": [
-			"Devistation Doctrine"
-		],
-		"uniques": [
-			"[+10]% XP gained from combat",
-			"[+18]% Strength <when attacking>"
-		],
-		"unitTypes": [
-			"Bomber",
-			"Atomic Bomber"
-		],
+		"prerequisites": ["Devistation Doctrine"],
+		"uniques": ["[+33]% Strength <when attacking>"],
+		"unitTypes": ["Bomber","Atomic Bomber"],
 		"column": 18,
 		"row": 2
 	},
 	{
 		"name": "Manuvering Anti-Air",
-		"prerequisites": [
-			"Extra Bomb Bay"
-		],
-		"uniques": [
-			"[+33]% Strength <vs [Fighter] units>",
-			"Damage taken from interception reduced by [20]%"
-		],
-		"unitTypes": [
-			"Bomber",
-			"Atomic Bomber"
-		],
+		"prerequisites": ["Extra Bomb Bay"],
+		"uniques": ["[+33]% Strength <vs [Fighter] units>"],
+		"unitTypes": ["Bomber","Atomic Bomber"],
 		"column": 18,
 		"row": 3
+
 	},
 	{
 		"name": "Carpet Bombing",
-		"prerequisites": [
-			"Manuvering Anti-Air"
-		],
-		"uniques": [
-			"[+33]% Strength <vs cities>",
-			"[1] additional attacks per turn"
-		],
-		"unitTypes": [
-			"Bomber",
-			"Atomic Bomber"
-		],
+		"prerequisites": ["Manuvering Anti-Air"],
+		"uniques": ["[+33]% Strength <vs cities>","[1] additional attacks per turn"],
+		"unitTypes": ["Bomber","Atomic Bomber"],
 		"column": 18,
 		"row": 4
+
 	},
+	{
+		"name": "Kavkhan",
+		"uniques": ["[+15]% Strength bonus for [Military] units within [2] tiles"]
+	},  
+	{
+		"name": "Crusader",
+		"uniques": ["Can move immediately once bought"]
+	}, 
+	{
+		"name": "[Housecarl] ability",
+		"uniques": ["Double movement in [Snow]","Double movement in [Tundra]","Double movement in [Hill]","Double movement in [Coast]","Normal vision when embarked"]
+	}, 
+	{
+		"name": "[Companion Cavalry] ability",
+		"uniques": ["[+15]% Strength <when attacking> <when above [90] HP>"]		
+	},
+	{
+		"name": "[Hypaspist] ability",
+		"uniques": ["[+75]% to Flank Attack bonuses"]			
+	},
+	{
+		"name": "[Keshik] ability",
+		"uniques": ["[Great General] is earned [50]% faster","[+50]% XP gained from combat"]		
+	},
+	{
+		"name": "[Iron Wall Legion] ability",
+		"uniques": ["Can build [Fort] improvements on tiles", "[+20]% Strength <when defending>"]			
+	},
+	{
+        "name": "[Mobile Archer] ability",
+        "uniques": ["Ignores terrain cost"]
+	},  
+	{
+		"name": "[Conquistador] ability",
+		"uniques": ["[+100]% Strength <when defending> <when [Embarked]>"]
+	},
+	{
+		"name": "[Hakkapeliitta] ability",
+		"uniques": ["Transfer Movement to [Great General]", "[+15]% Strength when stacked with [Great General]"]
+	},
+	{
+		"name": "[Impi] ability",
+		"unniques": ["[+50]% XP gained from combat", "[+50]% to Flank Attack bonuses"]	
+	},
+	{
+		"name": "[Andean Army] ability",
+		"uniques": ["Ignores terrain cost", "Can pass through impassable tiles"]		
+	},
+	{
+		"name": "[Templar Knight] ability",
+		"uniques": ["Prevents spreading of religion to the city it is next to", "Gain [200] [Gold] <(modified by game speed)> <upon being defeated>", "Gain [40] [Faith] <(modified by game speed)> <upon being promoted>"]
+	},
+	{
+		"name": "Pictish Courage",
+		"uniques": ["No movement cost to pillage", "[+15]% Strength <when fighting in [Foreign Land] tiles>"]	
+	},
+    {
+        "name": "[Heavy Spear Cavalry] ability",
+        "uniques": ["[+25]% Strength <vs [Mobile] units>"]
+	},
+    {
+        "name": "[Red Mirror Horseman] ability",
+        "uniques": ["[+10]% Strength <when adjacent to a [Shooter] unit>"]
+    },
+    {
+        "name": "[Spartacus] ability",
+        "uniques": ["May capture killed [Foot Soldier] units <with [20]% chance> <during the [Classical era]>"],
+    },
+    {
+        "name": "[Timur] ability I",
+        "uniques": ["[This Unit] gains [1] movement", "[+1] additional attacks per turn"],
+    },
+    {
+        "name": "[Khalid ibn al-Walid] ability",
+        "uniques": ["[+25]% Strength <vs cities> <during the [Medieval era]>"],
+    },
+    {
+        "name": "[Bayezid I] ability",
+        "uniques": ["[+15]% Strength <vs [Wounded] units> <when attacking> <during the [Medieval era]>"],
+    },
+	{
+        "name": "[Narses] ability",
+        "uniques": ["[-33]% Gold cost of upgrading <during the [Medieval era]>"],
+    },
+    {
+        "name": "[Mohawk Warrior] ability",
+        "uniques": ["[+25]% Strength <when fighting in [Enemy Land] tiles>", "[Great General] is earned [50]% faster"],
+    },
+    {
+        "name": "[Black Watch] ability",
+        "uniques": ["[+20]% Strength <when fighting in [Rough terrain] tiles>"],
+    },
+    {
+        "name": "[Mandekalu Cavalry] ability",
+        "uniques": ["[-10]% Strength"],
+    },
+    {
+        "name": "[Elite Cavalry] ability",
+        "uniques": ["[+15]% Strength <when adjacent to a [Great General] unit>"],
+    },
+    {
+        "name": "[Miner Corps] ability",
+        "uniques": ["[+20]% Strength <when fighting in [Mine] tiles>"],
+    },
+	{     
+		"name": "Rejuvenation", 
+		"uniques": ["All healing effects doubled"]
+	},
+	{
+		"name": "Morale", // Heroic Epic
+		"uniques": ["[+15]% Strength"]
+	},
+	{
+		"name": "Crossing the Mountain",
+		"uniques": ["Can pass through impassable tiles"]
+	},
+	{
+		"name": "More Fight More Brave",
+		"uniques": ["Heals [15] damage if it kills a unit", "Can move after attacking"]	
+	},
+	{
+		"name": "TomyrisAbility", // 托米丽司
+		"uniques": ["Free [Horseman] appears"]
+	},
+	{
+		"name": "Defend the Motherland",
+		"uniques": ["[+10]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "Blizzard Wind Ability",
+		"uniques": [
+		"Turn this tile into a [Tundra] tile <once> <in [Your] cities> <in [Desert] tiles>",
+		"Turn this tile into a [Tundra] tile <once> <in [Your] cities> <in [Grassland] tiles>",
+		"Turn this tile into a [Tundra] tile <once> <in [Your] cities> <in [Plains] tiles>", 
+		"Turn this tile into a [Snow] tile <once> <in [Your] cities> <in [Tundra] tiles>"]
+	},
+	{
+		"name": "With One Heart",
+		"uniques": [
+		"[+3]% Strength <when adjacent to a [Foot Soldier] unit>",
+		"[+3]% Strength <when adjacent to a [Shooter] unit>",
+		"[+3]% Strength <when adjacent to a [Anti-Mobile] unit>",
+		"[+3]% Strength <when adjacent to a [Mobile] unit>",
+		]
+	},
+	{
+		"name": "Record",
+		"uniques": [
+		"Earn [50]% of killed [Military] unit's [Strength] as [Science]"
+		]
+	},
+    {
+        "name": "Turk ability",
+        "uniques":["[Target Unit] takes [5] damage <upon damaging a [Wounded] unit>"]
+    },
+	{
+		"name": "Military City ability",
+		"uniques": ["[+10]% Strength"]
+	},
+	//
+	{
+		"name": "Lightening Warfare",
+		"uniques": ["Ignores Zone of Control", "[1] additional attacks per turn"],
+		"prerequisites": ["Field Mending", "Shock and Awe"],
+		"unitTypes": ["Assault"]
+	},
+	{
+		"name": "Warhorse Blinkers",
+		"uniques": ["[+15]% Strength <in [Open terrain] tiles>", "[+15]% Strength <when attacking>"],
+		"unitTypes": ["Assault"]
+	},
+	{
+		"name": "Barding",
+		"uniques": ["[+20]% Strength <vs [Ranged Combat] units> <when defending>"],
+		"unitTypes": ["Assault"]
+	},
+	{
+		"name": "Jousting",
+		"uniques": ["[+15]% Strength <vs [Assault] units>", "[+15]% Strength <vs [Rider] units>"],
+		"prerequisites": ["Warhorse Blinkers", "Barding"],
+		"unitTypes": ["Assault"]
+	},
+	{
+		"name": "Field Mending",
+		"uniques": ["Unit will heal every turn, even if it performs an action", "[+5] HP when healing"],
+		"prerequisites": ["Jousting"],
+		"unitTypes": ["Assault"]
+	},
+	//
+	{
+		"name": "Harassing Fire",
+		"uniques": ["[+20]% Strength <vs [Close Combat] units> <when attacking>", "[+20]% Strength <vs [Anti Cavalry] units> <when attacking>"],//Close Combat
+		"unitTypes": ["Assault","Rider"]
+	},
+	{
+		"name": "Accuracy",
+		"uniques": ["[+20]% Strength <in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Assault","Rider"]
+	},
+	{
+		"name": "Evasive Tactic",
+		"uniques": ["May withdraw before melee ([40]%)"],
+		"prerequisites": ["Harassing Fire"],
+		"unitTypes": ["Assault","Rider"]
+	},
+	{
+		"name": "Loose Formation",
+		"uniques": ["[+25]% Strength <vs [Ranged Combat] units> <when defending>"],
+		"prerequisites": ["Accuracy"],
+		"unitTypes": ["Assault","Rider"]
+	},
+	{
+		"name": "Shoot and Scoot",
+		"uniques": ["Can move after attacking"],
+		"prerequisites": ["Evasive Tactic", "Huntdown"],
+		"unitTypes": ["Assault","Rider"]
+	},
+	{
+		"name": "Huntdown",
+		"uniques": ["[+1] Movement", "[+25]% Strength <vs [Wounded] units>"],
+		"prerequisites": ["Loose Formation", "Shoot and Scoot"],
+		"unitTypes": ["Assault","Rider"]
+	},
+	{
+		"name": "Veteran Skirmisher",
+		"uniques": ["[+30]% Strength", "Ignores terrain cost"],
+		"prerequisites": ["Huntdown", "Shoot and Scoot"],		
+		"unitTypes": ["Assault","Rider"]
+	},
+	//
+	{
+		"name": "Long Weapons",
+		"uniques": ["[+20]% Strength <vs [Assault] units>", "[+20]% Strength <vs [Rider] units>"],
+		"unitTypes": ["Counter Cavalry"]
+	},
+	{
+		"name": "Ambush",
+		"uniques": ["[+25]% Strength <in [Rough terrain] tiles>", "[+30]% Strength <in [City center] tiles>"],
+		"unitTypes": ["Assault"]
+	},
+	{
+		"name": "Protection",
+		"uniques": ["[+15]% Strength <when defending>"],
+		"prerequisites": ["Ambush"],
+		"unitTypes": ["Assault"]
+	},
+	{
+		"name": "Preemptive",
+		"uniques": ["[+30]% Strength <when attacking>"],
+		"prerequisites": ["Pursuit"],
+		"unitTypes": ["Assault"]
+	},
+	{
+		"name": "Fast Withdrawal",
+		"uniques": ["Can move after attacking"],
+		"prerequisites": ["Protection"],
+		"unitTypes": ["Assault"]
+	},
+	{
+		"name": "Rear Attack",
+		"uniques": ["[+1] Movement", "Ignores Zone of Control", "[+50]% to Flank Attack bonuses"],
+		"prerequisites": ["Preemptive", "Fast Withdrawal"],
+		"unitTypes": ["Assault"]
+	},
+
 	///Equipments
 	{
 		"name": "Primitive Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"This Promotion is free"
-		],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"uniques":["This Promotion is free"],
 		"column": 19,
 		"row": 0
 	},
 	{
 		"name": "Javalin",
-		"prerequisites": [
-			"Primitive Arms"
-		],
-		"uniques": [
-			"[+33]% Strength <vs [{non-[Wounded]} {Close Combat} {'Edged Weapons'}] units> <when attacking> <before the [Renaissance era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider"
-		],
+		"prerequisites": ["Primitive Arms"],
+		"uniques": ["[+100]% Strength <vs [{non-[Wounded]}]><vs [Close Combat] units> <before the [Medieval era]>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 19,
 		"row": 1
+
 	},
 	{
 		"name": "Mace",
-		"prerequisites": [
-			"Primitive Arms"
-		],
-		"uniques": [
-			"[+8]% Strength <when attacking> <vs ['Edged Weapons'] units>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Scout",
-			"Rider",
-			"Assault"
-		],
+		"prerequisites": ["Primitive Arms"],
+		"uniques": ["[+10]% Strength"],
+		"unitTypes": ["Close Combat","Scout","Rider","Assault"],
 		"column": 19,
 		"row": 2
+
 	},
 	{
 		"name": "Slinger",
-		"prerequisites": [
-			"Primitive Arms"
-		],
-		"uniques": [
-			"[+20]% Strength <vs ['Dense Formation'] units> <when attacking> <before the [Medieval era]>",
-			"[+10]% Strength <vs ['Dense Formation'] units> <when attacking> <starting from the [Medieval era]><before the [Renaissance era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout"
-		],
+		"prerequisites": ["Primitive Arms"],
+		"uniques": ["[+20]% Strength <vs [Massed] units> <before the [Medieval era]>","[+1]% Strength <vs [Massed] units> <starting from the [Medieval era]>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 19,
 		"row": 3
+
 	},
 	{
 		"name": "Lightshield",
-		"prerequisites": [
-			"Primitive Arms"
-		],
-		"uniques": [
-			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault"
-		],
+		"prerequisites": ["Primitive Arms"],
+		"uniques": ["[+10]% Strength <vs [Edged] units> <before the [Renaissance era]>","[+3] HP when healing <before the [Renaissance era]>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
 		"column": 19,
 		"row": 4
+
 	},
 	{
 		"name": "Classical Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"Only available <starting from the [Classical era]>"
-		],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"uniques":["Only available <starting from the [Classical era]>"],
 		"column": 20,
 		"row": 0
 	},
 	{
 		"name": "Pike",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"[+18]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>",
-			"[+15]% Strength <when fighting in [Open terrain] tiles> <when defending> <vs [{'Mounted'} {'Edged Weapons'} {Rider}] units> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Close Combat"
-		],
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+25]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>","[+10]% Strength <vs [Mounted] units> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat"],
 		"column": 20,
 		"row": 1
+
 	},
 	{
 		"name": "War Axe",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Rider",
-			"Assault"
-		],
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+25]% Strength <when attacking> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 20,
 		"row": 2
+
 	},
 	{
-		"name": "Recurve bow",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Scout"
-		],
+		"name": "Recursive Bow",
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+25]% Strength <when attacking> <before the [Imperial era]>"],
+		"unitTypes": ["Ranged Combat","Scout"],
 		"column": 20,
 		"row": 3
+
 	},
 	{
-		"name": "Short Bow",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"[+20]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Rider"
-		],
+		"name": "Shortbow",
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+33]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"],
+		"unitTypes": ["Ranged Combat","Rider"],
 		"column": 20,
 		"row": 4
+
 	},
 	{
 		"name": "Strip Armour",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns> <before the [Imperial era]>",
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Medieval era]>",
-			"[+10]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>",
-			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault"
-		],
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+25]% Strength <vs [Edged] units> <before the [Medieval era]>","[+5]% Strength <vs [Blunt] units> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat","Assault","Close Combat Ship"],
 		"column": 21,
 		"row": 1
+
 	},
 	{
 		"name": "Textile Armour",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Scout",
-			"Rider"
-		],
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+20]% Strength <vs [Edged] units> <before the [Imperial era]>"],
+		"unitTypes": ["Ranged Combat","Scout","Rider"],
 		"column": 21,
 		"row": 2
+
 	},
 	{
 		"name": "Heavyshield",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"[+20]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Imperial era]>",
-			"[-5]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Siege",
-			"Close Combat Ship"
-		],
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+40]% Strength <vs [Edged] units> <when defending> <before the [Imperial era]>","[-25]% Strength <when fighting in [Rough terrain] tiles> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat","Siege"],
 		"column": 21,
 		"row": 3
+
 	},
 	{
 		"name": "Sharpnel Rounds",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+33]% Strength <vs ['Dense Formation'] units> <when attacking>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Ranged Combat Ship"
-		],
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+33]% Strength <vs [Land] units>"],
+		"unitTypes": ["Siege"],
 		"column": 22,
 		"row": 1
+
 	},
 	{
 		"name": "Flaming Rounds",
-		"prerequisites": [
-			"Classical Arms"
-		],
-		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+33]% Strength <vs cities> <when attacking>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Ranged Combat Ship"
-		],
+		"prerequisites": ["Classical Arms"],
+		"uniques": ["[+33]% Strength <vs cities>"],
+		"unitTypes": ["Siege"],
 		"column": 22,
 		"row": 2
+
 	},
 	{
-		"name": "Medieval Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"Only available <starting from the [Medieval era]>"
-		],
+		"name": "Medieval Arms", 
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege","Close Combat Ship","Ranged Combat Ship"],
+		"uniques":["Only available <starting from the [Medieval era]>"],
 		"column": 23,
 		"row": 0
 	},
 	{
 		"name": "Halberd",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"[+25]% Strength <when attacking> <before the [Imperial era]>",
-			"[+10]% Strength <vs ['Mounted'] units> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Rider",
-			"Assault"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+27]% Strength <before the [Imperial era]>","[+13]% Strength <vs [Mounted] units> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 23,
 		"row": 1
+
 	},
 	{
 		"name": "Warhammer",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"[+15]% Strength <before the [Renaissance era]>",
-			"[+18]% Strength <vs [Assault] units> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Rider",
-			"Assault"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+17]% Strength <before the [Renaissance era]>","[+33]% Strength <vs [Assault] units> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 23,
 		"row": 2
+
 	},
 	{
 		"name": "Longbow",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"[+15]% Strength <when attacking> <before the [Renaissance era]>",
-			"[+18]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Scout"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+25]% Strength <before the [Renaissance era]>","[+25]% Strength <when fighting in [Open terrain] tiles> <before the [Imperial era]>"],
+		"unitTypes": ["Ranged Combat","Scout"],
 		"column": 24,
 		"row": 1
+
 	},
 	{
 		"name": "Crossbow",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"[+15]% Strength <before the [Imperial era]>",
-			"[+18]% Strength <vs [Assault] units> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Ranged Combat"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+25]% Strength <before the [Renaissance era]>","[+33]% Strength <vs [Assault] units> <before the [Imperial era]>"],
+		"unitTypes": ["Ranged Combat"],
 		"requiredTech": "Engineering",
 		"column": 24,
 		"row": 2
+
 	},
 	{
 		"name": "Arblaster",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Physics]>",
-			"[+17]% Strength <when attacking> <before the [Imperial era]>",
-			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Ranged Combat"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+33]% Strength <vs cities> <before the [Imperial era]>"],
+		"unitTypes": ["Ranged Combat"],
 		"column": 24,
 		"row": 3
+
 	},
 	{
 		"name": "Chainmail Armour",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns> <before the [Imperial era]>",
-			"[+25]% Strength <vs ['Edged Weapons'] units> <when defending> <before the [Renaissance era]>",
-			"[+5]% Strength <vs ['Siege Weapons'] units> <when defending> <before the [Renaissance era]>",
-			"[+15]% Strength <vs ['Edged Weapons'] units> <when defending> <starting from the [Renaissance era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Rider",
-			"Assault"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+33]% Strength <vs [Edged] units> <before the [Imperial era]>","[+10]% Strength <vs [Blunt] units> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 25,
 		"row": 1
+
 	},
 	{
 		"name": "Padded Armour",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"[+17]% Strength <vs ['Edged Weapons'] units> <before the [Renaissance era]>",
-			"[+10]% Strength <vs ['Edged Weapons'] units> <starting from the [Renaissance era]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Rider",
-			"Assault",
-			"Ranged Combat",
-			"Scout"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+25]% Strength <vs [Edged] units> <before the [Imperial era]>"],
+		"unitTypes": ["Close Combat","Rider","Assault","Ranged Combat","Scout"],
 		"column": 25,
 		"row": 2
 	},
 	{
 		"name": "Flaming Projectiles",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"[+33]% Strength <vs cities> <when attacking> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Ranged Combat"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+33]% Strength <vs cities> <before the [Imperial era]>"],
+		"unitTypes": ["Ranged Combat"],
 		"column": 25,
 		"row": 3
+
 	},
 	{
 		"name": "Armor Piercing Projectile",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"[+25]% Strength <vs [Assault] units> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Ranged Combat"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["[+25]% Strength <vs [Assault] units> <before the [Imperial era]>"],
+		"unitTypes": ["Ranged Combat"],
 		"column": 25,
 		"row": 4
+
 	},
 	{
 		"name": "Gunpowder Projectile",
-		"prerequisites": [
-			"Medieval Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Gunpowder Making]>",
-			"[+33]% Strength <when attacking> <before the [Imperial era]>"
-		],
-		"unitTypes": [
-			"Siege"
-		],
+		"prerequisites": ["Medieval Arms"],
+		"uniques": ["Only available <after discovering [Gunpowder]>","[+50]% Strength <before the [Imperial era]>"],
+		"unitTypes": ["Siege"],
 		"column": 25,
 		"row": 5
+
 	},
 	{
-		"name": "Renaissance Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"Only available <starting from the [Renaissance era]>"
-		],
+		"name": "Renaissance Arms", 
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"uniques":["Only available <starting from the [Renaissance era]>"],
 		"column": 26,
 		"row": 0
 	},
 	{
 		"name": "Plate Armour",
-		"prerequisites": [
-			"Renaissance Arms"
-		],
-		"uniques": [
-			"Gain [-3] [Gold] <every [1] turns>",
-			"[+50]% Strength <vs ['Edged Weapons'] units>",
-			"[+10]% Strength <vs ['Firearms'] units>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Assault"
-		],
+		"prerequisites": ["Renaissance Arms"],
+		"uniques": ["[+50]% Strength <vs [Edged] units>","[+10]% Strength <vs [Gunpowder] units>"],
+		"unitTypes": ["Close Combat","Rider","Assault"],
 		"column": 26,
 		"row": 1
+
 	},
 	{
 		"name": "Partial Plate Armour",
-		"prerequisites": [
-			"Renaissance Arms"
-		],
-		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs ['Edged Weapons'] units>",
-			"[+5]% Strength <vs ['Firearms'] units>"
-		],
-		"unitTypes": [
-			"Ranged Combat",
-			"Rider",
-			"Scout"
-		],
+		"prerequisites": ["Renaissance Arms"],
+		"uniques": ["[+33]% Strength <vs [Edged] units>","[+5]% Strength <vs [Gunpowder] units>"],
+		"unitTypes": ["Close Combat","Assault","Ranged Combat","Scout"],
 		"column": 26,
 		"row": 2
+
 	},
 	{
 		"name": "Wheellock Pistol",
-		"prerequisites": [
-			"Renaissance Arms"
-		],
-		"uniques": [
-			"[+33]% Strength <vs ['Infantry'] units> <before the [Industrial era]>"
-		],
-		"unitTypes": [
-			"Rider",
-			"Assault"
-		],
+		"prerequisites": ["Renaissance Arms"],
+		"uniques": ["[+33]% Strength <vs [Infantry] units> <before the [Industrial era]>"],
+		"unitTypes": ["Rider","Assault"],
 		"column": 26,
 		"row": 3
+
 	},
 	{
 		"name": "Industrial Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"Only available <starting from the [Industrial era]>"
-		],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"uniques":["Only available <starting from the [Industrial era]>"],
 		"column": 27,
 		"row": 0
+
 	},
 	{
 		"name": "Mortar",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Dynamite]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs ['Infantry'] units> <when attacking> <when fighting in [Rough terrain] tiles>",
-			"[+25]% Strength <vs ['Infantry'] units> <when fighting in [Trench] tiles>",
-			"[+15]% Strength <vs ['Infantry'] units> <when fighting in [Fort] tiles>",
-			"[+10]% Strength <vs ['Infantry'] units> <when fighting in [Citadel] tiles>",
-			"[+25]% Strength <when attacking> <vs cities>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout"
-		],
+		"prerequisites": ["Industrial Arms"],
+		"uniques": ["[+25]% Strength <when fighting in [Rough terrain] tiles>","[+25]% Strength <when fighting in [Fort] tiles>","[+25]% Strength <when fighting in [Citadel] tiles>","[+25]% Strength <when fighting in [City center] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 27,
 		"row": 1
+
 	},
 	{
 		"name": "Anti-tank Rifle",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Combustion]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+15]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+18]% Strength <vs [{'Mechanised'} {Assault}] units> <when defending>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout"
-		],
+		"prerequisites": ["Industrial Arms"],
+		"uniques": ["Only available <after discovering [Rifling]>","[+15]% Strength <vs [Assault] units>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 27,
 		"row": 2
+
 	},
 	{
 		"name": "Machinegun",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Mass Production]>",
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <when defending> <when fighting in [Open terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+15]% Strength <when defending> <when fighting in [Rough terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+15]% Strength <when attacking> <when fighting in [Open terrain] tiles> <vs [non-['Mechanised']] units>",
-			"[+7]% Strength <when attacking> <when fighting in [Rough terrain] tiles> <vs [non-['Mechanised']] units>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout"
-		],
+		"prerequisites": ["Industrial Arms"],
+		"uniques": ["[+15]% Strength <when defending>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 27,
 		"row": 3
+
 	},
 	{
 		"name": "Landmine",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Dynamite]>",
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+15]% Strength <when defending>",
-			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout"
-		],
+		"prerequisites": ["Industrial Arms"],
+		"uniques": ["Only available <after discovering [Dynamite]>","[+15]% Strength <when defending>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout"],
 		"column": 28,
 		"row": 1
+
 	},
 	{
 		"name": "Grenade",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Dynamite]>",
-			"[+20]% Strength <when attacking> <vs ['Infantry'] units>",
-			"[+10]% Strength <when attacking> <vs [non-['Infantry']] units>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider"
-		],
+		"prerequisites": ["Industrial Arms"],
+		"uniques": ["Only available <after discovering [Dynamite]>","[+15]% Strength <when attacking>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 28,
 		"row": 2
 	},
 	{
 		"name": "Sapper Corps",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege"
-		],
-		"uniques": [
-			"Only available <after discovering [Dynamite]>",
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs cities>",
-			"[+25]% Strength <when fighting in [City center] tiles>",
-			"[+25]% Strength <when defending> <when fighting in [Fort] tiles>",
-			"[+25]% Strength <when fighting in [Trench] tiles>",
-			"[+25]% Strength <when defending> <when fighting in [Citadel] tiles>",
-			"[+10]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
-			"Can build [Trench] improvements on tiles"
-		],
+		"prerequisites": ["Industrial Arms"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege"],
+		"uniques": ["Only available <after discovering [Dynamite]>","[+33]% Strength <vs cities>","[+33]% Strength <when fighting in [City center] tiles>","[+33]% Strength <when fighting in [Citadel] tiles>","[+10]% Strength <when fighting in [Rough terrain] tiles>"],
 		"column": 28,
 		"row": 3
 	},
 	{
-		"name": "Scouting Corps",
-		"prerequisites": [
-			"Industrial Arms"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege"
-		],
-		"uniques": [
-			"Only available <after discovering [Replaceable Parts]>",
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+10]% Strength <when attacking>",
-			"[+1] Sight",
-			"[-5]% Strength for enemy [Land] units in adjacent [All] tiles",
-			"Can see invisible [Land] units <after discovering [Radar]>"
-		],
+		"name": "Spy Plane",
+		"prerequisites": ["Industrial Arms"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege"],
+		"uniques": ["Only available <after discovering [Replaceable Parts]>","[+1] Sight","[+25]% Strength <vs cities>","[+25]% Strength <when fighting in [Rough terrain] tiles>"],
 		"column": 28,
 		"row": 4
 	},
 	{
 		"name": "Modern Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"Only available <starting from the [Modern era]>"
-		],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"uniques":["Only available <starting from the [Modern era]>"],
 		"column": 29,
 		"row": 0
+
 	},
 	{
 		"name": "Rocket Launcher",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Rocketry]>",
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+5]% Strength",
-			"[+20]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+20]% Strength <vs [{'Motorised'} {Rider}] units>",
-			"[+20]% Strength <vs [{'Mechanised'} {Rider}] units>",
-			"[+20]% Strength <vs ['Low Altitude Aircraft'] units> <after discovering [Lasers]>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["Only available <after discovering [Ballistics]>","[+25]% Strength <vs [Assault] units>","[+25]% Strength <vs [Rider] units>","[+25]% Strength <vs [Low Altitude Aircraft] units>"],
+		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 29,
 		"row": 1
+
 	},
 	{
 		"name": "Extra Submachinegun",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+15]% Strength <when attacking>",
-			"[+18]% Strength <when attacking> <vs cities>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[+15]% Strength <when attacking>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 29,
 		"row": 2
+
 	},
 	{
 		"name": "Recoilless Rifle",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Advanced Ballistics]>",
-			"[+25]% Strength <vs [{'Mechanised'} {Assault}] units>",
-			"[+25]% Strength <vs [{'Motorised'} {Rider}] units>",
-			"[+25]% Strength <vs [{'Mechanised'} {Rider}] units>"
-		],
-		"unitTypes": [
-			"Scout",
-			"Rider"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["Only available <after discovering [Advanced Ballistics]>","[+30]% Strength <vs [Assault] units>","[+30]% Strength <vs [Rider] units>"],
+		"unitTypes": ["Scout","Rider"],
 		"column": 29,
 		"row": 3
+
 	},
 	{
-		"name": "Motorised Supply Line",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Combustion]>",
-			"Consumes [1] [Fuel]",
-			"[+1] Movement",
-			"[+10] HP when healing"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat"
-		],
+		"name": "Transport Truck",
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["Only available <after discovering [Combustion]>","Consumes [1] [Vehicle Parts]","Consumes [1] [Fuel]","[+1] Movement","[-10]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 29,
 		"row": 4
 	},
 	{
 		"name": "Transport Plane",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Radar]>",
-			"Costs [12] [Aircraft Parts]",
-			"Consumes [1] [Fuel]",
-			"May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
-			"[+25] HP when healing <in [Foreign Land] tiles>"
-		],
-		"unitTypes": [
-			"Siege",
-			"Scout",
-			"Assault",
-			"Rider",
-			"Close Combat",
-			"Ranged Combat"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["Only available <after discovering [Radar]>","Consumes [1] [Aircraft Parts]","Consumes [1] [Fuel]","May Paradrop up to [5] tiles from inside friendly territory","[+5] HP when healing <in [Foreign Land] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat"],
 		"column": 29,
 		"row": 5
 	},
 	{
 		"name": "AA Guns",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[25]% chance to intercept air attacks",
-			"[+15]% Strength <vs ['Propeller Aircraft'] units>",
-			"[+15]% Strength <vs ['Jet Engine Aircraft'] units> <after discovering [Advanced Ballistics]>",
-			"[+15]% Strength <vs ['Low Altitude Aircraft'] units>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[25]% chance to intercept air attacks","[+33]% Strength <vs [Air] units>","[+33]% Strength <vs [Low Altitude Aircraft] units>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 29,
 		"row": 6
 	},
 	{
 		"name": "AT Guns",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <vs ['Mechanised'] units> <when defending>",
-			"[+25]% Strength <vs ['Motorised'] units> <when defending>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[+25]% Strength <vs [Assault] units>","[+10]% Strength <vs [Rider] units>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider"],
 		"column": 29,
 		"row": 7
 	},
 	{
 		"name": "Extra Armour Plates",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"[+25]% Strength <vs ['Firearms'] units>"
-		],
-		"unitTypes": [
-			"Assault"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[+25]% Strength <vs [Gunpowder] units>"],
+		"unitTypes": ["Assault"],
 		"column": 30,
 		"row": 1
+
 	},
 	{
 		"name": "AP Rounds",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"[+20]% Strength <vs ['Mechanised'] units>"
-		],
-		"unitTypes": [
-			"Assault"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[+33]% Strength <vs [Assault] units>"],
+		"unitTypes": ["Assault"],
 		"column": 30,
 		"row": 2
-	},
-	{
-		"name": "Depleted Uranium Rounds",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Uranium Enrichment]>",
-			"[+33]% Strength <vs ['Mechanised'] units>"
-		],
-		"unitTypes": [
-			"Assault"
-		],
-		"column": 30,
-		"row": 3
+
 	},
 	{
 		"name": "HE Rounds",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"[+25]% Strength <vs [{non-['Mechanised']} {Land}] units>",
-			"[+10]% Strength <vs cities>"
-		],
-		"unitTypes": [
-			"Assault"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[+20]% Strength <vs [{non-[Assault]} {Land}] units>","[+10]% Strength <vs cities>"],
+		"unitTypes": ["Assault"],
 		"column": 30,
-		"row": 4
+		"row": 3
+
 	},
 	{
 		"name": "AA Machine Gun",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"[15]% chance to intercept air attacks",
-			"[+10]% Strength <vs ['Propeller Aircraft'] units>",
-			"[+25]% Strength <vs ['Low Altitude Aircraft'] units>"
-		],
-		"unitTypes": [
-			"Assault"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[15]% chance to intercept air attacks","[+25]% Strength <vs [Air] units>","[+25]% Strength <vs [Low Altitude Aircraft] units>"],
+		"unitTypes": ["Assault"],
 		"column": 30,
-		"row": 5
+		"row": 4
 	},
 	{
 		"name": "Extra Screening Ship",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Gain [-2] [Gold] <every [1] turns>",
-			"[+25]% Strength <when defending>",
-			"[+1] Sight"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier"],
 		"column": 31,
 		"row": 1
+
 	},
 	{
 		"name": "Bigger Armada",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"Gain [-10] [Gold] <every [1] turns>",
-			"[+33]% Strength"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[+15]% Strength"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier"],
 		"column": 31,
 		"row": 2
+
 	},
 	{
 		"name": "AA Focus",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"[33]% chance to intercept air attacks",
-			"[+25]% Strength <vs ['Propeller Aircraft'] units>",
-			"[+25]% Strength <vs ['Jet Engine Aircraft'] units> <after discovering [Advanced Ballistics]>",
-			"[+25]% Strength <vs ['Low Altitude Aircraft'] units>"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[25]% chance to intercept air attacks","[+33]% Strength <vs [Air] units>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier"],
 		"column": 31,
 		"row": 3
+
 	},
 	{
 		"name": "AS Focus",
-		"prerequisites": [
-			"Modern Arms"
-		],
-		"uniques": [
-			"[+16]% Strength <vs [Submarine] units>",
-			"[+15]% Strength <vs [Submarine] units> <when defending>"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier"
-		],
+		"prerequisites": ["Modern Arms"],
+		"uniques": ["[+33]% Strength <vs [Submarine] units>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier"],
 		"column": 31,
 		"row": 4
+
 	},
 	{
 		"name": "Atomic Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"Only available <starting from the [Atomic era]>"
-		],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"uniques":["Only available <starting from the [Atomic era]>"],
 		"column": 32,
 		"row": 0
+
 	},
 	{
 		"name": "CQB Equipments",
-		"prerequisites": [
-			"Atomic Arms"
-		],
-		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+33]% Strength <vs cities> <when attacking>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Scout"
-		],
+		"prerequisites": ["Atomic Arms"],
+		"uniques": ["[+25]% Strength <vs cities> <when attacking>"],
+		"unitTypes": ["Close Combat","Scout"],
 		"column": 32,
 		"row": 1
+
 	},
 	{
-		"name": "Camoflage",
-		"prerequisites": [
-			"Atomic Arms"
-		],
-		"uniques": [
-			"Only available <after discovering [Stealth]>",
-			"[+15]% Strength <when defending>",
-			"[+18]% Strength <when defending> <when fighting in [Rough terrain] tiles>",
-			"Withdraws before melee combat <with [20]% chance>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault"
-		],
-		"column": 32,
-		"row": 2
+		"name": "Spyglass",
+		"prerequisites": ["Sentry"],
+		"uniques": ["+1 Visibility Range"],
+		"unitTypes": ["Scout"]
 	},
 	{
-		"name": "Reactive Armour",
+		"name": "Ambush",
 		"prerequisites": [
-			"Atomic Arms"
+			//"Entrench",
+			//"Forage",
+			"Loose Formation",
+			"Shock",
+			"Hull Down",
+			"Guerilla Warfare I",
+			"Street Battle I"
 		],
-		"uniques": [
-			"Gain [-1] [Gold] <every [1] turns>",
-			"[+25]% Strength <when defending>",
-			"[+3] HP when healing"
+		"uniques": ["+[20]% Combat Strength",
+			"Only available <for units without [Promotion Nullifier]>"
 		],
-		"unitTypes": [
-			"Rider",
-			"Assault"
-		],
-		"column": 32,
-		"row": 3
-	},
-	{
-		"name": "NBC Suit",
-		"prerequisites": [
-			"Atomic Arms"
-		],
-		"uniques": [
-			"[+33]% Strength <when fighting in [Fallout] tiles>"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault"
-		],
-		"column": 32,
+		"unitTypes": ["Scrapper","Scout","Close Combat","Rider"],
+		"column": 6,
 		"row": 4
 	},
 	{
-		"name": "AEW",
-		"prerequisites": [
-			"Atomic Arms"
-		],
-		"uniques": [
-			"[+1] Sight",
-			"Can see invisible [non-[Future era]] units <after discovering [LiDAR]>"
-		],
-		"unitTypes": [
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier"
-		],
-		"column": 33,
+		"name": "Camoflage",
+		"prerequisites": ["Spyglass","Ambush"],
+		"uniques": ["Invisible to non-adjacent units","Withdraws before melee combat <with [20]% chance>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"column": 32,
 		"row": 2
+
+	},
+	{
+		"name": "Reactive Armour",
+		"prerequisites": ["Atomic Arms"],
+		"uniques": ["[+25]% Strength <when defending>","[+15]% Strength <when attacking>"],
+		"unitTypes": ["Rider","Assault"],
+		"column": 32,
+		"row": 3
+
+	},
+	{
+		"name": "NBC Suit",
+		"prerequisites": ["Atomic Arms"],
+		"uniques": ["[+25]% Strength <when fighting in [Fallout] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"column": 32,
+		"row": 4
+
 	},
 	{
 		"name": "Information Arms",
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship"
-		],
-		"uniques": [
-			"Only available <starting from the [Information era]>"
-		],
-		"column": 34,
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault"],
+		"uniques":["Only available <starting from the [Information era]>"],
+		"column": 33,
 		"row": 0
+
 	},
 	{
 		"name": "Drones",
-		"prerequisites": [
-			"Information Arms"
-		],
-		"uniques": [
-			"[+10]% Strength",
-			"[+1] Sight"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine",
-			"Helicopter"
-		],
-		"column": 35,
+		"prerequisites": ["Information Arms"],
+		"uniques": ["[+10]% Strength","[+1] Sight"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege","Close Combat Ship","Ranged Combat Ship","Carrier","Submarine","Helicopter"],
+		"column": 33,
 		"row": 1
+
 	},
 	{
 		"name": "Hacking Equipment",
-		"prerequisites": [
-			"Information Arms"
-		],
-		"uniques": [
-			"[-15]% Strength for enemy [Military] units in adjacent [All] tiles"
-		],
-		"unitTypes": [
-			"Close Combat",
-			"Ranged Combat",
-			"Scout",
-			"Rider",
-			"Assault",
-			"Siege",
-			"Close Combat Ship",
-			"Ranged Combat Ship",
-			"Carrier",
-			"Submarine",
-			"Helicopter"
-		],
-		"column": 35,
+		"prerequisites": ["Information Arms"],
+		"uniques": ["[-15]% Strength for enemy [Military] units in adjacent [All] tiles"],
+		"unitTypes": ["Close Combat","Ranged Combat","Scout","Rider","Assault","Siege","Close Combat Ship","Ranged Combat Ship","Carrier","Submarine","Helicopter"],
+		"column": 33,
 		"row": 2
-	},
 
+	},
+	{
+		"name": "AEW",
+		"prerequisites": ["Information Arms"],
+		"uniques": ["[+2] Sight","[+20]% Strength <when defending>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship","Carrier"],
+		"column": 35,
+		"row": 1
+
+	},
+	{
+		"name": "Siervo I",
+		"uniques": ["[+5]% Strength <vs [Sword] units>", "[+2]% Strength <vs [Wounded] units>"],
+		"unitTypes": ["Campesinado"],
+        "column": 27,
+        "row": 1
+	},
+	{
+		"name": "Siervo II",
+		"prerequisites": ["Siervo I"],
+		"uniques": ["[+5]% Strength <vs [Sword] units>", "[+2]% Strength <vs [Wounded] units>"],
+		"unitTypes": ["Campesinado"],
+        "column": 27,
+        "row": 2
+	},
+	{
+		"name": "Siervo III",
+		"prerequisites": ["Siervo II"],
+		"uniques": ["[+5]% Strength <vs [Sword] units>", "[+2]% Strength <vs [Wounded] units>"],
+		"unitTypes": ["Campesinado"],
+        "column": 27,
+        "row": 3
+	},
+	{
+		"name": "Esclavo I",
+		"uniques": ["[+2]% Strength <vs [Wounded] units>", "[+5]% Strength <vs cities>"],
+		"unitTypes": ["Campesinado"],
+        "column": 28,
+        "row": 1
+	},
+	{
+		"name": "Esclavo II",
+		"prerequisites": ["Esclavo I"],
+		"uniques": ["[+2]% Strength <vs [Wounded] units>", "[+5]% Strength <vs cities>"],
+		"unitTypes": ["Campesinado"],
+        "column": 28,
+        "row": 2
+	},
+	{
+		"name": "Esclavo III",
+		"prerequisites": ["Esclavo II"],
+		"uniques": ["[+2]% Strength <vs [Wounded] units>", "[+5]% Strength <vs cities>"],
+		"unitTypes": ["Campesinado"],
+        "column": 28,
+        "row": 3
+	},
+	{
+		"name": "Villano",
+		"uniques": ["All adjacent units heal [+10] HP when healing"],
+		"unitTypes": ["Campesinado"],
+        "column": 29,
+        "row": 1
+	},
+	{
+		"name": "Comandante",
+		"uniques": ["[+10]% Strength <vs [Wounded] units>", "[1] additional attacks per turn"],
+		"unitTypes": ["Campesinado"],
+        "column": 30,
+        "row": 1
+	},
+	{
+		"name": "Maestro Feudal",
+		"uniques": ["[+20]% to Flank Attack bonuses"],
+		"unitTypes": ["Campesinado"],
+        "column": 31,
+        "row": 1
+	},
 	///Uniques
 	{
-		"name": "Elite Training",
-		"uniques": [
-			"[+10]% Strength",
-			"[+25]% XP gained from combat"
-		]
+		"name": "[Templar Knight] ability",
+		"uniques": ["Prevents spreading of religion to the city it is next to", "Gain [200] [Gold] <(modified by game speed)> <upon being defeated>", "Gain [40] [Faith] <(modified by game speed)> <upon being promoted>"]
 	},
 	{
-		"name": "Monastic Training",
-		"uniques": [
-			"[+10]% Strength",
-			"Earn [25]% of the damage done to [Military] units as [Faith]"
-		]
+		"name": "Monastic Training", 
+		"uniques": ["[+10]% Strength","Earn [50]% of the damage done to [Military] units as [Faith]"]
 	},
 	{
-		"name": "Chivalry",
-		"uniques": [
-			"[+10]% Strength",
-			"Earn [33]% of the damage done to [Military] units as [Culture]"
-		]
+		"name": "Chivalry", 
+		"uniques": ["[+10]% Strength","Earn [25]% of the damage done to [Military] units as [Culture]"]
 	},
 	{
 		"name": "Commissar",
-		"uniques": [
-			"[+33]% XP gained from combat"
-		]
+		"uniques": ["[+10]% Strength","[+25]% XP gained from combat"]
 	},
 	{
 		"name": "Protection Squadron Ability",
-		"uniques": [
-			"[+30]% Strength",
-			"[+5] HP when healing"
-		]
+		"uniques": ["[+30]% Strength","[+5] HP when healing"]
 	},
 	{
-		"name": "Sailor Origin",
-		"uniques": [
-			"Eliminates combat penalty for attacking across a coast",
-			"[+50]% Strength <when defending> <when [Embarked]>"
-		]
+		"name": "Marine Training", 
+		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast","Defense bonus when embarked"]
 	},
 	{
-		"name": "Hill People Origin",
-		"uniques": [
-			"Can pass through impassable tiles",
-			"Double movement in [Hill]"
-		]
+		"name": "Scouting Unit", 
+		"uniques": ["[-15]% Strength <when attacking>","Withdraws before melee combat <with [50]% chance>","Unit will heal every turn, even if it performs an action","[-25]% maintenance costs","Ignores Zone of Control"]
 	},
 	{
-		"name": "Marine Training",
-		"uniques": [
-			"Eliminates combat penalty for attacking over a river",
-			"Eliminates combat penalty for attacking across a coast",
-			"May attack when embarked",
-			"[+100]% Strength <when defending> <when [Embarked]>"
-		]
-	},
-	{
-		"name": "Mountaineer Training",
-		"uniques": [
-			"Can pass through impassable tiles",
-			"Ranged attacks may be performed over obstacles",
-			"Double movement in [Hill]",
-			"Double movement in [Mountain]"
-		]
-	},
-	{
-		"name": "Scouting Unit",
-		"uniques": [
-			"[-25]% Strength <when attacking>",
-			"Withdraws before melee combat <with [50]% chance>",
-			"Unit will heal every turn, even if it performs an action",
-			"Can see over obstacles",
-			"Ignores Zone of Control"
-		]
-	},
-	{
-		"name": "Skirmisher Training",
-		"uniques": [
-			"[-5]% Strength <when attacking>",
-			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-			"[-20]% Strength <vs ['Mounted'] units> <when defending>",
-			"[-20]% Strength <vs ['Mechanised'] units> <when defending>",
-			"Ignores Zone of Control"
-		]
+		"name": "Skirmisher Training", 
+		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles","[+10]% Strength <when defending>","[-20]% Strength <vs [Mounted] units> <when defending>","Ignores Zone of Control"]
 	},
 	{
 		"name": "Tactic Research", // Military Academy
-		"uniques": [
-			"[+25]% XP gained from combat"
-		]
+		"uniques": ["[+25]% XP gained from combat"]
+
 	},
 	{
 		"name": "Weapon Research", // Arms Testing Ground
-		"uniques": [
-			"Earn [25]% of the damage done to [Military] units as [Science]"
-		]
+		"uniques": ["Earn [50]% of the damage done to [Military] units as [Science]"]
+
 	},
 	{
-		"name": "The Levied Army",
-		"uniques": [
-			"[This Unit] is destroyed <if [Levies Disbandment] is constructed> <upon turn end>"
-		]
+		"name": "The Levy Army", 
+		"uniques": ["[-2500]% maintenance costs <when at war>","[+2500]% maintenance costs <when not at war>"]
+
 	},
 	{
-		"name": "The Garrison Army",
-		"uniques": [
-			"Gain [-3] [Gold] <every [1] turns>",
-			"Can build [Fort] improvements on tiles <after discovering [Logistics]>",
-			"Can build [Trench] improvements on tiles <after discovering [Physics]>"
-		]
+		"name": "The Standing Army", 
+		"uniques": ["[+25]% Strength <vs [Levy Army] units>"]
 	},
 	{
-		"name": "The Standing Army",
-		"uniques": [
-			"[+25]% Strength <vs ['Levy Army'] units>",
-			"[+15]% Strength <vs ['Mercenary Army'] units>"
-		]
+		"name": "The Noble Army", 
+		"uniques": ["[+35]% Strength <vs [Levy Army] units>","[+15]% Strength <vs [Standing Army] units>"]
 	},
 	{
-		"name": "The Noble Army",
-		"uniques": [
-			"[+35]% Strength <vs ['Levy Army'] units>",
-			"[+15]% Strength <vs ['Standing Army'] units>",
-			"[+15]% Strength <vs ['Mercenary Army'] units>"
-		]
+		"name": "Mercenary Habit", 
+		"uniques": ["Earn [-10]% of the damage done to [Military] units as [Gold]"]
 	},
 	{
-		"name": "Mercenary Habit",
-		"uniques": [
-			"[+50]% XP gained from combat",
-			"Earn [-25]% of the damage done to [Military] units as [Gold]",
-			"Gain [-1] [Gold] <every [1] turns>"
-		]
+		"name": "Barbaric", 
+		"uniques": ["[-75]% maintenance costs","[+10]% XP gained from combat","[+1] Movement","No movement cost to pillage"]
 	},
 	{
-		"name": "Merchant",
-		"uniques": [
-			"[-10]% Strength <vs ['Standing Army'] units>",
-			"Gain [5] [Gold] <upon ending a turn in a [City center] tile>",
-			"Gain [5] [Gold] <upon ending a turn in a [Civilian Market] tile>"
-		]
+		"name": "Extremeist Warfare", 
+		"uniques": ["Withdraws before melee combat <with [75]% chance>","[+33]% Strength <when fighting in [Rough terrain] tiles>"]
 	},
 	{
-		"name": "Barbaric",
-		"uniques": [
-			"Earn [15]% of the damage done to [Military] units as [Gold]",
-			"No movement cost to pillage"
-		]
+		"name": "Nuclear Powered", 
+		"uniques": ["[+25]% maintenance costs","Consumes [1] [Uranium]","[+5] HP when healing","[+2] Movement"]
+	},
+	//
+	{
+		"name": "Commando Cavalry",
+		"uniques": ["Ignores Zone of Control", "May withdraw before melee ([40]%)"],
+		"prerequisites": ["Pursuit", "Outmaneuvering"],
+		"unitTypes": ["Light Cavalry"]
 	},
 	{
-		"name": "Asymmetric Warfare",
+		"name": "Charging Formation",
+		"uniques": ["[+25]% Strength <in [Open terrain] tiles>"],
+		"unitTypes": ["Light Cavalry"]
+	},
+	{
+		"name": "Raiding",
+		"uniques": ["[+25]% Strength <vs [Ranged] units>"],
+		"unitTypes": ["Light Cavalry"]
+	},
+	{
+		"name": "Marauders",
+		"uniques": ["No movement cost to pillage"],
+		"prerequisites": ["Raiding"],
+		"unitTypes": ["Light Cavalry"]
+	},
+	{
+		"name": "Double Envelopment",
+		"uniques": ["[+35]% to Flank Attack bonuses"],
+		"prerequisites": ["Charging Formation"],
+		"unitTypes": ["Light Cavalry"]
+	},
+	{
+		"name": "Outmaneuvering",
+		"uniques": ["[+1] Movement", "[+20]% Strength <vs [Anti Cavalry] units>"],
+		"prerequisites": ["Double Envelopment", "Pursuit"],
+		"unitTypes": ["Light Cavalry"]
+	},
+	//
+	
+	//Adjusted promotions from base scenario (mostly nerfs)
+	{
+		"name": "Headhunter",
+		"uniques": [
+			"Earn [10]% of killed [Military] unit's [Cost] as [Gold]",
+			"[+25]% Strength <vs [Wounded] units>"
+		],
+		"column": 4,
+		"row": 12
+	},
+	{
+		"name": "Skirmish",
 		"uniques": [
 			"Withdraws before melee combat <with [75]% chance>",
-			"[+33]% Strength <when fighting in [Rough terrain] tiles>"
+			"[25]% XP gained from combat",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scout"],
+		"column": 1,
+		"row": 3
+	},
+	{
+		"name": "Reconnaissance I",
+		"uniques": [
+			"Ignores terrain cost",
+			"[25]% XP gained from combat",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Rider"],
+		"column": 5,
+		"row": 1
+	},
+	{
+		"name": "Reconnaissance II",
+		"prerequisites": ["Reconnaissance I"],
+		"uniques": [
+			"[+1] Movement",
+			"No movement cost to pillage",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Rider"],
+		"column": 5,
+		"row": 2
+	},
+	{
+		"name": "Reconnaissance III",
+		"prerequisites": ["Reconnaissance II"],
+		"uniques": [
+			"[+1] Movement", 
+			"[+50]% Strength <vs [Siege] units>",
+			"Ignores Zone of Control",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Rider"],
+		"column": 5,
+		"row": 3
+	},
+	{
+		"name": "March",
+		"prerequisites": [
+			"Smokescreen",
+			"Assault",
+			"Pursuit",
+			"Precision",
+			"Suppression",
+			"Barrage",
+			"Resupply",
+			"Formation",
+			"Ambush",
+			"Sentry",
+			"Reconnaissance III",
+			"Medic II"
+		],
+		"uniques": [
+			"Unit will heal every turn, even if it performs an action",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Shooter", "Scout", "Rider", "Assault"],
+		"column": 8,
+		"row": 3
+	},
+	{
+		"name": "Blitz",
+		"prerequisites": [
+			"Smokescreen",
+			"Assault",
+			"Pursuit",
+			"Maneuver",
+			"Awe",
+			"Formation",
+			"Ambush",
+			"Sentry"
+		],
+		"uniques": [
+			"[1] additional attacks per turn",
+			"Can move after attacking",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Scrapper", "Armor", "Mounted", "Rider"],
+		"column": 8,
+		"row": 2
+	},
+	//Other special promotions ('abilities' or otherwise 'exclusive to one UU', granted by beliefs/ruins/policies/etc., and so on)
+	{
+		"name": "Oath of Vengeance",
+		"uniques": ["[+20]% Strength <when fighting units from a Civilization with more Cities than you>"]
+	},
+	{
+		"name": "Warrior Cult",
+		"uniques": ["Earn [25]% of the damage done to [Military] units as [Faith]",
+			"[+15]% XP gained from combat",
+			"Can move immediately once bought"]
+	},
+	{
+		"name": "Hunter Cult",
+		"uniques": ["[+1] Sight", 
+			"[+1] Movement",
+			"Can move after attacking"] 
+	},
+	{
+		"name": "Hunting Rites",
+		"uniques": ["[+1] Range",
+			"May withdraw before melee ([50]%)",
+			"Ranged attacks may be performed over obstacles"]
+	},
+	{
+		"name": "Justified",
+		"uniques": ["[+20]% Strength <when fighting in [Enemy Land] tiles>"]
+	},
+	{
+		"name": "[Mountie] ability",
+		"uniques": ["[+25]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "[Combat Engineer] ability",
+		"uniques": ["[+50]% Strength <vs [Armored] units>"]
+	},
+	{
+		"name": "Field Medic",
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "All adjacent units heal [+10] HP when healing"]
+	},
+	{
+		"name": "[Egatow] ability",
+		"uniques": ["Earn [75]% of killed [Military] unit's [Strength] as [Faith]","Earn [75]% of killed [Military] unit's [Strength] as [Culture]"]
+	},
+	{
+		"name": "Ice-Walker",
+		"uniques": ["Can enter ice tiles"]
+	},
+	{
+		"name": "[Kian-seren] ability",
+		"uniques": ["Can see over obstacles", "Ranged attacks may be performed over obstacles", "[+5] HP when healing <in [Foreign Land] tiles>"]
+	},
+	{
+		"name": "[Longship] ability",
+		"uniques": ["Earn [20]% of the damage done to [Water] units as [Gold]","[+10]% Strength <when adjacent to a [Water] unit>"]
+	},
+	{
+		"name": "[Maloon] ability",
+		"uniques": ["Ignores Zone of Control", "No movement cost to pillage"]
+	},
+	{
+		"name": "Follower of Cociyo",
+		"uniques": ["Double movement in [Plains]", "Heals [15] damage if it kills a unit", "Earn [25]% of killed [Military] unit's [Strength] as [Culture]"]
+	},
+	{
+		"name": "Blunt Force",
+		"uniques": ["[+15]% Strength <when attacking>"]
+	},
+	{
+		"name": "Guerrilla Tactics",
+		"uniques": ["May withdraw before melee ([10]%)", "Invisible to non-adjacent units <in [Forest] tiles>", "Invisible to non-adjacent units <in [Jungle] tiles>", "Ignores Zone of Control", "[-10]% Strength <when defending>"]
+	},
+	{
+		"name": "Capoeira",
+		"uniques": ["May withdraw before melee ([15]%)", "Can move after attacking"]
+	},
+	{
+		"name": "River Walker",
+		"uniques": ["Double movement in [River]"]
+	},
+	{
+		"name": "Ransom I",
+		"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]"]
+	},
+	{
+		"name": "Ransom II",
+		"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]"]
+	},
+	{
+		"name": "Ransom III",
+		"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]"]
+	},
+	{
+		"name": "Sea Wolves",
+		"uniques": ["May capture killed [{Barbarian} {Water}] units"]
+	},
+	{
+		"name": "Horde Mobilization",
+		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when attacking>", "Can move after attacking <when adjacent to a [Military] unit>", "No movement cost to pillage <when adjacent to a [Military] unit>"]
+	},
+	{
+		"name": "[Bessarabia Border Guard] ability",
+		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when defending>", "[+17]% Strength <when defending>"]
+	},
+	{
+		"name": "Spartan Training",
+		"uniques": ["[+15]% Strength <when adjacent to a [Melee] unit> <when defending>", "[+15]% Strength <when attacking>", "[+25]% XP gained from combat"]
+	},
+	{
+		"name": "Enlightened Medicine",
+		"uniques": ["[+10] HP when healing"]
+	},
+	{
+		"name": "[Corinthian Trireme] ability",
+		"uniques": ["May withdraw before melee ([50]%)", "Can see over obstacles"]
+	},
+	{
+		"name": "[Naginata] ability",
+		"uniques": ["[+15]% Strength <vs [Melee] units>", "[+33]% Strength <when fighting in [Friendly Land] tiles>"]
+	},
+	{
+		"name": "Sanada Honor",
+		"uniques": ["Heals [35] damage if it kills a unit", "Unit will heal every turn, even if it performs an action", "[-5] HP when healing"]
+	},
+	{
+		"name": "Electronics Factory Builder",
+		"uniques": ["Can instantly construct a [Electronics Factory] improvement <by consuming this unit>"]
+	},
+	{
+		"name": "Royal Guard I",
+		"uniques": ["[+15]% Strength <when fighting in [Friendly Land] tiles>"],
+		"unitTypes": ["Druzhina"],
+		"column": 27,
+		"row": 1
+	},
+	{
+		"name": "Royal Guard II",
+		"uniques": ["[+15]% Strength <when fighting in [Friendly Land] tiles>"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Royal Guard I"],
+				"column": 27,
+				"row": 2
+	},
+	{
+		"name": "Royal Guard III",
+		"uniques": ["[+15]% Strength <when fighting in [Friendly Land] tiles>", "[+5]% Strength bonus for [Military] units within [1] tiles"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Royal Guard II"],
+				"column": 27,
+				"row": 3
+	},
+	{
+		"name": "Bogatyr I",
+		"uniques": ["[+15]% XP gained from combat", "[+33]% Strength <vs [Barbarian] units>"],
+		"unitTypes": ["Druzhina"],
+				"column": 28,
+				"row": 1
+	},
+	{
+		"name": "Bogatyr II",
+		"uniques": ["[+15]% XP gained from combat", "[+33]% Strength <vs [Barbarian] units>"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Bogatyr I"],
+				"column": 28,
+				"row": 2
+	},
+	{
+		"name": "Bogatyr III",
+		"uniques": ["[+34]% Strength <vs [Barbarian] units>", "May capture killed [Barbarian] units", "[Great General] is earned [25]% faster"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Bogatyr II"],
+				"column": 28,
+				"row": 3
+	},
+	{
+		"name": "Boyer I",
+		"uniques": ["[+33]% Strength <vs cities>", "Earn [50]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Druzhina"],
+				"column": 29,
+				"row": 1
+	},
+	{
+		"name": "Boyer II",
+		"uniques": ["[+17]% Strength <vs cities>", "[-100]% maintenance costs", "Earn [15]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Boyer I"],
+				"column": 29,
+				"row": 2
+	},
+	{
+		"name": "Boyer III",
+		"uniques": ["[+25]% Strength <vs cities>", "Earn [15]% of the damage done to [City] units as [Gold]"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Boyer II"],
+				"column": 29,
+				"row": 3
+	},
+	{
+		"name": "Behterets",
+		"uniques": ["[+10] HP when healing", "[+15]% Strength <vs [Ranged] units> <when defending>", "[+15]% Strength <vs [Melee] units> <when defending>"],
+		"unitTypes": ["Druzhina"],
+		"prerequisites": ["Bogatyr II", "Boyer II", "Royal Guard II"],
+				"column": 32,
+				"row": 3
+	},
+	// Ranged+Siege
+	{
+		"name": "Evasion",
+		"uniques": [
+			"[+33]% Strength <vs [Ranged Combat] units> <when defending>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Close Combat Ship"],
+		"column": 1,
+        "row": 7
+	},
+	{
+		"name": "Combat Drill",
+		"uniques": [
+			"[+20]% Strength <when defending>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Siege"],
+		"column": 3,
+        "row": 2
+	},
+	{
+		"name": "Accuracy I",
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Siege","Assault","Ranged Combat"],
+		"column": 1,
+		"row": 1
+	},
+	{
+		"name": "Accuracy II",
+		"prerequisites": ["Accuracy I"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes": ["Siege","Archery","Assault","Ranged Combat"],
+		"column": 1,
+		"row": 2
+	},
+	// Melee, Mounted+Armor
+	{
+		"name": "Shock I",
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Close Combat","Gunpowder","Ranged Combat","Mounted","Rider","Armored"],
+		"column": 4,
+		"row": 1
+	},
+	{
+		"name": "Shock II",
+		"prerequisites": ["Shock I"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Close Combat","Gunpowder","Ranged Combat","Mounted","Rider","Armored"],
+		"column": 4,
+		"row": 2
+	},
+	{
+		"name": "Shock III",
+		"prerequisites": ["Shock II"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": ["Close Combat","Gunpowder","Ranged Combat","Mounted","Rider","Armored"],
+		"column": 4,
+		"row": 3
+	},
+	{
+		"name": "Drill I",
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Gunpowder","Mounted","Rider","Armored"],
+		"column": 5,
+		"row": 1
+	},
+	{
+		"name": "Drill II",
+		"prerequisites": ["Drill I"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Gunpowder","Mounted","Rider","Armored"],
+		"column": 5,
+		"row": 2
+	},
+	{
+		"name": "Drill III",
+		"prerequisites": ["Drill II"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Mounted","Rider","Armored"],
+		"column": 5,
+		"row": 3
+	},
+	{
+		"name": "Charge",
+		"prerequisites": ["Shock II","Drill II"],
+		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
+		"unitTypes": ["Rider","Armored"],
+		"column": 6,
+		"row": 2
+	},
+	{
+		"name": "Marauding",
+		"prerequisites": ["Charge","Rout"],
+		"uniques": ["Bonus vs City 25%"],
+		"unitTypes": ["Rider"]
+	},	
+	{
+		"name": "Armor Piercing",
+		"prerequisites": ["Marauding","Rout"],
+		"uniques": ["Bonus vs Mounted 25%"],
+		"unitTypes": ["Rider"]
+	},	
+	{
+		"name": "Reactive Armor",
+		"prerequisites": ["Rout"],
+		"uniques": ["+[25]% Strength when defending"],
+		"unitTypes": ["Mounted"]
+	},
+	{
+		"name": "Breakthrough",
+		"prerequisites": ["Armor Piercing","Reactive Armor"],
+		"uniques": ["1 additional attack per turn"],
+		"unitTypes": ["Mounted"]
+	},	
+	{
+		"name": "Besiege",
+		"prerequisites": ["Shock II","Drill II"],
+		"uniques": ["[+50]% Strength <vs cities>"],
+		"unitTypes": ["Close Combat","Ranged Combat"],
+		"column": 6,
+		"row": 3
+	},
+	{
+		"name": "Formation I",
+		"prerequisites": ["Shock II","Drill II"], 
+		"uniques": ["[+33]% Strength <vs [Mounted] units>"],
+		"unitTypes": ["Close Combat","Ranged Combat","Mounted","Rider"],
+		"column": 7,
+		"row": 2
+	},
+	{
+		"name": "Formation II",
+		"prerequisites": ["Formation I"],
+		"uniques": ["[+33]% Strength <vs [Mounted] units>"],
+		"unitTypes": ["Ranged Combat","Close Combat","Mounted","Rider"],
+		"column": 7,
+		"row": 3
+	},
+	{
+		"name": "Quick Study", // only for Keshik and subsequent upgrades
+		"uniques": ["[+50]% XP gained from combat"]
+	},
+	{
+		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth
+		"uniques": ["All healing effects doubled"]
+	},
+	{
+		"name": "Slinger Withdraw", // only for Slinger and subsequent upgrades
+		"uniques": ["Withdraws before melee combat <with [50]% chance>", "Can move after attacking"]
+	},
+	{
+		"name": "Pictish Courage", // only for Pictish Warrior and subsequent upgrades
+		"uniques": ["No damage penalty for wounded units", "No movement cost to pillage"]
+	},
+	{
+		"name": "Home Sweet Home", // only for Mehal Sefari and subsequent upgrades
+		"uniques": ["[+33]% Strength decreasing with distance from the capital"]
+	},
+	{
+		"name": "[Persian Immortal] ability",
+		"uniques": ["Heals [10] damage if it kills a unit", "[+10] HP when healing"]
+	},
+	{
+		"name": "[Conquistador] ability",
+		"uniques": ["Defense bonus when embarked"]
+	},
+	{
+		"name": "[Cossack] ability",
+		"uniques": ["[+50]% Strength <vs [Wounded] units>"]
+	},
+	{
+		"name": "[Hussar] ability",
+		"uniques": ["[+50]% to Flank Attack bonuses"]
+	},
+	{
+		"name": "[Zero] ability",
+		"uniques": ["[+33]% Strength <vs [Fighter] units>"]
+	},
+	{
+                "name": "[Digger] ability",
+                "uniques": ["[1] Movement point cost to embark", "[1] Movement point cost to disembark"]
+        },
+        {
+		"name": "Climber",
+		"uniques": ["Can pass through impassable tiles", "Double movement in [Hill]"]
+	},
+	{
+		"name": "Mercenary",
+		"uniques": ["Can move immediately once bought", "[+50]% maintenance costs", "Comment [Can be purchased at 1/3 of the original price]"]
+	},
+	{
+		"name": "River Mobility",
+		"uniques": ["Ignores terrain cost <in [River] tiles>"]
+	},
+	{
+		"name": "[Privateer] ability",
+		"uniques": ["May capture killed [Water] units <with [75]% chance>"]
+	},
+	{
+		"name": "Epic Quest",
+		"uniques": ["This Unit gains [5] XP <upon defeating a [Barbarian] unit>", "[+25]% Strength <when fighting in [Barbarian encampment] tiles> <when attacking>"] 
+	},
+	{
+		"name": "[Heavy Chariot] ability",
+		"uniques": ["[+20]% Strength <when attacking>"]
+	},
+	{
+		"name": "Civilized",
+		"uniques": ["[+20]% Strength <vs [Barbarian] units>"] 
+	},
+	{
+		"name": "Organized Warfare",
+		"uniques": ["Can move after attacking", "Ignores Zone of Control"]
+	},
+	{
+		"name": "[Carolean] ability",
+		"uniques": ["[+33]% Strength <when attacking>"] 
+	},
+	{
+		"name": "[Janissary] ability",
+		"uniques": ["Heals [33] damage if it kills a unit", "Free [Janissary] appears <upon defeating a [Military] unit> <with [33]% chance>"]
+	},
+	// Water Ranged
+	{
+		"name": "Line of Battle",
+		"uniques": ["Bonus vs water units 25%"],
+		"unitTypes": ["WaterRanged"]
+	},
+	{
+		"name": "Bombardment",
+		"uniques": ["Bonus vs City 25%"],
+		"unitTypes": ["WaterRanged"]
+	},
+	{
+		"name": "Preparatory Fire",
+		"prerequisites": ["Line of Battle"],
+		"uniques": ["Bonus vs land units 25%"],
+		"unitTypes": ["WaterRanged"]
+	},
+	{
+		"name": "Rolling Barrage",
+		"prerequisites": ["Bombardment"],
+		"uniques": ["Bonus vs City 33%"],
+		"unitTypes": ["WaterRanged"]
+	},
+	{
+		"name": "Supply Fleet",
+		"prerequisites": ["Preparatory Fire","Rolling Barrage"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["WaterRanged"]
+	},
+	{
+		"name": "Proximity Fuses",
+		"prerequisites": ["Preparatory Fire","Rolling Barrage"],
+		"uniques": ["Bonus vs air units 25%"],
+		"unitTypes": ["WaterRanged"]
+	},
+	{
+		"name": "Coincidence Rangefinding",
+		"prerequisites": ["Supply Fleet","Proximity Fuses"],
+		"uniques": ["+1 Range"],
+		"unitTypes": ["WaterRanged"]
+	},
+
+	// Water melee
+	{
+		"name": "Helmsman",
+		"uniques": ["+1 Movement"],
+		"unitTypes": ["WaterMelee"]
+	},
+	{
+		"name": "Embolon",
+		"uniques": ["Bonus vs water units 25%"],
+		"unitTypes": ["WaterMelee"]
+	},
+	{
+		"name": "Rutter",
+		"prerequisites": ["Helmsman"],
+		"uniques": ["+1 Visibility Range"],
+		"unitTypes": ["WaterMelee"]
+	},
+	
+	{
+		"name": "Reinforced Hull",
+		"prerequisites": ["Embolon"],
+		"uniques": ["25% Defence against ranged attacks"],
+		"prerequisites": ["Ramming"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship"]
+	},
+	{
+		"name": "Convoy",
+		"prerequisites": ["Rutter","Reinforced Hull"],
+		"uniques": ["+[20]% Strength when attacking"],
+		"unitTypes": ["WaterMelee"]
+	},
+	{
+		"name": "Auxillary Ships",
+		"prerequisites": ["Rutter","Reinforced Hull"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["WaterMelee"]
+	},
+	{
+		"name": "Creeping Attack",
+		"prerequisites": ["Convoy","Auxillary"],
+		"uniques": ["Bonus vs water units 50%"],
+		"unitTypes": ["WaterMelee"]
+	},
+	{
+		"name": "Bombardment",
+		"uniques": [
+			"[+33]% Strength <vs [Land] units>",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": ["Ranged Combat Ship"],
+		"column": 1,
+        "row": 9
+	},
+	{
+		"name": "Targeting I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"],
+        "column": 13,
+        "row": 1
+	},
+	{
+		"name": "Targeting II",
+		"prerequisites": ["Targeting I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"],
+        "column": 13,
+        "row": 2
+	},
+	{
+		"name": "Targeting III",
+		"prerequisites": ["Targeting II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"],
+        "column": 13,
+        "row": 3
+	},
+	{
+		"name": "Aim I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Water"],
+		"row": 1,
+        "column": 43
+    },	
+    {
+		"name": "Firepower Coverage I",
+		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 1,
+        "column": 44    
+    },	
+    {
+		"name": "Aim II",
+		"prerequisites": ["Aim I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 1,
+        "column": 45
+    },	
+    {
+		"name": "Firepower Coverage II",
+		"prerequisites": ["Firepower Coverage I"],
+		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 1,
+        "column": 46        
+    },	
+    {
+		"name": "Aim III",
+		"prerequisites": ["Aim II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 1,
+        "column": 47
+    },	
+    {
+		"name": "Firepower Coverage III",
+		"prerequisites": ["Firepower Coverage II"],
+		"uniques": ["[+33]% Strength <vs [Land] units> <when attacking>"],
+		"unitTypes": ["Ranged Water"],
+		"row": 1,
+        "column": 48    
+    },
+    {
+    	"name": "Cruise I",
+    	"prerequisites": ["Aim II","Firepower Coverage II"],
+		"uniques": ["[+10] HP when healing"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 43
+    },
+    {
+    	"name": "Fire Support I",
+        "prerequisites": ["Aim II","Firepower Coverage II"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when attacking>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 44
+    },
+    {
+    	"name": "Queue I",
+        "prerequisites": ["Aim II","Firepower Coverage II"],
+		"uniques": ["[+10]% Strength bonus for [Ranged Combat Ship] units within [1] tiles"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 45
+    },
+    {
+    	"name": "Cruise II",
+    	"prerequisites": ["Cruise I"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 46
+    },
+    {
+    	"name": "Fire Support II",
+    	"prerequisites": ["Fire Support I"],
+		"uniques": ["[+15]% Strength <when adjacent to a [Military] unit> <when attacking>"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 47
+    },
+    {
+    	"name": "Queue II",
+    	"prerequisites": ["Queue I"],
+		"uniques": ["[+10]% Strength bonus for [Ranged Combat Ship] units within [1] tiles"],
+		"unitTypes": ["Ranged Combat Ship"],
+		"row": 2,
+        "column": 48       
+    },
+	{
+		"name": "Boarding Party I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+		"row": 1,
+        "column": 37
+    },	
+    {
+		"name": "Boarding Party II",
+		"prerequisites": ["Boarding Party I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+		"row": 1,
+        "column": 38
+    },	
+    {
+		"name": "Boarding Party III",
+		"prerequisites": ["Boarding Party II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Close Combat Ship","Ranged Combat Ship"],
+		"row": 1,
+        "column": 39
+    },
+	// Mixed
+	{
+		"name": "Cover I",
+		"uniques": ["[+33]% Strength <vs [Ranged Combat] units> <when defending>"],
+		"unitTypes": ["Sword","Close Combat","Archery","Ranged Combat","Siege"],
+        "column": 24,
+        "row": 1
+	},
+	{
+		"name": "Cover II",
+		"prerequisites": ["Cover I"],
+		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+		"unitTypes": ["Sword","Close Combat","Archery","Ranged Combat","Siege"],
+        "column": 24,
+        "row": 2
+	},
+	{
+		"name": "Mobility",
+		"prerequisites": ["Shock II","Drill II","Targeting I",
+			"Bombardment I","Boarding Party", "Coastal Raider I", "Wolfpack I"],
+		"uniques": ["[+2] Movement"],
+		"unitTypes": ["Mounted","Close Combat Ship","Ranged Combat Ship","Armored","Submarine"],
+        "column": 24,
+        "row": 3
+	},
+	{
+		"name": "Sentry",
+		"prerequisites": [
+            "Drill II",
+			"Accuracy I",
+			"Skirmish",
+			"Loose Formation",
+			"Shock II",
+			"Guerilla Warfare I",
+			"Street Battle I",
+			"Reconnaissance I",
+			"Bombardment",
+			"Targeting",
+			"Evasion",
+			"Strike",
+			"Barrage"
+		],
+		"uniques": [
+			"[+1] Sight",
+			"Only available <for units without [Promotion Nullifier]>"
+		],
+		"unitTypes": [
+			"Scrapper",
+			"Scout",
+			"Ranged Combat Ship",
+			"Close Combat Ship",
+			"Rider",
+			"Close Combat",
+			"Ranged Combat",
+			"Assault"
+		],
+		"column": 8,
+		"row": 1
+	},
+	{
+		"name": "Logistics",
+		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
+			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III", "Mobility II", "Anti-Armor II"],
+		"uniques": ["[1] additional attacks per turn", "Can move after attacking"],
+		"unitTypes": ["Archery","Ranged Combat Ship","Siege","Close Combat Ship"],
+        "column": 24,
+        "row": 5
+	},
+
+	{
+		"name": "Ambush I",
+		"uniques": ["[+33]% Strength <vs [Armored] units>"],
+		"unitTypes": ["Sword","Ranged Combat","Assault"],
+        "column": 25,
+        "row": 1
+	},
+	{
+		"name": "Ambush II",
+		"prerequisites": ["Ambush I"],
+		"uniques": ["[+33]% Strength <vs [Armored] units>"],
+		"unitTypes": ["Sword","Ranged Combat","Assault"],
+        "column": 25,
+        "row": 2
+	},
+    {
+        "name": "Swamp Fever",
+        "uniques": ["This Unit takes [12] damage <upon ending a turn in a [All] tile>"]
+    },
+	{
+		"name": "Basic Training",
+		"uniques": ["[+5]% Strength <when fighting in [Open terrain] tiles> <when attacking>","[+5]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"]
+	},
+	{
+		"name": "Advanced Training",
+		"uniques": ["[+5]% to Flank Attack bonuses"]
+	},
+	{
+		"name": "Elite Training",
+		"uniques": ["[+15]% to Flank Attack bonuses"]
+	},
+    {
+		"name": "Intimidation",
+		"uniques": ["[-20]% Strength for enemy [Military] units in adjacent [All] tiles"]
+	},
+        {
+		"name": "Strong Genetics",
+		"uniques": ["[+5]% Strength bonus for [Civilian] units within [2] tiles","[+5]% Strength bonus for [Prey] units within [2] tiles"]
+	},
+        {
+                "name": "Critical",
+                "uniques": ["[+50]% Strength <with [15]% chance> <when above [5] HP> <when attacking>",
+			"[+50]% Strength <with [25]% chance> <when below [5] HP> <when attacking>"]
+        },
+        {
+                "name": "Rage",
+                "uniques": ["[+150]% Strength <when below [30] HP> <when attacking>"]
+        },
+        {
+                "name": "Rabies",
+                "uniques": ["This Unit takes [12] damage <upon ending a turn in a [All] tile>"]
+        },
+	{
+                "name": "Swamp Terror",
+                "unitTypes": ["-"],
+                "uniques": ["This Unit takes [5] damage <upon ending a turn in a [Friendly Land] tile>","[+10]% Strength <vs [Theropoda] units>","[+10]% Strength <vs [Fantasy] units>"]
+        },
+	// Scout
+	{
+		"name": "Scouting I",
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 1
+	},
+	{
+		"name": "Scouting II",
+		"prerequisites": ["Scouting I"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 2
+	},
+	{
+		"name": "Scouting III",
+		"prerequisites": ["Scouting II"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Scout"],
+        "column": 8,
+        "row": 3
+	},
+	{
+		"name": "Survivalism I",
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 1
+	},
+	{
+		"name": "Survivalism II",
+		"prerequisites": ["Survivalism I","Medic I", "Resupply", "March", "Damage Control"],
+		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 2
+	},
+	{
+		"name": "Survivalism III",
+		"prerequisites": ["Survivalism II","Medic I", "Resupply", "March", "Damage Control"],
+		"uniques": ["Unit will heal every turn, even if it performs an action", "May withdraw before melee ([75]%)","[-50]% maintenance costs",], // This number is not based on any source
+		"unitTypes": ["Scout"],
+        "column": 9,
+        "row": 3
+	},
+	{
+		"name": "Carnivore I",
+		"uniques": ["Heals [5] damage if it kills a unit"],
+		"unitTypes": ["-","-","-"],
+        "column": 38,
+        "row": 21
+	},
+	{
+		"name": "Carnivore II",
+		"prerequisites": ["Carnivore I"],
+		"uniques": ["[+3] HP when healing"],
+		"unitTypes": ["-","-"],
+        "column": 39,
+        "row": 22
+	},
+	{
+		"name": "Carnivore III",
+		"prerequisites": ["Carnivore II"],
+		"uniques": ["[+2] HP when healing"],
+		"unitTypes": ["-","-"],
+        "column": 40,
+        "row": 23
+	},
+	{
+		"name": "Fur I",
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes": ["-"],
+        "column": 48,
+        "row": 31
+	},
+	{
+		"name": "Fur II",
+		"prerequisites": ["Fur I"],
+		"uniques": ["[+15]% Strength <for [Wounded] units>"],
+		"unitTypes": ["-"],
+        "column": 49,
+        "row": 32
+	},
+	{
+		"name": "Amniote I",
+		"uniques": ["[+1] Movement <in [Water] tiles>","[+1] Movement <in [Lakes] tiles>","[+1] Movement <in [Flood plains] tiles>"],
+		"unitTypes": ["-"],
+        "column": 51,
+        "row": 34
+	},
+	{
+		"name": "Amniote II",
+		"prerequisites": ["Amniote I"],
+		"uniques": ["[+1] Movement <in [Swamp Zone] tiles>","[+1] Movement <in [Marsh] tiles>","[+1] Movement <in [Natural Lake] tiles>","[+1] Movement <in [Oasis] tiles>"],
+		"unitTypes": ["-"],
+        "column": 52,
+        "row": 35
+	},
+	{
+		"name": "Stamina I",
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Sword","Close Combat","Mounted","Armored","Archery","Ranged Combat","Siege"],
+        "column": 61,
+        "row": 44
+	},
+	{
+		"name": "Stamina II",
+                "prerequisites": ["Stamina I"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Sword","Close Combat","Mounted","Rider","Armored","Archery","Ranged Combat","Siege"],
+        "column": 62,
+        "row": 45
+	},
+	{
+		"name": "Fortitude I",
+		"uniques": ["[+35]% Strength <when fighting in [Snow] tiles>","[+35]% Strength <when fighting in [Desert] tiles>"],
+		"unitTypes": ["Sword","Close Combat","Mounted","Rider","Armored","Archery","Ranged Combat","Siege"],
+        "column": 63,
+        "row": 46
+	},
+	{
+		"name": "Fortitude II",
+                "prerequisites": ["Fortitude I"],
+		"uniques": ["[+15]% Strength <when fighting in [Snow] tiles>","[+15]% Strength <when fighting in [Desert] tiles>"],
+		"unitTypes": ["Sword","Close Combat","Mounted","Rider","Armored","Archery","Ranged Combat","Siege"],
+        "column": 64,
+        "row": 47
+	},
+	{
+		"name": "Damage I",
+		"uniques": ["[+15]% Strength"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Rider","Armored","Archery","Ranged Combat","Siege"],
+        "column": 67,
+        "row": 50
+	},
+	{
+		"name": "Damage II",
+                "prerequisites": ["Damage I"],
+		"uniques": ["[+15]% Strength"],
+		"unitTypes": ["Sword","Close Combat","Mounted","Rider","Armored","Archery","Ranged Combat","Siege"],
+        "column": 68,
+        "row": 51
+	},
+	{
+		"name": "Cradle of Civilizations",
+		"uniques": ["Double movement in [River]"]
+	},
+	{
+		"name": "Steppe Hunter",
+		"uniques": ["Can receive bonus movement promotion"]
+	},
+	{
+		"name": "Horseback Rider",
+		"prerequisites": ["Steppe Hunter"],
+		"uniques": ["[+2] Movement"],
+		"unitTypes": ["Archery"]
+	},
+	{
+		"name": "[Quinquereme] ability",
+		"uniques": ["Transfer Movement to [Civilian]", "[+50]% XP gained from combat"]
+	},
+	{
+		"name": "Favorable Winds",
+		"uniques": ["Can move after attacking"]
+	},
+		
+///Religious Promotions
+	{
+        "name": "Messiah Unique",
+        "uniques": [
+			"Can Spread Religion <[1] additional time(s)>", "Ignores Zone of Control", "May travel on Water tiles without embarking"
+		]
+    },
+	{
+	    "name": "Devout",
+        "uniques": [
+			"Can Spread Religion <[1] additional time(s)>"
+		]
+    },
+			//"[+15]% Strength when stacked with [Missionary]", 
+			//"[+15]% Strength when stacked with [Great Prophet]"
+	{
+		"name": "Holy Calling",
+		"uniques": [
+			"[20]% Spread Religion Strength <when stacked with a [Missionary] unit>",
+			"[20]% Spread Religion Strength <when stacked with a [Great Prophet] unit>"
 		]
 	},
 	{
-		"name": "Legio Ability",
+        "name": "Zeal",
+        "uniques": ["[+25]% Spread Religion Strength"]
+    },
+	{
+		"name": "Divine Messenger",
+		"uniques": ["[+1] Movement", "Ignores terrain cost"]
+	},
+	{
+		"name": "Evangelism",
+		"uniques": ["Can Spread Religion <[2] additional time(s)>"]
+	},
+	{
+		"name": "Fanaticism",
+		"uniques": ["[+20]% Strength bonus for [Military] units within [2] tiles"]
+	},
+	{
+		"name": "Healing Hands",
+		"uniques": ["All adjacent units heal [+10] HP when healing"]
+	},
+	{
+		"name": "Purge Heresy",
+		"uniques": ["Can remove other religions from cities <in [Friendly] tiles> <[1] additional time(s)>"]
+	},
+	{
+		"name": "Defender of the Faith",
+		"uniques": ["[+20]% Strength <when fighting in [Friendly Land] tiles>"]
+	},	
+	{
+		"name": "Secularism",
+		"uniques": ["Prevents spreading of religion to the city it is next to"] 
+	},
+	{
+		"name": "Blessing of the Idols",
+		"uniques": ["Gain [15] [Faith] <upon defeating a [Military] unit> <(modified by game speed)>", "Heals [15] damage if it kills a unit"] 
+	},
+///Barbarian 
+    {
+		"name": "No Suicide",
 		"uniques": [
-			"[+1] XP gained from combat",
-			"[+10]% Strength <when fighting in [Rough terrain] tiles>",
-			"Can build [Fort] improvements on tiles",
-			"Can build [Road] improvements on tiles"
+		    "Can only attack [Civilian] units", 
+		    "Can only attack [Military] units", 
+		    "[+15]% Strength when stacked with [Worker]",
+		    "Heals [25] damage if it kills a unit",
+		    "This Unit upgrades for free including special upgrades <upon entering the [Classical era]> <with [25]% chance>",
+		    "This Unit upgrades for free including special upgrades <upon entering the [Medieval era]> <with [30]% chance>",
+		    "This Unit upgrades for free including special upgrades <upon entering the [Renaissance era]> <with [60]% chance>"
+		]
+    },
+    {
+		"name": "Barbarian Civilian",
+		"uniques": [
+			"Can move after attacking",
+			"Ignores Zone of Control",
+		    "Can pass through impassable tiles",
+		    "Invisible to non-adjacent units",
+		    "Unit will heal every turn, even if it performs an action",
+		    "Destroys tile improvements when attacking",
+		    "All tiles cost 1 movement"
+	]
+    },
+	{
+		"name": "Barbarian Strength", // Barbarians Land
+		"uniques": [
+			"No movement cost to pillage",
+			"[+15]% Strength when stacked with [Civilian]"
 		]
 	},
 	{
-		"name": "Hetairoi Glory",
+		"name": "Seek and Capture", // Barbarians Scout
 		"uniques": [
-			"[+3] XP gained from combat",
-			"[+50]% Strength <when stacked with a [Great Commander] unit>"
+			"May capture killed [Military] units <with [50]% chance>",
+			"Can upgrade to [Marine]"
 		]
 	},
 	{
-		"name": "War Paint",
+		"name": "Explorer", // Ruins effecr
 		"uniques": [
-			"[+1] XP gained from combat",
-			"Earn [17]% of the damage done to [Military] units as [Culture]"
+			"[+15]% Strength <when defending>", 
+			"[+1] Sight"
 		]
 	}
+		
 ]
