@@ -1,6 +1,7 @@
 {
     "name": "Global uniques",
     "uniques": [
+        
         //Nerf for general gameplay
         "[-25]% growth [in all cities] <in cities with at least [10] [Population]>",
         "[-25]% growth [in all cities] <in cities with at least [20] [Population]>",
