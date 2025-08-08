@@ -4559,31 +4559,47 @@
 	},
 	{
 		"name": "Evangelism",
-		"uniques": ["Can Spread Religion <[2] additional time(s)>"]
+		"uniques": [
+			"Can Spread Religion <[2] additional time(s)>"
+		]
 	},
 	{
 		"name": "Fanaticism",
-		"uniques": ["[+20]% Strength bonus for [Military] units within [2] tiles"]
+		"uniques": [
+			"[+20]% Strength bonus for [Military] units within [2] tiles"
+		]
 	},
 	{
 		"name": "Healing Hands",
-		"uniques": ["All adjacent units heal [+10] HP when healing"]
+		"uniques": [
+			"All adjacent units heal [+10] HP when healing",
+			"[+15] HP when healing <in [Friendly Land] tiles>"
+		]
 	},
 	{
 		"name": "Purge Heresy",
-		"uniques": ["Can remove other religions from cities <in [Friendly] tiles> <[1] additional time(s)>"]
+		"uniques": [
+			"Can remove other religions from cities <in [Friendly] tiles> <[1] additional time(s)>"
+		]
 	},
 	{
 		"name": "Defender of the Faith",
-		"uniques": ["[+20]% Strength <when fighting in [Friendly Land] tiles>"]
+		"uniques": [
+			"[+20]% Strength <when fighting in [Friendly Land] tiles>"
+		]
 	},	
 	{
 		"name": "Secularism",
-		"uniques": ["Prevents spreading of religion to the city it is next to"] 
+		"uniques": [
+			"Prevents spreading of religion to the city it is next to"
+		] 
 	},
 	{
 		"name": "Blessing of the Idols",
-		"uniques": ["Gain [15] [Faith] <upon defeating a [Military] unit> <(modified by game speed)>", "Heals [15] damage if it kills a unit"] 
+		"uniques": [
+			"Gain [15] [Faith] <upon defeating a [Military] unit> <(modified by game speed)>",
+			 "Heals [15] damage if it kills a unit"
+			] 
 	},
 ///Barbarian 
     {

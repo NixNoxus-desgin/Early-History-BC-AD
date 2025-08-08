@@ -3731,6 +3731,33 @@
 		"spyNames": ["Frederick", "Louis", "Arnulf", "Conrad", "Arnulf", "Heinrich", "Otto", "Rudolf", "Lothair", "Philip"]
 	},
 	{
+		"name": "Normandy",
+	    "adjective": ["Norman"],
+	    "leaderName": "William I",
+	    "preferredVictoryType": "Domination",
+	    "favoredReligion": "Catholicism",
+	    "startBias": ["Avoid [Tundra]", "Avoid [Desert]"],
+
+	    "declaringWar": "I have taken England with both my hands. Now, let us see what you can do.",
+	    "attacked": "You have chosen to challenge the might of Normandy?",
+	    "defeated": "It is a shame that a people accustomed to be conquered should make a show of being arrayed in order of battle against me. Yet, I will respect your valor.",
+	    "introduction": "I am William, Duke of Normandy, and soon to be the ruler of all England. My armies are strong, my will is unbreakable, and my destiny is clear.",
+
+	    "neutralHello": "Greetings.",
+	    "hateHello": "You dare to address me?",
+
+	    "tradeRequest": "I propose a trade agreement between our nations. Let us exchange goods and knowledge, that we may both prosper and grow stronger. But do not think this is a sign of weakness; it is merely a prudent move by a wise leader.",
+
+	    "innerColor": [255, 165, 0],
+	    "outerColor": [223, 0, 0],
+
+	    "uniqueName": "Norman Conquest",
+	    "uniques": ["[+1 Science, +1 Culture] per [5] population [in annexed cities] <in cities with a [Courthouse]>", "Gain a free [Forge] [in all non-occupied cities] <after discovering [Metal Casting]>"],
+
+	    "spyNames": ["William", "Robert", "Richard", "Roger", "Gilbert", "Henry", "Baldwin", "Matilda", "Adelaide", "Alice"],
+	    "cities": ["Rouen", "Caen", "Palermo", "Dublin", "Hastings", "Rochester", "Colchester", "Durham", "Falaise", "Carrickfergus", "Trim", "Pevensey", "Richmond", "Drogheda", "Carlow", "Leixlip", "Rye", "Dunster", "Aversa", "Ariano", "Squillace", "Battle", "Castle Rising"],
+	},
+	{
 		"name": "France",
 		"leaderName": "Napoleon",
 		"adjective": ["French"],

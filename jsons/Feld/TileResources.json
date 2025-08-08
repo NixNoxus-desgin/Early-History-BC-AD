@@ -774,7 +774,81 @@
 		"revealedBy": "Computer"
 	},
 	// Luxury resources
-	// Animal source
+	// Animal sourced
+	{
+		"name": "Ente",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland", "Flood plains"],
+            "food": 1,
+		"improvement": "Camp",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Generated on every [70] tiles <in [Grassland] tiles>"
+		]
+    },
+	{
+		"name": "Bufalo",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains", "Flood plains"],
+            "food": 1,
+            "production": 1,
+		"improvement": "Camp",
+		"improvementStats": {"production": 1},
+		"uniques": ["Generated on every [70] tiles <in [Plains] tiles>"]
+    },
+    {
+		"name": "Liebre",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland", "Flood plains"],
+        "food": 1,
+		"improvement": "Camp",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Generated on every [70] tiles <in [Grassland] tiles>"
+		]
+    },
+	{
+		"name": "Schlange",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Forest"],
+        "food": 1,
+		"improvement": "Camp",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Generated on every [10] tiles <in [Forest] tiles>"
+		]
+    },
+	{
+		"name": "Tiburon",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Ocean"],
+		"science": 1,
+		"food": 1,
+		"improvement": "Fishing Boats",
+            "uniques": [
+				"Generated on every [40] tiles <in [Ocean] tiles>"
+			]
+	},
+	{
+		"name": "Foca",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+		"improvement": "Seaworld",
+		"improvementStats": {"food": 4},
+		"uniques": [
+			"Generated on every [70] tiles <in [Coast] tiles>"
+		]
+	},
+	{
+		"name": "Tintenfisch",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+            "science": 1,
+		"improvement": "Fishing Boats",
+		"uniques": ["Generated on every [25] tiles <in [Coast] tiles>"]
+	},
 	{
 		"name": "Lobster",
 		"resourceType": "Luxury",
@@ -1229,7 +1303,9 @@
 		"terrainsCanBeFoundOn": ["Grassland"],
 		"food": 1,
 		"improvedBy": ["Manual Farm","Farm"],
-		"uniques": ["Generated on every [70] tiles <in [Plains] tiles>"]
+		"uniques": [
+			"Generated on every [70] tiles <in [Plains] tiles>"
+		]
 
 	},
 	{
@@ -1252,7 +1328,9 @@
 		"terrainsCanBeFoundOn": ["Plains","Grassland"],
 		"food": 1,
 		"improvedBy": ["Manual Farm"],
-		"uniques": ["Generated on every [70] tiles <in [Plains] tiles>"]
+		"uniques": [
+			"Generated on every [70] tiles <in [Plains] tiles>"
+		]
 	},
 	{
 		"name": "Olives",
@@ -1397,6 +1475,51 @@
 		"resourceType": "Luxury",
 	},
 	// Plant sourced
+	{
+		"name": "Cactus",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Desert"],
+		"food": 1,
+		"improvement": "Farm",
+		"improvementStats": {"gold": 2},
+		"uniques": [
+			"Generated on every [83] tiles <in [Desert] tiles>"
+		]
+    },
+	{
+		"name": "Tomate",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland", "Forest"],
+        "food": 1,
+        "production": 1,
+		"improvement": "Plantation",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Generated on every [70] tiles <in [Grassland] tiles>"
+		]
+    },
+	{
+		"name": "Birne",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland", "Forest"],
+        "food": 1,
+        "culture": 1,
+		"improvement": "Plantation",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Generated on every [70] tiles <in [Grassland] tiles>"
+		]
+    },
+	{
+		"name": "Mango",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Forest"],
+		"food": 1,
+		"improvement": "Plantation",
+            "uniques": [
+				"Generated on every [200] tiles <in [Forest] tiles>"
+			]
+	},
 	{
 		"name": "Poppy",
 		"resourceType": "Luxury",
