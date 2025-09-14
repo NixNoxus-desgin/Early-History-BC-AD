@@ -1,1 +1,17 @@
-
+[
+{
+  "StatusEffects": [
+    {
+      "name": "The Black Death",
+      "type": "Negative",
+      "description": "A devastating plague. [-25]% [Food], [-15]% [Combat Strength] for units in the city. Can spread to nearby cities.",
+      "uniques": [
+        "-[25]% [Food]",
+        "Units in this city have [-15]% [Combat Strength]",
+        "Lasts for [10] turns",
+        "Can spread to other cities within [10] tiles"
+      ]
+    }
+  ]
+}
+]
