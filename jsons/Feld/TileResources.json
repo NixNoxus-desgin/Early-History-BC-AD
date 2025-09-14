@@ -2292,8 +2292,11 @@
 	{
 		"name": "Scriptures",
 		"resourceType": "Luxury",
-		"faith": 1,
-		"uniques": ["[+15]% Faith when constructing [Abbey] [in all cities]"],
+		"uniques": [
+	 		"[+1 Science] [in this city] <if [Skriptorium] is constructed>",
+            "[+1 Faith] [in this city] <if [Skriptorium] is constructed>",
+			"[+10]% Faith when constructing [Abbey] [in your cities]"
+		]
 	},
 	{
 		"name":"Reef Product",

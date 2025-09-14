@@ -520,7 +520,11 @@
         "policies": [
             {
                 "name": "Military Tradition",
-                "uniques": ["[+20]% XP gained from combat <for [Military] units>","[+3 Food] [in all cities with a garrison]"
+                "uniques": [
+                    "[Plague Survivor] promotion provides additional [+10]% Strength",
+                    "Military units are [-30]% less likely to contract [Plague Carrier] promotion",
+                    "Comment [Military discipline helps maintain order during outbreaks]",
+                    "[+20]% XP gained from combat <for [Military] units>","[+3 Food] [in all cities with a garrison]"
                 ],
                 "row": 1,
                 "column": 3
@@ -647,8 +651,15 @@
             },
             {
                 "name": "Monopoly",
-                "uniques": ["[+1] Happiness from each type of luxury resource","[+25]% Production when constructing [Economic Building] buildings [in all cities]"],
-                "requires": ["Patreonage","Trade Alliance","Convoys and Mecenary"],
+                "uniques": [
+                    "Reduces economic penalty from plague by [-40]%",
+                    "Enables faster recovery of [Gold] production after plague",
+                    "Comment [Wealthy merchants can better withstand economic disruptions]",
+                    "[+1] Happiness from each type of luxury resource",
+                    "[+25]% Production when constructing [Economic Building] buildings [in all cities]"
+                ],
+                "requires": [
+                    "Patreonage","Trade Alliance","Convoys and Mecenary"],
                 "row": 2,
                 "column": 3
             },
@@ -676,7 +687,12 @@
         "policies": [
             {
                 "name": "Imperial Examinations",
-                "uniques": ["[+50]% Production when constructing [Examination Hall] buildings [in all cities]","[+15]% [Culture] from every [Examination Hall] <after adopting [Scholarship]>"
+                "uniques": [
+                    "[+20]% effectiveness of quarantine measures",
+                    "Enables construction of [Pest House] in half the time",
+                    "Comment [Bureaucratic efficiency improves public health responses]",
+                    "[+50]% Production when constructing [Examination Hall] buildings [in all cities]",
+                    "[+15]% [Culture] from every [Examination Hall] <after adopting [Scholarship]>"
                 ],
                 "row": 1,
                 "column": 1
@@ -729,7 +745,13 @@
         "policies": [
             {
                 "name": "Vassalage",
-                "uniques": ["[-25]% City-State Influence degradation","Resting point for Influence with City-States is increased by [20]","[+1 Happiness] [in annexed cities] <after adopting [Militant]>"
+                "uniques": [
+                    "[-25]% spread of plague between cities in your empire",
+                    "[+1 Happiness] in cities without plague",
+                    "Comment [Feudal obligations help contain outbreaks within territories]",
+                    "[25]% City-State Influence degradation",
+                    "Resting point for Influence with City-States is increased by [20]",
+                    "[+1 Happiness] [in annexed cities] <after adopting [Militant]>"
 
                 ],
                 "row": 1,
@@ -815,13 +837,24 @@
         "policies": [
             {
                 "name": "Theology Conferences",
-                "uniques": ["[+1 Faith] from every specialist [in all cities]"],
+                "uniques": [
+                    "[+20]% effectiveness of [Religious Processions] during plague outbreaks",
+                    "[Religious Processions] produces additional [+2 Faith] during [The Black Death]",
+                    "[Faith] cost of religious buildings [-30]% during [The Black Death]",
+                    "Comment [Religious conferences coordinate responses to the divine punishment]",
+                    "[+1 Faith] from every specialist [in all cities]"],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Scholasticism",
-                "uniques": ["[+1 Faith] from every [Educational Building]","[+5]% [Science] from every [Worship Place]","Comment [Enables Missionary to aid research in city centre tiles after adopting Schlorship]"
+                "uniques": [
+                    "[+25]% chance to remove [The Black Death] each turn in cities with [University]",
+                    "Grants [+15] [Science] from plague research opportunities",
+                    "Comment [Monastic scholars study the plague and develop countermeasures]",
+                    "[+1 Faith] from every [Educational Building]",
+                    "[+5]% [Science] from every [Worship Place]",
+                    "Comment [Enables Missionary to aid research in city centre tiles after adopting Schlorship]"
 
                 ],
                 "row": 1,
@@ -918,7 +951,12 @@
         "policies": [
             {
                 "name": "Rise of Citizens",
-                "uniques": ["[+33]% Production when constructing [Infrastructure] buildings [in all cities]","[Gold] cost of purchasing [Infrastructure] buildings [-10]% <after adopting [Plutocracy]>"
+                "uniques": [
+                    "[+33]% Production <when constructing [{'medical buildings'}{'Building'}]> during plague",
+                    "Citizens provide [+1 Science] each when studying plague effects",
+                    "Comment [Humanist values drive scientific approach to pandemic]",
+                    "[+33]% Production when constructing [Infrastructure] buildings [in all cities]",
+                    "[Gold] cost of purchasing [Infrastructure] buildings [-10]% <after adopting [Plutocracy]>"
 
                 ],
                 "row": 1,

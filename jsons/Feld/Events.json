@@ -412,12 +412,18 @@
 		"text": "People are often superstitious and the appearance of a comet has convinced many that the end of times is soon to come. Whether or not this is actually the case, this is bound to cause some instability within the nation.",
 		"choices": [
 			{ "text": "It is an omen!",
-			  "uniques": [	"Gain [10]-[25] [Faith]",
-					"Gain [10]-[20] [Culture]"]},
+			  "uniques": [	
+				"Gain [10]-[25] [Faith]",
+				"Gain [10]-[20] [Culture]"
+				]
+			},
       
-      			{ "text": "The end is nigh!",
-			  "uniques": [	"[-2 Happiness] [in all cities] <for [5] turns>",
-                      		       	"Gain [20]-[40] [Culture]" ] },
+      		{ "text": "The end is nigh!",
+			  "uniques": [
+				"[-2 Happiness] [in all cities] <for [5] turns>",
+                "Gain [20]-[40] [Culture]" 
+				] 
+			},
       
      			{ "text": "Keep looking at the sky!",
 			  "uniques": [ 	"Comment [Grants a burst of Science]",
@@ -513,7 +519,24 @@
 				  	"Free [Landsknecht] appears",
 					"Gain [-300] [Gold] <hidden from users>" ] }]
   },
+  {
+		    "name": "Obstacle",
+		    "text": "For years now, the grand building that has been serving as the seat of power of our nation has fallen into disrepair. Cracks and mould crawl out of far corneres of walls, doors are unable to be closed as their hinges wear away, the beutiful art that line corridors and rooms have been smotherd in inch-thich layers of dust and grime. This building is no longer deemed fit for its purpose, and action needs to be taked immediately. What shall we do?",
+		    "choices": [
 
+			    { "text": "We shall build a new building for our government! There may already be people and property present where the building site needs to be... but surely a bit of 'convincing' shall remove them from the area.",
+			  "uniques": ["[-10 Happiness] [in capital] <for [10] turns>",
+			  			"Gain a free [New Palace] [in capital]",
+			  			"[+20]% [Production] [in capital] <for [10] turns>",
+			  			"[-10]% [Culture] [in Capital] <for [10] turns>"]},
+
+			     { "text": "The embarassment of having such a beutiful piece of architecture being tarnished from decades of neglct shall not carry on! We shall renovate it immediately!",
+			  "uniques": ["[+5 Culture, +5 Happiness] from every [Palace]  <for [10] turns>",
+				  		"[+200]% Yield from every [Palace] <for [9999] turns>",
+			  			"[-10]% [Production] [in capital] <for [10] turns>",
+			  			"[+20]% [Culture] [in Capital] <for [10] turns>"]}]
+	
+	},
 	{
 		"name": "PMCs",
 		"text": "An organisation of PMCs, fresh from some foreign war now settled, has sent a message to the military, and offer their services to you. These are no mere insurgents; these are true veterans. If not us, then they might turn to our enemies.",
@@ -937,6 +960,23 @@
   	},
 	{
 
+		"name": "Persia UE", //On Banking
+		"text": "Shahanshah! Your sons have finally arrived after years of being taught to be the next leader of Eranshahr. It is now time to pick your successor, great king of kings.",
+		"choices": [
+			{ "text": "Bring me the prince that has the best military strategy. Only a Shah that can protect their lands and can live up to the glory of their ancestors can be fit for rule.",
+			  "uniques": ["All newly-trained [Land] units [in all cities] receive the [Eranshahr] promotion <for [1000] turns>",
+			  		"[Land] units gain the [Eranshahr] promotion"]} 
+      
+      			{ "text": "Bring me the prince with the greatest mathematical knowledge. This empire is the lagest ever concieved by man, and it takes a wise man to properly rule it, and not a brute that will break it.",
+			  "uniques": [	 "[+20]% [Science] [in all cities] <during a Golden Age>", 
+			  		   		 "[+1 Happiness, +1 Production] from all [Science] buildings <for [10] turns>"] }
+
+			{ "text": "These prices are not suitable to be my heir. Bring me my daughter! She has the mind of a banker and the wit of a general. She shall lead this empire to prosperity and wealth.",
+			  "uniques": [	 "[+3 Culture] from all [Production] buildings <for [9999] turns>",
+			  				"[+400]% Yield from every [Monument] <for [10] turns>"] }]
+  	},
+	{
+
 		"name": "China UE", //On Banking
 		"text": "Great Empress of the Middle Kingdom, a messenger awits outside the palace. They say that their message is of great importance. Oh look, here he is right now!",
 		"choices": [
@@ -1183,5 +1223,135 @@
                 ],                
                 "uniques": ["Only available<during the [Classical era]>", "Unavailable <if [JHWH] is constructed by anybody>", "Provides a [JHWH] in your first [1] cities for free"]
             }
-        ],
- ]
+//Pest
+ {
+      "name": "The Black Death Approaches...",
+      "text": "Riders bring grim news from distant lands - a terrible pestilence is sweeping across continents, leaving mountains of dead in its wake. The merchants speak of entire villages emptied, of crops rotting in fields with no one left to harvest them, and of a death that comes swift and merciless.",
+      "choices": [
+        {
+          "text": "Quarantine the infected areas!",
+          "uniques": [
+            "Only available <if [Medical School] is constructed> <when above [100] [Gold]>",
+            "Instantly consumes [100] [Gold] <(modified by game speed)>",
+            "Gain [-2] [Happiness] [in all cities] <for [10] turns>",
+            "[-20]% [Gold] [in all cities] <for [8] turns>",
+            "Gain a free [Plague Quarantine] [in capital]",
+            "Comment [We must contain this horror before it consumes us all...]",
+            "Triggers a [The Black Death Approaches...] event <with probability [0.05]> <every [30] turns> <hidden from users>"
+          ]
+        },
+        {
+          "text": "Pray for divine intervention",
+          "uniques": [
+            "Only available <when above [50] [Faith]>",
+            "Instantly consumes [50] [Faith] <(modified by game speed)>",
+            "Gain [25] [Faith] <(modified by game speed)> [in all cities] <for [5] turns>",
+            "Gain a free [Religious Processions] [in capital]",
+            "Comment [The priests lead desperate processions through empty streets, begging for mercy...]",
+            "Triggers a [The Black Death Approaches...] event <with probability [0.1]> <every [25] turns> <hidden from users>"
+          ]
+        },
+        {
+          "text": "Continue normal operations",
+          "uniques": [
+            "Gain a free [The Black Death] [in random city]",
+            "Gain a free [The Black Death] [in another random city] <with probability [0.4]>",
+            "[-1] [Happiness] [in all cities] <for [15] turns>",
+            "Comment [The plague carts make their daily rounds, collecting bodies wrapped in soiled linens...]",
+            "Triggers a [The Black Death Approaches...] event <with probability [0.2]> <every [20] turns> <hidden from users>"
+          ]
+        },
+        {
+          "text": "Flee to the countryside",
+          "uniques": [
+            "Only available <if [Nobility] is constructed>",
+            "Gain [-100] [Gold] <(modified by game speed)>",
+            "[+1] population in [random non-capital city] <hidden from users>",
+            "[-1] population in [capital] <hidden from users>",
+            "Comment [The wealthy abandon the cities, leaving the poor to suffer their fate...]",
+            "Triggers a [The Black Death Approaches...] event <with probability [0.15]> <every [28] turns> <hidden from users>"
+          ]
+        },
+        {
+          "text": "Trust in God's mercy",
+          "uniques": [
+            "Only available <in cities with [Catholic Church] religion> <in cities with [Orthodox Church] religion>",
+            "Instantly consumes [75] [Faith] <(modified by game speed)>",
+            "Gain [30] [Faith] <(modified by game speed)> [in all cities] <for [8] turns>",
+            "[-15]% Unhappiness from [The Black Death] [in cities following this religion]",
+            "Comment [As Christ suffered for our sins, so we must bear this cross with faith and patience...]",
+            "Comment [The priests administer last rites to the dying, offering the hope of salvation beyond this vale of tears...]",
+            "Triggers a [The Black Death Approaches...] event <with probability [0.08]> <every [35] turns> <hidden from users>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plague Doctor's Visit",
+      "text": "A physician clad in a beaked mask has arrived, claiming knowledge of the pestilence. He offers his services, though his methods are... unorthodox.",
+      "choices": [
+        {
+          "text": "Employ the plague doctor",
+          "uniques": [
+            "Instantly consumes [75] [Gold] <(modified by game speed)>",
+            "[+10]% Chance to remove [The Black Death] each turn <for [5] turns>",
+            "Gain [15] [Science] <(modified by game speed)>",
+            "Comment [The doctor's strange costume frightens the children, but his leeches and potions offer some small comfort...]"
+          ]
+        },
+        {
+          "text": "Send him away",
+          "uniques": [
+            "Gain [10] [Faith] <(modified by game speed)>",
+            "Comment [We trust in God's mercy, not in this charlatan and his frightening costume...]"
+          ]
+        },
+        {
+          "text": "Pray for his success",
+          "uniques": [
+            "Only available <in cities with [Catholic Church] religion> <in cities with [Orthodox Church] religion>",
+            "Instantly consumes [25] [Faith] <(modified by game speed)>",
+            "[+15]% Chance to remove [The Black Death] each turn <for [3] turns>",
+            "Gain [20] [Faith] <(modified by game speed)>",
+            "Comment [May God guide this physician's hands and bless his efforts to heal Your suffering children...]"
+          ]
+        }
+      ]
+    },
+	 {
+      "name": "Theodicy Crisis",
+      "text": "As the plague ravages our people, difficult questions arise about God's nature and purpose. Why would a loving God allow such suffering? How do we reconcile divine goodness with this immense human tragedy?",
+      "choices": [
+        {
+          "text": "Divine punishment for sins",
+          "uniques": [
+            "Only available <in cities with [Catholicism] religion> <in cities with [Orthodoxy] religion>",
+            "Gain [40] [Faith] <(modified by game speed)> [in all cities]",
+            "[-1] [Happiness] [in all cities] <for [10] turns>",
+            "Comment [The preachers thunder from their pulpits about God's righteous judgment upon a sinful world...]",
+            "Comment [Flagellant movements grow as people seek to atone for collective sins through self-mortification...]"
+          ]
+        },
+        {
+          "text": "Mysterious divine plan",
+          "uniques": [
+            "Only available <in cities with [Catholicism] religion> <in cities with [Orthodoxy] religion>",
+            "Gain [25] [Faith] <(modified by game speed)> [in all cities]",
+            "[+1] [Happiness] [in all cities] <for [5] turns>",
+            "Comment [Theologians speak of God's inscrutable wisdom and the need for faith in times of trial...]",
+            "Comment [As Job suffered yet maintained his faith, so must we trust in God's ultimate goodness...]"
+          ]
+        },
+        {
+          "text": "Test of faith",
+          "uniques": [
+            "Only available <in cities with [Catholicism] religion> <in cities with [Orthodoxy] religion>",
+            "Gain [30] [Faith] <(modified by game speed)> [in all cities]",
+            "[+10]% [Faith] [in all cities] <for [8] turns>",
+            "Comment [The saints remind us that suffering purifies the soul and draws us closer to Christ's passion...]",
+            "Comment [Martyrdom becomes the ideal as Christians face death with courage and faith...]"
+          ]
+        }
+      ]
+    }
+  ]

@@ -6,37 +6,109 @@
 //Gain control over [tileFilter] tiles in a [nonNegativeAmount]-tile radius
 //denounced Zitate
 
+//Jahreszeiten
 
-//Sonderführer Papel States
-{	
-	"name": "Pope-Innocent III",
-	"isNationalWonder": true,
-	"cost":1,
-	"uniqueTo": "Papel States",
-	"replacementTextForUniques": "[[+15]% [Culture] [in cities following our religion]] [after founding a religion]",
-	//"uniques": ["Can only be built<in [in capital] cities>", "Only available <in cities without a [Pope-Francis]>", "Only available <in cities without a [Pope-Benedict XVI]>", "[+15]% [Culture] [in cities following our religion] <after founding a religion>"]	
-},
-{	
-	//"name": "Pope-Benedict XVI",
-	"isNationalWonder": true,
-	"cost":1,
-	"uniqueTo": "Papel States",
-	"replacementTextForUniques": "[[+35]% growth [in cities following our religion]] [after founding a religion]",	
-	//"uniques": ["Can only be built<in [in capital] cities>", "Only available <in cities without a [Pope-Innocent III]>", "Only available <in cities without a [Pope-Francis]>", "[+35]% growth [in cities following our religion] <after founding a religion>"]			
-},
-{	
-	//"name": "Pope-Francis",
-	"isNationalWonder": true,
-	"cost":1,
-	"uniqueTo": "Papel States",
-	"replacementTextForUniques": "[[+2 Production] [in cities following our religion]] [after founding a religion]",
-	//"uniques": ["Can only be built<in [in capital] cities>", "Only available <in cities without a [Pope-Innocent III]>", "Only available <in cities without a [Pope-Benedict XVI]>", "[+2 Production] [in cities following our religion] <after founding a religion>"]	
-},
+//Resource Jahrezeiten !
+//Gobale Unique ! //Evtl.
 
-//////////////////////////////////////////////////////////
-
+//Tiggerable
+  {
+    "name": "SeasonTriggerSpring",
+    "uniques": [
+      "Gain [SeasonSpring] in all cities <after turn number 0>",
+      "Remove [SeasonWinter] in all cities <after turn number 0>"
+    ]
+  },
+  {
+    "name": "SeasonTriggerSummer",
+    "uniques": [
+      "Gain [SeasonSummer] in all cities <every 30 turns> <after turn number 30>",
+      "Remove [SeasonSpring] in all cities <every 30 turns> <after turn number 30>"
+    ]
+  },
+  {
+    "name": "SeasonTriggerAutumn",
+    "uniques": [
+      "Gain [SeasonAutumn] in all cities <every 30 turns> <after turn number 60>",
+      "Remove [SeasonSummer] in all cities <every 30 turns> <after turn number 60>"
+    ]
+  },
+  {
+    "name": "SeasonTriggerWinter",
+    "uniques": [
+      "Gain [SeasonWinter] in all cities <every 30 turns> <after turn number 90>",
+      "Remove [SeasonAutumn] in all cities <every 30 turns> <after turn number 90>"
+    ]
+  },
+  {
+    "name": "SeasonTriggerCycleRestart",
+    "uniques": [
+      "Gain [SeasonSpring] in all cities <every 120 turns> <after turn number 120>",
+      "Remove [SeasonWinter] in all cities <every 120 turns> <after turn number 120>"
+    ]
+  },
+  //Uniques
+  {
+    "name": "SeasonSpring",
+    "cost": 1,
+    "maintenance": 0,
+    //"uniques": ["[+1 Food] from [Forest] tiles in this city"],
+    "requiredTech": "Agriculture",
+    "hurryCostModifier": 0,
+    "neverBuildable": true
+  },
+  {
+    "name": "SeasonSummer",
+    "cost": 1,
+    "maintenance": 0,
+    //"uniques": ["[+2 Production] from [Hill] tiles in this city"],
+    "requiredTech": "Agriculture",
+    "hurryCostModifier": 0,
+    "neverBuildable": true
+  },
+  {
+    "name": "SeasonAutumn",
+    "cost": 1,
+    "maintenance": 0,
+    //"uniques": ["[+1 Food] and [+1 Production] from [Farm] tiles in this city"],
+    "requiredTech": "Agriculture",
+    "hurryCostModifier": 0,
+    "neverBuildable": true
+  },
+  {
+    "name": "SeasonWinter",
+    "cost": 1,
+    "maintenance": 0,
+    //"uniques": ["[−1 Food] from [all tiles] in this city"],
+    "requiredTech": "Agriculture",
+    "hurryCostModifier": 0,
+    "neverBuildable": true
+  },
 //Eventbezogen
 
+//<with [Amount]% chance>"
+    {
+        "name": "Rain Miracle",
+		"cost": 0,
+        "text": "Die Götter erhören dein Gebet! Regen fällt und die Felder werden wieder fruchtbar.",
+        "uniques": [
+			"Unbuildable",
+            "Comment [Die Bevölkerung ist erleichtert, die Ernten sind gesichert.]",
+			"Triggers a [Rain Miracle] event"
+        ]
+    },
+    {
+        "name": "No Response",
+        "text": "Gott bleibt stumm. Der Regen bleibt aus, und die Dürre wütet weiter.",
+        "uniques": [
+			"Unbuildable",
+			"Only available <in cities with a []>",
+			"Comment [Weitermachen wie bisher]",
+			"Triggers a [No Response] event",
+            "Comment [Die Dürre verschärft die Lage. Die Bevölkerung ist unzufrieden.]"
+        ]
+},
+//
 {
 	"name": "The Great Prophet",
 	"maintenance": 0,
@@ -59,7 +131,10 @@
 	"cost": 10000,
 	"uniques": [
 	    "Free [Jesus] appears",
-	    "Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
+	    "Unbuildable", 
+		"Cannot be purchased", 
+		"Unsellable", 
+		"Destroyed when the city is captured"
 	]
 },
 {
@@ -68,7 +143,10 @@
 	"cost": 10000,
 	"uniques": [
 	"Free [Muhammad] appears",
-	"Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
+	"Unbuildable", 
+	"Cannot be purchased", 
+	"Unsellable", 
+	"Destroyed when the city is captured"
 	]
 },
 {
@@ -77,7 +155,10 @@
 	"cost": 10000,
 	"uniques": [
 	"Free [JHWH] appears",
-	"Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when the city is captured", 
+	"Unbuildable",
+	"Cannot be purchased", 
+	"Unsellable", 
+	"Destroyed when the city is captured" 
 	]
 },
 //Bonus
@@ -898,7 +979,7 @@
 	    "science": 1,
 	    "greatPersonPoints": {"Great Scientist": 1},
 	    "hurryCostModifier": 20,
-	    "uniques": ["[+15]% Great Person generation [in this city]", "Cost increases by [5] per owned city"],
+	    "uniques": ["[+15]% Great Person generation [in this city]", "Cost increases by [5] per owned city"]
 	    ///"requiredTech": "Campfire"
     },
 	{
@@ -1396,11 +1477,13 @@
 		"cityStrength": 5,
 		"maintenance": 1,
 		"hurryCostModifier": 25,
-		"uniques": ["Infrastructure",
+		"uniques": [
+			"Infrastructure",
 			"[Water] Units adjacent to this city heal [+10] HP per turn when healing",
 			"Must be next to [Coast]","[+25]% Production when constructing [Civilian Water] units [in this city]",
-		        "[+15]% Production when constructing [Ranged Combat Ship] units [in this city] <before the [Industrial era]>",
-		        "[+1] Unit Supply"],
+		    "[+15]% Production when constructing [Ranged Combat Ship] units [in this city] <before the [Industrial era]>",
+		    "[+1] Unit Supply"
+		],
 		"requiredTech": "Construction"
 	},
 	{
@@ -1484,7 +1567,6 @@
 /// light industry
     //Mühlstein - Einfache Methode Mahl- und Ölgewinnung
 	//Ölmühle - Verbesserte Methode zur Gewinnung von Flüssigkeiten wie bsp. Ölen
-	//Schreinerei - ((-)Summe))Geld/Bretter/Werkzeug/Stein - Benötigt Gebäude/Ressourcen
     {
 		"name": "Houri Brothel",
 		"replaces": "Distillery",
@@ -1709,8 +1791,10 @@
 		"requiredNearbyImprovedResources": ["Grape"],
 		"uniques": [
 			"Light Industry",
-			//"Provides [1] [Wine] <with [Grape]>",
-			//"[+1 Production] <in cities with a [Guild Complex]>"
+			"[+1 Gold, +1 Happiness] <in cities with a [Guild Complex]>",
+			"[+1 Culture] per [2] [Wine] resource <in this city> <in tiles adjacent to [Grape] tiles>",
+			//"[+2 Science] <in cities with a [Weinkeller]> <after descovering [Fermentation]>",
+			"[+2]% [Gold] from Trade Routes <in cities with a [Guild Complex]>"
 		],
 		"requiredTech": "Pottery"
 	},
@@ -1761,7 +1845,7 @@
 	},
 	{
 		"name": "Kloster Infirmerie",
-		"cost": 520,
+		"cost": 540,
 		"uniques": [
 			"'Expansion'",
 			"Only available <in cities with a [Kloster Erweiterung I]>",
@@ -1772,15 +1856,16 @@
 			"Only available <in cities without a [Kloster Bierherstellung]",
 			"May buy [Religious] units for [Gold] [in all cities] at an increasing price ([20])",
 			"May buy [Religious] units for [Faith] [in all cities] at an increasing price ([20])",
-			"All newly-trained [Missionary] units [in this city] receive the [Healing Hands] promotion <with [70]% chance> <in cities with a [Kräutergarten]>",
-			"Free [Missionary] appears <in this city> <when at war> <before the [Renaissance era]>",
+			"All newly-trained [Missionary] units [in this city] receive the [Healing Hands] promotion <with [55]% chance> <in cities with a [Kräutergarten]>",
+			"Free [Missionary] appears <in this city> <when at war> <before the [Imperal Era]>",
 			"[+8] HP when healing <in tiles adjacent to [Herbs] tiles> <when adjacent to a [Missionary] unit> <with [33]% chance> <for [Wounded] units>",
 			"No damage penalty for wounded units <when adjacent to a [Missionary] unit> <when defending> <with [88]% chance>",
 			"[+1] Unit Supply <for [Wounded] units> <in this city> <upon entering a [Friendly Land] tile> <in cities with a [Kloster Infirmerie]",
-			"New [Missionary] units start with [+7] XP [in this city] <for units with [Healing Hands]> <when at war> <after discovering [Alchemy]>",
-			"[+1]% [faith] <when adjacent to a [Missionary] unit> <when below [40] HP> <when at war>",
-			"[-10]% [Gold] [in this city] <upon constructing [Kloster Infirmerie] [in this city]>",
-			"[+10]% production cost <upon constructing [Kloster Infirmerie]> <in this city>",
+			"New [Missionary] units start with [+7] XP [in this city] <for units with [Healing Hands]> <after discovering [Alchemy]>",
+			"[Religious] Units adjacent to this city heal [+10] HP per turn when healing <in cities with a [Kräutergarten]>",
+			"[+1 Faith] <when adjacent to a [Missionary] unit> <when below [20] HP> <when at war>",
+			"[-15]% [Gold] [in this city] <upon constructing [Kloster Infirmerie] [in this city]>",
+			"[+15]% production cost <upon constructing [Kloster Infirmerie]> <in this city>",
 			"Can be purchased for [450] [Faith] [in this city] <in cities with a [Kloster Erweiterung IV]> <in cities with a [Abtei]> <in cities without a [Kloster Bierherstellung]> <in cities with at least [5] [Followers of this Religion]>"
 		],
 		"requiredTech": "Theology",
@@ -1789,11 +1874,9 @@
 	//Bibliothek:  kopieren von Bücher/Schrieften, Klosterschulen:Latein, Lesen und Schreiben, sowie das Studium religiöser Schriften wie der Bibel. 
 	//Rechnen, Geometrie, Musik und Astronomie gelehrt,
 	//Schreibstuben der Klöster wurden Texte abgeschrieben und so wichtige Werke der Antike und des Mittelalters bewahrt. 
-	//Bibliotheken
 	{
 		"name": "Klosterbildung",
-
-
+		"cost": 700,
 		"uniques": [
 			"'Expansion'",
 			"Only available <in cities with a [Kloster Erweiterung I]>",
@@ -1802,25 +1885,34 @@
 			"Only available <in cities without a [Kloster Infirmerie]",
 			"Only available <in cities without a [Kloster Umwehrung]",
 			"Only available <in cities without a [Kloster Bierherstellung]",
-			"Only available <in cities without a [Bibliothek]",
+			"Only available <in cities without a [Library]",
 			"Comment [Klöster sind wichtige Zentren der Bildung. Sie bieten Schulen für Mönche, Nonnen und auch externe Schüler an und spielen eine entscheidende Rolle bei der Bewahrung und Weitergabe von Wissen.]",
-			"Comment [Durch das schreiben von Schriften und erstellung von Büchern, lassen sich religiöse, ästetische und wissenschaftliche Erkenntnisse aufzeichnen und weitergeben. Man bewahrt Sie auf und ermöglicht den Fortschritt]",
+			"Comment [Durch das schreiben von Schriften und erstellung von Büchern, lassen sich religiöser und weltliche Erkenntnisse aufzeichnen und weitergeben.]",
 			"Comment [Vortan können Sie Bonuse durch Schriften erhalten. Neue baubare Gebäude sind hier zu sehen: Klosterschule, Bibliothek, und Schreibstuben]",
-			"Gain a free [Bibliothek] [in this city]",
+			"Gain a free [Library] [in this city]",
 			"Gain a free [Klosterschule] [in this city]",
-			"Gain a free [Schreibstube] [in this city]",
-			"Can be purchased for [450] [Faith] [in this city] <if [Kloster Erweiterung IV] is constructed> <if [Abtei] is constructed> <if [Kloster Bierherstellung] is not constructed> <in cities with at least [5] [Followers of this Religion]>"
+			"Gain a free [Skriptorium] [in this city]",
+			"Can be purchased for [650] [Faith] [in this city] <if [Kloster Erweiterung IV] is constructed> <if [Abtei] is constructed> <if [Kloster Bierherstellung] is not constructed> <in cities with at least [5] [Followers of this Religion]>"
 		],
 		"requiredTech": "Theology",
 		"hurryCostModifier": -10
-
 	},
 	{
 		"name": "Kloster Umwehrung",
-
 		"uniques": [
 			"'Expansion'",
-			"",
+			"Comment [Nur wenn alle Gebäude/Erweiterungen in diesem Packet nicht gebaut wurden, ist dieses Packet verfügbar.]",
+			"Only available <in cities without a [Kloster Infirmerie]>",
+			"Only available <in cities without a [Klosterbildung]>",
+			"Only available <in cities without a [Kloster Bierherstellung]>",
+			"Only available <in cities without a [Watch Tower]>",
+			"Only available <in cities without a [Graben]>",
+			"Only available <in cities with a [Kloster Erweiterung I]>",
+			"Only available <in cities with a [Kloster Erweiterung II]>",
+			"Only available <in cities with a [Kloster Erweiterung III]>",
+			"Gain a free [Watch Tower] [in this city]",
+			"Gain a free [Graben] [in this city]",
+			"[+10]% Strength <for [Ranged Combat] units> <when at war> <for [15] turns> <if [Walls] is constructed> <in this city>",
 			"Can be purchased for [450] [Faith] [in this city] <if [Kloster Erweiterung IV] is constructed> <if [Abtei] is constructed> <if [Kloster Bierherstellung] is not constructed> <in cities with at least [5] [Followers of this Religion]>"
 		]
 	},
@@ -1878,11 +1970,20 @@
 			"Comment [Erlaubt dir alle Gebäude in diesem Packet zu ermöglichen, die eine Kloster Erweiterung II brauchen. Sind jedoch versteckt vor Nutzer: die Werte der Gebäude sind hier eingetragen]",
 			"Comment [Ermöglicht dir den Bau von: Refektorium (Speisesaal), Dormitorium (Schlafräume), Kapitelsaal (Versammlungsraum)]",
 			"Comment [Refektorium]", 
-			"",
+			"[+1 Culture, +1 Faith] [in this city]",
+			"[+2]% [science] [in this city] <with [Scriptures]> <in cities with a [Library]>",
+			"[+4]% [Happiness] [in this city] <when above [5] [Food]> <in cities with at least [3] [Followers of the Majority Religion]>",
+			"[-1 Food] per [3] population [in this city] <in cities with between [1] and [9] [Followers of the Majority Religion]>",
+			"[-1 Food] per [5] population [in this city] <in cities with between [9] and [15] [Followers of the Majority Religion]>",
+			"[-1 Food] per [8] population [in this city] <in cities with at least [15] [Followers of the Majority Religion]>",
 			"Comment [Dormitorium]", 
-			"",
+			"[+1 Faith] [in this city]",
+			"[+2]% [Happiness] [in this city]",
+			"[+5]% [faith] [in this city] <in cities with a [Kloster Kathedrale]> <after adopting [Matutin]",
 			"Comment [Kapitelsaal]",
-			""
+			"[+1 Production] from all [Monastery] buildings <if [Monastery] is constructed in at least [6] of [in all cities] cities> <in cities with a [Abtei]",
+			"[+1 culture] from every specialist [in this city] <in cities with a [Abtei]",
+			"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]> <in cities with a [Abtei]"
 		],
 		"requiredTech": "Theology",
 		"hurryCostModifier": -20
@@ -1921,30 +2022,206 @@
 			"Only available <in cities with a [Kloster Erweiterung III]>",
 			"Only available <in cities without a [Kelterrei]>",
 			"Only available <in cities without a [Weinkeller]>",
-			"Comment [Die höchste Stufe eines Klosters: der Abt, die Abtei erfolgt durch den Orden oder dem Heilligen Stuhl. Sie wählen den Abtes.]",
+			"Comment [Die höchste Stufe eines Klosters: die Abtei, die Ernennung einer Abtei erfolgt durch den Orden oder dem Heilligen Stuhl. Sie wählen den Abtes.]",
 			"Comment [Der Abtes ist die Leitung eines Klosters und die geistliche Führung der Mönchsgemeinschaft, sowie die Vertretung des Klosters nach außen.]",
-			"Comment [Die Herrausragende Position ermöglicht der ernannten Abtei vorteile: 1. weitere Wahl Form (Art) Kloster auszubauen, ein zusätzliches Gebäude Abtei, Bonuse durch die Abtei für das Kloster]",
+			"Comment [Die Herrausragende Position ermöglicht der ernannten Abtei vorteile: 1. weitere Wahl Form (Art) Kloster auszubauen, ein zusätzliches Gebäude Abtei, Bonis durch die Abtei für das Kloster]",
 			"Cost increases by [40] per owned city",
 			"Gain a free [Abtei] [in this city]",
-			"Gain a free [Kelterrei] [in this city] <within [6] tiles of a [Grape]>",
+			"Gain a free [Kelterrei] [in this city] <within [6] tiles of a [Grape]>", //
 			"Gain a free [Weinkeller] [in this city] <within [6] tiles of a [Grape]>",
 			"Gain a free [Kloster Bierherstellung] [in this city] <within [6] tiles of a [Hops]> <in cities without a [Brewery]>"
 		],
 		"requiredTech": "Theology",
 		"hurryCostModifier": -20
 	},
-
-	// Infirmarium (Krankenabteilung), 
-	//  Bibliotheken und Schreibstuben (Skriptorien),
-
-	////////////////
 	{
-		"name": "Hopfendarre",
-
-
+		"name": "Graben",
+		"cityHealth": 3,
+		"uniques": [
+			"'Static Defense'",
+			"Enemy [Land] units must spend [1] extra movement points when inside your territory <upon entering a [Featureless] tile> <upon turn start>"
+		]
 	},
 	{
-		"name": "Kräutergarten"
+		"name": "Skriptorium",
+		"science": 1,
+		"faith": 1,
+		"uniques": [
+			"'Educational Building'",
+			"Provides [1] [Scriptures] <every [40] turns> <before [Printing Press]>, <every [8] turns> <after [Printing Press]>",
+			"Free [Scriptures] appears <while researching [All (Tech)]> <when number of [Science] is more than [225]>",
+			"[+12]% Science <in cities with a [Library]> <when above [3] [Scriptures]> <in this city>",
+			"[+12]% Spread Religion Strength <in cities with a [Skriptorium]> <with [Scriptures]> <after adopting [Sola Scriptura]>",
+			"[+1]% [Gold] from Trade Routes",
+			"[+2 Culture, +2 Science] from every specialist [in this city] <in cities with a [Skriptorium]> <after adopting [Scholasticism]",
+			"[+1 Culture] per [1] [Scriptures] [in all cities] <after discovering [Wood Block Printing]> <with [Library]>",
+			"[+2 Science] per [1] [Scriptures] [in all cities] <after discovering [Printing Press]> <with [Library]>"
+		]
+	},
+    {
+		"name": "Kreuzgang",
+		"faith": 1,
+		"uniques": [
+			"'Organise Place'",
+			"[+1]% Natural religion spread [in this city]",
+			"Gain [50]-[200] [Faith] <in this city> <upon adopting [Kontemplation]>",
+			"[+2]% Natural religion spread [in this city] <after adopting [Kontemplation]",
+			"Gain a free [Follower] belief <when number of [{'Practice Ground'}] Buildings] is more than [3]> <when number of [Faith] is between [650] and [720]>",
+			"Only available <in cities with a [Kloster Erweiterung I]>"
+		],
+		"hurryCostModifier": 0
+	},
+	{
+		"name": "Klosterhof",
+		"faith": 1,
+		"culture": 1,
+		"uniques": [
+			""
+		]
+	},
+	{
+      "name": "Monastic Infirmary",
+      "cost": 120,
+      "uniques": [
+        "Only available <in cities with [Catholicism] religion> <in cities with [Orthodoxy] religion>",
+        "[+30]% Chance to remove [The Black Death] each turn",
+        "[+2 Faith] from every [The Black Death] building",
+        "Comment [Benedictine monks tend to the sick, offering both physical care and spiritual comfort to the afflicted...]",
+        "Comment [The monastic infirmary becomes a beacon of hope in a sea of despair, where prayer and medicine work hand in hand...]"
+      ],
+      "requiredTech": "Theology"
+    },
+	//
+	{
+      "name": "Plague Quarantine",
+      "cost": 0,
+      "uniques": [
+        "Unsellable",
+        "Unbuildable",
+        "Destroyed when the city is captured",
+        "[+10]% [Science] [in this city] <for [5] turns> <after plague ends>",
+        "Remove [Plague Quarantine] [in this city] <after [15] turns> <hidden from users>",
+        "Comment [Barricades separate the infected districts, guarded by desperate men with pikes and fear in their eyes...]",
+        "Comment [Watchfires burn through the night, their smoke meant to purify the air of miasmic humors...]"
+      ]
+    },
+	{
+      "name": "Religious Processions",
+      "cost": 0,
+      "uniques": [
+        "Unsellable",
+        "Unbuildable",
+        "Destroyed when the city is captured",
+        "[+15]% [Faith] [in this city] <for [8] turns>",
+        "Remove [Religious Processions] [in this city] <after [10] turns> <hidden from users>",
+        "Comment [Flagellants march through the streets, whipping themselves in penance for the sins they believe brought this pestilence...]",
+        "Comment [Relics are paraded through deserted squares, their holy power seemingly impotent against the invisible scourge...]"
+      ]
+    },
+	//
+	{
+      "name": "The Black Death",
+      "cost": 0,
+      "uniques": [
+        "Unsellable",
+        "Unbuildable",
+        "Destroyed when the city is captured",
+        "Only available <after discovering [Compass]> <before discovering [Printing Press]>",
+        "[-33]% Population [in this city]",
+        "[-2 Happiness] [in all cities]",
+        "[-25]% [Food] [in this city] <for [10] turns>",
+        "[-30]% [Production] [in this city] <for [15] turns>",
+        "[-40]% [Gold] [in this city] <for [12] turns>",
+        "All newly-trained [Military] units [in this city] receive the [Plague Survivor] promotion <after plague ends>",
+        "Gain [50] [Science] <(modified by game speed)> <after plague ends> <if [Medical School] is constructed>",
+        "Remove [The Black Death] [in this city] <after [20] turns> <hidden from users>",
+        "Comment [A grim silence falls over the city as the first cases appear. The air grows thick with the scent of death and burning herbs...]",
+        "Comment [Criers roam empty streets, their bells tolling endlessly as they call 'Bring out your dead!']",
+        "Comment [The plague carts make their daily rounds, collecting bodies wrapped in soiled linens...]",
+        "Comment [Physicians in beaked masks bleed patients with leeches, their methods powerless against the unseen enemy...]",
+        "Comment [Mass graves overflow as the church bells never cease their mournful song...]",
+        "Comment [Those who survive emerge gaunt and hollow-eyed, forever marked by the great mortality...]"
+      ],
+      "requiredTech": "Compass"
+    },
+	{
+      "name": "Pest House",
+      "cost": 100,
+      "uniques": [
+        "Unsellable",
+        "[-20]% Spread of [The Black Death] to adjacent cities",
+        "[+5]% Chance to remove [The Black Death] each turn",
+        "Comment [The dying are gathered here to spend their last days separated from the healthy population...]",
+        "Comment [Overworked caregivers move between beds, offering what comfort they can to those marked for death...]"
+      ],
+      "requiredTech": "Education"
+    },
+	{
+		"name": "Abtei",
+		"replaces": "Monastery",
+		"uniques": [
+			"'Practice Ground'",
+			"Provides [2] [Wine] <with [Grape]> <in cities with a [Kloster Erweiterung III] <if [Kelterrei] is constructed <in this city>",
+			"[+1 Culture] <in cities with a [Weinkeller]> <in this city>",
+			"[+1 Production, +1 Culture ] from [{Manual Farm} {Grape}] tiles [in this city] <in cities with a [Kloster Erweiterung III]", 
+			"[+1 Food] [in this city] <within [4] tiles of a [Grain]> <if [Bakery] is constructed> <in cities with a [Kloster Erweiterung III]",
+			"[+1 Gold] [in this city] <if [Guilds] is constructed> <in cities with a [Kloster Erweiterung IV]",
+
+			"[+25]% Natural religion spread [in all cities] <if [Monastery] is constructed> <in [in this city] cities>",
+			"[+2 Faith] from every [Klosterkirche] <after adopting [Reliquary]>",
+
+			"[+25]% [Food] from every [{'Agricultural Building'} {Building}] <after adopting [Tithe]>",
+			"[+10]% [Gold] from every [{'Light Industry'} {Building}] <after adopting [Tithe]>",
+			"[-30]% [Happiness] <every [20] turns> <after adopting [Tithe]>",
+        	"Consumes [1] [Influence] <when below [10] [Happiness]> <after adopting [Tithe]>",
+			"[-10]% Unhappiness from [Population] [in this city] <before adopting [Tithe]",
+			"[+15]% [Science] from every [Monastery] <after adopting [Early Theology]>",
+			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Imperal Era]> <after adopting [Monastic Warrior]>",
+
+			"[+10]% [Production] [in this city] <if [Kloster Erweiterung III] is constructed> <when above [1] [Happiness]> <in this city>",
+			"[+2 Faith, +2 Culture, +2 Happiness] [in this city] <if [Kloster Erweiterung II] is constructed> <when above [1] [Happiness]> <in this city>",
+			"[+3 Faith] [in this city] <if [Kloster Erweiterung I] is constructed> <when above [1] [Happiness]> <in this city>",
+
+			//<[Virtues and Discipline]",
+
+			"Cost increases by [33] per owned city <if [Monastery] is constructed>",
+			"Cost increases by [50] per owned city <if [Monastery] is not constructed>",
+			"Requires at least [10] population",
+
+			"Can only be built <in cities with a [Catholicism] religion> <in cities with a [Anglicanism] religion> <in cities with a [Baptist Christianity] religion> <in cities with a [Orthodoxy] religion> <in cities with a [Assyrian Christianity] religion> <in cities with a [Oriental Orthodoxy] religion> <in cities with a [Roman Catholicism] religion>",
+			"Only available <after adopting [Monotheism]>",
+			"Destroyed when the city is captured",
+			"Hidden when religion is disabled"
+		],
+		"hurryCostModifier": 25
+
+	//Belief: Virtues and Discipline",
+	//Mysticism
+		//"quote": "'Dem HERRN, eurem Gott, sollt ihr folgen und ihn fürchten und seine Gebote halten und seiner Stimme gehorchen und ihm dienen und ihm anhangen. 5 Mose 13:5'"
+	},
+	{
+		"name": "Hopfendarre",
+		"cost": 45,
+		"maintenance": 1,
+		"uniques": [
+			"'Agricultural Building'",
+			"Comment [Hopfen und Malz - Gott erhalt's!]",
+			"Comment [Ohne Hopfen kein Bier. Eine Klosterbrauerei benötigt, wie auch eine normale Brauerei, eine Hopfendarre. Sie bewirtschaftet die Hopfenernte und versorgt die Brauereien.]"
+		],
+		"requiredTech": "Agriculture",
+		"hurryCostModifier": 5
+	},
+	{
+		"name": "Kräutergarten",
+		"cost": 10,
+		"food": 1,
+		"uniques": [
+			"'Agricultural Building'",
+			"Comment [Der Anbau eines Kräutergarten im Kloster war umfangreich nützlich. Die Mönche und Nonnen waren nicht nur Selbstversorger, sie kümmerten sich auch um Kranke – die Pflanzen aus dem Kräutergarten fanden als Heilmittel Verwendung im Infirmerie des Klosters. So sammelte sich im Kloster über die Jahrhunderte ein umfangreiches Wissen über die Heilkunde und viele Erfahrungen im Umgang mit Heilkräutern]"
+		],
+		"requiredTech": "Agriculture",
+		"hurryCostModifier": 5,
+		"qoute": "'Die Sorge für die Kranken muss vor und über allem stehen, damit man ihnen wirklich wie Christus diene. – Benedikt von Nursia'"
 	},
 	{
 		"name": "Kloster Brauerrei",
@@ -1958,8 +2235,8 @@
 			"'Light Industry'",
 			"Provides [1] [Beer] <with [Grain]> <with [Hops]> <in cities with a [Hopfendarre]> <in this city>",
 			"[+1 Production] from [{'Manual Farm'} {Hops}] tiles [in this city] <if [Hopfendarre] is constructed",
-			"[+5]% [gold] [in this city] <if [Guilds] is constructed> <in cities connected to the capital> <in this city>",
-			"[+8]% [culture] [in this city] <if [Tarvern] is constructed> <in cities with at least [5] [Population]> <after turn number [6]>",
+			"[+5]% [gold] [in this city] <if [Guild] is constructed> <in cities connected to the capital>",
+			"[+5]% [culture] [in this city] <if [Tarvern] is constructed> <in cities with at least [5] [Population]> <after turn number [6]>",
 			"[+4]% [faith] [in cities following our religion] <if [Cathedral] is constructed> <in cities with at least [4] [Followers of this Religion]>",
 			"Only available <if [Well] is constructed> <if [Monastery] is constructed> <in this city>",
 			"Only available <if [Brewery] is not constructed> <in this city>",
@@ -1970,12 +2247,45 @@
 		"hurryCostModifier": 25
 	},
 	{
+		"name": "Kelterei",
+		"cost": 140,
+		"culture": 1,
+		"food": 1,
+		"maintenance": 2,
+		"requiredNearbyImprovedResources": "Grape",
+		"uniques": [
+			"'Light Industry'",
+			"Provides [1] [Alcohol] <with [Grape]>",
+			"[+1 Production] from [{'Manual Farm'} {Grape}] tiles [in this city] <if [Monastery] is constructed"
+		],
+		"requiredTech": "Pottery", //
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Festplatz",
+		"cost": 50,
+		"uniques": [
+			"'Entertainment Building'",
+			"[+2]% [Gold] from all ['Light Industry'] buildings <in this city>",
+			"[+3]% [Happiness] per [3] population [in this city] <with [Wine]> <with [Beer]> <with [Cognac]> <with [Alcohol]> <for [5] turns> <(modified by game speed)> <when number of [turns] is equal to [countable]>", //Herbst
+			//Belief umschreiben evtl.
+			//"[+2 Culture +3 Faith] [in this city] <after adopting [Fronenleichnam]> <for [5] turns> <(modified by game speed)> <when number of [turns] is equal to [countable]>",  //Herbst /Jahreszeiten
+			//"[+1 Culture +4 Faith] [in this city] <after adopting [Ramadam]> <for [5] turns> <(modified by game speed)> <when number of [turns] is equal to [countable]>",//
+			//"[+2 Culture +2 Faith] [in this city] <after adopting [Pessach]> <for [5] turns> <(modified by game speed)> <when number of [turns] is equal to [countable]>",
+
+			"[-6]% Production when constructing [all] buildings [in this city] <for [5] turns> <(modified by game speed)> <when number of [turns] is equal to [countable]>",
+			"[-1 Food] per [4] population [in this city] <in cities with at least [5] [Population]> <when number of [turns] is equal to [countable]>"
+		],
+		"requiredTech": "", //
+		"hurryCostModifier": 0
+	},
+	{
 		"name": "Brewery",
 		"happiness": 1,
 		"gold": 1,
 		"uniques": [
 			"'Light Industry'",
-			"Provides [2] [Beer] <with [Grain]>",
+			"Provides [1] [Beer] <with [Grain]>",
 			"Provides [1] [Alcohol] <with [Grain]>",
 			"Provides [1] [Alcohol] <with [Fruit]>",
 			"Provides [1] [Alcohol] <with [Grape]>",
@@ -1996,6 +2306,22 @@
 		],
 		"requiredTech": "Pottery",
 		"hurryCostModifier": 5
+	},
+	{
+		"name": "Schreinerei",
+		"cost": 115,
+		"production": 1,
+		"uniques": [
+			"'Light Industry'",
+			"Must have an owned [Manual Lumber Mill] within [5] tiles <in this city>",
+			"[-5]% maintenance costs <in this city>",
+			"[-1 Gold] [in this city] <in this city>",
+			"[-4]% [Production] [in all cities] <within [6] tiles of a [Manual Lumber Mill]>",
+			"[+2]% Production when constructing [all] buildings [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "", //
+		"hurryCostModifier": 15
 	},
     {
 		"name": "Pig Farm",
@@ -2069,7 +2395,8 @@
 			"Provides [1] [Cognac] <with [Grape]>",
 			"[+1 Production +1 Food] from [{'Manual Farm Improvement'} {Grape}] tiles [in this city]",
 			"[+10]% [Gold] from Trade Routes <in cities with a [Guild]> <in cities connected to the capital>",
-			"[+7]% [Faith] from every [Monastery] <in cities with a [{'Worship Place'} {Building}]>"
+			"[+7]% [Faith] from every [Monastery] <in cities with a [{'Worship Place'} {Building}]>",
+			"Destroyed when the city is captured"
 		],
 
 		"requiredTech": "Calendar",
@@ -2085,7 +2412,7 @@
 		],
 		"uniques": [
 			"Provides [1] [Olive Oil] <with [Olives]>",
-			//"[+1 Production] <in cities with a [Guild Complex]>",
+			"[+1 Gold] <in this city> <if [Guild] is constructed>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Calendar"
@@ -3527,7 +3854,7 @@
                 "[+3]% [Food] [in this city]", 
                 "Consumes [1] [Horse]", 
                 "[+1 Food, +1 Production, +1 Gold] from [Farm] tiles [in this city]",
-                "[-1 Food, -1 Production, -1 Gold] from [resource] tiles [in this city] <in [Farm] tiles> <in tiles without [Wheat]>",
+                "[-1 Food, -1 Production, -1 Gold] from [resource] tiles [in this city] <in [Farm] tiles> <in tiles without [Wheat]>"
         ],
         "requiredTech": "The Wheel"
 	},
@@ -4472,23 +4799,25 @@
     {
 		"name": "Sacred Space",
         "cost": 100,
-        "hurryCostModifier": 100,
-        "faith": 5,
-        "specialistSlots": {"Ascetic": 2},
-        "uniques": ["Destroyed when the city is captured","Hidden when religion is disabled"]
+        "faith": 2,
+        "uniques": [
+			"Destroyed when the city is captured",
+			"Hidden when religion is disabled"
+		]
     },
     {
 		"name": "Sacred Cave",
 		"replaces": "Shrine",
 		"uniqueTo": "-",
-		"cityHealth": 50,
+		"cost": 40,
+		"cityHealth": 3,
 		"culture": 1,
 		"faith": 1,
-		"cost": 40,
-		"requiredTech": "Calendar",
 		"uniques": ["Practice Ground",
 			"Hidden when religion is disabled",
-			"[+2 Culture, +2 Faith] from [Natural Wonder] tiles [in this city]"]
+			"[+2 Culture, +2 Faith] from [Natural Wonder] tiles [in this city]"
+		],
+		"requiredTech": "Calendar"
 	},
 	{
 		"name": "Shaman's Hut",
@@ -4700,9 +5029,8 @@
 		"culture": 1,
 		"specialistSlots": {"Artist": 1},
 		"uniques": [
-
 			"[+25]% Great Person generation [in this city]", 
-			"Gain [15] [Culture] <for every [2] [Piety]>",
+			"Gain [10] [Culture] <for every [2] [Piety]>",
 			"[+5]% Natural religion spread [in this city]",
 			"Must be next to [Hills]",
 			"Can only be built <in cities with a [Catholicism] religion> <in cities with a [Anglicanism] religion> <in cities with a [Baptist Christianity] religion> <in cities with a [Orthodoxy] religion> <in cities with a [Assyrian Christianity] religion> <in cities with a [Oriental Orthodoxy] religion> <in cities with a [Roman Catholicism] religion>"
@@ -4726,7 +5054,6 @@
 			"[+1 Production, +1 Culture ] from [{Manual Farm} {Grape}] tiles [in this city] <in cities with a [Kloster Erweiterung III]", 
 			"[+1 Food] [in this city] <within [4] tiles of a [Grain]> <if [Bakery] is constructed> <in cities with a [Kloster Erweiterung III]",
 			"[+1 Gold] [in this city] <if [Guilds] is constructed> <in cities with a [Kloster Erweiterung IV]",
-
 			"[+8]% Natural religion spread [in this city]",
 
 			"[+15]% [Food] from every [{'Agricultural Building'} {Building}] <after adopting [Tithe]>",
@@ -4734,7 +5061,6 @@
 			"[-15]% [Happiness] <every [20] turns> <after adopting [Tithe]>",
         	"Consumes [1] [Influence] <when below [10] [Happiness]> <after adopting [Tithe]>",
 			"[-10]% Unhappiness from [Population] [in this city] <before adopting [Tithe]",
-
 			"[+10]% [Science] from every [Monastery] <after adopting [Early Theology]>",
 			"All newly-trained [{Military} {Land} {non-[Mercenary Army]}] units [in cities following this religion] receive the [Monastic Training] promotion <before the [Imperal Era]> <after adopting [Monastic Warrior]>",
 
@@ -4745,22 +5071,6 @@
 		],
 		"requiredTech":"Philosophy",
 		"quote ": "'Siehe, ich stehe vor der Tür und klopfe an. Wenn jemand meine Stimme hören wird und die Tür auftun, zu dem werde ich hineingehen und das Abendmahl mit ihm halten und er mit mir.'"
-	},
-	{
-		//////////////Bearbeiten////////////////7
-		"name": "Abtei",
-		//"faith": 2,
-		//"gold": 2,
-		//"maintenance": 0,
-		"uniques": [
-			//"Educational Building","Only available <in cities with a [Monastery]>",
-			//"[+1 Faith, +1 Gold] <in cities with a [Cathedral]>","[+1 Faith, +1 Production] <in cities with a [Monastery]>",
-			//"All newly-trained [{Missionary} {Land}] units [in cities following this religion] receive the [Evangelism] promotion <before the [Industrial era]> <after adopting [In Gods Name]>",
-			//"Unbuildable", "Destroyed when the city is captured",
-			//"Hidden when religion is disabled"
-		],
-		"hurryCostModifier": 25,
-		//"quote": "'Dem HERRN, eurem Gott, sollt ihr folgen und ihn fürchten und seine Gebote halten und seiner Stimme gehorchen und ihm dienen und ihm anhangen. 5 Mose 13:5'"
 	},
 
 	//Aller Religionszugehörigen Gebäude, nutzen diesen Befehl als Orientierung
@@ -4868,7 +5178,7 @@
 		"uniques": [
 			"Unsellable",
 			"Unbuildable",
-			"[+2 Faith] from [City center] tiles [in this city]","Destroyed when the city is captured"
+			//"[+2 Faith] from [City center] tiles [in this city]","Destroyed when the city is captured"
 		]
 		// "Ecclesia semper reformanda" - Papst Gregor dem Großen
 	},
@@ -4881,7 +5191,7 @@
 			"happiness": 3
 		},
 		"uniques": [ 
-			"Light Industry","Organise Place",
+			"'Practice Ground'",
 			"[+15]% Natural religion spread [in this city] <in cities with a [major] religion> <in cities with between [5] and [15] [Followers of this Religion]>",
 			"[+10]% [Faith] [in this city] <after adopting [Way of Pilgrimage]>",
 			"[-4]% maintenance cost for [{'Worship Place'} {'Buildings'}] buildings [in this city] <in cities with a [Schreinerei]>",
@@ -4990,16 +5300,17 @@
 		"hurryCostModifier": 25,
 		"quote": "'Die Mauer die der Herrschaft von Papst Leo IV. (790–855) errichtet wurde. Sie sollte vor weiteren Angriffen durch die Sarazenen schützen, welche 846 die vor der Stadtmauer liegenden Kirchenschätze geplündert hatten. Eine karolingische Sondersteuer finanzierte in der Folge den Bau der neuen Stadtmauer'"
 	},
-    //Bsp.
-	//Provides [4] [Power] <in this city> <when above [1] [Fuel]> <in cities with a [Gas Storage and Transfer System]>",
-
 	{
 	    "name": "Kaserne der Päpstlichen Schweizergarde",
 		"unique to": "Papal States",
 		"cost": 140,
 		"culture": 2,
-		"specialslots": {"Governor":1},
-		"greatPersonPoints": {"Governor": 1},
+		"specialslots": {
+			"Governor":1
+		},
+		"greatPersonPoints": {
+			"Governor": 1
+		},
 		"uniques": [
 			"Static Defense",
 		    "[2] Unit Supply per [20%] population [in capital] <if [Armory] is constructed> <if [Warehouses] is constructed>",
@@ -5007,7 +5318,9 @@
 		    "All newly-trained [Swiss Guard] units [In this City] receive the [Awe] promotion",
 		    "All newly-trained [Swiss Guard] units [In this City] receive the [Elite Training] promotion  <after adopting [Militant Complete]>",
 		    "Only available <if [Barrack] is not constructed> <in this city> <if [Holy See] is constructed> <if [St. Peter's Basilica] is constructed > <after adopting [Code of Warrior]>",
-	        "Can only be built <in [in holy cities] cities>"
+	        "Can only be built <in [in holy cities] cities>",
+			"Provides [1] [Standing Army Maintainance]",
+			"Destroyed when the city is captured"
 		],
 	    //Ändern Mittelalter Tech.
 		"requiredTech": "Theology",
@@ -5033,16 +5346,9 @@
 			"[+25]% Natural religion spread [in all cities]",
 			"[+20]% Natural religion spread [in this city] <after adopting [Reliquary]> <after adopting [Pilgrimage]>",
 			"Religion naturally spreads to cities [1] tiles away <after adopting [Pilgrimage]>",
-
 			"New [Religious] units start with [+10] XP [in this city] <upon being promoted> <if [Holy see] is constructed> <after enhancing a religion>",
 			"All newly-trained [Missionary] units [in this city] receive the [Zeal] promotion <if [St. Peter's Basilica] is constructed> <after adopting [Sancity]>",
 			"[Great Prophet] is earned [10]% faster <starting from the [Medieval era]> <when above [5] [Piety]>"
-			
-			Leitung und Verwaltung: Bischofssynoden;
-			Sakramentenspendung:
-			Wahrung der Einheit des Glaubens:
-			Zentrum für wichtige kirchliche Ereignisse:
-			Heiligsprechungen:
 		],
 		//"requiredTech": "Philosophy",
 		"hurryCostModifier": 25
@@ -5155,7 +5461,7 @@
 			"Gain control over [{non-[Major]} {non-[City-State]} tiles in a [2]-tile radius",
 			"Allied City-States provide [Gold] equal to [15]% of what they produce for themselves <(modified by game speed)>",
 			"Enables Open Borders agreements",
-			"Resting point for Influence with City-States following this religion [10] <when above [1] [Influence]>",
+			"Resting point for Influence with City-States following this religion [+10] <when above [1] [Influence]>",
 			"Gain [3] Influence with a [Missionary] gift to a City-State <when above [1] [Influence]>",
 			"All newly-trained [Missionary] units [in cities following our religion] receive the [Holy Calling] promotion <after discovering [Theology]>",
 			"New [Religious] units start with [20] XP [in cities following our religion]",

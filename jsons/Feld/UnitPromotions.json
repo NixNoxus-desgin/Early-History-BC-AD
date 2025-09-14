@@ -1,6 +1,36 @@
 [
 
 ///Pathology
+ {
+      "name": "Plague Survivor",
+      "uniques": [
+        "[+15]% Strength <when defending>",
+        "[-10]% Strength <when attacking>",
+        "Immune to [Plague] damage",
+        "Comment [This unit has endured the horrors of the Black Death and carries the scars both physical and mental]",
+        "Comment [Their eyes have seen horrors that would break lesser men, making them steadfast in defense but hesitant to advance]"
+      ]
+    },
+    {
+      "name": "Plague Carrier",
+      "uniques": [
+        "[-20]% Strength",
+        "Inflicts [Plague] damage on adjacent enemy units <with probability [0.2]>",
+        "Comment [This unit unknowingly carries the pestilence, spreading death wherever they go]",
+        "Comment [Their cough rattles with the sound of impending doom, and their touch brings fever and suffering]"
+      ]
+    },
+	  {
+      "name": "Faith Healer",
+      "uniques": [
+        "Only available <in cities with [Catholicism] religion> <in cities with [Orthodoxy] religion>",
+        "All adjacent units heal [+5] HP when healing",
+        "[+10]% Chance to remove [Plague Carrier] promotion from adjacent units",
+        "Comment [This unit carries relics and offers prayers for healing, bringing comfort to the afflicted]",
+        "Comment [Their presence seems to slow the spread of the pestilence through divine intervention]"
+      ]
+    }
+//
 {
 	"name": "Common Flu",
 	"uniques": ["[This Unit] takes [1] damage <upon ending a turn in a [All] tile>"]
@@ -51,22 +81,25 @@
     "uniques": ["[+50]% Strength <in [Foreign Land] tiles> <when defending>"],
 },
 {
-	"name": "Deus Vult",
-    "uniques": ["[+15]% Strength <in [Foreign Land] tiles>", "Earn [50]% of killed [Military] unit's [Strength] as [Faith]"],
-},
-{
 	"name": "Pirate Slaver",
     "uniques": ["Earn [150]% of the damage done to [Water] units as [Gold]"],
 },
 {
 	"name": "Eternal Mourning",
-    "uniques": ["Earn [50]% of the damage done to [Military] units as [Production]", "Earn [25]% of killed [Military] unit's [Strength] as [Faith]"],
+    "uniques": [
+		"Earn [50]% of the damage done to [Military] units as [Production]", 
+		"Earn [25]% of killed [Military] unit's [Strength] as [Faith]"
+	],
 },
 {
 	"name": "Yamato",
     "uniques": ["[+50]% Strength <when defending>"],
 },
 ///Generally Apply
+{
+	"name": "Eranshahr",
+    "uniques": ["Comment [When defeating a Land unit, earn 10 [Gold] and recruit it with 25% chance>"]
+},
 {
 	"name": "Diwylliedig",
     "uniques": ["Earn [20]% of killed [Wounded] unit's [Cost] as [Culture]"]
@@ -4432,7 +4465,7 @@
 	{
 		"name": "Fur I",
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes": ["-"],
+		"unitTypes": ["Close Combat"],
         "column": 48,
         "row": 31
 	},
@@ -4545,17 +4578,24 @@
 	{
 		"name": "Holy Calling",
 		"uniques": [
-			"[20]% Spread Religion Strength <when stacked with a [Missionary] unit>",
-			"[20]% Spread Religion Strength <when stacked with a [Great Prophet] unit>"
+			"[25]% Spread Religion Strength <when stacked with a [Missionary] unit>",
+			"[25]% Spread Religion Strength <when stacked with a [Great Prophet] unit>",
+			"[2] free [Missionary] units appear <in cities with a [{'Core of Religion'} {Building}]>",
+			"Ignores terrain cost <in [Foreign Land] tiles> <for [Religious] units>"
 		]
 	},
 	{
         "name": "Zeal",
-        "uniques": ["[+25]% Spread Religion Strength"]
+        "uniques": [
+			"[+25]% Spread Religion Strength"
+		]
     },
 	{
 		"name": "Divine Messenger",
-		"uniques": ["[+1] Movement", "Ignores terrain cost"]
+		"uniques": [
+			"[+1] Movement", 
+			"Ignores terrain cost"
+		]
 	},
 	{
 		"name": "Evangelism",
@@ -4563,6 +4603,13 @@
 			"Can Spread Religion <[2] additional time(s)>"
 		]
 	},
+	{
+		"name": "Deus Vult",
+        "uniques": [
+	    	"[+15]% Strength <in [Foreign Land] tiles>", 
+	    	"Earn [50]% of killed [Military] unit's [Strength] as [Faith]"
+		]
+    },
 	{
 		"name": "Fanaticism",
 		"uniques": [
@@ -4598,7 +4645,7 @@
 		"name": "Blessing of the Idols",
 		"uniques": [
 			"Gain [15] [Faith] <upon defeating a [Military] unit> <(modified by game speed)>",
-			 "Heals [15] damage if it kills a unit"
+			"Heals [15] damage if it kills a unit"
 			] 
 	},
 ///Barbarian 

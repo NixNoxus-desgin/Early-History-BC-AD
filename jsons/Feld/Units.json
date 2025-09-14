@@ -5,15 +5,16 @@
 	{
 		"name": "Jesus",
 		"unitType": "Civilian",
-		"replaces": "Great Prophet",
 		"uniques": [
-		    "Can instantly construct a [Holy site] improvement <by consuming this unit>",
+			"Special Great Person",
+		    "Can instantly construct a [Holy site] improvement <once> <for [2] movement>",
 		    "Religious Unit",
-            "Can Spread Religion <for [2] movement> <[6] times>",
+            "Can Spread Religion <for [2] movement> <[7] times>",
 			"Removes other religions when spreading religion",
 			"May enter foreign tiles without open borders",
 			"Unbuildable", "Uncapturable", "Religious Unit",
-			//"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>"
+			"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>",
+			"Gain [5] [Faith] <upon turn end> <(modified by game speed)>",
 			],
 		"movement": 2,
 		"religiousStrength": 1000
@@ -27,8 +28,9 @@
 		    "[+20]% Strength bonus for [Land] units within [1] tiles", 
 		    "Can Spread Religion <for [2] movement> <[4] times>",
 			"Unbuildable", "Uncapturable",
-			//"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>"
-			],
+			"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>",
+			"Gain [5] [Faith] <upon turn end> <(modified by game speed)>"
+		],
 		"movement": 2,
 		"religiousStrength": 1000
 	},
@@ -41,7 +43,8 @@
 		    "Religious Unit",
 		    "Gain enough Faith for [115]% of a Great Prophet <by consuming this unit>",
 			"Unbuildable", "Uncapturable",
-			//"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>"
+			"[This Unit] gains the [Blizzard Wind Ability] promotion <for [Finland] Civilizations>  <hidden from users>",
+			"Gain [5] [Faith] <upon turn end> <(modified by game speed)>"
 			],
 		"movement": 2,
 	},	
@@ -1577,35 +1580,80 @@
 		"cost": 90,
 		"movement": 2,
 		"strength": 16,
-		//"requiredTech": "Civil Service",
 		"uniques": [
 			"[+50]% Strength <vs [Rider] units>",
 			"[+50]% Strength <vs [Siege] units>",
+			"Earn [200]% of killed [Military] unit's [Strength] as [Faith]",
 			"Only available <in cities with a [Catholicism] religion> <in cities with a [Roman Catholicism] religion"
 		],
 		"upgradesTo": "Lancer",
 		//"promotions":["Medic"], //Disziplin, Waffentraining (Schwert, Lanze, etc.), Reitkunst und Taktik.
 		//medizinische Aspekte
+		//"requiredTech": "Civil Service",
 		"obsoleteTech": "Metallurgy",
 		"attackSound": "metalhit"
 	},
     {
 		"name": "Knights Templar",
-		"uniqueTo": "Jerusalem",
 		"replaces": "Pikeman",
 		"unitType": "Close Combat",
 		"cost": 90,
 		"movement": 2,
 		"strength": 18,
-		//"requiredTech": "Civil Service",
 		"uniques": [
 			"[+50]% Strength <vs [Rider] units>",
-			"[+50]% XP gained from combat",
+			"[Knights Templar] gains [+8] XP <upon entering combat> <after adopting [Militant]>",
+			"[+8]% to Flank Attack bonuses <when attacking> <when adjacent to a [Ranged Combat] unit>",
+			"[This Unit] loses the [Defender of the Faith] promotion <when not at war>",
+			"Earn [+10]% of the damage done to [Melee] units as [faith] <for units with [Deus Vult]> <in [Enemy Land] tiles> <when at war>",
 			"Only available <in cities with a [Catholicism] religion> <in cities with a [Roman Catholicism] religion"
 		],
-		"upgradesTo": "Lancer",
-		"obsoleteTech": "Metallurgy",
-		"attackSound": "metalhit"
+		"upgradesTo": "Lancer", //
+		"attackSound": "metalhit",
+		//"requiredTech": "Civil Service",
+		"obsoleteTech": "Metallurgy", //
+	},
+	{
+		"name": "Knight's Templar",
+	    "unitType": "Close Combat",
+	    "replaces": "Longswordsman",
+	    "uniqueTo": "Cyprus",
+		"cost": 120,
+	    "movement": 2,
+	    "strength": 21,
+	    "requiredResource": "Iron",
+	    "uniques": [
+			"Earn [75]% of killed [Military] unit's [Strength] as [Faith]",
+			 "[1] Movement point cost to disembark"
+			],
+		//"promotions": ["Blitz"],
+		//"upgradesTo": "Musketman",//
+	    "attackSound": "metalhit",
+		"requiredTech": "Steel",
+	    //"obsoleteTech": "Gunpowder",
+    },
+	{
+		"name": "Templar Knight",
+		"unitType": "Assault",
+		"replaces": "Knight",
+		"uniqueTo": "Papel States",
+		"cost": 150,
+		"movement": 4,
+		"strength": 20,
+		"upgradesTo": "Cavalry",
+		"uniques": [ 
+			"Can be purchased for [200] [Faith] [in cities following our religion]", 
+			"Can move after attacking",
+			"No defensive terrain bonus", 
+			"[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
+			"[-33]% Strength <vs cities> <when attacking>", 
+			"Heal this unit by [10] HP <costs [1] [Horses]> <for [2] movement>",  //
+			"Heal this unit by [10] HP <costs [1] [Iron]> <for [2] movement>" //
+		],
+		"promotions": ["[Templar Knight] ability"], //
+		"attackSound": "horse",
+		"requiredTech": "Chivalry",
+		"obsoleteTech": "Military Science",
 	},
     {
 		"name": "Comitatus",
@@ -1847,22 +1895,6 @@
 	    "cost": 90,
 	    "requiredTech": "Civil Service",
 	    "uniques": ["[+50]% Strength <vs [Rider] units>", "[+15]% Strength bonus for [Military] units within [3] tiles"],
-	    "attackSound": "metalhit"
-	},
-    {
-		"name": "Knights Hospitaller",
-	    "unitType": "Close Combat",
-	    "replaces": "Swordsman",
-	    "uniqueTo": "Jerusalem",
-	    "movement": 2,
-	    "strength": 14,
-	    "cost": 65,
-    	"requiredTech": "Iron Working",
-	    "upgradesTo": "Longswordsman",
-      	"uniques": ["Earn [200]% of killed [Military] unit's [Strength] as [Faith]"],
-    	"obsoleteTech": "Steel",
-    	"requiredResource": "Iron",
-	    "hurryCostModifier": 10,
 	    "attackSound": "metalhit"
 	},
     {
@@ -2123,18 +2155,17 @@
 {
 	"name": "Templar",
 	"unitType": "Close Combat",
-		///"uniqueTo": "Knights Templar",
 	"replaces": "Swordsman",
 	"movement": 3,
 	"strength": 15,
 	"cost": 65,
-	"requiredTech": "Iron Working",
-	"upgradesTo": "Longswordsman",
-	///"promotions": ["[Defender of the Faith]","[Crusader]"],
-	"obsoleteTech": "Steel",
-	"requiredResource": "Iron",
-	"hurryCostModifier": 20,
+	"uniques": [
+		"Only available <before the [Renaissance era]>"
+	],
+	"requiredTech": "Iron Working", //
+	"obsoleteTech": "Steel", //
 	"attackSound": "metalhit",
+	"hurryCostModifier": 20,
 	"civilopediaText": [
 		{ "text": "Legendary Knights Templar, sword of God, voice of millions." }
 	]
@@ -2311,21 +2342,6 @@
 	"attackSound": "metalhit"
 },
 {
-	"name": "Knights Hospitaller",
-	"uniqueTo": "Malta",
-	"replaces": "Pikeman",
-	"unitType": "Close Combat",
-	"movement": 2,
-	"strength": 18,
-	"cost": 90,
-	"promotions": ["Medic"],
-	"requiredTech": "Civil Service",
-	"uniques": ["[+50]% Strength <vs [Seige] units>"],
-	"upgradesTo": "Lancer",
-	"obsoleteTech": "Metallurgy",
-	"attackSound": "metalhit"
-},
-{
 	"name": "Maccabee",
 	"uniqueTo": "The Kingdom of Israel",
 	"replaces": "Warrior",
@@ -2460,37 +2476,6 @@
 	"requiredResource": "Iron",
 	"attackSound": "metalhit"
 },
-{
-	"name": "Knight's Templar",
-	"unitType": "Close Combat",
-	"replaces": "Longswordsman",
-	"uniqueTo": "Cyprus",
-	"movement": 2,
-	"strength": 21,
-	"cost": 120,
-	"requiredTech": "Steel",
-  //"upgradesTo": "Musketman",//
-  //"obsoleteTech": "Gunpowder",
-	"requiredResource": "Iron",
-	"uniques": ["Earn [75]% of killed [Military] unit's [Strength] as [Faith]", "[1] Movement point cost to disembark"],
-  //"promotions": ["Blitz"],
-	"attackSound": "metalhit"
-},
-	{
-		"name": "Templar Knight",
-		"unitType": "Assault",
-		"replaces": "Knight",
-		"uniqueTo": "Papel States",
-		"movement": 4,
-		"strength": 20,
-		"cost": 150,
-		"requiredTech": "Chivalry",
-		"obsoleteTech": "Military Science",
-		"upgradesTo": "Cavalry",
-		"uniques": ["Costs [10] [Horse]", "Consumes [1] [Horse]", "Costs [10] [Iron]", "Consumes [1] [Iron]",  "Can be purchased for [200] [Faith] [in cities following our religion]", "Can move after attacking","No defensive terrain bonus", "[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[-33]% Strength <vs cities> <when attacking>", "Heal this unit by [10] HP <costs [1] [Horses]> <for [2] movement>", "Heal this unit by [10] HP <costs [1] [Iron]> <for [2] movement>"],
-		"promotions": ["[Templar Knight] ability"],
-		"attackSound": "horse"		
-	},
 	{
 		"name": "Heavy Chariot",
 		"unitType": "Assault",
@@ -2822,6 +2807,7 @@
 		"requiredTech": "Chivalry",
 		"promotions": ["Formation I"],
 		"uniques": [
+			"'Standing Army'",
 			"Unit will heal every turn, even if it performs an action",
 			"[+50]% Strength <vs [Rider] units>",
 			"[25]% Strength <when fighting in [Friendly Land] tiles> <upon gaining the [Awe] status>",
@@ -5668,11 +5654,13 @@
 		"requiredTech": "Tactics",
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Metal",
-		"uniques": ["Personnel",
+		"uniques": [
+			"Personnel",
 			"No defensive terrain bonus",
 			"Can move after attacking",
 			"[-25]% Strength <vs cities> <when attacking>",
-			"Only available <if [Riding Arena] is constructed>"],
+			"Can only be built <in cities with a [Riding Arena]>"
+		],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
@@ -5685,14 +5673,16 @@
 		"cost": 150,
 		"requiredTech": "Tactics",
 		"promotions": ["March"],
-		"uniques": ["Personnel",
+		"uniques": [
+			"Personnel",
 			"No defensive terrain penalty",
 			"Can move after attacking",
 			"[-25]% Strength <vs cities> <when attacking>",
 			"[+25]% Strength <vs [Low Tech] units> <when attacking>",
 			"[+25]% Strength <vs [Personnel] units> <when attacking>",
 			"[+25]% Strength <when defending>",
-			"Only available <if [Riding Arena] is constructed>"],
+			"Can only be built <in cities with a [Riding Arena]>"
+		],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},
