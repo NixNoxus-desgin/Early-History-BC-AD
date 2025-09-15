@@ -1,8 +1,0 @@
-<for [nonNegativeAmount] turns>
-<hidden from users>
-<for every [countable]>
-<for every adjacent [tileFilter]>
-<for every [positiveAmount] [countable]>
-<(modified by game speed)>
-<(modified by game progress up to [relativeAmount]%)>
-<Suppress warning [validationWarning]>
