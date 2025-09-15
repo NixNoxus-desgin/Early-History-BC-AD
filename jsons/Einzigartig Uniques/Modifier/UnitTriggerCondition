@@ -1,1 +1,18 @@
-
+<upon conquering a city> 
+<upon building a [improvementFilter] improvement> 
+<upon turn end> 
+<upon turn start> 
+<upon entering combat> 
+<upon damaging a [mapUnitFilter] unit> 
+<upon defeating a [mapUnitFilter] unit> 
+<upon expending a [mapUnitFilter] unit> 
+<upon being defeated> 
+<upon being promoted> 
+<upon gaining the [promotion] promotion> 
+<upon losing the [promotion] promotion> 
+<upon gaining the [promotion] status> 
+<upon losing the [promotion] status> 
+<upon losing at least [positiveAmount] HP in a single attack> 
+<upon ending a turn in a [tileFilter] tile> 
+<upon discovering a [tileFilter] tile> 
+<upon entering a [tileFilter] tile>
