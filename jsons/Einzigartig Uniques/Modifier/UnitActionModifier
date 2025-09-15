@@ -1,0 +1,10 @@
+<by consuming this unit> 
+<for [amount] movement> 
+<for all movement> 
+<requires [nonNegativeAmount] movement> 
+<costs [stats] stats> 
+<costs [amount] [stockpiledResource]> 
+<removing the [promotion] promotion/status> 
+<once> <[positiveAmount] times> 
+<[nonNegativeAmount] additional time(s)> 
+<after which this unit is consumed>
