@@ -87,4 +87,115 @@ Heals [amount] damage if it kills a unit
 Can only heal by pillaging
 Unit will heal every turn, even if it performs an action
 All adjacent units heal [amount] HP when healing
+No Sight
+Can see over obstacles
+Can carry [amount] [mapUnitFilter] units
+Can carry [amount] extra [mapUnitFilter] units
+Cannot be carried by [mapUnitFilter] units
+[relativeAmount]% chance to intercept air attacks
+Damage taken from interception reduced by [relativeAmount]%
+[relativeAmount]% Damage when intercepting
+[amount] extra interceptions may be made per turn
+Cannot be intercepted
+Cannot intercept [mapUnitFilter] units
+relativeAmount]% Strength when performing Air Sweep
+relativeAmount]% maintenance costs
+[relativeAmount]% Gold cost of upgrading
+Earn [amount]% of the damage done to [combatantFilter] units as [sto
+Upon capturing a city, receive [amount] times its [stat] production as
+Earn [amount]% of killed [mapUnitFilter] unit's [costOrStrength] as [sto
+May capture killed [mapUnitFilter] units
+amount] XP gained from combat
+[relativeAmount]% XP gained from combat
+Can be earned through combat
+[greatPerson] is earned [relativeAmount]% faster
+Invisible to others
+Invisible to non-adjacent units
+Can see invisible [mapUnitFilter] units
+May upgrade to [unit] through ruins-like effects
+Can upgrade to [unit]
+Destroys tile improvements when attacking
+Cannot move
+Double movement in [terrainFilter]
+All tiles cost 1 movement
+May travel on Water tiles without embarking
+Can pass through impassable tiles
+Ignores terrain cost
+Ignores Zone of Control
+Rough terrain penalty
+Can enter ice tiles
+Cannot embark
+Cannot enter ocean tiles
+May enter foreign tiles without open borders
+May enter foreign tiles without open borders, but loses [amount] religi
+[nonNegativeAmount] Movement point cost to disembark
+[nonNegativeAmount] Movement point cost to embark
+Never appears as a Barbarian unit
+Religious Unit
+Spaceship part
+Takes your religion over the one in their birth city
+Great Person - [comment]
+Is part of Great Person group [comment]
+Not shown on world screen
+Free [unit] appears
+[positiveAmount] free [unit] units appear
+Free Social Policy
+[positiveAmount] Free Social Policies
+Empire enters golden age
+Empire enters a [positiveAmount]-turn Golden Age
+Free Great Person
+amount] population [cityFilter]
+[amount] population in a random city
+Discover [tech]
+Adopt [policy]
+Remove [policy]
+Remove [policy] and refund [amount]% of its cost
+Free Technology
+LpositiveAmount] Free Technologies
+[positiveAmount] free random researchable Tech(s) from the [era]
+Reveals the entire map
+Gain a free [beliefType] belief
+Triggers voting for the Diplomatic Victory
+Instantly consumes [positiveAmount] [stockpiledResource]
+Instantly provides [positiveAmount] [stockpiledResource]
+Instantly gain [amount] [stockpile]
+Gain [amount] [stat]
+Gain [amount]-[amount] [stat]
+Gain enough Faith for a Pantheon
+Gain enough Faith for [positiveAmount]% of a Great Prophet
+Research [relativeAmount]% of [tech]
+Gain control over [tileFilter] tiles in a [nonNegativeAmount]-tile radius
+Gain control over [positiveAmount] tiles [cityFilter]
+Reveal up to [positiveAmount/'all] [tileFilter] within a [positiveAmount] tile radius
+Triggers the following global alert: [comment]
+Promotes all spies [positiveAmount] time(s)
+Gain an extra spy
+Doing so will consume this opportunity to choose a Promotion
+This Promotion is free
+Turn this tile into a [terrainName] tile
+Remove [resourceFilter] resources from this tile
+Remove [improvementFilter] improvements from this tile
+[mapUnitFilter] units gain the [promotion] promotion
+Provides the cheapest [stat] building in your first [positiveAmount] cities for free
+Provides a [buildingName] in your first [positiveAmount] cities for free
+Triggers a [event] event
+Mark tutorial [comment] complete
+Play [comment] sound
+[unitTriggerTarget] heals [positiveAmount] HP
+unitTrigger Target] takes [positiveAmount damage
+unitTriggerTarget] gains [amount] XP
+unitTrigger Target] upgrades for free
+unitTriggerTarget] upgrades for free including special upgrades
+unitTriggerTarget] gains the [promotion] promotion
+unitTriggerTarget] loses the [promotion] promotion
+unitTriggerTarget] gains [positiveAmount] movement
+unitTriggerTarget] loses [positiveAmount] movement
+unitTriggerTarget] gains the [promotion] status for [positiveAmount] turn(s)
+unitTriggerTarget] loses the [promotion] status
+unitTriggerTarget] is destroyed
+[relativeAmount]% weight to this choice for Al decisions
+Will not be displayed in Civilopedia
+Shown while unbuilable
+Comment [comment]
+Suppress warning [validationWarning]
 ]
