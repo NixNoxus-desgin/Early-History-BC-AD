@@ -1,0 +1,90 @@
+[
+relativeAmount|% Yield from pillaging tiles
+relativeAmount]% Health from pillaging tiles
+relativeAmount]% construction time for [improvementFilter] improvements
+Can build [improvementFilter] improvements at a [relativeAmount]% rate
+Gain a free [buildingName] [cityFilter]
+Remove [buildingFilter] [cityFilter]
+Sell [buildingFilter] buildings [cityFilter]
+relativeAmount]% Gold from Great Merchant trade missions
+Great General provides double combat bonus
+Consumes [amount] [resource]
+Costs [amount] [stockpiledResource]
+Unbuildable
+Cannot be purchased
+Can be purchased with [stat] [cityFilter]
+Can be purchased for [amount] [stat] [cityFilter]
+Limited to [amount] per Civilization
+Only available
+Unavailable
+Excess Food converted to Production when under construction
+Requires at least [amount] population
+Triggers a global alert upon build start
+Triggers a global alert upon completion
+Cost increases by [amount] per owned city
+Cost increases by [amount] when built
+amount]% production cost
+Can only be built
+Founds a new city
+Founds a new puppet city
+Can instantly construct a [improvementFilter] improvement
+May create improvements on water resources
+Can build [improvementFilter/terrainFilter] improvements on tiles
+Can Spread Religion
+Can remove other religions from cities
+May found a religion
+May enhance a religion
+Can be added to [comment] in the Capital
+Prevents spreading of religion to the city it is next to
+Removes other religions when spreading religion
+May Paradrop to [tileFilter] tiles up to [positiveAmount] tiles away
+Can perform Air Sweep
+Can speed up construction of a building
+Can speed up the construction of a wonder
+Can hurry technology research
+Can generate a large amount of culture
+Can undertake a trade mission with City-State, giving a large sum of gold and [amount) Influence
+Can transform to [unit]
+Automation is a primary action
+relativeAmount]% Strength
+relativeAmount]% Strength decreasing with distance from the capital
+relativeAmount]% to Flank Attack bonuses
+relativeAmount]% Strength for enemy [mapUnitFilter] units in adjacent [tileFilter] tiles
+relativeAmount]% Strength bonus for [mapUnitFilter] units within [amount] tiles
+amount] additional attacks per turn
+amount] Movement
+amount] Sight
+amount] Range
+relativeAmount] Air Interception Range
+amount] HP when healing
+relativeAmount]% Spread Religion Strength
+When spreading religion to a city, gain [amount] times the amount of followers of other religions as [stat]
+Can only attack [combatantFilter] units
+Can only attack [tileFilter] tiles
+Cannot attack
+Must set up to ranged attack
+Self-destructs when attacking
+LEliminates combat penalty for attacking across a coast
+May attack when embarked
+Eliminates combat penalty for attacking over a river
+Blast radius [amount]
+Ranged attacks may be performed over obstacles
+Nuclear weapon of Strength [amount]
+No defensive terrain bonus
+No defensive terrain penalty
+No damage penalty for wounded units
+Uncapturable
+Withdraws before melee combat
+Unable to capture cities
+Unable to pillage tiles
+No movement cost to pillage
+Can move after attacking
+Transfer Movement to [mapUnitFilter]
+Can move immediately once bought
+May heal outside of friendly territory
+All healing effects doubled
+Heals [amount] damage if it kills a unit
+Can only heal by pillaging
+Unit will heal every turn, even if it performs an action
+All adjacent units heal [amount] HP when healing
+]
