@@ -59,3 +59,166 @@ Will not be displayed in Civilopedia
 Comment [comment]
 Suppress warning [validationWarning]
 unitTrigger Target] upgrades for free including special upgrades
+
+Modifier Gesamt:
+<every [positiveAmount] turns>
+<before turn number [nonNegativeAmount]>
+<after turn number [nonNegativeAmount]>
+<on [speed] game speed>
+<on [difficulty] difficulty>
+<on [difficulty] difficulty or higher>
+<when [victoryType] Victory is enabled>
+<when [victoryType] Victory is disabled>
+<when religion is enabled>
+<when religion is disabled>
+<when espionage is enabled>
+<when espionage is disabled>
+<when nuclear weapons are enabled>
+<with [nonNegativeAmount]% chance>
+<if tutorials are enabled>
+<if tutorial [comment] is completed>
+<for [civFilter] Civilizations>
+<when at war>
+<when not at war>
+<during a Golden Age>
+<when not in a Golden Age>
+<during We Love The King Day>
+<while the empire is happy>
+<during the [era]>
+<before the [era]>
+<starting from the [era]>
+<if starting in the [era]>
+<if no other Civilization has researched this>
+<after discovering [techFilter]>
+<before discovering [techFilter]>
+<while researching [techFilter]>
+<if no other Civilization has adopted this>
+<after adopting [policy/belief]>
+<before adopting [policy/belief]>
+<before founding a Pantheon>
+<after founding a Pantheon>
+<before founding a religion>
+<after founding a religion>
+<before enhancing a religion>
+<after enhancing a religion>
+<after generating a Great Prophet>
+<if [buildingFilter] is constructed>
+<if [buildingFilter] is not constructed>
+<if [buildingFilter] is constructed in all [cityFilter] cities>
+<if [buildingFilter] is constructed in at least [positiveAmount] of [cityFilter] cities>
+<if [buildingFilter] is constructed by anybody>
+<if [buildingFilter] is not constructed by anybody>
+<with [resource]>
+<without [resource]>
+<when above [amount] [stat/resource]>
+<when below [amount] [stat/resource]>
+<when between [amount] and [amount] [stat/resource]>
+<in this city>
+<in [cityFilter] cities>
+<in cities connected to the capital>
+<in cities with a [religionFilter] religion>
+<in cities not following a [religionFilter] religion>
+<in cities with a major religion>
+<in cities with an enhanced religion>
+<in cities following our religion>
+<in cities with a [buildingFilter]>
+<in cities without a [buildingFilter]>
+<in cities with at least [positiveAmount] [populationFilter]>
+<in cities with [positiveAmount] [populationFilter]>
+<in cities with between [amount] and [amount] [populationFilter]>
+<in cities with less than [amount] [populationFilter]>
+<with a garrison>
+<for [mapUnitFilter] units>
+<when [mapUnitFilter]>
+<for units with [promotion]>
+<for units without [promotion]>
+<vs cities>
+<vs [mapUnitFilter] units>
+<vs [combatantFilter]>
+<when fighting units from a Civilization with more Cities than you>
+<when attacking>
+<when defending>
+<when fighting in [tileFilter] tiles>
+<on foreign continents>
+<when adjacent to a [mapUnitFilter] unit>
+<when above [positiveAmount] HP>
+<when below [positiveAmount] HP>
+<if it hasn't used other actions yet>
+<when stacked with a [mapUnitFilter] unit>
+<with [nonNegativeAmount] to [nonNegativeAmount] neighboring [tileFilter] tiles>
+<in [tileFilter] tiles>
+<in tiles without [tileFilter]>
+<within [positiveAmount] tiles of a [tileFilter]>
+<in tiles adjacent to [tileFilter] tiles>
+<in tiles not adjacent to [tileFilter] tiles>
+<on water maps>
+<in [regionType] Regions>
+<in all except [regionType] Regions>
+<when number of [countable] is equal to [countable]>
+<when number of [countable] is different than [countable]>
+<when number of [countable] is more than [countable]>
+<when number of [countable] is less than [countable]>
+<when number of [countable] is between [countable] and [countable]>
+<if [modFilter] is enabled>
+<if [modFilter] is not enabled>
+<for [nonNegativeAmount] turns>
+<hidden from users>
+<for every [countable]>
+<for every adjacent [tileFilter]>
+<for every [positiveAmount] [countable]>
+<(modified by game speed)>
+<(modified by game progress up to [relativeAmount]%)>
+<Suppress warning [validationWarning]>
+<upon discovering [techFilter] technology>
+<upon entering the [era]>
+<upon entering a new era>
+<upon adopting [policy/belief]>
+<upon declaring war on [civFilter] Civilizations>
+<upon being declared war on by [civFilter] Civilizations>
+<upon entering a war with [civFilter] Civilizations>
+<upon declaring friendship>
+<upon declaring a defensive pact>
+<upon entering a Golden Age>
+<upon ending a Golden Age>
+<upon conquering a city>
+<upon losing a city>
+<upon founding a city>
+<upon building a [improvementFilter] improvement>
+<upon discovering a Natural Wonder>
+<upon constructing [buildingFilter]>
+<upon constructing [buildingFilter] [cityFilter]>
+<upon gaining a [baseUnitFilter] unit>
+<upon turn end>
+<upon turn start>
+<upon founding a Pantheon>
+<upon founding a Religion>
+<upon enhancing a Religion>
+<by consuming this unit>
+<for [amount] movement>
+<for all movement>
+<requires [nonNegativeAmount] movement>
+<costs [stats] stats>
+<costs [amount] [stockpiledResource]>
+<removing the [promotion] promotion/status>
+<once>
+<[positiveAmount] times>
+<[nonNegativeAmount] additional time(s)>
+<after which this unit is consumed>
+<upon conquering a city>
+<upon building a [improvementFilter] improvement>
+<upon turn end>
+<upon turn start>
+<upon entering combat>
+<upon damaging a [mapUnitFilter] unit>
+<upon defeating a [mapUnitFilter] unit>
+<upon expending a [mapUnitFilter] unit>
+<upon being defeated>
+<upon being promoted>
+<upon gaining the [promotion] promotion>
+<upon losing the [promotion] promotion>
+<upon gaining the [promotion] status>
+<upon losing the [promotion] status>
+<upon losing at least [positiveAmount] HP in a single attack>
+<upon ending a turn in a [tileFilter] tile>
+<upon discovering a [tileFilter] tile>
+<upon entering a [tileFilter] tile>
