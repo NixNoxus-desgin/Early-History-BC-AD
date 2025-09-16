@@ -1,0 +1,61 @@
+Gain a free [buildingName] [cityFilter]
+Remove [buildingFilter] [cityFilter]
+Sell [buildingFilter] buildings [cityFilter]
+Only available
+Unavailable
+Free [unit] appears
+positiveAmount] free [unit] units appear
+Free Social Policy
+[positiveAmount] Free Social Policies
+Empire enters golden age
+'Empire enters a [positiveAmount]-turn Golden Age
+Free Great Person
+[amount] population [cityFilter]
+[amount] population in a random city
+Discover [tech]
+Adopt [policy]
+Remove [policy]
+Remove [policy] and refund [amount]% of its cost
+Free Technology
+positiveAmount] Free Technologies
+positiveAmount] free random researchable Tech(s) from the [era]
+Reveals the entire map
+Gain a free [beliefType] belief
+Triggers voting for the Diplomatic Victory
+Instantly consumes [positiveAmount] [stockpiledResource]
+Instantly provides [positiveAmount] [stockpiledResource]
+Instantly gain [amount] [stockpile]
+Gain [amount] [stat]
+Gain [amount]-[amount] [stat]
+Gain enough Faith for a Pantheon
+Gain enough Faith for [positiveAmount]% of a Great Prophet
+Research [relativeAmount]% of [tech]
+Gain control over [tileFilter] tiles in a [nonNegativeAmount]-tile radius
+Gain control over [positiveAmount] tiles [cityFilter]
+Reveal up to [positiveAmount/'all'] [tileFilter] within a [positiveAmount] tile radius
+Triggers the following global alert: [comment]
+Promotes all spies [positiveAmount] time(s)
+Gain an extra spy
+Turn this tile into a [terrainName] tile
+Remove [resourceFilter] resources from this tile
+Remove [improvementFilter] improvements from this tile
+[mapUnitFilter] units gain the [promotion] promotion
+Provides the cheapest [stat] building in your first [positiveAmount] cities for free
+Provides a [buildingName] in your first [positiveAmount] cities for free
+Triggers a [event] event
+Mark tutorial [comment] complete
+Play [comment] sound
+unitTriggerTarget] heals [positiveAmount] HP
+unitTriggerTarget] takes [positiveAmount] damage
+unitTrigger Target] gains [amount] XP
+unitTriggerTarget] upgrades for free
+unit TriggerTarget] loses the [promotion] promotion
+unitTriggerTarget] gains [positiveAmount] movement
+unitTriggerTarget] loses [positiveAmount] movement
+unitTriggerTarget] gains the [promotion] status for [positiveAmount] turn(s)
+unitTrigger Target] loses the [promotion] status
+unitTriggerTarget] is destroyed
+Will not be displayed in Civilopedia
+Comment [comment]
+Suppress warning [validationWarning]
+unitTrigger Target] upgrades for free including special upgrades
