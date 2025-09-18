@@ -1,0 +1,229 @@
+{
+    "name": "The Papal Summons",
+    "text": "A messenger bearing the seal of His Holiness arrives at court, his weathered face speaking of a long journey from the Eternal City. The parchment he carries bears the unmistakable papal bull - the Pope himself calls upon the faithful rulers of Christendom. In these times of spiritual upheaval, when heretics question the true faith and infidels hold the Holy Land, the Vicar of Christ seeks to assert his divine authority over temporal matters. The Church's coffers run deep, but its spiritual authority runs deeper still. How shall we answer this summons from the successor of Saint Peter?",
+    "choices": [
+        {
+            "text": "We shall heed the call of the Holy Father and pledge our unwavering support.",
+            "uniques": [
+                "Only available <after adopting [Theocracy]> <if [Papal Primacy] is constructed>",
+                "Only available <when above [14] [Influence]> <when above [199] [Gold]>",
+                "Comment [By submitting to papal authority, we gain the Church's blessing but sacrifice temporal power.]",
+                "Instantly consumes [15] [Influence]",
+                "Gain [-200] [Gold] <(modified by game speed)>",
+                "Gain a free [Papal Blessing] [in capital]",
+                "[+50]% Natural religion spread [in all cities] <for [10] turns>",
+                "[+2 Happiness] from every [Cathedral] <for [15] turns>",
+                "Gain [500] [Faith] <(modified by game speed)>",
+                "Triggers a [Papal Authority Established] event <hidden from users>"
+            ]
+        },
+        {
+            "text": "Grant a generous donation to secure papal favor without full submission.",
+            "uniques": [
+                "Only available <when above [9] [Influence]> <when above [399] [Gold]>",
+                "Comment [A middle path - we maintain independence while avoiding excommunication.]",
+                "Instantly consumes [10] [Influence]",
+                "Gain [-400] [Gold] <(modified by game speed)>",
+                "Gain [250] [Faith] <(modified by game speed)>",
+                "[+25]% Natural religion spread [in all cities] <for [5] turns>",
+                "Gain a free [Papal Indulgence] [in capital]"
+            ]
+        },
+        {
+            "text": "Assert our divine right to rule independent of Rome!",
+            "uniques": [
+                "Only available <if [Empire of Electors] is constructed>",
+                "Only available <when above [19] [Influence]>",
+                "Comment [We reject papal supremacy, risking excommunication but preserving our sovereignty.]",
+                "Instantly consumes [5] [Influence]",
+                "Gain a free [Investiture Controversy] [in capital]",
+                "[-25]% Natural religion spread [in all cities] <for [10] turns>",
+                "Gain [+100] [Gold] <(modified by game speed)>",
+                "[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles> <for [10] turns>",
+                "Triggers a [Conflict with Rome] event <hidden from users>"
+            ]
+        },
+        {
+            "text": "The Eastern Church knows no Roman master.",
+            "uniques": [
+                "Only available <for [Byzantium] Civilizations>",
+                "Only available <if [Orthodoxy] is constructed>",
+                "Comment [The schism deepens as East and West drift further apart.]",
+                "Gain a free [Great Schism Deepens] [in capital]",
+                "[+33]% Natural religion spread [in all cities] <in cities with at least [3] [Followers of this Religion]>",
+                "Gain [300] [Faith] <(modified by game speed)>",
+                "Remove [Papal Primacy] [in all cities]"
+            ]
+        },
+        {
+            "text": "Politely defer, citing pressing temporal matters.",
+            "uniques": [
+                "Comment [We avoid confrontation but gain nothing from this encounter.]",
+                "Play [paper] sound"
+            ]
+        }
+    ]
+},
+{
+    "name": "Papal Authority Established",
+    "text": "With our submission to the Holy See complete, papal legates now walk our halls with impunity, their red vestments a constant reminder of Rome's reach. The Church's influence permeates every aspect of governance - from the appointment of bishops who sit in our councils to the collection of tithes that flow steadily to Saint Peter's coffers. Yet with this submission comes power of a different sort: the ability to call upon the Church's vast resources, to legitimize our rule through divine sanction, and to wage holy war with Heaven's blessing.",
+    "choices": [
+        {
+            "text": "Request a Crusade Bull against our enemies!",
+            "uniques": [
+                "Only available <when at war> <when above [9] [Influence]>",
+                "Comment [The Pope grants us the right to wage holy war with divine sanction.]",
+                "Instantly consumes [10] [Influence]",
+                "Gain a free [Crusade Bull] [in capital]",
+                "[3] free [Crusader] units appear",
+                "[+33]% Strength <for [All] units> <when fighting in [Enemy Land] tiles> <for [15] turns>",
+                "All newly-trained [Military] units [in all cities] receive the [Deus Vult] promotion <for [10] turns>"
+            ]
+        },
+        {
+            "text": "Seek papal arbitration in our disputes.",
+            "uniques": [
+                "Only available <when not at war> <when above [4] [Influence]>",
+                "Comment [The Pope's word carries weight in diplomatic circles.]",
+                "Instantly consumes [5] [Influence]",
+                "Resting point for Influence with City-States following this religion [+25] <for [20] turns>",
+                "City-State Influence recovers at twice the normal rate <for [15] turns>",
+                "Gain [150] [Culture] <(modified by game speed)>"
+            ]
+        },
+        {
+            "text": "Commission sacred relics to enhance our piety.",
+            "uniques": [
+                "Only available <when above [249] [Gold]>",
+                "Comment [Sacred artifacts strengthen the faith of our people.]",
+                "Gain [-250] [Gold] <(modified by game speed)>",
+                "Gain a free [Sacred Relic] [in capital]",
+                "[+2 Faith] from every [Cathedral]",
+                "[+1 Happiness] from every [Monastery]"
+            ]
+        },
+        {
+            "text": "Accept the current arrangement.",
+            "uniques": [
+                "Comment [The status quo serves us well enough.]",
+                "Instantly provides [5] [Influence]"
+            ]
+        }
+    ]
+},
+{
+    "name": "Conflict with Rome",
+    "text": "Our defiance of papal authority has not gone unnoticed in the halls of the Lateran Palace. Whispers speak of an impending interdict - a spiritual weapon that would see our lands stripped of the sacraments, our people denied salvation, and our rule questioned by every bishop from here to Jerusalem. The Pope's temporal power may be limited, but his spiritual authority can topple thrones. Already, some of our more pious nobles look upon us with suspicion. The question now becomes: do we stand firm in our conviction, or seek reconciliation before the full weight of excommunication falls upon us?",
+    "choices": [
+        {
+            "text": "Stand firm! We shall establish our own religious authority!",
+            "uniques": [
+                "Only available <when above [19] [Influence]> <when above [499] [Gold]>",
+                "Comment [We break completely with Rome, establishing autocephalous rule.]",
+                "Instantly consumes [20] [Influence]",
+                "Gain [-500] [Gold] <(modified by game speed)>",
+                "Remove [Papal Primacy] [in all cities]",
+                "Gain a free [National Church] [in capital]",
+                "[+50]% Production when constructing [Cathedral] buildings [in all cities]",
+                "May choose [1] additional belief(s) of any type when [enhancing] a religion"
+            ]
+        },
+        {
+            "text": "Seek reconciliation through penance and tribute.",
+            "uniques": [
+                "Only available <when above [299] [Gold]>",
+                "Comment [We humble ourselves before the Pope to avoid further sanctions.]",
+                "Gain [-300] [Gold] <(modified by game speed)>",
+                "Remove [Investiture Controversy] [in all cities]",
+                "Gain [200] [Faith] <(modified by game speed)>",
+                "[-10]% [Production] [in all cities] <for [5] turns>"
+            ]
+        },
+        {
+            "text": "Rally the nobility against clerical interference!",
+            "uniques": [
+                "Only available <if [Feudal Empire] is constructed>",
+                "Comment [We turn this religious conflict into a political opportunity.]",
+                "Gain a free [Anti-Clerical Movement] [in capital]",
+                "[+2 Production] from every [Castle]",
+                "[-50]% Natural religion spread [in all cities]",
+                "[2] free [Knight] units appear"
+            ]
+        },
+        {
+            "text": "Weather the storm of excommunication.",
+            "uniques": [
+                "Comment [We endure the papal sanctions and their consequences.]",
+                "Gain a free [Excommunicated] [in capital]",
+                "[-2 Happiness] [in all cities] <for [10] turns>",
+                "[-25]% [Gold] [in all cities] <for [10] turns>",
+                "Instantly provides [10] [Influence]"
+            ]
+        }
+    ]
+},
+{
+    "name": "The Antipope Crisis",
+    "text": "Christendom stands divided! Two men claim the throne of Saint Peter, each backed by powerful kingdoms and each declaring the other a pretender and heretic. Cardinals flee Rome in confusion, bishops declare for one Pope or the other, and the faithful know not which voice speaks with divine authority. This schism in the Church presents both terrible danger and unprecedented opportunity. The very foundations of ecclesiastical power shake, and in this chaos, a clever ruler might reshape the religious landscape of Europe forever. But choose carefully - backing the wrong claimant could see our realm under interdict for generations.",
+    "choices": [
+        {
+            "text": "Support the Roman claimant with military force!",
+            "uniques": [
+                "Only available <when above [14] [Influence]>",
+                "Comment [We commit our armies to restore order in the Papal States.]",
+                "Instantly consumes [15] [Influence]",
+                "[4] free [Crusader] units appear",
+                "Gain a free [Defender of the True Pope] [in capital]",
+                "[+40]% Natural religion spread [in all cities] <if victorious>",
+                "50% chance to gain [1000] [Gold] <(modified by game speed)>",
+                "50% chance to trigger a [Papal Gratitude] event"
+            ]
+        },
+        {
+            "text": "Back the Avignon claimant through diplomatic channels.",
+            "uniques": [
+                "Only available <when above [9] [Influence]> <when above [299] [Gold]>",
+                "Comment [We use wealth and influence to sway the College of Cardinals.]",
+                "Instantly consumes [10] [Influence]",
+                "Gain [-300] [Gold] <(modified by game speed)>",
+                "Gain a free [Diplomatic Victory] [in capital]",
+                "Resting point for Influence with City-States following this religion [+30]",
+                "[+2 Culture] from every [Cathedral]"
+            ]
+        },
+        {
+            "text": "Declare for a third candidate - ourselves!",
+            "uniques": [
+                "Only available <if [Theocratic Empire] is constructed> <when above [29] [Influence]>",
+                "Comment [In this chaos, we claim divine mandate for ourselves!]",
+                "Instantly consumes [30] [Influence]",
+                "Gain a free [Divine Mandate Claimed] [in capital]",
+                "Found a Pantheon <if [Pantheon] is not constructed>",
+                "Found a Religion <if you don't already have one>",
+                "[+100]% Natural religion spread [in holy cities]",
+                "[-75]% Natural religion spread [in all foreign cities]"
+            ]
+        },
+        {
+            "text": "Exploit the chaos to seize Church lands!",
+            "uniques": [
+                "Only available <when above [4] [Influence]>",
+                "Comment [While the Church tears itself apart, we grow rich on its properties.]",
+                "Instantly consumes [5] [Influence]",
+                "Gain [800] [Gold] <(modified by game speed)>",
+                "Gain a free [Seized Church Property] [in capital]",
+                "[-3 Faith] from every [Cathedral] <permanent>",
+                "[+3 Gold] from every [Cathedral] <permanent>",
+                "[-50]% Faith cost of purchasing items in cities <for [10] turns>"
+            ]
+        },
+        {
+            "text": "Remain neutral in this ecclesiastical dispute.",
+            "uniques": [
+                "Comment [We keep our options open as the crisis unfolds.]",
+                "Gain [100] [Culture] <(modified by game speed)>",
+                "Play [chimes] sound"
+            ]
+        }
+    ]
+}
