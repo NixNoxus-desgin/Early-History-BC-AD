@@ -2290,6 +2290,15 @@
 		"gold": 2
 	},
 	{
+		"name": "Incense",
+        "resourceType": "Luxury",
+        "uniques": [
+			"[+1 Faith] from [Incense] tiles",
+            "[+1 Gold] from [Incense] tiles",
+            "Comment [Weihrauch für religiöse Zeremonien]"
+    ]
+    },
+	{
 		"name": "Scriptures",
 		"resourceType": "Luxury",
 		"uniques": [

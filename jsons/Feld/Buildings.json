@@ -218,12 +218,23 @@
         "requiredTech": "Philosophy",
         "uniques": [
 			"Triggers a [Muslimische Expansion] event",
-            "[+1 Faith] from [Desert] tiles [in this city]",
-            "[+1 Culture] for every [3] [Followers of this Religion] [in this city]",
+            "[+2 Faith] from [Desert] tiles [in this city]",
+            "[+1 Faith] from [Hills] tiles [in this city]",
+            "[+1 Culture] for every [2] [Followers of this Religion] [in this city]",
+            "[+1 Gold] from [Trade Route] <in this city>",
             "Can only be built [in cities with a major religion]",
-            "Limited to [1] per Civilization",
+            "Limited to [1] per Civilization", //
             "Only available <after founding a religion>",
-            "Triggers a global alert upon completion"
+            "Only available <after adopting [2] social policies>",
+            "Triggers a global alert upon completion",
+            "Never destroyed when the city is captured",
+            "May buy [Missionary] units with [Faith] for [2] times their normal Production cost [in this city]",
+            "May buy [Great Prophet] units with [Faith] for [3] times their normal Production cost [in this city]",
+            "[+25]% Natural religion spread [in this city]",
+            "Religion naturally spreads to cities [2] tiles away",
+            "All newly-trained [Religious] units [in this city] receive the [Jihad] promotion",
+            "Provides [1] [Incense]",
+			"Comment [Das spirituelle und politische Zentrum der muslimischen Welt]"
 		],
 		"quote": "'Und wer ist besser in der Religion als einer, der sich Allah ergibt und dabei Gutes tut und der der Gemeinschaft Abrahams folgt, des Aufrechten?' - Quran 4:125",
 		"civilopediaText": [

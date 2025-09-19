@@ -407,6 +407,7 @@
                 "text": "Faith",
                 "triggeredUniques": ["[+20]% [Faith] [in all cities] <for [12] turns>"]
                },
+   },
    {
 		"name": "Comet Sighted",
 		"text": "People are often superstitious and the appearance of a comet has convinced many that the end of times is soon to come. Whether or not this is actually the case, this is bound to cause some instability within the nation.",
@@ -1192,6 +1193,7 @@
 			{ "text": "Our coasts are weak and undefended. The Emperor worries that our foes might exploit this weakness. Therefore we will build new defences so that the Emperor can sleep easy at night.",
 			  "uniques": [	 "All newly-trained [Water] units [in all cities] receive the [Yamato] promotion <for [9999] turns>"] }]
     }, 
+
 	{
         "name": "The Great Prophet",
         "text": "Am Anfang war das Wort, und das Wort war bei Gott, und das Wort war Gott. Am Anfang war es bei Gott. Alles ist durch das Wort geworden und ohne das Wort wurde nichts, was geworden ist. In ihm war das Leben und das Leben war das Licht der Menschen. Und das Licht leuchtet in der Finsternis und die Finsternis hat es nicht erfasst. - Joh. 1,1-5",
@@ -1216,13 +1218,13 @@
             },
             {
                 "text": "JHWH",
-                "civilopediaText": [
+              "civilopediaText": [
             {
             "text": "Gain enough [Faith] for 115% of a [Great Prophet] by consuming [JHWH]"
             }
                 ],                
                 "uniques": ["Only available<during the [Classical era]>", "Unavailable <if [JHWH] is constructed by anybody>", "Provides a [JHWH] in your first [1] cities for free"]
-            }
+ },
 //Pest
  {
       "name": "The Black Death Approaches...",
@@ -1353,7 +1355,7 @@
           ]
         }
       ]
-    },
+},
 {
     "name": "Die Päpstliche Vorladung",
     "text": "Ein Bote, gekleidet in die Farben des Vatikans und mit dem unverkennbaren Siegel Seiner Heiligkeit versehen, kniet vor Eurem Thron nieder. Das Pergament, das er überreicht, trägt das Gewicht der geistlichen Autorität selbst. Der Heilige Vater, Stellvertreter Christi auf Erden und Hüter der Schlüssel zum Himmelreich, appelliert nicht – er fordert. Das große Schisma zwischen Kaiser und Papst, zwischen weltlichem Schwert und geistlichem Zepter, droht die Seele der Christenheit zu zerreißen. Eure Entscheidung wird nicht nur über irdische Allianzen befinden, sondern über den Platz Eurer Dynastie in der göttlichen Ordnung. Werdet Ihr Euch dem Nachfolger des Heiligen Peturus unterwerfen oder das irdische Mandat Eurer Krone über das himmlische stellen?",
@@ -1907,5 +1909,264 @@
             ]
         }
     ]
-}
+},
+{
+    "name": "Muslimische Expansion",
+    "text": "Das Große Haus des Gebets erhebt sich majestätisch über die Stadt, seine goldenen Kuppeln fangen das erste Licht des Taufens ein, während die kunstvollen Minarette wie göttliche Finger in den Himmel weisen. Von den schlanken Türmen erklingt der erste Adhan - dieser archaische Ruf durchdringt nicht nur die Morgendämmerung, sondern scheint die Zeit selbst anzuhalten. Die Gläubigen strömen durch die schattenspendenden Bögen, doch was sich heute zusammenfindet, ist mehr als eine Gebetsgemeinschaft - es ist die Geburtsstunde einer Zivilisation, die die Kontinente umspannen wird.\n\nIn den weiten Höfen der Moschee, unter sternenverzierten Gewölben und zwischen Säulen, die wie Bäume eines paradiesischen Gartens emporragen, versammeln sich die Gesandten der bekannten Welt. Beduinen-Scheichs mit vom Wüstenwind gezeichneten Gesichtern, persische Gelehrte mit Schriftrollen voller uralter Weisheit, byzantinische Händler, deren Seidenroben den Reichtum Ostroms verkünden, nubische Krieger mit gebogenen Krummsäbeln, und Delegierte aus dem fernen Indien, deren Augen sowohl Neugier als auch Ehrfurcht vor diesem neuen Machtzentrum verraten.\n\nImam Abdullah ibn Masarra, dessen tiefblaue Augen die Weite des Mittelmeers und dessen sonnengegerbtes Antlitz die Härte der Wüste widerspiegelt, tritt vor die Versammelten. Seine Stimme trägt über den Platz wie der Wüstenwind: 'Brüder und Schwestern im Glauben! Der Allmächtige hat uns eine Vision geschenkt, die größer ist als alle Träume der Dichter. Von diesem heiligen Ort aus sollen wir sein Licht in alle Winkel der Welt tragen - nicht nur durch das Schwert, sondern durch die Poesie des Handels, die Eleganz der Wissenschaft, die Kunst der Diplomatie und das lebendige Beispiel unserer Zivilisation.'\n\nEin Raunen geht durch die Menge. Der alte Gelehrte Ibn Sina flüstert von den verlorenen Schätzen Alexandriens, die in arabischer Sprache wiedergeboren werden könnten. General Khalid ibn al-Walid, dessen Ruf als 'Sayf Allah al-Maslul' ihm vorauseilt, spricht von strategischen Eroberungen, die das Antlitz der Erde verändern werden. Der Händler Abu Bakr erzählt von Karawanen, die nicht nur Waren, sondern Ideen zwischen den Welten transportieren könnten.\n\nDie Mittagssonne steht jetzt hoch über den Minaretten, als der Imam seine Rede vollendet: 'Die Stunde der Entscheidung ist gekommen. Welchen Pfad wird unsere Umma einschreiten? Welches Erbe werden wir der Nachwelt hinterlassen?'\n\nDie Versammelten halten den Atem an. In diesem Moment liegt nicht nur die Zukunft des Islam - sondern das Schicksal der Zivilisation selbst in deinen Händen.",
+    "choices": [
+        {
+            "text": "Dar al-Tijara - Der Weg der goldenen Karawanen und des friedlichen Handels",
+            "uniques": [
+                "Gain [3] [Great Merchant]",
+                "[2] free [Caravan] units appear",
+                "[+3 Gold] from [Trade Route]",
+                "[+2 Faith] from [Trade Route]",
+                "[+1 Culture] from [Trade Route]",
+                "Gain [400] [Gold]",
+                "[+75]% [Gold] from City-States",
+                "Allied City-States provide [Culture] equal to [+25]% of what they produce for themselves",
+                "Gifts of Gold to City-States generate [+50]% more Influence",
+                "Triggers a [Seidenstraße der Gläubigen] event",
+                "Comment [Die Karawanen werden zu wandernden Kathedralen - jede Handelsroute ein Gebet, jeder Marktplatz eine Moschee ohne Mauern]"
+            ]
+        },
+        {
+            "text": "Dar al-Ilm - Der Weg der Gelehrsamkeit und des erleuchteten Wissens",
+            "uniques": [
+                "Gain [2] [Great Scientist]",
+                "Gain [2] [Great Prophet]",
+                "[+3 Science] from all [Library] buildings",
+                "[+3 Faith] from all [Library] buildings",
+                "[+2 Culture] from all [Library] buildings",
+                "Gain [4] Free Technologies",
+                "[+25]% Great Person generation [in all cities]",
+                "[+1 Science] from every [Desert] [in all cities]",
+                "Triggers a [Haus der Weisheit] event",
+                "Comment [Wo einst nur Sand war, werden Bücher blühen - und jedes Pergament wird zum Samenkorn der Ewigkeit]"
+            ]
+        },
+        {
+            "text": "Dar al-Harb - Der Weg des heiligen Kampfes und der Eroberung",
+            "uniques": [
+                "Gain [4] [Great General]",
+                "[4] free [Horseman] units appear",
+                "[3] free [Spearman] units appear",
+                "[2] free [Archer] units appear",
+                "New [Military] units start with [20] XP [in all cities]",
+                "[+35]% Strength <when fighting in [Desert] tiles>",
+                "[+25]% Strength <when fighting in [Hills] tiles>",
+                "[+2 Faith] per turn from cities being besieged by your units",
+                "Upon capturing a city, receive [3] times its [Faith] production as [Faith] immediately",
+                "Triggers a [Ghazi-Krieger] event",
+                "Comment [Das Schwert mag sprechen, doch seine Zunge wird vom Quran gelenkt - jede Eroberung eine Predigt, jede Festung ein Gebet in Stein]"
+            ]
+        },
+        {
+            "text": "Dar al-Salam - Der Weg der Diplomatie und des friedlichen Zusammenlebens",
+            "uniques": [
+                "Gain [2] [Great Prophet]",
+                "Gain [1] [Great Diplomat]",
+                "[+50]% [Faith] cost of generating Great Prophet equivalents",
+                "Resting point for Influence with City-States is increased by [20]",
+                "City-State Influence recovers at twice the normal rate",
+                "[+100]% Natural religion spread [in all cities]",
+                "Religion naturally spreads to cities [3] tiles away",
+                "[+2 Faith] [in cities with a major religion]",
+                "When spreading religion to a city, gain [2] times the amount of followers of other religions as [Culture]",
+                "Triggers a [Dhimmi-System] event",
+                "Comment [Der wahre Sieg liegt nicht in der Unterwerfung, sondern in der stillen Eroberung der Herzen - wo viele Glauben unter einem Himmel friedlich beten]"
+            ]
+        },
+        {
+            "text": "Dar al-Hikma - Der ausgewogene Weg der vier Säulen des Islam",
+            "uniques": [
+                "Gain [2] [Great Merchant]",
+                "Gain [2] [Great Scientist]",
+                "Gain [2] [Great General]",
+                "Gain [1] [Great Prophet]",
+                "[2] free [Caravan] units appear",
+                "[1] free [Horseman] units appear",
+                "[+2 Faith] [in all cities]",
+                "[+1 Culture] [in all cities]",
+                "[+1 Science] [in all cities]",
+                "[+15]% [Faith] cost of generating Great Prophet equivalents",
+                "Empire enters a [15]-turn Golden Age",
+                "Triggers a [Kalifat der Balance] event",
+                "Comment [Wie die vier Wasserströme des Paradieses - Handel, Wissenschaft, Krieg und Glaube vereint im harmonischen Fluss der Zivilisation]"
+            ]
+        },
+        {
+            "text": "Dar al-Bida - Der revolutionäre Weg der religiösen Reform",
+            "uniques": [
+                "Gain [3] [Great Prophet]",
+                "May choose [2] additional [Follower] beliefs when [enhancing] a religion",
+                "[+3 Faith] from every [Desert] [in all cities]",
+                "[+2 Faith] from every [Hills] [in all cities]",
+                "All newly-trained [Religious] units [in capital] receive the [Theologian] promotion",
+                "[+100]% [Faith] from City-States",
+                "Remove [Pagan] [in all cities]",
+                "[+50]% Spread Religion Strength",
+                "Triggers a [Große Reinigung] event",
+                "Comment [Manchmal muss der Fluss seines Bettes beraubt werden, um neue Ufer zu finden - eine Reformation, die nicht zerstört, sondern vollendet]"
+            ]
+        }
+    ]
+},
+[
+    {
+        "name": "Seidenstraße der Gläubigen",
+        "text": "Drei Jahre sind vergangen, seit du die Weichen für dein Imperium gestellt hast. Nun durchziehen deine goldenen Karawanen die Handelsrouten von Cordoba bis Samarkand, von Kairo bis Delhi. Deine Händler sind zu wahren Botschaftern des Glaubens geworden, und ihre Waren erzählen die Geschichte deiner Weisheit in jedem Basar.\n\nIn den lebendigen Gassen Konstantinopels vermischen sich arabische Gebete mit griechischen Gesängen. Persische Teppiche, geschmückt mit den Worten des Koran, zählen zu den begehrtesten Schätzen in den Palästen europäischer Fürsten. Der Duft von Gewürzen aus dem fernen Osten verbindet sich mit dem heiligen Weihrauch aus Mekka.\n\nAbu Yusuf, dein Oberster Handelsmeister, kehrt von einer langen Reise zurück und berichtet: 'Herr, die Welt öffnet ihre Türen für unsere Waren - und für unser Wort. Doch mit dem Reichtum erwachen auch Neider. Konkurrenten beobachten unseren Erfolg mit missgünstigen Blicken, und manche Herrscher fürchten unseren wachsenden Einfluss.'",
+        "choices": [
+            {
+                "text": "Gründung der Hanse al-Muslimin - Ein mächtiges Handelsbündnis",
+                "uniques": [
+                    "Gain [500] [Gold]",
+                    "[+5 Gold] from [Trade Route]",
+                    "Allied City-States provide [Gold] equal to [+50]% of what they produce for themselves",
+                    "[+2 Culture] from [Market] buildings",
+                    "May buy [Caravan] units with [Faith] [in all cities]"
+                ]
+            },
+            {
+                "text": "Der Weg der goldenen Diplomatie - Reichtum für politischen Einfluss",
+                "uniques": [
+                    "Gain [3] [Great Diplomat]",
+                    "Gifts of Gold to City-States generate [+100]% more Influence",
+                    "Can spend Gold to annex or puppet a City-State that has been your Ally for [10] turns",
+                    "[+3 Gold] per turn from cities being besieged by your units"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Haus der Weisheit",
+        "text": "Die große Bibliothek von Bagdad erhebt sich vor deinen Augen wie ein Leuchtturm des Wissens über der muslimischen Welt. Du siehst Gelehrte aus allen Kontinenten, die hierher pilgern, um an den Übersetzungen antiker Texte zu arbeiten und neue Entdeckungen zu machen – alles unter deinem weisen Patronat.\n\nAl-Kindi, dein Oberster Gelehrter, führt dich durch die gewaltigen Hallen: 'Sieh, mein Kalif! Hier übersetzen wir Aristoteles ins Arabische, dort erforscht Al-Khwarizmi die Geheimnisse der Algebra, und in jenem Saal kartographiert Al-Idrisi die unbekannte Welt. Das Wissen der Antike wird unter deinem Schutz bewahrt und erweitert.'\n\nDoch nicht alle sind erfreut über diese intellektuelle Revolution, die du angestoßen hast. Konservative Gelehrte warnen dich vor den Gefahren heidnischer Philosophie, während fortschrittliche Denker nach noch radikaleren Reformen rufen. Die Entscheidung, welchen Weg das Wissen nehmen soll, liegt nun bei dir.",
+        "choices": [
+            {
+                "text": "Akademie der Wissenschaften - Fokus auf Naturforschung und Mathematik",
+                "uniques": [
+                    "Gain [4] [Great Scientist]",
+                    "[+100]% Great Person generation [in all cities]",
+                    "[+5 Science] from all [Library] buildings",
+                    "Gain [6] Free Technologies",
+                    "[+3 Science] from [Desert] tiles [in all cities]"
+                ]
+            },
+            {
+                "text": "Theologische Schule - Balance zwischen Glaube und Vernunft",
+                "uniques": [
+                    "Gain [2] [Great Scientist]",
+                    "Gain [2] [Great Prophet]",
+                    "[+3 Science] from all [Library] buildings",
+                    "[+3 Faith] from all [Library] buildings",
+                    "May choose [1] additional [Follower] beliefs when [enhancing] a religion"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Ghazi-Krieger", 
+        "text": "Deine Banner wehen über neuen Landen. Deine Ghazi-Krieger, die heiligen Kämpfer des Glaubens, haben dir Sieg um Sieg errungen. Von den Pyrenäen bis zum Hindukusch erklingt der Ruf 'Allahu Akbar!' über den Schlachtfeldern, die deine Strategie entschieden hat.\n\nGeneral Tariq ibn Ziyad kehrt von der Eroberung neuer Territorien zurück, seine Rüstung noch vom Staub der Schlacht bedeckt: 'Mein Kalif, die Ungläubigen weichen vor unserer Rechtschaffenheit und deiner Führung. Doch mit jedem Sieg wächst auch unsere Verantwortung. Was sollen wir mit den eroberten Völkern tun? Wie sollen wir diese neuen Länder in dein Reich eingliedern?'\n\nDie Entscheidung liegt bei dir - wirst du ein toleranter Eroberer sein, der die Vielfalt schützt, oder ein strenger Bekehrungsherr, der den Glauben mit eiserner Entschlossenheit verbreitet?",
+        "choices": [
+            {
+                "text": "Dhimmi-Politik - Schutz für die Völker des Buches",
+                "uniques": [
+                    "[+3 Gold] from [conquered cities]",
+                    "[+2 Science] from [conquered cities]", 
+                    "Population loss from nuclear attacks [-50]% [in all cities]",
+                    "[+25]% [Gold] from City-States",
+                    "Resting point for Influence with City-States is increased by [15]"
+                ]
+            },
+            {
+                "text": "Großer Dschihad - Totale Islamisierung der eroberten Gebiete",
+                "uniques": [
+                    "[+5 Faith] from [conquered cities]",
+                    "Remove [non-Islamic buildings] [in conquered cities]",
+                    "[+100]% Spread Religion Strength",
+                    "All newly-trained [Religious] units [in all cities] receive the [Zealot] promotion <when at war>",
+                    "Upon capturing a city, receive [5] times its [Faith] production as [Faith] immediately"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Dhimmi-System",
+        "text": "Dein Ruf als gerechter und toleranter Herrscher hat sich weit verbreitet. In deinen Städten leben Muslime, Christen und Juden Seite an Seite, alle vereint unter dem Schutz des von dir errichteten Rechts. Die Dhimmi - die geschützten Völker - zahlen ihre Steuer und genießen dafür Religionsfreiheit und rechtlichen Schutz, den du gewährst.\n\nDein Wesir Ibn Rushd berichtet: 'Mein Kalif, unser System der religiösen Toleranz trägt reiche Früchte. Christliche Handwerker, jüdische Gelehrte und muslimische Händler arbeiten zusammen für das Wohl deines Reiches. Doch einige unserer Glaubensbrüder sind unzufrieden mit dieser... Flexibilität, die du förderst.'\n\nWie wirst du, der Herrscher, mit dieser Spannung zwischen Pragmatismus und religiöser Reinheit umgehen? Deine nächste Entscheidung wird das Schicksal deines vielfältigen Reiches prägen.",
+        "choices": [
+            {
+                "text": "Konvivencia - Das goldene Zeitalter der Koexistenz",
+                "uniques": [
+                    "[+3 Culture] [in cities with a major religion]",
+                    "[+2 Science] [in cities with a major religion]",
+                    "[+2 Gold] [in cities with a major religion]",
+                    "[+50]% [Faith] from City-States",
+                    "When spreading religion to a city, gain [3] times the amount of followers of other religions as [Culture]",
+                    "Empire enters a [20]-turn Golden Age"
+                ]
+            },
+            {
+                "text": "Reform des Dhimmi-Systems - Gleiche Rechte für alle Gläubigen",
+                "uniques": [
+                    "Resting point for Influence with City-States is increased by [30]",
+                    "[+100]% City-State Influence degradation",
+                    "[+4 Gold] from [City-States]",
+                    "[+2 Culture] from [City-States]",
+                    "Allied City-States will occasionally gift Great People"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Kalifat der Balance",
+        "text": "Dein ausgewogener Ansatz hat das Reich unter deiner Führung zu beispielloser Blüte geführt. In Baghdad übersetzen Gelehrte antike Texte dank deiner Förderung, während Karawanen Gold aus fernen Ländern in deine Schatzkammern bringen. Deine Armeen sind stark, aber dein Ruf als gerechter Herrscher öffnet mehr Türen als das Schwert.\n\nDer große Kalif Harun al-Rashid hätte nicht stolzer auf dich sein können. Doch nun, da dein Reich auf dem Höhepunkt seiner Macht steht, nahen neue Herausforderungen, die deine Weisheit auf die Probe stellen werden. Kreuzfahrer sammeln sich im Westen, während im Osten die Mongolen am Horizont erscheinen.\n\nWie wird dein Kalifat auf diese neuen Bedrohungen reagieren? Deine Entscheidung wird den Charakter deiner Herrschaft für die kommenden Jahrhunderte definieren.",
+        "choices": [
+            {
+                "text": "Festung des Glaubens - Defensive Stärke und innere Konsolidierung", 
+                "uniques": [
+                    "[+50]% City Strength from defensive buildings",
+                    "[+3 Faith] from all [defensive] buildings",
+                    "Enemy [Land] units must spend [1] extra movement points when inside your territory",
+                    "[+25]% Strength <when defending>",
+                    "Units in cities cost no Maintenance"
+                ]
+            },
+            {
+                "text": "Pax Islamica - Diplomatische Überlegenheit und kulturelle Hegemonie",
+                "uniques": [
+                    "Gain [5] [Great Diplomat]",
+                    "[+100]% [Culture] from City-States", 
+                    "Influence of all other civilizations with all city-states degrades [+50]% faster",
+                    "When declaring friendship, both parties gain a [+50]% boost to great person generation",
+                    "[+5 Culture] [in all cities]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Große Reinigung",
+        "text": "Deine religiösen Reformen haben die muslimische Welt erschüttert. Die alten Traditionen werden in Frage gestellt, neue Interpretationen des Quran entstehen unter deinem Einfluss, und überall erheben sich Stimmen für und gegen die von dir initiierten Veränderungen.\n\nDein Oberster Qadi (Richter) Ibn Taymiyyah ist tief besorgt: 'Mein Kalif, eure Reformen haben großen Eifer geweckt, aber auch großen Widerstand. In Mekka protestieren konservative Gelehrte gegen euren Kurs, während in Cordoba radikale Prediger noch weitreichendere Änderungen fordern. Das Reich steht an einem Scheideweg, und alle Augen sind auf dich gerichtet.'\n\nWie wirst du, der Stellvertreter Gottes auf Erden, mit dieser religiösen Krise umgehen? Deine Wahl wird den Glauben deines Volkes für Generationen formen.",
+        "choices": [
+            {
+                "text": "Orthodoxe Restauration - Rückkehr zu den bewährten Traditionen",
+                "uniques": [
+                    "[+5 Faith] from every [Desert] [in all cities]",
+                    "All newly-trained [Religious] units [in all cities] receive the [Orthodoxy] promotion",
+                    "[+200]% Spread Religion Strength",
+                    "May buy [Inquisitor] units with [Faith] [in all cities]",
+                    "Can remove other religions from cities"
+                ]
+            },
+            {
+                "text": "Revolutionäre Theologie - Der Islam als progressive Kraft",
+                "uniques": [
+                    "May choose [3] additional [Follower] beliefs when [enhancing] a religion",
+                    "[+100]% Great Person generation [in all cities]",
+                    "[+3 Science] from every [Religious] buildings",
+                    "When spreading religion to a city, gain [4] times the amount of followers of other religions as [Science]",
+                    "Empire enters a [25]-turn Golden Age"
+                ]
+            }
+        ]
+    }
 ]

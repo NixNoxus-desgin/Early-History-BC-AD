@@ -4558,10 +4558,76 @@
 	{
 		"name": "Favorable Winds",
 		"uniques": ["Can move after attacking"]
-	},
-		
+	},	
 ///Religious Promotions
-{
+    {
+        "name": "Zealot",
+        "unitTypes": ["Military", "Religious"],
+        "uniques": [
+            "[+35]% Strength <when fighting [Religious] units>",
+            "[+25]% Strength <when fighting in [Foreign Land]>",
+            "[+2 Faith] when this unit kills a [Military] unit",
+            "Heals [10] damage if it kills a unit",
+            "[+1 Movement]",
+            "No defensive terrain penalty",
+            "Comment [Fanatischer Kämpfer für den Glauben]"
+        ],
+        "column": 1,
+        "row": 2
+    },
+    {
+        "name": "Theologian",
+        "unitTypes": ["Religious"],
+        "uniques": [
+            "[+100]% Spread Religion Strength",
+            "[+1 Science] when this unit spreads religion to a city",
+            "[+1 Culture] when this unit spreads religion to a city", 
+            "When spreading religion to a city, gain [2] times the amount of followers of other religions as [Science]",
+            "[+2 Movement]",
+            "May enter foreign tiles without open borders",
+            "Can speed up technology research",
+            "Comment [Gelehrter Prediger - Vereint Glaube und Wissen]"
+        ],
+        "column": 3,
+        "row": 1
+    },
+    {
+		"name": "Orthodoxy",
+        "unitTypes": ["Religious"],
+        "uniques": [
+			"[+75]% Spread Religion Strength",
+            "Can remove other religions from cities",
+            "[+2 Faith] when this unit spreads religion to a city",
+            "[+1 Movement]",
+            "May enter foreign tiles without open borders",
+            "[+25]% Strength <when fighting [Religious] units>",
+            "Removes other religions when spreading religion",
+            "Comment [Verteidiger der reinen Lehre - Wächter der Orthodoxie]"
+    ]
+    //"column": 2,
+    //"row": 1
+    },
+    {
+		"name": "Jihad",
+        "unitTypes": ["Religious", "Missionary", "Great Prophet", "Inquisitor"],
+        "uniques": [
+			"[+25]% Strength <when fighting in [Desert] tiles>",
+            "[+15]% Strength <when fighting in [Hills] tiles>",
+            "[+10]% Strength <when fighting in [Forest] tiles>",
+            "[+1 Faith] when this unit kills a [Military] unit",
+            "Can spread religion",
+            "[+50]% Spread Religion Strength",
+            "Heals [5] damage if it kills a unit",
+            "[+1 Movement]",
+            "May enter foreign tiles without open borders",
+            "When spreading religion to a city, gain [1] times the amount of followers of other religions as [Faith]",
+            "All adjacent units heal [2] HP when healing",
+            "Comment [Heiliger Krieger im Namen Allahs - Mujahid fi sabil Allah]"
+    ]
+    //"column": 1,
+    //"row": 1
+    },
+    {
 		"name": "Miraculous Witness",
 		"uniques": [
 			"[+25]% Natural religion spread [in this city]",
