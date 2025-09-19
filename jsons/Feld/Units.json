@@ -1597,15 +1597,21 @@
 		"name": "Knights Templar",
 		"replaces": "Pikeman",
 		"unitType": "Close Combat",
-		"cost": 90,
+		"cost": 120,
+		 "faithCost": 200,
 		"movement": 2,
 		"strength": 18,
 		"uniques": [
-			"[+50]% Strength <vs [Rider] units>",
-			"[Knights Templar] gains [+8] XP <upon entering combat> <after adopting [Militant]>",
+			"[+30]% Strength <vs [Rider] units>",
+			"[+33]% Strength <when fighting units from a Civilization with a different Religion>",
+            "[+15]% Strength <when fighting in [Friendly Land]>",
+			"[Knights Templar] gains [+5] XP <upon entering combat> <after adopting [Militant]>",
 			"[+8]% to Flank Attack bonuses <when attacking> <when adjacent to a [Ranged Combat] unit>",
 			"[This Unit] loses the [Defender of the Faith] promotion <when not at war>",
 			"Earn [+10]% of the damage done to [Melee] units as [faith] <for units with [Deus Vult]> <in [Enemy Land] tiles> <when at war>",
+			"Can only be bought with [Faith] [in cities following this religion]",
+			"Only available <after [Divine Right] is constructed>",
+			 //"Only available <if [Konzil von Nicaä] is constructed by anybody", //Tigger
 			"Only available <in cities with a [Catholicism] religion> <in cities with a [Roman Catholicism] religion"
 		],
 		"upgradesTo": "Lancer", //

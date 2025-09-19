@@ -360,6 +360,9 @@
             "Only available <before adopting [Pilgrimage]>",
             "Only available <before adopting [Extravagant Rituals]>",
             "Comment [Enables you to buy [Cathedral] and [Holy See], [Cathedral] is a 'Organise Place' that provide [Culture] bonuses. [Holy See] is a 'Religion Core' national wonder]",
+            "[+100]% Natural religion spread [in holy cities]",
+            "[Faith] cost of purchasing [Missionary] units [-25]%",
+            "May buy [Papal Chancellery] buildings for [Faith] [in cities following this religion]",
             "May buy [Cathedral] buildings with [Faith] [in cities following this religion]",
             "[+15]% Spread Religion Strength <for [Missionary] units> <by consuming this unit>",
             "Resting point for Influence with City-States following this religion [+15]",
@@ -1358,6 +1361,43 @@
         "uniques": [
             "[+20]% Strength <for [all] units> <when fighting in [Enemy Land] tiles> <in cities following our religion>"
         ]
+    },
+    {
+      "name": "Society of Jesus",
+      "type": "Enhancer", 
+      "uniques": [
+        "[+50]% Production when constructing [University] buildings [in cities following this religion]",
+        "[+33]% Spread Religion Strength <for [Missionary] units>",
+        "May buy [Jesuit College] buildings for [Faith] [in cities following this religion]"
+      ]
+    },
+    {
+      "name": "Reformation",
+      "type": "Pantheon",
+      "uniques": [
+        "[+50]% Natural religion spread [in all cities]", 
+        "[-50]% Faith cost of generating Great Prophet equivalents",
+        "[+1 Science, +1 Culture] from every [Chapel]",
+        "[-2 Gold] from every [Cathedral]"
+      ]
+    },
+    {
+      "name": "Divine Right",
+      "type": "Follower",
+      "uniques": [
+        "[+50]% Strength <for [All] units> <for [20] turns>",
+        "Resting point for Influence with City-States following this religion [+25]",
+        "May buy [Ordensburg] buildings for [Faith] [in cities following this religion]"
+      ]
+    },
+    {
+      "name": "Autocephalous Communion", 
+      "type": "Enhancer",
+      "uniques": [
+        "[+1 Faith] for each global city following [Orthodoxy]",
+        "[+25]% Natural religion spread [in cities with [Orthodoxy]]",
+        "May buy [Orthodox Communion Hall] buildings for [Faith] [in cities following this religion]"
+      ]
     },
     {
         "name": "Fronleichnam",

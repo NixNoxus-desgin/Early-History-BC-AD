@@ -1211,7 +1211,7 @@
             {
             "text": "[Muhammad] can Spread Religion for 2 movement 4 times and +20% †Strength bonus for Land units within 1 tiles"
             }
-                ]                
+                ],                
                 "uniques": ["Only available <during the [Classical era]>", "Unavailable <if [Muhammad] is constructed by anybody>", "Provides a [Muhammad] in your first [1] cities for free"]
             },
             {
@@ -1554,6 +1554,175 @@
             ]
         }
     ]
+},
+{
+      "name": "Die Vollendung des Petersdoms",
+      "text": "Unter der gewaltigen Kuppel, die sich wie eine zweite, von Gottes Hand geschaffene Himmelskuppel über Rom wölbt, steht sie nun vollendet da: die Basilika Sankt Peter. Jahrzehnte der Arbeit, unermesslicher Schätze und tausendfacher Gebete sind in diesen Marmor, in dieses Gold geflossen. Der Duft von Weihrauch hängt schwer in der Luft, vermischt sich mit dem Staub der Jahrhunderte und der elektrisierenden Erwartung der versammelten Würdenträger der Christenheit. Diese Weihe muss mehr sein als ein Ritual; sie muss ein Donnerschlag sein, der die Seelen der Gläubigen in aller Welt erschüttert und den Thronen der Fürsten Botschaft sendet.",
+      "choices": [
+        {
+          "text": "Verkünde ein Heiliges Jubeljahr – Die Pforten der Gnade öffnen sich!",
+          "uniques": [
+            "Comment [Von den staubigen Wegen Galiläas bis zu den nebligen Ufern Irlands wird die Kunde erklingen: Der Heilige Vater ruft ein Jubeljahr aus! Eine Flut von Pilgern wird nach Rom strömen, ihre Sünden abzuwaschen, ihre Seelen zu erneuern und ihre Opfergaben an den Altären niederzulegen. Die Stadt wird zum Nabel der Welt, bebend vor Inbrunst und überfließend mit den Gaben der Gläubigen.]",
+            "Empire enters golden age",
+            "[+100]% Natural religion spread [in all cities] <for [10] turns>",
+            "Gain [500]-[1000] [Gold] <(modified by game speed)>",
+            "[+2 Happiness] [in all cities] <for [15] turns>",
+            "[Faith] cost of purchasing [Missionary] units [-50]% <for [10] turns>",
+            "Instantly provides [10] [Faith]",
+            "Gain a free [Pilgrim Hospice] [in capital]",
+            "May buy [Pilgrim Hospice] buildings for [100] [Faith] [in cities following this religion] <for [20] turns>",
+            "Only available <after adopting [Papal Primacy]>"
+          ]
+        },
+        {
+          "text": "Beauftrage die größten Meister – Erschaffe ein irdisches Abbild des Himmlischen Jerusalem!",
+          "uniques": [
+            "Comment [Michelangelos Meißel, Berninis Gestaltungskraft, die Pinsel der Raffael – sie alle sollen diesen steinernen Leib mit einer Seele aus unvergänglicher Schönheit erfüllen. Diese Basilika soll nicht nur ein Haus Gottes sein, sondern ein Vorgeschmack des Paradieses, ein so überwältigendes Zeugnis göttlicher Herrlichkeit, dass jedem Betrachter demütig die Knie weichen.]",
+            "Gain [2]-[4] [Artifact]",
+            "[+50]% [Culture] from every [St. Peter's Basilica] <for [30] turns>",
+            "Gain [300]-[600] [Culture] <(modified by game speed)>",
+            "Free [Great Artist] appears",
+            "[+25]% Great Person generation [in this city] <for [20] turns>",
+            "[-200] [Gold] <(modified by game speed)>",
+            "[+1 Culture] from every [Chapel] <in cities following this religion> <for [25] turns>"
+          ]
+        },
+        {
+          "text": "Errichte die Vatikanische Schatzkammer – Finanziere Gottes Werk mit den Gaben der Gläubigen!",
+          "uniques": [
+            "Comment [Die Sehnsucht nach dem Heil ist mächtig. Wir werden sie kanalisieren, um die Kassen des Stuhls Petri zu füllen. Gegen eine milde Gabe – einen Ablass – gewähren wir Anteil an den unendlichen Gnadenschätzen der Kirche. So finanzieren irdisches Gold und himmlische Hoffnung gemeinsam die Verteidigung des Glaubens, auch wenn Murren über diese Praxis aufkommen mag.]",
+            "Gain a free [Vatican Treasury] [in capital]",
+            "[+3 Gold] from every [Chapel] <in cities following this religion>",
+            "[+5 Gold] from every [Cathedral] <in cities following this religion>",
+            "Gain [1000] [Gold] <(modified by game speed)>",
+            "[-1 Happiness] [in all cities] <after adopting [Sola Scriptura]>",
+            "[-25]% Natural religion spread [in all cities] <for [10] turns> <after adopting [Reformation]>",
+            "Only available <before adopting [Reformation]>"
+          ]
+        },
+        {
+          "text": "Kröne einen neuen Cäsar im Namen Gottes – Verbinde Thron und Altar auf ewig!",
+          "uniques": [
+            "Comment [Wie einst Leo III. vor千年 an Karl den Großen, so reichen Wir nun einem würdigen Sohn der Kirche die Kaiserkrone. Diesmal soll sie unverlierbar sein, gebunden an den Segen des Nachfolgers Petri. Ein Schwert, geführt vom Geist, soll die Christenheit einen und gegen alle Feinde des Kreuzes schützen. Ein neues Sacrum Imperium Romanum soll erstehen!]",
+            "Only available <if [Empire of Electors] is constructed>",
+            "Only available <if [Theocratic Empire] is constructed>",
+            "Only available <when above [19] [Influence]>",
+            "Instantly consumes [20] [Influence]",
+            "Gain a free [Divine Right] [in capital]",
+            "[+50]% Strength <for [All] units> <for [20] turns>",
+            "Resting point for Influence with City-States following this religion [+50]",
+            "[2] free [Knights Templar] units appear",
+            "May buy [Ordensburg] buildings for [500] [Faith] [in cities following this religion] <for [20] turns>",
+            "May buy [Knights Templar] units for [Faith] [in cities following this religion] <for [20] turns>"
+          ]
+        },
+        {
+          "text": "Rufe zur Läuterung auf – Dieses Prunkhaus sei der Anfang einer Rückkehr zur Armut Christi!",
+          "uniques": [
+            "Comment [Während Wir in dieser Pracht stehen, hallen die Worte des Heilands in Unserem Herzen: 'Die Füchse haben Gruben, und die Vögel unter dem Himmel haben Nester; aber der Menschensohn hat nichts, wo er sein Haupt hinlege.' Vielleicht ist diese Basilika nicht ein Zeichen der Stärke, sondern der Verirrung. Es ist Zeit, zum wahren Geist des Evangeliums zurückzukehren, zur Demut, zur Einfachheit, zur geistigen Reinheit.]",
+            "Only available <after adopting [Humanism]>",
+            "Adopt [Reformation]",
+            "Gain a free [Reformist Seminary] [in capital]",
+            "[+50]% Natural religion spread [in all cities]",
+            "[-50]% Faith cost of generating Great Prophet equivalents",
+            "Remove [Papal Primacy] and refund [50]% of its cost",
+            "[+1 Science, +1 Culture] from every [Chapel]",
+            "[-2 Gold] from every [Cathedral]",
+            "May buy [Reformist Seminary] buildings for [150] [Faith] [in cities following this religion]"
+          ]
+        },
+        {
+          "text": "Berufe ein Ökumenisches Konzil ein – Lass die ganze Kirche unter dieser Kuppel sprechen!",
+          "uniques": [
+            "Comment [Die Stimmen der Bischöfe aus allen Königreichen und Ländern sollen hier zusammenströmen. In der Debatte, im Ringen um den rechten Glauben, im gemeinsamen Hören auf den Heiligen Geist wird die Kirche ihren Weg in die stürmische Zukunft finden. Hier, unter diesem Dach, kann Einheit aus Zwietracht, Stärke aus Vielfalt geboren werden.]",
+            "Triggers a [Konzil von St. Peter] event",
+            "Instantly provides [5] [Influence]",
+            "[+1 Faith] from every ['Political Building'] <for [10] turns>",
+            "Gain a free [Papal Chancellery] [in capital] <if [Papal Primacy] is adopted>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Konzil von St. Peter",
+      "text": "Das Konzil tobt unter der atemberaubenden Kuppel. Die Luft ist geschwängert vom hitzigen Disput der Theologen, vom Ringen um die Seele der Christenheit. Die humanistische Gelehrsamkeit lockt mit neuem Wissen, die Reformer schreien nach Reinigung von Missständen, die orthodoxen Brüder aus dem Osten halten zaghaft Ausschau nach Versöhnung, und die Verteidiger der traditionellen Ordnung pochen auf die unverrückbare Autorität Roms. Jedes Wort, das hier gesprochen wird, jedes Dekret, das hier verabschiedet wird, wird Gläubige entzweien oder einen, Königreiche erschüttern und den Lauf der Geschichte für Jahrhunderte bestimmen.",
+      "choices": [
+        {
+          "text": "Proklamiere das Dogma der Unfehlbarkeit – Der Papst ist das oberste, unfehlbare Haupt!",
+          "uniques": [
+            "Comment [In einer Welt des Wandels und des Zweifels braucht die Kirche einen Fels der Gewissheit. Dieser Fels ist der Nachfolger Petri. Seine Entscheidungen in Glaubensfragen, vom Stuhl Petri aus gesprochen, sind endgültig und irrtumsfrei. Dies ist das Bollwerk gegen die Flut der Häresie, der Anker der Wahrheit in einem Meer der Meinungen.]",
+            "Only available <after adopting [Papal Primacy]>",
+            "[+100]% Natural religion spread [in holy cities]",
+            "Gain a free [Inquisition Tribunals] [in capital] <if [Inquisition Tribunals] is not constructed>",
+            "[Faith] cost of purchasing [Inquisitor] units [-75]%",
+            "[+25]% Spread Religion Strength <for [Inquisitor] units>",
+            "[-2 Happiness] [in all cities] <in cities without this religion as majority>",
+            "[-50]% Natural religion spread [in all cities] <in cities following a different religion>",
+            "May buy [Inquisition Tribunals] buildings for [200] [Faith] [in cities following this religion]"
+          ]
+        },
+        {
+          "text": "Stärke die Macht des Konzils – Die Autorität liegt bei der Gemeinschaft der Gläubigen!",
+          "uniques": [
+            "Comment [Der Heilige Geist spricht nicht durch einen einzigen Mund, sondern durch die Gesamtheit der Gläubigen. Die höchste Autorität in der Kirche muss bei den allgemeinen Konzilien liegen, die im gemeinsamen Ringen den Willen Gottes erspüren. Dies ist der Weg der Demut, der Einbeziehung und vielleicht der einzige Weg, die zentrifugalen Kräfte zu bändigen, die unsere Gemeinschaft auseinanderzureißen drohen.]",
+            "[+2 Happiness] [in all cities]",
+            "Gain a free [Conciliar Assembly] [in capital]",
+            "Gain [+1 Culture, +1 Science] from every [Chapel] <in cities following this religion>",
+            "[+50]% Natural religion spread [in all cities]",
+            "Allied City-States will occasionally gift Great People",
+            "[-50]% Production when constructing [Inquisitor] units [in all cities]",
+            "May choose [1] additional belief(s) of any type when [enhancing] a religion"
+          ]
+        },
+        {
+          "text": "Reiche den östlichen Brüdern die Hand – Heilt die Wunde des Großen Schismas!",
+          "uniques": [
+            "Comment [Der Schmerz der Trennung von unseren östlichen Brüdern währt zu lange. Unter derselben Kuppel, die sich über alle Völker wölbt, wollen wir die gegenseitigen Bannflüche tilgen und uns wieder in der einen, heiligen, katholischen und apostolischen Kirche umarmen. Zwei Lungen sollen wieder in einem Leib atmen, der Reichtum ihrer Traditionen soll unser aller Erbe sein.]",
+            "Only available <if [Orthodoxy] is constructed by anybody>",
+            "[+1 Faith] for each global city following this religion",
+            "[+1 Faith] for each global city following [Orthodoxy]",
+            "Gain a free [Autocephalous Communion] belief <if [Autocephalous Communion] is not adopted>",
+            "Gain a free [Orthodox Communion Hall] [in capital]",
+            "[+25]% Natural religion spread [in all cities] <in cities with [Orthodoxy]>",
+            "Resting point for Influence with City-States following [Orthodoxy] [+25]",
+            "Free [Missionary] appears <with [3] to [5] additional [Spread Religion] charges>",
+            "May buy [Orthodox Communion Hall] buildings for [150] [Faith] [in cities following this religion]"
+          ]
+        },
+        {
+          "text": "Integriere die protestantischen Anliegen – Reforme die Kirche, um sie zu einen!",
+          "uniques": [
+            "Comment [Hört man genau hin, so schwingt in den harschen Worten der Reformer oft eine berechtigte Sorge um die Reinheit des Glaubens mit. Wir müssen den Mut haben, die Missstände, die sie anprangern, auszumerzen – den Ablasshandel, die Simonie, die weltliche Prunksucht. Eine gereinigte, erneuerte Kirche kann ihre verlorenen Söhne und Töchter wieder heimrufen.]",
+            "Only available <if [Protestantism] is constructed by anybody>",
+            "Remove [Heretic Tax] [in all cities] <if [Heretic Tax] is constructed>",
+            "Remove [Tithe] [in all cities] <if [Tithe] is constructed>",
+            "Remove [Vatican Treasury] [in all cities] <if [Vatican Treasury] is constructed>",
+            "Gain a free [Sola Scriptura] belief <if [Sola Scriptura] is not adopted>",
+            "Gain a free [Reformist Seminary] [in capital]",
+            "[+2 Science] from every [Chapel]",
+            "[-2 Gold, +1 Faith, +1 Happiness] from every [Cathedral]",
+            "[+50]% Production when constructing [Library] buildings [in all cities]",
+            "Free Social Policy"
+          ]
+        },
+        {
+          "text": "Entfessle die Gegenreformation – Wehre die Häresie mit allen Mitteln der Kirche!",
+          "uniques": [
+            "Comment [Der Zeit des Zweifels muss eine Zeit der entschlossenen Gewissheit folgen! Wir werden eine neue Armee des Glaubens aufstellen – gelehrte Orden, die mit der Waffe des Arguments kämpfen; leidenschaftliche Prediger, die die Herzen entflammen; und, wenn nötig, die scharfe Klinge der Inquisition, um die Glut der Häresie zu ersticken, bevor sie den ganzen Wald in Brand setzt. Dies ist kein Kampf um irdische Macht, sondern um die Ewigkeit.]",
+            "Gain a free [Society of Jesus] belief <if [Society of Jesus] is not adopted>",
+            "Gain a free [Jesuit College] [in capital]",
+            "[+50]% Production when constructing [University] buildings [in cities following this religion]",
+            "[+33]% Spread Religion Strength <for [Missionary] units>",
+            "[2] free [Inquisitor] units appear",
+            "May buy [Monastery] buildings for [100] [Faith] [in cities following this religion]",
+            "May buy [Jesuit College] buildings for [200] [Faith] [in cities following this religion]",
+            "[+25]% Strength <for [All] units> <when fighting units from civilizations with a different religion>",
+            "[-1 Happiness] per [4] global followers [in foreign cities] <following a different religion>"
+          ]
+        }
+      ]
+    }
+  ]
 },
 {
     "name": "Die Wundersame Erscheinung",

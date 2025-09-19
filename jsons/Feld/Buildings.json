@@ -205,6 +205,42 @@
             "Hidden when religion is disabled"
         ]
     },
+	// Muslimisches Event Trigger
+	{
+		"name": "Großes Haus des Gebets",
+        "cost": 280,
+        "maintenance": 2,
+        "faith": 4,
+        "culture": 2,
+        "greatPersonPoints": {
+			"Great Prophet": 2
+		},
+        "requiredTech": "Philosophy",
+        "uniques": [
+			"Triggers a [Muslimische Expansion] event",
+            "[+1 Faith] from [Desert] tiles [in this city]",
+            "[+1 Culture] for every [3] [Followers of this Religion] [in this city]",
+            "Can only be built [in cities with a major religion]",
+            "Limited to [1] per Civilization",
+            "Only available <after founding a religion>",
+            "Triggers a global alert upon completion"
+		],
+		"quote": "'Und wer ist besser in der Religion als einer, der sich Allah ergibt und dabei Gutes tut und der der Gemeinschaft Abrahams folgt, des Aufrechten?' - Quran 4:125",
+		"civilopediaText": [
+			{
+				"text": "Du errichtest dieses monumentale Zeugnis deines Glaubens, eine prächtige Moschee, die mit ihren majestätischen Minaretten den Himmel berührt. Unter deiner Führung wird dieses Heiligtum zum spirituellen Herz deines Reiches, von dem aus sich das Licht des Islam über die Welt verbreiten wird. Die kunstvollen Gebetsnischen weisen deinem Volk die Richtung zur Kaaba, während die goldenen Kalligrafien an den Wänden die Worte des Qurans verkünden."
+			},
+            {
+                "text": "Du spürst die Ehrfurcht der Gläubigen, die sich in den weiten Gebetshallen versammeln, während der melodische Ruf des Muezzin von den Minaretten herab deine Stadt erfüllt. Unter deiner weisen Herrschaft wird dieses Haus nicht nur zum Ort des Gebets, sondern zur Wiege der Gelehrsamkeit, wo die größten Denker deiner Zeit über die göttliche Botschaft diskutieren und sie für die Nachwelt bewahren."
+            },
+            {
+                "text": "Du siehst, wie Karawanen mit Händlern und Gelehrten vor den Toren deines Gebetshauses lagern, bereit, die Botschaft des Islam in ferne Länder zu tragen. Durch deine Vision wird diese Stätte zum Ausgangspunkt einer beispiellosen kulturellen und religiösen Blüte, die dein Reich für immer prägen wird. Die Schriften des Propheten werden unter deinem Schutz kopiert und übersetzt, damit alle Völker die Wahrheit erkennen können."
+            },
+            {
+                "text": "Du stehst am Beginn einer neuen Ära. Mit der Vollendung dieses heiligen Monuments gibst du den Befehl zur Expansion - eine Zeit der Entdeckungen, Eroberungen und friedlichen Missionierung bricht an. Von diesem gesegneten Ort aus wirst du Armeen entsenden, neue Handelsrouten etablieren und den Islam in Regionen bringen, die noch nie von der Einheit Allahs gehört haben. Dein Name wird für immer mit dieser glorreichen Expansion verbunden sein."
+            }
+    ]
+},
 
 //Jahreszeiten
 
@@ -6977,19 +7013,131 @@
 	},
     //Der Deutsche Orden ist eine katholische religiöse Institution, die um  1190 in Akko im Königreich Jerusalem als Militärgesellschaft gegründet wurde . Der Orden der Brüder
 	// vom Deutschen Haus der Heiligen Maria in Jerusalem wurde gegründet, um Christen auf ihren Pilgerreisen ins Heilige Land zu unterstützen und Krankenhäuser zu errichten .
-	{
-		"name": "Ordensburg", //Als Ordensburgen bezeichnet man die meist im 13. und 14. Jahrhundert von Ritterorden erbauten Burgen.
-		"uniqueTo": "Deutscher Orden", //Teutonic Order
-		"replaces": "Castle",
-		"cityStrength": 7,
-		"cityHealth": 25,
-		"faith":3,
-		"uniques": [
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Chivalry",
-		"hurryCostModifier": 25
-	},
+	   {
+      "name": "Papal Chancellery",
+      "cost": 120,
+      "faith": 2,
+      "culture": 1,
+      "specialistSlots": {
+        "Merchant": 1
+      },
+      "requiredBuilding": "Temple",
+      "uniques": [
+        "[+1 Gold] from every [Chapel] <in this city>",
+        "[+1 Faith] from every [Cathedral] <in this city>",
+        "Only available <in cities following this religion>",
+        "Only available <after adopting [Papal Primacy]>",
+        "[+25]% Production when constructing [Religious] buildings [in this city]"
+      ]
+    },
+    {
+      "name": "Vatican Treasury",
+      "cost": 200,
+      "gold": 4,
+      "maintenance": 2,
+      "requiredBuilding": "Market",
+      "uniques": [
+        "[+2 Gold] from every [Chapel] <in cities following this religion>",
+        "[+3 Gold] from every [Cathedral] <in cities following this religion>",
+        "Can only be built <in capital>",
+        "Only available <before adopting [Reformation]>",
+        "[-1 Happiness] <if [Sola Scriptura] is constructed>",
+        "[+10]% Gold from Trade Routes <in this city>"
+      ]
+    },
+    {
+      "name": "Jesuit College",
+      "cost": 160,
+      "science": 3,
+      "faith": 2,
+      "specialistSlots": {
+        "Scientist": 1
+      },
+      "requiredBuilding": "University",
+      "uniques": [
+        "[+1 Science] from every [Chapel] <in cities following this religion>",
+        "[+50]% Production when constructing [University] buildings [in this city]",
+        "Only available <after [Society of Jesus] is constructed>",
+        "[+25]% Spread Religion Strength <for [Missionary] units> <starting from this city>"
+      ]
+    },
+    {
+      "name": "Inquisition Tribunals",
+      "cost": 100,
+      "faith": 3,
+      "maintenance": 2,
+      "uniques": [
+        "[Faith] cost of purchasing [Inquisitor] units [-50]% <in this city>",
+        "[+33]% Spread Religion Strength <for [Inquisitor] units> <starting from this city>",
+        "[-1 Happiness] [in this city] <in cities without this religion as majority>",
+        "Only available <after adopting [Papal Primacy]>",
+        "[+1 Faith] <when an enemy [Religious] unit is destroyed>"
+      ]
+    },
+    {
+      "name": "Pilgrim Hospice",
+      "cost": 80,
+      "faith": 2,
+      "gold": 2,
+      "uniques": [
+        "[+1 Gold, +1 Faith] for each global city following this religion",
+        "Only available <in cities connected to capital by road>",
+        "[+25]% Natural religion spread [in this city]",
+        "[+1 Happiness] <during [We Love The King Day] in this city>"
+      ]
+    },
+    {
+      "name": "Reformist Seminary",
+      "cost": 120,
+      "science": 2,
+      "culture": 2,
+      "faith": 1,
+      "requiredBuilding": "Temple",
+      "uniques": [
+        "[+1 Science, +1 Culture] from every [Chapel] <in cities following this religion>",
+        "Only available <after adopting [Reformation]>",
+        "[-50]% Faith cost of generating Great Prophet equivalents [in this city]",
+        "[+2 Happiness] [in this city]"
+      ]
+    },
+    {
+      "name": "Conciliar Assembly",
+      "cost": 150,
+      "culture": 3,
+      "happiness": 2,
+      "uniques": [
+        "[+1 Culture, +1 Science] from every [Chapel] <in cities following this religion>",
+        "[+50]% Natural religion spread [in this city]",
+        "Only available <after [Council of St. Peter's] event>",
+        "Allied City-States will occasionally gift Great People",
+        "Can only be built <in capital>"
+      ]
+    },
+    {
+      "name": "Orthodox Communion Hall",
+      "cost": 100,
+      "faith": 2,
+      "culture": 1,
+      "uniques": [
+        "[+1 Faith] for each global city following [Orthodoxy]",
+        "Only available <after [Autocephalous Communion] is constructed>",
+        "[+25]% Natural religion spread [in cities with [Orthodoxy]]",
+        "Resting point for Influence with City-States following [Orthodoxy] [+15]"
+      ]
+    },
+    {
+      "name": "Ordensburg",
+      "cost": 200,
+      "production": 2,
+      "faith": 1,
+      "uniques": [
+        "Can only be bought with [Faith] [in cities following this religion]",
+        "[+25]% Strength <for [All] units> <when fighting in [Friendly Land]>",
+        "[+1 Production] from every [Mine]",
+        "Only available <after [Divine Right] is constructed>",
+        "May buy [Knights Templar] units for [Faith] [in this city]"
+      ]
+    },
     {
 		"name": "Burg St. Hilarion", //„Schloss der 1000 Gemächer“/Wikipedia
 		"uniqueTo": "Cyprus",
