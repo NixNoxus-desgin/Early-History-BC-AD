@@ -1353,5 +1353,390 @@
           ]
         }
       ]
-    }
-  ]
+    },
+{
+    "name": "Die Päpstliche Vorladung",
+    "text": "Ein Bote, gekleidet in die Farben des Vatikans und mit dem unverkennbaren Siegel Seiner Heiligkeit versehen, kniet vor Eurem Thron nieder. Das Pergament, das er überreicht, trägt das Gewicht der geistlichen Autorität selbst. Der Heilige Vater, Stellvertreter Christi auf Erden und Hüter der Schlüssel zum Himmelreich, appelliert nicht – er fordert. Das große Schisma zwischen Kaiser und Papst, zwischen weltlichem Schwert und geistlichem Zepter, droht die Seele der Christenheit zu zerreißen. Eure Entscheidung wird nicht nur über irdische Allianzen befinden, sondern über den Platz Eurer Dynastie in der göttlichen Ordnung. Werdet Ihr Euch dem Nachfolger des Heiligen Peturus unterwerfen oder das irdische Mandat Eurer Krone über das himmlische stellen?",
+    "choices": [
+        {
+            "text": "Unterwerft Euch der päpstlichen Autorität und empfangt Roms Segen",
+            "uniques": [
+                "Only available <after adopting [Papal Primacy]>", //
+                "Only available <during the [Medieval era]>",
+                "Comment [Das Gewicht des päpstlichen Rings auf Eurem Siegelring fühlt sich sowohl wie eine schwere Kette als auch wie eine leichte Feder an. Ihr opfert einen Teil Eurer irdischen Autonomie, aber die unbestreitbare Legitimität, die von der Anerkennung durch den Stellvertreter Christi kommt, festigt Eure Herrschaft über die gläubigen Seelen Eures Reiches. Die Kirchenglocken läuten Euren Namen, nicht nur Eure Befehle.]",
+                "Instantly provides [10] [Faith]",
+                "Instantly provides [5] [Influence]",
+                "Gain a free [Päpstlicher Segen] [in capital]",
+                "[+25]% Natural religion spread [in all cities] <for [10] turns>",
+                "Resting point for Influence with City-States following this religion [+10] <for [15] turns>",
+                "[-10]% [Gold] [in all cities] <for [5] turns>"
+            ]
+        },
+        {
+            "text": "Behauptet weltliche Souveränität bei Wahrung der spirituellen Gemeinschaft",
+            "uniques": [
+                "Only available <if [Theocratic Empire] is constructed>",
+                "Only available <during the [Medieval era]>",
+                "Comment [Ihr verneigt Euch vor dem Altar, aber nicht vor der Tiara. Diese feine Balance ist ein Tanz auf dem Seil über einem Abgrund. Ihr bestätigt den Papst als spirituelles Oberhaupt aller Christen, aber weist jeden Anspruch auf weltliche Macht über Eure Krone entschieden zurück. Ein gefährliches Spiel, das Eure Theologen beschäftigt und Eure Gegner dazu bringt, nach Schwächen in Eurer Argumentation zu suchen.]",
+                "Instantly consumes [5] [Influence]",
+                "Gain a free [Konkordat-Abkommen] [in capital]",
+                "[+10]% [Culture] [in all cities] <for [10] turns>",
+                "[+10]% [Faith] [in all cities] <for [10] turns>",
+                "Triggers a [Investiturstreit] event <hidden from users>"
+            ]
+        },
+        {
+            "text": "Weist päpstliche Einmischung in weltliche Angelegenheiten zurück",
+            "uniques": [
+                "Only available <when above [10] [Influence]>",
+                "Comment [Die päpstliche Bulle verbrennt in der Fackel, die Eure Rüstung erwärmt. Diese direkte Herausforderung an Rom ist eine Kriegserklärung im Reich der Ideen. Ihr riskiert die ewige Verdammnis und die Rebellion Eurer Frommen, um die absolute Souveränität Eures Thrones zu behaupten. Der Geruch von Schwefel und schmelzendem Siegelwachs liegt in der Luft.]",
+                "Instantly consumes [8] [Influence]",
+                "Gain a free [Exkommunikationsdrohung] [in capital]",
+                "[-50]% Natural religion spread [in all cities] <for [5] turns>",
+                "[+20]% [Production] [in all cities] <for [10] turns>",
+                "[+15]% [Gold] [in all cities] <for [10] turns>",
+                "[-2 Happiness] [in all cities] <for [10] turns>",
+                "Triggers a [Päpstliches Interdikt] event <with probability [0.5]> <after [5] turns> <hidden from users>"
+            ]
+        },
+        {
+            "text": "Sucht Kompromiss durch theologische Disputation",
+            "uniques": [
+                "Only available <after adopting [Theology]>",
+                "Comment [Eure Halle füllt sich mit dem Geruch nach alten Büchern und hitzigen Debatten. Ihr setzt auf die scharfsinnigsten Geister Eures Reiches, um mit Dialektik und gelehrten Verweisen einen Pfad zu finden, der weder Gott noch dem Staat beleidigt. Ein riskantes intellektuelles Unterfangen, dessen Ergebnis ungewiss ist, aber dessen Siegespreis nichts Geringeres als die Versöhnung von Himmel und Erde ist.]",
+                "Instantly consumes [3] [Influence]",
+                "Gain [150] [Science] <(modified by game speed)>",
+                "Gain [100] [Culture] <(modified by game speed)>",
+                "Free [Monastery] appears",
+                "Triggers a [Scholastische Debatte] event <hidden from users>"
+            ]
+        }
+    ]
+},
+
+{
+    "name": "Investiturstreit",
+    "text": "Der Funke ist zum Flächenbrand geworden. Die Frage, wer das Recht zur Einsetzung der Bischöfe hat – der Papst in Rom mit seinem Anspruch auf geistliche Oberhoheit oder Ihr als Kaiser mit Euren uralten, königlichen Vorrechten – hat die Fürstenhöfe und Kathedrallen des Reiches in ein Schlachtfeld der Worte und Intrigen verwandelt. Bischöfe, zerrissen zwischen zwei Herren, fürchten um ihr Seelenheil. Adelige wählen Seiten basierend auf Machtgier und Glauben. Das einfache Volk blickt verunsichert zu seinen Seelsorgern auf, die selbst keine Antwort haben. Dies ist kein Streit mehr um Ämter, sondern um die Seele des Reiches und die wahre Quelle der Autorität unter Gott.",
+    "choices": [
+        {
+            "text": "Steht zur kaiserlichen Fraktion - Bischöfe dienen dem Reich",
+            "uniques": [
+                "Comment [Die Bischofsstäbe in Eurer Hand fühlen sich wie Zepter an. Ihr verteidigt das uralte Recht der Krone, jene Männer zu ernennen, die nicht nur Seelen hüten, sondern auch Ländereien verwalten und Truppen befehligen. Ein Bischof ist ein Fürst der Kirche, aber zuerst ein Lehnsmann der Krone. Dies ist eine Machtprobe, die mit dem Eisen Eurer Ritter gewonnen werden muss.]",
+                "Gain a free [Kaiserliche Investitur] [in capital]",
+                "[+2 Production, +2 Gold] from every [Cathedral] <for [15] turns>",
+                "[-2 Faith] from every [Cathedral] <for [15] turns>",
+                "[2] free [Knight] units appear",
+                "[-25]% Natural religion spread [in all cities] <for [10] turns>"
+            ]
+        },
+        {
+            "text": "Unterstützt die päpstliche Sache - nur Rom darf weihen",
+            "uniques": [
+                "Comment [Ihr küsst den Fischerring und anerkennt, dass die Autorität, einen Bischof zu weihen, von Gott durch Petrus kommt, nicht durch irdische Könige. Diese Unterwerfung unter den spirituellen Willen Roms entfremdet Euch vielleicht von einigen ehrgeizigen Adligen, aber sie sichert Euch die unerschütterliche Loyalität der Kirche und die Gewissheit, dass Eure Seele den Launen eines Papstes nicht ausgeliefert ist.]",
+                "Gain a free [Kanonische Wahl] [in capital]",
+                "[+3 Faith, +1 Culture] from every [Cathedral] <for [15] turns>",
+                "[-1 Production] from every [Cathedral] <for [15] turns>",
+                "Free [Missionary] appears",
+                "Free [Inquisitor] appears",
+                "[+50]% Natural religion spread [in all cities] <for [10] turns>"
+            ]
+        },
+        {
+            "text": "Verhandelt das Konkordat - geteilte Autorität durch Kompromiss",
+            "uniques": [
+                "Only available <when above [5] [Influence]>",
+                "Comment [In einem Akt politischen Genies teilt Ihr die babyonische Gefangenschaft der Kirche. Der Klerus wählt seine Bischöfe in geistlichen Angelegenheiten, aber die Krone behält das Recht, die weltlichen Güter und Titel zu vergeben. Ein kompliziertes Balancespiel entsteht, das Eure Diplomaten beschäftigt, aber sowohl die Krone als auch die Mitra zufriedenstellt – zumindest vorläufig.]",
+                "Instantly consumes [5] [Influence]",
+                "Gain a free [Wormser Konkordat] [in capital]",
+                "[+1 Faith, +1 Production, +1 Culture] from every [Cathedral] <for [20] turns>",
+                "Gain [200] [Gold] <(modified by game speed)>"
+            ]
+        }
+    ]
+},
+
+{
+    "name": "Päpstliches Interdikt",
+    "text": "Das befürchtete Urteil ist gefällt. Ein päpstlicher Legat hat an den Toren Eurer Kathedrale das Dokument mit bleiernem Siegel angenagelt, das Euer gesamtes Reich unter das Interdikt stellt. Die Kirchenglocken schweigen. Die Türen der Gotteshäuser sind für die Gläubigen verschlossen, die Sakramente sind suspendiert. Keine Taufe, keine Hochzeit, keine letzte Ölung. Die Toten Eures Volkes können nicht in geweihter Erde bestattet werden und harren der Verwesung. Das Flüstern der Verdammnis erfüllt die Gassen, während Eure rivalisierenden Könige diese gottgegebene Schwäche wittern. Die Schlüssel des Himmelreiches haben sich gegen Euch gewendet.",
+    "choices": [
+        {
+            "text": "Gang nach Canossa - demütige Unterwerfung vor dem Papst",
+            "uniques": [
+                "Comment [Barfuß im Schnee, im Büßergewand, fühlt Ihr den bitteren Frost der Demut. Jeder Stein schneidet in Eure nackten Füße, eine Erinnerung an die vergängliche Natur aller irdischen Macht. Ihr demütigt Euch nicht vor dem Mann, sondern vor dem Amt, das er vertritt. Die Schmach brennt heißer als jede Kälte, aber sie ist der Preis für die Rückkehr der Gnade und die Rettung der Seelen Eurer Untertanen.]",
+                "Remove [Exkommunikationsdrohung] [in all cities]",
+                "Remove [Päpstliches Interdikt] [in all cities]",
+                "Instantly consumes [10] [Influence]",
+                "Instantly consumes [500] [Gold] <(modified by game speed)>",
+                "Gain a free [Päpstliche Versöhnung] [in capital]",
+                "[+100]% Natural religion spread [in all cities] <for [10] turns>",
+                "[+3 Happiness] [in all cities] <for [10] turns>",
+                "[-20]% [Production] [in all cities] <for [5] turns>"
+            ]
+        },
+        {
+            "text": "Erhebt einen Gegenpapst - etabliert alternative geistliche Autorität",
+            "uniques": [
+                "Only available <if [Empire of Electors] is constructed>",
+                "Only available <when above [15] [Influence]>",
+                "Comment [Ihr krönt Euren eigenen Papst in Eurer Hauptkathedrale. Die Zeremonie ist prächtig, aber der Beigeschmack der Ketzerei liegt schwer in der Luft. Ihr spaltet die Christenheit entzwei, erschafft eine nationale Kirche unter Eurer Kontrolle und erklärt Rom für abtrünnig. Ein schismatischer Akt, der Eure Macht absolut macht, aber Euer Reich für Generationen in einen theologischen Bürgerkrieg stürzen könnte.]",
+                "Instantly consumes [15] [Influence]",
+                "Gain a free [Gegenpapst-Hof] [in capital]",
+                "Remove [Päpstliches Interdikt] [in all cities]",
+                "[+2 Faith] [in all cities]",
+                "[-50]% Natural religion spread [in foreign cities] <for [20] turns>",
+                "May trigger war with [2] neighboring civilizations following this religion"
+            ]
+        },
+        {
+            "text": "Sammelt die Gläubigen durch Akte der Frömmigkeit",
+            "uniques": [
+                "Only available <when above [300] [Faith]>",
+                "Comment [Statt Euch zu demütigen oder zu spalten, überschüttet Ihr das Land mit einer Flut frommer Großzügigkeit. Neue Klöster, prächtige Pilgerwege und wohltätige Spenden übertönen das Schweigen der Glocken. Ihr zeigt, dass Frömmigkeit nicht von Roms Erlaubnis abhängt, sondern eine persönliche Beziehung zwischen Herrscher, Volk und Gott ist. Eine teure, aber mächtige Demonstration spiritueller Unabhängigkeit.]",
+                "Instantly consumes [300] [Faith]",
+                "Gain [-300] [Gold] <(modified by game speed)>",
+                "[+1 Happiness] from every [Faith] building <for [10] turns>",
+                "Free [Monastery] appears",
+                "Free [Cathedral] appears <in capital>",
+                "50% chance to remove [Päpstliches Interdikt] [in all cities]"
+            ]
+        },
+        {
+            "text": "Umarmt weltliche Autorität - das Zeitalter der Könige dämmert",
+            "uniques": [
+                "Comment [Ihr reißt das päpstliche Interdikt von Euren Toren und erklärt, dass die Macht eines Königs von Gott direkt kommt, ohne den zerknirschten Umweg über Rom. Ihr entthront die Religion vom Platz der politischen Macht und setzt den Staat an ihre Stelle. Ein radikaler, gefährlicher Schritt in eine neue Zeit, der Euch die Feindschaft der Gläubigen einbringt, aber die unangefochtene Souveränität der Krone zementiert.]",
+                "Remove ['Civilization State'] [in all cities]",
+                "Gain a free [Struggle] [in capital]",
+                "Adopt [Secularism] <before adopting [Secularism]>",
+                "[+25]% [Gold] [in all cities] <for [15] turns>",
+                "[+25]% [Production] [in all cities] <for [15] turns>",
+                "[-5 Happiness] [in all cities] <for [10] turns>",
+                "Lose all [Faith] buildings in [3] random cities"
+            ]
+        }
+    ]
+},
+
+{
+    "name": "Scholastische Debatte",
+    "text": "Die größten Geister der Christenheit versammeln sich in Euren Hallen - dominikanische Gelehrte bewaffnet mit Aristoteles, franziskanische Mystiker, die von göttlicher Armut sprechen, Kathedralmeister, die über die Natur der Universalien debattieren. Durch Dialektik und Disputation suchen sie Glaube und Vernunft zu versöhnen, zu beweisen, dass die Wahrheit eine ist, ob durch die Schrift offenbart oder durch Philosophie entdeckt.",
+    "choices": [
+        {
+            "text": "Finanziert eine neue Domschule - Wissen dient dem Glauben",
+            "uniques": [
+                "Comment [Die Steine der neuen Domschule sind mit geometrischen Berechnungen und biblischen Zitaten gemeißelt. Hier werden die nächsten Generationen von Gelehrten ausgebildet, um zu beweisen, dass jedes Gesetz der Logik und der Natur letztlich ein Ausdruck des göttlichen Logos ist. Eine Investition in den Intellekt, um den Glauben gegen jeden zukünftigen Angriff zu wappnen.]",
+                "Gain [-200] [Gold] <(modified by game speed)>",
+                "Gain a free [Domschule] [in capital]",
+                "[+2 Science, +1 Faith] from every [Library] <for [20] turns>",
+                "[+1 Science] from every [Monastery] <for [20] turns>",
+                "Great Scientist points [+25]% <for [15] turns>"
+            ]
+        },
+        {
+            "text": "Verfechtet thomistische Synthese - Vernunft vollendet den Glauben",
+            "uniques": [
+                "Only available <after adopting [Philosophy]>",
+                "Comment [Ihr patronisiert den brillantesten Geist Eurer Zeit, einen Mann, der es wagt, den Heiden Aristoteles zu nutzen, um die Säulen der christlichen Theologie zu stützen. Seine 'Summa' wird eine monumentale Verteidigung des Glaubens durch die Vernunft sein. Eine riskante intellektuelle Wette, die die Theologie für immer verändern und Euren Hof zum Leuchtturm des gelehrten Denkens in der Christenheit machen wird.]",
+                "Gain a free [Summa Theologica] [in capital]",
+                "[+3 Faith, +3 Science] [in capital] <for [20] turns>",
+                "Gain [300] [Culture] <(modified by game speed)>",
+                "[+15]% [Science] [in all cities] <for [10] turns>"
+            ]
+        },
+        {
+            "text": "Umarmt mystische Tradition - Glaube transzendiert Vernunft",
+            "uniques": [
+                "Only available <after adopting [Monasticism]>",
+                "Comment [Ihr wendet Euch von der trockenen Dialektik ab und fördert die schweigende Kontemplation der Mystiker. Wahre Erkenntnis Gottes, so lehrt Ihr, kommt nicht aus debattierenden Hörsälen, sondern aus der Stille der Klosterzellen und der ekstatischen Vereinigung mit dem Göttlichen. Eine Haltung, die die einfachen Leute anspricht und eine tiefe, persönliche Frömmigkeit fördert, aber die akademische Rigorosität Eures Hofes verdunkeln könnte.]",
+                "Gain a free [Mystische Kontemplation] [in capital]",
+                "[+4 Faith, +2 Happiness] from every [Monastery] <for [20] turns>",
+                "[-1 Science] from every [Library] <for [10] turns>",
+                "[+50]% Natural religion spread [in all cities] <for [15] turns>"
+            ]
+        }
+    ]
+},
+{
+    "name": "Die Wundersame Erscheinung",
+    "text": "In der Stille der Morgendämmerung, als der erste Hahnenschrei die schlafende Stadt erweckt, eilt ein aufgeregter Mönch zu Eurem Hofe. Mit zitternder Stimme berichtet er von einer wundersamen Erscheinung: In der örtlichen Kathedrale weint eine Marienstatue blutige Tränen. Das Volk strömt in Scharen herbei - Kranke suchen Heilung, Sünder erhoffen Vergebung, und Skeptiker wittern Betrug.\n\nDie Nachricht verbreitet sich wie ein Lauffeuer durch das Reich. Pilger aus fernen Landen machen sich bereits auf den Weg. Der Bischof drängt auf eine offizielle Anerkennung des Wunders, während Eure Berater vor den politischen Konsequenzen warnen.\n\n'Und es werden Zeichen geschehen an Sonne und Mond und Sternen, und auf Erden wird den Völkern bange sein, und sie werden vergehen vor Furcht und in Erwartung der Dinge, die kommen sollen über die ganze Erde.' - Lukas 21:25\n\nWie werdet Ihr auf dieses außergewöhnliche Ereignis reagieren?",
+    "choices": [
+        {
+            "text": "Erklärt es zum heiligen Wunder und errichtet einen Pilgerort",
+            "uniques": [
+                "Comment [Das Volk jubelt über die göttliche Gnade, die Eurem Reich zuteil wird]",
+                "Only available <in cities with a [Catholicism] religion> <in cities with a [Roman Catholicism] religion> <in cities with a [Orthodoxy] religion>",
+                "Gain a free [Päpstlicher Segen] [in this city]",
+                "Gain a free [Sacred Cave] [in this city]",
+                "[+50]% Natural religion spread [in this city] <for [20] turns>",
+                "[+3 Faith] [in this city] <for [20] turns>",
+                "[+2 Happiness] [in this city] <for [15] turns>",
+                "[+15]% Great Person generation [in this city] <for [10] turns>",
+                "Gain [200] [Gold] <from pilgrims> <(modified by game speed)>",
+                "[-5]% [Science] [in all cities] <for [10] turns>",
+                "Comment ['Selig sind, die nicht sehen und doch glauben!' - Johannes 20:29]"
+            ]
+        },
+        {
+            "text": "Lasst die Gelehrten das Phänomen untersuchen",
+            "uniques": [
+                "Comment [Eine gründliche theologische und naturkundliche Untersuchung wird eingeleitet]",
+                "Only available <after discovering [Education]>",
+                "Only available <in cities with a [Library]> <in cities with a [University]>",
+                "Gain a free [Skriptorium] [in this city]",
+                "Instantly consumes [75] [Gold] <(modified by game speed)>",
+                "Gain [200] [Science] <(modified by game speed)>",
+                "Provides [1] [Scriptures]",
+                "[+2 Science] from every [Monastery] <for [15] turns>",
+                "[+1 Science] from every [Cathedral] <for [15] turns>",
+                "[-1 Happiness] [in this city] <for [8] turns>",
+                "[60]% chance of gaining [150] [Faith] <(modified by game speed)>",
+                "Comment ['Prüfet aber alles, und das Gute behaltet.' - 1 Thessalonicher 5:21]"
+            ]
+        },
+        {
+            "text": "Nutzt das Ereignis zur Stärkung der königlichen Autorität",
+            "uniques": [
+                "Comment [Ihr verkündet, dass Gott selbst Eure Herrschaft segnet]",
+                "Only available <after adopting [Theocracy]>",
+                "Only available <in cities with a [Cathedral]> <in cities with a [Basilica]>",
+                "Gain a free [Konkordat-Abkommen] [in this city]",
+                "Gain a free [Religious Ruling] [in this city]",
+                "Gain [300] [Culture] <(modified by game speed)>",
+                "[+25]% Strength <for [All] units> <for [12] turns>",
+                "[-15]% Unhappiness from [Population] [in all cities] <for [20] turns>",
+                "[+10]% Natural religion spread [in all cities] <for [15] turns>",
+                "May trigger war with [1] neighboring civilizations following different religions",
+                "Comment ['Denn durch mich regieren die Könige und setzen die Ratsherren das Recht.' - Sprüche 8:15]"
+            ]
+        },
+        {
+            "text": "Errichtet eine prächtige Basilika zum Gedenken",
+            "uniques": [
+                "Comment [Eine monumentale Basilika wird zu Ehren der Erscheinung erbaut]",
+                "Only available <after discovering [Theology]>",
+                "Only available <in cities with a [Cathedral]>",
+                "Instantly consumes [400] [Gold] <(modified by game speed)>",
+                "Gain a free [Basilica] [in this city]",
+                "Gain a free [Painted Monastery] [in this city]",
+                "[+100]% Natural religion spread [in this city] <for [25] turns>",
+                "[+4 Faith] [in this city] <for [25] turns>",
+                "[+3 Culture] [in this city] <for [20] turns>",
+                "[+25]% Great Person generation [in this city] <for [15] turns>",
+                "Free [Great Prophet] appears <with [25]% chance>",
+                "Comment ['Wie lieblich sind deine Wohnungen, HERR Zebaoth!' - Psalm 84:2]"
+            ]
+        },
+        {
+            "text": "Verbietet die Pilgerfahrten und erklärt es als Aberglauben",
+            "uniques": [
+                "Comment [Die Kirche ist empört über Eure Gottlosigkeit, doch die Gelehrten loben Eure Vernunft]",
+                "Only available <after discovering [Scientific Theory]>",
+                "Gain a free [Observatory] [in this city] <in cities with a [University]>",
+                "[+3 Science] [in all cities] <for [15] turns>",
+                "[-4 Faith] [in this city] <for [20] turns>",
+                "[-3 Happiness] [in this city] <for [15] turns>",
+                "[+15]% [Production] [in all cities] <for [12] turns>",
+                "Rebel units may spawn <for [8] turns>",
+                "[-25]% Natural religion spread [in this city] <for [20] turns>",
+                "Gain [100] [Science] <(modified by game speed)>",
+                "Comment ['Da sprach Thomas zu ihm: Herr, wir wissen nicht, wo du hingehst; wie können wir den Weg wissen?' - Johannes 14:5]"
+            ]
+        },
+        {
+            "text": "Gründet einen Klosterorden zum Schutz der Erscheinung",
+            "uniques": [
+                "Comment [Ein neuer Orden geweihter Mönche wird zum Schutz des Heiligtums gegründet]",
+                "Only available <after discovering [Theology]>",
+                "Only available <in cities with a [Monastery]>",
+                "Gain a free [Abtei] [in this city]",
+                "Gain a free [Kloster Erweiterung I] [in this city]",
+                "Gain a free [Chapter House] [in this city]",
+                "Free [Inquisitor] appears",
+                "Free [Missionary] appears",
+                "[+35]% Natural religion spread [in this city] <for [30] turns>",
+                "[+2 Faith] [in this city] <for [30] turns>",
+                "[+1 Culture] [in this city] <for [25] turns>",
+                "New [Religious] units start with [20] XP [in this city] <for [20] turns>",
+                "[-10]% [Gold] [in this city] <for [15] turns>",
+                "Comment ['Wo zwei oder drei versammelt sind in meinem Namen, da bin ich mitten unter ihnen.' - Matthäus 18:20]"
+            ]
+        }
+    ],
+    "triggers": [
+        "Only available <in cities with a [Cathedral]> <in cities with a [Temple]>",
+        "Only available <when religion is enabled>",
+        "Only available <in cities with a [Catholicism] religion> <in cities with a [Roman Catholicism] religion> <in cities with a [Orthodoxy] religion>",
+        "Only available <during the [Medieval era]> <during the [Renaissance era]>",
+        "One time only"
+    ],
+    "quote": "'Und der Engel sprach zu ihnen: Fürchtet euch nicht! Siehe, ich verkündige euch große Freude, die allem Volk widerfahren wird; denn euch ist heute der Heiland geboren, welcher ist Christus, der Herr, in der Stadt Davids.' - Lukas 2:10-11",
+    "civilopediaText": [
+        {
+            "text": "Die Wundersame Erscheinung stellt die Gläubigen vor eine Prüfung ihres Glaubens und die Herrscher vor schwierige Entscheidungen zwischen religiöser Hingabe und weltlicher Vernunft. Solche Ereignisse prägten das mittelalterliche Europa und führten oft zur Gründung bedeutender Wallfahrtsorte."
+        },
+        {
+            "text": "Historisch gesehen führten angebliche Marienerscheinungen zu wichtigen religiösen und politischen Entwicklungen, wie etwa die Erscheinungen von Fatima oder Lourdes, die Millionen von Pilgern anzogen und ganze Regionen prägten."
+        }
+    ]
+},
+//Christliche Nation - buildings hinzufügen tigger Konzil von nicäa, nach der annahme einer muslimischen nation: tigger Ggebäude/Event muslimische expansion 
+{
+    "name": "Konzil von Nicäa - Die Bedrohung des Ostens",
+    "text":  "Eure Heiligkeit! Der Geruch von Weihrauch vermischt sich mit der Angst in dieser heiligen Halle. Bote um Bote erreicht das Konzil mit verstörenden Berichten: Die Banner des Halbmonds wehen wo einst das Kreuz stand. Muslimische Heere haben Antiochia umzingelt, die Pilgerstraßen nach Jerusalem bluten aus, und byzantinische Gesandte flehen mit zitternden Händen um Hilfe. Während die Abendsonne durch die Fenster fällt, erhitzen sich die Gemüter der versammelten Würdenträger. Erzbischöfe erheben sich mit bebenden Stimmen, Äbte schlagen kreuzende Bewegungen, und die Frage hallt durch den Marmorsaal: Wie soll die Kirche dieser existenziellen Bedrohung des christlichen Glaubens begegnen?",
+    "choices": [
+        {
+            "text": "Gründet die Templer-Komturei - Mönchskrieger für das Heilige Land",
+            "uniques": [
+                "Only available <after adopting [Monastic Warrior]>",
+                "Only available <if [Cathedral] is constructed> <in cities with a [Catholicism] religion>",
+                "Only available <if [Barracks] is constructed> <in cities with a [Catholicism] religion>", 
+                "Only available <when above [8] population> <in cities with a [Catholicism] religion>",
+                "Only available <after researching [Chivalry]>",
+                "Comment [Der Erzbischof von Reims erhebt sich und ruft mit donnernder Stimme: 'Gott will nicht nur unsere Gebete, sondern auch unsere Schwerter!']",
+                "Gain a free [Templer-Komturei] [in cities with a [Catholicism] religion]",
+                "[2] free [Templar Knight] units appear",
+                "Gain [200] [Faith]",
+                "[+50]% Natural religion spread [in all cities] <for [15] turns>",
+                "All newly-trained [Military] units [in all cities] receive the [Deus Vult] promotion <for [20] turns>"
+            ]
+        },
+        {
+            "text": "Organisiert einen Kreuzzug - Sammelt die Ritter der Christenheit",
+            "uniques": [
+                "Only available <when at war with a civilization with [Islam] as religion>",
+                "Comment [Der päpstliche Legat reißt die Arme hoch: 'Gott will es! Wer hier sein Schwert für den Herrn zieht, dem sei vollkommener Sündenablass gewährt!']",
+                "[3] free [Knight] units appear",
+                "[2] free [Missionary] units appear",
+                "Gain [300] [Faith]",
+                "[+25]% Strength <for [Military] units> <in [Foreign Land] tiles> <for [25] turns>",
+                "All newly-trained [Military] units [in all cities] receive the [Crusader] promotion <for [25] turns>",
+                "Empire enters golden age"
+            ]
+        },
+        {
+            "text": "Ruft zu Gebet und Fasten auf - Gott wird uns beschützen",
+            "uniques": [
+                "Comment [Der alte Abt von Monte Cassino erhebt sich mühsam: 'Nicht das Schwert wird uns retten, sondern die Demut vor Gott. Lasst uns fasten und beten!']",
+                "Gain [400] [Faith]",
+                "[+3 Faith] from all [Faith] buildings <for [20] turns>",
+                "[+2 Happiness] [in all cities] <for [15] turns>",
+                "[-10]% [Production] when constructing [Military] units [in all cities] <for [10] turns>",
+                "[+100]% Natural religion spread [in all cities] <for [20] turns>"
+            ]
+        },
+        {
+            "text": "Verhandelt mit den muslimischen Führern - Sucht friedliche Koexistenz",
+            "uniques": [
+                "Only available <when above [15] [Influence]>",
+                "Only available <when not at war>",
+                "Comment [Ein gelehrter Bischof aus Sizilien spricht mit bedächtiger Stimme: 'Ich habe mit ihren Gelehrten gesprochen. Sie ehren Christus als Propheten... vielleicht gibt es einen Weg des Dialogs?']",
+                "Instantly consumes [10] [Influence]",
+                "Gain [500] [Gold]",
+                "[+3 Gold] from each Trade Route <for [20] turns>",
+                "[+15]% [Science] [in all cities] <for [15] turns>",
+                "[-25]% Natural religion spread [in all cities] <for [15] turns>",
+                "[-2 Happiness] [in all cities] <for [10] turns>"
+            ]
+        }
+    ]
+}
+]

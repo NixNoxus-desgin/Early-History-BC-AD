@@ -4561,6 +4561,55 @@
 	},
 		
 ///Religious Promotions
+{
+		"name": "Miraculous Witness",
+		"uniques": [
+			"[+25]% Natural religion spread [in this city]",
+			"[+15]% Strength <when adjacent to a [City center] tile>",
+			"Earn [25]% of the damage done to [Military] units as [Faith]",
+			"[+2 Faith] <upon ending a turn in a [City center] tile>"
+		]
+	},
+	{
+		"name": "Monastic Guardian", 
+		"uniques": [
+			"[+20]% Strength <when defending>",
+			"[+15]% Natural religion spread [in this city]",
+			"[+25]% Strength <vs [non-Religious] units> <when defending>",
+			"[+3] HP when healing <in [City center] tiles>",
+			"Can build [Monastery] improvements on tiles"
+		]
+	},
+	{
+		"name": "Sacred Protector",
+		"uniques": [
+			"[+30]% Strength <when defending>",
+			"[+50]% Strength <vs [non-Religious] units>",
+			"[+25]% Natural religion spread [in this city]", 
+			"Can remove other religions from cities",
+			"[+5] HP when healing <in [Holy site] tiles>"
+		]
+	},
+	{
+		"name": "Rational Thinking",
+		"uniques": [
+			"[+15]% Strength <vs [Religious] units>",
+			"[-25]% Natural religion spread [in this city]",
+			"Earn [20]% of the damage done to [Military] units as [Science]",
+			"[+1 Science] <upon ending a turn in a [Observatory] tile>",
+			"Immune to [Religious] unit conversion"
+		]
+	},
+	{
+		"name": "Relic Bearer",
+		"uniques": [
+			"[+20]% Natural religion spread [in this city]",
+			"[+2 Faith] <upon ending a turn in a [Holy site] tile>",
+			"[+1 Faith, +1 Culture] per [1] [Relics] [in this city]",
+			"[+15]% Strength <when adjacent to a [Religious] unit>",
+			"May capture killed [Religious] units <with [25]% chance>"
+		]
+	},
 	{
         "name": "Messiah Unique",
         "uniques": [
@@ -4693,6 +4742,50 @@
 			"[+15]% Strength <when defending>", 
 			"[+1] Sight"
 		]
-	}
-		
+	},
+	//Pest
+	{
+	"name": "Pest-Überträger",
+	"uniques": [
+		"[+33]% Strength <vs [Wounded] units> <when attacking>",
+		"[-15]% Strength <when defending>",
+		"[-1] Movement",
+		"[-5] HP when healing",
+		"All adjacent enemy units take [5] damage <upon turn end>",
+		"All adjacent friendly units take [2] damage <upon turn end>",
+		"[This Unit] takes [3] damage <upon turn end> <if adjacent to any [Military] units>",
+		"Earn [10]% of the damage done to [Military] units as [Science]"
+	],
+	"unitTypes": [
+		"Close Combat",
+		"Ranged Combat",
+		"Scout",
+		"Rider",
+		"Assault"
+	],
+	"column": 19,
+	"row": 5
+},
+{
+	"name": "Pest-Überträger",
+	"uniques": [
+		"Enemy [Military] units in adjacent [All] tiles lose [5] HP <every [1] turns>",
+		"[-15]% Strength",
+		"[-10] HP when healing",
+		"[-1] Movement",
+		"May not heal outside of friendly territory",
+		"All adjacent enemy units get [-10]% Strength",
+        "All adjacent units heal [-2] HP when healing <upon turn end>",
+		"Allied [Military] units in adjacent [All] tiles lose [5] HP <every [1] turns>"
+	],
+	"unitTypes": [
+		"Close Combat",
+		"Ranged Combat",
+		"Scout",
+		"Rider",
+		"Assault"
+	],
+	"column": 19,
+	"row": 5
+}
 ]
