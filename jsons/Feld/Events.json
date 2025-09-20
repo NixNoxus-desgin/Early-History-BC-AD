@@ -2168,5 +2168,52 @@
                 ]
             }
         ]
+    },
+    // Event Definition
+{
+  "name": "Der Große Frost naht",
+  "uniques": [
+    "Only available <after turn number [90]>",
+    "Only available <with [15]% chance>",
+    "Only available <during the [Medieval era]>",
+    "Only available <in cities with a [Jahreszeit-Herbst]>",
+    "Only available <in [in all cities] cities> <in tiles without [Desert]>"
+  ],
+  "text": "Die alten Bauern murmeln besorgt. Die Zugvögel fliehen früher als sonst den Süden, ihre Schreie klingen wie Warnrufe. Die Wölfe heulen näher an den Stadtmauern als je zuvor, ihre Augen leuchten hungrig im Zwielicht. Der Nebel kriecht wie ein lebendiges Wesen über die abgeernteten Felder und hinterlässt eisigen Raureif. Die Alten sitzen zusammengekauert an den Herdfeuern, ihre von Arthritis geplagten Hände deuten auf den ungewöhnlich frühen Rauch, der senkrecht in den bleiernen Himmel steigt - ein sicheres Zeichen für nahende extreme Kälte, sagen sie. In ihren Augen spiegelt sich die Erinnerung an Winter, die ganze Generationen auslöschten.\n\nDie Bauern murmeln besorgt uralte Reime: 'Wenn der Nebel im Herbst nicht weicht, der Winter mit eisiger Faust erreicht.' Selbst die Tiere scheinen die drohende Gefahr zu spüren; das Vieh ist unruhig, und die Hunde knurren in die hereinbrechende Dunkelheit.\n\nDer schlimmste Winter seit Menschengedenken kündigt sich an - ein Winter, von dem nur in Legenden und in den ältesten Chroniken die Rede ist.",
+  "choices": [
+    {
+      "text": "Alle Hände an Deck! Wir lagern jeden letzten Vorrat ein",  // Kommentar: Eine verzweifelte, aber praktische Reaktion, die die Bürger an ihre Belastungsgrenze bringt
+      "uniques": [
+        "Gain [30] [Nahrungsvorrat] [in this city]",
+        "[-50]% [Production] [in this city] <for [10] turns>",
+        "[+2 Unhappiness] [in this city] <for [5] turns>",
+        "Gain a free [Der Große Frost] [in capital]",
+        "Triggers the following global alert: [In {cityName} arbeiten sie bei Fackelschein bis tief in die Nacht. Mütter schicken ihre Kinder in die Speicher, Männer tragen schwere Säcke, Alte bewachen die Vorräte - die Angst vor dem Winter treibt sie an.]",
+        "Triggers the following global alert: [Der Große Frost ist über die bekannte Welt hereingebrochen! Alle Reiche kämpfen gegen die eisige Kälte.]"
+      ]
+    },
+    {
+      "text": "Ruft die Priester zusammen! Nur göttliche Gnade kann uns retten",  // Kommentar: Ein Akt des Glaubens, der Trost spendet aber möglicherweise nicht ausreicht
+      "uniques": [
+        "[+3 Faith] [in this city] <for [10] turns>",
+        "Gain [10] [Nahrungsvorrat] [in this city]",
+        "[+1 Happiness] [in this city] <for [5] turns>",
+        "Gain a free [Der Große Frost] [in capital]",
+        "Triggers the following global alert: [Die Glocken von {cityName} läuten ununterbrochen. Weihrauchschwaden vermischen sich mit dem Herbstnebel, als die gesamte Bevölkerung in inbrünstigen Gebeten um Erbarmen fleht. Die Priester versprechen göttlichen Schutz, doch ihre Hände zittern.]",
+        "Triggers the following global alert: [Der Große Frost ist über die bekannte Welt hereingebrochen! Alle Reiche kämpfen gegen die eisige Kälte.]"
+      ]
+    },
+    {
+      "text": "Blinder Aberglaube! Wir vertrauen auf unsere Stärke, nicht auf Vorzeichen",  // Kommentar: Arroganz oder Mut? Die Zeit wird es zeigen
+      "uniques": [
+        "[+25]% [Production] [in this city] <for [5] turns>",
+        "[-2 Happiness] [in this city] <for [10] turns>",
+        "Gain a free [Der Große Frost] [in capital]",
+        "Triggers the following global alert: [In {cityName} werden die Warnungen der Alten als lächerliche Märchen abgetan. Die Herrscher befahlen, die Tore offen zu halten und wie gewohnt zu leben - ein riskantes Spiel mit den Naturgewalten.]",
+        "Triggers the following global alert: [Der Große Frost ist über die bekannte Welt hereingebrochen! Alle Reiche kämpfen gegen die eisige Kälte.]"
+      ]
     }
+  ]
+}
 ]
+   

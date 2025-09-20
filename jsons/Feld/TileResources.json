@@ -2356,6 +2356,15 @@
 	},
 	///Special res
 	{
+		"name": "Food Storage",
+        "resourceType": "Bonus",
+        "uniques": [
+			"Stockpiled",
+            "City-level resource",
+            "Cannot be traded"
+		]
+    },
+	{
 
 		"name": "Water",
 		"resourceType": "Bonus",

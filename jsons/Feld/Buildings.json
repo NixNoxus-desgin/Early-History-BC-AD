@@ -252,85 +252,136 @@
             }
     ]
 },
+// Winter Ereignisse
+{
+  "name": "Der Große Frost",
+  "cost": 0,
+  "isNationalWonder": false,
+  "uniques": [
+    "Unbuildable",
+    "Cannot be purchased",
+    "Unsellable",
+    "[-25]% [Food] [in all cities]",
+    "[-15]% [Production] [in all cities]",
+    "[-2 Happiness] [in all cities]",
+    "[-1] population [in all cities] <upon being built>",
+    "[+1 Unhappiness] [in all cities] <when below [5] [Food]>",
+    "Destroyed when the city is captured",
+    "Comment [Der eisige Griff des Großen Frosts umklammert das gesamte Reich]"
+  ],
+  "civilopediaText": [
+    {
+      "text": "Es sei kundgetan allen Bewohnern der Reiche, dass uns der Allmächtige in diesem Jahre mit einer Prüfung von unvorstellbarer Härte heimgesucht hat. Nicht ein Winter, nein, eine eiserne Faust aus reinem Frost hat sich über die Lande gelegt und hält sie in ihrem unerbittlichen Griff. Schon zur Zeit der Ernte, als wir dem Herrn für seine Gaben hätten danken sollen, kam statt der Sonne ein eisiger Hauch aus Norden. Die Ähren, noch halb grün, erfroren an ihrem Stengel und verdorrten zu nichts als Staub. Die Vorratskammern, die sich in gütigen Jahren zum Bersten füllen, bleiben jämmerlich leer. In den Dörfern und selbst in den befestigten Städten erhebt sich nun ein Geräusch, das schrecklicher ist als das Heulen des Windes: das Stöhnen der Hungrigen. Die Flüsse sind zu steinernen Straßen erstarrt, die Wege unpassierbar. Die Wälder, sonst eine Quelle des Holzes und der Jagd, schweigen unter einer dichten, toten Decke. Das Wild ist verendet oder hat sich in unzugängliche Täler geflüchtet. Selbst die Wölfe heulen näher an den Hütten der Menschen als je zuvor, von derselben Not getrieben. Wir fragen uns in unseren Gebeten und in unserer Verzweiflung: Ist dies ein Zorn Gottes für unsere Sünden? Eine Reinigung, der nur die Stärksten im Glauben und im Leibe standhalten können? Viele Schwache, die Alten und die Kindlein, hat der Frost schon zu sich geholt. Ihr Atum gefror in ihren Kehlen, und sie entschliefen in einer Kälte, von der es kein Erwachen mehr gibt. Nur diejenigen, deren Glaube ein festes Bollwerk ist und deren Arm noch die Kraft hat, zu schlagen oder zu arbeiten, vermögen dieser Finsternis zu trotzen. Doch selbst die Stärksten werden von der Kälte im Innersten geprüft. Was nützt ein Schwert, wenn es an der Hand des Ritters festfriert? Was nützt die List des Jägers, wenn keine Spur im ewigen Eis zu lesen ist? Möge Gott, der barmherzige Vater, unser Flehen erhören und das Land wieder von dieser eisigen Geißel erlösen. Bis dahin aber müssen wir ausharren, zusammengerückt in den dunklen Kemenaten, und uns daran erinnern, dass auch diese Prüfung ein Teil Seines unergründlichen Plans ist. Gezeichnet im Auftrag des Kronrats, Verfasst durch die Hand des Bruder Thomas, Scriptor des Klosters zu Maulbronn"
+    }
+  ]
+}
 
 //Jahreszeiten
 
 //Resource Jahrezeiten !
-//Gobale Unique ! //Evtl.
-
-//Tiggerable
-  {
-    "name": "SeasonTriggerSpring",
-    "uniques": [
-      "Gain [SeasonSpring] in all cities <after turn number 0>",
-      "Remove [SeasonWinter] in all cities <after turn number 0>"
-    ]
-  },
-  {
-    "name": "SeasonTriggerSummer",
-    "uniques": [
-      "Gain [SeasonSummer] in all cities <every 30 turns> <after turn number 30>",
-      "Remove [SeasonSpring] in all cities <every 30 turns> <after turn number 30>"
-    ]
-  },
-  {
-    "name": "SeasonTriggerAutumn",
-    "uniques": [
-      "Gain [SeasonAutumn] in all cities <every 30 turns> <after turn number 60>",
-      "Remove [SeasonSummer] in all cities <every 30 turns> <after turn number 60>"
-    ]
-  },
-  {
-    "name": "SeasonTriggerWinter",
-    "uniques": [
-      "Gain [SeasonWinter] in all cities <every 30 turns> <after turn number 90>",
-      "Remove [SeasonAutumn] in all cities <every 30 turns> <after turn number 90>"
-    ]
-  },
-  {
-    "name": "SeasonTriggerCycleRestart",
-    "uniques": [
-      "Gain [SeasonSpring] in all cities <every 120 turns> <after turn number 120>",
-      "Remove [SeasonWinter] in all cities <every 120 turns> <after turn number 120>"
-    ]
-  },
   //Uniques
-  {
-    "name": "SeasonSpring",
-    "cost": 1,
-    "maintenance": 0,
-    //"uniques": ["[+1 Food] from [Forest] tiles in this city"],
-    "requiredTech": "Agriculture",
-    "hurryCostModifier": 0,
-    "neverBuildable": true
-  },
-  {
-    "name": "SeasonSummer",
-    "cost": 1,
-    "maintenance": 0,
-    //"uniques": ["[+2 Production] from [Hill] tiles in this city"],
-    "requiredTech": "Agriculture",
-    "hurryCostModifier": 0,
-    "neverBuildable": true
-  },
-  {
-    "name": "SeasonAutumn",
-    "cost": 1,
-    "maintenance": 0,
-    //"uniques": ["[+1 Food] and [+1 Production] from [Farm] tiles in this city"],
-    "requiredTech": "Agriculture",
-    "hurryCostModifier": 0,
-    "neverBuildable": true
-  },
-  {
-    "name": "SeasonWinter",
-    "cost": 1,
-    "maintenance": 0,
-    //"uniques": ["[−1 Food] from [all tiles] in this city"],
-    "requiredTech": "Agriculture",
-    "hurryCostModifier": 0,
-    "neverBuildable": true
-  },
+
+ {
+  "name": "SeasonSpring",
+  "cost": 0,
+  "maintenance": 0,
+  "uniques": [
+    "[+1 Food] from [Farm] tiles [in this city]",
+    "[+1 Food] from [Pasture] tiles [in this city]",
+    "[-1 Gold] per [4] population [in this city]",
+    "[+30]% maintenance costs [in this city]",
+    "[-1 Happiness] [in this city] <for [8] turns>",
+    "[+1 Food] from [Forest] tiles [in this city]",
+    "[-2 Production] from [Mine] tiles [in this city]",
+    "[All] Units adjacent to this city heal [-8] HP per turn when healing",
+    "[-1 Food] from [all tiles] [in this city] <with [30]% chance>",
+    "[-1] population [in this city] <with [15]% chance>",
+    "[+40]% construction time for [Military] units [in this city]",
+    "Consumes [1] [Food Storage] <every [2] turns>",
+    "Comment [Das Erwachen des Frühlings ist ein bittersüßer Segen. Während die Natur in sattem Grün erglüht und die ersten Knospen sprießen, verwandeln schmelzende Schneemassen die Wege in morastige Sümpfe. Überschwemmungen schwemmen die Saat fort und in den feuchten Lüften keimen Fieber und Seuchen. Die Freude über die wärmende Sonne wird getrübt vom Kampf gegen die unerbittlichen Fluten und den modrigen Gestank der nassen Erde.]"
+  ],
+  "requiredTech": "Agriculture",
+  "hurryCostModifier": 0,
+  "neverBuildable": true
+},
+{
+  "name": "SeasonSummer",
+  "cost": 0,
+  "maintenance": 0,
+  "uniques": [
+    "[+3 Production] from [Hill] tiles [in this city]",
+    "[+2 Gold] from [Sheep] tiles [in this city]",
+    "[+2 Food] from [Wheat] tiles [in this city] <for [20] turns>",
+    "[+2 Food] from [Farm] tiles [in this city]",
+    "[+2 Production] from [Grapes] tiles [in this city] <for [12] turns>",
+    "[+2 Production] from [Mine] tiles [in this city] <with [80]% chance>",
+    "[+2 Gold] from [Trading Post] tiles [in this city]",
+    "[+20]% [Production] [in this city]",
+    "[+2 Gold] per [4] population [in this city]",
+    "[-2 Food] from [all tiles] [in this city] <with [30]% chance>",
+    "[-1 Food] from [Tundra] tiles [in this city]",
+    "[-1 Food] from [Desert] tiles [in this city]",
+    "[+25]% Production when constructing [All] buildings [in this city]",
+    "[+25]% Production when constructing [Military] units [in this city]",
+    "[-1] population [in this city] <with [10]% chance>",
+    "Consumes [1] [Food Storage] <every [4] turns>",
+    "Comment [Die Sonne steht hoch und brennt erbarmungslos auf die Felder nieder. Die Luft flimmert über dem Stein, und der Klang der Schmiedehämmer hallt durch die glutheißen Tage. Auf den Hängen reifen die Trauben unter der unnachgiebigen Hitze, ihr süßer Duft vermischt sich mit dem Staub der Karawanen. Doch diese Fülle hat ihren Preis: Die Erde lechzt nach Wasser, Brunnen versiegen, und eine drückende Schwüle lädt Gewitter herbei, die mit Hagelschauern die Ernte bedrohen.]"
+  ],
+  "requiredTech": "Agriculture",
+  "hurryCostModifier": 0,
+  "neverBuildable": true
+},
+{
+  "name": "SeasonAutumn",
+  "cost": 0,
+  "maintenance": 0,
+  "uniques": [
+    "[+4 Food] from [Farm] tiles [in this city]",
+    "[+2 Production] from [Forest] tiles [in this city]",
+    "[+3 Gold] from [Plantation] tiles [in this city]",
+    "[-20]% maintenance costs [in this city]",
+    "[+2 Food] per [3] population [in this city]",
+    "[+35]% Production when constructing [Agricultural Building] buildings [in this city]",
+    "Provides [2] [Food Storage] <every [2] turns>",
+    "[+1 Happiness] [in this city]",
+    "[+15]% [Gold] from Trade Routes",
+    "[+2 Gold] from [Grapes] tiles [in this city]",
+    "Provides [1] [Wine] <with [Grapes]> <for [8] turns>", 
+    "[-1 Production] from [Mine] tiles [in this city]",
+    "[+25]% Production when constructing [Granary] buildings [in this city]",
+    "Comment [Ein Hauch von Würze und verwelktem Laub liegt in der kühlen Luft. Die Wälder leuchten in Feuertönen, und auf den Märkten türmen sich die Gaben der Ernte: goldener Weizen, rote Äpfel und pralle Kürbisse. In den Keltereien wird die Lese der Trauben zu kostbarem Wein, dessen Verkündung die Herzen erheitert. Es ist eine Zeit der Fülle und des Dankes, doch hinter jedem Lachen schwingt die Eile mit, die Vorräte für die kommende Kälte sicher in den Speichern zu bergen, ehe der erste Frost die Erde küsst.]"
+  ],
+  "requiredTech": "Agriculture",
+  "hurryCostModifier": 0,
+  "neverBuildable": true
+},
+{
+  "name": "SeasonWinter",
+  "cost": 0,
+  "maintenance": 0,
+  "uniques": [
+    "[-3 Food] from [all tiles] [in this city]",
+    "[-1 Production] from [all tiles] [in this city] <in tiles without [Forest]>",
+    "[+15]% maintenance costs [in this city]", //+40
+    "[-1 Happiness] [in this city]", //-3
+    "[-1 Gold] per [4] population [in this city]", //-2
+    "Consumes [2] [Food Storage] <every [1] turns>",
+    "[All] Units adjacent to this city heal [-15] HP per turn when healing",
+    "[-10]% [Gold] from Trade Routes", //-40
+    "[-2] Movement <for [All] units> <when starting turn in this city>",
+    "[-10]% growth [in this city]", //-25 
+    "[+3 Production] from [Forest] tiles [in this city]",
+    "[-1] population [in this city] <with [25]% chance>", //40%
+    "[+40]% construction time for [Military] units [in this city]", //+100%
+    "[-3 Production] from [Mine] tiles [in this city]",
+    "[-2 Food] from [Pasture] tiles [in this city]",
+    "[+40]% [Gold] cost of purchasing items in cities [in this city]", //+200 bei Schneesturm/Kälteperiode
+    "Comment [Ein eisiger Hauch umklammert die Welt in tödlicher Stille. Unerbittliche Stürme peitschen Schneemassen über das Land, begraben Wege und isolieren die Siedlungen. In den Häusern kauern die Menschen um erbärmliche Feuer, während draußen der Wolf heult. Jede Handvoll Getreide aus den Speichern ist ein verzweifelt erkämpfter Tag des Überlebens. Diejenigen, die nicht vorgesorgt haben, lernen den bitteren Geschmack des Hungers und die gnadenlose Kälte kennen, die sich in die Knochen frisst.]"
+  ],
+  "requiredTech": "Agriculture",
+  "hurryCostModifier": 0,
+  "neverBuildable": true
+},
 //Eventbezogen
 
 //<with [Amount]% chance>"

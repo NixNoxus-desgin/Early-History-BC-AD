@@ -74,45 +74,367 @@
 
                 "When defeating a [Land] unit, earn [10] Gold and recruit it <with [25]% chance> <for units with [Eranshahr]>"
 
-//Beispiele Codeing
+//Jahreszeiten
 
-        //"Triggers a [...] event <upon entering a new era> <after turn number [...]>",
-
-       // "[-5]% [...] <when above [...] [...]> <(modified by game speed)>",
-       //"[-20]% [...] [in all cities] <when above [...] [...]> <(modified by game speed)>",
-       //"[+5]% ... from [...] [in all cities] <when above [...] [...]> <(modified by game speed)>",    
-
-     //  "Instantly consumes [20] [Feat] <upon constructing [Classical Era Special Military Great Person Project]>",
-     //  "[+2]% Yield from every [{non-[Wonder]} {Faith}] <after adopting [Heal the World and Guide the Lost]>"
-     //  "[+5 Gold] <with [Infrastructure Investment]> <for [The Netherlands] Civilizations>",
-     //  "Earn [50]% of killed [Barbarian] unit's [Strength] as [Science] <on [Barbarian Breakout] game speed>",
-     //"Triggers a [Choose New Civilization Capability !] event <upon turn end> <when number of [turns] is equal to [6]> <when [Roguelike Mode] Victory is enabled>",
-     //"Gain a free [Seed-I] [in capital] <with [80]% chance> <upon turn end> <when number of [turns] is equal to [16]> <when number of [Seed] is less than [2]> <if [Seed-I] is not constructed>",
+    //"Comment [21 complete years of seasons - 30 turns each]",
     
-            // Bonuses
+    // ========== YEAR 1 (Turns 1-120) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [31]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [31]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [61]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [61]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [91]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [91]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [121]>",
     
-            ///"[+1 Gold] per every [200] [Gold] <after discovering [Banking]>",
-            ///"[+1 Gold] per every [200] [Gold] <after discovering [Economics]>",
-            "[+1 Gold] per every [200] [Gold] <starting from the [Renaissance era]>",
-            "[+1 Gold] per every [200] [Gold] <starting from the [Imperal era]>",
+    // ========== YEAR 2 (Turns 121-240) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [121]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [151]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [151]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [181]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [181]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [211]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [211]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [241]>",
     
-            // Golden Age Bonuses
-            "[+1 Gold] per every [200] [Gold] <during a Golden Age> <starting from the [Renaissance era]>",
-            "[+1 Gold] per every [200] [Gold] <during a Golden Age> <starting from the [Imperal era]>",
-            
-        // TODO: Implement the uniques below
-        // "[+20]% [Culture] [in all cities] <during a golden age>",
-        // "[+20]% [Production] [in all cities] <during a golden age>",
+    // ========== YEAR 3 (Turns 241-360) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [241]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [271]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [271]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [301]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [301]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [331]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [331]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [361]>",
+    
+    // ========== YEAR 4 (Turns 361-480) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [361]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [391]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [391]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [421]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [421]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [451]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [451]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [481]>",
+    
+    // ========== YEAR 5 (Turns 481-600) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [481]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [511]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [511]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [541]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [541]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [571]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [571]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [601]>",
+    
+    // ========== YEAR 6 (Turns 601-720) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [601]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [631]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [631]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [661]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [661]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [691]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [691]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [721]>",
+    
+    // ========== YEAR 7 (Turns 721-840) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [721]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [751]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [751]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [781]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [781]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [811]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [811]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [841]>",
+    
+    // ========== YEAR 8 (Turns 841-960) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [841]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [871]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [871]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [901]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [901]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [931]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [931]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [961]>",
+    
+    // ========== YEAR 9 (Turns 961-1080) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [961]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [991]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [991]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1021]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1021]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [1051]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [1051]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [1081]>",
+    
+    // ========== YEAR 10 (Turns 1081-1200) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1081]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [1111]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [1111]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1141]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1141]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [1171]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [1171]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [1201]>",
+    
+    // ========== YEAR 11 (Turns 1201-1320) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1201]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [1231]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [1231]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1261]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1261]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [1291]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [1291]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [1321]>",
+    
+    // ========== YEAR 12 (Turns 1321-1440) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1321]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [1351]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [1351]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1381]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1381]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [1411]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [1411]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [1441]>",
+    
+    // ========== YEAR 13 (Turns 1441-1560) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1441]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [1471]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [1471]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1501]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1501]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [1531]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [1531]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [1561]>",
+    
+    // ========== YEAR 14 (Turns 1561-1680) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1561]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [1591]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [1591]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1621]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1621]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [1651]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [1651]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [1681]>",
+    
+    // ========== YEAR 15 (Turns 1681-1800) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1681]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [1711]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [1711]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1741]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1741]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [1771]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [1771]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [1801]>",
+    
+    // ========== YEAR 16 (Turns 1801-1920) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1801]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [1831]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [1831]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1861]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1861]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [1891]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [1891]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [1921]>",
+    
+    // ========== YEAR 17 (Turns 1921-2040) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1921]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [1951]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [1951]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [1981]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [1981]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [2011]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [2011]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [2041]>",
+    
+    // ========== YEAR 18 (Turns 2041-2160) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [2041]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [2071]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [2071]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [2101]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [2101]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [2131]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [2131]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [2161]>",
+    
+    // ========== YEAR 19 (Turns 2161-2280) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [2161]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [2191]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [2191]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [2221]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [2221]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [2251]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [2251]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [2281]>",
+    
+    // ========== YEAR 20 (Turns 2281-2400) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [2281]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [2311]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [2311]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [2341]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [2341]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [2371]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [2371]>",
+    "Remove [SeasonWinter] [in all cities] <on turn number [2401]>",
+    
+    // ========== YEAR 21 (Turns 2401-2500) ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [2401]>",
+    "Remove [SeasonSpring] [in all cities] <on turn number [2431]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [2431]>",
+    "Remove [SeasonSummer] [in all cities] <on turn number [2461]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [2461]>",
+    "Remove [SeasonAutumn] [in all cities] <on turn number [2491]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [2491]>"
+    // Winter läuft bis Turn 2500+
 
-        // "[+10]% growth [in all cities] <during We Love The King Day>",
+    // ========== JAHR 1 BENACHRICHTIGUNGEN ==========
+    "Triggers the following global alert: [🌱 Jahr 1 - Frühling beginnt! Achte auf Überschwemmungen und Krankheiten] <on turn number [1]>",
+    "Triggers the following global alert: [Frühling endet in 5 Runden] <on turn number [26]>",
+    "Triggers the following global alert: [☀️ Jahr 1 - Sommer: Wachstumsphase aber Dürregefahr!] <on turn number [31]>",
+    "Triggers the following global alert: [Sommer endet in 5 Runden - bereite dich auf die Ernte vor] <on turn number [56]>",
+    "Triggers the following global alert: [🍂 Jahr 1 - HERBSTERNTE! Lagere JETZT Nahrung für den Winter!] <on turn number [61]>",
+    "Triggers the following global alert: [⚠️⚠️ HERBST ENDET IN 5 RUNDEN - LETZTE CHANCE FÜR NAHRUNGSVORRÄTE!] <on turn number [86]>",
+    "Triggers the following global alert: [❄️ Jahr 1 - Winter: Städte ohne Nahrungsvorräte werden verhungern!] <on turn number [91]>",
+    "Triggers the following global alert: [Winter endet in 5 Runden - Frühling naht] <on turn number [116]>",
+    
+    // ========== JAHR 2 BENACHRICHTIGUNGEN ==========
+    "Triggers the following global alert: [🌱 Jahr 2 - Frühling kehrt zurück] <on turn number [121]>",
+    "Triggers the following global alert: [☀️ Jahr 2 - Sommer] <on turn number [151]>",
+    "Triggers the following global alert: [🍂 Jahr 2 - Herbst Erntezeit!] <on turn number [181]>",
+    "Triggers the following global alert: [⚠️ Herbst endet in 5 Runden!] <on turn number [206]>",
+    "Triggers the following global alert: [❄️ Jahr 2 - Winter] <on turn number [211]>",
+    
+    // ========== JAHR 3 BENACHRICHTIGUNGEN ==========
+    "Triggers the following global alert: [🌱 Jahr 3 - Frühling] <on turn number [241]>",
+    "Triggers the following global alert: [🍂 Jahr 3 - Herbst: Kritische Ernteperiode] <on turn number [301]>",
+    "Triggers the following global alert: [⚠️ Lagere Nahrung für den Winter!] <on turn number [326]>",
+    
+    // ========== JAHR 5 MEILENSTEIN ==========
+    "Triggers the following global alert: [📅 MEILENSTEIN: Jahr 5 beginnt - 600 Runden überlebt!] <on turn number [481]>",
+    "Triggers the following global alert: [🍂 Jahr 5 - Herbsternte] <on turn number [541]>",
+    "Triggers the following global alert: [❄️ Jahr 5 - Winter] <on turn number [571]>",
+    
+    // ========== JAHR 10 MEILENSTEIN ==========
+    "Triggers the following global alert: [🎉 MEILENSTEIN: Jahr 10 - Ein Jahrzehnt der Jahreszeiten! (Runde 1200)] <on turn number [1081]>",
+    "Triggers the following global alert: [🍂 Jahr 10 - Herbst: Lagere extra Nahrung!] <on turn number [1141]>",
+    "Triggers the following global alert: [❄️ Jahr 10 - Winter: Der kälteste bisher] <on turn number [1171]>",
+    
+    // ========== JAHR 15 MEILENSTEIN ==========
+    "Triggers the following global alert: [🏆 MEILENSTEIN: Jahr 15 - 1800 Runden! Episches Überleben!] <on turn number [1681]>",
+    "Triggers the following global alert: [🍂 Jahr 15 - Herbst Erntezeit] <on turn number [1741]>",
+    
+    // ========== JAHR 20 MEILENSTEIN ==========
+    "Triggers the following global alert: [👑 LEGENDÄR: Jahr 20 beginnt! 2400 Runden!] <on turn number [2281]>",
+    "Triggers the following global alert: [🍂 Jahr 20 - Die große Herbsternte] <on turn number [2341]>",
+    "Triggers the following global alert: [❄️ Jahr 20 - Winter der Legenden] <on turn number [2371]>",
+    
+    // ========== JAHR 21 - LETZTES JAHR ==========
+    "Triggers the following global alert: [🌟 LETZTES JAHR: Jahr 21 - Die endlosen Jahreszeiten nähern sich ihrem Ende] <on turn number [2401]>",
+    "Triggers the following global alert: [☀️ Letzter Sommer - Runde 2431] <on turn number [2431]>",
+    "Triggers the following global alert: [🍂 Letzter Herbst - Letzte Ernte! Runde 2461] <on turn number [2461]>",
+    "Triggers the following global alert: [❄️ Der Ewige Winter beginnt - Runde 2491] <on turn number [2491]>",
+    "Triggers the following global alert: [🎊 RUNDE 2500 ERREICHT! Die Jahreszeiten drehen sich ewig...] <on turn number [2500]>",
+    
+    // ========== SPEZIELLE WARNUNGEN ALLE 5 JAHRE ==========
+    // Jahr 5
+    "Triggers the following global alert: [⚠️ Jahr 5 Herbst endet bald!] <on turn number [566]>",
+    // Jahr 10
+    "Triggers the following global alert: [⚠️ Jahr 10 Herbst endet bald!] <on turn number [1166]>",
+    // Jahr 15  
+    "Triggers the following global alert: [⚠️ Jahr 15 Herbst endet bald!] <on turn number [1766]>",
+    // Jahr 20
+    "Triggers the following global alert: [⚠️ Jahr 20 Herbst endet bald!] <on turn number [2366]>",
 
-        // "Nullifies All Yield <while is in resistance>",
+// ============================================
+// ALTERNATIVE: Komprimierte Benachrichtigungs-Version
+// Nur kritische Warnungen für Herbst/Winter
+// ============================================
 
-        // "[-25]% [Science] [in pupetted cities]" -- Imo cityFilters should ideally become conditionals anyway
-        // "[-25]% [Culture] [in pupetted cities]"
-
-        // "[+20]% [Production] [in cities connected via railroad]"
-        // something something unit supply
-    ]
+    // Wiederhole für jedes Jahr (kompakter)
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [61]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [86]>",
+    "Triggers the following global alert: [❄️ Winter: Brauche Nahrungsvorräte!] <on turn number [91]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [181]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [206]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [211]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [301]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [326]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [331]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [421]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [446]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [451]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [541]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [566]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [571]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [661]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [686]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [691]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [781]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [806]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [811]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [901]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [926]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [931]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1021]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [1046]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [1051]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1141]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [1166]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [1171]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1261]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [1286]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [1291]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1381]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [1406]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [1411]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1501]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [1526]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [1531]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1621]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [1646]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [1651]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1741]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [1766]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [1771]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1861]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [1886]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [1891]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [1981]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [2006]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [2011]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [2101]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [2126]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [2131]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [2221]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [2246]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [2251]>",
+    
+    "Triggers the following global alert: [🍂 Herbst: Lagere Nahrung!] <on turn number [2341]>",
+    "Triggers the following global alert: [⚠️ Winter in 5 Runden!] <on turn number [2366]>",
+    "Triggers the following global alert: [❄️ Winter!] <on turn number [2371]>",
+    
+    "Triggers the following global alert: [🍂 LETZTER Herbst!] <on turn number [2461]>",
+    "Triggers the following global alert: [⚠️ LETZTER Winter in 5 Runden!] <on turn number [2486]>",
+    "Triggers the following global alert: [❄️ EWIGER Winter beginnt!] <on turn number [2491]>"
+  ]
 }
 
