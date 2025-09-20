@@ -434,7 +434,27 @@
     
     "Triggers the following global alert: [🍂 LETZTER Herbst!] <on turn number [2461]>",
     "Triggers the following global alert: [⚠️ LETZTER Winter in 5 Runden!] <on turn number [2486]>",
-    "Triggers the following global alert: [❄️ EWIGER Winter beginnt!] <on turn number [2491]>"
+    "Triggers the following global alert: [❄️ EWIGER Winter beginnt!] <on turn number [2491]>",
+
+    //Event Eiszeit
+
+    "Comment [KLEINE EISZEIT - GLOBALES KATASTROPHEN-EVENT]",
+    
+    "Comment [Aktivierung der Kleinen Eiszeit]",
+    "Triggers a [Little Ice Age Start] event <after turn number [150]> <before turn number [1000]> <with [2]% chance> <every [1] turns>",
+    
+    "Comment [Alternative mit direkten Effekten (falls Events nicht funktionieren)]",
+    "[-30]% [Food] [in all cities] <for [All] Civilizations> <after turn number [150]> <before turn number [200]> <with [2]% chance>",
+    "[-30]% [Production] [in all cities] <for [All] Civilizations> <after turn number [150]> <before turn number [200]> <with [2]% chance>",
+    "[-5 Happiness] [in all cities] <for [All] Civilizations> <after turn number [150]> <before turn number [200]> <with [2]% chance>",
+    "[+100]% maintenance cost for [All] buildings [in all cities] <for [All] Civilizations> <after turn number [150]> <before turn number [200]> <with [2]% chance>",
+    
+    "Comment [Automatisches Ende nach 50 Runden]",
+    "Triggers the following global alert: [Die Kleine Eiszeit endet langsam. Die Welt erwärmt sich wieder!] <after turn number [200]>",
+    "[+20]% [Food] [in all cities] <for [All] Civilizations> <after turn number [200]> <before turn number [210]>",
+    "[+20]% [Production] [in all cities] <for [All] Civilizations> <after turn number [200]> <before turn number [210]>",
+    "[+10 Happiness] [in all cities] <for [All] Civilizations> <after turn number [200]> <before turn number [210]>"
+    //
   ]
 }
 

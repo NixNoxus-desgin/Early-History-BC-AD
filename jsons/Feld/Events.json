@@ -1605,7 +1605,7 @@
         {
           "text": "Kröne einen neuen Cäsar im Namen Gottes – Verbinde Thron und Altar auf ewig!",
           "uniques": [
-            "Comment [Wie einst Leo III. vor千年 an Karl den Großen, so reichen Wir nun einem würdigen Sohn der Kirche die Kaiserkrone. Diesmal soll sie unverlierbar sein, gebunden an den Segen des Nachfolgers Petri. Ein Schwert, geführt vom Geist, soll die Christenheit einen und gegen alle Feinde des Kreuzes schützen. Ein neues Sacrum Imperium Romanum soll erstehen!]",
+            "Comment [Wie einst Leo III. vor 1000 Jahren nach Cristus an Karl den Großen, so reichen Wir nun einem würdigen Sohn der Kirche die Kaiserkrone. Diesmal soll sie unverlierbar sein, gebunden an den Segen des Nachfolgers Petri. Ein Schwert, geführt vom Geist, soll die Christenheit einen und gegen alle Feinde des Kreuzes schützen. Ein neues Sacrum Imperium Romanum soll erstehen!]",
             "Only available <if [Empire of Electors] is constructed>",
             "Only available <if [Theocratic Empire] is constructed>",
             "Only available <when above [19] [Influence]>",
@@ -2176,7 +2176,7 @@
     "Only available <after turn number [90]>",
     "Only available <with [15]% chance>",
     "Only available <during the [Medieval era]>",
-    "Only available <in cities with a [Jahreszeit-Herbst]>",
+    "Only available <in cities with a [SeasonAutumn]>",
     "Only available <in [in all cities] cities> <in tiles without [Desert]>"
   ],
   "text": "Die alten Bauern murmeln besorgt. Die Zugvögel fliehen früher als sonst den Süden, ihre Schreie klingen wie Warnrufe. Die Wölfe heulen näher an den Stadtmauern als je zuvor, ihre Augen leuchten hungrig im Zwielicht. Der Nebel kriecht wie ein lebendiges Wesen über die abgeernteten Felder und hinterlässt eisigen Raureif. Die Alten sitzen zusammengekauert an den Herdfeuern, ihre von Arthritis geplagten Hände deuten auf den ungewöhnlich frühen Rauch, der senkrecht in den bleiernen Himmel steigt - ein sicheres Zeichen für nahende extreme Kälte, sagen sie. In ihren Augen spiegelt sich die Erinnerung an Winter, die ganze Generationen auslöschten.\n\nDie Bauern murmeln besorgt uralte Reime: 'Wenn der Nebel im Herbst nicht weicht, der Winter mit eisiger Faust erreicht.' Selbst die Tiere scheinen die drohende Gefahr zu spüren; das Vieh ist unruhig, und die Hunde knurren in die hereinbrechende Dunkelheit.\n\nDer schlimmste Winter seit Menschengedenken kündigt sich an - ein Winter, von dem nur in Legenden und in den ältesten Chroniken die Rede ist.",
@@ -2211,6 +2211,137 @@
         "Gain a free [Der Große Frost] [in capital]",
         "Triggers the following global alert: [In {cityName} werden die Warnungen der Alten als lächerliche Märchen abgetan. Die Herrscher befahlen, die Tore offen zu halten und wie gewohnt zu leben - ein riskantes Spiel mit den Naturgewalten.]",
         "Triggers the following global alert: [Der Große Frost ist über die bekannte Welt hereingebrochen! Alle Reiche kämpfen gegen die eisige Kälte.]"
+      ]
+    }
+  ]
+},
+{
+  "name": "Das Ende der kleinen Eiszeit",
+  "notification": "Ein gesegneter Wandel bahnt sich an! Die eisige Faust, die das Land so lange umklammert hielt, beginnt zu erweichen. Die unerbittliche Kälte, die Generationen in Furcht und Dunkelheit leben ließ, weicht einem sanften, lebensspendenden Hauch. Tauwasser rinnt in kleinen Rinnsalen über das steinerne Antlitz der Burgen, und an geschützten Südhängen zeigt sich zaghaft das erste Grün. Die Menschen wagen es, ihre verhüllten Gesichter der Sonne zuzuwenden – ein lange verloren geglaubtes Gefühl der Hoffnung kehrt zurück.",
+  "weight": 100,
+  "uniques": [
+    "Automatisches Ende der klimatischen Heimsuchung"
+  ],
+  "choices": [
+    {
+      "text": "Gott sei gepriesen! Die Erde atmet wieder und segnet uns mit ihrer Fruchtbarkeit!",
+      "uniques": [
+        "Die natürliche Ordnung der Welt stellt sich wieder her",
+        "Triggers the following global alert: Die Große Frostzeit ist besiegt! Die eisigen Fesseln sind gesprengt, und die Jahreszeiten kehren in ihre angestammte Ordnung zurück!",
+        
+        "Remove [Ewiger Winter] [in all cities] <for [All] Civilizations>",
+        "Gain a free [SeasonSpring] [in all cities] <for [All] Civilizations>",
+        
+        "[+20]% Growth [in all cities] <for [All] Civilizations> <for [20] turns>",
+        "[+10] [Happiness] [in all cities] <for [All] Civilizations> <for [10] turns>",
+        "[+25]% [Production] [in all cities] <for [All] Civilizations> <for [15] turns>",
+        "[+25]% [Food] [in all cities] <for [All] Civilizations> <for [15] turns>",
+        
+        "Die Länder erblühen im wiederkehrenden Segen der Sonne",
+        "Empire enters a [10]-turn Golden Age <for [All] Civilizations>",
+        
+        "Triggers the following global alert: Ein goldendes Zeitalter des Überflusses bricht an! Die Höfe und Dörfer erstrahlen in jubelndem Feierglanz über das Ende der langen Dunkelheit!"
+      ]
+    }
+  ]
+},
+{
+  "name": "Die kleine Eiszeit bricht herein",
+  "text": "Die Sonne erlischt hinter einem undurchdringlichen Schleier aus Asche und eisigen Wolken. Ein unnatürlicher Frost, der bis ins Mark kriecht, legt sich über das Land...\n\nEure Berater stürzen atemlos in den Thronsaal: 'Majestät! Selbst die mächtigsten Ströme des Reiches sind zu steinernen Bahnen erstarrt! Bauern berichten von schwarzem Schnee im Hochsommer, die Ernten verdorren unter gläsernen Schichten. Die Alten murmeln von den Prophezeiungen - dies ist der Fimbulwinter, der dreijährige Winter, der das Ende der Welt einläutet!'\n\nAus allen Marken des Reiches erreichen Euch verzweifelte Kunde: Hungersnöte, die Kinder erfrieren in ihren Betten, Wölfe heulen in den eisumglasten Dörfern. Die Priester schreien vom Zorn von Gott, das Volk flüstert von dunkler Hexerei und verdorbenen Seelen.\n\nDies ist kein Winter, wie ihn die Chroniken kennen - dies ist der Anfang einer NEUEN EISZEIT.",
+  "weight": 5,
+  "uniques": [
+    "Only available <after turn number [150]>",
+    "Only available <before turn number [1000]>",
+    "Only available <with [2]% chance>"
+  ],
+  "comment": "Eine seltene, globale Katastrophe von epochalem Ausmaß - Die kleine Eiszeit betrifft alle Reiche der bekannten Welt und stellt ihre Existenz auf die Probe",
+  "choices": [
+    {
+      "text": "Bei Gott... Das Reich muss überleben! Öffnet die königlichen Kornspeicher für das Volk!",
+      "comment": "Die Krone handelt - Mäßige Verluste durch kluge Vorratshaltung, dafür Stabilität und Loyalität",
+      "uniques": [
+        "Triggers the following global alert: [Die kleine Eiszeit hat die Welt erfasst! Ein ewiger Winter legt sich über alle Länder. Jedes Volk kämpft um sein nacktes Überleben!]",
+        "Remove [SeasonSpring] [in all cities] <for [All] Civilizations>",
+        "Remove [SeasonSummer] [in all cities] <for [All] Civilizations>",
+        "Remove [SeasonAutumn] [in all cities] <for [All] Civilizations>",
+        "Gain a free [Ewiger Winter] [in all cities] <for [All] Civilizations>",
+        "[-30]% [Food] [in all cities] <for [All] Civilizations> <for [50] turns>",
+        "[-2] population [in all cities] <for [All] Civilizations>",
+        "[-40]% growth [in all cities] <for [All] Civilizations> <for [50] turns>",
+        "[+50]% maintenance cost for [All] buildings [in all cities] <for [All] Civilizations> <for [50] turns>",
+        "Gain [-300] [Gold] <for [All] Civilizations>",
+        "[+2 Happiness] [in all cities] <for [All] Civilizations> <for [10] turns>",
+        {
+          "comment": "Das Ende der Eiszeit nach 50 Runden bringt Erleichterung, aber auch eine verwüstete und veränderte Welt"
+        },
+        "Triggers a [Das Ende der kleinen Eiszeit] event <after [50] turns>",
+        "Triggers the following global alert: [Die königlichen Speicher gaben den Menschen Hoffnung. Das Volk preist die Weisheit seiner Herrscher... doch die Vorräte sind erschöpft und die Zukunft ungewiss.]"
+      ]
+    },
+    {
+      "text": "Jeder ist sich selbst der Nächste. Nur die Stärksten und Gerissensten haben ein Recht auf Leben.",
+      "comment": "GLOBALE EFFEKTE - Ein gnadenloser Überlebenskampf zerbietet die Bande der Gesellschaft",
+      "uniques": [
+        "Triggers the following global alert: [Die kleine Eiszeit entfesselt das Chaos! Verrat, Kannibalismus und Verzweiflung greifen in allen Reichen um sich!]",
+        "Remove [SeasonSpring] [in all cities] <for [All] Civilizations>",
+        "Remove [SeasonSummer] [in all cities] <for [All] Civilizations>",
+        "Remove [SeasonAutumn] [in all cities] <for [All] Civilizations>",
+        "Gain a free [Ewiger Winter] [in all cities] <for [All] Civilizations>",
+        "[-50]% [Food] [in all cities] <for [All] Civilizations> <for [60] turns>",
+        "[-4] population [in all cities] <for [All] Civilizations>",
+        "[-8 Happiness] [in all cities] <for [All] Civilizations> <for [30] turns>",
+        "[+2] Rebel units may spawn <for [All] Civilizations> <for [40] turns>",
+        "[-60]% growth [in all cities] <for [All] Civilizations> <for [60] turns>",
+        "[+30]% Strength for cities <for [All] Civilizations> <for [30] turns>",
+        "[+100]% maintenance cost for [All] buildings [in all cities] <for [All] Civilizations> <for [60] turns>",
+        "Triggers a [Das Ende der kleinen Eiszeit] event <after [60] turns>",
+        "Triggers the following global alert: [Die Welt ist ein einziger Albtraum. Aufstände und Meutereien brechen aus, Hungersnöte entvölkern ganze Landstriche. Die Zivilisation, wie wir sie kannten, ist am Ende.]"
+      ]
+    },
+    {
+      "text": "Dies ist Gottes Zorn über unsere Sünden! Wir müssen fasten, beten und die Heiligen um Fürsprache anflehen!",
+      "comment":  "GLOBALE EFFEKTE - Die Christenheit reagiert auf die göttliche Heimsuchung mit Bußprozessionen, Reliquienverehrung und mystischer Inbrunst",
+      "uniques": [
+        "Triggers the following global alert: [Der Ewige Winter ist Gottes Strafgericht! Von Rom bis Konstantinopel fallen Könige und Bettler gleichermaßen auf die Knie. Bußprozessionen ziehen durch die vereisten Städte, und die Glocken läuten ohne Unterlass.]",
+        "Remove [SeasonSpring] [in all cities] <for [All] Civilizations>",
+        "Remove [SeasonSummer] [in all cities] <for [All] Civilizations>",
+        "Remove [SeasonAutumn] [in all cities] <for [All] Civilizations>",
+        "Gain a free [Ewiger Winter] [in all cities] <for [All] Civilizations>",
+        "[-35]% [Food] [in all cities] <for [All] Civilizations> <for [45] turns>",
+        "[-3] population [in all cities] <for [All] Civilizations>",
+        "Gain [-200] [Gold] <for [All] Civilizations>",
+        "[+20] [Faith] [in all cities] <for [All] Civilizations> <for [45] turns>",
+        "[+3 Happiness] from every [Chapel] <for [All] Civilizations> <for [45] turns>",
+        "[+3 Happiness] from every [Cathedral] <for [All] Civilizations> <for [45] turns>",
+        "[+3 Happiness] from every [Mosque] <for [All] Civilizations> <for [45] turns>",
+        "[+3 Happiness] from every [Synagogue] <for [All] Civilizations> <for [45] turns>",
+        "[-45]% growth [in all cities] <for [All] Civilizations> <for [45] turns>",
+        "[+75]% maintenance cost for [All] buildings [in all cities] <for [All] Civilizations> <for [45] turns>",
+        "May choose [1] additional belief(s) of any type when [enhancing] a religion <for [All] Civilizations>",
+        "Triggers a [Das Ende der kleinen Eiszeit] event <after [45] turns>",
+        "Triggers the following global alert: [Die Kirchen und Kathedralen sind überfüllt mit Gläubigen. Neue Mystiker und Bußprediger gewinnen an Einfluss, während die Menschen nach Zeichen der göttlichen Gnade suchen. Der Frost mag das Land gefangen halten, aber die Glut des Glaubens brennt heller denn je.]"
+      ]
+    },
+    {
+      "text": "Wir können hier nicht bleiben! Wir müssen in den Süden ziehen, koste es, was es wolle!",
+      "comment": "GLOBALE EFFEKTE - Eine Völkerwanderung apokalyptischen Ausmaßes bricht über die Welt herein",
+      "uniques": [
+        "Triggers the following global alert: [Der Große Frost treibt ganze Völker aus ihrer angestammten Heimat! Eine gewaltige, unaufhaltsame Völkerwanderung beginnt und überrennt alle Grenzen!]",
+        "Remove [SeasonSpring] [in all cities] <for [All] Civilizations>",
+        "Remove [SeasonSummer] [in all cities] <for [All] Civilizations>",
+        "Remove [SeasonAutumn] [in all cities] <for [All] Civilizations>",
+        "Gain a free [Ewiger Winter] [in all cities] <for [All] Civilizations>",
+        "[-60]% [Food] [in all cities] <for [All] Civilizations> <for [40] turns>",
+        "[-5] population [in all cities] <for [All] Civilizations>",
+        "[2] free [Settler] units appear <for [All] Civilizations>",
+        "[3] free [Warrior] units appear <for [All] Civilizations>", //
+        "[-70]% growth [in all cities] <for [All] Civilizations> <for [40] turns>",
+        "[+2] Movement <for [Settler] units> <for [All] Civilizations> <for [25] turns>",
+        "May enter foreign tiles without open borders <for [All] Civilizations> <for [25] turns>",
+        "[-40]% City Strength from defensive buildings <for [All] Civilizations> <for [40] turns>",
+        "[+150]% maintenance cost for [All] buildings [in all cities] <for [All] Civilizations> <for [40] turns>",
+        "Triggers a [Das Ende der kleinen Eiszeit] event <after [40] turns>",
+        "Triggers the following global alert: [Die Landkarte der Welt wird neu gezeichnet. Alte Reiche brechen unter der Last der Flüchtlingsströme zusammen, neue entstehen im blutgetränkten Schnee des Südens. Nichts wird mehr sein, wie es war.]"
       ]
     }
   ]

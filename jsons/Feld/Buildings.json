@@ -274,7 +274,38 @@
       "text": "Es sei kundgetan allen Bewohnern der Reiche, dass uns der Allmächtige in diesem Jahre mit einer Prüfung von unvorstellbarer Härte heimgesucht hat. Nicht ein Winter, nein, eine eiserne Faust aus reinem Frost hat sich über die Lande gelegt und hält sie in ihrem unerbittlichen Griff. Schon zur Zeit der Ernte, als wir dem Herrn für seine Gaben hätten danken sollen, kam statt der Sonne ein eisiger Hauch aus Norden. Die Ähren, noch halb grün, erfroren an ihrem Stengel und verdorrten zu nichts als Staub. Die Vorratskammern, die sich in gütigen Jahren zum Bersten füllen, bleiben jämmerlich leer. In den Dörfern und selbst in den befestigten Städten erhebt sich nun ein Geräusch, das schrecklicher ist als das Heulen des Windes: das Stöhnen der Hungrigen. Die Flüsse sind zu steinernen Straßen erstarrt, die Wege unpassierbar. Die Wälder, sonst eine Quelle des Holzes und der Jagd, schweigen unter einer dichten, toten Decke. Das Wild ist verendet oder hat sich in unzugängliche Täler geflüchtet. Selbst die Wölfe heulen näher an den Hütten der Menschen als je zuvor, von derselben Not getrieben. Wir fragen uns in unseren Gebeten und in unserer Verzweiflung: Ist dies ein Zorn Gottes für unsere Sünden? Eine Reinigung, der nur die Stärksten im Glauben und im Leibe standhalten können? Viele Schwache, die Alten und die Kindlein, hat der Frost schon zu sich geholt. Ihr Atum gefror in ihren Kehlen, und sie entschliefen in einer Kälte, von der es kein Erwachen mehr gibt. Nur diejenigen, deren Glaube ein festes Bollwerk ist und deren Arm noch die Kraft hat, zu schlagen oder zu arbeiten, vermögen dieser Finsternis zu trotzen. Doch selbst die Stärksten werden von der Kälte im Innersten geprüft. Was nützt ein Schwert, wenn es an der Hand des Ritters festfriert? Was nützt die List des Jägers, wenn keine Spur im ewigen Eis zu lesen ist? Möge Gott, der barmherzige Vater, unser Flehen erhören und das Land wieder von dieser eisigen Geißel erlösen. Bis dahin aber müssen wir ausharren, zusammengerückt in den dunklen Kemenaten, und uns daran erinnern, dass auch diese Prüfung ein Teil Seines unergründlichen Plans ist. Gezeichnet im Auftrag des Kronrats, Verfasst durch die Hand des Bruder Thomas, Scriptor des Klosters zu Maulbronn"
     }
   ]
-}
+},
+//Eiszeit
+
+{
+  "name": "Ewiger Winter",
+  "isNationalWonder": false,
+  "cost": 1,
+  "maintenance": 5,
+  "uniques": [
+    "Unbuildable",
+    "Cannot be purchased",
+    "Unsellable",
+    "Never destroyed when the city is captured",
+    "[-50]% [Food] [in this city]",
+    "[-50]% [Production] [in this city]",
+    "[-5 Happiness] [in this city]",
+    "[-2 Science] [in this city]",
+    "[-2 Culture] [in this city]",
+    "Units in this city heal [-10] HP per turn when healing",
+    "[+50]% maintenance cost for [All] buildings [in this city]",
+    "[+100]% Culture cost of natural border growth [in this city]",
+    "Comment [Temporäres Gebäude während der Kleinen Eiszeit]",
+    "Comment [Symbolisiert die verheerenden Auswirkungen der extremen Kälte]",
+    "Will not be displayed in Civilopedia"
+  ],
+  "quote": "'Der Winter ist nicht nur eine Jahreszeit - er ist eine Prüfung des Willens zum Überleben.' - Unbekannter Chronist der Kleinen Eiszeit",
+  "civilopediaText": [
+    {
+      "text": "Ein temporärer Zustand, der während der Kleinen Eiszeit auftritt. Repräsentiert die verheerenden Auswirkungen der extremen globalen Abkühlung auf alle Zivilisationen."
+    }
+  ]
+},
 
 //Jahreszeiten
 
