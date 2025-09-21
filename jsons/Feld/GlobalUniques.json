@@ -72,71 +72,124 @@
 		"Triggers a [Asteroid] event <for [Major] Civilizations> <upon turn end> <with [1]% chance> <after discovering [Nuclear Fusion]>",
                 "Triggers a [Obstacle] event <for [Major] Civilizations> <upon turn end> <with [1]% chance> <starting from the [Renaissance era]>",
 
-                "When defeating a [Land] unit, earn [10] Gold and recruit it <with [25]% chance> <for units with [Eranshahr]>"
+                "When defeating a [Land] unit, earn [10] Gold and recruit it <with [25]% chance> <for units with [Eranshahr]>",
 
 //Jahreszeiten
 
     //"Comment [21 complete years of seasons - 30 turns each]",
     
+    "Comment [==========================================]",
+    "Comment [JAHRESZEITEN-SYSTEM MIT EISZEIT-SCHUTZ]",
+    "Comment [Version 3.0 für Early History BC-AD]",
+    "Comment [==========================================]",
+    
+    "Comment [Der Trick: Jahreszeiten werden NUR hinzugefügt wenn KEIN 'Ewiger Winter' vorhanden ist]",
+    "Comment [Dies verhindert, dass während der Eiszeit normale Jahreszeiten durchbrechen]",
+    
     // ========== YEAR 1 (Turns 1-120) ==========
-    "Gain a free [SeasonSpring] [in all cities] <on turn number [1]>",
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [1]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSpring] [in all cities] <on turn number [31]>",
-    "Gain a free [SeasonSummer] [in all cities] <on turn number [31]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [31]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSummer] [in all cities] <on turn number [61]>",
-    "Gain a free [SeasonAutumn] [in all cities] <on turn number [61]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [61]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonAutumn] [in all cities] <on turn number [91]>",
-    "Gain a free [SeasonWinter] [in all cities] <on turn number [91]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [91]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonWinter] [in all cities] <on turn number [121]>",
     
     // ========== YEAR 2 (Turns 121-240) ==========
-    "Gain a free [SeasonSpring] [in all cities] <on turn number [121]>",
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [121]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSpring] [in all cities] <on turn number [151]>",
-    "Gain a free [SeasonSummer] [in all cities] <on turn number [151]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [151]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSummer] [in all cities] <on turn number [181]>",
-    "Gain a free [SeasonAutumn] [in all cities] <on turn number [181]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [181]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonAutumn] [in all cities] <on turn number [211]>",
-    "Gain a free [SeasonWinter] [in all cities] <on turn number [211]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [211]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonWinter] [in all cities] <on turn number [241]>",
     
-    // ========== YEAR 3 (Turns 241-360) ==========
-    "Gain a free [SeasonSpring] [in all cities] <on turn number [241]>",
+    // ========== YEAR 3 (Turns 241-360) - EISZEIT KANN AB TURN 250 BEGINNEN ==========
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [241]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSpring] [in all cities] <on turn number [271]>",
-    "Gain a free [SeasonSummer] [in all cities] <on turn number [271]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [271]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSummer] [in all cities] <on turn number [301]>",
-    "Gain a free [SeasonAutumn] [in all cities] <on turn number [301]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [301]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonAutumn] [in all cities] <on turn number [331]>",
-    "Gain a free [SeasonWinter] [in all cities] <on turn number [331]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [331]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonWinter] [in all cities] <on turn number [361]>",
     
     // ========== YEAR 4 (Turns 361-480) ==========
-    "Gain a free [SeasonSpring] [in all cities] <on turn number [361]>",
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [361]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSpring] [in all cities] <on turn number [391]>",
-    "Gain a free [SeasonSummer] [in all cities] <on turn number [391]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [391]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSummer] [in all cities] <on turn number [421]>",
-    "Gain a free [SeasonAutumn] [in all cities] <on turn number [421]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [421]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonAutumn] [in all cities] <on turn number [451]>",
-    "Gain a free [SeasonWinter] [in all cities] <on turn number [451]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [451]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonWinter] [in all cities] <on turn number [481]>",
     
     // ========== YEAR 5 (Turns 481-600) ==========
-    "Gain a free [SeasonSpring] [in all cities] <on turn number [481]>",
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [481]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSpring] [in all cities] <on turn number [511]>",
-    "Gain a free [SeasonSummer] [in all cities] <on turn number [511]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [511]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSummer] [in all cities] <on turn number [541]>",
-    "Gain a free [SeasonAutumn] [in all cities] <on turn number [541]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [541]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonAutumn] [in all cities] <on turn number [571]>",
-    "Gain a free [SeasonWinter] [in all cities] <on turn number [571]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [571]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonWinter] [in all cities] <on turn number [601]>",
     
     // ========== YEAR 6 (Turns 601-720) ==========
-    "Gain a free [SeasonSpring] [in all cities] <on turn number [601]>",
+    "Gain a free [SeasonSpring] [in all cities] <on turn number [601]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSpring] [in all cities] <on turn number [631]>",
-    "Gain a free [SeasonSummer] [in all cities] <on turn number [631]>",
+    "Gain a free [SeasonSummer] [in all cities] <on turn number [631]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonSummer] [in all cities] <on turn number [661]>",
-    "Gain a free [SeasonAutumn] [in all cities] <on turn number [661]>",
+    "Gain a free [SeasonAutumn] [in all cities] <on turn number [661]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonAutumn] [in all cities] <on turn number [691]>",
-    "Gain a free [SeasonWinter] [in all cities] <on turn number [691]>",
+    "Gain a free [SeasonWinter] [in all cities] <on turn number [691]> <in cities without a [Ewiger Winter]>",
     "Remove [SeasonWinter] [in all cities] <on turn number [721]>",
+    
+    // ========== FORTSETZUNG FÜR ALLE 21 JAHRE... ==========
+    "Comment [Jahre 7-21 folgen demselben Muster mit <in cities without a [Ewiger Winter]>]",
+    
+    // ==========================================
+    // KLEINE EISZEIT - TRIGGER MECHANISMUS
+    // ==========================================
+    
+    "Comment [EISZEIT KANN ZWISCHEN RUNDE 250-500 AUSGELÖST WERDEN]",
+    "Triggers a [The Little Ice Age Begins] event <after turn number [250]> <before turn number [500]> <with [1]% chance> <every [1] turns> <in cities without a [Ewiger Winter]>",
+    
+    "Comment [Erhöhte Wahrscheinlichkeit nach Runde 350]",
+    "Triggers a [The Little Ice Age Begins] event <after turn number [350]> <before turn number [500]> <with [2]% chance> <every [1] turns> <in cities without a [Ewiger Winter]>",
+    
+    "Comment [Garantierte Eiszeit bei Runde 450 falls noch nicht eingetreten]",
+    "Triggers a [The Little Ice Age Begins] event <on turn number [450]> <in cities without a [Ewiger Winter]>",
+    
+    // ==========================================
+    // EISZEIT RECOVERY SYSTEM
+    // ==========================================
+    
+    "Comment [Nach Ende der Eiszeit: Automatischer Neustart der Jahreszeiten]",
+    "Comment [Das System erkennt wenn 'Ewiger Winter' entfernt wurde und startet den normalen Zyklus]",
+    
+    "Comment [Spezial-Recovery: Wenn Eiszeit endet, startet immer mit Frühling]",
+    "Gain a free [SeasonSpring] [in all cities] <every [1] turns> <in cities without a [Ewiger Winter]> <in cities without a [SeasonSpring]> <in cities without a [SeasonSummer]> <in cities without a [SeasonAutumn]> <in cities without a [SeasonWinter]>",
+    
+    // ==========================================
+    // DEBUG UND NOTFALL-MECHANISMEN
+    // ==========================================
+    
+    "Comment [DEBUG: Manuelle Eiszeit-Ende Garantie nach 100 Runden]",
+    "Remove [Ewiger Winter] [in all cities] <after turn number [550]> <with [Ewiger Winter]>",
+    "Triggers the following global alert: [NOTFALL: Die Eiszeit wurde nach 100 Runden automatisch beendet!] <on turn number [550]> <with [Ewiger Winter]>",
+    
+    // ==========================================
+    // HISTORISCHE KLIMA-EVENTS (OPTIONAL)
+    // ==========================================
+    
+    "Comment [Römische Warmzeit - Bonus für frühe Ären]",
+    "[+10]% [Food] [in all cities] <for [All] Civilizations> <after turn number [1]> <before turn number [120]> <with [SeasonSummer]>",
+    
+    "Comment [Mittelalterliche Warmzeit vor der Eiszeit]",
+    "[+15]% [Food] [in all cities] <for [All] Civilizations> <after turn number [200]> <before turn number [250]> <with [SeasonSummer]>",
+    "Triggers the following global alert: [Die Mittelalterliche Warmzeit bringt Wohlstand - aber Astronomen warnen vor kommenden Veränderungen...] <on turn number [200]>",
     
     // ========== YEAR 7 (Turns 721-840) ==========
     "Gain a free [SeasonSpring] [in all cities] <on turn number [721]>",
@@ -442,7 +495,7 @@
     
     "Comment [Aktivierung der Kleinen Eiszeit]",
     "Triggers a [Little Ice Age Start] event <after turn number [150]> <before turn number [1000]> <with [2]% chance> <every [1] turns>",
-    
+    //
     "Comment [Alternative mit direkten Effekten (falls Events nicht funktionieren)]",
     "[-30]% [Food] [in all cities] <for [All] Civilizations> <after turn number [150]> <before turn number [200]> <with [2]% chance>",
     "[-30]% [Production] [in all cities] <for [All] Civilizations> <after turn number [150]> <before turn number [200]> <with [2]% chance>",

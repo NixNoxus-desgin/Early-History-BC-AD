@@ -2250,9 +2250,11 @@
   "text": "Die Sonne erlischt hinter einem undurchdringlichen Schleier aus Asche und eisigen Wolken. Ein unnatürlicher Frost, der bis ins Mark kriecht, legt sich über das Land...\n\nEure Berater stürzen atemlos in den Thronsaal: 'Majestät! Selbst die mächtigsten Ströme des Reiches sind zu steinernen Bahnen erstarrt! Bauern berichten von schwarzem Schnee im Hochsommer, die Ernten verdorren unter gläsernen Schichten. Die Alten murmeln von den Prophezeiungen - dies ist der Fimbulwinter, der dreijährige Winter, der das Ende der Welt einläutet!'\n\nAus allen Marken des Reiches erreichen Euch verzweifelte Kunde: Hungersnöte, die Kinder erfrieren in ihren Betten, Wölfe heulen in den eisumglasten Dörfern. Die Priester schreien vom Zorn von Gott, das Volk flüstert von dunkler Hexerei und verdorbenen Seelen.\n\nDies ist kein Winter, wie ihn die Chroniken kennen - dies ist der Anfang einer NEUEN EISZEIT.",
   "weight": 5,
   "uniques": [
-    "Only available <after turn number [150]>",
-    "Only available <before turn number [1000]>",
-    "Only available <with [2]% chance>"
+    "Only available <after turn number [250]>",
+    "Only available <before turn number [500]>",
+    "Only available <with [1]% chance>",
+    "Only available <in cities without a [Ewiger Winter]>",
+    "Comment [Verhindert mehrfache Eiszeiten - prüft ob bereits Ewiger Winter existiert]"
   ],
   "comment": "Eine seltene, globale Katastrophe von epochalem Ausmaß - Die kleine Eiszeit betrifft alle Reiche der bekannten Welt und stellt ihre Existenz auf die Probe",
   "choices": [
