@@ -6,9 +6,160 @@
 //Gain control over [tileFilter] tiles in a [nonNegativeAmount]-tile radius
 //denounced Zitate
 
+//Hexenhammer
+
+  {
+    "name": "Inquisition Court",
+    "cost": 1,
+    "maintenance": 5,
+    "faith": 3,
+    "happiness": -2,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "[-20]% [Science] [in this city]",
+      "[-15]% [Culture] [in this city]",
+      "[+50]% [Faith] [in this city]",
+      "[+20]% Strength for cities",
+      "Enemy [All] units must spend [1] extra movement points when inside your territory",
+      "Comment [Repräsentiert die aktive Hexenverfolgung]",
+      "Comment [Historisch: Inquisitionsgerichte 1478-1834]",
+      "Will not be displayed in Civilopedia"
+    ],
+    "quote": "'Häretiker verdienen nicht nur den Tod, sondern sie verdienen es, getötet zu werden.' - Thomas von Aquin"
+  },
+
+  {
+    "name": "Religious Dissent",
+    "cost": 1,
+    "maintenance": 0,
+    "faith": -2,
+    "happiness": -1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "[-25]% [Faith] [in this city]",
+      "[+15]% [Science] [in this city]",
+      "[+10]% [Culture] [in this city]",
+      "[+1] Rebel units may spawn",
+      "Comment [Religiöse Spaltung nach Ablehnung der Kirche]",
+      "Will not be displayed in Civilopedia"
+    ],
+    "quote": "'Hier stehe ich, ich kann nicht anders.' - Martin Luther"
+  },
+  
+  {
+    "name": "Royal Tribunal",
+    "cost": 1,
+    "maintenance": 3,
+    "culture": 2,
+    "happiness": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "[+1 Culture] from [Courthouse] buildings [in this city]",
+      "[+1 Science] from [Courthouse] buildings [in this city]",
+      "[-10]% unhappiness from the number of cities",
+      "[-15]% [Gold] [in this city]",
+      "Comment [Königliches Sondergericht für faire Prozesse]",
+      "Will not be displayed in Civilopedia"
+    ],
+    "quote": "'Justitia est constans et perpetua voluntas ius suum cuique tribuendi.' - Justinian"
+  },
+  
+  {
+    "name": "Dark Secret",
+    "cost": 1,
+    "maintenance": 0,
+    "happiness": -1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Never destroyed when the city is captured",
+      "[-10] Diplomatic reputation with [All] Civilizations",
+      "[+10]% [Gold] [in this city]",
+      "[+25]% spy effectiveness [in this city]",
+      "[-10]% [Culture] [in this city]",
+      "Comment [Erpressbare Geheimnisse - Korruption und Schuld]",
+      "Comment [Kann durch Events entfernt werden]",
+      "Will not be displayed in Civilopedia"
+    ],
+    "quote": "'Drei können ein Geheimnis bewahren, wenn zwei von ihnen tot sind.' - Benjamin Franklin"
+  },
+  
+  {
+    "name": "Witch Hunt",
+    "cost": 1,
+    "maintenance": 0,
+    "isNationalWonder": true,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Hidden from users",
+      "[-1] population in a random city <every [5] turns>",
+      "[-25]% Great Person generation [in all cities]",
+      "Comment [Versteckter Marker für aktive Hexenjagd]",
+      "Will not be displayed in Civilopedia"
+    ]
+  },
+  
+  {
+    "name": "Suspicion",
+    "cost": 1,
+    "maintenance": 0,
+    "isNationalWonder": true,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Hidden from users",
+      "[+1] Rebel units may spawn <with [10]% chance> <every [10] turns>",
+      "Comment [Versteckter Marker für Misstrauen im Volk]",
+      "Will not be displayed in Civilopedia"
+    ]
+  },
+  
+  {
+    "name": "Judicial Review",
+    "cost": 1,
+    "maintenance": 2,
+    "culture": 1,
+    "science": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "[+1 Culture] [in this city]",
+      "[+1 Science] [in this city]",
+      "[-10]% [Production] [in this city]",
+      "Comment [Langsame aber faire Rechtsprechung]",
+      "Will not be displayed in Civilopedia"
+    ]
+  },
+  
+  {
+    "name": "Blackmail",
+    "cost": 1,
+    "maintenance": 0,
+    "isNationalWonder": true,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Hidden from users",
+      "[-5]% [Gold] [in all cities]",
+      "Triggers a [Blackmail Demands] event <every [30] turns> <with [25]% chance>",
+      "Comment [Versteckter Marker für Erpressbarkeit]",
+      "Will not be displayed in Civilopedia"
+    ]
+  },
 //Papst-Event
 
-    // Buildings from "Die Päpstliche Vorladung" event
     {
         "name": "Päpstlicher Segen",
         "cost": 0,

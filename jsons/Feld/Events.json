@@ -2215,6 +2215,368 @@
     }
   ]
 },
+//
+{
+  "name": "Der Hexenhammer",
+  "notification": "Ein strenger Winter lastet auf dem Land, und mit ihm kommt die Angst. In den Dörfern flüstert man von unerklärlichen Krankheiten, verdorbenen Brunnen und Kindern, die im Schlaf verstummen. Ein fanatischer Inquisitor, gekleidet in das Gewand des Dominikanerordens, ist an Euren Hof gekommen. Er trägt ein Manuskript bei sich, den 'Malleus Maleficarum', und verlangt im Namen des Papstes und der Heiligen Inquisition volle Autorität, um die vermeintliche Hexenverschwörung in Eurem Reich auszurotten. Seine Augen brennen mit einem unheiligen Eifer, und sein Versprechen, Ordnung und göttlichen Willen wiederherzustellen, ist verlockend. Doch der Preis für diese 'Säuberung' könnte die Seele Eures Volkes und den Wohlstand Eures Landes sein. Wie reagiert Ihr auf diese düstere Forderung?",
+  "weight": 10,
+  "uniques": [
+    "Only available <after turn number [240]>",
+    "Only available <before turn number [480]>",
+    "Only available <after adopting [Theology]>",
+    "Only available <with [15]% chance>",
+    "Comment [Historisches Event: Hexenverfolgung 1487-1750 n.Chr.]"
+  ],
+  "choices": [
+    {
+      "text": "Gewährt dem Inquisitor volle Macht. Die Ketzer müssen brennen!",
+      "triggeredUniques": [
+        "Comment [OPTION 1: FANATISCHE VERFOLGUNG]",
+        "Only available <if [Cathedral] is constructed>",
+        "Only available <when above [100] [Faith]>",
+        
+        "Comment [Sofortige Effekte - Religiöser Eifer]",
+        "Instantly consumes [150] [Faith]",
+        "Gain a free [Inquisition Court] [in capital]",
+        "[+5 Happiness] [in all cities] <for [5] turns>",
+        "[+100]% [Faith] [in all cities] <for [10] turns>",
+
+        "Comment [Inquisitor-Einheiten mit speziellen Promotions]",
+        "[3] free [Inquisitor] units appear",
+        "All newly-trained [Missionary] units [in all cities] receive the [Witch Hunter] promotion <for [30] turns>",
+        "All newly-trained [Knight] units [in all cities] receive the [Religious Zeal] promotion <for [20] turns>",
+        "[Missionary] units gain the [Fanaticism] promotion",
+        "[Knight] units gain the [Crusader] promotion",
+
+        "Comment [Militärische Vorteile gegen 'Ketzer']",
+        "[+25]% Strength <vs [Barbarian] units> <for [30] turns>",
+        "[+15]% Strength for cities <for [20] turns>",
+        "Enemy [All] units must spend [1] extra movement points when inside your territory <for [20] turns>",
+        
+        "Comment [Brutale Säuberungen - versteckte Verluste]",
+        "[-3] population [in all cities]",
+        "[-1] population in a random city <every [2] turns> <for [10] turns>",
+        "[+2] Rebel units may spawn <for [15] turns>",
+        
+        "Comment [Wissenschaftlicher und kultureller Niedergang]",
+        "[-30]% [Science] [in all cities] <for [30] turns>",
+        "[-20]% [Culture] [in all cities] <for [20] turns>",
+        "[-50]% Great Person generation [in all cities] <for [20] turns>",
+        
+        "Comment [Internationale Reaktionen]",
+        "[-20] Diplomatic reputation with [All] Civilizations",
+        "[-30] Diplomatic reputation with [Civilizations with an enhanced religion]",
+        
+        "Comment [Langzeitfolgen]",
+        "Triggers a [Reign of Terror Continues] event <after [10] turns>",
+        "Triggers a [Ashes of Innocence] event <after [20] turns>",
+        "May not generate great prophet equivalents naturally <for [30] turns>",
+        
+        "Triggers the following global alert: [Die Scheiterhaufen brennen im Reich von [Our Civilization]! Die Hexenjagd hat begonnen!]"
+      ]
+    },
+    {
+      "text": "Weist ihn zurück und schützt Eure Untertanen. Vernunft über Aberglaube!",
+      "triggeredUniques": [
+        "Comment [OPTION 2: AUFGEKLÄRTE ABLEHNUNG]",
+        "Only available <if [University] is constructed>",
+        
+        "Comment [Kirchliche Missbilligung]",
+        "Gain [-150] [Faith]",
+        "[-3 Happiness] [in all cities] <for [5] turns>",
+        "[-50]% [Faith] [in all cities] <for [15] turns>",
+        "[Missionary] units gain the [Excommunicated] promotion", //
+        
+        "Comment [Wissenschaftlicher und kultureller Aufschwung]",
+        "[+30]% [Science] [in all cities] <for [20] turns>",
+        "[+25]% [Culture] [in all cities] <for [20] turns>",
+        "[+50]% Great Person generation [in all cities] <for [15] turns>",
+        "[+2 Science] from [University] buildings [in all cities] <for [30] turns>",
+        
+        "Comment [Diplomatische Konsequenzen]",
+        "[+20] Diplomatic reputation with [Civilizations without a religion]", //without nachprüfen!
+        "[-15] Diplomatic reputation with [Civilizations with an enhanced religion]",
+        
+        "Comment [Interne Spannungen]",
+        "Gain a free [Religious Dissent] [in capital]",
+        "[+1] Rebel units may spawn <for [10] turns>",
+        
+        "Comment [Spätere Ereignisse]",
+        "Triggers a [Papal Excommunication Threat] event <after [8] turns>",
+        "Triggers a [Age of Reason Dawns] event <after [15] turns> <with [50]% chance>",
+        
+        "Triggers the following global alert: [[Our Civilization] weist die Hexenjäger zurück! Ein mutiger Schritt gegen den religiösen Fanatismus!]"
+      ]
+    },
+    {
+      "text": "Führt eine eigene, gemäßigte Untersuchung durch. Gerechtigkeit statt Hysterie.",
+      "triggeredUniques": [
+        "Comment [OPTION 3: RECHTSSTAAT-LÖSUNG]",
+        "Only available <if [Courthouse] is constructed>",
+        "Only available <when above [250] [Gold]>",
+        
+        "Comment [Kosten der Gerechtigkeit]",
+        "Instantly consumes [300] [Gold]",
+        "Instantly consumes [50] [Faith]",
+        "[-15]% [Production] [in all cities] <for [10] turns>",
+        
+        "Comment [Stabilität und Ordnung]",
+        "Gain a free [Royal Tribunal] [in capital]",
+        "[+2 Happiness] [in all cities] <for [10] turns>",
+        "[+15]% [Culture] [in all cities] <for [15] turns>",
+        
+        "Comment [Justizreform-Vorteile]",
+        "[+2 Culture] from [Courthouse] buildings [in all cities] <for [30] turns>",
+        "[+1 Science] from [Courthouse] buildings [in all cities] <for [30] turns>",
+        "[-25]% unhappiness from the number of cities <for [20] turns>",
+        
+        "Comment [Gemischte Reaktionen]",
+        "[+10] Diplomatic reputation with [All] Civilizations",
+        
+        "Comment [Mögliche Komplikationen]",
+        "Triggers a [Corruption Scandal] event <after [10] turns> <with [25]% chance>",
+        "Triggers a [Legal Reform Success] event <after [15] turns> <with [50]% chance>",
+        
+        "Comment [Keine Rebellen - das Volk akzeptiert faire Prozesse]",
+        
+        "Triggers the following global alert: [[Our Civilization] etabliert faire Gerichte statt Hexenprozesse. Ein Vorbild der Gerechtigkeit!]"
+      ]
+    },
+    {
+      "text": "Bestecht ihn, damit er sein Ziel woanders verfolgt. Gold löst alle Probleme.",
+      "triggeredUniques": [
+        "Comment [OPTION 4: KORRUPTE UMLEITUNG]",
+        "Only available <if [Market] is constructed>",
+        "Only available <when above [400] [Gold]>",
+        
+        "Comment [Der Preis der Korruption]",
+        "Instantly consumes [400] [Gold]",
+        "Gain [-75] [Faith]",
+        
+        "Comment [Kurzfristige Vorteile]",
+        "Gain a free [Dark Secret] [in capital]",
+        "[+20]% [Gold] [in all cities] <for [10] turns>",
+        "Gain [2] extra spy",
+        "[+25]% spy effectiveness [in all cities] <for [30] turns>",
+        
+        "Comment [Der Ruf ist ruiniert]",
+        "[-15] Diplomatic reputation with [All] Civilizations <for [30] turns>",
+        "[-25] Diplomatic reputation with [Civilizations with an enhanced religion] <for [30] turns>",
+        "City-State Influence degradation [+100]% <for [20] turns>",
+        
+        "Comment [Interne Korruption breitet sich aus]",
+        "[-10]% [Gold] [in all cities] <for [20] turns>",
+        "[+25]% maintenance cost for [All] buildings [in all cities] <for [15] turns>",
+        
+        "Comment [Erpressungsgefahr]",
+        "Triggers a [Blackmail Demands] event <after [15] turns> <with [70]% chance>",
+        "Triggers a [Corruption Exposed] event <after [25] turns> <with [40]% chance>",
+        
+        "Comment [Ein anderes Reich leidet]",
+        "Triggers the following global alert: [Der Inquisitor wurde von [Our Civilization] bestochen! Er zieht weiter zu seinem nächsten Opfer...]",
+        
+        "Comment [Zufälliges anderes Reich bekommt das Event]",
+        "Triggers a [The Hammer of Witches Arrives] event for a random civilization <after [5] turns>"
+      ]
+    }
+  ]
+},
+//
+{
+    "name": "Reign of Terror Continues",
+    "notification": "Die Inquisition ist außer Kontrolle geraten! Was als gerechte Säuberung begann, ist zu einem gnadenlosen Blutrausch verkommen. Unter dem Deckmantel der Frömmigkeit werden persönliche Rachefeldzüge geführt. Der Inquisitor blickt Euch nun selbst mit misstrauischen Augen an und flüstert Verdächtigungen in die Ohren Eures Hofstaats.",
+    "weight": 100,
+    "choices": [
+      {
+        "text": "Wir müssen diesen Albtraum beenden!",
+        "triggeredUniques": [
+          "Remove [Inquisition Court] [in capital]",
+          "[-5 Happiness] [in all cities] <for [10] turns>",
+          "[+3] Rebel units may spawn",
+          "[+20]% [Science] [in all cities] <for [10] turns>",
+          "Triggers the following global alert: [[Our Civilization] hat die Hexenverfolgung gestoppt. Ein gespenstisches Schweigen liegt über dem Land, durchbrochen nur vom Seufzen der Erleichterung.]"
+        ]
+      },
+      {
+        "text": "Das Feuer der Läuterung muss weiter brennen...",
+        "triggeredUniques": [
+          "[-5] population [in all cities]",
+          "[-50]% [Science] [in all cities] <for [20] turns>",
+          "[+10 Happiness] [in all cities] <for [5] turns>",
+          "Triggers the following global alert: [Die Scheiterhaufen in [Our Civilization] flackern unerbittlich gegen die Abenddämmerung. Der süßliche Geruch von verbranntem Fleisch und Angst erfüllt die Städte.]"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "name": "Ashes of Innocence",
+    "notification": "Jahre sind vergangen, doch die Asche der Unschuldigen klebt noch immer an Euren Händen. In schlaflosen Nächten glaubt Ihr, ihr Flüstern in den Korridoren zu hören. Ein Bündel anonym zugespielter Briefe beweist die Unschuld Dutzender Hingerichteter. Das Gewicht dieser Erkenntnis droht Euch zu erdrücken.",
+    "weight": 100,
+    "choices": [
+      {
+        "text": "Wir müssen unsere Schuld eingestehen und wiedergutmachen",
+        "triggeredUniques": [
+          "Instantly consumes [500] [Gold]",
+          "[+5 Happiness] [in all cities] <for [20] turns>",
+          "[+30]% [Culture] [in all cities] <for [15] turns>",
+          "Remove [Inquisition Court] [in capital]"
+        ]
+      },
+      {
+        "text": "Wir können die Toten nicht wecken. Schweigen bewahren.",
+        "triggeredUniques": [
+          "[-3 Happiness] [in all cities] <for [30] turns>",
+          "[+1] Rebel units may spawn <for [10] turns>"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "name": "Papal Excommunication Threat",
+    "notification": "Der Zorn Roms trifft Euch mit voller Wucht! Ein bleicher, eisiger Legat überbringt die Botschaft: Euer Zweifel am heiligen Werk der Inquisition ist Ketzerei. Unterwerft Euch bedingungslos dem Willen des Papstes, oder Eure Seelen werden für alle Ewigkeit verdammt sein.",
+    "weight": 100,
+    "choices": [
+      {
+        "text": "Wir knien vor Rom...",
+        "triggeredUniques": [
+          "Gain [200] [Faith]",
+          "[-20]% [Science] [in all cities] <for [15] turns>",
+          "[+3 Happiness] [in all cities] <for [10] turns>",
+          "[+20] Diplomatic reputation with [Civilizations with an enhanced religion]"
+        ]
+      },
+      {
+        "text": "Unser Gewissen gehört uns allein!",
+        "triggeredUniques": [
+          "Gain [-300] [Faith]",
+          "[+40]% [Science] [in all cities] <for [20] turns>",
+          "[-30] Diplomatic reputation with [Civilizations with an enhanced religion]",
+          "[+30] Diplomatic reputation with [Civilizations without a religion]",
+          "Triggers the following global alert: [Die Glocken Roms verstummen für [Our Civilization]. Die Exkommunikation ist ausgesprochen – wir stehen allein im Dunkeln.]"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "name": "Age of Reason Dawns",
+    "notification": "Aus der Asche des Fanatismus erwächst eine neue, hellere Saat. Euer Mut, dem Dogma zu trotzen, hat die klügsten Köpfe Europas angezogen. In Salons und Universitäten werden nicht Gebete gesprochen, sondern debattiert. Die Flamme der Vernunft wird entfacht!",
+    "weight": 100,
+    "choices": [
+      {
+        "text": "Lasst das Licht der Vernunft alles erleuchten!",
+        "triggeredUniques": [
+          "Free Technology",
+          "[+50]% [Science] [in all cities] <for [20] turns>",
+          "[+50]% Great Person generation [in all cities] <for [15] turns>",
+          "Gain a free [Academy] [in capital]",
+          "[+10 Happiness] [in all cities] <for [10] turns>",
+          "Triggers the following global alert: [In [Our Civilization] wird nicht mehr geglaubt, sondern gewusst! Das Zeitalter der Vernunft bricht an!]"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "name": "Legal Reform Success",
+    "notification": "Eure Gerichte, einst Werkzeuge der Willkür, sind nun Säulen der Gerechtigkeit. Prozesse werden mit Beweisen geführt, nicht mit Aberglauben. Gesandte aus aller Welt reisen an, um dieses Wunder der Fairness zu studieren und Euren Richtern ehrfürchtig zuzuhören.",
+    "weight": 100,
+    "choices": [
+      {
+        "text": "Möge unser Licht der Welt den Weg weisen",
+        "triggeredUniques": [
+          "[+30] Diplomatic reputation with [All] Civilizations",
+          "[+30]% [Culture] [in all cities] <for [20] turns>",
+          "Gain [500] [Gold]",
+          "[+5 Happiness] [in all cities] <for [15] turns>",
+          "Triggers the following global alert: [Das Rechtssystem von [Our Civilization] wird zum Leuchtturm der Zivilisation in einem Meer der Barbarei!]"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "name": "Corruption Scandal",
+    "notification": "Die Gerechtigkeit hat ihren Preis – und einige Eurer Richter haben ihn kassiert. Ein Netz aus Bestechung wurde aufgedeckt: Reiche konnten ihre Angeklauften freikaufen, während die Habenichtse dem Feuertod übergeben wurden. Der öffentliche Glaube an das Gesetz liegt in Trümmern.",
+    "weight": 100,
+    "choices": [
+      {
+        "text": "Rücksichtslose Säuberung! Die Gerechtigkeit muss rein sein.",
+        "triggeredUniques": [
+          "Instantly consumes [300] [Gold]",
+          "Remove [Royal Tribunal] [in capital]",
+          "[+2 Happiness] [in all cities] <for [10] turns>",
+          "[-20]% [Production] [in all cities] <for [5] turns>"
+        ]
+      },
+      {
+        "text": "Die Schande totschweigen und die Beweise vernichten",
+        "triggeredUniques": [
+          "[-5 Happiness] [in all cities] <for [15] turns>",
+          "[+2] Rebel units may spawn",
+          "[+20]% [Gold] [in all cities] <for [10] turns>"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "name": "Blackmail Demands",
+    "notification": "Die Vergangenheit klopft mit einem teuflischen Grinsen an die Tür. Der Inquisitor, den Ihr bestochen habt, steht wieder vor Euch. Fett und zufrieden von Eurem letzten Gold, verlangt er mehr. 'Was wohl das Volk dazu sagt, dass sein Herr ein korrupter Heuchler ist?', zischt er.",
+    "weight": 100,
+    "choices": [
+      {
+        "text": "Noch eine Zahlung... (in der Hoffnung, dass es die letzte ist)",
+        "triggeredUniques": [
+          "Instantly consumes [500] [Gold]",
+          "[-10 Happiness] [in all cities] <for [5] turns>",
+          "Triggers a [Blackmail Demands] event <after [20] turns> <with [50]% chance>",
+          "Comment [Das Faustpfand Eurer Seele wird teurer.]"
+        ]
+      },
+      {
+        "text": "Ein stilles Ende für ein lautes Problem...",
+        "triggeredUniques": [
+          "Instantly consumes [200] [Gold]",
+          "Gain an extra spy",
+          "[-30] Diplomatic reputation with [All] Civilizations <for [20] turns>",
+          "Triggers a [Corruption Exposed] event <after [10] turns> <with [30]% chance>",
+          "Triggers the following global alert: [Der Inquisitor ist spurlos verschwunden. In den Tavernen flüstert man von dunklen Mächten am Hofe.]"
+        ]
+      },
+      {
+        "text": "Die Wahrheit ans Licht! Wir begehen öffentliche Buße",
+        "triggeredUniques": [
+          "Remove [Dark Secret] [in capital]",
+          "[-20 Happiness] [in all cities] <for [10] turns>",
+          "[-20] Diplomatic reputation with [All] Civilizations",
+          "[+30]% [Culture] [in all cities] <for [20] turns>",
+          "Triggers the following global alert: [[Our Civilization] beichtet seine Sünden! Eine schmerzhafte, doch ehrenhafte Läuterung beginnt.]"
+        ]
+      }
+    ]
+  },
+  
+  {
+    "name": "Corruption Exposed",
+    "notification": "Es ist geschehen. Euer geheimes Abkommen mit dem Inquisitor ist kein Geheimnis mehr. Gestohlene Briefe, voller detaillierter Absprachen und Zahlungsanweisungen, zirkulieren in jeder Hauptstadt Europas. Euer Ansehen ist zerstört, Eure Glaubwürdigkeit dahin.",
+    "weight": 100,
+    "choices": [
+      {
+        "text": "Wir stellen uns der Schmach und bauen neu auf",
+        "triggeredUniques": [
+          "Remove [Dark Secret] [in capital]",
+          "[-30] Diplomatic reputation with [All] Civilizations",
+          "[-10 Happiness] [in all cities] <for [20] turns>",
+          "[+50]% [Culture] [in all cities] <for [15] turns>",
+          "Free Social Policy",
+          "Triggers the following global alert: [Der verfaulten Herrschaft von [Our Civilization] wurde endlich die Maske heruntergerissen! Ein Schandmal für die Geschichte!]"
+        ]
+      }
+    ]
+  },
 {
   "name": "Das Ende der kleinen Eiszeit",
   "notification": "Ein gesegneter Wandel bahnt sich an! Die eisige Faust, die das Land so lange umklammert hielt, beginnt zu erweichen. Die unerbittliche Kälte, die Generationen in Furcht und Dunkelheit leben ließ, weicht einem sanften, lebensspendenden Hauch. Tauwasser rinnt in kleinen Rinnsalen über das steinerne Antlitz der Burgen, und an geschützten Südhängen zeigt sich zaghaft das erste Grün. Die Menschen wagen es, ihre verhüllten Gesichter der Sonne zuzuwenden – ein lange verloren geglaubtes Gefühl der Hoffnung kehrt zurück.",
