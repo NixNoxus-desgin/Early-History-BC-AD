@@ -966,11 +966,11 @@
 		"choices": [
 			{ "text": "Bring me the prince that has the best military strategy. Only a Shah that can protect their lands and can live up to the glory of their ancestors can be fit for rule.",
 			  "uniques": ["All newly-trained [Land] units [in all cities] receive the [Eranshahr] promotion <for [1000] turns>",
-			  		"[Land] units gain the [Eranshahr] promotion"]} 
+			  		"[Land] units gain the [Eranshahr] promotion"]} ,
       
       			{ "text": "Bring me the prince with the greatest mathematical knowledge. This empire is the lagest ever concieved by man, and it takes a wise man to properly rule it, and not a brute that will break it.",
 			  "uniques": [	 "[+20]% [Science] [in all cities] <during a Golden Age>", 
-			  		   		 "[+1 Happiness, +1 Production] from all [Science] buildings <for [10] turns>"] }
+			  		   		 "[+1 Happiness, +1 Production] from all [Science] buildings <for [10] turns>"] },
 
 			{ "text": "These prices are not suitable to be my heir. Bring me my daughter! She has the mind of a banker and the wit of a general. She shall lead this empire to prosperity and wealth.",
 			  "uniques": [	 "[+3 Culture] from all [Production] buildings <for [9999] turns>",
@@ -1556,6 +1556,88 @@
             ]
         }
     ]
+},
+{
+  "name": "Die drei Stände",
+  "text": "Eure Hoheit, das Reich wird von drei Säulen getragen: Dem Klerus, der für Eure Seele betet, dem Adel, der Euer Land mit dem Schwert verteidigt, und dem Bauernstand, der alle mit seiner Hände Arbeit ernährt. Doch das fragile Gleichgewicht dieser Stände gerät ins Wanken. Ein falsches Wort, eine unbedachte Geste – und die Ordnung, auf der Eure Macht gründet, könnte in Chaos und Aufruhr versinken.",
+  "choices": [
+    {
+      "name": "Den Klerus stärken",
+      "text": "Ihr beruft eine Synode ein und gewährt dem Klerus Steuerfreiheit für kirchliche Ländereien. Die Bischöfe segnen Euren Namen von den Kanzeln herab, während die Schreiber in den Skriptorien Chroniken Eurer Frömmigkeit verfassen. Doch die leeren Schatzkammern flüstern von kommenden Steuererhöhungen.",
+      "triggeredUniques": [
+        "[+60 Faith]",
+        "[+2 Happiness] <for [25] turns>",
+        "[+3 Faith] from [Temple] buildings <for [20] turns>",
+        "[+15] Influence with [2] random City-States <of type [Religious]>",
+        "[-1 Population] in [Capital] <with [30]% chance>",
+        "[-50 Gold]",
+        "[+1 Faith] per [4] population [in this city] <for [15] turns>",
+        "Free [Missionary] appears <with [50]% chance>",
+        "Comment: Die Glocken läuten für Euch, doch die Kornspeicher leeren sich. Wollt Ihr wirklich die Gunst Gottes mit dem Zorn des Volkes erkaufen?"
+      ]
+    },
+    {
+      "name": "Den Adel beschwichtigen",
+      "text": "Ihr erlasst die Heerfahrtspflicht für den niederen Adel und verleiht Jagdrechte in den königlichen Wäldern. Die Ritter schwören Euch blutige Eide auf ihren Schwertern, während in den Dörfern die Fronlasten wachsen und die Bauern mit versteinerten Gesichtern zusehen, wie ihre Söhne zu Kriegsdiensten gepresst werden.",
+      "triggeredUniques": [
+        "Free [Knight] appears",
+        "Free [Knight] appears <with [60]% chance>",
+        "[+20]% Strength <for [Rider] units> <for [35] turns>",
+        "[+10]% Strength <for [Close Combat] units> <for [20] turns>",
+        "[+20] Influence with [2] random City-States <of type [Militaristic]>",
+        "[-2 Happiness] <for [20] turns>",
+        "[-1 Culture] <for [15] turns>",
+        "[-40 Gold]",
+        "[+15]% Production when constructing [Military] units [in this city] <for [25] turns>",
+        "Comment: Das Klirren der Rüstungen übertönt das Murren der Hungernden. Eine Armee zu führen bedeutet, ihre Loyalität mit dem Blut des Volkes zu bezahlen."
+      ]
+    },
+    {
+      "name": "Das Volk begünstigen",
+      "text": "Ihr reduziert die Frondienste um drei Tage im Monat und erlasst den Zehnt auf neubestelltes Brachland. In den Tavernen wird Euer Name mit hoffnungsvollen Trinksprüchen bedacht, während die Grafen an ihren Tafeln über den Verlust ihrer Privilegien zürnen und ihre Vasallen zu unheilvollen Zusammenkünften rufen.",
+      "triggeredUniques": [
+        "[+1 Population] in [4] random cities",
+        "[+4 Happiness] <for [30] turns>",
+        "[+2 Food] in [all] cities <for [15] turns>",
+        "[+15] Influence with [2] random City-States <of type [Mercantile]>",
+        "[-15]% Production when constructing [Military] units <for [25] turns>",
+        "[-60 Gold]",
+        "[+1 Gold] from [Farm] tiles [in all cities] <for [20] turns>",
+        "Free [Worker] appears <with [40]% chance>",
+        "Comment: Das Lachen der Bauern ist süßer Klang - bis die ersten Reiterhufe der aufständischen Barone am Horizont erscheinen. Wollt Ihr das Volk glücklich machen um den Preis der Wehrlosigkeit?"
+      ]
+    },
+    {
+      "name": "Die Stände gegeneinander ausspielen",
+      "text": "Ihr ladet die Stände getrennt voneinander ein und macht jedem heimliche Versprechungen. Den Bischöfen flüstert Ihr von Kirchenreformen zu, den Rittern von Landeroberungen, dem Volk von Steuersenkungen. Ein gefährliches Spiel mit dem Feuer der Zwietracht.",
+      "triggeredUniques": [
+        "[+200 Gold]",
+        "[+35 Science]",
+        "[+20 Culture]",
+        "[-2 Happiness] <for [35] turns>",
+        "[-20] Influence with [1] random City-State <with [45]% chance>",
+        "[-1 Population] in [Capital] <with [25]% chance>",
+        "[+2 Culture] <for [20] turns>",
+        "Free [Spy] appears <with [50]% chance>",
+        "[+10]% enemy spy effectiveness [in all cities] <for [30] turns>",
+        "Comment: Ihr tanzt auf dem Seil über dem Abgrund der Anarchie. Jedes geflüsterte Wort könnte der Funke sein, der das Reich in Flammen setzt. Traut Ihr Euch, mit der Zwietracht zu spielen?"
+      ]
+    },
+    {
+      "name": "Auf göttliche Führung warten",
+      "text": "Ihr zieht Euch in die Kapelle zurück und befragt die Heiligen Schriften. Während die Höflinge ungeduldig in den Vorhallen warten, betet Ihr um ein Zeichen aus den Himmeln - in der Hoffnung, dass Gottes Wille klüger ist als menschliche Berechnung.",
+      "triggeredUniques": [
+        "[+40 Faith]",
+        "[+25 Culture]",
+        "[+2 Happiness] <for [15] turns>",
+        "Free [Missionary] appears <with [70]% chance>",
+        "Free [Great Prophet] appears <with [15]% chance>",
+        "[-20 Gold]",
+        "[+1 Faith] from [all] [Faith] buildings <for [25] turns>",
+        "Comment: Das Warten auf ein Wunder ist selbst ein Akt des Glaubens. Doch während Ihr betet, schmieden andere ihre Pläne. Ist Geduld wirklich eine Tugend - oder nur die Maske der Untätigkeit?"
+      ]
+    }
+  ]
 },
 {
       "name": "Die Vollendung des Petersdoms",
@@ -2342,41 +2424,131 @@
         "Triggers the following global alert: [[Our Civilization] etabliert faire Gerichte statt Hexenprozesse. Ein Vorbild der Gerechtigkeit!]"
       ]
     },
+
     {
-      "text": "Bestecht ihn, damit er sein Ziel woanders verfolgt. Gold löst alle Probleme.",
-      "triggeredUniques": [
-        "Comment [OPTION 4: KORRUPTE UMLEITUNG]",
+      "text": "Bestecht ihn, damit er sein Ziel woanders verfolgt.",
+      "uniques": [
+        "Comment [OPTION 4: KORRUPTION - KORRIGIERTE VERSION]",
         "Only available <if [Market] is constructed>",
         "Only available <when above [400] [Gold]>",
-        
+    
         "Comment [Der Preis der Korruption]",
         "Instantly consumes [400] [Gold]",
         "Gain [-75] [Faith]",
-        
-        "Comment [Kurzfristige Vorteile]",
-        "Gain a free [Dark Secret] [in capital]",
-        "[+20]% [Gold] [in all cities] <for [10] turns>",
-        "Gain [2] extra spy",
-        "[+25]% spy effectiveness [in all cities] <for [30] turns>",
-        
-        "Comment [Der Ruf ist ruiniert]",
-        "[-15] Diplomatic reputation with [All] Civilizations <for [30] turns>",
-        "[-25] Diplomatic reputation with [Civilizations with an enhanced religion] <for [30] turns>",
-        "City-State Influence degradation [+100]% <for [20] turns>",
-        
-        "Comment [Interne Korruption breitet sich aus]",
-        "[-10]% [Gold] [in all cities] <for [20] turns>",
-        "[+25]% maintenance cost for [All] buildings [in all cities] <for [15] turns>",
-        
-        "Comment [Erpressungsgefahr]",
-        "Triggers a [Blackmail Demands] event <after [15] turns> <with [70]% chance>",
-        "Triggers a [Corruption Exposed] event <after [25] turns> <with [40]% chance>",
-        
-        "Comment [Ein anderes Reich leidet]",
-        "Triggers the following global alert: [Der Inquisitor wurde von [Our Civilization] bestochen! Er zieht weiter zu seinem nächsten Opfer...]",
-        
-        "Comment [Zufälliges anderes Reich bekommt das Event]",
-        "Triggers a [The Hammer of Witches Arrives] event for a random civilization <after [5] turns>"
+    
+       "Comment [Spionage-Einheiten mit dunklen Promotions]",
+       "Gain a free [Dark Secret] [in capital]",
+       "[2] free [Spy] units appear",
+       "Gain [2] extra spy",
+       "[+25]% spy effectiveness [in all cities] <for [30] turns>",
+    
+       "Comment [Korrupte Promotions für Einheiten]",
+       "All newly-trained [Spy] units [in all cities] receive the [Shadow Network] promotion <for [30] turns>",
+       "All newly-trained [Merchant] units [in all cities] receive the [Corrupt] promotion <for [20] turns>",
+       "[Spy] units gain the [Blackmailer] promotion",
+       "[Great Merchant] units gain the [War Profiteer] promotion",
+    
+       "Comment [Kurzfristige Vorteile]",
+       "[+20]% [Gold] [in all cities] <for [10] turns>",
+       "All newly-trained [Scout] units [in all cities] receive the [Bribery] promotion <for [15] turns>",
+    
+       "Comment [Militärische Schwächung durch Korruption]",
+       "[-10]% Strength <for [All] units> <for [20] turns>",
+       "All newly-trained [Knight] units [in all cities] receive the [Demoralized] promotion <for [15] turns>",
+    
+       "Comment [Der Ruf ist ruiniert - SCHWERER als andere Optionen]",
+       "[-25] Diplomatic reputation with [All] Civilizations",
+       "[-35] Diplomatic reputation with [Civilizations with an enhanced religion]",
+       "City-State Influence degradation [+100]% <for [20] turns>",
+    
+       "Comment [Interne Korruption breitet sich aus]",
+       "[-10]% [Gold] [in all cities] <for [20] turns>",
+       "[+25]% maintenance cost for [All] buildings [in all cities] <for [15] turns>",
+       "All newly-trained [Worker] units [in all cities] receive the [Lazy] promotion <for [10] turns>",
+    
+       "Comment [Erpressungsgefahr]",
+       "Triggers a [Blackmail Demands] event <after [15] turns> <with [70]% chance>",
+       "Triggers a [Corruption Exposed] event <after [25] turns> <with [40]% chance>",
+       "Triggers a [Inquisitor Returns] event <after [30] turns> <with [50]% chance>",
+    
+       "Comment [KORRIGIERT: Globale Nachricht statt Event für andere]",
+       "Triggers the following global alert: [⚠️ Das Gold der Schatzkammer schmilzt dahin! Der Inquisitor, von [Our Civilization] bestochen! Er verschwindet mit dem Gold in der Dunkelheit. Gerüchte verbreiten sich, dass er ein neues Opfer sucht...]",
+    
+       "Comment [ZUSATZ: Spürbare Verschlechterung der öffentlichen Ordnung als Ausgleich]",
+       "Gain a free [Blackmail] [in capital]",
+       "[+3] Rebel units may spawn <for [10] turns>",
+       "Comment [Das Volk ist empört über die Korruption]"
+      ] 
+    }
+  ]
+},
+{
+  "name": "Die Rückkehr des Inquisitors",
+  "notification": "Der Schatten der Vergangenheit fällt auf Eure Mauern. Der Inquisitor, den Ihr einst mit Gold zum Schweigen brachtet, steht wieder vor Euren Toren. Doch diesmal ist er nicht allein. An seiner Seite stehen päpstliche Legaten in scharlachroten Roben und bleiche Zeugen, die Eure Sünde flüsternd bezeugen können. Sein Gesicht ist ein einziges hämisches Grinsen: 'Ich bin durch andere Reiche gezogen, Mylord. Sie zeigten großes Interesse an der Geschichte Eurer... Großzügigkeit. Nun bin ich zurück. Der Preis für mein Schweigen hat sich verdoppelt. Oder soll ich Seiner Heiligkeit persönlich berichten, von dem gottlosen Herrscher, der sein Reich auf Bestechung gründet?'",
+  "weight": 100,
+  "choices": [
+    {
+      "text": "Das Schweigen erneut erkaufen – für den doppelten Preis!",
+      "triggeredUniques": [
+        "Only available <when above [800] [Gold]>",
+        "Instantly consumes [800] [Gold]",
+        "[-5 Happiness] [in all cities] <for [10] turns>",
+        "[-30] Diplomatic reputation with [All] Civilizations",
+        "Comment [Das Geflüster hinter verschlossenen Türen wird lauter: Jeder weiß, dass man Euch erpressen kann.]",
+        "Triggers a [Das Letzte Ultimatum] event <after [40] turns> <with [30]% chance>",
+        "Comment [Ein Mann, der einmal zahlt, wird immer zahlen. Er wird wieder kommen, das ist gewiss.]",
+        "Triggers the following global alert: [[Our Civilization] beugt sich der Erpressung! Das Gold fließt, doch die Ehre ist verspielt.]"
+      ]
+    },
+    {
+      "text": "Verhaftet den Schurken! Sein Urteil ist der Tod!",
+      "triggeredUniques": [
+        "[1] free [Knight] units appear",
+        "All newly-trained [Knight] units [in all cities] receive the [Ruthless] promotion <for [10] turns>",
+        "Comment [Ihr Ritter schärfen ihre Klingen im Namen der Rache, nicht der Gerechtigkeit.]",
+        "[-50] Diplomatic reputation with [Civilizations with an enhanced religion]",
+        "[-8 Happiness] [in all cities] <for [15] turns>",
+        "[+4] Rebel units may spawn",
+        "Comment [Fromme Seelen sehen keinen Tyrannenmord, nur Martyrium. Ihr Dolchstich gebiert neue Feinde.]",
+        "Triggers a [Papal Interdict] event <after [10] turns>",
+        "Comment [In Rom wird man diese Tat nicht als Säuberung, sondern als Sakrileg betrachten.]",
+        "Triggers the following global alert: [💀 Der Gesandte Gottes wurde in [Our Civilization] blutig niedergestreckt! Der Vatikan tobt vor Zorn!]"
+      ]
+    },
+    {
+      "text": "Beugt Euch in Demut und bekennt Eure Schuld vor aller Welt",
+      "triggeredUniques": [
+        "Remove [Dark Secret] [in capital]",
+        "Remove [Blackmail] [in capital]",
+        "Comment [Die Last der Lüge weicht; die Wahrheit, so bitter sie ist, macht Euch frei.]",
+        "[-15 Happiness] [in all cities] <for [5] turns>",
+        "Comment [Vorübergehend senkt das Haupt Eures Volkes sich in Scham.]",
+        "[+50]% [Culture] [in all cities] <for [30] turns>",
+        "[+30]% [Science] [in all cities] <for [20] turns>",
+        "Free Social Policy",
+        "Comment [Auf lange Sicht erntet Ihr den Respekt für Euren Mut. Gelehrte preisen die Aufrichtigkeit, die Neues schafft.]",
+        "[+20] Diplomatic reputation with [Civilizations without a religion]",
+        "[-10] Diplomatic reputation with [Civilizations with an enhanced religion]",
+        "Triggers the following global alert: [✝️ [Our Civilization] wirft sich reuig in den Staub! Eine unerhörte Geste der Buße!]"
+      ]
+    },
+    {
+      "text": "Macht das Übel zu Eurem Werkzeug – bietet ihm einen Ratsposten an",
+      "triggeredUniques": [
+        "Only available <when above [500] [Gold]>",
+        "Instantly consumes [500] [Gold]",
+        "Comment [Ihr ladet die Schlange in Eure Schatzkammer ein, in der Hoffnung, dass sie andere beißt.]",
+        "Gain a free [Der Schattenberater] [in capital]",
+        "[+30]% [Gold] [in all cities] <for [20] turns>",
+        "Comment [Sein Wissen um die schwächsten Glieder in der Kette der Macht füllt Eure Kassen.]",
+        "[+3] extra spy",
+        "[+50]% spy effectiveness [in all cities] <for [30] turns>",
+        "All newly-trained [Spy] units [in all cities] receive the [Master Blackmailer] promotion <for [20] turns>",
+        "Comment [Doch seine Korruption ist wie Mehltau, der alles befällt, was er berührt.]",
+        "[-50]% [Faith] [in all cities] <for [30] turns>",
+        "[-20]% [Culture] [in all cities] <for [20] turns>",
+        "[+2] Rebel units may spawn <for [15] turns>",
+        "Triggers the following global alert: [😈 Der Inquisitor von einst thront nun im Kronrat von [Our Civilization]! Die Moral ist tot, es lebe die Effizienz!]"
       ]
     }
   ]
@@ -2577,6 +2749,190 @@
       }
     ]
   },
+  {
+  "name": "Das Letzte Ultimatum",
+  "notification": "Der Inquisitor steht ein letztes Mal vor Eurem Thron, sein Gesicht eine Maske aus abgebrühter Gier und fanatischem Wahnsinn. 'Dies ist mein letztes Angebot', zischt er mit heiserer Stimme. 'Gebt mir genug Gold, um als Fürst zu leben, oder ich werde mit meinem letzten Atemzug jedes schmutzige Geheimnis enthüllen - jeden bestochenen Richter, jede vertuschte Untat, jede Leiche in Euren Verliesen. Die Beweisstücke liegen bereits bei Männern, die nur auf mein Zeichen warten. Sollte mir auch nur ein Haar gekrümmt werden...' Die unausgesprochene Drohung hängt wie Gift in der Luft. Dies ist der finale Akt Eures teuflischen Paktes.",
+  "weight": 100,
+  "uniques": [
+    "Comment [DAS FINALE DUETT - Die Melodie der Erpressung erklingt zum letzten Mal. Welchen Akkord wählt Ihr?]"
+  ],
+  "choices": [
+    {
+      "text": "Das Schweigen für immer in Gold aufwiegen - eine fürstliche Abfindung.",
+      "triggeredUniques": [
+        "Only available <when above [1500] [Gold]>",
+        "Instantly consumes [1500] [Gold]",
+        
+        "Comment [DIE RECHNUNG IST BEGLICHEN - Der Schatten weicht, zurück bleibt die leere Schatzkammer und der fahle Beigeschmack der Erniedrigung.]",
+        "Remove [Dark Secret] [in capital]",
+        "Remove [Blackmail] [in capital]",
+        
+        "[-10 Happiness] [in all cities] <for [10] turns>",
+        "Comment [Das Geflüster auf den Märkten verrät es: Man kauft sich nicht frei von Schande, man mietet sie nur für eine Weile.]",
+        
+        "[+10]% [Culture] [in all cities] <for [30] turns>",
+        "Comment [Die Erleichterung, endlich frei atmen zu können, gebiert eine neue Kreativität - doch zu welchem Preis?]",
+        
+        "Triggers the following global alert: [💰 Der Inquisitor verlässt [Our Civilization] mit einem Königreich im Gepäck. Die Geheimnisse sind gekauft... doch die Erinnerung an die Demütigung bleibt.]"
+      ]
+    },
+    {
+      "text": "Das Messer zückend - beendet die Bedrohung auf ewig und in Stille.",
+      "triggeredUniques": [
+        "Comment [DOLCHSTOSS IM ZWIELICHT - Die radikalste Lösung hinterlässt die tiefsten Narben, sowohl an der Seele des Mörders als auch am Ansehen des Reiches.]",
+        "Instantly consumes [500] [Gold]",
+        "Comment [Gold fließt in schmutzige Hände, um noch schmutzigere Arbeit zu verrichten. Die Assassinen fragen nicht nach dem Warum.]",
+        
+        "Remove [Dark Secret] [in capital]",
+        "Remove [Blackmail] [in capital]",
+        "Comment [Das Problem ist gelöst, die Beweise vernichtet. Doch der Geist des Ermordeten wird Eure Träume heimsuchen.]",
+        
+        "[-50] Diplomatic reputation with [All] Civilizations",
+        "Comment [Die Nachbarn schauen Euch mit neuen Augen an. In ihren Botschaften flüstert man von einem Herrscher, der seine Probleme begraben lässt.]",
+        
+        "[-15 Happiness] [in all cities] <for [20] turns>",
+        "[+5] Rebel units may spawn",
+        "Comment [Das Volk spürt die Unreinheit der Tat. Fromme Männer predigen von göttlicher Strafe für den Mord an einem Geweihten.]",
+        
+        "[-30]% [Faith] [in all cities] <for [30] turns>",
+        "Comment [Die Altäre stehen leerer. Die Priester murmeln von einer Sünde, die das Land verdunkelt.]",
+        
+        "Gain a free [Struggle] [in capital]",
+        "Comment [Der Thron wackelt. Jeder, der von dem Mord weiß, könnte der Nächste sein – oder der nächste Erpresser.]",
+        
+        "Triggers the following global alert: [💀 Der Leichnam des Inquisitors treibt den Fluss hinab. In [Our Civilization] herrscht eine gespenstische Stille. Man munkelt, der Mörder sei dem Opfer erschreckend ähnlich...]"
+      ]
+    },
+    {
+      "text": "Feuer mit Feuer bekämpfen - enthüllt seine eigenen Sünden.",
+      "triggeredUniques": [
+        "Comment [SCHACHMATT IM SCHATTENKRIEG - Ihr zieht Eure eigenen verdeckten Trümpfe. Es ist ein riskantes Spiel, das in gegenseitiger Vernichtung enden kann.]",
+        "Only available <when above [2] [Influence]>",
+        "Instantly consumes [2] [Influence]",
+        "Instantly consumes [750] [Gold]",
+        "Comment [Eure Spione tauchen in die Kloaken der Macht ein, um den Schlamm zu finden, mit dem Ihr ihn besudeln könnt.]",
+        
+        "Remove [Dark Secret] [in capital]",
+        "Remove [Blackmail] [in capital]",
+        "Comment [Ein unausgesprochener Pakt des Schweigens wird geschlossen. Zwei Männer, die zu viel voneinander wissen, starren sich an – und wagen keinen Schritt.]",
+        
+        "Gain [3] extra spy",
+        "Comment [Der Apparat, der ihn zu Fall brachte, wird nun zu Eurer mächtigsten Waffe. Die Spinnennetze der Intrige sind gesponnen.]",
+        
+        "[-25]% enemy spy effectiveness [in all cities] <for [50] turns>",
+        "Comment [Paranoia wird zur Staatsräson. Jeder Fremde ist ein potenzieller Spion, jedes Flüstern eine mögliche Verschwörung.]",
+        
+        "[+25]% Production when constructing [Police Station] buildings [in all cities] <for [30] turns>",
+        "[+25]% Production when constructing [Government Complex] buildings [in all cities] <for [30] turns>",
+        "Comment [Die Festung wird ausgebaut, nicht gegen äußere Feinde, sondern gegen die Geister, die man selbst rief.]",
+        
+        "[-5 Happiness] [in all cities] <for [15] turns>",
+        "Comment [Die Luft ist dick vor Misstrauen. Die Bürger fragen sich, vor wem ihr Herrscher solche Angst hat.]",
+        
+        "[+15]% [Gold] from every [Bank]",
+        "Comment [Wer die Geheimnisse der Mächtigen kontrolliert, kontrolliert auch deren Geld. Ein schwärzestes Gold.]",
+        
+        "Triggers the following global alert: [🗡️ In [Our Civilization] herrscht ein brüchiger Frieden. Zwei Schurken, die sich in einem tödlichen Gleichgewicht des Grauens gegenüberstehen. Die Welt atmet angespannt.]"
+      ]
+    },
+    {
+      "text": "Den Teufel adeln - gebt ihm Land und Titel, um ihn an Euch zu ketten.",
+      "triggeredUniques": [
+        "Comment [DEN WOLF ZUM HUND MACHEN - Eine gefährliche Illusion. Man zähmt kein Raubtier, man füttert es nur, bis es größer ist als man selbst.]",
+        "Only available <when above [1000] [Gold]>",
+        "Instantly consumes [1000] [Gold]",
+        
+        "Remove [Blackmail] [in capital]",
+        "Comment [Die Erpressung hört auf, weil der Erpresser nun Mitbesitzer des Systems ist, das er bedrohte.]",
+        
+        "Gain a free [Noble Inquisitor] [in capital]",
+        "Comment [Aus dem Erzfeind wird ein Vasall. Sein neues Wappen trägt die Farbe des Verrats.]",
+        
+        "[-5 Happiness] [in all cities] <for [30] turns>",
+        "Comment [Das Volk verachtet den Emporkömmling. Sie sehen in ihm die Belohnung der Schurkerei und die Perversion der Gerechtigkeit.]",
+        
+        "[+20]% [Gold] [in all cities] <for [40] turns>",
+        "Comment [Er regiert seine neuen Ländereien mit der skrupellosen Effizienz eines Mannes, der weiß, wie man Menschen bricht.]",
+        
+        "[-20]% [Faith] [in all cities] <for [40] turns>",
+        "Comment [Die Kirche verdammt den 'Grafen von Schattenburg'. Sein Adelstitel ist in ihren Augen ein Sakrileg.]",
+        
+        "Gain a free [Unjust Ruling] [in capital]",
+        "Comment [Seine Methoden – Erpressung, Einschüchterung, Korruption – werden nun offizielle Politik.]",
+        
+        "Triggers the following global alert: [Der größte Feind von [Our Civilization] wurde zu ihrem Baron gekrönt! Man flüstert, der Thron sei nun aus Glas, und der neue Adlige halte den Hammer.]"
+      ]
+    }
+  ]
+},
+{
+  "name": "Das Große Ritterturnier",
+  "text": "Die Sommerhitze flimmert über dem frisch gestampften Lehm der Rennbahn vor den Toren eurer Burg. Überall wehen bunte Wimpel mit den Wappen der edelsten Häuser des Reiches. Das Klirren von Stahl auf Stahl und das Wiehern der Schlachtrösser erfüllen die Luft, vermischt mit dem Jubel und Geschrei des Volkes, das dicht gedrängt die Tribünen füllt. Schwer gepanzerte Ritter, in der Sonne gleißende Metallriesen, nehmen Aufstellung, bereit, im Staub der Arena Ruhm und Ehre zu erlangen. Dies ist mehr als ein Wettkampf - es ist eine Machtdemonstration eures Hofes.",
+  "civilopediaText": "Ritterturniere waren zentrale Ereignisse der höfischen Kultur. Sie dienten nicht nur der militärischen Übung, sondern auch der Demonstration von Macht, Reichtum und ritterlichen Idealen. Berühmte Turniere wie das von König Artus' Tafelrunde oder das historische Turnier von Chauvency 1285 prägten die mittelalterliche Kultur nachhaltig.",
+  "choices": [
+    {
+      "name": "Ein prachtvolles Turnier der Höfischen Liebe",
+      "triggeredUniques": [
+        "[+4 Culture]",
+        "[+2 Culture] in [Capital] <for [25] turns>",
+        "[+15] Influence with a random City-State",
+        "[+2 Happiness] <for [20] turns>",
+        "[-150 Gold]"
+      ],
+      "text": "Ihr erklärt das Turnier zur höchsten Schule der 'Hohen Minne', Jeder Tjost wird einem Lobpreis einer edlen Dame gewidmet. Minnesänger besingen jede heldenhafte Tat und jede Geste der Zuneigung. Die strengen Regeln der ritterlichen Etikette, die Zurschaustellung von Reichtum und die Verehrung der Frauen machen euren Hof zum strahlenden Zentrum einer verfeinerten Kultur, die in ganz Europa bewundert wird."
+    },
+    {
+      "name": "Rekrutiert die Turniersieger",
+      "triggeredUniques": [
+        "Free [Knight] appears",
+        "[+10 Experience] <for [Mounted] units> <for [30] turns>",
+        "[+1] Strength <for [Knight] units>",
+        "[-100 Gold]"
+      ],
+      "text": "Ihr nutzt das Turnier als eine gewaltige Musterung für eure Armee. Den siegreichsten Rittern, deren Rüstungen von den Schlägen der Kontrahenten gezeichnet sind, bietet ihr goldenen Sporn und einen Platz in eurer Elitegarde an. Ihre unbestrittene Kampfkunst macht sie zu gefürchteten Kommandeuren, und ihre Techniken werden zum Standard für alle eure berittenen Einheiten."
+    },
+    {
+      "name": "Ladet fremde Ritterorden ein",
+      "triggeredUniques": [
+        "[+25] Influence with [2] random City-States",
+        "Free [Knight] appears <with [50]% chance>",
+        "[+1 Gold] from [Trade Route] <for [20] turns>",
+        "[-80 Gold]"
+      ],
+      "text": "Ihr sendet Boten zu den großen geistlichen Ritterorden - den Templern, Johannitern und Deutschrittern. Deren Ankunft, gekennzeichnet durch die mächtigen Kreuzzeichen auf ihren weißen Mänteln, verleiht dem Turnier eine fast heilige Aura. Die Gespräche in ihren Lagern führen zu wertvollen Allianzen, die euren Einfluss in der christlichen Welt festigen und neue Handelswege eröffnen."
+    },
+    {
+      "name": "Der königliche Champion kämpft",
+      "triggeredUniques": [
+        "Free [Great General] appears",
+        "[+30 Culture]",
+        "[+1 Happiness]",
+        "[-75 Gold]"
+      ],
+      "text": "Euer eigener Champion, der unumstrittene beste Kämpfer des Reiches, steigt selbst in die Arena. In einem atemberaubenden Finale besiegt er einen Herausforderer nach dem anderen. Sein Sieg ist so überwältigend, dass sein Ruhm nicht nur in allen Tavernen des Landes besungen wird, sondern auch erfahrene Soldnerführer und taktische Genies an euren Hof lockt, die unter seiner Fahne dienen wollen."
+    },
+    {
+      "name": "Weiht das Turnier Gott und den Heiligen",
+      "triggeredUniques": [
+        "[+6 Faith]",
+        "[+2 Faith] in [Capital] <for [20] turns>",
+        "[+10] Influence with a random City-State <of type [Religious]>",
+        "[-60 Gold]"
+      ],
+      "text": "Bevor die Lanzen gesenkt werden, wird eine feierliche Messe abgehalten. Die Ritter geloben, für die Ehre Gottes und den Schutz der Gläubigen zu kämpfen. Geistliche segnen die Waffen, und jeder Sieg wird als gottlicher Gunstbeweis interpretiert. Diese fromme Stimmung ergreift das Volk und festigt den Glauben im ganzen Land, was auch die Gunst religiöser Stadtstaaten gewinnt."
+    },
+    {
+      "name": "Veranstaltet einen Jahrmarkt drumherum",
+      "triggeredUniques": [
+        "[+80 Gold]",
+        "[+2 Gold] in [Capital] <for [30] turns>",
+        "[+1 Happiness] <for [15] turns>",
+        "[-30 Gold]"
+      ],
+      "text": "Ihr verwandelt das Turniergelände in ein riesiges Fest für das gemeine Volk. Gaukler, Feuerschlucker und fahrende Händler mit exotischen Waren schlagen ihre Stände auf. Der Duft von Braten und Met liegt in der Luft. Die Eintrittsgelder und Steuern füllen eure Schatulle prall, und die fröhliche Stimmung unter den Bürgern ist fast mit Händen zu greifen."
+    }
+  ]
+},
 {
   "name": "Das Ende der kleinen Eiszeit",
   "notification": "Ein gesegneter Wandel bahnt sich an! Die eisige Faust, die das Land so lange umklammert hielt, beginnt zu erweichen. Die unerbittliche Kälte, die Generationen in Furcht und Dunkelheit leben ließ, weicht einem sanften, lebensspendenden Hauch. Tauwasser rinnt in kleinen Rinnsalen über das steinerne Antlitz der Burgen, und an geschützten Südhängen zeigt sich zaghaft das erste Grün. Die Menschen wagen es, ihre verhüllten Gesichter der Sonne zuzuwenden – ein lange verloren geglaubtes Gefühl der Hoffnung kehrt zurück.",

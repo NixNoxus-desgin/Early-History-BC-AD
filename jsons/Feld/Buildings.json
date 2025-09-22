@@ -7,8 +7,58 @@
 //denounced Zitate
 
 //Hexenhammer
-
-  {
+{
+  "name": "Der Schattenberater",
+  "cost": 1,
+  "maintenance": 5,
+  "gold": 10,
+  "happiness": -3,
+  "faith": -5,
+  "uniques": [
+    "Unbuildable",
+    "Cannot be purchased",
+    "Unsellable",
+    "Never destroyed when the city is captured",
+    
+    "Comment [Der ehemalige Inquisitor, nun Euer gefährlichster Vertrauter, flüstert Ratschläge, die Eure Kassen füllen und Eure Seele vergiften.]",
+    "[+30]% [Gold] [in this city]",
+    "[-25]% [Faith] [in this city]",
+    "[-20]% [Culture] [in this city]",
+    "[+50]% spy effectiveness [in this city]",
+    
+    "Comment [Seine Anwesenheit ist wie faulendes Holz im Fundament Eures Reiches - es untergräbt den Zusammenhalt und gebiert Verrat.]",
+    "[+1] Rebel units may spawn <with [5]% chance> <every [20] turns>",
+    "[-15] Diplomatic reputation with [Civilizations with an enhanced religion]",
+    
+    "Comment [Ihr habt den Teufel an den Hof geholt; ihn wieder loszuwerden könnte Euer eigenes Leben kosten... oder sein Ende bedeuten.]",
+    "Triggers a [Advisor Dies Mysteriously] event <after [50] turns> <with [20]% chance>",
+    
+    "Will not be displayed in Civilopedia"
+  ],
+  "quote": "'Wer mit Dämonen speist, braucht einen langen Löffel - doch wehe dem, der vergisst, dass sie länger zubeißen können.' - Aus den Chroniken von Castellare"
+},
+{
+  "name": "Noble Inquisitor",
+  "cost": 1,
+  "maintenance": 3,
+  "gold": 5,
+  "happiness": -2,
+  "faith": -3,
+  "uniques": [
+    "Unbuildable",
+    "Cannot be purchased",
+    "Unsellable",
+    "Comment [Der Erpresser als Adeliger]",
+    "[+20]% [Gold] [in this city]",
+    "[-20]% [Faith] [in this city]",
+    "[-15]% [Culture] [in this city]",
+    "[+30]% spy effectiveness [in this city]",
+    "Comment [Ein korrupter aber einflussreicher Adeliger]",
+    "Will not be displayed in Civilopedia"
+  ],
+  "quote": "'Besser ein lebender Schurke im Adel als ein toter Märtyrer im Grab.'"
+},
+{
     "name": "Inquisition Court",
     "cost": 1,
     "maintenance": 5,
@@ -589,6 +639,45 @@
         ]
 },
 //
+{
+	"name": "Templer-Komturei",
+	"cost": 200,
+	"maintenance": 3,
+	"faith": 3,
+	"culture": 2,
+	"cityStrength": 5,
+	"cityHealth": 30,
+	"specialistSlots": {
+		"Governor": 1
+	},
+	"greatPersonPoints": {
+		"Great General": 2
+	},
+	"uniques": [
+		"'Military Building'",
+		"'Worship Place'",
+		"Provides [2] [Standing Army Maintainance]",
+		"New [Military] units start with [20] Experience [in this city]",
+		"All newly-trained [{Military} {Land}] units [in this city] receive the [Templar Training] promotion",
+		"[+15]% Production when constructing [{Military} {Land}] units [in this city]",
+		"[+10]% Natural religion spread [in this city]",
+		"[+2 Faith] from every [Cathedral] <in this city>",
+		"[+1 Gold] from [Land Trade Route (Gold)] tiles [in this city]",
+		"May buy [{Military} {Land}] units with [Faith] for [2] times their normal Production cost",
+		"Free [Templar Knight] appears <upon constructing [Templer-Komturei]>",
+		"Can only be built <in cities with a [Catholicism] religion> <in cities with a [Roman Catholicism] religion>",
+		"Only available <after adopting [Monastic Warrior]>",
+		"Only available <if [Cathedral] is constructed> <in this city>",
+		"Only available <if [Barracks] is constructed> <in this city>",
+		"Requires at least [8] population",
+		"Cost increases by [50] per owned city",
+		"Hidden when religion is disabled",
+		"Destroyed when the city is captured"
+	],
+	"requiredTech": "Chivalry",
+	"hurryCostModifier": 25,
+	"quote": "'Non nobis Domine, non nobis, sed nomini tuo da gloriam - Nicht uns, o Herr, nicht uns, sondern Deinem Namen gib die Ehre. - Wahlspruch der Tempelritter'"
+},
 {
 	"name": "The Great Prophet",
 	"maintenance": 0,
@@ -1822,7 +1911,7 @@
 		   /// "[+3 Gold] from [Trade Route (International)] tiles in this city",
         	"[+1 Gold] from [Water resource] tiles in this city",
 			"All newly-trained [relevant] units in this city receive the [Royal Navy Dockyard] promotion",
-            "Connects trade routes over water","Must be next to [Coast]","Cost increases by [5] per owned city"],
+            "Connects trade routes over water","Must be next to [Coast]","Cost increases by [5] per owned city"]
         ///"requiredTech": "Celestial Navigation"
     },
 	{
