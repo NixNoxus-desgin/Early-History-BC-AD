@@ -305,110 +305,425 @@
 
         ]
     },
-    {
-        "name":"Velvet Revolution Era Boost",
-        "text":"Choose a Boost!",
-        "choices":[
-            {
-              "text": "Science",
-              "triggeredUniques": ["[+25]% [Science] [in all cities] <for [8] turns>"]
-            },
-            {
-              "text": "Culture",
-              "triggeredUniques": ["[+20]% [Culture] [in all cities] <for [8] turns>"]
-            },
-            {
-              "text": "Production",
-              "triggeredUniques": ["[+15]% [Production] [in all cities] <for [8] turns>"]
-            },
-            {
-              "text": "Gold",
-              "triggeredUniques": ["[+30]% [Gold] [in all cities] <for [8] turns>"]
-            }
+    [
+  {
+    "name": "Bourgeoisie Revolution!",
+    "text": "The Traditional Feudal System crumbles before the new rising bourgeoisie class as industrial revolution continues. Subsequently, bourgeoisies and proletariats revolted against the traditional system, how does the revolution happen?",
+    "choices": [
+      {
+        "text": "The Revolution has failed.",
+        "uniques": [
+          "Comment [The revolution is dead. The government of nobilities continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy. But 'Noble Army' strength are increased by a third permanently.]",
+          "Remove [Revolution] and refund [100]% of its cost",
+          "Gain a free [Failed Bourgeoisie Revolution] [in capital]",
+          "Free [Great General] appears",
+          "[2] free [Royal Cuirassier] units appear"
         ]
-    },
-    {
-         "name":"Velvet Revolution Building Boost",
-         "text":"Choose a Boost!",
-         "choices":[
-             {
-               "text": "Science",
-               "triggeredUniques": ["[+5]% [Science] [in all cities] <for [12] turns>"]
-             },
-             {
-               "text": "Great Person",
-               "triggeredUniques": ["[+10]% Great Person generation [in all cities] <for [12] turns>"]
-             }
-         ]
-    },
-    {
-         "name":"Eightfold Path",
-         "text":"Choose a path...",
-         "choices": [
-               {
-                "text": "Right View",
-                "uniques": "+1 [Science] from all [Faith] buildings for 8 turns",
-                "triggeredUniques": ["[+1 Science] from all [Faith] buildings <for [8] turns>"]
-               },
-               {
-                 "text": "Right Intention",
-                 "uniques":["+3 [Gold] from each Trade Route for 8 turns"],
-                 "triggeredUniques": ["[+3 Gold] from each Trade Route <for [8] turns>"]
-               },
-               {
-                 "text": "Right Speech",
-                 "uniques":["Resting point for Influence with City-States is increased by 30 for 8 turns",
-                  "City-State Influence recovers at twice the normal rate for 8 turns,"],
-                 "triggeredUniques": ["Resting point for Influence with City-States is increased by [30] <for [8] turns>",
-                  "City-State Influence recovers at twice the normal rate <for [8] turns>]"]
-               },
-               {
-                 "text": "Right Action",
-                 "uniques": ["Empire enters a 8-turn Golden Age","+50% [Happiness] [in all cities] for 8 turns"],
-                 "triggeredUniques": ["Empire enters a [8]-turn Golden Age", "[+50]% [Happiness] [in all cities] <for [8] turns>"]
-               },
-               {
-                 "text": "Right Livelihood",
-                 "uniques": ["+25% growth in all cities for 8 turns"],
-                 "triggeredUniques": ["[+25]% growth [in all cities] <for [8] turns>"]
-               },
-               {
-                 "text": "Right Effort",
-                 "uniques": [
-                   "+15% [Production] when constructing Wonder buildings for 8 turns",
-                   "+25% [Production] when constructing Culture buildings for 8 turns",
-                   "+50% [Production] when constructing Faith buildings for 8 turns"],
-                 "triggeredUniques": [
-                   "[+15]% Production when constructing [Wonder] buildings [in all cities] <for [8] turns>",
-                   "[+25]% Production when constructing [Culture] buildings [in all cities] <for [8] turns>",
-                   "[+50]% Production when constructing [Faith] buildings [in all cities] <for [8] turns>"]
-               },
-               {
-                 "text": "Right Mindfulness",
-                 "uniques": ["+1 [Culture] from every specialist for 8 turns"],
-                 "triggeredUniques": ["[+1 Culture] from every specialist [in all cities] <for [8] turns>"]
-               },
-               {
-                 "text": "Right Concentration",
-                 "uniques": ["-50% [Culture] cost of natural border growth for 8 turns",
-                   "-25% [Gold] cost of acquiring tiles for 8 turns"],
-                 "triggeredUniques": ["[-50]% Culture cost of natural border growth [in all cities] <for [8] turns>",
-                   "[-25]% Gold cost of acquiring tiles [in all cities] <for [8] turns>"]
-               },
-               {
-                 "name":"Khmer Boost",
-                 "text":"Choose a Boost!",
-                 "choices":[
-                   {
-                "text": "Food",
-                "triggeredUniques": ["[+10]% [Food] [in all cities] <for [12] turns>"]
-               },
-               {
-                "text": "Faith",
-                "triggeredUniques": ["[+20]% [Faith] [in all cities] <for [12] turns>"]
-               },
-   },
-   {
+      },
+      {
+        "text": "Peaceful Transition.",
+        "uniques": [
+          "Comment [Long term societal divide hinders futher policy and economic development. But the revolution have its main goal achieved]",
+          "Free Social Policy",
+          "Gain a free [Peaceful Bourgeoisie Revolution] [in capital]",
+          "Free [Revolutionaries] appears"
+        ]
+      },
+      {
+        "text": "Both negotiations and conflicts are happening...",
+        "uniques": [
+          "Comment [The revolution...is chaotic. Some cities have peacefully transitioned their power to the new ruling class, while some starts to infight violently. Rebel unit will spawn for 8 turns, but there are overall less side effects. All Revolutionaries gain some basic promotions and the 'Standing Army' gains 5% strength bonus permanently.]",
+          "Gain a free [Chaotic Bourgeoisie Revolution] [in capital]",
+          "[2] free [Revolutionaries] units appear"
+        ]
+      },
+      {
+        "text": "Clean the parasites!",
+        "uniques": [
+          "Comment [The revolution violently shaked the basis of our society, but our society is able to leap toward progressiveness! Rebel unit will spawn for 24 turns and the economy will suffer for a while, but the will of the revolution is well preserved and people are more accepting to societal changes. All Revolutionaries gain many promotions and the 'Standing Army' gains 10% strength bonus permanently.]",
+          "Gain a free [Violent Bourgeoisie Revolution] [in capital]",
+          "[3] free [Revolutionaries] units appear"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Legacy We Inhereited.",
+    "text": "Through out the history of our grand civilisation, what aspect should guide us to the future?",
+    "choices": [
+      {
+        "text": "We have no history!",
+        "uniques": [
+          "Comment [How does one get conservative with no tradition to begin with?]",
+          "Only available <if starting in the [Modern era]>",
+          "Gain a free [How?] [in capital]"
+        ]
+      },
+      {
+        "text": "We have no history!",
+        "uniques": [
+          "Comment [How does one get conservative with no tradition to begin with?]",
+          "Only available <if starting in the [Atomic era]>",
+          "Gain a free [How?] [in capital]"
+        ]
+      },
+      {
+        "text": "We have no history?",
+        "uniques": [
+          "Comment [How does one get conservative with no tradition to begin with?]",
+          "Only available <if starting in the [Information era]>",
+          "Gain a free [How?] [in capital]"
+        ]
+      },
+      {
+        "text": "We have no history...",
+        "uniques": [
+          "Comment [How does one get conservative with no tradition to begin with?]",
+          "Only available <if starting in the [Future era]>",
+          "Gain a free [How?] [in capital]"
+        ]
+      },
+      {
+        "text": "The Gods",
+        "uniques": [
+          "Comment [The polytheistic root of our faith leads us to splendor, we are the most blessed out of all civilisation in the world.]",
+          "Only available <after adopting [Polytheism]>",
+          "Gain a free [Polytheistic Root] [in capital]"
+        ]
+      },
+      {
+        "text": "Our Lord",
+        "uniques": [
+          "Comment [The monotheistic root of our faith leads us to connect with the truth, the faith is our sword and our plow.]",
+          "Only available <after adopting [Monotheism]>",
+          "Gain a free [Monotheistic Root] [in capital]"
+        ]
+      },
+      {
+        "text": "Our will to unite",
+        "uniques": [
+          "Comment [The power of unity has guided us through most of our history, without it, where would we be?]",
+          "Only available <after adopting [Unity]>",
+          "[2] free [Elite Guard] units appear",
+          "Gain a free [National Unity] [in capital]"
+        ]
+      },
+      {
+        "text": "Our wisdom",
+        "uniques": [
+          "Comment [Our civilisation were once master of philosophy. They lived with great wisdom and we shall never give it up.]",
+          "Only available <after adopting [Scholarship]>",
+          "Gain a free [Ancient Wisdom] [in capital]"
+        ]
+      },
+      {
+        "text": "Our honor",
+        "uniques": [
+          "Comment [Our civilisation were once the most honored warriors. They died with honor and we shall never give it up.]",
+          "Only available <after adopting [Militant]>",
+          "Gain a free [Ancient Honor] [in capital]",
+          "Free [Great General] appears"
+        ]
+      },
+      {
+        "text": "Our wealth",
+        "uniques": [
+          "Comment [Our civilisation were once the smartest traders. They left us with all the capital and insights so that we may stay flourished]",
+          "Only available <after adopting [Plutocracy]>",
+          "Gain a free [Ancient Wealth] [in capital]"
+        ]
+      },
+      {
+        "text": "Our noble bloodline",
+        "uniques": [
+          "Comment [Our ruiling class has the purest blood with virtues passing down from father to son, we will stay true to the noble blood.]",
+          "Only available <after adopting [Feudalism]>",
+          "[2] free [Elite Guard] units appear",
+          "Gain a free [Neo Feudalism] [in capital]"
+        ]
+      },
+      {
+        "text": "Our efficient bureaucracy",
+        "uniques": [
+          "Comment [The fair and great system our ancestor has passed onto us is a testament to our longevity.]",
+          "Only available <after adopting [Meritocracy]>",
+          "Gain a free [Bureaucracy Tradition] [in capital]"
+        ]
+      },
+      {
+        "text": "Our divinity",
+        "uniques": [
+          "Comment [Our civilisation has engraved our faith into everything, we are reaching for ultimate goals.]",
+          "Only available <after adopting [Theocracy]>",
+          "Gain a free [Theocracy Asended] [in capital]"
+        ]
+      },
+      {
+        "text": "Our humanitarianistic view",
+        "uniques": [
+          "Comment [We are the pioneer for progressive value to love all human beings. We will spread our care to the world for it to become a better place.]",
+          "Only available <after adopting [Humanism]>",
+          "Gain a free [Nation That Has No Enemies] [in capital]"
+        ]
+      },
+      {
+        "text": "Our glorious empire",
+        "uniques": [
+          "Comment [Flower and Beauty doesnt keep our splendor. Iron and Blood Does!]",
+          "Only available <after adopting [Imperialism]>",
+          "[2] free [Elite Guard] units appear",
+          "Gain a free [Pride and Prejudice] [in capital]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Socialist Revolution!",
+    "text": "As the gap between classes widen, the capitalists started to go overboard with their mistreatment of the working class. After struggles in the politics and countless protest, another revolution has unveiled. The Bourgeoisie had it coming... But how did this went down?",
+    "choices": [
+      {
+        "text": "The Revolution has failed.",
+        "uniques": [
+          "Comment [The revolution is dead. The government of capitalists continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy and 8 turns of remaining Communist Revolt, But the route to Conservatism is unlocked]",
+          "Adopt [Conservatism]",
+          "Remove [Socialism] and refund [100]% of its cost",
+          "Gain a free [Failed Socialist Revolution] [in capital]",
+          "[3] free [Security Company] units appear"
+        ]
+      },
+      {
+        "text": "Socialist Democracy will save the day..",
+        "uniques": [
+          "Comment [Is this even a revolution when at least half of the bourgeoisie are still up on their place? Who knows. The conflict is resolved peacefully but there are long term consequences toward policy and industry development, planned economy is not available in this route.]",
+          "Free Social Policy",
+          "[1] free [Red Army Troop] units appear",
+          "Gain a free [Socialist Democracy Reform] [in capital]"
+        ]
+      },
+      {
+        "text": "The Workers have nothing to lose but their chains, they have a world to win.",
+        "uniques": [
+          "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. And a new nation ruled by workers is built. Gold and food production takes a hit due to the civil war. Civilian Industries now provide bonuses to culture and a bonus to production is now provided to all cities. Newly born red army specialises into tactics. Remaining reactionary revolt continues for 10 turns.]",
+          "[3] free [Red Army Troop] units appear",
+          "Gain a free [Worker's Socialist Revolution] [in capital]"
+        ]
+      },
+      {
+        "text": "Workers, Farmers, Soldiers, Students, all shall be united to bring down the capitalists!",
+        "uniques": [
+          "Comment [Compare to a worker's revolution, this revolution is a combined effort of all proletariats alike, althought that makes the process of revolution much faster, but the organisation of the new country is much more complicated. Culture ,gold and food production takes a bigger hit, but 'Educational Buildings' and 'Agricultural Building' provides production bonus and a culture boost is applied to all cities. Newly born red army specialises into command structure. Remaining reactionary revolt continues for 10 turns.]",
+          "[5] free [Red Army Troop] units appear",
+          "Gain a free [United Socialist Revolution] [in capital]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Anarchist Revolution!",
+    "text": "As the gap between classes widen, the capitalists started to go overboard with their mistreatment of the working class. After struggles in the politics and countless protest, another revolution has unveiled. The Bourgeoisie had it coming... But how did this went down?",
+    "choices": [
+      {
+        "text": "The Revolution has failed.",
+        "uniques": [
+          "Comment [The revolution is dead. The government of capitalists continue their ruling, long term negative impact for any attempt at reforms, short term negative effects on economy and 8 turns of remaining Anarchist Revolt, But the route to Conservatism is unlocked]",
+          "Adopt [Conservatism]",
+          "Remove [Anarchism] and refund [100]% of its cost",
+          "Gain a free [Failed Anarchist Revolution] [in capital]",
+          "[3] free [Security Company] units appear"
+        ]
+      },
+      {
+        "text": "What we proclaim is the Right to Well-Being; Well-Being for All!",
+        "uniques": [
+          "Comment [One revolt, followed by many, the capitalist system died by a thousand cut. There are no oppressions anymore. Culture, Gold, Science, Food production takes a hit due to the civil war and the disbanding of government. Remaining reactionary revolt continues for 15 turns.]",
+          "Comment [Installs Anarchist Ruling in all of your cities,an alternative ruling style ('Political Building') that replaces the intergration. It is free and built instantly, only providing small amount of debuff and needs Commune to be built to nullify its downsides.]",
+          "Adopt [Abolishment of Government]",
+          "[8] free [Modern Guerrilla] units appear",
+          "Gain a free [The Last Revolution] [in capital]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "New economy policies.",
+    "text": "We've rebuilt our government in pursuit to adapt to the new era, but the current economy policy is outdated. We will need a economy reform before we can do anything else.",
+    "choices": [
+      {
+        "text": "Free Market",
+        "uniques": [
+          "Only available <after adopting [Liberalism]>",
+          "Comment [We should believe in the unseen hand and solve all our problems with massive amount of capitals.]",
+          "Gain a free [Free Market Focus] [in capital]"
+        ]
+      },
+      {
+        "text": "Market Interventionism",
+        "uniques": [
+          "Only available <before adopting [Anarchism]>",
+          "Only available <before adopting [Fascism]>",
+          "Only available <before adopting [Socialism]>",
+          "Comment [The unseen hand of market economy is not to be fully relied upon. We should spend effort to properly and use more refined policy to guide our nation's productivity.]",
+          "Gain a free [Market Interventionism] [in capital]"
+        ]
+      },
+      {
+        "text": "Stability First",
+        "uniques": [
+          "Only available <before adopting [Anarchism]>",
+          "Only available <before adopting [Socialism]>",
+          "Only available <before adopting [Liberalism]>",
+          "Comment [Our economy must serve the national unity first and formost, nothing is impossible when our nation is strong and its people united.]",
+          "Gain a free [Corporatism Focus] [in capital]"
+        ]
+      },
+      {
+        "text": "The might of our military overshadows any greed!",
+        "uniques": [
+          "Only available <before adopting [Anarchism]>",
+          "Only available <before adopting [Socialism]>",
+          "Only available <before adopting [Liberalism]>",
+          "Only available <before adopting [Conservatism]>",
+          "Comment [Nothing is beyond the power of winning in a direct conflict. We must direct all our effort into military!]",
+          "Gain a free [Militristic Economy] [in capital]"
+        ]
+      },
+      {
+        "text": "Centralised Economic Planning",
+        "uniques": [
+          "Only available <before adopting [Anarchism]>",
+          "Only available <before adopting [Liberalism]>",
+          "Only available <before adopting [Fascism]>",
+          "Only available <before adopting [Conservatism]>",
+          "Only available <when above [0] [Revolution Oppotunity]>",
+          "Comment [The market economy only benefits capitalists and speculators, our new socialist economy should maximise our development potential and distributes the goods to those who need it.]",
+          "Gain a free [Planned Economy] [in capital]"
+        ]
+      },
+      {
+        "text": "Decentralised Economy",
+        "uniques": [
+          "Only available <before adopting [Fascism]>",
+          "Only available <before adopting [Liberalism]>",
+          "Only available <before adopting [Conservatism]>",
+          "Comment [The economy suffered from monopoly and hierarchy, we should liberate the economy in favour of enabling peoples'agency to work for the masses. With nationalised industries and policies being guiding forces.]",
+          "Gain a free [Cooperative Economy] [in capital]"
+        ]
+      },
+      {
+        "text": "Self-Management Economy",
+        "uniques": [
+          "Only available <before adopting [Fascism]>",
+          "Only available <before adopting [Socialism]>",
+          "Only available <before adopting [Liberalism]>",
+          "Only available <before adopting [Conservatism]>",
+          "Comment [Worker should take the matter into their own hands instead of being some subjects of any greater entities. Mutualism and free will shall reign surpreme.]",
+          "Gain a free [Self-management Focus] [in capital]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Velvet Revolution Era Boost",
+    "text": "Choose a Boost!",
+    "choices": [
+      {
+        "text": "Science",
+        "uniques": ["[+25]% [Science] [in all cities] <for [8] turns>"]
+      },
+      {
+        "text": "Culture",
+        "uniques": ["[+20]% [Culture] [in all cities] <for [8] turns>"]
+      },
+      {
+        "text": "Production",
+        "uniques": ["[+15]% [Production] [in all cities] <for [8] turns>"]
+      },
+      {
+        "text": "Gold",
+        "uniques": ["[+30]% [Gold] [in all cities] <for [8] turns>"]
+      }
+    ]
+  },
+  {
+    "name": "Velvet Revolution Building Boost",
+    "text": "Choose a Boost!",
+    "choices": [
+      {
+        "text": "Science",
+        "uniques": ["[+5]% [Science] [in all cities] <for [12] turns>"]
+      },
+      {
+        "text": "Great Person",
+        "uniques": ["[+10]% Great Person generation [in all cities] <for [12] turns>"]
+      }
+    ]
+  },
+  {
+    "name": "Eightfold Path",
+    "text": "Choose a path...",
+    "choices": [
+      {
+        "text": "Right View",
+        "uniques": ["[+1 Science] from all [Faith] buildings <for [8] turns>"]
+      },
+      {
+        "text": "Right Intention",
+        "uniques": ["[+3 Gold] from each Trade Route <for [8] turns>"]
+      },
+      {
+        "text": "Right Speech",
+        "uniques": [
+          "Resting point for Influence with City-States is increased by [30] <for [8] turns>",
+          "City-State Influence recovers at twice the normal rate <for [8] turns>"
+        ]
+      },
+      {
+        "text": "Right Action",
+        "uniques": [
+          "Empire enters a [8]-turn Golden Age",
+          "[+50]% [Happiness] [in all cities] <for [8] turns>"
+        ]
+      },
+      {
+        "text": "Right Livelihood",
+        "uniques": ["[+25]% growth [in all cities] <for [8] turns>"]
+      },
+      {
+        "text": "Right Effort",
+        "uniques": [
+          "[+15]% [Production] when constructing [Wonder] buildings [in all cities] <for [8] turns>",
+          "[+25]% [Production] when constructing [Culture] buildings [in all cities] <for [8] turns>",
+          "[+50]% [Production] when constructing [Faith] buildings [in all cities] <for [8] turns>"
+        ]
+      },
+      {
+        "text": "Right Mindfulness",
+        "uniques": ["[+1 Culture] from every specialist [in all cities] <for [8] turns>"]
+      },
+      {
+        "text": "Right Concentration",
+        "uniques": [
+          "[-50]% [Culture] cost of natural border growth [in all cities] <for [8] turns>",
+          "[-25]% [Gold] cost of acquiring tiles [in all cities] <for [8] turns>"
+        ]
+      },
+      {
+        "name": "Khmer Boost",
+        "text": "Choose a Boost!",
+        "choices": [
+          {
+            "text": "Food",
+            "uniques": ["[+10]% [Food] [in all cities] <for [12] turns>"]
+          },
+          {
+            "text": "Faith",
+            "uniques": ["[+20]% [Faith] [in all cities] <for [12] turns>"]
+          }
+        ]
+      }
+    ]
+  },
+  {
 		"name": "Comet Sighted",
 		"text": "People are often superstitious and the appearance of a comet has convinced many that the end of times is soon to come. Whether or not this is actually the case, this is bound to cause some instability within the nation.",
 		"choices": [
@@ -1191,10 +1506,9 @@
 			  		   "Double quantity of [Aluminum] produced <for [9999] turns>"] },
 
 			{ "text": "Our coasts are weak and undefended. The Emperor worries that our foes might exploit this weakness. Therefore we will build new defences so that the Emperor can sleep easy at night.",
-			  "uniques": [	 "All newly-trained [Water] units [in all cities] receive the [Yamato] promotion <for [9999] turns>"] }]
+			  "uniques": [	 "All newly-trained [Water] units [in all cities] receive the [Yamato] promotion <for [9999] turns>"]
     }, 
-
-	{
+	  {
         "name": "The Great Prophet",
         "text": "Am Anfang war das Wort, und das Wort war bei Gott, und das Wort war Gott. Am Anfang war es bei Gott. Alles ist durch das Wort geworden und ohne das Wort wurde nichts, was geworden ist. In ihm war das Leben und das Leben war das Licht der Menschen. Und das Licht leuchtet in der Finsternis und die Finsternis hat es nicht erfasst. - Joh. 1,1-5",
         "choices": [
@@ -1557,6 +1871,406 @@
         }
     ]
 },
+//„Militaristic“, „Maritime“, „Cultured“, „Religious“ oder „All“.
+{
+    "name": "Das Heilige Relikt von Sankt Benedikt",
+    "text": "Ein Mönch, gezeichnet von Jahren des Fastens und des Schweigens, steht mit Ehrfurcht gebietender Ruhe in eurer Thronhalle. In seinen von Adern durchzogenen Händen hält er ein schlichtes, aber schweres Reliquiar aus Gold. Seine Stimme ist kaum mehr als ein Flüstern, doch seine Worte hallen in der Stille: 'Ich bringe euch einen Splitter des Holzes, das das Schicksal der Welt trug.' Die Kunde davon, dass das Wahre Kreuz in euren Mauern weilt, verbreitet sich schneller als jede Armee. Schon am nächsten Tag lagern die ersten Pilger vor den Toren, ihre Gebete erfüllen die Luft. Händler preisen Andenken an, Krüppel hoffen auf Wunder, und fromme Bürger spenden ihren letzten Pfennig. Doch mit dem Ruhm kommen auch die Schatten: eifersüchtige Bischöfe aus Nachbarreichen bezweifeln die Echtheit und fordern die Herausgabe, und finstere Eminenzen flüstern von Diebstahl und Ketzerei. Ihr besitzt einen Funken des Göttlichen – doch haltet ihr auch der Macht stand, die er entfesselt?",
+    "civilopediaText": "Reliquien waren im Mittelalter von unschätzbarem Wert. Sie zogen Pilger an, generierten enormen Reichtum durch Spenden und verliehen religiöse Legitimität. Der Besitz bedeutender Reliquien konnte eine kleine Stadt in ein wichtiges religiöses Zentrum verwandeln. Berühmte Beispiele sind die Dornenkrone in der Sainte-Chapelle oder der Heilige Rock in Trier.",
+    "triggeredBy": "era entered the [Medieval era]",
+    "weight": 15,
+    "conditionals": ["<after turn number [200]>", "<before turn number [530]>", "<upon discovering [Theology]>", "Only available <with [25]% chance>"],
+    "onlyOnePerGame": true,
+    "choices": [
+        {
+            "name": "Errichtet ein Benediktinerkloster",
+            "triggeredUniques": [
+                "Free [Monastery] appears",
+                "[+3 Faith] in [Capital]",
+                "[+2 Culture] from [Wine] tiles [in all cities]",
+                "[+2 Culture] from [Incense] tiles [in all cities]",
+                "[+4 Faith] in [Capital] <after adopting [Monasticism]>",
+                "[+2 Science] from every [Monastery] <after adopting [Contemplation]>",
+                "Influence with [Religious] City-States +[20]", //2 Stadtstaaten
+                "[-150 Gold]"
+            ],
+            "text": "Ihr weist die Mönche an, an einem abgeschiedenen Flussufer ein Kloster nach der Regel des Heiligen Benedikt zu errichten: 'Ora et Labora'. Bald füllen die frommen Gesänge die Kapelle, während in den Gärten Heilkräuter gedeihen und auf den umliegenden Hügeln Weinreben gepflanzt werden. Der Duft von Weihrauch und frisch gebackenem Brot liegt in der Luft. Dieses Haus des Gebets und der Gelehrsamkeit wird zu einem Leuchtturm des Glaubens, der Pilger und Gelehrte anzieht und das Land durch Fleiß und Frömmigkeit segnet."
+        },
+        {
+            "name": "Ruft zum heiligen Krieg",
+            "triggeredUniques": [
+                "Free [Knight] appears",
+                "Free [Pikeman] appears",
+                "[+20]% Strength <when attacking> <for [Military] units> <for [25] turns>",
+                "[This Unit] gains the [Holy Warriors] promotion",
+                "[+30]% Strength <when attacking> <for [Military] units> <for [25] turns> <after adopting [Just War]>",
+                "Free [Knight] appears <after adopting [Religious Orders]>",
+                "[+4 Faith] <for [20] turns>",
+                "[-75 Gold]"
+            ],
+            "text": "Ihr hebt das Reliquiar hoch, sodass es in der Sonne blitzt, und erklärt vor euren Rittern: 'Gott selbst hat uns dieses Zeichen gegeben! Sein Wille ist, dass wir dieses heilige Pfand mit Schwert und Schild verteidigen – und den Ungläubigen seinen Ruhm zeigen!' Ein gellender Schlachtruf erschallt: 'Deus Vult!' Die Nachricht von der göttlichen Gunst macht eure Soldaten zu furchtlosen, von blindem Eifer beseelten Kriegern. Sie stürmen in den Kampf, überzeugt, dass keine irdische Klinge sie verwunden kann, solange sie im Namen des Kreuzes kämpfen."
+        },
+        {
+            "name": "Etabliert Reliquienhandel",
+            "triggeredUniques": [
+                "[+200 Gold]",
+                "[+2 Gold] from [Trade Route] <for [30] turns>",
+                "[+1 Gold] from every [4] Followers [in this city] <for [25] turns>",
+                "[+3 Gold] from every [4] Followers [in this city] <for [25] turns> <after adopting [Tithe]>",
+                "[+1 Gold] from [Shrine] buildings <after adopting [Indulgences]>",
+                "[-2 Faith] in [Capital] <for [10] turns>"
+            ],
+            "text": "Ihr erkennt den weltlichen Wert des Himmelsgeschenks. Geschickt lässt ihr winzige Partikel des Holzes in kunstvolle Amulette fassen und verkauft sie an gläubige Adlige und reiche Händler. Bald ziehen Karawanen, beladen mit diesen 'gesegneten' Objekten, in alle Himmelsrichtungen. Die Staatskasse füllt sich prächtig, doch in den stillen Momenten fragt ihr euch, ob das Flüstern der Händler den frommen Gesang der Pilger übertönt und ob ihr damit nicht die Heiligkeit des Relikts in bloße Ware verwandelt."
+        },
+        {
+            "name": "Gründet eine Kathedralschule",
+            "triggeredUniques": [
+                "Free [Cathedral] appears",
+                "[+30 Science]",
+                "[+2 Science] in [Capital] <for [30] turns>",
+                "May buy [Library] buildings with [Faith] [in all cities] <for [50] turns>",
+                "May buy [University] buildings with [Faith] [in all cities] <for [50] turns>",
+                "[+3 Science] from [Cathedral] buildings <after adopting [Scholasticism]>",
+                "[+2 Science] from [Temple] buildings <after adopting [Divine Inspiration]>",
+                "[+5 Faith]",
+                "[-100 Gold]"
+            ],
+            "text": "An die Seite der neu erbauten Kathedrale gründet ihr eine Schule, in der die klügsten Köpfe darüber streiten, wie sich göttliche Offenbarung und menschliche Vernunft vereinen lassen. Das Relikt thront im Altarraum und inspiriert Gelehrte zu erstaunlichen Erkenntnissen in Philosophie, Astronomie und Medizin. Hier, unter den steinernen Gewölben, wird Glaube nicht blind gelebt, sondern mit dem Scharfsinn des Verstandes erforscht – eine Brücke zwischen Himmel und Erde."
+        },
+        {
+            "name": "Organisiert Pilgerwallfahrt",
+            "triggeredUniques": [
+                "[+100 Gold]",
+                "Free [Pagoda] appears",
+                "[+2 Happiness] <for [30] turns>",
+                "[+2 Culture] in [Capital] <for [25] turns>",
+                "[+1 Faith] [in all cities] <for [30] turns>",
+                "[+3 Faith] [in all cities] <for [30] turns> <after adopting [Pilgrimage]>",
+                "[+2 Culture] from [Pagoda] buildings <after adopting [Sacred Sites]>",
+                "[-30 Gold]"
+            ],
+            "text": "Ihr ordnet an, eine prächtige Pagode als Herberge für die frommen Scharen zu bauen. Die Straßen füllen sich mit Menschen aus allen Ländern, in bunten Gewändern und mit staubigen Füßen. Sie bringen nicht nur ihre Gebete, sondern auch fremde Sprachen, exotische Waren und neue Ideen mit. Die Stadt verwandelt sich in einen schillernden Schmelztiegel der Kulturen, belebt durch den Strom der Gläubigen, die alle das eine Ziel haben: einen Moment der Gnade vor dem heiligen Splitter zu erflehen."
+        },
+        {
+            "name": "Übergebt es dem Heiligen Stuhl",
+            "triggeredUniques": [
+                "[+40] Influence with [all] City-States <of type [Religious]>",
+                "[+15] Influence resting point with City-States <of type [Religious]> <for [50] turns>",
+                "[+25] Influence resting point with City-States <of type [Religious]> <for [50] turns> <after adopting [Papal Primacy]>",
+                "[+20] Influence with [all] City-States <after adopting [Church Authority]>",
+                "Free [Great Prophet] appears <with [40]% chance>",
+                "[+2 Faith] [in all cities] <for [20] turns>",
+                "Triggers the following global alert: [[civName] übergibt heiliges Relikt an die Kirche!]"
+            ],
+            "text": "Ihr beschließt, die Bürde und die Versuchung der Macht abzulegen. In einer prunkvollen Prozession überbringt ihr das Reliquiar dem Papst in Rom. Diese Geste der Demut und des Gehorsams findet in der gesamten Christenheit widerhallenden Ruhm. Ihr erntet den undankbaren Respekt des Kirchenstaates und die Gunst frommer Stadtstaaten, die in euch einen wahren Diener des Glaubens sehen. Das Relikt ist fort, doch der Ruhm eurer Frömmigkeit bleibt."
+        },
+        {
+            "name": "Bewahrt es als Reichsreliquie",
+            "triggeredUniques": [
+                "Free [Shrine] appears",
+                "[+2 Faith] in [Capital]",
+                "[+1]% Production [in [Capital]] <for [40] turns>",
+                "[+2]% Production [in [Capital]] <for [40] turns> <after adopting [Religious Community]>",
+                "[+3 Faith] from [Shrine] buildings <after adopting [Ancestor Worship]>",
+                "[+10]% Golden Age length",
+                "[+1 Happiness] <for [40] turns>"
+            ],
+            "text": "Ihr erklärt das Relikt zum unveräußerlichen Symbol eurer Dynastie und errichtet dafür einen eigenen Schrein in der Palastkapelle. Es wird zum Mittelpunkt des Hoflebens: Eide werden darauf geschworen, Neugeborene werden unter seinem Segen getauft, und vor jeder wichtigen Entscheidung sucht ihr seinen Rat in stillem Gebet. Das Wissen, das Heilige im eigenen Haus zu bewahren, durchdringt das Volk mit einem tiefen Gefühl der Bestimmung und Einheit. Es ist nicht nur ein Relikt, es wird das Herz eures Reiches."
+        }
+    ]
+  },
+  {
+    "name": "Gewitter über der Burgfeste",
+    "weight": 15,
+    "conditions": [
+      "<during the [Medieval era]>",
+      "<during the [Renaissance era]>",
+      "<with 3% chance>"
+    ],
+    "text": "Ihr steht auf dem steinernen Wehrgang der Burg eures Herrn, das grobe Mauerwerk feucht und kalt unter den Fingern. Seit Tagen schon hängt eine bleierne Schwüle über dem Tal, und nun bricht sich das Unwetter mit ungeahnter Wucht Bahn. Donner grollen, nicht wie ein fernes Echo, sondern wie ein zorniger Hammerschlag gegen die Türme der Feste. Der Regen peitscht euch ins Gesicht, und der Wind heult in den Schießscharten wie eine Seele in Qual...",
+    "choices": [
+      {
+        "text": "Verstärke sofort den Archivturm",
+        "uniques": [
+          "Only available <when above [100] [Gold]>",
+          "Gain [-125] [Gold] <(modified by game speed)>",
+          "Instantly provides [3] [Influence]",
+          "Play [construction] sound",
+          "Comment [Deine Weitsicht verhindert das Unglück. Der Turm wird rechtzeitig gesichert, noch bevor der Blitz einschlägt. Leben und Dokumente bleiben erhalten.]"
+        ]
+      },
+      {
+        "text": "Bringe die Archive in Sicherheit",
+        "uniques": [
+          "Only available <when above [50] [Gold]>",
+          "Gain [-50] [Gold] <(modified by game speed)>",
+          "[-10]% [Science] [in capital] <for [5] turns>",
+          "Comment [Die wichtigsten Dokumente werden verlagert, doch die Arbeit wird gestört.]",
+          "Triggers a [Blitzeinschlag an der Burg] event <with 50% chance>"
+        ]
+      },
+      {
+        "text": "Stelle zusätzliche Wachen auf und bereite dich auf den Notfall vor",
+        "uniques": [
+          "Gain [-25] [Gold] <(modified by game speed)>",
+          "Free [Spearman] appears",
+          "Comment [Wachen werden postiert, doch sie können gegen die Gewalt der Natur wenig ausrichten.]",
+          "Triggers a [Blitzeinschlag an der Burg] event <with 75% chance>"
+        ]
+      },
+      {
+        "text": "Ignoriere die abergläubischen Warnungen",
+        "uniques": [
+          "Triggers a [Blitzeinschlag an der Burg] event <with 90% chance>",
+          "Comment [Du weist die Ängste des alten Wächters zurück. Ob dies weise war, wird sich zeigen ...]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blitzeinschlag an der Burg",
+    "text": "Plötzlich – ein gleißender Blitz, ein ohrenbetäubender Krach, der die Knochen erzittern lässt. Kein ferner Einschlag auf einem Feld: Das Donnern kommt direkt aus den Burgmauern, begleitet vom Grollen einstürzenden Gemäuers und einem gellenden, doch rasch abbrechenden Schrei. Ein gleißender Blitz erhellt die Nacht, als er den Archivturm trifft. Die alten Holzbalken fangen sofort Feuer. Schlimmer noch: Der Mechanismus des eisernen Fallgatters ist beschädigt – es kracht herab und schließt Menschen im brennenden Archiv ein! Ihr wisst sofort, was das bedeutet. Im Hauptturm lagern nicht nur die Vorräte für den Winter, sondern auch die Kasse eures Lehnsherrn und – weitaus wichtiger – das Archiv mit den Lehnsbriefen, Steuerverzeichnissen und dem Siegel. Der Verlust dieser Urkunden wäre eine Katastrophe, die die Herrschaft eures Grafen auf wackelige Füße stellen würde. Der Ruf nach Wasser und Männern hallt durch die Gänge, doch euer Burgvogt, ein gestandener Krieger mit einer Narbe quer über der Wange, stürzt aus dem Wachhaus zu euch. Sein Mantel flattert im Sturm. Er packt euch am Arm, seine Stimme ein heiseres Flüstern gegen das Tosen: „Beim Blut Christi! Der Blitz! Er hat den Hauptturm getroffen! Das Archiv! Hört zu! Das Dach des Archivs brennt, trotz des Regens! Das alte Holz fängt schnell Feuer. Und schlimmer noch... der Blitzeinschlag muss die Fallgittermechanik im Turm beschädigt haben. Das Hauptgitter vor dem Archiv ist heruntergefallen und blockiert den Zugang vom Treppenhaus. Wer im Archiv war, ist gefangen – und das Feuer frisst sich von oben nach unten.“ Er mustert euch, sein Blick sucht nach einem Funken Verstand in dieser chaotischen Situation. Ihr kennt die alten Gemäuer besser als die meisten. Es gibt doch diesen vergessenen Abortschacht, der von den unteren Lagerräumen bis zur Latrine im ersten Stock des Turms führte. Der Schacht sollte längst zugemauert sein, aber Meister Konrad meinte neulich, er habe bei Reparaturen eine lose Steinplatte entdeckt. Vielleicht... vielleicht ist das ein Weg, am Gitter vorbei in das Archiv zu gelangen. Doch er ist eng, finster und einsturzgefährdet. Oder wir versuchen, das schwere Fallgitter mit Brecheisen und aller Manneskraft von außen aufzuwuchten – aber das kostet Zeit, die wir nicht haben.“",
+    "choices": [
+      {
+        "text": "Nutze den geheimen Schacht, von dem Meister Conrad sprach",
+        "uniques": [
+          "Only available <when above [0] [Influence]>",
+          "Instantly consumes [1] [Influence]",
+          "Triggers a [Versuch am geheimen Schacht] event"
+        ]
+      },
+      {
+        "text": "Lass das Fallgatter mit aller Kraft aufbrechen",
+        "uniques": [
+          "Triggers a [Rettung mit roher Gewalt] event"
+        ]
+      },
+      {
+        "text": "Schicke Späher, um die brennenden Bereiche zu erkunden",
+        "uniques": [
+          "Comment [Eine schnelle Aufklärung zeigt die Ausbreitung des Feuers. Nun musst du eine schwere Entscheidung treffen.]",
+          "Triggers a [Entscheidung beim Archivbrand] event"
+        ]
+      },
+      {
+        "text": "Organisiere eine Eimerkette vom Brunnen",
+        "uniques": [
+          "Only available <when above [20] [Gold]>",
+          "Gain [-25] [Gold] <(modified by game speed)>",
+          "[-1] population in a random city <with 50% chance>",
+          "Comment [Die Eimerkette kämpft tapfer, doch das Feuer breitet sich zu schnell aus. Einige Dokumente werden gerettet, viele gehen verloren.]",
+          "Gain [50] [Science] <(modified by game speed)> <with 50% chance>",
+          "Gain [-100] [Science] <(modified by game speed)> <with 50% chance>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Versuch am geheimen Schacht",
+    "text": "Du erinnerst dich an Meister Conrads Hinweis auf einen losen Stein im alten Latrinenschacht. Ein verzweifeltes Wagnis – der Schacht ist eng, dunkel und könnte jeden Moment einstürzen. Aber er könnte das Fallgatter umgehen.",
+    "choices": [
+      {
+        "text": "Führe die Rettung persönlich an",
+        "uniques": [
+          "Only available <when above [2] [Influence]>",
+          "Instantly consumes [2] [Influence]",
+          "Play [fortify] sound",
+          "Comment [Ihr findet tatsächlich die lose Steinplatte. Der Gestank in dem engen Schacht ist beißend, aber ihr erreicht das Archiv. Gegen alle Widrigkeiten gelingt es dir, den Schacht zu passieren und alle zu retten und die wichtigsten Urkunden können geborgen werden!]",
+          "Gain [30] [Culture] <(modified by game speed)>",
+          "Gain [100] [Gold] <(modified by game speed)>",
+          "Gain [100] [Science] <(modified by game speed)>",
+          "[+10]% [Culture] [in capital] <for [10] turns>",
+          "Empire enters a [3]-turn Golden Age"
+        ]
+      },  
+      ///////////////////
+       "text": "Der Schacht ist instabil und bricht hinter euch zusammen. Zwei Männer werden verletzt und ihr kommt nicht durch. Wertvolle Zeit ist verloren.",
+                "consequences": {
+                  "prestige": -10,
+                  "gold": -30,
+                  "relationshipWithLord": "worsened"
+      //////////////////
+      {
+        "text": "Schicke deine besten Männer hindurch",
+        "uniques": [
+          "Comment [Der Schacht stürzt teilweise ein, doch deine Männer retten die eingeschlossenen Gelehrten.]",
+          "Gain [50] [Science] <(modified by game speed)> <with 60% chance>",
+          "Gain [-25] [Science] <(modified by game speed)> <with 40% chance>",
+          "[-1] population in a random city <with 40% chance>",
+          "Free [Knight] appears <with 60% chance>"
+        ]
+      },
+      {
+        "text": "Schicke Verbrecher mit dem Versprechen auf Begnadigung",
+        "uniques": [
+          "Only available <if [Courthouse] is constructed>",
+          "Comment [Die Verurteilten arbeiten verzweifelt für ihre Freiheit. Einige sterben als Helden, andere fliehen mit gestohlenem Gold.]",
+          "Gain [-50] [Gold] <(modified by game speed)> <with 50% chance>",
+          "Gain [75] [Science] <(modified by game speed)> <with 50% chance>",
+          "Gain [5] [Happiness] <with 25% chance>",
+          "Gain [-5] [Happiness] <with 25% chance>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rettung mit roher Gewalt",
+    "text": "Der Burgvogt sammelt alle kräftigen Männer – Schmiede, Wachen, Stallknechte. Mit Eisenstangen und purer Kraft stürzen sie sich auf das blockierte Fallgatter, während dichter Rauch aufsteigt.",
+    "choices": [
+      {
+        "text": "Versprich große Belohnungen für Erfolg",
+        "uniques": [
+          "Only available <when above [150] [Gold]>",
+          "Gain [-150] [Gold] <(modified by game speed)>",
+          "Comment [Gold motiviert selbst die Zögerlichen. Das Fallgatter gibt im letzten Moment nach!]",
+          "Gain [75] [Science] <(modified by game speed)> <with 80% chance>",
+          "Gain [-50] [Science] <(modified by game speed)> <with 20% chance>",
+          "[+5] [Happiness] <for [10] turns> <with 80% chance>"
+        ]
+      },
+      {
+        "text": "Inspiriere sie mit Pflicht und Ehre",
+        "uniques": [
+          "Only available <when above [3] [Culture]>",
+          "Comment [Deine Worte bewegen ihre Herzen. Sie arbeiten wie einer, doch die Zeit drängt ...]",
+          "Gain [25] [Culture] <(modified by game speed)>",
+          "Gain [50] [Science] <(modified by game speed)> <with 70% chance>",
+          "Gain [-75] [Science] <(modified by game speed)> <with 30% chance>"
+        ]
+      },
+      {
+        "text": "Nutze die Belagerungsgeräte der Burg",
+        "uniques": [
+          "Only available <if [Castle] is constructed>",
+          "Comment [Der Rammbock, eigentlich für Feinde gedacht, erweist sich als nützlich. Das Tor fällt, doch die Decke ist geschwächt ...]",
+          "Gain [100] [Science] <(modified by game speed)> <with 60% chance>",
+          "[-2] population in a random city <with 40% chance>",
+          "Gain a free [Slum] [in capital] <with 40% chance>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nach dem Hauptbrandherd fragen",
+    "text": "Bevor ihr euch in die Gefahr stürzt, muss man wissen, was im Archiv brennt. Ist es nur das Dachgebälk, oder hat der Blitzschlag die Regale mit den alten Pergamenten und den Holzboden selbst entzündet? Vielleicht ist die Rettung der Urkunden aussichtslos, und alle Kraft sollte auf die Evakuierung der Kasse und die Rettung der Eingeschlossenen gelegt werden. Eine kurze Erkundung zeigt: Das Feuer frisst sich schnell durch das trockene Holz der Regale. Die Urkunden sind bereits verloren, aber die Metalltruhe mit der Kasse und die Eingeschlossenen könnten noch gerettet werden... Der Regen prasselt unerbittlich weiter, aber aus der Richtung des Turms steigt jetzt doch eine dunkle, beißende Rauchfahne auf, die sich mit dem Qualm brennenden Holzes vermischt. Die Entscheidung ist euer.",
+    "choices": [
+      {
+        "text": "Rette die Menschen um jeden Preis",
+        "uniques": [
+          "Comment [Menschenleben sind heilig. Die Schreiber werden sich ewig an deine Entscheidung erinnern.]",
+          "Gain [25] [Culture] <(modified by game speed)>",
+          "Gain [-100] [Gold] <(modified by game speed)>",
+          "[+1] population [in capital]",
+          "[+10]% [Science] [in capital] <for [20] turns>",
+          "Gain [5] [Happiness]"
+        ]
+      },
+      {
+        "text": "Sichere die Steuerunterlagen und die Schatztruhe",
+        "uniques": [
+          "Comment [Das Reich braucht Gold zum Überleben. Die Schreie werden dich verfolgen ...]",
+          "Gain [-20] [Culture] <(modified by game speed)>",
+          "Gain [200] [Gold] <(modified by game speed)>",
+          "[-1] population in a random city",
+          "Gain [-5] [Happiness]",
+          "Gain a free [Unjust Ruling] [in capital] <if [Unjust Ruling] is constructed by anybody>"
+        ]
+      },
+      {
+        "text": "Teile die Kräfte auf – versuche beides! (extrem gefährlich)",
+        "uniques": [
+          "Only available <when above [5] [Influence]>",
+          "Instantly consumes [5] [Influence]",
+          "Triggers a [Verzweifeltes Wagnis] event"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Verzweifeltes Wagnis",
+    "text": "Deine Kräfte teilen sich – die eine Hälfte bildet eine Menschenkette zu den eingeschlossenen Schreibern, die andere stürzt sich auf die Truhe. Die Flammen lodern höher, Balken brechen über dir ...",
+    "choices": [
+      {
+        "text": "Das Glück ist mit den Kühnen!",
+        "uniques": [
+          "Comment [Gegen alle Wahrscheinlichkeit gelingt beides! Dein Name wird Legende sein!]",
+          "Gain [50] [Culture] <(modified by game speed)> <with 30% chance>",
+          "Gain [150] [Gold] <(modified by game speed)> <with 30% chance>",
+          "Empire enters a [5]-turn Golden Age <with 30% chance>",
+          "Free [Great General] appears <with 30% chance>",
+          "Comment [Die Decke stürzt ein! Eine Katastrophe trifft alle!]",
+          "Gain [-30] [Culture] <(modified by game speed)> <with 70% chance>",
+          "Gain [-150] [Gold] <(modified by game speed)> <with 70% chance>",
+          "[-2] population in a random city <with 70% chance>",
+          "Gain [-10] [Happiness] <with 70% chance>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nach dem Blitzschlag",
+    "text": "Bei Tagesanbruch zeigt sich das volle Ausmaß der Zerstörung. Der Archivturm raucht noch, und deine Entscheidung während der Krise prägt nun, wie dein Volk deine Führung sieht.",
+    "choices": [
+      {
+        "text": "Baue stärker wieder auf als zuvor",
+        "uniques": [
+          "Only available <when above [200] [Gold]>",
+          "Gain [-200] [Gold] <(modified by game speed)>",
+          "Gain a free [Library] [in capital]",
+          "Comment [Aus der Asche erhebt sich ein neues Archiv, aus Stein gebaut mit bronzenen Blitzableitern.]"
+        ]
+      },
+      {
+        "text": "Ehre die Gefallenen",
+        "uniques": [
+          "Only available <when below [-1] [Happiness]>",
+          "Gain [10] [Happiness]",
+          "Gain [50] [Culture] <(modified by game speed)>",
+          "Comment [Ein Denkmal wird errichtet. Die Tragödie wird zur Geschichte von Heldenmut.]"
+        ]
+      },
+      {
+        "text": "Lerne aus dieser Katastrophe",
+        "uniques": [
+          "Gain [100] [Science] <(modified by game speed)>",
+          "[+20]% [Science] [in capital] <for [15] turns>",
+          "Comment [Gelehrte studieren den Blitzeinschlag und erweitern das Wissen der Naturphilosophie.]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Die Initiative des Burgvogts",
+    "text": "Tage nach dem Blitzeinschlag tritt der Burgvogt mit einem Vorschlag an dich heran: 'Mein Herr, die Katastrophe hat unsere Schwächen offenbart. Ich schlage vor, neue Protokolle für den Notfall einzuführen.'",
+    "choices": [
+      {
+        "text": "Gründe eine permanente Feuerwehr",
+        "uniques": [
+          "Only available <when above [50] [Gold]>",
+          "Gain [-50] [Gold] <(modified by game speed)>",
+          "Gain a free [Aqueduct] [in capital] <if [Aqueduct] is not constructed>",
+          "[+15]% [Production] [in capital] <for [20] turns>",
+          "Comment [Eine ständige Einheit steht bereit. Deine Stadt wird sicherer und effizienter.]"
+        ]
+      },
+      {
+        "text": "Richte Notfallvorräte ein",
+        "uniques": [
+          "Gain a free [Granary] [in capital] <if [Granary] is not constructed>",
+          "[+15]% growth [in capital] <for [20] turns>",
+          "Comment [Strategische Vorräte werden in der Burg verteilt.]"
+        ]
+      },
+      {
+        "text": "Führe feste Verteidigungsprotokolle ein",
+        "uniques": [
+          "Only available <if [Barracks] is constructed>",
+          "All newly-trained [Close Combat] units [in capital] receive the [Drill I] promotion",
+          "Gain [25] [Culture] <(modified by game speed)>",
+          "Comment [Neue Ausbildungspläne bereiten auf jede Notlage vor.]"
+        ]
+      }
+    ]
+  },
 {
   "name": "Die drei Stände",
   "text": "Eure Hoheit, das Reich wird von drei Säulen getragen: Dem Klerus, der für Eure Seele betet, dem Adel, der Euer Land mit dem Schwert verteidigt, und dem Bauernstand, der alle mit seiner Hände Arbeit ernährt. Doch das fragile Gleichgewicht dieser Stände gerät ins Wanken. Ein falsches Wort, eine unbedachte Geste – und die Ordnung, auf der Eure Macht gründet, könnte in Chaos und Aufruhr versinken.",
@@ -2750,31 +3464,31 @@
     ]
   },
   {
-  "name": "Das Letzte Ultimatum",
-  "notification": "Der Inquisitor steht ein letztes Mal vor Eurem Thron, sein Gesicht eine Maske aus abgebrühter Gier und fanatischem Wahnsinn. 'Dies ist mein letztes Angebot', zischt er mit heiserer Stimme. 'Gebt mir genug Gold, um als Fürst zu leben, oder ich werde mit meinem letzten Atemzug jedes schmutzige Geheimnis enthüllen - jeden bestochenen Richter, jede vertuschte Untat, jede Leiche in Euren Verliesen. Die Beweisstücke liegen bereits bei Männern, die nur auf mein Zeichen warten. Sollte mir auch nur ein Haar gekrümmt werden...' Die unausgesprochene Drohung hängt wie Gift in der Luft. Dies ist der finale Akt Eures teuflischen Paktes.",
-  "weight": 100,
-  "uniques": [
-    "Comment [DAS FINALE DUETT - Die Melodie der Erpressung erklingt zum letzten Mal. Welchen Akkord wählt Ihr?]"
-  ],
-  "choices": [
-    {
-      "text": "Das Schweigen für immer in Gold aufwiegen - eine fürstliche Abfindung.",
-      "triggeredUniques": [
-        "Only available <when above [1500] [Gold]>",
-        "Instantly consumes [1500] [Gold]",
+    "name": "Das Letzte Ultimatum",
+    "notification": "Der Inquisitor steht ein letztes Mal vor Eurem Thron, sein Gesicht eine Maske aus abgebrühter Gier und fanatischem Wahnsinn. 'Dies ist mein letztes Angebot', zischt er mit heiserer Stimme. 'Gebt mir genug Gold, um als Fürst zu leben, oder ich werde mit meinem letzten Atemzug jedes schmutzige Geheimnis enthüllen - jeden bestochenen Richter, jede vertuschte Untat, jede Leiche in Euren Verliesen. Die Beweisstücke liegen bereits bei Männern, die nur auf mein Zeichen warten. Sollte mir auch nur ein Haar gekrümmt werden...' Die unausgesprochene Drohung hängt wie Gift in der Luft. Dies ist der finale Akt Eures teuflischen Paktes.",
+    "weight": 100,
+    "uniques": [
+      "Comment [DAS FINALE DUETT - Die Melodie der Erpressung erklingt zum letzten Mal. Welchen Akkord wählt Ihr?]"
+    ],
+    "choices": [
+      {
+        "text": "Das Schweigen für immer in Gold aufwiegen - eine fürstliche Abfindung.",
+        "triggeredUniques": [
+          "Only available <when above [1500] [Gold]>",
+          "Instantly consumes [1500] [Gold]",
         
-        "Comment [DIE RECHNUNG IST BEGLICHEN - Der Schatten weicht, zurück bleibt die leere Schatzkammer und der fahle Beigeschmack der Erniedrigung.]",
-        "Remove [Dark Secret] [in capital]",
-        "Remove [Blackmail] [in capital]",
+          "Comment [DIE RECHNUNG IST BEGLICHEN - Der Schatten weicht, zurück bleibt die leere Schatzkammer und der fahle Beigeschmack der Erniedrigung.]",
+          "Remove [Dark Secret] [in capital]",
+          "Remove [Blackmail] [in capital]",
         
-        "[-10 Happiness] [in all cities] <for [10] turns>",
-        "Comment [Das Geflüster auf den Märkten verrät es: Man kauft sich nicht frei von Schande, man mietet sie nur für eine Weile.]",
+          "[-10 Happiness] [in all cities] <for [10] turns>",
+          "Comment [Das Geflüster auf den Märkten verrät es: Man kauft sich nicht frei von Schande, man mietet sie nur für eine Weile.]",
         
-        "[+10]% [Culture] [in all cities] <for [30] turns>",
-        "Comment [Die Erleichterung, endlich frei atmen zu können, gebiert eine neue Kreativität - doch zu welchem Preis?]",
+          "[+10]% [Culture] [in all cities] <for [30] turns>",
+          "Comment [Die Erleichterung, endlich frei atmen zu können, gebiert eine neue Kreativität - doch zu welchem Preis?]",
         
-        "Triggers the following global alert: [💰 Der Inquisitor verlässt [Our Civilization] mit einem Königreich im Gepäck. Die Geheimnisse sind gekauft... doch die Erinnerung an die Demütigung bleibt.]"
-      ]
+          "Triggers the following global alert: [💰 Der Inquisitor verlässt [Our Civilization] mit einem Königreich im Gepäck. Die Geheimnisse sind gekauft... doch die Erinnerung an die Demütigung bleibt.]"
+        ]
     },
     {
       "text": "Das Messer zückend - beendet die Bedrohung auf ewig und in Stille.",
@@ -2892,6 +3606,32 @@
       "text": "Ihr nutzt das Turnier als eine gewaltige Musterung für eure Armee. Den siegreichsten Rittern, deren Rüstungen von den Schlägen der Kontrahenten gezeichnet sind, bietet ihr goldenen Sporn und einen Platz in eurer Elitegarde an. Ihre unbestrittene Kampfkunst macht sie zu gefürchteten Kommandeuren, und ihre Techniken werden zum Standard für alle eure berittenen Einheiten."
     },
     {
+      "name": "Macht es zu einem diplomatischen Großereignis",
+      "triggeredUniques": [
+        "[+35] Influence with [3] random City-States",
+        "[+15] Influence with [2] random City-States",
+        "Meet [2] random minor Civs",
+        "Triggers the following global alert: [Ein prächtiges Turnier in [civName] stärkt diplomatische Bande!]",
+        "[+2 Gold] from [all] Trade Routes <for [35] turns>",
+        "Gain a free [Caravan] in [Capital]",
+        "[-120 Gold]"
+      ],
+      "text": "Botschafter und Adlige aus fernen Ländern sind beeindruckt! Neue Handelsabkommen werden geschlossen und alte Fehden beigelegt. Eure diplomatische Position ist gestärkt. Die Tribünen werden zu Schauplätzen der Diplomatie, wo zwischen den Lanzenstößen Verträge besiegelt werden. Der Duft exotischer Gewürze in der Luft vermischt sich mit dem Geruch von Pferden und poliertem Stahl, ein Sinnbild für die neuen Verbindungen, die über Kontinente hinweg geknüpft werden. Euer Hof wird zum Nabel der Welt, an dem sich das Schicksal ganzer Reiche mit einem Händedruck entscheidet."
+    },
+    {
+      "name": "Ladet den legendären Turnierritter Sir Guillaume ein",
+      "triggeredUniques": [
+        "Free [Great General] appears",
+        "[This Unit] gains the [Great Generals II] promotion",
+        "[+2] Movement <for [Knight] units>",
+        "[Wounded] units gain the [Shock I] promotion",
+        "[Wounded] units gain the [Drill I] promotion <with [50]% chance>",
+        "[+15]% Strength <for [Mounted] units> <for [25] turns>",
+        "[-175 Gold]"
+      ],
+      "text": "Sir Guillaume 'der Marschall' nimmt euer Angebot an! Seine revolutionären Kampftechniken und Trainingsmethoden verwandeln eure Kavallerie in eine unaufhaltsame Streitmacht. Als der alte Recke persönlich in die Schranken steigt, wird jede seiner Bewegungen zur Lehrstunde. Junge Ritter beobachten atemlos, wie er mit fast schon prophetischer Voraussicht die Schwachstellen jeder Rüstung erkennt. In den Abendstunden weiht er eure Kommandeure in die Geheimnisse der taktischen Führung ein - Lehren, die in keinem Buch stehen und nur von einem Mann weitergegeben werden können, der auf hundert Schlachtfeldern überlebt hat. Sein Erbe wird noch Generationen nachhallen."
+    },
+    {
       "name": "Ladet fremde Ritterorden ein",
       "triggeredUniques": [
         "[+25] Influence with [2] random City-States",
@@ -2902,14 +3642,35 @@
       "text": "Ihr sendet Boten zu den großen geistlichen Ritterorden - den Templern, Johannitern und Deutschrittern. Deren Ankunft, gekennzeichnet durch die mächtigen Kreuzzeichen auf ihren weißen Mänteln, verleiht dem Turnier eine fast heilige Aura. Die Gespräche in ihren Lagern führen zu wertvollen Allianzen, die euren Einfluss in der christlichen Welt festigen und neue Handelswege eröffnen."
     },
     {
-      "name": "Der königliche Champion kämpft",
+      "name": "Der Kronprinz kämpft um Ruhm und Ehre",
       "triggeredUniques": [
-        "Free [Great General] appears",
-        "[+30 Culture]",
-        "[+1 Happiness]",
-        "[-75 Gold]"
+        "Free [Knight] appears",
+        "[This Unit] gains the [Great Generals I] promotion",
+        "[This Unit] gains the [Drill II] promotion",
+        "[This Unit] gains the [Shock I] promotion",
+        "[This Unit] gains [25] Experience",
+        "[+3] Movement <for [This Unit]>",
+        "[+75 Culture]",
+        "[+1 Happiness] <for [50] turns>",
+        "[-75 Gold]",
+        "Comment: Der Kronprinz wird zur Legende - wenn er überlebt!",
+        "[-1 Population] in [Capital] <with [15]% chance>"
       ],
-      "text": "Euer eigener Champion, der unumstrittene beste Kämpfer des Reiches, steigt selbst in die Arena. In einem atemberaubenden Finale besiegt er einen Herausforderer nach dem anderen. Sein Sieg ist so überwältigend, dass sein Ruhm nicht nur in allen Tavernen des Landes besungen wird, sondern auch erfahrene Soldnerführer und taktische Genies an euren Hof lockt, die unter seiner Fahne dienen wollen."
+      "text": "Euer Thronfolger, reitet selbst in die Arena! Jeder Lanzenstoß ist ein Wagnis, das Eure Dynastie krönen oder zerstören kann. Das Volk hält den Atem an, als er Gegner um Gegner aus dem Sattel hebt - jede siegreiche Tjost schreibt sich in die kollektive Erinnerung ein und verwandelt den Prinzen vor ihren Augen in eine lebende Legende. Doch mit jedem Triumph wächst auch die Angst in Eurem Herzen, denn der Klang zersplitternder Lanzen könnte jederzeit vom Stöhnen Eures einzigen Erben abgelöst werden. Dieser Tag wird Euer Reich entweder mit einem unumstrittenen Thronfolger stärken oder in eine tiefe Nachfolgekrise stürzen."
+    },
+     {
+      "name": "Fordert selbst einen alten Feind zum Duell",
+      "triggeredUniques": [
+        "[+100 Culture]",
+        "[+5] Strength <for [all] units> <for [15] turns>",
+        "[+50] Influence with [all] City-States",
+        "[+3 Happiness] <for [40] turns>",
+        "Free [Great General] appears <with [70]% chance>",
+        "[-100 Gold]",
+        "[-1 Population] in [Capital] <with [25]% chance>",
+        "Comment: Ruhm oder Tod - kein Mittelweg!"
+      ],
+      "text": "Ihr selbst reitet in die Arena! Der Blick über den Helmvisier trifft auf die hasserfüllten Augen des Mannes, der Eure Träume seit Jahren vergiftet. Jeder Hufschlag nähert Euch dem Moment der Entscheidung - die Lanze wird zur Verlängerung Eures Willens, der Kampf zur Reinigung alter Wunden. Sollte Eure Klinge treffen, wird dieser Tag nicht nur einen Feind beenden, sondern Euren Namen in die Ewigkeit meißeln. Doch jeder Atemzug könnte der letzte sein, jedes Krachen des Schildes den Sturz Eures Reiches einläuten. Hier, im Staub der Arena, wird Geschichte nicht geschrieben - sie wird mit Blut besiegelt."
     },
     {
       "name": "Weiht das Turnier Gott und den Heiligen",
@@ -2920,6 +3681,19 @@
         "[-60 Gold]"
       ],
       "text": "Bevor die Lanzen gesenkt werden, wird eine feierliche Messe abgehalten. Die Ritter geloben, für die Ehre Gottes und den Schutz der Gläubigen zu kämpfen. Geistliche segnen die Waffen, und jeder Sieg wird als gottlicher Gunstbeweis interpretiert. Diese fromme Stimmung ergreift das Volk und festigt den Glauben im ganzen Land, was auch die Gunst religiöser Stadtstaaten gewinnt."
+    },
+    {
+      "name": "Inszeniert einen 'Unfall' für einen Rivalen",
+      "triggeredUniques": [
+        "[+50 Gold]",
+        "[-25] Influence with [1] random Civ",
+        "[+40] Influence with [1] random Civ <with [60]% chance>",
+        "Free [Knight] appears <with [40]% chance>",
+        "[+10]% Strength <when defending> <for [all] units> <for [20] turns>",
+        "Triggers the following global alert: [Mysteriöse Ereignisse überschatten das Turnier in [civName]...] <with [50]% chance>",
+        "[-40 Gold]"
+      ],
+        "text": "Ein tragischer 'Unfall' eliminiert einen unliebsamen Adeligen. Der dumpfe Aufprall seines Helms auf dem Sand hallt in der plötzlichen Stille nach, während ein wohlplatziertes Gift langsam wirkt. An den Höfen der Verbündeten wird hinter vorgehaltener Hand erleichtert aufatmen, doch in ihren Augen blitzt das unausgesprochene Wissen auf: Was heute einem Rivalen widerfährt, könnte morgen sie selbst treffen. Die Schatten der Intrige, die ihr gesät habt, werden nun euren eigenen Thron umtanzen – jeder Vertraute wird zum potenziellen Verschwörer, jedes Flüstern zur möglichen Drohung. Ihr habt das Spiel der Macht begonnen, doch die Regeln schreibt nun die Angst."
     },
     {
       "name": "Veranstaltet einen Jahrmarkt drumherum",
