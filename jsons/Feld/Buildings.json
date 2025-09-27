@@ -353,8 +353,61 @@
             "Hidden when religion is disabled"
         ]
     },
+// Spezialgebäude die durch Events vergeben werden
 
-    // Buildings from "Scholastische Debatte" event  
+{
+  "name": "Royal Wine Cellar",
+  "cost": -1,
+  "maintenance": 0,
+  "uniques": [
+    "Provides [1] [Wine]",
+    "[+1] [Happiness]",
+    "Unsellable",
+    "Unbuildable",
+    "Cannot be purchased",
+    "Never destroyed when the city is captured"
+  ],
+  "civilopediaText": [
+    {
+      "text": "Ein Geschenk des Königs - erlesene Weine aus den königlichen Kellern."
+    }
+  ]
+},
+
+{
+  "name": "Royal Treasury", 
+  "cost": -1,
+  "maintenance": 0,
+  "uniques": [
+    "Provides [1] [Jewelry]",
+    "Provides [1] [Gems]",
+    "[+2] [Gold]",
+    "[+2] [Culture]",
+    "[+2] [Happiness]",
+    "Unsellable",
+    "Unbuildable",
+    "Cannot be purchased",
+    "Never destroyed when the city is captured"
+  ],
+  "civilopediaText": [
+    {
+      "text": "Die königliche Schatzkammer - ein Zeichen ewiger Dankbarkeit für die perfekte Ausrichtung der königlichen Hochzeit."
+    }
+  ]
+},
+//
+{
+      "name": "Reforestation",
+      "cost": 200,
+      "maintenance": 2,
+      "uniques": [
+        "[+1 Production] from [Forest] tiles [in this city]",
+        "[+1 Production] from [Jungle] tiles [in this city]",
+        "Comment [Nachhaltige Forstwirtschaft - pflanzt neue Bäume für die Zukunft]"
+      ],
+      "requiredTech": "Bronze Working"
+    },
+// Buildings from "Scholastische Debatte" event  
     {
         "name": "Domschule",
         "cost": 0,
@@ -2733,8 +2786,8 @@
       "cost": 100,
       "uniques": [
         "Unsellable",
-        "[-20]% Spread of [The Black Death] to adjacent cities",
-        "[+5]% Chance to remove [The Black Death] each turn",
+        "[-20]% Spread of [The Black Death] to adjacent cities", //
+        "[+5]% Chance to remove [The Black Death] each turn", //
         "Comment [The dying are gathered here to spend their last days separated from the healthy population...]",
         "Comment [Overworked caregivers move between beds, offering what comfort they can to those marked for death...]"
       ],

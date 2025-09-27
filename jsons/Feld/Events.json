@@ -1541,134 +1541,135 @@
  },
 //Pest
  {
-      "name": "The Black Death Approaches...",
-      "text": "Riders bring grim news from distant lands - a terrible pestilence is sweeping across continents, leaving mountains of dead in its wake. The merchants speak of entire villages emptied, of crops rotting in fields with no one left to harvest them, and of a death that comes swift and merciless.",
-      "choices": [
-        {
-          "text": "Quarantine the infected areas!",
-          "uniques": [
-            "Only available <if [Medical School] is constructed> <when above [100] [Gold]>",
-            "Instantly consumes [100] [Gold] <(modified by game speed)>",
-            "Gain [-2] [Happiness] [in all cities] <for [10] turns>",
-            "[-20]% [Gold] [in all cities] <for [8] turns>",
-            "Gain a free [Plague Quarantine] [in capital]",
-            "Comment [We must contain this horror before it consumes us all...]",
-            "Triggers a [The Black Death Approaches...] event <with probability [0.05]> <every [30] turns> <hidden from users>"
-          ]
-        },
-        {
-          "text": "Pray for divine intervention",
-          "uniques": [
-            "Only available <when above [50] [Faith]>",
-            "Instantly consumes [50] [Faith] <(modified by game speed)>",
-            "Gain [25] [Faith] <(modified by game speed)> [in all cities] <for [5] turns>",
-            "Gain a free [Religious Processions] [in capital]",
-            "Comment [The priests lead desperate processions through empty streets, begging for mercy...]",
-            "Triggers a [The Black Death Approaches...] event <with probability [0.1]> <every [25] turns> <hidden from users>"
-          ]
-        },
-        {
-          "text": "Continue normal operations",
-          "uniques": [
-            "Gain a free [The Black Death] [in random city]",
-            "Gain a free [The Black Death] [in another random city] <with probability [0.4]>",
-            "[-1] [Happiness] [in all cities] <for [15] turns>",
-            "Comment [The plague carts make their daily rounds, collecting bodies wrapped in soiled linens...]",
-            "Triggers a [The Black Death Approaches...] event <with probability [0.2]> <every [20] turns> <hidden from users>"
-          ]
-        },
-        {
-          "text": "Flee to the countryside",
-          "uniques": [
-            "Only available <if [Nobility] is constructed>",
-            "Gain [-100] [Gold] <(modified by game speed)>",
-            "[+1] population in [random non-capital city] <hidden from users>",
-            "[-1] population in [capital] <hidden from users>",
-            "Comment [The wealthy abandon the cities, leaving the poor to suffer their fate...]",
-            "Triggers a [The Black Death Approaches...] event <with probability [0.15]> <every [28] turns> <hidden from users>"
-          ]
-        },
-        {
-          "text": "Trust in God's mercy",
-          "uniques": [
-            "Only available <in cities with [Catholic Church] religion> <in cities with [Orthodox Church] religion>",
-            "Instantly consumes [75] [Faith] <(modified by game speed)>",
-            "Gain [30] [Faith] <(modified by game speed)> [in all cities] <for [8] turns>",
-            "[-15]% Unhappiness from [The Black Death] [in cities following this religion]",
-            "Comment [As Christ suffered for our sins, so we must bear this cross with faith and patience...]",
-            "Comment [The priests administer last rites to the dying, offering the hope of salvation beyond this vale of tears...]",
-            "Triggers a [The Black Death Approaches...] event <with probability [0.08]> <every [35] turns> <hidden from users>"
-          ]
-        }
+  "name": "Der Schwarze Tod naht...",
+  "text": "Reiter bringen düstere Nachrichten aus fernen Landen – eine schreckliche Seuche fegt über die Kontinente hinweg und hinterlässt Berge von Toten. Händler berichten von ganzen entvölkerten Dörfern, von Feldern, auf denen die Ernte verfault, weil niemand mehr sie einbringt, und von einem Tod, der schnell und erbarmungslos kommt.",
+  "choices": [
+    {
+      "text": "Quarantäne für die infizierten Gebiete!",
+      "uniques": [
+        "Only available <if [Medical School] is constructed> <when above [100] [Gold]>",
+        "Instantly consumes [100] [Gold] <(modified by game speed)>",
+        "[-2] [Happiness] [in all cities] <for [10] turns>",
+        "[-20]% [Gold] [in all cities] <for [8] turns>",
+        "Gain a free [Plague Quarantine] [in capital]",
+        "Comment [Wir müssen dieses Grauen eindämmen, bevor es uns alle verschlingt...]",
+        "Triggers a [Der Schwarze Tod naht...] event <with [5]% chance> <every [30] turns> <hidden from users>"
       ]
     },
     {
-      "name": "Plague Doctor's Visit",
-      "text": "A physician clad in a beaked mask has arrived, claiming knowledge of the pestilence. He offers his services, though his methods are... unorthodox.",
-      "choices": [
-        {
-          "text": "Employ the plague doctor",
-          "uniques": [
-            "Instantly consumes [75] [Gold] <(modified by game speed)>",
-            "[+10]% Chance to remove [The Black Death] each turn <for [5] turns>",
-            "Gain [15] [Science] <(modified by game speed)>",
-            "Comment [The doctor's strange costume frightens the children, but his leeches and potions offer some small comfort...]"
-          ]
-        },
-        {
-          "text": "Send him away",
-          "uniques": [
-            "Gain [10] [Faith] <(modified by game speed)>",
-            "Comment [We trust in God's mercy, not in this charlatan and his frightening costume...]"
-          ]
-        },
-        {
-          "text": "Pray for his success",
-          "uniques": [
-            "Only available <in cities with [Catholic Church] religion> <in cities with [Orthodox Church] religion>",
-            "Instantly consumes [25] [Faith] <(modified by game speed)>",
-            "[+15]% Chance to remove [The Black Death] each turn <for [3] turns>",
-            "Gain [20] [Faith] <(modified by game speed)>",
-            "Comment [May God guide this physician's hands and bless his efforts to heal Your suffering children...]"
-          ]
-        }
+      "text": "Für göttliches Eingreifen beten",
+      "uniques": [
+        "Only available <when above [50] [Faith]>",
+        "Instantly consumes [50] [Faith] <(modified by game speed)>",
+        "[+25] [Faith] [in all cities] <for [5] turns>",
+        "Gain a free [Religious Processions] [in capital]",
+        "Comment [Die Priester führen verzweifelte Prozessionen durch leere Straßen und flehen um Gnade...]",
+        "Triggers a [Der Schwarze Tod naht...] event <with [10]% chance> <every [25] turns> <hidden from users>"
       ]
     },
-	 {
-      "name": "Theodicy Crisis",
-      "text": "As the plague ravages our people, difficult questions arise about God's nature and purpose. Why would a loving God allow such suffering? How do we reconcile divine goodness with this immense human tragedy?",
-      "choices": [
-        {
-          "text": "Divine punishment for sins",
-          "uniques": [
-            "Only available <in cities with [Catholicism] religion> <in cities with [Orthodoxy] religion>",
-            "Gain [40] [Faith] <(modified by game speed)> [in all cities]",
-            "[-1] [Happiness] [in all cities] <for [10] turns>",
-            "Comment [The preachers thunder from their pulpits about God's righteous judgment upon a sinful world...]",
-            "Comment [Flagellant movements grow as people seek to atone for collective sins through self-mortification...]"
-          ]
-        },
-        {
-          "text": "Mysterious divine plan",
-          "uniques": [
-            "Only available <in cities with [Catholicism] religion> <in cities with [Orthodoxy] religion>",
-            "Gain [25] [Faith] <(modified by game speed)> [in all cities]",
-            "[+1] [Happiness] [in all cities] <for [5] turns>",
-            "Comment [Theologians speak of God's inscrutable wisdom and the need for faith in times of trial...]",
-            "Comment [As Job suffered yet maintained his faith, so must we trust in God's ultimate goodness...]"
-          ]
-        },
-        {
-          "text": "Test of faith",
-          "uniques": [
-            "Only available <in cities with [Catholicism] religion> <in cities with [Orthodoxy] religion>",
-            "Gain [30] [Faith] <(modified by game speed)> [in all cities]",
-            "[+10]% [Faith] [in all cities] <for [8] turns>",
-            "Comment [The saints remind us that suffering purifies the soul and draws us closer to Christ's passion...]",
-            "Comment [Martyrdom becomes the ideal as Christians face death with courage and faith...]"
-          ]
-        }
+    {
+      "text": "Den normalen Betrieb fortsetzen",
+      "uniques": [
+        "Gain a free [The Black Death] [in all cities] <when number of [population] is more than [3]> <with [30]% chance>",
+        "Gain a free [The Black Death] [in all cities] <when number of [population] is more than [6]> <with [40]% chance>",
+        "[-1] [Happiness] [in all cities] <for [15] turns>",
+        "Comment [Die Pestkarren ziehen täglich umher und sammeln in Tücher gewickelte Leichen ein...]",
+        "Triggers a [Der Schwarze Tod naht...] event <with [20]% chance> <every [20] turns> <hidden from users>"
       ]
+    },
+    {
+      "text": "Aufs Land fliehen",
+      "uniques": [
+        "Only available <if [Nobility] is constructed>",
+        "[-100] [Gold]",
+        "[+1] population [in all cities] <when number of [population] is less than [4]>",
+        "[-1] population [in all cities] <when number of [population] is more than [5]>",
+        "Comment [Die Reichen verlassen die Städte und überlassen die Armen ihrem Schicksal...]",
+        "Triggers a [Der Schwarze Tod naht...] event <with [15]% chance> <every [28] turns> <hidden from users>"
+      ]
+    },
+    {
+      "text": "Auf Gottes Barmherzigkeit vertrauen",
+      "uniques": [
+        "Only available <in cities with a [Catholic Church] religion>",
+        "Only available <in cities with a [Orthodox Church] religion>",
+        "Instantly consumes [75] [Faith] <(modified by game speed)>",
+        "[+30] [Faith] [in all cities] <for [8] turns>",
+        "[-15]% Unhappiness from [The Black Death] [in cities following this religion]",
+        "Comment [Wie Christus für unsere Sünden gelitten hat, so müssen wir dieses Kreuz mit Glauben und Geduld tragen...]",
+        "Comment [Die Priester spenden den Sterbenden die letzten Sakramente und geben Hoffnung auf Erlösung jenseits dieses Jammertals...]",
+        "Triggers a [Der Schwarze Tod naht...] event <with [8]% chance> <every [35] turns> <hidden from users>"
+      ]
+    }
+  ]
+},
+{
+  "name": "Besuch des Pestdoktors",
+  "text": "Ein Arzt in einer schnabelartigen Maske ist angekommen und behauptet, die Seuche zu kennen. Er bietet seine Dienste an, auch wenn seine Methoden... unorthodox erscheinen.",
+  "choices": [
+    {
+      "text": "Den Pestdoktor anstellen",
+      "uniques": [
+        "Instantly consumes [75] [Gold] <(modified by game speed)>",
+        "Remove [The Black Death] [in this city] <with [10]% chance>",
+        "Instantly gain [15] [Science] <(modified by game speed)>",
+        "Comment [Das seltsame Kostüm des Arztes erschreckt die Kinder, doch seine Blutegel und Tränke bringen ein wenig Trost...]"
+      ]
+    },
+    {
+      "text": "Schickt ihn fort",
+      "uniques": [
+        "Instantly gain [10] [Faith] <(modified by game speed)>",
+        "Comment [Wir vertrauen auf Gottes Barmherzigkeit, nicht auf diesen Scharlatan in seinem furchteinflößenden Gewand...]"
+      ]
+    },
+    {
+      "text": "Für seinen Erfolg beten",
+      "uniques": [
+        "Only available <in cities with a [major] religion>",
+        "Instantly consumes [25] [Faith] <(modified by game speed)>",
+        "Remove [The Black Death] [in this city] <with [15]% chance>",
+        "Instantly gain [20] [Faith] <(modified by game speed)>",
+        "Comment [Möge Gott die Hände dieses Arztes leiten und seine Bemühungen segnen, Deine leidenden Kinder zu heilen...]"
+      ]
+    }
+  ]
+},
+{
+  "name": "Theodizee-Krise",
+  "text": "Während die Pest unser Volk verwüstet, stellen sich schwierige Fragen über Gottes Wesen und Absichten. Warum würde ein liebender Gott solches Leid zulassen? Wie können wir göttliche Güte mit dieser gewaltigen menschlichen Tragödie vereinbaren?",
+  "choices": [
+    {
+      "text": "Göttliche Strafe für Sünden",
+      "uniques": [
+        "Only available <in cities with a [major] religion>",
+        "Instantly gain [40] [Faith] <(modified by game speed)>",
+        "[-1 Happiness] <for [10] turns>", //[in all cities] 
+        "Comment [Die Prediger donnern von ihren Kanzeln über Gottes gerechtes Gericht über eine sündige Welt...]",
+        "Comment [Geißlerbewegungen entstehen, da die Menschen versuchen, durch Selbstkasteiung für kollektive Sünden zu büßen...]"
+      ]
+    },
+    {
+      "text": "Geheimer göttlicher Plan",
+      "uniques": [
+        "Only available <in cities with a [major] religion>",
+        "Instantly gain [25] [Faith] <(modified by game speed)>",
+        "[+1 Happiness] <for [5] turns>", //[in all cities] 
+        "Comment [Theologen sprechen von Gottes unergründlicher Weisheit und der Notwendigkeit des Glaubens in Zeiten der Prüfung...]",
+        "Comment [Wie Hiob trotz seines Leidens seinen Glauben bewahrte, so müssen auch wir auf Gottes letztendliche Güte vertrauen...]"
+      ]
+    },
+    {
+      "text": "Prüfung des Glaubens",
+      "uniques": [
+        "Only available <in cities with a [major] religion>",
+        "Instantly gain [30] [Faith] <(modified by game speed)>",
+        "[+10]% [Faith] <for [8] turns>",
+        "Comment [Die Heiligen erinnern uns daran, dass Leid die Seele reinigt und uns der Passion Christi näherbringt...]",
+        "Comment [Das Martyrium wird zum Ideal, wenn Christen dem Tod mit Mut und Glauben entgegentreten...]"
+      ]
+    }
+  ]
 },
 {
     "name": "Die Päpstliche Vorladung",
@@ -1876,10 +1877,11 @@
     "name": "Das Heilige Relikt von Sankt Benedikt",
     "text": "Ein Mönch, gezeichnet von Jahren des Fastens und des Schweigens, steht mit Ehrfurcht gebietender Ruhe in eurer Thronhalle. In seinen von Adern durchzogenen Händen hält er ein schlichtes, aber schweres Reliquiar aus Gold. Seine Stimme ist kaum mehr als ein Flüstern, doch seine Worte hallen in der Stille: 'Ich bringe euch einen Splitter des Holzes, das das Schicksal der Welt trug.' Die Kunde davon, dass das Wahre Kreuz in euren Mauern weilt, verbreitet sich schneller als jede Armee. Schon am nächsten Tag lagern die ersten Pilger vor den Toren, ihre Gebete erfüllen die Luft. Händler preisen Andenken an, Krüppel hoffen auf Wunder, und fromme Bürger spenden ihren letzten Pfennig. Doch mit dem Ruhm kommen auch die Schatten: eifersüchtige Bischöfe aus Nachbarreichen bezweifeln die Echtheit und fordern die Herausgabe, und finstere Eminenzen flüstern von Diebstahl und Ketzerei. Ihr besitzt einen Funken des Göttlichen – doch haltet ihr auch der Macht stand, die er entfesselt?",
     "civilopediaText": "Reliquien waren im Mittelalter von unschätzbarem Wert. Sie zogen Pilger an, generierten enormen Reichtum durch Spenden und verliehen religiöse Legitimität. Der Besitz bedeutender Reliquien konnte eine kleine Stadt in ein wichtiges religiöses Zentrum verwandeln. Berühmte Beispiele sind die Dornenkrone in der Sainte-Chapelle oder der Heilige Rock in Trier.",
-    "triggeredBy": "era entered the [Medieval era]",
-    "weight": 15,
-    "conditionals": ["<after turn number [200]>", "<before turn number [530]>", "<upon discovering [Theology]>", "Only available <with [25]% chance>"],
-    "onlyOnePerGame": true,
+    "uniques": [
+      "Only available <starting from the [Medieval Era]>",
+      "Only available <after discovering [Theology]>",
+      "Only available <with [8]% chance>"
+    ],
     "choices": [
         {
             "name": "Errichtet ein Benediktinerkloster",
@@ -1984,7 +1986,7 @@
     "conditions": [
       "<during the [Medieval era]>",
       "<during the [Renaissance era]>",
-      "<with 3% chance>"
+      "Only available <with [3]% chance>"
     ],
     "text": "Ihr steht auf dem steinernen Wehrgang der Burg eures Herrn, das grobe Mauerwerk feucht und kalt unter den Fingern. Seit Tagen schon hängt eine bleierne Schwüle über dem Tal, und nun bricht sich das Unwetter mit ungeahnter Wucht Bahn. Donner grollen, nicht wie ein fernes Echo, sondern wie ein zorniger Hammerschlag gegen die Türme der Feste. Der Regen peitscht euch ins Gesicht, und der Wind heult in den Schießscharten wie eine Seele in Qual...",
     "choices": [
@@ -3708,6 +3710,337 @@
   ]
 },
 {
+  "name": "Die königliche Hochzeit – Eine Herausforderung der Ehre",
+  "text": "Ein königlicher Erlass erreicht eure Stadt! Bürgermeister, eine Nachricht vom Königshof! Unsere geliebte Prinzessin Elara soll in zwölf Mondwenden den Prinzen Alistair von den Nachbarlanden heiraten. Diese Hochzeit soll ein Zeichen des Friedens und des Wohlstands unseres Reiches sein – und sie wird hier, in unserer Stadt, stattfinden!\n\nDie Ehre ist groß, doch die Aufgabe ist gewaltig. Der Hof erwartet ein Fest, das in die Geschichte eingeht. Wir müssen nicht nur die gesamte königliche Familie, den Adel und die Gäste beherbergen und bewirten, sondern auch das Stadtschloss für die Zeremonie herrichten. Der Ruf unserer Stadt steht auf dem Spiel. Können wir diese Herausforderung meistern?",
+  
+  "triggerConditions": [
+    "when at war = false",
+    "when above [20] [Happiness]",
+    "when above [3] different Luxury resources",
+    "when between [50] and [150] turns"
+  ],
+  
+  "choices": [
+    {
+      "text": "Die Ehre annehmen – Wir werden ein unvergessliches Fest ausrichten! (Empfohlen bei >200 Gold)",
+      "triggeredUniques": [
+        "Gain [50] [Culture] <(modified by game speed)>",
+        "Comment [Exzellent! Die Gunst des Königs wird uns für Jahre zuteilwerden. Doch die Vorbereitungen werden alle unsere Ressourcen beanspruchen. Wir müssen sofort mit der Produktion von Luxusgütern in großem Stil beginnen und zusätzliche Quartiere für die Gäste errichten. Die Wachen müssen verstärkt werden, um für Ordnung zu sorgen. Es wird anstrengend, aber der Lohn ist unermesslich.]",
+        "[-15]% [Production] [in all cities] <for [10] turns>",
+        "[-2] [Happiness] <for [10] turns>",
+        "[+2] [Culture] [in capital] <for [10] turns>",
+        "Triggers the [Royal Wedding Success] event <after [10] turns> <with [80]% chance>",
+        "Triggers the [Royal Wedding Failure] event <after [10] turns> <with [20]% chance>"
+      ]
+    },
+    {
+      "text": "Wir sind geehrt, doch die Last ist schwer. Können wir Unterstützung erbitten?",
+      "triggeredUniques": [
+        "Comment [Eine kluge, vorsichtige Herangehensweise. Wir zeigen unseren Respekt, machen aber auch auf unsere Grenzen aufmerksam. Vielleicht kann der König uns mit Ressourcen oder Gold unterstützen, um die Kosten zu decken. Es ist ein diplomatisches Minenfeld, aber es könnte die Belastung für unsere Bürger mildern.]",
+        "Triggers the [King's Response] event <after [1] turns>",
+        "Gain [25] [Culture] <(modified by game speed)>"
+      ]
+    },
+    {
+      "text": "Diese Extravaganz können wir uns nicht leisten! Die Mittel sind für unser Volk. (Notlösung bei wenig Gold)",
+      "triggeredUniques": [
+        "Comment [Bürgermeister, das ist ein gefährlicher Pfad! Wir riskieren, den König und seine Verbündeten zu beleidigen. Die einfachen Leute mögen uns zujubeln, aber die Gunst des Adels werden wir damit verspielen. Sind wir bereit für die politischen Konsequenzen?]",
+        "[+2] [Happiness] <for [20] turns>",
+        "[-75] [Culture] <(modified by game speed)>",
+        "[-50]% [Gold] from Trade Routes <for [24] turns>",
+        "Triggers the [King's Wrath] event <after [2] turns>",
+        "[+10]% Unhappiness from [Population] in all cities <for [30] turns>"
+      ]
+    }
+  ]
+},
+{
+  "name": "King's Response",
+  "notification": "Eine Antwort vom Königshof ist eingetroffen!",
+  "text": "Der königliche Bote überbringt die Antwort auf unser Gesuch.",
+  
+  "choices": [
+    {
+      "text": "Der König ist großzügig!",
+      "triggeredUniques": [
+        "Comment [Der König versteht unsere Bedenken und schickt Unterstützung.]",
+        "Gain [100] [Gold] <(modified by game speed)>",
+        "Gain a free [Royal Wine Cellar] <in [Capital]>",
+        "[+20] [Production] [in capital] <for [10] turns>",
+        "[+1] [Happiness] <for [10] turns>",
+        "Triggers the [Royal Wedding Moderate Success] event <after [10] turns>"
+      ],
+      "weight": 50
+    },
+    {
+      "text": "Der König ist ungehalten.",
+      "triggeredUniques": [
+        "Comment [Der König ist enttäuscht. Er erwartet dennoch unser Bestes.]",
+        "[-1] [Happiness] <for [10] turns>",
+        "[-5]% [Production] [in all cities] <for [10] turns>",
+        "Triggers the [Royal Wedding Moderate Success] event <after [10] turns> <with [60]% chance>",
+        "Triggers the [Royal Wedding Failure] event <after [10] turns> <with [40]% chance>"
+      ],
+      "weight": 50
+    }
+  ]
+},
+ 
+{
+  "name": "Royal Wedding Success",
+  "notification": "Ein Tag für die Ewigkeit!",
+  "text": "Der Tag ist gekommen! Die Sonne scheint auf die Fahnen, die von jedem Haus wehen. Die Straßen sind gefüllt mit jubelnden Menschen, und der Duft von gebratenem Fleisch und frischem Brot liegt in der Luft.\n\nDie Zeremonie im Schloss war atemberaubend, und jetzt feiert die ganze Stadt. Prinz Alistair hebt seinen Kelch und ruft: 'Auf die gastfreundlichste und tüchtigste Stadt des Reiches! Möge euer Wohlstand so beständig sein wie die Liebe meiner Gemahlin und meine!'\n\nDer Jubel ist ohrenbetäubend. Ihr habt es geschafft, Bürgermeister. Diese Stadt ist heute der Stolz des Königreiches.",
+  
+  "choices": [
+    {
+      "text": "Was für ein glorreiches Fest!",
+      "triggeredUniques": [
+        "Gain [200] [Gold] <(modified by game speed)>",
+        "Gain [150] [Culture] <(modified by game speed)>",
+        "Gain a free [Royal Treasury] <in [Capital]>",
+        "[+3] [Happiness] <for [50] turns>",
+        "[+25]% [Gold] from Trade Routes <for [50] turns>",
+        "Comment [Die königliche Gunst wird uns Jahre des Wohlstands bringen!]",
+        "Empire enters a [8]-turn Golden Age",
+        "[+1] [Culture] from [Palace] tiles [in capital] <for [100] turns>",
+        "[+15]% [Gold] [in capital] <for [100] turns>"
+      ]
+    }
+  ]
+},
+
+
+{
+  "name": "Royal Wedding Moderate Success",
+  "notification": "Die Hochzeit war ein Erfolg!",
+  "text": "Trotz einiger Schwierigkeiten habt ihr es geschafft, eine respektable Feier auszurichten. Der König und seine Gäste sind zufrieden, wenn auch nicht überwältigt.",
+  
+  "choices": [
+    {
+      "text": "Wir haben unser Bestes gegeben.",
+      "triggeredUniques": [
+        "Gain [100] [Gold] <(modified by game speed)>",
+        "Gain [75] [Culture] <(modified by game speed)>",
+        "[+1] [Happiness] <for [30] turns>",
+        "[+10]% [Gold] from Trade Routes <for [30] turns>",
+        "Comment [Eine solide Leistung, die uns Respekt eingebracht hat.]"
+      ]
+    }
+  ]
+},
+
+
+{
+  "name": "Royal Wedding Failure",
+  "notification": "Das Fest ist gescheitert!",
+  "text": "Katastrophe! Die Vorbereitungen waren unzureichend. Das Essen ging aus, die Unterkünfte waren nicht fertig, und bei der Zeremonie kam es zu peinlichen Zwischenfällen. Der König ist zutiefst enttäuscht.",
+  
+  "choices": [
+    {
+      "text": "Dies wird uns lange verfolgen...",
+      "triggeredUniques": [
+        "[-100] [Culture] <(modified by game speed)>",
+        "[-2] [Happiness] <for [20] turns>",
+        "[-25]% [Gold] from Trade Routes <for [20] turns>",
+        "Comment [Der Ruf unserer Stadt ist ruiniert. Es wird Jahre dauern, dies wiedergutzumachen.]",
+        "[-10]% [Production] [in capital] <for [20] turns>"
+      ]
+    }
+  ]
+},
+
+
+{
+  "name": "King's Wrath",
+  "notification": "Der Zorn des Königs!",
+  "text": "Der König ist außer sich vor Wut über eure Ablehnung! Er zieht seine Schutztruppen ab und verhängt schwere Sanktionen gegen eure Stadt.",
+  
+  "choices": [
+    {
+      "text": "Wir müssen die Konsequenzen tragen.",
+      "triggeredUniques": [
+        "[-100] [Culture] <(modified by game speed)>",
+        "[-3] [Happiness] <for [30] turns>",
+        "[-50]% [Gold] from Trade Routes <for [30] turns>",
+        "Comment [Der Adel murrt, und Handelsembargos treffen uns hart.]",
+        "Rebel units may spawn <for [10] turns>",
+        "[+20]% Unhappiness from [Population] in all cities <for [30] turns>"
+      ]
+    }
+  ]
+},
+{
+      "name": "Die ersten Warnzeichen",
+      "text": "Mein König, ich fürchte, wir haben ein Problem. Die alten, leicht zugänglichen Wälder um unsere Siedlung herum sind erschöpft. Meine Männer müssen immer weitere Wege zurücklegen, um brauchbares Holz zu fällen. Die Ausbeute wird weniger, und die Arbeit dauert länger. Das spricht sich unter den Leuten herum. Die Bauhandwerker und Köhler schauen schon mit besorgten Blicken zu uns herüber.\n\n'Früher war der Wald voller Leben. Jetzt hört man kaum noch Äxte, nur noch das Seufzen der Männer auf dem langen Marsch.'\n\nDie Situation ist besonders besorgniserregend mit dem nahenden Winter - ohne ausreichend Brennholz werden viele Bürger erfrieren.",
+      "uniques": [
+        "Only available <in cities with at least [17] [Population]>",
+        "Only available <after discovering [Bronze Working]>",
+        "Only available <with at least [1] [Manual Lumber Mill] in this city>",
+        "Only available <after turn number [570]> <with [12]% chance",
+        "Only available <before turn number [680]>", 
+        "[-3 Production] from [Forest] tiles [in this city]",
+        "[-2 Production] from [Lumber Mill] tiles [in this city]",
+        "[-3 Happiness] [in this city] <with [SeasonWinter]>",
+        "[-2 Happiness] [in this city] <with [SeasonAutumn]>",
+        "[-15]% [Food] [in this city] <with [SeasonWinter]>",
+        "[-10]% [Food] [in this city] <with [SeasonAutumn]>",
+        "Comment [Ohne Holz zum Heizen leiden die Menschen besonders im Winter]"
+      ],
+      "choices": [
+        {
+          "text": "Wir müssen effizienter werden! Baut eine weitere Holzfällerhütte an den neuen Stellen.",
+          "uniques": [
+            "[-150 Gold] <(modified by game speed)>",
+            "[+2 Production] from [Forest] tiles [in this city] <for [30] turns>",
+            "[+2 Production] from [Manual Lumber Mill] tiles [in this city] <for [30] turns>",
+            "Triggers a [Die Krise bricht aus] event <after [15] turns>",
+            "Only available <when above [150] Gold>"
+          ]
+        },
+        {
+          "text": "Konzentriert euch auf die Wiederaufforstung. Pflanzt junge Bäume für die Zukunft.",
+          "uniques": [
+            "[-200 Gold] <(modified by game speed)>",
+            "[-4 Production] from [Forest] tiles [in this city] <for [60] turns>",
+            "[-3 Production] from [Manual Lumber Mill] tiles [in this city] <for [60] turns>",
+            "Gain a free [Reforestation] [in this city]",
+            "Triggers a [Nachhaltige Erholung] event <after [90] turns>",
+            "Only available <when above [200] Gold>"
+          ]
+        },
+        {
+          "text": "Das ist nur eine vorübergehende Flaute. Ignoriert die Schwarzseher.",
+          "uniques": [
+            "[-5 Happiness] [in this city] <for [10] turns>",
+            "Triggers a [Die Krise bricht aus] event <after [5] turns>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Die Krise bricht aus",
+      "text": "Die Knappheit ist nun für alle spürbar, mein König. Ohne Bretter und Balken stocken die Bauprojekte in der gesamten Siedlung. Neue Häuser? Unmöglich. Reparaturen? Kaum durchführbar. Selbst die Kohlerei, die unsere Schmieden am Laufen hält, liegt brach, weil es keine Holzreste mehr gibt. Die Stimmung ist am Siedepunkt. Handwerker fordern Lösungen, und die Menschen beginnen, sich vor kalten Wintern zu fürchten.\n\n'Mein Großvater sagte immer: Eine Stadt aus Stein beginnt mit einem Gerüst aus Holz. Ohne Holz bauen wir keine Zukunft, wir verwalten nur den Verfall.'\n\nDie Lage ist kritisch - ohne Brennholz werden die Menschen im Winter erfrieren!",
+      "uniques": [
+        "[-50]% Production when constructing [All] buildings [in this city]",
+        "[-2 Happiness] [in this city]",
+        "[-5 Production] from [Forest] tiles [in this city]",
+        "[-4 Production] from [Manual Lumber Mill] tiles [in this city]",
+        "[-5 Happiness] [in this city] <with [SeasonWinter]>",
+        "[-3 Happiness] [in this city] <with [SeasonAutumn]>",
+        "[-25]% [Food] [in this city] <with [SeasonWinter]>",
+        "[-15]% [Food] [in this city] <with [SeasonAutumn]>",
+        "[+10 Unhappiness] [in this city] <with [SeasonWinter]>",
+        "Comment [Ohne Brennholz im Winter droht eine humanitäre Katastrophe]"
+      ],
+      "choices": [
+        {
+          "text": "Notmaßnahmen! Beschlagnahmt Holz von weniger wichtigen Projekten und setzt eine Rationierung durch.",
+          "uniques": [
+            "Gain [50] [Production] <(modified by game speed)>",
+            "[-2 Happiness] <for [40] turns>",
+            "[-50]% Production when constructing ['Entertainment Building'] buildings [in this city] <for [40] turns>",
+            "[-50]% Production when constructing ['Cultural Building'] buildings [in this city] <for [40] turns>",
+            "[+2 Production] from [Forest] tiles [in this city] <for [40] turns>",
+            "[+2 Production] from [Manual Lumber Mill] tiles [in this city] <for [40] turns>",
+            "[+5 Happiness] [in this city] <for [20] turns> <with [SeasonWinter]>",
+            "Comment [Die unpopulären Maßnahmen zeigen Wirkung - im Winter lebensrettend]"
+          ]
+        },
+        {
+          "text": "Wir brauchen externe Hilfe. Gründet eine Handelsgilde und importiert Holz um jeden Preis!",
+          "uniques": [
+            "[-300 Gold] <(modified by game speed)>",
+            "[-100 Production] <(modified by game speed)>",
+            "Gain a free [Market] [in this city]",
+            "Triggers a [Die Gründung der Handelsgilde] event <after [1] turns>",
+            "Only available <when above [300] Gold>"
+          ]
+        },
+        {
+          "text": "Die Natur wird sich erholen. Wir müssen nur durchhalten.",
+          "uniques": [
+            "[-1 Happiness] [in this city] <for [90] turns>",
+            "Triggers a [Nachhaltige Erholung] event <after [90] turns>",
+            "Only available <with [Reforestation] in this city>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Die Gründung der Handelsgilde",
+      "text": "Die Handelsgilde ist operativ, mein König. Unsere Händler haben Kontakte geknüpft, aber die Nachricht von unserer Not hat sich wie ein Lauffeuer verbreitet. Die Preise sind astronomisch. Wir bezahlen ein Vermögen für Holz, das voller Knorren und kaum zu gebrauchen ist. Die Händler aus den Nachbarregionen lachen sich ins Fäustchen, während unsere Goldreserven schmelzen. Diese Lösung sichert unser Überleben, aber sie macht uns abhängig und arm.\n\n'Handel in der Not ist wie Trinken von salzigem Wasser – es stillt den Durst kurz, macht ihn aber langfristig nur schlimmer.'",
+      "uniques": [
+        "[+2 Production] from [Market] tiles [in this city]",
+        "[-2 Gold] from [Market] tiles [in this city] <for [120] turns>",
+        "[-3 Production] from [Forest] tiles [in this city]",
+        "[-2 Production] from [Manual Lumber Mill] tiles [in this city]",
+        "[-4 Happiness] [in this city] <with [SeasonWinter]>",
+        "[-2 Happiness] [in this city] <with [SeasonAutumn]>",
+        "[-3 Gold] [in this city] <with [SeasonWinter]>",
+        "Comment [Holzpreise explodieren im Winter]"
+      ],
+      "choices": [
+        {
+          "text": "Zahlt den Preis. Die Stabilität der Siedlung ist es wert.",
+          "uniques": [
+            "[-2 Gold] [in this city] <for [120] turns>",
+            "[+5 Production] [in this city] <for [120] turns>",
+            "[+1 Happiness] [in this city] <after [30] turns>",
+            "[-5 Gold] [in this city] <for [60] turns> <with [SeasonWinter]>",
+            "[+3 Happiness] [in this city] <with [SeasonWinter]>",
+            "Comment [Die teuren Importe stabilisieren die Siedlung - besonders wichtig im Winter]"
+          ]
+        },
+        {
+          "text": "Wir müssen unsere eigene Produktion wieder ankurbeln! Nutzt das importierte Holz für nachhaltige Forstwirtschaft.",
+          "uniques": [
+            "[-200 Gold] <(modified by game speed)>",
+            "[-40 Production] <(modified by game speed)>",
+            "Gain a free [Workshop] [in this city]",
+            "[+3 Production] from [Forest] tiles [in this city] <after [60] turns>",
+            "[+4 Production] from [Manual Lumber Mill] tiles [in this city] <after [60] turns>",
+            "Triggers a [Nachhaltige Erholung] event <after [60] turns>",
+            "Comment [Forstamt und moderne Sägemühle werden errichtet]",
+            "Only available <when above [200] Gold>"
+          ]
+        },
+        {
+          "text": "Diese Ausbeutung ist unerträglich! Kündigt die Handelsverträge!",
+          "uniques": [
+            "[-6 Production] [in this city] <for [30] turns>",
+            "[-3 Happiness] [in this city] <for [30] turns>",
+            "Remove [Market] [in this city]",
+            "Comment [WARNUNG: Sehr riskant ohne eigene Forstwirtschaft!]",
+            "Only available <with [Reforestation] in this city>"
+          ]
+        }
+      ]
+    },
+   {
+    "name": "Nachhaltige Erholung",
+    "text": "Die Jahre der Knappheit sind vorüber. Durch eine kluge Mischung aus nachhaltiger Forstwirtschaft und weisem Handel hat sich eure Siedlung von der Krise erholt. Die Wälder um die Stadt grünen wieder, und das Schlagen der Äxte klingt nicht mehr nach Verzweiflung, sondern nach dem sicheren Rhythmus des Wachstums. Ihr habt eine wertvolle Lektion gelernt: Eine blühende Gemeinschaft baut auf den Fundamenten einer gesunden Natur.",
+    "uniques": [
+      "[+4 Production] from [Forest] tiles [in this city]",
+      "[+5 Production] from [Manual Lumber Mill] tiles [in this city]",
+      "[+2 Happiness] [in this city]",
+      "Gain [1] [Culture] <(modified by game speed)>",
+      "Comment [Die Krise ist überwunden - nachhaltige Forstwirtschaft etabliert]"
+    ],
+  "choices": [
+    {
+      "text": "Wir haben verstanden. Die Wälder sind die Lunge unseres Königreiches - wir dürfen sie nicht ersticken, sondern müssen sie atmen lassen.",
+      "uniques": [
+        "Gain a free [Reforestation] [in this city]",
+        "[+5 Culture] <(modified by game speed)>",
+        "[+2 Production] from [Forest] tiles [in this city]",
+        "[+3 Production] from [Lumber Mill] tiles [in this city]",
+        "Comment [Ein neues Gleichgewicht - Die Äxte schwingen jetzt im Rhythmus der Jahreszeiten, nicht mehr in blindem Eifer. Die Wälder geben uns, was wir brauchen, und wir geben ihnen, was sie brauchen: Zeit zu wachsen.]"
+      ]
+    }
+  ]
+},
+{
+
   "name": "Das Ende der kleinen Eiszeit",
   "notification": "Ein gesegneter Wandel bahnt sich an! Die eisige Faust, die das Land so lange umklammert hielt, beginnt zu erweichen. Die unerbittliche Kälte, die Generationen in Furcht und Dunkelheit leben ließ, weicht einem sanften, lebensspendenden Hauch. Tauwasser rinnt in kleinen Rinnsalen über das steinerne Antlitz der Burgen, und an geschützten Südhängen zeigt sich zaghaft das erste Grün. Die Menschen wagen es, ihre verhüllten Gesichter der Sonne zuzuwenden – ein lange verloren geglaubtes Gefühl der Hoffnung kehrt zurück.",
   "weight": 100,
