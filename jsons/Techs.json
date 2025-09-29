@@ -290,6 +290,9 @@
 				"name": "Dry Dock",
 				"techCost": 95,
 				"row": 2,
+				"uniques":[
+					"[{Water} {Military}] units gain the [Classical Arms] promotion"
+				],
 				"prerequisites": [
 					"Mathematics",
 					"Iron Working"
@@ -443,11 +446,6 @@
 			{
 				"name": "Compass",
 				"row": 2,
-				 "uniques": [
-					"Enables [The Black Death] in cities",
-                    "May spawn [The Black Death] in a random city <every [20] turns> <with probability [0.15]>",
-                    "Comment [Improved navigation and trade routes facilitate the spread of plague across continents]"
-				],
 				"prerequisites": [
 					"Shipbuilding",
 					"Wood Block Printing"
@@ -457,11 +455,6 @@
 			{
 				"name": "Theology",
 				"row": 4,
-				"uniques": [
-                    "Unlocks [Monastic Infirmary] building",
-                    "Enables religious responses to plague outbreaks",
-                    "Comment [Religious institutions develop organized responses to the pandemic]"
-				],
 				"prerequisites": [
 					"Wood Block Printing",
 					"Alchemy"
@@ -546,11 +539,6 @@
 			{
 				"name": "Education",
 				"row": 2,
-				"uniques": [
-					"Unlocks [Pest House] building",
-                    "Enables construction of medical facilities to combat plague",
-                    "Comment [Academic knowledge begins to provide better understanding of disease transmission]"
-				],
 				"prerequisites": [
 					"Civil Service",
 					"Diplomacy"
@@ -674,13 +662,6 @@
 			{
 				"name": "Printing Press",
 				"row": 8,
-				 "uniques": [
-					"Disables [The Black Death] event chain",
-					"Improved medical knowledge reduces plague impact",
-                    "Comment [Widespread dissemination of medical knowledge helps combat the plague]",
-					"Prevents [The Black Death] from spawning in cities",
-                    "Removes [The Black Death] from all cities over [10] turns"
-				],
 				"prerequisites": [
 					"Banking"
 				],
