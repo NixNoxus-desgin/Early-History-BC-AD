@@ -1540,6 +1540,381 @@
                 "uniques": ["Only available<during the [Classical era]>", "Unavailable <if [JHWH] is constructed by anybody>", "Provides a [JHWH] in your first [1] cities for free"]
  },
 //Pest
+{
+  "name": "Der Schwarze Tod naht...",
+  "text": "Reiter bringen düstere Nachrichten aus fernen Landen – eine schreckliche Seuche fegt über die Kontinente hinweg und hinterlässt Berge von Toten. Händler berichten von ganzen entvölkerten Dörfern, von Feldern, auf denen die Ernte verfault, weil niemand mehr sie einbringt, und von einem Tod, der schnell und erbarmungslos kommt. Die Pestbeulen schwellen zu Apfelgröße an, bevor das Schwarze Blut aus den Lungen spritzt.",
+  "choices": [
+    {
+      "text": "Quarantäne für die infizierten Gebiete!",
+      "uniques": [
+        "Only available <if [Medical School] is constructed>",
+        "Only available <when above [150] [Gold]>",
+        "Only available <if [University] is constructed>",
+        "Instantly consumes [150] [Gold]",
+        "[-3] [Happiness] [in all cities] <for [15] turns>",
+        "[-30]% [Gold] [in all cities] <for [10] turns>",
+        "[-20]% [Production] [in all cities] <for [8] turns>",
+        "[+2] [Science] [in all cities] <for [15] turns>",
+        "Gain a free [Plague Quarantine] [in capital]",
+        "Remove [The Black Death] [in this city] <in cities with a [The Black Death]> <with [70]% chance> <after turn number [8]> <upon turn end> <hidden from users>",
+        "Free [Medical School] [in this city] <with [25]% chance>",
+        "Triggers a [Der Schwarze Tod naht...] event <with [5]% chance> <every [30] turns> <hidden from users>",
+        "Comment [Wir müssen dieses Grauen eindämmen, bevor es uns alle verschlingt...]",
+        "Comment [Wächter versiegeln die Stadttore mit Brettern und Nägeln, während drinnen die Verzweifelten um Hilfe schreien...]"
+      ]
+    },
+    {
+      "text": "Für göttliches Eingreifen beten",
+      "uniques": [
+        "Only available <when above [80] [Faith]>",
+        "Only available <in cities with a [Religion]>",
+        "Instantly consumes [80] [Faith]",
+        "[+40] [Faith] [in all cities] <for [8] turns>",
+        "[+2] [Happiness] [in cities following our religion] <for [10] turns>",
+        "[-15]% [Science] [in all cities] <for [10] turns>",
+        "Free [Monastery] [in this city] <with [25]% chance>",
+        "Free [Cathedral] [in capital] <with [15]% chance>",
+        "Triggers a [Der Schwarze Tod naht...] event <with [10]% chance> <every [25] turns> <hidden from users>",
+        "Comment [Die Priester führen verzweifelte Prozessionen durch leere Straßen und flehen um Gnade...]",
+        "Comment [Glocken läuten Tag und Nacht, während die Gläubigen in den Kirchen um Vergebung für die Sünden der Welt beten...]"
+      ]
+    },
+    {
+      "text": "Den normalen Betrieb fortsetzen",
+      "uniques": [
+        "Gain a free [The Black Death] [in all cities] <when above [3] [Population]> <with [40]% chance>",
+        "Gain a free [The Black Death] [in all cities] <when above [6] [Population]> <with [65]% chance>",
+        "Gain a free [The Black Death] [in all cities] <when above [9] [Population]> <with [80]% chance>",
+        "[-2] [Happiness] [in all cities] <for [20] turns>",
+        "[-20]% [Food] [in all cities] <for [15] turns>",
+        "[+25]% [Gold] [in all cities] <for [8] turns>",
+        "[-1] population [in all cities] <with [50]% chance>",
+        "Triggers a [Der Schwarze Tod naht...] event <with [20]% chance> <every [20] turns> <hidden from users>",
+        "Comment [Die Pestkarren ziehen täglich umher und sammeln in Tücher gewickelte Leichen ein...]",
+        "Comment [Das Leben muss weitergehen, auch wenn der Tod an jeder Straßenecke lauert...]"
+      ]
+    },
+    {
+      "text": "Aufs Land fliehen",
+      "uniques": [
+        "Only available <if [Castle] is constructed>",
+        "Only available <when above [200] [Gold]>",
+        "Instantly consumes [200] [Gold]",
+        "[+2] population [in all cities] <when below [4] [Population]>",
+        "[-2] population [in all cities] <when above [6] [Population]>",
+        "[-3] population [in capital] <when above [8] [Population]>",
+        "[-35]% [Production] [in all cities] <for [12] turns>",
+        "[-40]% [Culture] [in all cities] <for [10] turns>",
+        "[+3] [Food] [in all cities] <when below [5] [Population]> <for [15] turns>",
+        "Gain a free [Granary] [in capital] <with [30]% chance>", //Building ändern
+        "Remove [The Black Death] [in this city] <in cities with a [The Black Death]> <in cities with less than [6] [Population]> <after turn number [2]> <with [50]% chance> <upon turn end> <hidden from users>",
+        "Triggers a [Der Schwarze Tod naht...] event <with [15]% chance> <every [28] turns> <hidden from users>",
+        "Comment [Die Reichen verlassen die Städte und überlassen die Armen ihrem Schicksal...]",
+        "Comment [Schwer beladene Karren rollen über die Landstraßen, während die Zurückgelassenen verzweifelt an den Stadttoren rütteln...]"
+      ]
+    },
+    {
+      "text": "Auf Gottes Barmherzigkeit vertrauen",
+      "uniques": [
+        "Only available <in cities with a [Religion]>",
+        "Only available <when above [100] [Faith]>",
+        "Instantly consumes [100] [Faith]",
+        "[+50] [Faith] [in all cities] <for [10] turns>",
+        "[-20]% Unhappiness from [The Black Death] [in cities following our religion]",
+        "[+20]% [Happiness] [in cities following our religion] <for [10] turns>",
+        "[+2] [Culture] [in cities following our religion] <for [12] turns>",
+        "[-25]% [Science] [in all cities] <for [15] turns>",
+        "Free [Cathedral] [in capital] <with [30]% chance>",
+        "Free [Great Prophet] <with [10]% chance>",
+        "Triggers a [Der Schwarze Tod naht...] event <with [8]% chance> <every [35] turns> <hidden from users>",
+        "Comment [Wie Christus für unsere Sünden gelitten hat, so müssen wir dieses Kreuz mit Glauben und Geduld tragen...]",
+        "Comment [Die Priester spenden den Sterbenden die letzten Sakramente und geben Hoffnung auf Erlösung jenseits dieses Jammertals...]",
+        "Comment [Mönche schreiben in ihren Skriptorien über die Endzeit, während draußen die Apokalypse tobt...]"
+      ]
+    }
+  ]
+},
+{
+  "name": "Besuch des Pestdoktors",
+  "text": "Ein Arzt in einer schnabelartigen Maske ist angekommen und behauptet, die Seuche zu kennen. Seine schwarzen Gewänder und das merkwürdige vogelartige Antlitz erschrecken die Kinder, doch seine Ledertasche ist voller mysteriöser Kräuter und Tränke. Er bietet seine Dienste an, auch wenn seine Methoden... unorthodox erscheinen.",
+  "choices": [
+    {
+      "text": "Den Pestdoktor anstellen",
+      "uniques": [
+        "Only available <when above [100] [Gold]>",
+        "Instantly consumes [100] [Gold]",
+        "Remove [The Black Death] [in this city] <with [25]% chance>",
+        "Free [Garden] [in this city] <with [35]% chance>",
+        "Instantly provides [25] [Science]",
+        "Instantly provides [15] [Culture]",
+        "[+2] [Science] [in this city] <for [10] turns>",
+        "[-2] [Happiness] [in this city] <for [6] turns>",
+        "[-1] population [in this city] <with [20]% chance>",
+        "Comment [Das seltsame Kostüm des Arztes erschreckt die Kinder, doch seine Blutegel und Tränke bringen ein wenig Trost...]",
+        "Comment [Der Doktor führt seine Aderlässe durch und verbrennt aromatische Kräuter, um die schlechte Luft zu reinigen...]",
+        "Free [Medical School] [in this city] <with [15]% chance>"
+      ]
+    },
+    {
+      "text": "Schickt ihn fort",
+      "uniques": [
+        "Instantly provides [15] [Faith]",
+        "Instantly provides [10] [Culture]",
+        "[+2] [Happiness] [in this city] <for [6] turns>",
+        "Gain a free [The Black Death] [in this city] <with [35]% chance>",
+        "Comment [Wir vertrauen auf Gottes Barmherzigkeit, nicht auf diesen Scharlatan in seinem furchteinflößenden Gewand...]",
+        "Comment [Die Stadtbewohner atmen erleichtert auf, als die unheimliche Gestalt wieder über die Stadtmauer verschwindet...]"
+      ]
+    },
+    {
+      "text": "Für seinen Erfolg beten",
+      "uniques": [
+        "Only available <in cities with a [Religion]>",
+        "Only available <when above [40] [Faith]>",
+        "Instantly consumes [40] [Faith]",
+        "Remove [The Black Death] [in this city] <with [35]% chance>",
+        "Instantly provides [30] [Faith]",
+        "Instantly provides [12] [Science]",
+        "[+2] [Faith] [in this city] <for [8] turns>",
+        "Free [Chapel] [in this city] <with [25]% chance>",
+        "Comment [Möge Gott die Hände dieses Arztes leiten und seine Bemühungen segnen, Deine leidenden Kinder zu heilen...]",
+        "Comment [Priester und Gelehrte arbeiten zusammen, um Gottes Willen durch menschliche Weisheit zu erfüllen...]"
+      ]
+    },
+    {
+      "text": "Seine Methoden studieren",
+      "uniques": [
+        "Only available <if [University] is constructed>",
+        "Only available <when above [75] [Gold]>",
+        "Only available <when above [30] [Science]>",
+        "Instantly consumes [75] [Gold]",
+        "Instantly provides [40] [Science]",
+        "Instantly provides [10] [Culture]",
+        "[+3] [Science] [in this city] <for [8] turns>",
+        "[-10]% [Faith] [in this city] <for [10] turns>",
+        "Free [Medical School] [in this city] <with [20]% chance>",
+        "Free [University] [in a random city] <with [10]% chance>",
+        "Comment [Gelehrte folgen dem Pestdoktor und dokumentieren seine seltsamen Praktiken für die Nachwelt...]",
+        "Comment [Durch Beobachtung und Experiment lernen wir, wie sich Krankheiten ausbreiten und bekämpfen lassen...]"
+      ]
+    }
+  ]
+},
+{
+  "name": "Theodizee-Krise",
+  "text": "Während die Pest unser Volk verwüstet, stellen sich schwierige Fragen über Gottes Wesen und Absichten. Warum würde ein liebender Gott solches Leid zulassen? Theologen streiten in den Klöstern, Prediger donner von ihren Kanzeln, und das einfache Volk ringt mit seinem Glauben. Wie können wir göttliche Güte mit dieser gewaltigen menschlichen Tragödie vereinbaren?",
+  "choices": [
+    {
+      "text": "Göttliche Strafe für Sünden",
+      "uniques": [
+        "Only available <in cities with a [Religion]>",
+        "Instantly provides [60] [Faith]",
+        "[-2] [Happiness] [in all cities] <for [12] turns>",
+        "[+3] [Faith] [in all cities] <for [10] turns>",
+        "[-20]% [Culture] [in all cities] <for [8] turns>",
+        "[-15]% [Science] [in all cities] <for [10] turns>",
+        "Free [Inquisitor] <with [25]% chance>",
+        "Comment [Die Prediger donnern von ihren Kanzeln über Gottes gerechtes Gericht über eine sündige Welt...]",
+        "Comment [Geißlerbewegungen entstehen, da die Menschen versuchen, durch Selbstkasteiung für kollektive Sünden zu büßen...]",
+        "Comment [Prozessionen von blutverschmierten Büßern ziehen durch die Straßen und peitschen sich zur Sühne...]"
+      ]
+    },
+    {
+      "text": "Geheimer göttlicher Plan",
+      "uniques": [
+        "Only available <in cities with a [Religion]>",
+        "Instantly provides [35] [Faith]",
+        "Instantly provides [25] [Culture]",
+        "[+2] [Happiness] [in all cities] <for [6] turns>",
+        "[+2] [Culture] [in all cities] <for [10] turns>",
+        "[-5]% [Science] [in all cities] <for [8] turns>",
+        "Free [University] [in capital] <with [15]% chance>",
+        "Free [Monastery] [in this city] <with [20]% chance>",
+        "Comment [Theologen sprechen von Gottes unergründlicher Weisheit und der Notwendigkeit des Glaubens in Zeiten der Prüfung...]",
+        "Comment [Wie Hiob trotz seines Leidens seinen Glauben bewahrte, so müssen auch wir auf Gottes letztendliche Güte vertrauen...]",
+        "Comment [Gelehrte Mönche verfassen Traktate über die Geheimnisse des göttlichen Willens...]"
+      ]
+    },
+    {
+      "text": "Prüfung des Glaubens",
+      "uniques": [
+        "Only available <in cities with a [Religion]>",
+        "Instantly provides [45] [Faith]",
+        "[+15]% [Faith] [in all cities] <for [10] turns>",
+        "[+2] [Culture] [in cities following our religion] <for [12] turns>",
+        "[-1] [Happiness] [in all cities] <for [8] turns>",
+        "Free [Monastery] [in capital] <with [30]% chance>",
+        "Free [Great Prophet] <with [5]% chance>",
+        "Comment [Die Heiligen erinnern uns daran, dass Leid die Seele reinigt und uns der Passion Christi näherbringt...]",
+        "Comment [Das Martyrium wird zum Ideal, wenn Christen dem Tod mit Mut und Glauben entgegentreten...]",
+        "Comment [Mystiker berichten von Visionen, in denen ihnen die Bedeutung des Leidens für die geistige Läuterung offenbart wird...]",
+        "[+2] [Faith] from [The Black Death] [in this city] <for [20] turns>"
+      ]
+    },
+    {
+      "text": "Die Vernunft erforschen",
+      "uniques": [
+        "Only available <if [University] is constructed>",
+        "Only available <when above [40] [Science]>",
+        "Instantly provides [50] [Science]",
+        "Instantly provides [30] [Culture]",
+        "[+3] [Science] [in all cities] <for [10] turns>",
+        "[-2] [Faith] [in all cities] <for [8] turns>",
+        "[+2] [Culture] [in all cities] <for [10] turns>",
+        "[-1] [Happiness] [in cities with a [Religion]> <for [10] turns>",
+        "Free [Medical School] [in capital] <with [25]% chance>",
+        "Free [Observatory] [in this city] <with [15]% chance>",
+        "Comment [Gelehrte wenden sich von theologischen Spekulationen ab und suchen rationale Erklärungen für die Seuche...]",
+        "Comment [Durch Beobachtung und Experiment hoffen wir, die wahren Ursachen dieser Katastrophe zu verstehen...]",
+        "Comment [Mögen empirische Studien uns helfen, wo Gebet und Glaube versagt haben...]"
+      ]
+    }
+  ]
+},
+{
+  "name": "Die Pest der Justiz",
+  "text": "In der Verzweiflung der Pestzeit suchen die Menschen nach Schuldigen. Fremde, Juden, Aussätzige und Ketzer werden beschuldigt, die Brunnen vergiftet und den Zorn Gottes herabbeschworen zu haben. Wütende Mobs bilden sich auf den Marktplätzen, und das Geschrei nach Vergeltung wird immer lauter.",
+  "choices": [
+    {
+      "text": "Die Schuldigen bestrafen",
+      "uniques": [
+        "Only available <in cities with a [Religion]>",
+        "Instantly provides [40] [Gold]",
+        "[-3] [Happiness] [in all cities] <for [10] turns>",
+        "[-2] [Culture] [in all cities] <for [12] turns>",
+        "[-25]% [Science] [in all cities] <for [10] turns>",
+        "[-30]% yield from [Gold] [from Trade Routes] <for [15] turns>",
+        "[+2] [Faith] [in cities following our religion] <for [8] turns>",
+        "[-1] Trade Route",
+        "Comment [Die Synagogen brennen in der Nacht, während ihre Bewohner in alle Winde zerstreut werden...]",
+        "Comment [Fremde Händler packen hastig ihre Waren zusammen und verlassen die Stadt unter dem Schutz der Dunkelheit...]",
+        "Comment [Das einfache Volk jubelt, endlich einen Sündenbock für sein Leid gefunden zu haben...]",
+        "[-20] Opinion modifier with [All] <for [20] turns>" //
+      ]
+    },
+    {
+      "text": "Ordnung und Recht wahren",
+      "uniques": [
+        "Only available <when above [75] [Gold]>",
+        "Instantly consumes [50] [Gold]",
+        "[+3] [Happiness] [in all cities] <for [10] turns>",
+        "[+2] [Culture] [in all cities] <for [12] turns>",
+        "[+2] [Science] [in all cities] <for [8] turns>",
+        "Instantly provides [25] [Culture]",
+        "Free [Courthouse] [in this city] <with [25]% chance>",
+        "Free [Constabulary] [in capital] <with [20]% chance>",
+        "[+10]% yield from [Gold] [from Trade Routes] <for [10] turns>",
+        "Comment [Die Stadtwachen schützen die Unschuldigen vor dem blinden Zorn des Mobs...]",
+        "Comment [Richter verkünden, dass auch in dunklen Zeiten das Gesetz über der Rache stehen muss...]",
+        "Comment [Weise Räte sprechen: 'In der Not zeigt sich der wahre Charakter eines Volkes.'...]",
+        "[+15] Opinion modifier with [All] <for [15] turns>" //
+      ]
+    },
+    {
+      "text": "Schutz für die Verfolgten",
+      "uniques": [
+        "Only available <if [Tempel] is constructed>",
+        "Only available <when above [60] [Faith]>",
+        "Instantly consumes [40] [Faith]",
+        "Instantly consumes [30] [Gold]",
+        "[+3] [Culture] [in all cities] <for [12] turns>",
+        "[+2] [Science] [in all cities] <for [10] turns>",
+        "Instantly provides [35] [Culture]",
+        "Free [University] [in this city] <with [20]% chance>",
+        "Free [Market] [in this city] <with [25]% chance>",
+        "[+1] Trade Route", //
+        "[+15]% yield from [Science] [from Trade Routes] <for [15] turns>",
+        "Comment [Die Kirche öffnet ihre Türen für alle, die Schutz vor der Verfolgung suchen...]",
+        "Comment [Gelehrte und Händler verschiedener Völker finden Zuflucht in den heiligen Hallen...]",
+        "Comment [Durch christliche Nächstenliebe wird aus Chaos und Hass ein Zeichen der Hoffnung...]",
+        "Free [Great Merchant] <with [10]% chance>",
+        "Free [Great Scientist] <with [10]% chance>",
+        "[+30] Opinion modifier with [All] <for [20] turns>"
+      ]
+    },
+    {
+      "text": "Die Mobs gewähren lassen",
+      "uniques": [
+        "[-4] [Happiness] [in all cities] <for [15] turns>",
+        "[-3] [Culture] [in all cities] <for [15] turns>",
+        "[-30]% [Science] [in all cities] <for [12] turns>",
+        "[-2] population [in this city]",
+        "Instantly provides [80] [Gold]",
+        "Comment [Das Blut der Unschuldigen klebt an unseren Händen...]",
+        "Comment [Die verlassenen Häuser werden geplündert, während die Schreie durch die Nacht hallen...]",
+        "[-40] Opinion modifier with [All] <for [30] turns>", //
+        "[-2] Trade Route"
+      ]
+    }
+  ]
+},
+{
+  "name": "Die Tanzsucht",
+  "text": "Eine seltsame Manie hat sich unter dem Volk ausgebreitet. Hunderte von Menschen tanzen unkontrolliert auf den Straßen, bis sie vor Erschöpfung zusammenbrechen. Einige sagen, es sei die Strafe für sündiges Leben, andere vermuten eine neue Form der Pest. Die Tanzenden behaupten, sie könnten nicht aufhören, als würden unsichtbare Geister sie antreiben.",
+  "choices": [
+    {
+      "text": "Die Tänzer behandeln",
+      "uniques": [
+        "Only available <if [Medical School] is constructed>",
+        "Only available <when above [80] [Gold]>",
+        "Instantly consumes [80] [Gold]",
+        "Instantly provides [30] [Science]",
+        "[+2] [Happiness] [in all cities] <for [8] turns>",
+        "[+2] [Science] [in this city] <for [10] turns>",
+        "Remove [The Black Death] [in this city] <with [10]% chance>",
+        "[-10]% [Production] [in this city] <for [6] turns>",
+        "Comment [Ärzte versuchen die Tanzenden mit Aderlass und beruhigenden Kräutern zu behandeln...]",
+        "Comment [Durch geduldige Beobachtung lernen wir mehr über die Geheimnisse des menschlichen Geistes...]",
+        "Free [Hospital] [in this city] <with [15]% chance>"
+      ]
+    },
+    {
+      "text": "Exorzismus durchführen",
+      "uniques": [
+        "Only available <in cities with a [Religion]>",
+        "Only available <when above [60] [Faith]>",
+        "Instantly consumes [60] [Faith]",
+        "[+3] [Faith] [in all cities] <for [10] turns>",
+        "[+2] [Happiness] [in cities following our religion] <for [8] turns>",
+        "[-15]% [Science] [in all cities] <for [8] turns>",
+        "Free [Cathedral] [in this city] <with [20]% chance>",
+        "Comment [Priester führen stundenlange Exorzismen durch, um die dämonischen Geister zu vertreiben...]",
+        "Comment [Heiliges Wasser und Weihrauch sollen die bösen Mächte bannen, die das Volk plagen...]",
+        "Free [Inquisitor] <with [25]% chance>"
+      ]
+    },
+    {
+      "text": "Die Manie ignorieren",
+      "uniques": [
+        "[-2] [Happiness] [in all cities] <for [15] turns>",
+        "[-10]% [Production] [in all cities] <for [10] turns>",
+        "[+20]% [Culture] [in all cities] <for [8] turns>",
+        "Instantly provides [25] [Culture]",
+        "[-1] population [in this city] <with [30]% chance>",
+        "Comment [Die Obrigkeit schaut weg, während das Volk seinen Wahnsinn auslebt...]",
+        "Comment [Seltsamerweise entstehen aus dem Chaos neue Lieder und Tänze, die lange überdauern werden...]",
+        "Free [Amphitheater] [in this city] <with [30]% chance>"
+      ]
+    },
+    {
+      "text": "Als Musikfestival organisieren",
+      "uniques": [
+        "Only available <if [Amphitheater] is constructed>",
+        "Only available <when above [50] [Gold]>",
+        "Only available <when above [30] [Culture]>",
+        "Instantly consumes [50] [Gold]",
+        "[+4] [Happiness] [in all cities] <for [6] turns>",
+        "[+30]% [Culture] [in all cities] <for [8] turns>",
+        "[-20]% [Production] [in all cities] <for [5] turns>",
+        "Instantly provides [40] [Culture]",
+        "Free [Opera House] [in this city] <with [20]% chance>",
+        "Comment [Aus dem Wahnsinn machen wir ein Fest, das die Menschen von ihrem Leid ablenkt...]",
+        "Comment [Die wilden Tänze werden zu einer neuen Kunstform, die Jahrhunderte überdauern wird...]",
+        "Free [Great Artist] <with [15]% chance>"
+      ]
+    }
+  ]
+},
  {
   "name": "Der Schwarze Tod naht...",
   "text": "Reiter bringen düstere Nachrichten aus fernen Landen – eine schreckliche Seuche fegt über die Kontinente hinweg und hinterlässt Berge von Toten. Händler berichten von ganzen entvölkerten Dörfern, von Feldern, auf denen die Ernte verfault, weil niemand mehr sie einbringt, und von einem Tod, der schnell und erbarmungslos kommt.",
@@ -1585,7 +1960,9 @@
         "[+1] population [in all cities] <when number of [population] is less than [4]>",
         "[-1] population [in all cities] <when number of [population] is more than [5]>",
         "Comment [Die Reichen verlassen die Städte und überlassen die Armen ihrem Schicksal...]",
+        "Triggers a [Der Schwarze Tod naht...] event <with [20]% chance> <every [20] turns> <hidden from users>"
         "Triggers a [Der Schwarze Tod naht...] event <with [15]% chance> <every [28] turns> <hidden from users>"
+         "Triggers a [Der Schwarze Tod naht...] event <with [8]% chance> <every [35] turns> <hidden from users>"
       ]
     },
     {
