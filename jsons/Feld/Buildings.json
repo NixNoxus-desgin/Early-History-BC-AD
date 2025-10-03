@@ -2746,10 +2746,14 @@
       "name": "Religious Processions",
       "cost": 0,
       "uniques": [
-        "Unsellable",
-        "Unbuildable",
+		"Unsellable",
+        "Unbuildable", 
         "Destroyed when the city is captured",
-        "[+15]% [Faith] [in this city] <for [8] turns>",
+        "[+15]% [Faith] [in this city]",
+        "[-1 Happiness] [in this city]",
+        "[-10]% [Production] [in this city]",
+        "[+20]% Unhappiness from [Population] [in this city]",
+        "[-1 Science] [in this city]",
         "Remove [Religious Processions] [in this city] <after [10] turns> <hidden from users>",
         "Comment [Flagellants march through the streets, whipping themselves in penance for the sins they believe brought this pestilence...]",
         "Comment [Relics are paraded through deserted squares, their holy power seemingly impotent against the invisible scourge...]"
@@ -2765,33 +2769,37 @@
         "Destroyed when the city is captured",
         "Only available <after discovering [Compass]> <before discovering [Printing Press]>",
         "[-33]% Population [in this city]",
+		"[-10]% growth [in this city]",
+		"Nullifies Growth [in this city] <after turn number [15]> <before turn number [30]>",
         "[-2 Happiness] [in all cities]",
         "[-25]% [Food] [in this city] <for [10] turns>",
         "[-30]% [Production] [in this city] <for [15] turns>",
         "[-40]% [Gold] [in this city] <for [12] turns>",
-        "All newly-trained [Military] units [in this city] receive the [Plague Survivor] promotion <after plague ends>",
-        "Gain [50] [Science] <(modified by game speed)> <after plague ends> <if [Medical School] is constructed>",
-        "Remove [The Black Death] [in this city] <after [20] turns> <hidden from users>",
-        "Comment [A grim silence falls over the city as the first cases appear. The air grows thick with the scent of death and burning herbs...]",
-        "Comment [Criers roam empty streets, their bells tolling endlessly as they call 'Bring out your dead!']",
-        "Comment [The plague carts make their daily rounds, collecting bodies wrapped in soiled linens...]",
-        "Comment [Physicians in beaked masks bleed patients with leeches, their methods powerless against the unseen enemy...]",
-        "Comment [Mass graves overflow as the church bells never cease their mournful song...]",
-        "Comment [Those who survive emerge gaunt and hollow-eyed, forever marked by the great mortality...]"
-      ],
+        "All newly-trained [Military] units [in this city] receive the [Plague Survivor] promotion <in cities without a [The Black Death]>",
+        "Gain [50] [Science] <(modified by game speed)> <if [The Black Death] is not constructed> <in [in all cities] cities> <if [Medical School] is constructed>",
+        "Remove [The Black Death] [in this city] <after [25] turns> <in cities with less than [4] [Population]> <hidden from users>",
+        "Remove [The Black Death] [in this city] <after [40] turns> <in cities with between [4] and [10] [Population]> <hidden from users>",
+        "Remove [The Black Death] [in this city] <after [70] turns> <in cities with at least [10] [Population]> <hidden from users>"
+	  ],
+      "civilopediaText": "Ein düsteres Schweigen legt sich über die Stadt, als die ersten Fälle auftauchen. Die Luft ist erfüllt vom Geruch des Todes und verbrannter Kräuter... Ausrufer ziehen durch die leeren Straßen, ihre Glocken läuten unaufhörlich, während sie rufen: 'Bringt eure Toten heraus!' Die Pestkarren machen ihre täglichen Runden und sammeln Leichen ein, in schmutzige Tücher gewickelt... Ärzte in Schnabelmasken lassen Patienten zur Ader und setzen Blutegel an – machtlos gegen den unsichtbaren Feind... Massengräber quellen über, während die Kirchenglocken ihr klagendes Lied niemals verstummen lassen... Die Überlebenden treten hervor, ausgemergelt und mit hohlen Augen, für immer gezeichnet von der großen Pest...",
       "requiredTech": "Compass"
     },
 	{
-      "name": "Pest House",
-      "cost": 100,
-      "uniques": [
-        "Unsellable",
-        "[-20]% Spread of [The Black Death] to adjacent cities", //
-        "[+5]% Chance to remove [The Black Death] each turn", //
-        "Comment [The dying are gathered here to spend their last days separated from the healthy population...]",
-        "Comment [Overworked caregivers move between beds, offering what comfort they can to those marked for death...]"
-      ],
-      "requiredTech": "Education"
+		"name": "Pesthaus",
+        "cost": 100,
+        "maintenance": 2,
+        "happiness": -1,
+        "uniques": [
+			"Unsellable",
+			"Only available in cities with a [The Black Death]",
+            "[-8]% Unhappiness from [Population] [in this city]",
+            "[+2]% growth [in this city]",
+			"[-1] population [in this city] <with [60]% chance> <every [15] turns> <if [The Black Death] is constructed>", //grow rate//
+            "[+1 Science] [in this city]",
+            "Destroyed when the city is captured",
+            "Comment [Hier werden die Sterbenden versammelt, um ihre letzten Tage getrennt von der gesunden Bevölkerung zu verbringen...]",
+            "Comment [Überarbeitete Pfleger bewegen sich zwischen den Betten und bieten denen, die für den Tod bestimmt sind, etwas Trost...]"
+		]
     },
 	{
 		"name": "Abtei",
