@@ -208,6 +208,7 @@
 		"food": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -461,21 +462,21 @@
 			"Guaranteed with Strategic Balance resource option",
 			"Generated with weight [100] <in [{Featureless} {Grassland}] tiles>",
 			"Generated with weight [100] <in [{Featureless} {Plains}] tiles>",
-			"Minor deposits generated with weight [10] <in [{Grassland} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
-			"Minor deposits generated with weight [10] <in [{Plains} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+			"Minor deposits generated with weight [15] <in [{Grassland} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+			"Minor deposits generated with weight [15] <in [{Plains} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
 			"Minor deposits generated with weight [100] <in [{Featureless} {Grassland}] tiles> <in [Fresh Water] tiles>",
-			"Minor deposits generated with weight [20] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+			"Minor deposits generated with weight [25] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
 			"Minor deposits generated with weight [30] <in [{Featureless} {Plains}] tiles>"
 		],
 		"majorDepositAmount": {
-			"sparse": 4,
-			"default": 4,
-			"abundant": 6
+			"sparse": 5,
+			"default": 7,
+			"abundant": 9
 		},
 		"minorDepositAmount": {
-			"sparse": 1,
-			"default": 2,
-			"abundant": 3
+			"sparse": 2,
+			"default": 4,
+			"abundant": 6
 		}
 	},
 	{
@@ -868,6 +869,15 @@
 		],
 		"revealedBy": "Uranium Enrichment"
 	},
+	{
+		"name": "Nuclear Warhead",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Not shown on world screen <if [Hide Essential] is constructed> <hidden from users>",
+			"Stockpiled"
+		],
+		"revealedBy": "Uranium Enrichment"
+	},
 	// Luxury resources
 	// Animal sourced
 	{
@@ -917,6 +927,12 @@
 		]
 	},
 	{
+		"name": "Elephant",
+		"revealedBy": "Horse Collar",
+		"resourceType": "Strategic",
+		"uniques":["Not shown on world screen <if [Hide Resource] is constructed> <hidden from users>"]
+	},
+	{
 		"name": "Silk",
 		"revealedBy":"Pottery",
 		"resourceType": "Luxury",
@@ -927,6 +943,7 @@
 		"gold": 2,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1063,6 +1080,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1092,6 +1110,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1119,6 +1138,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1146,6 +1166,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1176,6 +1197,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1203,6 +1225,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1232,6 +1255,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1260,6 +1284,7 @@
 		"faith": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1286,6 +1311,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1314,6 +1340,7 @@
 		"gold": 1,
 		"improvedBy": [
 			"Manual Plantation",
+            "Colony Plantation",
 			"Permaculture"
 		],
 		"improvementStats": {
@@ -1615,6 +1642,10 @@
 	},
 	{
 		"name": "Glass",
+		"resourceType": "Luxury"
+	},
+	{
+		"name": "Luxury Car",
 		"resourceType": "Luxury"
 	},
 	///City Byproducts
