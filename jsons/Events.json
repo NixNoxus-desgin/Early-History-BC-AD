@@ -13,7 +13,7 @@
                     "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-225] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
-                    "[-10]% [Production] [in all cities] <for [3] turns>"
+                    "[-10]% [Production] [in all cities] <for [1] turns>"
                 ]
             },
             {
@@ -25,7 +25,7 @@
                     "Gain [-25] [Gold] <when number of [Cities] is between [0] and [5]> <(modified by game speed)>",
                     "Gain [-100] [Gold] <when number of [Cities] is more than [4]>  <(modified by game speed)>",
                     "Gain [-225] [Gold] <when number of [Cities] is more than [8]> <(modified by game speed)>",
-                    "[-10]% [Production] [in all cities] <for [5] turns>"
+                    "[-10]% [Production] [in all cities] <for [1] turns>"
                 ]
             },
             {
@@ -266,17 +266,6 @@
                 ]
             },
             {
-                "text": "Socialist Education",
-                "uniques": [
-                    "Only available <if [Socialist Republics] is constructed>",
-                    "Play [policy] sound <hidden from users>",
-                    "[-50]% [Gold] [in all cities] <for [1] turns>",
-                    "[+33]% [Science] [in all cities] <for [3] turns>",
-                    "[+33]% [Culture] [in all cities] <for [3] turns>",
-                    "Triggers a [Enact Policies] event <hidden from users>"
-                ]
-            },
-            {
                 "text": "Increasing Stability.",
                 "uniques": [
                     "Only available <if [Peace] is constructed> <if [United States] is not constructed>",
@@ -358,9 +347,11 @@
             {
                 "text": "Changing Civilization Form",
                 "uniques": [
-                    "Only available <when number of [Influence] is more than [Influence Limit]>",
+                    "Only available <when number of [Influence] is more than [Influence Limit]> <when number of [Forced Shift In Politic Chance] is more than [0]> <hidden from users>",
                     "Play [policy] sound <hidden from users>",
+                    "Comment [If your [Influence] is somehow above normal limit. You can trigger this.]",
                     "Comment [We can force the shift in politic to stop our civilization from a undesireable route...]",
+                    "Instantly consumes [5] [Influence]",
                     "Instantly consumes [5] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly consumes [10] [Influence] <when number of [Cities] is more than [4]>",
                     "Triggers a [Shift in Politic] event"
@@ -527,11 +518,12 @@
                     "Comment [The unification has been accomplished by the largest fish in the pond. We are now an unified political entity!]",
                     "Gain a free [Tribal Union] [in capital] <during the [Neolithic era]> <hidden from users>",
                     "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
-                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Early Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
                     "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
                     "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
                     "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
                     "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Imperial era]> <before adopting [Revolution]> <hidden from users>",
                     "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
                     "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
                     "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
@@ -562,17 +554,10 @@
             {
                 "text": "Our empire lasts onto another era!",
                 "uniques": [
-                    "Only available <when number of [Influence] is more than [[Influence Limit]*0.75]> <if [Struggle] is not constructed> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <while the empire is happy>",
+                    "Only available <when number of [Influence] is more than [[Influence Limit]*0.5]> <if [Struggle] is not constructed> <if [Strife] is not constructed> <if [Anarchy] is not constructed> <while the empire is happy>",
                     "Comment [Our empire survives... Maybe we can reform it continuesly unto forever.]",
                     "Only available <if [Unified] is constructed>",
-                    "Remove ['United'] [in all cities] <hidden from users>",
-                    "Gain a free [Early Empire] [in capital] <during the [Ancient era]> <hidden from users>",
-                    "Gain a free [Feudal Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
-                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
-                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
-                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
-                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
-                    "Gain a free [Federation] [in capital] <during the [Imperial era]> <hidden from users>",
+                    "Remove [Unified] [in all cities] <hidden from users>",
                     "Triggers a [Reformation of the unified state] event"
                 ]
             }
@@ -583,10 +568,60 @@
         "text": "If an empire is stale in upward mobility, political reform and other essential aspect, it would fall behind, and crumble to ash.",
         "choices": [
             {
+                "text": "With some reforms, our empire can adapt to new age without problems.",
+                "uniques": [
+                    "Only available <if [Unified] is not constructed>",
+                    "Comment [Give up your unique civilization form and return to the generic line of unified civilization form.]",
+                    "Comment [Also, you might've ran out of unique government forms because there arent enough of them in the first place.]",
+                    "Gain a free [Early Empire] [in capital] <during the [Classical era]> <if [Successor States] is not constructed> <hidden from users>",
+                    "Gain a free [Centralized Empire] [in capital] <during the [Classical era]> <if [Successor States] is constructed> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Medieval era]> <hidden from users>",
+                    "Gain a free [Feudal Empire] [in capital] <during the [Renaissance era]> <hidden from users>",
+                    "Gain a free [United States] [in capital] <during the [Imperial era]> <after adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Imperial era]> <before adopting [Revolution]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Industrial era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Modern era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Atomic era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Information era]> <hidden from users>",
+                    "Gain a free [Federation] [in capital] <during the [Future era]> <hidden from users>"
+                ]
+            },
+            {
+                "text": "We must prevail at preserving our root.",
+                "uniques": [
+                    "Instantly consumes [5] [Influence]",
+                    "Comment [Keep your current special civilization form]",
+                    "Only available <if ['Neolithic era Form'] is constructed> <if [Unified] is not constructed> <during the [Classical era]>"
+                ]
+            },
+            {
+                "text": "We must prevail at preserving our root.",
+                "uniques": [
+                    "Instantly consumes [10] [Influence]",
+                    "Comment [Keep your current special civilization form]",
+                    "Only available <if ['Ancient era Form'] is constructed> <if [Unified] is not constructed> <during the [Classical era]>"
+                ]
+            },
+            {
+                "text": "We must prevail at preserving our root.",
+                "uniques": [
+                    "Instantly consumes [15] [Influence]",
+                    "Comment [Keep your current special civilization form]",
+                    "Only available <if ['Classical era Form'] is constructed> <if [Unified] is not constructed> <during the [Medieval era]>"
+                ]
+            },
+            {
+                "text": "Our way of life must be protected.",
+                "uniques": [
+                    "Instantly consumes [20] [Influence]",
+                    "Comment [Keep your current special civilization form]",
+                    "Only available <if ['Ideology Form'] is constructed> <if [Unified] is not constructed> <starting from the [Modern era]>"
+                ]
+            },
+            {
                 "text": "There needs to be an Emperor",
                 "uniques": [
                     "Only available <starting from the [Classical era]> <before the [Medieval era]> <if [Tribal Union] is constructed> <if [Early Empire] is not constructed>",
-                    "Comment [Our guiding philosophy has been painting a hopeful picture of our future, this reform will lead us closer to it.]",
                     "Gain a free [Early Empire] [in capital]"
                 ]
             },
@@ -627,7 +662,7 @@
             {
                 "text": "We shall dominate the Ocean!",
                 "uniques": [
-                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Autocratic Empire] is not constructed>",
+                    "Only available <starting from the [Renaissance era]> <before the [Industrial era]> <if [Autocratic Empire] is not constructed> <if [Colonial Empires] is not constructed>",
                     "Comment [Although our empire has stood tall, it would be more efficient if we take the new route...]",
                     "Gain a free [Colonial Empires] [in capital]"
                 ]
@@ -635,14 +670,15 @@
             {
                 "text": "We will continue our empire's glory.",
                 "uniques": [
-                    "Only available <starting from the [Industrial era]> <before adopting [Socialism]> <before adopting [Anarchism]> <before adopting [Fascism]>",
+                    "Only available <starting from the [Industrial era]> <before adopting [Socialism]> <before adopting [Anarchism]> <before adopting [Fascism]> <if [Federation] is not constructed>",
                     "Gain a free [Personal Union] [in capital]"
                 ]
             },
             {
-                "text": "Can we wait?",
+                "text": "No avaliable options",
                 "uniques": [
-                    "Comment [We need more contemplation...]",
+                    "Comment [Yet.]",
+                    "Only available <if [Unified] is constructed>",
                     "Play [whoosh] sound",
                     "Instantly provides [10] [Influence] <when number of [Cities] is between [0] and [5]>",
                     "Instantly provides [15] [Influence] <when number of [Cities] is more than [4]>"
@@ -657,7 +693,7 @@
             {
                 "text": "Building a harmonious civilization is essential",
                 "uniques": [
-                    "Only available <if [Peace] is constructed> <when above [-10] [Influence]>",
+                    "Only available <if [Peace] is constructed> <when above [-10] [Influence]> <after founding a religion>",
                     "Comment [We can make it so that it takes more to unstablise our civilization]",
                     "Instantly consumes [15] [Influence]",
                     "Gain [-250] [Gold] <(modified by game speed)>",
@@ -1378,6 +1414,37 @@
             }
         ]
     },
+        {
+        "name": "Great Exchange",
+        "text": "Our settlement in the new land starts to adopt local plants and herds. If we import these stuff back into our continent. We could gain a lot more profits.",
+        "choices": [
+            {
+                "text": "We should focus on the new staple crops.",
+                "uniques": [
+                    "Gain a free [Great Exchange - Food Security] [in capital]"
+                ]
+            },
+            {
+                "text": "We should focus on the new economic crops.",
+                "uniques": [
+                    "Gain a free [Great Exchange - Plantation and Trades] [in capital]"
+                ]
+            },
+            {
+                "text": "These exotic new animals are quite beautiful.",
+                "uniques": [
+                    "Gain a free [Great Exchange - Furcoat and Pets] [in capital]"
+                ]
+            },
+            {
+                "text": "We should respect the locals and exchange more [culture]",
+                "uniques": [
+                    "Only available <after adopting [Humanism]>",
+                    "Gain a free [Great Exchange - Preservation] [in capital]"
+                ]
+            }
+        ]
+    },
     ///Mediterranean
     {
         "name": "Alexander the Conqueror",
@@ -1396,7 +1463,7 @@
                     "[2] free [Phalanx] units appear",
                     "Free [Great Commander] appears",
                     "Gain a free [Feudal Empire] [in capital]",
-                    "Comment [Gain access to [Diadochi States]]"
+                    "Comment [Gain access to [Diadochi States] civilization form.]"
                 ]
             },
             {
@@ -1666,6 +1733,53 @@
                     "Gain [125] [Culture] <(modified by game speed)>",
                     "Gain [50] [Faith] <(modified by game speed)>",
                     "Free [Noble Swordsman] appears"
+                ]
+            }
+        ]
+    },
+    ///South Asian
+    {
+        "name": "Aryan Migration",
+        "text": "A group of nomadic outsider has migrated and conquered their way into our land... With new ideals and army traditions.",
+        "choices": [
+            {
+                "text": "So begins the Indo-Aryan's leadership in South Asia.",
+                "uniques": [
+                    "Gain a free [Vedic Kingdoms] [in capital]",
+                    "Free [Aryan War Cart] appears"
+                ]
+            },
+            {
+                "text": "The Harappans had successfully repelled the invasion.",
+                "uniques": [
+                    "Gain a free [Harappan City States] [in capital]",
+                    "Gain a free [Struggle] [in capital]",
+                    "Gain [33] [Science] <(modified by game speed)>",
+                    "Gain [50] [Culture] <(modified by game speed)>"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Buddha's birth",
+        "text": "A wealthy prince named Siddhartha Gautama has became a great philosopher of sort and started a religious movement following his own ideal...",
+        "choices": [
+            {
+                "text": "Maybe... We all need a bit of forgiveness in our life.",
+                "uniques": [
+                    "Only available <when above [24] [Influence]>",
+                    "Instantly consumes [25] [Influence]",
+                    "Gain a free [Buddhaism Influence] [in capital]",
+                    "[1] free [Great Prophet] units appear",
+                    "Comment [Stops [Maurya Empire] from automatically adopting [Meritocracy].]"
+                ]
+            },
+            {
+                "text": "Heretical Teaching.",
+                "uniques": [
+                    "[-1] population in a random city",
+                    "[+10]% [Happiness] [in all cities] <for [10] turns>",
+                    "Gain [50] [Culture] <(modified by game speed)>"
                 ]
             }
         ]
@@ -2005,7 +2119,7 @@
         ]
     },
     {
-        "name": "New economy policies",
+        "name": "New Economic Policies",
         "text": "We've rebuilt our government in pursuit to adapt to the new era, but the current economy policy is outdated. We will need a economy reform before we can do anything else.",
         "choices": [
             {

@@ -9,6 +9,10 @@
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
 			"Can pass through impassable tiles <after discovering [Apprenticeship]>",
+			"[+75]% construction time for [Road] improvements <in [Rough terrain] tiles>",
+			"[+75]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
+			"[+75]% construction time for [Road] improvements <in [Mountain] tiles>",
+			"[+75]% construction time for [Railroad] improvements <in [Mountain] tiles>",
 			"[This Unit] gains [2] XP <upon building a [All] improvement>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Automation is a primary action"
@@ -28,10 +32,14 @@
 			"[-25]% construction time for [All] improvements",
 			"Can build [Land] improvements on tiles",
 			"Can build [Lakes] improvements on tiles",
+			"Can pass through impassable tiles <after discovering [Robotics]>",
+			"[+50]% construction time for [Road] improvements <in [Rough terrain] tiles>",
+			"[+50]% construction time for [Railroad] improvements <in [Rough terrain] tiles>",
+			"[+50]% construction time for [Road] improvements <in [Mountain] tiles>",
+			"[+50]% construction time for [Railroad] improvements <in [Mountain] tiles>",
 			"[This Unit] gains [3] XP <upon building a [All] improvement>",
 			"Automation is a primary action"
 		],
-		"promotions":["Automobile"],
 		"requiredTech": "Combustion"	
 	},
 	{
@@ -117,7 +125,7 @@
 		"strength": 5,
 		"uniques": [
 			"Can upgrade to [Adventurer] <after discovering [Astronomy]>",
-			"Can upgrade to [Envoy] <after discovering [Astronomy]><for [non-[City-State]] Civilizations>",
+			"Can upgrade to [Envoy] <after discovering [Astronomy]> <for [non-[City-State]] Civilizations>",
 			"'Standing Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -231,7 +239,7 @@
 		"unitType": "Close Combat",
 		"cost": 50,
 		"movement": 2,
-		"strength": 8,
+		"strength": 10,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -416,6 +424,37 @@
 		"attackSound": "nonmetalhit"
 	},
 	{
+		"name": "Aryan War Cart",
+		"uniqueTo": "South Asia",
+		"unitType": "Assault",
+		"cost": 70,
+		"movement": 3,
+		"strength": 16,
+		"uniques": [
+			"Only available <if [Vedic Kingdoms] is constructed>",
+			"Consumes [1] [Horse]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Edged Weapons'",
+			"[+25]% Strength <after discovering [Iron Working]>",
+			"[-33]% Strength <when fighting in [Rough terrain] tiles>",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Stewardship",
+			"Hardened"
+		],
+		"upgradesTo": "Cataphract",
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Stirrup",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "horse"
+	},
+	{
 		"name": "Noble Chariot",
 		"unitType": "Assault",
 		"cost": 70,
@@ -568,7 +607,7 @@
 		"rangedStrength": 15,
 		"range": 1,
 		"uniques": [
-			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <when above [0] [Standing Army Maintenance]> <after discovering [Mathematics]> <costs [+1 Gold] stats>",
+			"Can transform to [Archer] <when above [0] [Standing Army Maintenance]> <after discovering [Mathematics]> <costs [+100 Gold] stats>",
 			"'Mercenary Army'",
 			"'Infantry'",
 			"'Skirmishers'",
@@ -673,6 +712,38 @@
 		"obsoleteTech": "Tactics",
 		"requiredResource": "Standing Army Maintenance",
 		"upgradesTo": "Armored Elephant Rider",
+		"attackSound": "elephant"
+	},
+	{
+		"name": "War Elephant",
+		"uniqueTo":"South Asia",
+		"replaces":"Elephant Rider",
+		"unitType": "Rider",
+		"cost": 70,
+		"movement": 2,
+		"strength": 21,
+		"uniques": [
+			"Consumes [1] [Elephant]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[+25]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+10]% Strength <vs cities> <when attacking>",
+			"[-25]% Strength <vs ['Siege Weapons'] units>",
+			"[-33]% Strength <vs ['Firearms'] units>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Stable",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Tactics",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Armored War Elephant",
 		"attackSound": "elephant"
 	},
 	{
@@ -1040,8 +1111,8 @@
 			"Limited to [2] per Civilization",
 			"Can transform to [Azadan Cavalry] <removing the [Fast Regrouping] promotion/status> <after discovering [Armorments]> <when above [0] [Horse]>",
 			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
 			"'Noble Army'",
 			"'Infantry'",
 			"'Dense Formation'",
@@ -1123,7 +1194,7 @@
 		"unitType": "Close Combat",
 		"cost": 50,
 		"movement": 2,
-		"strength": 16,
+		"strength": 18,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -1177,6 +1248,67 @@
 		"attackSound": "arrow"
 	},
 	{
+		"name": "Camel Rider",
+		"unitType": "Rider",
+		"cost": 75,
+		"movement": 3,
+		"strength": 17,
+		"uniques": [
+			"Only available <with [Camel]>",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+33]% Strength <vs ['Mounted'] units>",
+			"[+25]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army",
+			"Skirmisher Training"
+		],
+		"requiredBuilding": "Military Stable",
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Mercenary Camel Rider",
+		"unitType": "Rider",
+		"cost": 90,
+		"movement": 3,
+		"strength": 17,
+		"uniques": [
+			"Only available <with [Camel]>",
+			"Unbuildable <for [Human player] Civilizations>",
+			"'Mercenary Army'",
+			"'Mounted'",
+			"'Skirmishers'",
+			"'Edged Weapons'",
+			"No defensive terrain bonus",
+			"[+33]% Strength <vs ['Mounted'] units>",
+			"[+25]% Strength <after discovering [Armorments]> <in [Land] tiles>",
+			"[+25]% Strength <after discovering [Tactics]> <in [Land] tiles>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"Mercenary Habit",
+			"Skirmisher Training"
+		],
+		"requiredTech": "Logistics",
+		"obsoleteTech": "Carriage",
+		"requiredBuilding": "Mercenary Office",
+		"requiredResource": "Mercenary Contract",
+		"upgradesTo": "Hussar",
+		"attackSound": "arrow"
+	},
+	{
 		"name": "Giant Galley Warship",
 		"unitType": "Ranged Combat Ship",
 		"cost": 130,
@@ -1218,7 +1350,7 @@
 			"Only available <if [Persian Dynasties] is constructed>",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
-			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"Can transform to [Azadan Cavalry Archer] <requires [1] movement>",
 			"'Standing Army'",
@@ -1253,7 +1385,7 @@
 			"Unbuildable",
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
-			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"Can transform to [Azadan Cavalry] <requires [1] movement>",
 			"'Standing Army'",
@@ -1345,7 +1477,7 @@
 		"uniques": [
 			"Consumes [1] [Horse]",
 			"Consumes [1] [Metal]",
-			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"'Noble Army'",
 			"'Mounted'",
@@ -1375,7 +1507,7 @@
 		"strength": 24,
 		"uniques": [
 			"Unbuildable",
-			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Heavy Cavalry] <after discovering [Tactics]> <when above [0] [Standing Army Maintenance]>",
 			"Can upgrade to [Knight] <after discovering [Tactics]> <after adopting [Feudalism]>",
 			"'Standing Army'",
 			"'Mounted'",
@@ -1515,8 +1647,6 @@
 		"rangedStrength": 23,
 		"range": 2,
 		"uniques": [
-			"Can transform to [Three-masted Ship] <removing the [Mercenary Habit] promotion/status> <removing the [Caravan Group] promotion/status> <after discovering [Cartography]> <when above [0] [Standing Army Maintenance]>",
-			"Can upgrade to [Three-masted Ship] <for [AI player] Civilizations>",
 			"'Mercenary Army'",
 			"'Sailing Ship'",
 			"'Dense Formation'",
@@ -1532,6 +1662,7 @@
 		"obsoleteTech": "Monocular",
 		"requiredBuilding": "Mercenary Office",
 		"requiredResource": "Mercenary Contract",
+		"upgradesTo":"Three-masted Ship",
 		"attackSound": "throw"
 	},
 	{
@@ -1725,9 +1856,9 @@
 		"uniques": [
 			"Limited to [3] per Civilization",
 			"Only available <if [Celestial Empire] is constructed>",
-			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Revolutionaries] <after discovering [Flintlock]> <after adopting [Long Live the Revolution!]> <when above [0] [Standing Army Maintenance]>",
 			"Can upgrade to [Grenadier] <for [AI player] Civilizations> <hidden from users>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Noble Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
 			"Consumes [1] [Metal]",
 			"'Standing Army'",
 			"'Infantry'",
@@ -1854,6 +1985,37 @@
 			"[-15]% Strength <vs cities> <when attacking>",
 			"[-33]% Strength <vs ['Siege Weapons'] units>",
 			"[-33]% Strength <vs ['Firearms'] units>",
+			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Stable",
+		"requiredTech": "Tactics",
+		"obsoleteTech": "Carriage",
+		"requiredResource": "Standing Army Maintenance",
+		"upgradesTo": "Hussar",
+		"attackSound": "elephant"
+	},
+	{
+		"name": "Armored War Elephant",
+		"replaces":"Armored Elephant Rider",
+		"uniqueTo":"South Asia",
+		"unitType": "Rider",
+		"cost": 110,
+		"movement": 2,
+		"strength": 32,
+		"uniques": [
+			"Consumes [1] [Elephant]",
+			"'Standing Army'",
+			"'Mounted'",
+			"'Dense Formation'",
+			"'Blunt Weapons'",
+			"No defensive terrain bonus",
+			"[+20]% Strength <vs cities> <when attacking>",
+			"[-20]% Strength <vs ['Siege Weapons'] units>",
+			"[-20]% Strength <vs ['Firearms'] units>",
 			"[This Unit] takes [33] damage <upon ending a turn in a [Ocean] tile> <before discovering [Cartography]>",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
@@ -2093,10 +2255,10 @@
 		"unitType": "Close Combat",
 		"cost": 120,
 		"movement": 2,
-		"strength": 28,
+		"strength": 30,
 		"uniques": [
 			"Only available <after adopting [Unity]>",
-			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
+			"Can transform to [Grenadier] <after discovering [Flintlock]> <when above [0] [Standing Army Maintenance]>",
 			"Can upgrade to [Grenadier] <for [AI player] Civilizations>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
@@ -2125,7 +2287,7 @@
 		"movement": 3,
 		"strength": 36,
 		"uniques": [
-			"Only available <in cities with a [Military Stable]> <in cities with a [Firearms Workshop]>",
+			"Only available <in cities with a [Firearms Workshop]>",
 			"Only available <before adopting [Knighthood]>",
 			"Costs [6] [Weapon Parts]",
 			"Consumes [1] [Horse]",
@@ -2436,7 +2598,7 @@
 		"unitType": "Close Combat",
 		"cost": 180,
 		"movement": 2,
-		"strength": 37,
+		"strength": 39,
 		"uniques": [
 			"Only available <if [United States] is constructed>",
 			"Limited to [8] per Civilization <for [AI player] Civilizations> <hidden from users>",
@@ -2727,6 +2889,35 @@
 		"promotions": [
 			"The Standing Army"
 		],
+		"requiredBuilding": "Military Port",
+		"requiredTech": "Ship Armour",
+		"obsoleteTech": "Advanced Shipbuilding",
+		"upgradesTo": "Destroyer Fleet",
+		"requiredResource": "Standing Army Maintenance",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Dreadnaught Fleet",
+		"unitType": "Ranged Combat Ship",
+		"cost": 350,
+		"movement": 4,
+		"strength": 52,
+		"rangedStrength": 58,
+		"uniques": [
+			"Consumes [1] [Coal]",
+			"Costs [10] [Alloy]",
+			"Costs [25] [Ship Parts]",
+			"'Standing Army'",
+			"'Engine Ship'",
+			"'Dense Formation'",
+			"'Firearms'",
+			"Can see invisible [{Barbarian} {Water}] units",
+			"Never appears as a Barbarian unit <hidden from users>"
+		],
+		"promotions": [
+			"The Standing Army"
+		],
+		"requiredBuilding": "Military Port",
 		"requiredTech": "Ship Armour",
 		"obsoleteTech": "Advanced Shipbuilding",
 		"upgradesTo": "Battleship Fleet",
@@ -2743,7 +2934,7 @@
 		"range": 1,
 		"uniques": [
 			"Can upgrade to [Modern Guerrilla] <after adopting [Anarchism]> <after discovering [Mobile Tactics]>",
-			"Can transform to [Red Army Troop] <after adopting [Red Army]> <removing the [The Levied Army] promotion/status> <removing the [Skirmisher Training] promotion/status> <when above [0] [Standing Army Maintenance]>",
+			"Can transform to [Red Army Troop] <after adopting [Red Army]> <when above [0] [Standing Army Maintenance]>",
 			"Unbuildable",
 			"'Levy Army'",
 			"'Infantry'",
@@ -2787,7 +2978,7 @@
 		"unitType": "Close Combat",
 		"cost": 260,
 		"movement": 2,
-		"strength": 56,
+		"strength": 58,
 		"uniques": [
 			"Can transform to [Heavy Infantry] <after discovering [Replaceable Parts]> <when above [0] [Standing Army Maintenance]> <removing the [The Garrison Army] promotion/status>",
 			"Only available <if [United States] is constructed>",
@@ -2887,7 +3078,7 @@
 		"movement": 3,
 		"strength": 45,
 		"rangedStrength": 50,
-		"range:": 2,
+		"range": 2,
 		"uniques": [
 			"Consumes [1] [Fuel]",
 			"Costs [24] [Ship Parts]",
@@ -2951,7 +3142,7 @@
 			"'Engine Ship'",
 			"'Dense Formation'",
 			"'Firearms'",
-			"[+30]% Strength <vs [Close Combat Ship] units>",
+			"[+30]% Strength <vs [Close Combat Ship] units>","Can see invisible [{Barbarian} {Water}] units",
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
@@ -3428,7 +3619,7 @@
 		"cost": 250,
 		"movement": 3,
 		"strength": 68,
-		"rangedStrength": 68,
+		"rangedStrength": 70,
 		"range": 1,
 		"uniques": [
 			"Only available <after adopting [Militia Army]>",
@@ -3772,7 +3963,7 @@
 		"movement": 6,
 		"strength": 52,
 		"rangedStrength": 62,
-		"range:": 2,
+		"range": 2,
 		"uniques": [
 			"Costs [27] [Ship Parts]",
 			"Consumes [1] [Enriched Uranium]",
