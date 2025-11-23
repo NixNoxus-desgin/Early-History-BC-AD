@@ -3435,7 +3435,7 @@
 		],
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Dynamite",
-		"upgradesTo": "Self-propelled Artillery",
+		"upgradesTo": "Self Propelled Artillery",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "artillery"
 	},
@@ -3499,7 +3499,7 @@
 		"requiredBuilding": "Military Factory Complex",
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Mobile Tactics",
-		"upgradesTo": "Self-propelled Artillery",
+		"upgradesTo": "Self Propelled Artillery",
 		"requiredResource": "Standing Army Maintenance",
 		"attackSound": "artillery"
 	},
@@ -3724,7 +3724,7 @@
 		"attackSound": "shot"
 	},
 	{
-		"name": "Self-propelled Artillery",
+		"name": "Self Propelled Artillery",
 		"unitType": "Siege",
 		"cost": 410,
 		"movement": 3,
@@ -3904,7 +3904,7 @@
 			"'Dense Formation'",
 			"'Firearms'",
 			"[+150]% Strength <vs [{'Dense Formation'} {'Infantry'}] units> <when attacking>",
-			"[+75]% Strength <vs cities> <when attacking>",
+			"[+125]% Strength <vs cities> <when attacking>",
 			"Ranged attacks may be performed over obstacles",
 			"Can move after attacking",
 			"Never appears as a Barbarian unit <hidden from users>"
