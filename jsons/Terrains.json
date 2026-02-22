@@ -12,7 +12,9 @@
 			151
 		],
 		"uniques": [
-			"Every [60] tiles with this terrain will receive a major deposit of a strategic resource."
+			"Every [60] tiles with this terrain will receive a major deposit of a strategic resource.",
+			"Becomes [Atoll] when adjacent to [Ocean] <with [5]% chance>",
+			"Becomes [Atoll] when adjacent to [Coast] <with [2]% chance>"
 		]
 	},
 	{
@@ -28,7 +30,8 @@
 		"uniques": [
 			"[+2] to Fertility for Map Generation",
 			"Considered [Desirable] when determining start locations <on water maps>",
-			"Every [60] tiles with this terrain will receive a major deposit of a strategic resource."
+			"Every [60] tiles with this terrain will receive a major deposit of a strategic resource.",
+			"Becomes [Atoll] when adjacent to [Ocean] <with [2]% chance>"
 		]
 	},
 	{
@@ -544,7 +547,7 @@
 		"type": "NaturalWonder",
 		"food": 2,
 		"gold": 1,
-		"science": 2,
+		"science": 1,
 		"occursOn": [
 			"Ocean"
 		],
@@ -706,7 +709,7 @@
 	{
 		"name": "Cerro de Potosi",
 		"type": "NaturalWonder",
-		"gold": 10,
+		"gold": 8,
 		"occursOn": [
 			"Plains",
 			"Mountain"
@@ -766,7 +769,7 @@
 		"name": "Mount Sinai",
 		"type": "NaturalWonder",
 		"faith": 5,
-		"production": 5,
+		"production": 3,
 		"occursOn": [
 			"Desert",
 			"Plains"
