@@ -92,6 +92,16 @@
 			//Tooltips
 			"Comment [Spawns free [The Levied Army] units to help with warfare.]",
 			"Comment [The number and type of unit spawned depends on the 'Military Building' in the city and your technological, cultural advancement.]",
+			"Comment [Here is a list of all the possible units if corresponding technologies are researched according to era.]",
+			"Comment [[Neolithic era]: [Primal Warrior], [Brute Warrior]]",
+			"Comment [[Ancient era]: [Javalineer], [Brute Warrior]]",
+			"Comment [[Classical era]: [Javalineer], [Spearman]]",
+			"Comment [[Medieval era]: [Levy Archer], [Spearman]]",
+			"Comment [[Renaissance era]: [Levy Crossbowman], [Pikeman]]",
+			"Comment [[Imperial era]: [Guerrilla], [Musketeer], [Gunboat]]",
+			"Comment [[Industrial era]: [Modern Guerrilla], [Rifleman], [Gunboat]]",
+			"Comment [[Modern era]: [Modern Guerrilla], [Modern Conscript], [Gunboat]]",
+
 			//Neolitic-Ancient
 			"Free [Primal Warrior] appears <before discovering [Mining]> <hidden from users> ",
 			"Free [Brute Warrior] appears <after discovering [Copper Working]> <before discovering [Iron Working]> <for [non-[Europa]] Civilizations> <hidden from users> ",
@@ -105,8 +115,8 @@
 			"Free [Nomad Warriors] appears <after discovering [Iron Working]> <before discovering [Hand Cannon]> <in cities with a [Armory]> <hidden from users>  <if [Nomadic Culture] is constructed>",
 			"Free [Levy Archer] appears <after discovering [Tactics]> <before discovering [Hand Cannon]> <hidden from users> ",
 			//Renaissance-Imperial
-			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> ",
-			"Free [Pike and Shot] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> ",
+			"Free [Pikeman] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <hidden from users> ",
+			"Free [Pikeman] appears <after discovering [Hand Cannon]> <before discovering [Flintlock]> <in cities with a [Armory]> <hidden from users> ",
 			"Free [Levy Crossbowman] appears <after discovering [Hand Cannon]> <before discovering [Rifling]> <hidden from users> ",
 			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <hidden from users> ",
 			"Free [Musketeer] appears <after discovering [Flintlock]> <before discovering [Rifling]> <in cities with a [Armory]>  <hidden from users> ",
@@ -130,20 +140,27 @@
 			"Destroyed when the city is captured"
 		]
 	},
-	{
-		"name": "Migrate Capital",
-		"cost": 50,
-		"uniques": [
-			"Limited to [1] per Civilization <hidden from users>",
-			"Unbuildable <for [AI player] Civilizations> <hidden from users>",
-			"Only available <in [non-[Capital]] cities> <in cities connected to the capital>",
-			"[-100]% production cost <if [Nomadic Culture] is constructed>",
-			"Remove [Palace] [in all cities]",
-			"Gain a free [Palace] [in this city] <for [1] turns>"
-		],
-		"requiredTech": "Horse Collar",
-		"hurryCostModifier": 100
-	},
+	//{
+	//	"name": "Migrate Capital",
+	//	"cost": 50,
+	//	"uniques": [
+	//		"Limited to [1] per Civilization <hidden from users>",
+	//		"Unbuildable <for [AI player] Civilizations> <hidden from users>",
+	//		"Only available <in [non-[Capital]] cities> <in cities connected to the capital>",
+	//		"[-100]% production cost <if [Nomadic Culture] is constructed>",
+	//		"Indicates the capital city <in cities without a [Palace]>",
+	//		"Remove ['Flag'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Civilization Form'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Civilization State'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Economic Policy'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Outcome'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove ['Culture Diversity State'] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove [Palace] [in all cities] <in [non-[Capital]] cities>",
+	//		"Remove [Migrate Capital] [in this city] <in cities with a [Palace]>"
+	//	],
+	//	"requiredTech": "Horse Collar",
+	//	"hurryCostModifier": 100
+	//},
 	{
 		"name": "Resettlement",
 		"cost": 0,
@@ -296,22 +313,17 @@
 			"Gain a free [Intergration] [in this city]",
 			"Gain a free [Administrative Intergration] [in this city]",
 			"Gain a free [Cultural Intergration] [in this city]",
-			"[+300]% weight to this choice for AI decisions <hidden from users>",
+			"[+90]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Printing Press"
 	},
 	{
 		"name": "Intergration",
+		"happiness": 1,
 		"cost": 50,
 		"uniques": [
-			"[-5]% [Food] [in this city] <in cities without a [Administrative Intergration]>",
-			"[-25]% [Production] [in this city] <in cities without a [Administrative Intergration]>",
-			"[-25]% [Gold] [in this city] <in cities without a [Administrative Intergration]>",
-			"[-25]% [Culture] [in this city] <in cities without a [Cultural Intergration]>",
-			"[-10]% [Science] [in this city] <in cities without a [Cultural Intergration]>",
-			"[-25]% [Faith] [in this city] <in cities without a [Cultural Intergration]>",
-			"[-5]% [Happiness] [in this city] <in cities without a [Administrative Intergration]> <in cities without a [Cultural Intergration]>",
+			"[+90]% weight to this choice for AI decisions <hidden from users>",
 			"Only available <before adopting [Anarchism]>",
 			"Can only be built <in [Annexed] cities>",
 			"Removes extra unhappiness from annexed cities",
@@ -360,7 +372,7 @@
 	},
 	{
 		"name": "Remove Slums",
-		"cost": 80,
+		"cost": 70,
 		"uniques": [
 			"Only available <in cities with a [Slum]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
@@ -370,11 +382,11 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Hall",
-		"requiredTech": "Paper Making"
+		"requiredTech": "Writing"
 	},
 	{
 		"name": "Clear Corruption",
-		"cost": 80,
+		"cost": 70,
 		"uniques": [
 			"Only available <in cities with a [Unjust Ruling]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
@@ -385,11 +397,11 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Hall",
-		"requiredTech": "Paper Making"
+		"requiredTech": "Writing"
 	},
 	{
 		"name": "Stop Rebellion",
-		"cost": 80,
+		"cost": 70,
 		"uniques": [
 			"Only available <in cities with a [Peasant Rebellion]>",
 			"Unbuildable <for [Human player] Civilizations> <hidden from users>",
@@ -399,7 +411,7 @@
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Town Hall",
-		"requiredTech": "Paper Making"
+		"requiredTech": "Writing"
 	},
 	//Expansion
 	{
@@ -957,7 +969,7 @@
 			"[+1 Food] from [Bovine] tiles [in this city]",
 			"[+1 Food] from [Wild Animals] tiles [in this city]"
 		],
-		"requiredTech": "Pottery",
+		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 5
 	},
 	{
@@ -986,7 +998,7 @@
 			"Consumes [1] [Sheep Horde]",
 			"Consumes [1] [Cattle Horde]"
 		],
-		"requiredTech": "Pottery",
+		"requiredTech": "Animal Husbandry",
 		"hurryCostModifier": 5
 	},
 	{
@@ -1062,13 +1074,12 @@
 	{
 		"name": "Foundry",
 		"maintenance": 1,
+		"production": 1,
 		"specialistSlots": {
 			"Engineer": 1
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"[+1 Production] from [Metal] tiles [in this city]",
-			"[+1 Production] from [Minerals] tiles [in this city]",
 			"[+10]% Production when constructing [Ancient era] units [in this city]",
 			"[+10]% Production when constructing [Classical era] units [in this city]",
 			"Provides [1] [Metal]",
@@ -1200,13 +1211,14 @@
 	{
 		"name": "First Temple of the One True God",
 		"isWonder": true,
-		"faith": 3,
+		"faith": 5,
 		"happiness": 1,
+		"greatPersonPoints": {
+			"Great Prophet": 1
+		},
 		"uniques": [
-			"'Worship Place'",
+			"'Core of Religion'",
 			"[+10]% [Faith] [in all cities]",
-			"Gain a free [Follower] belief <upon founding a Religion> <before founding a religion>",
-			"Gain a free [Follower] belief <after founding a religion>",
 			"Only available <after adopting [Monotheism]>",
 			"Only available <if [No Wonder] is not constructed> <hidden from users>"
 		],
@@ -1421,12 +1433,18 @@
 	{
 		"name": "European Longhouse",
 		"uniqueTo": "Europa",
+		"replaces": "Town Hall",
+		"maintenance": 5,
+		"happiness": 1,
+		"culture": 2,
 		"production": 2,
-		"cityStrength": 2,
+		"cityStrength": 4,
+		"specialistSlots": {
+			"Governor": 1
+		},
 		"uniques": [
-			"Gain a free [Town Hall] [in this city]",
-			"[+33]% weight to this choice for AI decisions <hidden from users>",
-			"Only available <after adopting [Unity]>",
+			"'Political Building'",
+			"[+20]% weight to this choice for AI decisions <hidden from users>",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Writing"
@@ -1711,7 +1729,7 @@
 		"uniques": [
 			"'Light Industry'",
 			"[+2 Gold] from ['Lumber Improvement'] tiles [in this city]",
-			"Must have an owned ['Lumber Improvement'] within [3] tiles"
+			"Must have an owned ['Lumber Improvement'] within [2] tiles"
 		],
 		"requiredTech": "Carpentry"
 	},
@@ -2174,11 +2192,11 @@
 			"Comment [Belongs to ['Heavy Industry'] before the Industrial era, and starting from that era, it turns into a ['Light Industry'] building.]",
 			"'Heavy Industry' <before the [Industrial era]> <hidden from users>",
 			"'Light Industry' <starting from the [Industrial era]> <hidden from users>",
-			"[+33]% weight to this choice for AI decisions <hidden from users>",
 			"[+1 Production] from ['Extraction Improvement'] tiles [in this city]",
 			"[+1 Food] from ['Agricultural Improvement'] tiles [in this city]",
 			"[+1 Production] from ['Lumber Improvement'] tiles [in this city]",
-			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>"
+			"Provides [1] [Consumption Supply] <starting from the [Industrial era]>",
+			"[+33]% weight to this choice for AI decisions <hidden from users>"
 		],
 		"requiredTech": "Forging"
 	},
@@ -2191,6 +2209,7 @@
 			"New [Military] units start with [10] XP [in this city]",
 			"[{Land} {Military}] units gain the [Classical Arms] promotion",
 			"Comment [Enables you to build new Siege Units unlocked by Engineering]",
+			"Free [Swordsman] appears <for [AI player] Civilizations>",
 			"Destroyed when the city is captured"
 		],
 		"requiredBuilding": "Barrack",
@@ -2323,6 +2342,7 @@
 		},
 		"uniques": [
 			"'Economic Building'",
+			"Comment [Enable you to build ['Monopoly Trade'] buildings in this city]",
 			"[+1 Production, +1 Gold] from [Luxury resource] tiles [in this city]"
 		],
 		"requiredBuilding": "Road Network",
@@ -2423,13 +2443,14 @@
 		"name": "Tea House",
 		"maintenance": 2,
 		"happiness": 2,
+		"gold": 1,
+		"culture": 1,
 		"specialistSlots": {
 			"Artist": 1
 		},
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Tea Leave]",
-			"[+2 Culture] from [Tea Leave] tiles [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredResource": "Tea Leave",
@@ -2440,10 +2461,11 @@
 		"name": "Cafe",
 		"maintenance": 2,
 		"happiness": 2,
+		"gold": 1,
+		"culture": 1,
 		"uniques": [
 			"'Cultural Building'",
 			"Provides [1] [Coffee]",
-			"[+1 Culture, +1 Gold] from [Coffee] tiles [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredResource": "Coffee",
@@ -3192,7 +3214,7 @@
 		"uniques": [
 			"'Marine Infrastructure'",
 			"[+1]% [Gold] from Trade Routes",
-			"[+2 Happiness, +1 Gold] from [Citrus] tiles [in this city]",
+			"[+1 Happiness] <with [Citrus]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Trading Post]>",
 			"[+5]% [Gold] [in this city] <in cities with a [Warehouse]>",
 			"Must be next to [Coast]"
@@ -3203,10 +3225,10 @@
 	{
 		"name": "Salt Evaporation Pond",
 		"cost":80,
-		"production":1,
+		"gold": 3,
+		"production":2,
 		"uniques": [
 			"'Marine Infrastructure'",
-			"[+1 Gold] from [Coastal] tiles [in this city]",
 			"Must be next to [Coast]"
 		],
 		"requiredBuilding": "Fishing Port",
@@ -3903,6 +3925,7 @@
 	{
 		"name": "Smeltry",
 		"maintenance": 2,
+		"production": 2,
 		"specialistSlots": {
 			"Engineer": 1
 		},
@@ -3912,7 +3935,6 @@
 		"uniques": [
 			"'Heavy Industry'",
 			"[+100]% Production when constructing [Alloy Mill] buildings [in this city]",
-			"[+1 Production] from ['Useful Mineral'] tiles [in this city]",
 			"Provides [1] [Alloy] <in cities without a [Alloy Mill]>",
 			"Consumes [1] [Metal] <in cities without a [Alloy Mill]>"
 		],
@@ -4232,11 +4254,10 @@
 		"name": "Cargo Port",
 		"maintenance": 5,
 		"percentStatBonus": {
-			"gold": 10
+			"gold": 20
 		},
 		"uniques": [
 			"'Marine Infrastructure'",
-			"[+1 Gold] from [Bonus resource] tiles [in this city]",
 			"[+1]% Production when constructing ['Marine Infrastructure'] buildings [in all cities]",
 			"Must be next to [Coast]"
 		],
@@ -4667,6 +4688,7 @@
 		"name": "Gas Storage and Transfer System",
 		"cost": 500,
 		"maintenance": 5,
+		"production": 2,
 		"science": 1,
 		"specialistSlots": {
 			"Engineer": 1
@@ -4675,7 +4697,6 @@
 			"'Heavy Industry'",
 			"Provides [3] [Fuel]",
 			"Provides [1] [Industrial Chemicals]",
-			"[+3 Production] from [Natural Gas] tiles [in this city]",
 			"Consumes [2] [Natural Gas(Stored)]",
 			"Only available <when above [0] [Natural Gas(Stored)]>"
 		],
@@ -5162,7 +5183,7 @@
 		"name": "Rubber Transplant",
 		"maintenance": 3,
 		"uniques": [
-			"Must have an owned [{non-[improved]} {Jungle}] within [4] tiles",
+			"Must have an owned [{non-[improved]} {Jungle}] within [3] tiles",
 			"Only available <when above [0] [Rubber]>",
 			"Creates a [Rubber Plantation] improvement on a specific tile",
 			"Destroyed when the city is captured"
@@ -5282,6 +5303,7 @@
 		"name": "Oil Refinery",
 		"cost": 750,
 		"maintenance": 8,
+		"production": 2,
 		"science": 1,
 		"specialistSlots": {
 			"Engineer": 1,
@@ -5292,7 +5314,6 @@
 			"Provides [4] [Industry Size]",
 			"Provides [5] [Fuel]",
 			"Provides [1] [Industrial Chemicals]",
-			"[+1 Production] from [Oil] tiles [in this city]",
 			"Consumes [2] [Oil]",
 			///Powered
 			"Consumes [1] [Oil] <in cities with a [Power Grid]> <in cities without a [Power Shortage]> <hidden from users>",
@@ -5449,7 +5470,6 @@
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
-			"[+2 Production] from [Oil] tiles [in this city]",
 			"Provides [5] [Power] <in this city>",
 			"Consumes [3] [Fuel]",
 			"Only available <when above [0] [Fuel]>"
@@ -5462,7 +5482,6 @@
 		"maintenance": 10,
 		"uniques": [
 			"'Power Building'",
-			"[+2 Production] from [Coal] tiles [in this city]",
 			"Provides [7] [Power] <in this city>",
 			"Consumes [2] [Coal]",
 			"Only available <when above [0] [Coal]>"
@@ -5779,7 +5798,6 @@
 		},
 		"uniques": [
 			"'Heavy Industry'",
-			"[+1 Production] from [Coal] tiles [in this city]",
 			"Provides [2] [Fuel]",
 			"Provides [1] [Rubber]",
 			"Consumes [1] [Coal]"
@@ -6737,9 +6755,11 @@
 			"Provides [2] [Influence] <during a Golden Age> <when number of [Influence] is less than [Influence Limit]>",
 			///Stuff
 			"Provides [10] [Migration Limit]",
+			//"Indicates the capital city <if [Migrate Capital] is not constructed>",
 			"Indicates the capital city",
 			//Tutorial
-			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>"
+			"Triggers a [The internal affair...] event <every [1] turns> <when below [1] [Enact Policy Tutorial Triggered Flag]> <hidden from users>",
+			"Moves to new capital when capital changes <hidden from users>"
 			
 		]
 	},
@@ -7333,7 +7353,6 @@
 			"[+10]% [Science] [in this city] <in cities with a [Coal Power Plant]>",
 			"[+10]% [Culture] [in this city] <in cities with a [Coal Power Plant]>",
 			"[-10]% [Production] [in this city] <in cities with a [Coal Power Plant]>",
-			"[-1 Production] from [Coal] tiles [in this city]",
 			"Provides [2] [Coal]",
 			"Destroyed when the city is captured"
 		],
@@ -7649,7 +7668,7 @@
 			"'Outcome'",
 			"Provides [2] [Noble Army Maintenance]",
 			"Provides [2] [Horse]",
-			"[+33]% Strength <for ['Noble Army'] units>",
+			"[+25]% Strength <for ['Noble Army'] units>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7682,7 +7701,6 @@
 			"[+5]% Strength <for ['Standing Army'] units>",
 			"[-10]% [Culture] [in all cities] <for [10] turns>",
 			"[-10]% [Gold] [in all cities] <for [10] turns>",
-			"Rebel units may spawn <for [8] turns>",
 			"Triggers a global alert upon completion",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
@@ -7867,10 +7885,10 @@
 			"[-33]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Medium Culture Diversity] is constructed>",
 			"[-66]% Production when constructing [{All} {non-['Invention']} {non-['Innovation']} {non-[Wonder]} {non-[National Wonder]}] buildings [in all cities] <if [Low Culture Diversity] is constructed>",
 
-			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed>",
-			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed>",
-			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed>",
-			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed>",
+			"Upon capturing a city, receive [1] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
+			"Upon capturing a city, receive [2] times its [Food] production as [Slaves] immediately <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
+			"Earn [25]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is not constructed> <if [Abolition] is not constructed>",
+			"Earn [50]% of the damage done to [Military] units as [Slaves] <if [Low Culture Diversity] is constructed> <if [Abolition] is not constructed>",
 
 			"[-50]% unhappiness from the number of cities <if [Low Culture Diversity] is constructed>",
 			"[-67]% unhappiness from the number of cities <if [Medium Culture Diversity] is constructed>",
@@ -9467,8 +9485,9 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Negative Event'",
 			"[-5]% Production when constructing [All] buildings [in all cities]",
-			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance>"
+			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
 	},
 	{
@@ -9477,14 +9496,14 @@
 		"percentStatBonus": {
 			"production": -5,
 			"gold": -10,
-			"culture": -10,
 			"faith": -5
 		},
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
+			"'Negative Event'",
 			"[Gold] cost of purchasing [All] buildings [+5]%",
-			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance>"
+			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
 	},
 	{
@@ -9493,9 +9512,13 @@
 		"uniques": [
 			"Unavailable <hidden from users>",
 			"Unsellable",
-			"Rebel units may spawn",
-			"[-3]% Strength <vs [Barbarian] units>",
-			"Triggers a [Spreading Chaos] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance>"
+			"'Negative Event'",
+			"[-5]% Production when constructing [All] units [in all cities]",
+			"[2] [Farmer Rebellion]s rebel <before the [Industrial era]>",
+			"A [Rogue Aristrocrat] rebels <if [Strife] is constructed> <before the [Industrial era]>",
+			"A [Rogue Aristrocrat] rebels <if [Anarchy] is constructed> <before the [Industrial era]>",
+			"[2] [Militia Movement]s rebel <starting from the [Industrial era]>",
+			"Triggers a [Chaos Spreading] event <in cities with a [Palace]> <when number of [Cities] is less than [4]> <with [10]% chance> <upon turn start>"
 		]
 	},
 	{
@@ -9537,7 +9560,7 @@
 		]
 	},
 	{
-		"name": "Army Maintenance Cost",
+		"name": "Influence Maintenance Cost",
 		"cost": 50,
 		"uniques": [
 			"Unavailable <hidden from users>",
@@ -9624,6 +9647,16 @@
 		]
 	},
 	{
+		"name": "Abolition",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
 		"name": "Hide Essential",
 		"cost": 10,
 		"uniques": [
@@ -9667,6 +9700,18 @@
 			"Moves to new capital when capital changes <hidden from users>"
 		]
 	},
+	{
+		"name": "Placeholder",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Comment [Migrate Capital] <hidden from users>",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
 	//Scenario Tools
 	{
 		"name": "No Wonder",
@@ -9675,6 +9720,56 @@
 			"Unavailable <hidden from users>",
 			"Unsellable",
 			"'Flag'",
+			"Will not be displayed in Civilopedia",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Region Sized Map",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Will not be displayed in Civilopedia",
+			"[-150]% unhappiness from the number of cities",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Sub-Continent Sized Map",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Will not be displayed in Civilopedia",
+			"[-75]% unhappiness from the number of cities",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	{
+		"name": "Continent Sized Map",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Will not be displayed in Civilopedia",
+			"[-50]% unhappiness from the number of cities",
+			"Moves to new capital when capital changes <hidden from users>"
+		]
+	},
+	//Spark of Civilization Scenario 
+	{
+		"name": "Mission: Into The Bronze Age",
+		"cost": 10,
+		"uniques": [
+			"Unavailable <hidden from users>",
+			"Unsellable",
+			"'Flag'",
+			"Remove [Mission: Into The Bronze Age] [in all cities] <after discovering [Bronze Working]> <if [Smeltry] is constructed>",
+			"Triggers a [New Mission: Sargon's Reign] event <after discovering [Bronze Working]> <if [Smeltry] is constructed>",
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
