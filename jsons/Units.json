@@ -179,6 +179,7 @@
 		"movement": 2,
 		"strength": 10,
 		"uniques": [
+			"Limited to [2] per Civilization <for [AI player] Civilizations>",
 			"Can upgrade to [Adventurer] <after discovering [Astronomy]>",
 			"Can upgrade to [Envoy] <after discovering [Astronomy]> <for [non-[City-State]] Civilizations>",
 			"'Standing Army'",
@@ -241,6 +242,7 @@
 	},
 	{
 		"name": "Primal Herder",
+		"cost": 25,
 		"uniqueTo": "Euroasian Nomads",
 		"replaces": "Hunter Gatherer",
 		"unitType": "Close Combat",
@@ -370,10 +372,10 @@
 		"strength": 12,
 		"uniques": [
 			"Limited to [5] per Civilization",
-			"Can transform to [Early Swordsman] <removing the [The Levied Army] promotion/status> <after discovering [Bronze Working]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
-			"Can transform to [Archer] <removing the [The Levied Army] promotion/status> <after discovering [Mathematics]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
-			"Can transform to [Early Rider] <removing the [The Levied Army] promotion/status> <after discovering [Horseback Riding]> <when above [0] [Horse]> <when above [0] [Standing Army Maintenance]> <costs [+125 Gold] stats>",
-			"Can transform to [Comitatus] <removing the [The Levied Army] promotion/status> <after discovering [Mining]> <after adopting [Unity]> <when above [0] [Noble Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can transform to [Early Swordsman] <after discovering [Bronze Working]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can transform to [Archer] <after discovering [Mathematics]> <when above [0] [Standing Army Maintenance]> <costs [+100 Gold] stats>",
+			"Can transform to [Early Rider] <after discovering [Horseback Riding]> <when above [0] [Horse]> <when above [0] [Standing Army Maintenance]> <costs [+125 Gold] stats>",
+			"Can transform to [Comitatus] <after discovering [Mining]> <after adopting [Unity]> <when above [0] [Noble Army Maintenance]> <costs [+100 Gold] stats>",
 			"Can upgrade to [Early Swordsman] <for [AI player] Civilizations> <hidden from users>",
 			"'Levy Army'",
 			"'Infantry'",
@@ -384,7 +386,7 @@
 			"Never appears as a Barbarian unit <hidden from users>"
 		],
 		"promotions": [
-			"The Levied Army",
+			"The Garrison Army",
 			"Hardened"
 		],
 		"requiredTech": "Copper Working",
@@ -5121,6 +5123,7 @@
 			"'Dense Formation'",
 			"'Edged Weapons'",
 			"Cannot embark",
+			"[-10] Strength <before the [Medieval era]>",
 			"[+17]% Strength <starting from the [Renaissance era]>",
 			"[+25]% Strength <starting from the [Imperial era]>"
 		],
@@ -5163,7 +5166,7 @@
 		"strength": 54,
 		"uniqueTo": "Barbarians",
 		"uniques": [
-			"'Extremeist Militias'",
+			"'Extremist Militias'",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Firearms'",
@@ -5213,7 +5216,7 @@
 		"strength": 95,
 		"uniqueTo": "Barbarians",
 		"uniques": [
-			"'Extremeist Militias'",
+			"'Extremist Militias'",
 			"'Infantry'",
 			"'Skirmishers'",
 			"'Firearms'"
