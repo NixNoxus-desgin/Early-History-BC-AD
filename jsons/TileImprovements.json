@@ -47,11 +47,13 @@
 	},
 	{
 		"name": "Rubber Plantation",
-		"production":1,
+		"production": 1,
 		"gold": 2,
 		"techRequired": "Industrialization",
-		"terrainsCanBeBuiltOn":["Forest",
-								"Jungle"],
+		"terrainsCanBeBuiltOn": [
+			"Forest",
+			"Jungle"
+		],
 		"uniques": [
 			"Can only be built on [Grassland] tiles",
 			"Does not need removal of [Forest]",
@@ -71,7 +73,7 @@
 			"Flood plains",
 			"Black Soil"
 		],
-		"food": 4,
+		"food": 5,
 		"turnsToBuild": 10,
 		"techRequired": "Fertilizer",
 		"uniques": [
@@ -102,7 +104,7 @@
 			"Flood plains",
 			"Hill",
 			"Tundra",
-			"Black Soil"
+			"Black Soil",
 		],
 		"food": 3,
 		"culture": 2,
@@ -144,7 +146,7 @@
 		"terrainsCanBeBuiltOn": [
 			"Coast",
 			"Lakes",
-			"Marsh"
+			"Marsh",
 		],
 		"food": 1,
 		"gold": 1,
@@ -185,11 +187,11 @@
 			"Hill",
 			"Tundra",
 			"Forest",
-			"Jungle"
+			"Jungle",
 		],
-		"food": 1,
-		"production": 1,
-		"gold": 1,
+		"food": 2,
+		"production": 3,
+		"gold": 2,
 		"turnsToBuild": 14,
 		"techRequired": "Ecology",
 		"uniques": [
@@ -325,12 +327,13 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Forest",
 			"Jungle",
-			"Flood plains"
+			"Flood plains",
 		],
 		"turnsToBuild": 9,
 		"techRequired": "Horse Collar",
@@ -348,12 +351,14 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
+			"Snow",
 			"Forest",
 			"Jungle",
-			"Flood plains"
+			"Flood plains",
 		],
 		"turnsToBuild": 9,
 		"techRequired": "Cartridge",
@@ -372,22 +377,24 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Forest",
 			"Jungle",
-			"Flood plains"
+			"Flood plains",
 		],
 		"production": 1,
 		"science": 1,
 		"turnsToBuild": 7,
-		"techRequired": "Electricity",
+		"techRequired": "Electrification",
 		"uniques": [
 			"'Infrastructure Improvement'",
 			"Provides [2] [Power]",
 			"Provides [1] [Power] <in [River] tiles> <in tiles not adjacent to [Water] tiles>",
 			"Provides [1] [Power] <in tiles adjacent to [Water] tiles>",
+			"Provides [1] [Power] <after discovering [Renewable Energy]>",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 		"shortcutKey": "P"
@@ -443,7 +450,6 @@
 		],
 		"shortcutKey": "F"
 	},
-	
 	{
 		"name": "Camp",
 		"turnsToBuild": 4,
@@ -533,7 +539,8 @@
 		"name": "Manor",
 		"terrainsCanBeBuiltOn": [
 			"Plains",
-			"Flood plains"
+			"Flood plains",
+			"Black Soil",
 		],
 		"culture": 1,
 		"happiness": 1,
@@ -559,9 +566,9 @@
 			"Forest",
 			"Jungle"
 		],
-		"gold": 4,
-		"production": 2,
-		"turnsToBuild": 4,
+		"gold": 3,
+		"production": 1,
+		"turnsToBuild": 5,
 		"uniques": [
 			"Does not need removal of [Forest]",
 			"'Policy Improvement'",
@@ -581,6 +588,7 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
@@ -611,6 +619,7 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
@@ -618,7 +627,7 @@
 			"Jungle",
 			"Flood plains",
 			"Snow",
-			"Oasis"
+			"Oasis",
 		],
 		"science": 6,
 		"happiness": 1,
@@ -657,6 +666,7 @@
 			"Can only be built to improve a resource",
 			"Can only be built on [Water] tiles",
 			"Provides [1] [Natural Gas(Stored)] <in [{Ocean} {Natural Gas}] tiles>",
+			"Will not be replaced by automated units",
 			"Pillaging this improvement yields approximately [+20 Gold]"
 		],
 		"shortcutKey": "P"
@@ -675,7 +685,7 @@
 		"shortcutKey": "Q"
 	},
 	// Military improvement
-		{
+	{
 		"name": "Trench",
 		"turnsToBuild": 1,
 		"uniques": [
@@ -686,12 +696,13 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Snow",
 			"Forest",
-			"Jungle"
+			"Jungle",
 		],
 		"techRequired": "Mathematics",
 		"shortcutKey": "O"
@@ -710,12 +721,13 @@
 		"terrainsCanBeBuiltOn": [
 			"Plains",
 			"Grassland",
+			"Black Soil",
 			"Desert",
 			"Hill",
 			"Tundra",
 			"Snow",
 			"Forest",
-			"Jungle"
+			"Jungle",
 		],
 		"techRequired": "Engineering",
 		"shortcutKey": "O"
@@ -735,9 +747,17 @@
 		],
 		"shortcutKey": "R",
 		"civilopediaText": [
-			{"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
-            {"text":"Reduces movement cost to ⅓ with Machinery", "link":"Technology/Machinery"},
-            {"text":"Requires Engineering to bridge rivers", "link":"Technology/Engineering"}
+			{
+				"text": "Reduces movement cost to ½ if the other tile also has a Road or Railroad"
+			},
+			{
+				"text": "Reduces movement cost to ⅓ with Machinery",
+				"link": "Technology/Machinery"
+			},
+			{
+				"text": "Requires Engineering to bridge rivers",
+				"link": "Technology/Engineering"
+			}
 		]
 	},
 	{
@@ -754,8 +774,12 @@
 		],
 		"shortcutKey": "R",
 		"civilopediaText": [
-            {"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"},
-            {"text":"Provides a +25% [Production] bonus to cities connected to the capital by Railroads"}
+			{
+				"text": "Reduces movement cost to ⅒ if the other tile also has a Railroad"
+			},
+			{
+				"text": "Provides a +25% [Production] bonus to cities connected to the capital by Railroads"
+			}
 		]
 	},
 	{
@@ -764,18 +788,78 @@
 			"Plains",
 			"Grassland",
 			"Desert",
-			"Tundra"
+			"Tundra",
+			"Snow",
+			"Flood plains",
+			"Black Soil",
+			"Oasis",
 		],
 		"turnsToBuild": 14,
 		"uniques": [
 			"'Infrastructure Improvement'",
-			"Turn this tile into a [Coast] tile",
 			"Turn this tile into a [Canal] tile",
 			"Cannot be built on [Hill] tiles",
-			"Can only be built on [Coastal] tiles",
+			"Must be next to [Water]",
 			"Cannot be built on [Land] tiles <with [2] to [6] neighboring [Canal] tiles>"
 		],
 		"techRequired": "Engineering"
+	},
+	{
+		"name": "Reforestation",
+		"terrainsCanBeBuiltOn": [
+			"Plains",
+			"Grassland",
+			"Tundra",
+			"Hill"
+		],
+		"turnsToBuild": 10,
+		"uniques": [
+			"Turn this tile into a [Forest] tile",
+			"Cannot be built on [{Desert} {Hill}] tiles",
+			"Cannot be built on [{Snow} {Hill}] tiles",
+			"Cannot be built on [Forest] tiles",
+			"Cannot be built on [Jungle] tiles"
+		],
+		"techRequired": "Biology"
+	},
+	{
+		"name": "Lake Reclamation",
+		"terrainsCanBeBuiltOn": [
+			"Lakes",
+		],
+		"turnsToBuild": 14,
+		"techRequired": "Irrigation",
+		"uniques": [
+			"Turn this tile into a [Grassland] tile",
+			"Unavailable <in [Lakes] tiles> <with [4] to [6] neighboring [Lakes] tiles>",
+			"Excluded from map editor"
+		],
+	},
+	{
+		"name": "Coast Reclamation",
+		"terrainsCanBeBuiltOn": [
+			"Coast",
+		],
+		"turnsToBuild": 14,
+		"techRequired": "Irrigation",
+		"uniques": [
+			"Turn this tile into a [Grassland] tile",
+			"Unavailable <in [Coast] tiles> <with [4] to [6] neighboring [Water] tiles>",
+			"Unavailable <in [Coast] tiles> <with [1] to [6] neighboring [Ocean] tiles>",
+			"Excluded from map editor"
+		],
+	},
+	{
+		"name": "Canal Removal",
+		"terrainsCanBeBuiltOn": [
+			"Canal",
+		],
+		"turnsToBuild": 14,
+		"techRequired": "Engineering",
+		"uniques": [
+			"Turn this tile into a [Grassland] tile",
+			"Excluded from map editor"
+		],
 	},
 	// Removals
 	// Any improvement that starts with 'Remove ' is automatically changed into
@@ -871,6 +955,104 @@
 		]
 	},
 	// Districts
+	{
+		"name": "Major Harbor",
+		"production": 3,
+		"terrainsCanBeBuiltOn": [
+			"Coast"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles", //prevent replacing existing districts
+			"[+2 Gold] for each adjacent ['Water Improvement']",
+			"[+2 Gold] for each adjacent ['Lumber Improvement']",
+			"Provides [2] [Harbor Marker] <in this city> <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides", // doesn't work on improvements
+			"Will not be replaced by automated units",
+		],
+	},
+	{
+		"name": "Industrial District",
+		"science": 1,
+		"terrainsCanBeBuiltOn": [
+			"Land"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles",
+			"[+2 Production] for each adjacent ['Extraction Improvement']",
+			"[+1 Production] for each adjacent ['Infrastructure Improvement']",
+			"[+1 Production] for each adjacent ['Urban Improvement']",
+			"Provides [2] [Industrial Zone Marker] <in this city> <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides",
+			"Will not be replaced by automated units",
+		],
+	},
+	{
+		"name": "Residential District",
+		"culture": 2,
+		"happiness": 1,
+		"terrainsCanBeBuiltOn": [
+			"Land"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles",
+			"[+1 Food, +1 Gold] for each adjacent ['Agricultural Improvement']",
+			"[+2 Gold] for each adjacent ['Infrastructure Improvement']",
+			"Provides [2] [Residential Zone Marker] <in this city> <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides",
+			"Will not be replaced by automated units",
+		],
+	},
+	{
+		"name": "Commercial District",
+		"gold": 6,
+		"terrainsCanBeBuiltOn": [
+			"Land"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles",
+			"[+2 Gold] for each adjacent ['Infrastructure Improvement']",
+			"[+2 Culture] for each adjacent ['Policy Improvement']",
+			"Provides [2] [Commercial Zone Marker] <in this city> <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides",
+			"Will not be replaced by automated units",
+		],
+	},
+	{
+		"name": "Science Park",
+		"science": 3,
+		"gold": 3,
+		"terrainsCanBeBuiltOn": [
+			"Land"
+		],
+		"uniques": [
+			"'Urban Improvement'",
+			"'District Improvement'",
+			"Cannot be built on ['District Improvement'] tiles",
+			"[+1 Science] for each adjacent ['Urban Improvement']",
+			"[+2 Science] for each adjacent [Great Improvement]",
+			"Provides [2] [Science Park Marker] <in this city> <hidden from users>",
+			"Must be next to [City center]",
+			"Removes removable features when built",
+			//"Nullifies all other stats this tile provides",
+			"Will not be replaced by automated units",
+		],
+	},
 	// Great Person improvements
 	{
 		"name": "Academy",
@@ -880,6 +1062,7 @@
 		"science": 5,
 		"uniques": [
 			"Great Improvement",
+			"'Urban Improvement'",
 			"Comment [Enable your city to produce ['Invention'] and ['Innovation'] 33% faster after constructing a [University]]",
 			"Provides [1] [Academic Research] <hidden from users>",
 			"[+2 Science] <after discovering [Philosophy]>",
@@ -928,6 +1111,7 @@
 			"[+2 Production] for each adjacent [Power Plant]",
 			"[+2 Production] for each adjacent [Storage Base]",
 			"Great Improvement",
+			"'Urban Improvement'",
 			"[+3 Production] <after discovering [Mass Production]>",
 			"Removes removable features when built",
 			"Pillaging this improvement yields approximately [+50 Gold]"
@@ -942,6 +1126,7 @@
 		"uniques": [
 			"[+5 Gold] <for [AI player] Civilizations> <hidden from users>",
 			"Great Improvement",
+			"'Urban Improvement'",
 			"[+1 Gold] for each adjacent ['Infrastructure Improvement']",
 			"[+2 Gold] for each adjacent [Bonus resource]",
 			"[+4 Gold] for each adjacent [Luxury resource]",
@@ -964,7 +1149,6 @@
 			"[+2 Faith] for each adjacent [Oasis]",
 			"[+2 Faith] for each adjacent [Ice]",
 			"[+1 Faith] for each adjacent [Coast]",
-			
 			"[+3 Faith] for each adjacent [Natural Wonder]",
 			"Removes removable features when built",
 			"Pillaging this improvement yields approximately [+50 Gold]"
@@ -1020,6 +1204,7 @@
 			"Land"
 		],
 		"uniques": [
+			"'Urban Improvement'",
 			"Ensures a minimum tile yield of [+2 Food, +1 Production]",
 			"[+1 Food] from [River] tiles",
 			"[+1 Food] from [Fresh water] tiles",
